@@ -1,0 +1,10 @@
+<PISI>
+    <SourceName>LimeLinux</SourceName>
+    <Version>1.0</Version>
+    <Description xml:lang="tr">LimeLinux 1.0 Deposu</Description>
+    <BinaryName>LimeLinux</BinaryName>
+    <Type>Main</Type>
+    <Obsoletes>
+        <Package>xorg-video-modesetting</Package>
+    </Obsoletes>
+</PISI>
