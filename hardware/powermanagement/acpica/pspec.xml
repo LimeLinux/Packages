@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>acpica</Name>
+        <Homepage>http://www.acpica.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>custom</License>
+        <IsA>app:console</IsA>
+        <Summary>ACPI debugging tools written by Intel</Summary>
+        <Description>acpica contains an AML interpreter and debugger, ACPI namespace support, ACPI hardware and event support and a full ASL compiler and disassembler.</Description>
+        <Archive sha1sum="ba5cbf23781c0fcd72c2fc8e188bd57e42c3fd8d" type="targz">http://acpica.org/sites/acpica/files/acpica-unix-20160831.tar.gz</Archive>
+        <Patches>
+            <Patch level="1">werror.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>acpica</Name>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/man/man1/iasl.1">iasl.1</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/doc/acpica/LICENSE">LICENSE</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.0_20160831</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

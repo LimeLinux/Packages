@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libXp</Name>
+        <Homepage>http://x.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>X.Org Xp library</Summary>
+        <Description>X.Org X11 libXp runtime library</Description>
+        <Archive sha1sum="9e10371ca8961b50c2d69150a88fc031455699d1" type="tarbz2">mirrors://xorg/individual/lib/libXp-1.0.3.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libXext</Dependency>
+            <Dependency>xorg-proto</Dependency>
+            <Dependency>libXau</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>util-macros</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libXp</Name>
+        <RuntimeDependencies>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXau</Dependency>
+            <Dependency>libX11</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

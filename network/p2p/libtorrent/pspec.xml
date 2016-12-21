@@ -1,0 +1,49 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libtorrent</Name>
+        <Homepage>http://www.rasterbar.com/products/libtorrent</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>Full featured torrent client library</Summary>
+        <Description>Rasterbar's C++ library that aims to be a good alternative to all the other bittorrent implementations around. It is a library and not a full featured client, although it comes with a working example client.</Description>
+	<Archive sha1sum="f269399bf7bbc90579f8f115be40ea612c56f5c5" type="targz">https://downloads.sourceforge.net/project/libtorrent/libtorrent/libtorrent-rasterbar-1.0.5.tar.gz</Archive>        <BuildDependencies>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>geoip</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libtorrent</Name>
+        <RuntimeDependencies>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>geoip</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc/libtorrent</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc/libtorrent/html</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

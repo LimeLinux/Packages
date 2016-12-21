@@ -1,0 +1,75 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>polkit</Name>
+        <Homepage>http://www.freedesktop.org/wiki/Software/PolicyKit</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2+</License>
+        <IsA>service</IsA>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>PolicyKit Authorization Framework</Summary>
+        <Description>polkit is a toolkit for defining and handling authorizations. It is used for allowing unprivileged processes to speak to privileged processes.</Description>
+        <Archive sha1sum="ef855c2d04184dceb38e0940dc7bec9cc3da415c" type="targz">http://www.freedesktop.org/software/polkit/releases/polkit-0.113.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>dbus</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>spidermonkey</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>intltool</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">disable-docs.patch</Patch>
+            <Patch level="1">use-system-locale-in-gobject-api.diff</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>polkit</Name>
+        <RuntimeDependencies>
+            <Dependency>pam</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>spidermonkey</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/var/lib/polkit-1</Path>
+            <Path fileType="data">/lib/systemd</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+        <AdditionalFiles>
+            <!--AdditionalFile owner="root" permission="0644" target="/etc/pam.d/polkit-1">polkit.pam</AdditionalFile-->
+        </AdditionalFiles>
+	<Provides>
+            <COMAR script="postInstall.py">System.Package</COMAR>
+	</Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.113</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

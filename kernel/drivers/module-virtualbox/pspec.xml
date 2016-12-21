@@ -1,0 +1,60 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>module-virtualbox</Name>
+        <Homepage>http://www.virtualbox.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <ExcludeArch>armv7h</ExcludeArch>
+        <License>GPLv2</License>
+        <IsA>driver</IsA>
+        <Summary>Kernel modules for VirtualBox</Summary>
+        <Description>This package provides the kernel support for VirtualBox.</Description>
+        <Archive sha1sum="5c8ec1f8f106a2a7a06ab0c2427e292d7690959a" type="tarxz">https://sourceforge.net/projects/pisi-source/files/kernel-4.7/module-virtualbox-5.1.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency version="4.6.4">kernel-module-headers</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>module-virtualbox</Name>
+        <RuntimeDependencies>
+            <Dependency version="4.6.4">kernel</Dependency>
+            <Dependency version="current">module-virtualbox-userspace</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library" permanent="true">/lib/modules</Path>
+        </Files>
+        <BuildFlags>
+            <Flag>noDelta</Flag>
+        </BuildFlags>
+    </Package>
+
+    <Package>
+        <Name>module-virtualbox-userspace</Name>
+        <Summary>Userspace documentation, tools, udev and modprobe rules for the kernel driver virtualbox</Summary>
+        <Files>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/10-vboxdrv.rules">10-vboxdrv.rules</AdditionalFile>
+        </AdditionalFiles>
+        <BuildFlags>
+            <Flag>noDelta</Flag>
+        </BuildFlags>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.1.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

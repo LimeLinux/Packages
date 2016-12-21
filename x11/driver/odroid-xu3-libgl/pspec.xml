@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>odroid-xu3-libgl</Name>
+        <Homepage>http://www.hardkernel.com/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+	<ExcludeArch>x86_64</ExcludeArch>
+        <License>custom</License>
+        <Summary>ODROID-XU3/XU4 Mali driver</Summary>
+        <Description>ODROID-XU3/XU4 Mali driver</Description>
+        <Archive sha1sum="097004a204586386c622431b5ca91117b244b36f" type="binary">https://raw.githubusercontent.com/bferturk/temel/master/README.md</Archive>
+        <BuildDependencies>
+            <Dependency>mesa</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>odroid-xu3-libgl</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="include">/usr/include</Path>
+            <Path fileType="data">/etc</Path>
+	    <Path fileType="data">/usr/share</Path>
+	<AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/ld.so.conf.d/mali-xu3.conf">mali-xu3.conf</AdditionalFile>
+        </AdditionalFiles>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>20160805</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,34 @@
+
+<PISI>
+    <Source>
+        <Name>run-parts</Name>
+        <Homepage>http://packages.qa.debian.org/d/debianutils.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <Summary>run scripts or programs in a directory</Summary>
+        <Description>run scripts or programs in a directory</Description>
+        <Archive sha1sum="1d62ff7cf902c69a6f1ef071cead61a76ce01f86" type="tarxz">https://sources.archlinux.org/other/run-parts/debianutils_4.7.tar.xz</Archive>
+    </Source>
+    
+    <Package>
+        <Name>run-parts</Name>
+        <Files>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.7</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

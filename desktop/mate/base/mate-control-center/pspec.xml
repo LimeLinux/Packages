@@ -1,0 +1,98 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-control-center</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <License>LGPLv2+</License>
+        <Icon>preferences-desktop</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>The MATE Desktop configuration tool</Summary>
+        <Description>mate-control-center is Mate's main interface for configuration of various aspects of your Mate desktop.</Description>
+        <Archive sha1sum="452b0dd1025ba33f3f1c11e6d5220477dfffe4a8" type="tarxz">mirrors://mate/mate-control-center-1.16.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>dconf</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>marco</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>mate-menus</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libmatekbd</Dependency>
+            <Dependency>libxklavier</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>mate-settings-daemon</Dependency>
+            <Dependency>itstool</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-control-center</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>marco</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>dconf</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>mate-menus</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libmatekbd</Dependency>
+            <Dependency>libxklavier</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libcanberra</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/mate</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/usr/share/help</Path>
+            <Path fileType="config">/etc/xdg/menus</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.16.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

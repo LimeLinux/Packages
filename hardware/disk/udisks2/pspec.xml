@@ -1,0 +1,79 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>udisks2</Name>
+        <Homepage>http://udisks.freedesktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Disk Management Service</Summary>
+        <Description>udisks provides a daemon, API and command line tools for managing disk devices attached to the system.</Description>
+        <Archive sha1sum="c6416ac581aec9c413b3b5e311d27543cff443fb" type="tarbz2">http://udisks.freedesktop.org/releases/udisks-2.1.4.tar.bz2</Archive>
+        <AdditionalFiles>
+            <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
+        </AdditionalFiles>
+        <BuildDependencies>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>lvm2</Dependency>
+            <Dependency>parted</Dependency>
+            <Dependency>libatasmart</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">udisks-2.0.91-udf-dvd-fix-dmask.patch</Patch>
+            <Patch level="0">udisks-2.x-ntfs-3g.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>udisks2</Name>
+        <RuntimeDependencies>
+            <Dependency>lvm2</Dependency>
+            <Dependency>parted</Dependency>
+            <Dependency>mtools</Dependency>         <!-- For mlabel -->
+            <Dependency>xfsprogs</Dependency>       <!-- For mkfs.xfs, xfs_admin -->
+            <Dependency>dosfstools</Dependency>     <!-- For mkfs.vfat -->
+            <Dependency>libatasmart</Dependency>
+            <Dependency>ntfs-3g</Dependency>
+            <Dependency>libgudev</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/udisks2</Path>
+            <Path fileType="config">/etc/dbus-1</Path>
+            <Path fileType="executable">/lib/udev/rules.d</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/polkit-1/</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/var/lib/</Path>
+            <Path fileType="data">/run/udisks</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/dbus-1/interfaces/*.xml</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.1.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

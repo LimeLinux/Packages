@@ -1,0 +1,43 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-pyatspi</Name>
+        <Homepage>http://www.linuxfoundation.org/collaborate/workgroups/accessibility</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2+</License>
+        <IsA>library</IsA>
+        <Summary>Python bindings for at-spi2-core</Summary>
+        <Description>python-pyatspi provides a python client library for the AT-SPI D-Bus accessibility infrastructure.</Description>
+        <Archive sha1sum="71cf7a9fdea76fa4e3af023144db8858fe4844e7" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/pyatspi/2.20/pyatspi-2.20.2.tar.xz</Archive>
+         <BuildDependencies>
+            <Dependency>pygobject</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python-pyatspi</Name>
+        <RuntimeDependencies>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>pygobject</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/lib/python*</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.20.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

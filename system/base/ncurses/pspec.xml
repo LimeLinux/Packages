@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ncurses</Name>
+        <Homepage>http://www.gnu.org/software/ncurses/ncurses.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Console display library</Summary>
+        <Description>The NCurses is a library of functions that manage an application's display on character-cell terminals. The NCurses library defines many functions such as moving mouse and cursor, keyboard mapping and dispaying in color.</Description>
+        <Archive sha1sum="acd606135a5124905da770803c05f1f20dd3b21c" type="targz">mirrors://gnu/ncurses/ncurses-6.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gnuconfig</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ncurses</Name>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/pkgconfig</Path>
+            <Path fileType="data">/usr/share/terminfo</Path>
+            <Path fileType="data">/usr/share/tabset</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>6.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,42 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libXdmcp</Name>
+        <Homepage>http://x.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>X.Org Xdmcp library</Summary>
+        <Description>LibXdmcp is the X Display Manager Control Protocol library.</Description>
+        <Archive sha1sum="3c09eabb0617c275b5ab09fae021d279a4832cac" type="tarbz2">http://xorg.freedesktop.org/archive/individual/lib/libXdmcp-1.1.2.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libxslt</Dependency>
+            <Dependency>util-macros</Dependency>
+            <Dependency>xorg-proto</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libXdmcp</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.1.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

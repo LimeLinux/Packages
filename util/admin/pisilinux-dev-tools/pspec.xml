@@ -1,0 +1,58 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pisilinux-dev-tools</Name>
+        <Homepage>http://www.pisilinux.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>A collection of useful tools that Pisi Linux developers use to make their developing work a lot easier</Summary>
+        <Description>Pisilinux-dev-tools is a collection of useful tools that Pisilinux developers use to make their developing work a lot easier. Such tools can include packaging preparation, package analysis, etc.</Description>
+        <Archive sha1sum="202e8ba50f95c150fa6049f42780c6b97ed45cd9" type="tarxz">http://source.pisilinux.org/1.0/pisilinux-dev-tools-0.0.2.tar.xz</Archive>
+        <Patches>
+            <Patch>fix_detect_mesa.patch</Patch>
+            <Patch>spped_up.patch</Patch>
+            <Patch>ignore_glibc-32bit.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>pisilinux-dev-tools</Name>
+        <RuntimeDependencies>
+            <Dependency>chrpath</Dependency>
+            <Dependency>binutils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>pisilinux-dev-tools-devel</Name>
+        <Summary>Development files for pisilinux-dev-tools</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">pisilinux-dev-tools</Dependency>
+        </RuntimeDependencies>
+        <Files>
+
+            <!-- FIXME: Remove this if not necessary -->
+            <Path fileType="man">/usr/share/man/man3</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.0.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

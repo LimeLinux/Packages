@@ -1,0 +1,59 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dbus-glib</Name>
+        <Homepage>http://dbus.freedesktop.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>AFL-2.1</License>
+        <IsA>library</IsA>
+        <Summary>Glib bindings for D-Bus</Summary>
+        <Description>dbus-glib is an add-on library to integrate the standard D-Bus library with the GLib thread abstraction and main loop.</Description>
+        <Archive sha1sum="660f1c1d511eb72384c10df37118bdc0f65dd927" type="targz">http://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.106.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>dbus</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libpcre</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libxml2</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>dbus-glib</Name>
+        <RuntimeDependencies>
+            <Dependency>dbus</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>libpcre</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec/dbus-bash-completion-helper</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="data">/etc/bash_completion.d</Path>
+            <Path fileType="data">/usr/share/bash-completion</Path>
+            <Path fileType="data">/usr/libexec</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.106</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

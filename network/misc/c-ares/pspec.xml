@@ -1,0 +1,40 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>c-ares</Name>
+        <Homepage>http://daniel.haxx.se/projects/c-ares/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>library</IsA>
+        <Summary>A C library that performs DNS requests and name resolves asynchronously</Summary>
+        <Description>c-ares is a C library that performs DNS requests and name resolves asynchronously. c-ares is a fork of the library named 'ares', written by Greg Hudson at MIT.</Description>
+        <Archive sha1sum="fe41e47f300bfd587b7f552a141ad3bf85437b0f" type="targz">http://c-ares.haxx.se/download/c-ares-1.9.1.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>c-ares</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.9.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

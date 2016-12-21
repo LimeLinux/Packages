@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>atool</Name>
+        <Homepage>http://www.nongnu.org/atool/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:console</IsA>
+        <Summary>A script for managing file archives of various types</Summary>
+        <Description>A script for managing file archives of various types</Description>
+        <Archive sha1sum="40865bdc533f95fcaffdf8002889eb2ac67224a9" type="targz">http://savannah.nongnu.org/download/atool/atool-0.39.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>attr</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>atool</Name>
+        <RuntimeDependencies>
+            <Dependency>attr</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.39.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>perl-XML-TreeBuilder</Name>
+        <Homepage>http://search.cpan.org/dist/XML-TreeBuilder/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A Perl parser that builds a tree of XML::Element objects</Summary>
+        <Description>perl-XML-TreeBuilder is a Perl module that is Parser that builds a tree of XML::Element objects</Description>
+        <Archive sha1sum="039b6f2a3116e70ac6d1d31bcd80c7380d92a9eb" type="targz">http://search.cpan.org/CPAN/authors/id/J/JF/JFEARN/XML-TreeBuilder-5.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>perl</Dependency>
+            <!--Dependency>perl-HTML-Tree</Dependency>
+            <Dependency>perl-Devel-Cover</Dependency>
+            <Dependency>perl-HTML-Parser</Dependency>
+            <Dependency>perl-HTML-Tagset</Dependency>
+            <Dependency>perl-XML-Catalog</Dependency-->
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>perl-XML-TreeBuilder</Name>
+        <RuntimeDependencies>
+            <Dependency>perl</Dependency>
+            <!--Dependency>perl-HTML-Tree</Dependency>
+            <Dependency>perl-Devel-Cover</Dependency>
+            <Dependency>perl-HTML-Parser</Dependency>
+            <Dependency>perl-HTML-Tagset</Dependency>
+            <Dependency>perl-XML-Catalog</Dependency-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,100 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tigervnc</Name>
+        <Homepage>http://www.tigervnc.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL</License>
+        <IsA>app:console</IsA>
+        <Summary>Suite of VNC servers and clients.</Summary>
+        <Description>Suite of VNC servers and clients. Based on the VNC 4 branch of TightVNC.</Description>
+        <Archive sha1sum="2e2edd6a94be18380a8b00b064e268ac892c8070" type="targz">https://github.com/TigerVNC/tigervnc/archive/v1.6.0.tar.gz</Archive>
+        <Archive sha1sum="f37f9ca17d211552c775c3ce78ff03385026bf3a" type="binary">mirrors://xorg/individual/xserver/xorg-server-1.18.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>font-util</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libdmx</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>libpciaccess</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXaw</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXfont</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libXpm</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXres</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>pixman</Dependency>
+            <Dependency>xorg-app</Dependency>
+            <Dependency>nettle</Dependency>
+            <Dependency>libepoxy</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+            <Dependency>xcb-util-wm</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>xcb-util-renderutil</Dependency>
+            <Dependency>util-macros</Dependency>
+            <Dependency>xtrans</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libunwind</Dependency>
+            <Dependency>libXau</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>fltk</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">gethomedir.patch</Patch>
+            <Patch level="1">xorg118.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>tigervnc</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>libXau</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>pixman</Dependency>
+            <Dependency>libXdmcp</Dependency>
+            <Dependency>libXfont</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>fltk</Dependency>
+        </RuntimeDependencies>
+      
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/lib</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/lib/systemd/system/vncserver.service">vncserver.service</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/vncviewer.desktop">vncviewer.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.6.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

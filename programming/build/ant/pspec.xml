@@ -1,0 +1,46 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ant</Name>
+        <Homepage>http://ant.apache.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <IsA>app:console</IsA>
+        <Summary>Java-based build tool</Summary>
+        <Description>Apache Ant is a Java-based build tool. In theory, it is kind of like Make, but without Make's wrinkles.</Description>
+        <Archive sha1sum="8eee8f30fecbf16c5bc430969d119d8081521b4d" type="tarbz2">http://archive.apache.org/dist/ant/source/apache-ant-1.9.6-src.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>jdk7-openjdk</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ant</Name>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/etc/ant/ant.conf" permission="0644" owner="root">ant.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/profile.d/ant.sh">ant.sh</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/profile.d/ant.csh">ant.csh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.9.6</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,43 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pcsc-lite</Name>
+        <Homepage>http://pcsclite.alioth.debian.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>app:console</IsA>
+        <Summary>PC/SC drivers for smart card readers</Summary>
+        <Description>pcsc-lite is middleware to access a smart card using SCard API (PC/SC).</Description>
+        <Archive sha1sum="e99c6202eff1711650c6b4e9ddae67960897d7b1" type="tarbz2">https://alioth.debian.org/frs/download.php/file/4164/pcsc-lite-1.8.16.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>pcsc-lite</Name>
+        <Files>
+            <Path fileType="config">/etc/reader.conf.d</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="library">/usr/lib/pcsc/drivers</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.8.16</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

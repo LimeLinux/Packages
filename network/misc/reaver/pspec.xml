@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>reaver</Name>
+        <Homepage>http://code.google.com/p/reaver-wps/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>Brute force attack against Wifi Protected Setup</Summary>
+        <Description>Brute force attack against Wifi Protected Setup</Description>
+        <Archive sha1sum="ceefd6070cd83d55e13514beceeaf8b22a5b9c24" type="targz">https://github.com/t6x/reaver-wps-fork-t6x/archive/v1.5.2.tar.gz</Archive>        
+        <BuildDependencies>
+            <Dependency>libpcap</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>reaver</Name>
+        <RuntimeDependencies>
+            <Dependency>libpcap</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/var/lib/lxdm</Path>
+            <Path fileType="data">/etc/conf.d/xdm</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.5.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

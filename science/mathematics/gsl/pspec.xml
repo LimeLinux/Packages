@@ -1,0 +1,41 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gsl</Name>
+        <Homepage>http://www.gnu.org/software/gsl/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>GNU scientific library</Summary>
+        <Description>The GNU Scientific Library (GSL) is a numerical library for C and C++ programmers.</Description>
+        <Archive sha1sum="2612a898aada49e90aa3069c712f172530f8d38f" type="targz">http://ftp.gnu.org/gnu/gsl/gsl-2.2.1.tar.gz</Archive>
+        <Patches>
+            <!--<Patch level="1">gsl-1.14-cblas.patch</Patch>-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gsl</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.2.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

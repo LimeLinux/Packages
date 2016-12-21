@@ -1,0 +1,69 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libbonobo</Name>
+        <Homepage>http://www.gnome.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>GNOME CORBA framework</Summary>
+        <Description>Bonobo is a component system based on CORBA, used by the GNOME desktop.</Description>
+        <Archive sha1sum="c7650434a4f328eae6f38a29ee8dadd455f35f9c" type="tarbz2">mirrors://gnome/libbonobo/2.32/libbonobo-2.32.1.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>orbit2</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>flex</Dependency>
+            <Dependency>grep</Dependency>
+            <Dependency>popt</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>perl</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>gtk-doc</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="0">libbonobo-2.32.1-srcdir-macro.patch</Patch>
+            <Patch level="1">libbonobo-multishlib.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libbonobo</Name>
+        <RuntimeDependencies>
+            <Dependency>orbit2</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libxml2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/idl</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.32.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

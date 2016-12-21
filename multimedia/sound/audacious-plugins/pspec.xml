@@ -1,0 +1,89 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>audacious-plugins</Name>
+        <Homepage>http://audacious-media-player.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>data</IsA>
+        <Summary>plugins for audacious</Summary>
+        <Description>plugins for audacious</Description>
+        <Archive sha1sum="5119bcdc78175f1a8cf6d4fae126dbd6cda9958f" type="tarbz2">http://distfiles.audacious-media-player.org/audacious-plugins-3.8.1.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>lame</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>mpg123</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>audacious</Dependency>
+            <Dependency>neon</Dependency>
+            <Dependency>libcue</Dependency>
+            <Dependency>wavpack</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>audacious-plugins</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>lame</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>mpg123</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>audacious</Dependency>
+            <Dependency>neon</Dependency>
+            <Dependency>libcue</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libcddb</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>libcue</Dependency>
+            <Dependency>wavpack</Dependency>
+            <Dependency>libcdio-paranoia</Dependency>
+	    <Dependency>jack-audio-connection-kit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/audacious</Path>
+            <Path fileType="data">/usr/share/audacious</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.8.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

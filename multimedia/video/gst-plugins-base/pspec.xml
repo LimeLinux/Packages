@@ -1,0 +1,81 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gst-plugins-base</Name>
+        <Homepage>http://gstreamer.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Basepack of plugins for gstreamer</Summary>
+        <Description>GStreamer base plugins are a well-groomed and well-maintained collection of GStreamer plugins and elements, spanning the range of possible types of elements one would want to write for GStreamer. It also contains helper libraries and base classes useful for writing elements. A wide range of video and audio decoders, encoders, and filters are included.</Description>
+        <Archive sha1sum="2c4b34245107395bc9103649bb2af1c1088a3f7c" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/gst-plugins-base/0.10/gst-plugins-base-0.10.36.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>cdparanoia</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>liboil</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libtheora</Dependency>
+            <Dependency>libvisual</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>orc</Dependency>
+            <Dependency>gnome-vfs</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gst-plugins-base</Name>
+        <RuntimeDependencies>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>cdparanoia</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libvisual</Dependency>
+            <Dependency>libtheora</Dependency>
+            <Dependency>orc</Dependency>
+            <Dependency>gnome-vfs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/girepository-1.0</Path>
+            <Path fileType="library">/usr/lib/gstreamer-0.10</Path>
+            <Path fileType="library">/usr/lib/libgst*</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/usr/share/gst-plugins-base</Path>  
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="man">/usr/share/man/man3</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.10.36</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

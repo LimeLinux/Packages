@@ -1,0 +1,49 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libXvMC</Name>
+        <Homepage>http://www.x.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>X.Org XvMC library</Summary>
+        <Description>LibXvMC is the X-Video Motion Compensation Library.</Description>
+        <Archive sha1sum="6fc54831734e781b2848b6f7e3bcc4f752665f21" type="tarbz2">mirrors://xorg/individual/lib/libXvMC-1.0.9.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libX11</Dependency> 
+            <Dependency>libXext</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>xorg-proto</Dependency>
+            <Dependency>util-macros</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libXvMC</Name>
+        <RuntimeDependencies>
+            <Dependency>libXext</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXv</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.9</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

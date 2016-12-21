@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmtp</Name>
+        <Homepage>http://libmtp.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>An implementation of Microsoft's Media Transfer Protocol (MTP)</Summary>
+        <Description>libmtp is an implementation of Microsoft's Media Transfer Protocol (MTP) in the form of a library suitable primarily for POSIX compliant operating systems.</Description>
+        <Archive sha1sum="4f7e79e15e6a0d0a3d76adbd1ca6d6c27d4b8424" type="targz">mirrors://sourceforge/libmtp/1.1.11/libmtp-1.1.11.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>doxygen</Dependency>
+            <Dependency>libusb</Dependency>
+            <Dependency>libgcrypt</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libmtp</Name>
+        <RuntimeDependencies>
+            <Dependency>libusb</Dependency>
+            <Dependency>libgcrypt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/lib/udev</Path>
+            <Path fileType="data">/usr/share/hal</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.1.11</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

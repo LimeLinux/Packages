@@ -1,0 +1,60 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libarchive</Name>
+        <Homepage>http://code.google.com/p/libarchive/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>Library for reading and writing streaming archives</Summary>
+        <Description>libarchive includes a library and command-line tools for reading and writing tar, cpio, zip, ISO, and other archive formats.</Description>
+        <Archive sha1sum="d8c2e3c4028970b0827066b5a5fe5e9cd02c6f47" type="targz">http://www.libarchive.org/downloads/libarchive-3.2.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>acl</Dependency>
+            <Dependency>nettle</Dependency>
+            <Dependency>attr</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>xz</Dependency>
+            <Dependency>lzo</Dependency>
+            <Dependency>zlib</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libarchive</Name>
+        <RuntimeDependencies>
+            <Dependency>lzo</Dependency>
+            <Dependency>nettle</Dependency>
+            <Dependency>xz</Dependency>
+            <Dependency>acl</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>attr</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>libxml2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/libarchive</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.2.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

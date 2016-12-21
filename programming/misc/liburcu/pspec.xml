@@ -1,0 +1,39 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>liburcu</Name>
+        <Homepage>http://lttng.org/urcu</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>app:console</IsA>
+        <Summary>LGPLv2.1 userspace RCU (read-copy-update) library</Summary>
+        <Description>LGPLv2.1 userspace RCU (read-copy-update) library</Description>
+        <Archive sha1sum="61d1d0d1b955c7a67a7253317647304d04b400a0" type="tarbz2">http://lttng.org/files/urcu/userspace-rcu-0.9.2.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>liburcu</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/lsof</Path>
+            <Path fileType="man">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.9.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

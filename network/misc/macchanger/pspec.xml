@@ -1,0 +1,40 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>macchanger</Name>
+        <Homepage>http://www.alobbs.com/macchanger/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <IsA>app:console</IsA>
+        <License>GPLv2</License>
+        <Summary>Utility for viewing/manipulating the MAC address of network interfaces.</Summary>
+        <Description>A GNU/Linux utility for viewing/manipulating the MAC address of network interfaces.</Description>
+        <Archive sha1sum="9183f7866657c883dd152cdd50d2878973ba44ae" type="targz">https://github.com/alobbs/macchanger/archive/1.7.0.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>macchanger</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/macchanger</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="info">/usr/share/info</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.7.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,87 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnupg</Name>
+        <Homepage>http://www.gnupg.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3+</License>
+        <IsA>app:console</IsA>
+        <Summary>The GNU Privacy Guard, a PGP replacement</Summary>
+        <Description>GnuPG allows to encrypt and sign your data and communication, features a versatile key managment system as well as access modules for all kinds of public key directories.</Description>
+        <Archive sha1sum="908c86dac8e9a1fbf47e1605e570b11391b04ece" type="tarbz2">ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-2.1.15.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>openldap</Dependency>
+            <Dependency>npth</Dependency>
+            <Dependency>libassuan</Dependency>
+            <Dependency>pinentry</Dependency>
+            <Dependency>libksba</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libusb-compat</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gnupg</Name>
+        <RuntimeDependencies>
+            <Dependency>openldap</Dependency>
+            <Dependency>npth</Dependency>
+            <Dependency>libassuan</Dependency>
+            <Dependency>pinentry</Dependency>
+            <Dependency>libksba</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libusb-compat</Dependency>
+         </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="library">/usr/libexec</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/doc/html</Path>
+            <Path fileType="data">/usr/share/gnupg</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <Package>
+        <Name>gnupg-docs</Name>
+        <Summary>Documentation files for GnuPG</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">gnupg</Dependency>
+         </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc/gnupg/html</Path>
+            <Path fileType="doc">/usr/share/gnupg/help.*</Path>
+            <Path fileType="doc">/usr/share/doc/gnupg/faq.html</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.1.15</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

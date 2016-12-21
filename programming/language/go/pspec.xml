@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>go</Name>
+        <Homepage>http://golang.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <Summary>Compiler and tools for the Go programming language from Google</Summary>
+        <Description>Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.</Description>
+        <Archive sha1sum="24943cf0370c3a14093d00b0d8702639ab4cc2a8" type="targz">https://github.com/golang/go/archive/go1.7.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>perl</Dependency>
+            <Dependency>gawk</Dependency>
+            <Dependency>mercurial</Dependency>
+            <Dependency>git</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+    <Package>
+         <Name>golang</Name>
+        <RuntimeDependencies>
+            <Dependency>git</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/profile.d/go.sh">go.sh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.7.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,61 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rrdtool</Name>
+        <Homepage>http://oss.oetiker.ch/rrdtool/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>A system to store and display time-series data</Summary>
+        <Description>RRD is the acronym for Round Robin Database. RRD is a system to store and display time-series data (i.e. network bandwidth, machine/room temperature, server load average).</Description>
+        <Archive sha1sum="4363f92565638d240f80f410a49014919f887508" type="targz">http://oss.oetiker.ch/rrdtool/pub/rrdtool-1.5.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>ruby</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>tcp-wrappers</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>rrdtool</Name>
+        <RuntimeDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>ruby</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libxml2</Dependency>
+	    <Dependency>libpng</Dependency>
+            <Dependency>tcp-wrappers</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/rrdtool</Path>          
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.5.6</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

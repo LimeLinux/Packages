@@ -1,0 +1,42 @@
+
+<PISI>
+    <Source>
+        <Name>python3-websocket-client</Name>
+        <Homepage>https://github.com/liris/websocket-client</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>WebSocket client library for Python</Summary>
+        <Description>websocket-client module is WebSocket client for python. This provide the low level APIs for WebSocket. All APIs are the synchronous functions.</Description>
+        <Archive sha1sum="1ae08f0a73671ae24261a71b48a2eb40ab4269a9" type="targz">https://github.com/liris/websocket-client/archive/v0.37.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3</Dependency>
+            <Dependency>python3-setuptools</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>python3-websocket-client</Name>
+        <Summary>WebSocket client library for Python</Summary>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.37.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

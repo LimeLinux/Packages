@@ -1,0 +1,41 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>exempi</Name>
+        <Homepage>http://libopenraw.freedesktop.org/wiki/Exempi</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD-3</License>
+        <IsA>library</IsA>
+        <Summary>An implementation of XMP, based on Adobe SDK</Summary>
+        <Description>exempi is a port of Adobe XMP SDK to work on UNIX and to be built with GNU automake. It includes XMPCore and XMPFiles, and exempi, a C-based API.</Description>
+        <Archive sha1sum="0ca233e81d6f6fef94ac13202ce9a66b584d482e" type="tarbz2">http://libopenraw.freedesktop.org/download/exempi-2.2.1.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>exempi</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc/exempi</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.2.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

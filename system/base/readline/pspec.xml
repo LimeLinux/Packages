@@ -1,0 +1,56 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>readline</Name>
+        <Homepage>http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Another cute console display library</Summary>
+        <Description>The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in. Both Emacs and vi editing modes are available. The Readline library includes additional functions to maintain a list of previously-entered command lines, to recall and perhaps reedit those lines, and perform csh-like history expansion on previous commands.</Description>
+        <Archive sha1sum="017b92dc7fd4e636a2b5c9265a77ccc05798c9e1" type="targz">mirrors://gnu/readline/readline-6.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>ncurses</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>readline63-001.patch</Patch>
+            <Patch>readline63-002.patch</Patch>
+            <Patch>readline63-003.patch</Patch>
+            <Patch>readline63-004.patch</Patch>
+            <Patch>readline63-005</Patch>
+            <Patch>readline63-006</Patch>
+            <Patch>readline63-007</Patch>
+            <Patch>readline63-008</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>readline</Name>
+        <RuntimeDependencies>
+            <Dependency>ncurses</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>6.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

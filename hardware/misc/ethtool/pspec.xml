@@ -1,0 +1,37 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ethtool</Name>
+        <Homepage>http://sourceforge.net/projects/gkernel/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Utility to examine and tune ethernet-based network interfaces</Summary>
+        <Description>ethtool is used for querying and changing settings of an ethernet device.</Description>
+        <Archive sha1sum="877f302b37f0d058aa4847cb85b6170e07348db0" type="tarxz">https://www.kernel.org/pub/software/network/ethtool/ethtool-4.6.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>ethtool</Name>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.6</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

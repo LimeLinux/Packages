@@ -1,0 +1,85 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xorg-video-intel</Name>
+        <Homepage>http://www.x.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <ExcludeArch>armv7h</ExcludeArch>
+        <License>MIT</License>
+        <IsA>driver</IsA>
+        <Summary>X.Org intel video driver</Summary>
+        <Description>xorg-video-intel contains the X.Org driver for Intel video chipsets.</Description>
+        <Archive sha1sum="6f00866f1bec46b1f3bd3fb89e1cbc3a00032315" type="tarxz">ftp://anduin.linuxfromscratch.org/BLFS/xf86-video-intel/xf86-video-intel-0340718.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>pixman</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libXvMC</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libpciaccess</Dependency>
+            <Dependency>libxshmfence</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xorg-video-intel</Name>
+        <RuntimeDependencies>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>pixman</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libXvMC</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libpciaccess</Dependency>
+            <Dependency>libxshmfence</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/libexec</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc/X11</Path>
+        </Files>
+        <AdditionalFiles>
+           <!--AdditionalFile owner="root" permission="0644" target="/etc/X11/xorg.conf.d/20-intel.conf">20-intel.conf</AdditionalFile-->
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0340718</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

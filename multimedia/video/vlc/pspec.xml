@@ -1,0 +1,371 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>vlc</Name>
+        <Homepage>http://www.videolan.org/vlc</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <Icon>vlc</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>VLC media player</Summary>
+        <Description>VLC is a famous video player and streamer.</Description>
+        <Archive sha1sum="ec171b0ad731d9d114540cd7b7fcb41fc3293696" type="tarxz">http://mirrors.netix.net/vlc/vlc/2.2.4/vlc-2.2.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libcdio</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>xcb-proto</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>zvbi</Dependency>
+            <Dependency>faac</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>x265</Dependency>
+            <Dependency>x264</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>aalib</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libva</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>util-macros</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXau</Dependency>
+            <Dependency>libtar</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libass</Dependency>
+            <Dependency>libXpm</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>libdca</Dependency>
+            <Dependency>libmtp</Dependency>
+            <Dependency>libmad</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>a52dec</Dependency>
+            <Dependency>libebml</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libcddb</Dependency>
+            <Dependency>libcaca</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>fribidi</Dependency>
+            <Dependency>libupnp</Dependency>
+            <Dependency>twolame</Dependency>
+            <Dependency>live555</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXdmcp</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>libmpeg2</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libshout</Dependency>
+            <Dependency>libdvbpsi</Dependency>
+            <Dependency>libtheora</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libssh2</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libdc1394</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>libid3tag</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>libmpcdec</Dependency>
+            <Dependency>libraw1394</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libavc1394</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libmatroska</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>schroedinger</Dependency>
+            <!--Dependency>crystalhd-firmware</Dependency>
+	     <Dependency>libchromaprint</Dependency>
+	     <Dependency>minizip</Dependency>
+            <Dependency>lirc</Dependency>
+            <Dependency>libkate</Dependency>
+            <Dependency>freerdp</Dependency>
+	    <Dependency>libdvdread</Dependency>
+
+	   <Dependency>libdvdcss</Dependency>
+            <Dependency>libdvdnav</Dependency>
+            <Dependency>vcdimager</Dependency>
+
+            <Dependency>fluidsynth</Dependency>
+            <Dependency>libbluray</Dependency-->
+
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libvncserver</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+            <Dependency>zvbi</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">ffmpeg3.patch</Patch>
+            <Patch level="1">lua53_compat.patch</Patch>
+            <Patch>qt4-select.patch</Patch>
+            <Patch level="0">vlc-2.1.1-desktop.patch</Patch>
+	    <Patch level="1">vlc-2.2.4-gcc6_fixes-1.patch</Patch>
+	    
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>vlc</Name>
+         <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>libtar</Dependency>
+            <Dependency>libXpm</Dependency>
+            <Dependency>fribidi</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>dejavu-fonts</Dependency>
+	    <Dependency>libcdio</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>xcb-proto</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>zvbi</Dependency>
+            <Dependency>faac</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>x265</Dependency>
+            <Dependency>x264</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>aalib</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libva</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>util-macros</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXau</Dependency>
+            <Dependency>libtar</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libass</Dependency>
+            <Dependency>libXpm</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>libdca</Dependency>
+            <Dependency>libmtp</Dependency>
+            <Dependency>libmad</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>a52dec</Dependency>
+            <Dependency>libebml</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libcddb</Dependency>
+            <Dependency>libcaca</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>fribidi</Dependency>
+            <Dependency>libupnp</Dependency>
+            <Dependency>twolame</Dependency>
+            <Dependency>live555</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXdmcp</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>libmpeg2</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libshout</Dependency>
+            <Dependency>libdvbpsi</Dependency>
+            <Dependency>libtheora</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libssh2</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libdc1394</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>libid3tag</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>libmpcdec</Dependency>
+            <Dependency>libraw1394</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libavc1394</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libmatroska</Dependency>
+            <Dependency>libXinerama</Dependency>
+	    <Dependency>libkate</Dependency>
+             <Dependency>libpng</Dependency>
+            <Dependency>libbluray</Dependency>
+            <Dependency>schroedinger</Dependency>
+            <!--Dependency>crystalhd-firmware</Dependency>
+	     <Dependency>libchromaprint</Dependency>
+	     <Dependency>minizip</Dependency>
+            <Dependency>lirc</Dependency>
+            <Dependency>libkate</Dependency>
+            <Dependency>freerdp</Dependency>
+	    <Dependency>libdvdread</Dependency>
+
+	   <Dependency>libdvdcss</Dependency>
+            <Dependency>libdvdnav</Dependency>
+            <Dependency>vcdimager</Dependency>
+
+            <Dependency>fluidsynth</Dependency>
+            <Dependency>libbluray</Dependency-->
+
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libvncserver</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+            <Dependency>zvbi</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+
+    <!--Package>
+        <Name>vlc-libs</Name>
+        <Summary>Codec and plugin library files for VLC</Summary>
+        <RuntimeDependencies>
+            <Dependency>libX11</Dependency>
+            <Dependency>x264</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>lirc</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>zvbi</Dependency>
+            <Dependency>x265</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libva</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>aalib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>eudev</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libidn</Dependency>
+            <Dependency>libmad</Dependency>
+            <Dependency>libass</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>libdca</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>a52dec</Dependency>
+            <Dependency>libmtp</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libssh2</Dependency>
+            <Dependency>libcddb</Dependency>
+            <Dependency>freerdp</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>libcaca</Dependency>
+            <Dependency>twolame</Dependency>
+            <Dependency>libebml</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>live555</Dependency>
+            <Dependency>minizip</Dependency>
+            <Dependency>fribidi</Dependency>
+            <Dependency>libkate</Dependency>
+            <Dependency>libupnp</Dependency>
+            <Dependency>libshout</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvdpau</Dependency>
+            <Dependency>libmpeg2</Dependency>
+            <Dependency>libdvbpsi</Dependency>
+            <Dependency>libdc1394</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>vcdimager</Dependency>
+            <Dependency>libbluray</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libdvdnav</Dependency>
+            <Dependency>libmpcdec</Dependency>
+            <Dependency>libtheora</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libraw1394</Dependency>
+            <Dependency>fluidsynth</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>libdvdread</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libavc1394</Dependency>
+            <Dependency>libmatroska</Dependency>
+            <Dependency>schroedinger</Dependency>
+            <Dependency>libvncserver</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+            <Dependency>libchromaprint</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>crystalhd-firmware</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/libvlc*</Path>
+            <Path fileType="library">/usr/lib/vlc</Path>
+        </Files>
+    </Package-->
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.2.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

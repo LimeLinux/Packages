@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>zvbi</Name>
+        <Homepage>http://zapping.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>VBI Decoding Library for Zapping</Summary>
+        <Description>Zapping is a TV viewer for the Gnome desktop. With Zapping and a TV card you can watch TV, take screenshots, and record video and audio. Zapping supports Closed Caption and Teletext subtitles.</Description>
+        <Archive sha1sum="b0fc8d596c90d603e883e6b195318c6b276a3eb4" type="tarbz2">mirrors://sourceforge/zapping/zvbi-0.2.35.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libpng</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>doxygen</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">zvbi-0.2.31-linkage_fix.diff</Patch>
+	    <Patch level="0">zvbi-0.2.7-fix-build.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>zvbi</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc/zvbi</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.2.35</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

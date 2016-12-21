@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libvdpau</Name>
+        <Homepage>http://freedesktop.org/wiki/Software/VDPAU</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Wrapper library for the Video Decode and Presentation API</Summary>
+        <Description>VDPAU is the Video Decode and Presentation API for UNIX. It provides an interface to video decode acceleration and presentation hardware present in modern GPUs.</Description>
+        <Archive sha1sum="23ea9f7d21ebba5324da0605cb904a04a65aef49" type="targz">http://people.freedesktop.org/~aplattner/vdpau/libvdpau-1.1.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libXext</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libvdpau</Name>
+        <RuntimeDependencies>
+            <Dependency>libXext</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+   
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.1.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

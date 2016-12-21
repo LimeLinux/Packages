@@ -1,0 +1,62 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>git</Name>
+        <Homepage>http://git-scm.com/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>Fast Version Control System</Summary>
+        <Description>Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals.</Description>
+        <Archive sha1sum="d0fc3d9fb551ce9c45c94df3bb88f13ca7905869" type="tarxz">https://www.kernel.org/pub/software/scm/git/git-2.4.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>xmlto</Dependency>
+            <Dependency>perl-Error</Dependency>
+            <Dependency>perl</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>project-root.patch</Patch>
+            <Patch level="1">gitk-fonts.patch</Patch>
+            <Patch level="1">git-1.5-gitweb-home-link.patch</Patch>
+            <Patch level="1">git-cvsps-ignore.patch</Patch>
+            <Patch level="1">fix-gitwebdir.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>git</Name>
+        <RuntimeDependencies>
+            <Dependency>perl-Error</Dependency>
+            <Dependency>openssh</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/etc/bash_completion.d</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/var/www</Path>
+            <Path fileType="locale">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib</Path>
+
+            <Path fileType="config">/etc</Path>
+        </Files>
+    </Package>
+
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.4.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

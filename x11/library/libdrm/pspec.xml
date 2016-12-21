@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libdrm</Name>
+        <Homepage>http://dri.freedesktop.org/libdrm/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Userspace interface to kernel DRM services</Summary>
+        <Description>libdrm is a library providing the userspace interface to kernel DRM services.</Description>
+        <Archive sha1sum="136a581c9a081ac26804ae229d27094f29001a21" type="tarbz2">http://dri.freedesktop.org/libdrm/libdrm-2.4.70.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libpciaccess</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libdrm</Name>
+        <RuntimeDependencies>
+            <Dependency>libpciaccess</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+           <Path fileType="header">/usr/include</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/91-drm-modeset.rules">91-drm-modeset.rules</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.4.70</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,43 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libgnome-keyring</Name>
+        <Homepage>http://live.gnome.org/GnomeKeyring</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Compatibility library for accessing gnome-keyring3</Summary>
+        <Description>libgnome-keyring is a library that used by applications to integrate with the gnome-keyring system.</Description>
+        <Archive sha1sum="69b21d77e0946911b2e71346d219bb19b74d05f8" type="tarxz">http://ftp.gnome.org/mirror/gnome.org/sources/libgnome-keyring/3.12/libgnome-keyring-3.12.0.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>libgnome-keyring</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/usr/share/vala/vapi/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.12.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

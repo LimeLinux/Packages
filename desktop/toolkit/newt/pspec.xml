@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>newt</Name>
+        <Homepage>https://fedorahosted.org/newt/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>A windowing toolkit for text mode</Summary>
+        <Description>newt is a windowing toolkit for text mode, which provides many widgets and stackable windows.</Description>
+        <Archive sha1sum="9204940f8cd80910a1d0e80c9bc1b946eb6e730d" type="targz">https://fedorahosted.org/releases/n/e/newt/newt-0.52.17.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>tcl</Dependency>
+            <Dependency>slang</Dependency>
+            <Dependency>popt</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>newt</Name>
+        <RuntimeDependencies>
+            <Dependency>tcl</Dependency>
+            <Dependency>slang</Dependency>
+            <Dependency>popt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.52.17</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

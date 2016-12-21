@@ -1,0 +1,65 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>module-virtualbox-guest</Name>
+        <Homepage>http://www.virtualbox.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <ExcludeArch>armv7h</ExcludeArch>
+        <License>GPLv2</License>
+        <IsA>driver</IsA>
+        <Summary>Kernel modules for VirtualBox guest machines</Summary>
+        <Description>This package provides the kernel modules needed for mouse integration and shared folder support between VirtualBox host and guest systems.</Description>
+        <Archive sha1sum="b81d45dab1bc991b80b504def83b275f152bd4bf" type="tarxz">https://sourceforge.net/projects/pisi-source/files/kernel-4.7/module-virtualbox-guest-5.1.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency version="4.6.4">kernel-module-headers</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>module-virtualbox-guest</Name>
+        <RuntimeDependencies>
+            <Dependency version="4.6.4">kernel</Dependency>
+            <Dependency>baselayout</Dependency>
+            <Dependency version="current">module-virtualbox-guest-userspace</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library" permanent="true">/lib/modules</Path>
+        </Files>
+        <BuildFlags>
+            <Flag>noDelta</Flag>
+        </BuildFlags>
+    </Package>
+
+    <Package>
+        <Name>module-virtualbox-guest-userspace</Name>
+        <Summary>Userspace documentation, tools, udev and modprobe rules for the kernel driver virtualbox-guest</Summary>
+        <Files>
+            <Path fileType="config">/etc/conf.d</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="executable">/lib/udev/vbox-guest.sh</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/virtualbox-guest">virtualbox-guest.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/lib/udev/vbox-guest.sh">vbox-guest.sh</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/48-vbox-guest.rules">48-vbox-guest.rules</AdditionalFile>
+        </AdditionalFiles>
+        <BuildFlags>
+            <Flag>noDelta</Flag>
+        </BuildFlags>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.1.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

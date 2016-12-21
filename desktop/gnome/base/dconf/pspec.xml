@@ -1,0 +1,64 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dconf</Name>
+        <Homepage>http://live.gnome.org/dconf</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Simple low-level configuration system</Summary>
+        <Description>dconf is a low-level configuration system. Its main purpose is to provide a backend to GSettings on platforms that don't already have configuration storage systems.</Description>
+        <Archive sha1sum="638a92d176b3efa01c7b3f5dfd89029acc8d799b" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/dconf/0.20/dconf-0.20.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>vala</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>pango</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>dconf</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>pango</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/libexec</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/vala</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>dconf-docs</Name>
+        <IsA>data:doc</IsA>
+        <Summary>Reference files for dconf</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">dconf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.20</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

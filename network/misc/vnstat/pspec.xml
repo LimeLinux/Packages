@@ -1,0 +1,49 @@
+
+<PISI>
+    <Source>
+        <Name>vnstat</Name>
+        <Homepage>http://humdi.net/vnstat/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL</License>
+        <Summary>A console-based network traffic monitor</Summary>
+        <Description>A console-based network traffic monitor</Description>
+        <Archive sha1sum="a2392ed8e4a6d226a8682f3460bba3de9535c60c" type="targz">http://humdi.net/vnstat/vnstat-1.15.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>vnstat</Name>
+        <RuntimeDependencies>
+            <Dependency>gd</Dependency>  
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/vnstatd">vnstatd.confd</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/etc/init.d/vnstatd">vnstatd.initd-r1</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.15</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

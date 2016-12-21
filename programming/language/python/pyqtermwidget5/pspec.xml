@@ -1,0 +1,50 @@
+
+<PISI>
+    <Source>
+        <Name>pyqtermwidget5</Name>
+        <Homepage>http://gitorious.org/qtermwidget</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Python binding of terminal widget for Qt</Summary>
+        <Description>A simple terminal widget for using with PyQt based applications</Description>
+        <BuildDependencies>
+            <Dependency>python</Dependency>
+            <Dependency>python-qt5</Dependency>
+            <Dependency>python-sip</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qtermwidget5</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="5309a4270e797e7086746ee22e778e168db281e2" type="targz">https://github.com/hrngultekin/pyqtermwidget5/archive/pyqtermwidget5-v0.1.tar.gz</Archive>
+        <Patches>
+            <Patch>py2config.patch</Patch>
+        </Patches>
+    </Source>
+    <Package>
+        <Name>pyqtermwidget5</Name>
+        <Summary>Python binding of terminal widget for Qt</Summary>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qtermwidget5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

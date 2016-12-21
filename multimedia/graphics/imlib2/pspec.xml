@@ -1,0 +1,65 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>imlib2</Name>
+        <Homepage>http://enlightenment.org/Libraries/Imlib2</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>Second version of the general image loading and rendering library</Summary>
+        <Description>Imlib 2 is the successor to Imlib. It is not just a newer version - it is a completely new library. Imlib2 can be installed alongside Imlib 1.x without any problems since they are effectively different libraries - but they Have very similar functionality.</Description>
+        <Archive sha1sum="f389d67c337b604a365e620b0083b2d342dd724e" type="tarbz2">mirrors://sourceforge/enlightenment/1.4.9/imlib2-1.4.9.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>giflib</Dependency>
+            <Dependency>libid3tag</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>freetype</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">imlib2-1.4.5-no-my-libs.patch</Patch>
+            <Patch level="0">imlib2-giflib5.patch</Patch-->
+            <!--Patch level="0">imlib2-1.3.0-multilib.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>imlib2</Name>
+        <RuntimeDependencies>
+            <Dependency>giflib</Dependency>
+            <Dependency>libid3tag</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>freetype</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/imlib2</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.4.9</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,41 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>media-player-info</Name>
+        <Homepage>http://cgit.freedesktop.org/media-player-info</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <Summary>Media player capability database</Summary>
+        <Description>media-player-info is a repository of data files describing media player capabilities. These files contain information about the directory layout to use to add music to these devices, about the supported file formats, etc.</Description>
+        <Archive sha1sum="4f0b94b0e456b8427168ce7414ea725d98daa984" type="targz">http://www.freedesktop.org/software/media-player-info/media-player-info-22.tar.gz</Archive>
+        <BuildDependencies>
+            <!-- For pkgconfig fixes in udev -->
+            <Dependency>python3</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>media-player-info</Name>
+        <Files>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="data">/lib/udev</Path>
+            <Path fileType="data">/usr/share/media-player-info</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>22</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

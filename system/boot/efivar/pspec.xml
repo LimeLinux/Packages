@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>efivar</Name>
+        <Homepage>https://github.com/vathpela/efivar</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <ExcludeArch>armv7h</ExcludeArch>
+        <License>LGPL2.1</License>
+        <IsA>app:console</IsA>
+        <Summary>Tools and library to manipulate EFI variables</Summary>
+        <Description>Tools and library to manipulate EFI variables.</Description>
+        <Archive sha1sum="680a648e5e36a2b4b012fb7705b3e6610bcd42a2" type="tarbz2">https://github.com/rhinstaller/efivar/releases/download/0.23/efivar-0.23.tar.bz2</Archive>
+        <BuildDependencies>
+           <Dependency>popt</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">0001-Workaround-rename-of-linux-nvme.h.patch</Patch>
+            <Patch level="1">efivar-no-static.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>efivar</Name>
+        <RuntimeDependencies>
+            <Dependency>popt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.23</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

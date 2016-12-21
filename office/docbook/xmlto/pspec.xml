@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xmlto</Name>
+        <Homepage>https://fedorahosted.org/xmlto/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>app:console</IsA>
+        <Summary>A frontend to an XSL toolchain</Summary>
+        <Description>The purpose of xmlto is to convert an XML file to the desired format using whatever means necessary.</Description>
+        <Archive sha1sum="4b1daa7a15fc64176446332d55e8befa9a6d90bf" type="targz">https://fedorahosted.org/releases/x/m/xmlto/xmlto-0.0.26.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libxslt</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>docbook-xml</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xmlto</Name>
+        <RuntimeDependencies>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>docbook-xml</Dependency>
+            <!-- FIXME: Disabled for now as it brings whole texlive
+            <Dependency>latex-passivetex</Dependency>
+            -->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc/xmlto</Path>
+            <Path fileType="data">/usr/share/xmlto</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.0.26</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

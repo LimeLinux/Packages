@@ -1,0 +1,62 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>caja-extensions</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Summary>Mate file manager eklentileri</Summary>
+        <Description>caja-extensions, Mate file manager eklentileri.</Description>
+        <Archive sha1sum="9b27e46a731b117815862229c38445ef94afa600" type="tarxz">mirrors://mate/caja-extensions-1.16.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>caja</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>gupnp</Dependency>
+            <Dependency>gksu</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>caja-extensions</Name>
+        <RuntimeDependencies>
+            <Dependency>caja</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gupnp</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>gksu</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/MateConf</Path>
+            <Path fileType="data">/usr/share/glib-2.0/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.16.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,62 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>net-snmp</Name>
+        <Homepage>http://net-snmp.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>A collection of SNMP protocol tools and libraries</Summary>
+        <Description>Simple Network Management Protocol (SNMP) is a widely used protocol for monitoring the health and welfare of network equipment (eg. routers), computer equipment and even devices like UPSs. Net-SNMP is a suite of applications used to implement SNMP v1, SNMP v2c and SNMP v3 using both IPv4 and IPv6.</Description>
+        <Archive sha1sum="97dc25077257680815de44e34128d365c76bd839" type="targz">mirrors://sourceforge/net-snmp/net-snmp-5.7.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libnl</Dependency>
+            <Dependency>python-setuptools</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">net-snmp-5.7.3-perl-5.24.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>net-snmp</Name>
+        <RuntimeDependencies>
+            <Dependency>libnl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/snmp</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin/snmpd</Path>
+            <Path fileType="config">/etc/conf.d/snmpd</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/snmp</Path>
+            <Path fileType="data">/var/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="man">/usr/share/man/man3</Path>
+            <Path fileType="config">/etc/conf.d/snmptrapd</Path>
+            <Path fileType="config">/etc/snmp/snmptrapd.conf</Path>
+            <Path fileType="executable">/usr/sbin/snmptrapd</Path>
+        </Files>
+    </Package>
+
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.7.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

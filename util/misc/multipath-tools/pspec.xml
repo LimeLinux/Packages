@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>multipath-tools</Name>
+        <Homepage>http://christophe.varoqui.free.fr/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Multipath tools for Linux (including kpartx)</Summary>
+        <Description>Multipath tools for Linux (including kpartx)</Description>
+        <Archive sha1sum="332a6bed199d272bdd4e23ad57108f483e5e9d7d" type="targz">https://github.com/hreinecke/multipath-tools/archive/0.6.1.tar.gz</Archive>
+       <Patches>
+            <Patch level="1">buildfix.patch</Patch>
+	</Patches>
+    </Source>
+
+    <Package>
+        <Name>multipath-tools</Name>
+       <RuntimeDependencies>
+            <Dependency>liburcu</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <Path fileType="data">/etc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+	    <Path fileType="library">/lib</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="header">/usr/include</Path>       
+	</Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.6.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

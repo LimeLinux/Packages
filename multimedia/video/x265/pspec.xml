@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>x265</Name>
+        <Homepage>http://x265.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Open source H265/EVC encoder</Summary>
+        <Description>x265 is a commercially funded open source implementation of the H.265/High Efficiency Video Coding (HEVC) compression standard.</Description>
+        <Archive sha1sum="71ef768f8a9d023c19f218feb9519c83c3d4c125" type="targz">https://bitbucket.org/multicoreware/x265/downloads/x265_2.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>yasm</Dependency>
+            <Dependency>cmake</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">x265-1.9-enable_static-1.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>x265</Name>
+        <RuntimeDependencies>
+	   <Dependency>numactl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

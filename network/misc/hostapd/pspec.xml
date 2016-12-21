@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>hostapd</Name>
+        <Homepage>http://openvpn.net/index.php/open-source.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>app:console</IsA>
+        <Summary>IEEE 802.11 AP, IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator</Summary>
+        <Description>IEEE 802.11 AP, IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator</Description>
+        <Archive sha1sum="ecfae94fc041cb26093189945c97a6c66b84a7ec" type="targz">http://w1.fi/releases/hostapd-2.5.tar.gz</Archive>
+	 <AdditionalFiles>
+            <AdditionalFile target="hostapd/.config">config</AdditionalFile>
+	</AdditionalFiles>
+	<Patches>
+            <Patch level="1">openvswitch.patch</Patch>
+	    <Patch level="1">noscan.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>hostapd</Name>
+        <RuntimeDependencies>
+            <Dependency>libnl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/etc</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

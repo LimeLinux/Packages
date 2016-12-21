@@ -1,0 +1,91 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kernel</Name>
+        <Homepage>http://www.kernel.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <ExcludeArch>armv7h</ExcludeArch>
+        <License>GPLv2</License>
+        <IsA>kernel</IsA>
+        <Summary>The Linux kernel (the core of the Linux operating system) for Pisi Linux</Summary>
+        <Description>kernel contains the Linux kernel, the core of any Linux operating system. The kernel handles the basic functions of the operating system: memory allocation, process allocation, device input and output, etc.</Description>
+        <Archive sha1sum="23125f8e24753fa08f8f28b90277073dd8105450" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.6.4.tar.gz</Archive>
+        <AdditionalFiles>
+            <AdditionalFile target="configs/kernel-i686-config">configs/kernel-i686-config</AdditionalFile>
+            <AdditionalFile target="configs/kernel-x86_64-config">configs/kernel-x86_64-config</AdditionalFile>
+            <AdditionalFile permission="0755" target="generate-module-list">scripts/generate-module-list</AdditionalFile>
+        </AdditionalFiles>
+        <BuildDependencies>
+            <Dependency>bc</Dependency>
+            <Dependency>pisi</Dependency>
+            <Dependency>cpio</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>diffutils</Dependency>
+            <Dependency>xmlto</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!-- Linux patches -->
+            <!--Patch level="1" compressionType="xz">patches/linux/patch-4.6.3.xz</Patch>
+            <Mageia Linux patches // compatible with http://svnweb.mageia.org/packages/cauldron/kernel/releases/4.6.3/1.mga6/PATCHES/patches/series>
+            <other patches-->
+            <Patch level="1">patches/mageia/fs-aufs-4.6.patch</Patch>
+            <Patch level="1">patches/mageia/fs-aufs-4.6-modular.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>kernel</Name>
+        <RuntimeDependencies>
+            <Dependency>pisi</Dependency>
+            <Dependency>linux-firmware</Dependency>
+            <Dependency>grub2</Dependency>
+            <Dependency>mkinitcpio</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable" permanent="true">/boot</Path>
+            <Path fileType="library" permanent="true">/lib/modules</Path>
+            <Path fileType="data">/etc/kernel</Path>
+            <Path fileType="config">/etc/mkinitcpio.d</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+        <BuildFlags>
+            <Flag>noDelta</Flag>
+        </BuildFlags>
+    </Package>
+
+    <Package>
+        <Name>kernel-module-headers</Name>
+        <Summary>Kernel header files for external module building</Summary>
+        <Description>kernel-module-headers includes the C header files and the necessary Kbuild files for being able to build external kernel modules.</Description>
+        <Files>
+            <Path fileType="header">/usr/src/linux-headers*</Path>
+            <Path fileType="header">/tmp-headers*</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kernel-docs</Name>
+        <Summary>Documentation and scripts for the Linux kernel</Summary>
+        <Description>kernel-docs includes several documentation files and scripts for managing several debugging and other tasks.</Description>
+        <Files>
+            <Path fileType="header">/usr/src/linux-headers*/Documentation</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.6.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

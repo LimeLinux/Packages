@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmtdev</Name>
+        <Homepage>http://bitmath.org/code/mtdev</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Multitouch Protocol Translation Library</Summary>
+        <Description>The libmtdev is a stand-alone library which transforms all variants of kernel MT events to the slotted type B protocol.</Description>
+        <Archive sha1sum="346115a91b68652170d02d7b1c0722cf1cacf4eb" type="targz">http://bitmath.org/code/mtdev/mtdev-1.1.5.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>libmtdev</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.1.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

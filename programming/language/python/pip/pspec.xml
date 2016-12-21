@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pip</Name>
+        <Homepage>https://pypi.python.org/pypi/pip</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <Summary>The PyPA recommended tool for installing Python packages</Summary>
+        <Description>The PyPA recommended tool for installing Python packages</Description>
+        <License>MIT</License>
+        <Archive sha1sum="910e2dd5c533d351a7dc84bc9091893659afcbb0" type="targz">https://github.com/pypa/pip/archive/8.1.2.tar.gz</Archive>
+
+        <BuildDependencies>
+            <Dependency>python-setuptools</Dependency>
+            <Dependency>python</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>pip</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>python-setuptools</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>8.1.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

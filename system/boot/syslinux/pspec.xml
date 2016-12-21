@@ -1,0 +1,68 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>syslinux</Name>
+        <Homepage>http://syslinux.zytor.com/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+	<ExcludeArch>armv7h</ExcludeArch>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>SysLinux, IsoLinux and PXELinux bootloader</Summary>
+        <Description>Lightweight bootloaders for floppy media (SYSLINUX), network booting (PXELINUX), and bootable "El Torito" CD-ROMs (ISOLINUX). The project also includes MEMDISK, a tool to boot legacy operating systems (such as DOS) from nontraditional media; it is usually used in conjunction with PXELINUX and ISOLINUX.</Description>
+        <Archive sha1sum="1bea76b97b4e32a017dd4168e819934b7c6592cc" type="tarxz">https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>nasm</Dependency>
+            <Dependency>asciidoc</Dependency>
+            <Dependency>efibootmgr</Dependency>
+            <Dependency>upx</Dependency>
+            <Dependency>util-linux</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">0001-Add-install-all-target-to-top-side-of-HAVE_FIRMWARE.patch</Patch>
+            <Patch level="1">0035-SYSAPPEND-Fix-space-stripping.patch</Patch>
+            <Patch level="1">gcc-fix-alignment.patch</Patch>
+            <Patch level="1">dont-guess-alignment.patch</Patch>
+            <Patch level="1">btrfs-fix.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>syslinux</Name>
+        <RuntimeDependencies>
+            <Dependency>mtools</Dependency>
+            <Dependency>efibootmgr</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>dosfstools</Dependency>
+            <Dependency>gptfdisk</Dependency>
+            <Dependency>perl-Crypt-PasswdMD5</Dependency>
+            <Dependency>perl-Digest-SHA1</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/syslinux</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/lib/syslinux/isolinux.cfg" permission="0644" owner="root">pisi-iso/isolinux.cfg</AdditionalFile>
+            <AdditionalFile target="/usr/lib/syslinux/background.png" permission="0644" owner="root">pisi-iso/background.png</AdditionalFile>
+            <!--AdditionalFile target="/usr/bin/syslinux-install_update" permission="0755" owner="root">syslinux-install_update</AdditionalFile-->
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>6.03</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

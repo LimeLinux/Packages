@@ -1,0 +1,77 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>glib2</Name>
+        <Homepage>http://www.gtk.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>A library of handy utility functions</Summary>
+        <Description>glib2 is the low-level core library that forms the basis for projects such as GTK+ and GNOME. It provides data structure handling for C, portability wrappers, and interfaces for such runtime functionality as an event loop, threads, dynamic loading, and an object system.</Description>
+        <Archive sha1sum="ca40ca81bd3d4c3628fabfa70829f3854b01104b" type="tarxz">mirrors://gnome/glib/2.50/glib-2.50.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="8.36">libpcre</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency versionFrom="0.161">elfutils</Dependency>
+            <Dependency>docbook-xml</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">revert-warn-glib-compile-schemas.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>glib2</Name>
+        <RuntimeDependencies>
+            <Dependency>libpcre</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>elfutils</Dependency>
+            <Dependency>libffi</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/etc/profile.d</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/share/bash-completion/completions/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/profile.d/glib2.sh">glib2.sh</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/profile.d/glib2.csh">glib2.csh</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
+        </Provides>
+    </Package>
+
+
+    <Package>
+        <Name>glib2-docs</Name>
+        <Summary>Documentation files for glib2</Summary>
+        <Description>Extensive documentation for developers wanting to use the GLib Library</Description>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.50.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

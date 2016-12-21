@@ -1,0 +1,42 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>perl-Module-Build</Name>
+        <Homepage>http://search.cpan.org/~crenz/Module-Find</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Artistic-2</License>
+        <License>GPLv1</License>
+        <IsA>library</IsA>
+        <Summary>Build and install Perl modules.</Summary>
+        <Description>perl-Module-Build Module::Build is a system for building, testing, and installing Perl modules.</Description>
+        <Archive sha1sum="c618bc07bab5b7303acd529e00cae82b679cb9c1" type="targz">http://search.cpan.org/CPAN/authors/id/L/LE/LEONT/Module-Build-0.4210.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>perl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>perl-Module-Build</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.4210</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

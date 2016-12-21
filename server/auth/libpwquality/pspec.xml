@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libpwquality</Name>
+        <Homepage>https://fedorahosted.org/libpwquality/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Password quality checking</Summary>
+        <Description>The libpwquality package contains a library used for password quality checking and generation of random passwords that pass the checks</Description>
+        <Archive sha1sum="ba5d03319ab3e227d7f236d0ecbd0ec09f4be1d6" type="tarbz2">https://fedorahosted.org/releases/l/i/libpwquality/libpwquality-1.2.4.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>libpwquality</Name>
+        <Files>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="config">/etc/security</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+            <Path fileType="man">/usr/share/man/man5</Path>
+            <Path fileType="man">/usr/share/man/man8</Path>
+            <Path fileType="doc">/usr/share/doc/libpwquality</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.2.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

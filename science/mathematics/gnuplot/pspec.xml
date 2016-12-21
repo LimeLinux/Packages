@@ -1,0 +1,69 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnuplot</Name>
+        <Homepage>http://www.gnuplot.info/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>gnuplot</License>
+        <IsA>app:console</IsA>
+        <Summary>Portable command-line driven interactive data and function plotting utility</Summary>
+        <Description>Gnuplot is a protable command-line driven interactive data and function plotting utility. It supports many types of plots in either 2D and 3D. It can draw using lines, points, boxes, contours, vector fields, surfaces, and various associated text. It also supports various specialized plot types.</Description>
+        <Archive sha1sum="3a616a1beca8e86662afcc9d368aad6847ed4e0f" type="targz">mirrors://sourceforge/gnuplot/gnuplot-5.0.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gtk2</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">gnuplot-4.2.0-fonts.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gnuplot</Name>
+        <RuntimeDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gtk2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/gnuplot</Path>
+            <Path fileType="data">/usr/share/texmf-dist</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/texmf/tex/latex/gnuplot</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <Package>
+        <Name>gnuplot-doc</Name>
+        <Summary>Documentations for Gnuplot</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.0.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

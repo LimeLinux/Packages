@@ -1,0 +1,39 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mercurial</Name>
+        <Homepage>http://www.selenic.com/mercurial</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>A distributed SCM tool</Summary>
+        <Description>A fast, lightweight Source Control Management system designed for efficient handling of very large distributed projects.</Description>
+        <Archive sha1sum="cccade8ca2a3f9c876301c11959a1303c0c9b00e" type="targz">https://www.mercurial-scm.org/release/mercurial-3.8.3.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>mercurial</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/etc/bash_completion.d</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.8.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

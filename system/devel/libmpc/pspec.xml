@@ -1,0 +1,46 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmpc</Name>
+        <Homepage>http://www.multiprecision.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>High precision and correct rounding library</Summary>
+        <Description>libmpc is a library for arithmetic of complex numbers with arbitrarily high precision and correct rounding.</Description>
+        <Archive sha1sum="b8be66396c726fdc36ebb0f692ed8a8cca3bcc66" type="targz">ftp://ftp.gnu.org/gnu/mpc/mpc-1.0.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gmp</Dependency>
+            <Dependency>mpfr</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libmpc</Name>
+        <RuntimeDependencies>
+            <Dependency>gmp</Dependency>
+            <Dependency>mpfr</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc/libmpc</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

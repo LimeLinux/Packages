@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>unzip</Name>
+        <Homepage>ftp://ftp.info-zip.org/pub/infozip/UnZip.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Info-ZIP</License>
+        <IsA>app:console</IsA>
+        <Summary>Unzipper for pkzip-compressed files</Summary>
+        <Description>UnZip enables us to extract archives compressed in .zip format (also called "zipfiles").</Description>
+        <Archive sha1sum="7736e6306f1bb8e51f894ca4670e94181a0f6de3" type="zip">mirrors://sourceforge/infozip/unzip60.zip</Archive>
+        <Patches>
+            <Patch level="1">overflow-fsize.patch</Patch>
+            <Patch level="1">cve20149636.patch</Patch>
+            <Patch>test_compr_eb.patch</Patch>
+            <Patch>getZip64Data.patch</Patch>
+            <Patch level="1">crc32.patch</Patch>
+            <Patch level="1">empty-input.patch</Patch>
+            <Patch level="1">csiz-underflow.patch</Patch>
+            <Patch level="1">nextbyte-overflow.patch</Patch>
+            </Patches>
+    </Source>
+
+    <Package>
+        <Name>unzip</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>60b</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

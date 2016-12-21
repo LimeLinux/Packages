@@ -1,0 +1,56 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>webp</Name>
+        <Homepage>http://code.google.com/p/webp/downloads/list</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Copyright (c) 2010, Google Inc. All rights reserved.</License>
+        <IsA>application</IsA>
+        <Summary>webp image format and format conversion png,jpeg,tiff</Summary>
+        <Description>webp image format and format conversion png,jpeg,tiff</Description>
+        <Archive sha1sum="1c307a61c4d0018620b4ba9a58e8f48a8d6640ef" type="targz">http://downloads.webmproject.org/releases/webp/libwebp-0.4.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mesa</Dependency>
+	    <Dependency>mesa-glu</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>freeglut</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>webp</Name>
+        <RuntimeDependencies>
+            <Dependency>tiff</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>freeglut</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/webp</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.4.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

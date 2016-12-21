@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnutls</Name>
+        <Homepage>http://www.gnutls.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>GNU TLS Library</Summary>
+        <Description>gnutls is a project that aims to develop a library which provides a secure layer, over a reliable transport layer. Currently the GnuTLS library implements the proposed standards by the IETF's TLS working group.</Description>
+        <Archive sha1sum="55f0d57233a9f0af0d06053b88c8a6e0701a41c8" type="tarxz">ftp://ftp.gnutls.org/gcrypt/gnutls/v3.5/gnutls-3.5.7.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libidn</Dependency>
+            <Dependency>gmp</Dependency>
+            <Dependency>nettle</Dependency>
+            <Dependency>p11-kit</Dependency>
+            <Dependency>libtasn1</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gnutls</Name>
+        <RuntimeDependencies>
+            <Dependency>libidn</Dependency>
+            <Dependency>gmp</Dependency>
+            <Dependency>nettle</Dependency>
+            <Dependency>p11-kit</Dependency>
+            <Dependency>libtasn1</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.5.7</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

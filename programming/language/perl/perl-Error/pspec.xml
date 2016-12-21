@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>perl-Error</Name>
+        <Homepage>http://search.cpan.org/dist/Error/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Artistic</License>
+        <IsA>library</IsA>
+        <Summary>Error/exception handling in an OO-ish way</Summary>
+        <Description>The Error package provides two interfaces. Firstly Error provides a procedural interface to exception handling. Secondly Error is a base class for errors/exceptions that can either be thrown, for subsequent catch, or can simply be recorded.</Description>
+        <Archive sha1sum="2e638bd8e9f9e241733a6f199287154a039d3700" type="targz">http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/Error-0.17022.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>perl</Dependency>
+			<Dependency>perl-Module-Build</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>perl-Error</Name>
+        <RuntimeDependencies>
+            <Dependency>perl</Dependency>
+			<Dependency>perl-Module-Build</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.17022</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

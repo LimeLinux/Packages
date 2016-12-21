@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>wiringPi</Name>
+        <Homepage>http://wiringpi.com/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+	<ExcludeArch>x86_64</ExcludeArch>
+        <License>LGPL</License>
+        <IsA>library</IsA>
+        <Summary>WiringPi An implementation of most of the Arduino Wiring functions for the Raspberry Pi</Summary>
+        <Description>WiringPi An implementation of most of the Arduino Wiring functions for the Raspberry Pi</Description>
+        <Archive sha1sum="097004a204586386c622431b5ca91117b244b36f" type="binary">https://raw.githubusercontent.com/bferturk/temel/master/README.md</Archive>
+       <BuildDependencies>
+            <Dependency>git</Dependency>
+       </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>wiringPi</Name>
+        <Files>
+	    <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.3.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,107 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python3</Name>
+        <Homepage>http://www.python.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>custom</License>
+        <PartOf>programming.language</PartOf>
+        <Summary>Next generation of the python high-level scripting language</Summary>
+        <Description>Next generation of the python high-level scripting language</Description>
+        <Archive sha1sum="4843aabacec5bc0cdd3e1f778faa926e532794d2" type="tarxz">http://www.python.org/ftp/python/3.5.2/Python-3.5.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>valgrind</Dependency>
+            <Dependency>tcltk</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>xz</Dependency>
+            <Dependency>gdbm</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>readline</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">dont-make-libpython-readonly.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>python3</Name>
+        <RuntimeDependencies>
+            <Dependency>xz</Dependency>
+            <Dependency>gdbm</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>readline</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="data">/usr/share</Path>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>python3-tk</Name>
+        <IsA>library</IsA>
+        <PartOf>programming.language.python</PartOf>
+        <Summary>Python modules for Tk</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">python3</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>tcltk</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python3*/tkinter</Path>
+            <Path fileType="library">/usr/lib/python3*/lib-dynload/_tkinter.cpython-*.so</Path>
+            <Path fileType="library" permanent="0">/usr/lib/python*/turtledemo</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>idle3</Name>
+        <Icon>idle</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>programming.environment</PartOf>
+        <Summary>An Integrated Development Environment for Python</Summary>
+        <RuntimeDependencies>
+            <Dependency>python3-tk</Dependency>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/idle3*</Path>
+            <Path fileType="library">/usr/lib/python*/idlelib</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile permission="0644" target="/usr/share/pixmaps/idle3.png">python-logo.png</AdditionalFile>
+            <AdditionalFile permission="0644" target="/usr/share/applications/idle3.desktop">idle.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.5.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

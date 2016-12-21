@@ -1,0 +1,93 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gcc</Name>
+        <Homepage>http://gcc.gnu.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3+</License>
+        <License>LGPLv3+</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>The GNU Compiler Collection, includes C, C++, Objective-C and Fortran compilers</Summary>
+        <Description>The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, as well as libraries for these languages</Description>
+        <Archive sha1sum="583e29c7fe69d9a1031a89752c2551ab5aeacb91" type="tarbz2">ftp://gcc.gnu.org/pub/gcc/releases/gcc-6.2.0/gcc-6.2.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+            <Dependency>bison</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>gnuconfig</Dependency>
+            <Dependency>patch</Dependency>
+            <Dependency>sed</Dependency>
+            <Dependency>texinfo</Dependency>
+            <Dependency>gmp</Dependency>
+            <Dependency>mpfr</Dependency>
+            <Dependency>libmpc</Dependency>
+            <Dependency>isl</Dependency>
+            <Dependency>elfutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libgcc</Name>
+        <IsA>library</IsA>
+        <PartOf>system.base</PartOf>
+        <Summary>Contains a shared library of support routines used by GCC's runtime, and thus by every program on the system</Summary>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib/libstdc++.so*</Path>
+            <Path fileType="library">/usr/lib/libgcc_s.so*</Path>
+            <Path fileType="library">/usr/lib32/libstdc++.so*</Path>
+            <Path fileType="library">/usr/lib32/libgcc_s.so*</Path>
+            <Path fileType="library">/usr/share/gcc-*</Path>
+            <Path fileType="library">/usr/share/gdb</Path>
+            <Path fileType="library">/usr/lib/libgomp.so*</Path>
+            <Path fileType="library">/usr/lib/libgomp.spec*</Path>
+            <Path fileType="library">/usr/lib32/libgomp.so*</Path>
+            <Path fileType="library">/usr/lib32/libgomp.spec*</Path>
+            <Path fileType="info">/usr/share/info/libgomp.info</Path>
+            <Path fileType="library">/usr/lib/libquadmath.so*</Path>
+            <Path fileType="library">/usr/lib/libquadmath.spec*</Path>
+            <Path fileType="library">/usr/lib32/libquadmath.so*</Path>
+            <Path fileType="library">/usr/lib32/libquadmath.spec*</Path>
+            <Path fileType="info">/usr/share/info/libquadmath.info</Path>
+        </Files>
+    </Package>
+
+
+    <Package>
+        <Name>gcc</Name>
+        <RuntimeDependencies>
+            <Dependency>gmp</Dependency>
+            <Dependency>mpfr</Dependency>
+            <Dependency>libmpc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib32</Path>
+            <Path fileType="library">/usr/libexec</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>6.2.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

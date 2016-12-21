@@ -1,0 +1,65 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>docker</Name>
+        <Homepage>http://docker.io</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Apache</License>
+        <IsA>app:console</IsA>
+        <Summary>Pack, ship and run any application as a lightweight container</Summary>
+        <Description>An open platform for distributed applications for developers and sysadmins</Description>
+        <Archive sha1sum="7a1b128004d96f6fced3d340568d7cf0cfd64fb3" type="targz">https://github.com/docker/docker/archive/v1.12.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>git</Dependency>
+            <Dependency>golang</Dependency>
+            <Dependency>btrfs-progs</Dependency>
+            <Dependency>lvm2</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libseccomp</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+    <Package>
+        <Name>docker</Name>
+        <RuntimeDependencies>
+            <Dependency>git</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>lvm2</Dependency>
+            <Dependency>bridge-utils</Dependency>
+            <Dependency>iproute2</Dependency>
+            <Dependency>iptables</Dependency>
+            <Dependency>libseccomp</Dependency>
+            <Dependency>containerd</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/docker</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/docker">docker.confd</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <!--COMAR script="service.py">System.Service</COMAR-->
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.12.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

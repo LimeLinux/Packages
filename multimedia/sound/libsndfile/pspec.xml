@@ -1,0 +1,58 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libsndfile</Name>
+        <Homepage>http://www.mega-nerd.com/libsndfile/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>A C library for reading and writing files containing sampled sound</Summary>
+        <Description>Libsndfile is a C library for reading and writing files containing sampled sound (such as MS Windows WAV and the Apple/SGI AIFF format) through one standard library interface.</Description>
+        <Archive sha1sum="e95d9fca57f7ddace9f197071cbcfb92fa16748e" type="targz">http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>flac</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvorbis</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">libsndfile-1.0.18-less_strict_tests.patch</Patch>
+            <Patch level="1">libsndfile-1.0.17-regtests-need-sqlite.patch</Patch>
+            <Patch level="1">m4dir.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libsndfile</Name>
+        <RuntimeDependencies>
+            <Dependency>flac</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvorbis</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/octave</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.25</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

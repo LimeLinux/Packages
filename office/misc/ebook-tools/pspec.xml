@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ebook-tools</Name>
+        <Homepage>http://sourceforge.net/projects/ebook-tools/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>A tool for accessing and converting various ebook file formats</Summary>
+        <Description>ebook-tools is a programming library for accessing and converting various ebook file formats. It also contains a console application.</Description>
+        <Archive sha1sum="1f10bef62c9125cf804366134e486a58308f07ff" type="targz">mirrors://sourceforge/project/ebook-tools/ebook-tools/0.2.2/ebook-tools-0.2.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libzip</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>doxygen</Dependency>
+            <Dependency>cmake</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">ebook-tools-0.2.1-libzip_pkgconfig.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>ebook-tools</Name>
+        <RuntimeDependencies>
+            <Dependency>libzip</Dependency>
+            <Dependency>libxml2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.2.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

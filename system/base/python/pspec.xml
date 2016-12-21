@@ -1,0 +1,89 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python</Name>
+        <Homepage>http://www.python.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>PSF-2.2</License>
+        <IsA>app:console</IsA>
+        <Summary>An interpreted, interactive, object-orientated programming language</Summary>
+        <Description>Python is a dynamic object-oriented programming language that can be used for many kinds of software development. It offers strong support for integration with other languages and tools, comes with extensive standard libraries, and can be learned in a few days.</Description>
+        <Archive sha1sum="05360b8ade117b35e266b2004a7f1f11250c6dcd" type="tarxz">http://www.python.org/ftp/python/2.7.12/Python-2.7.12.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>bzip2</Dependency>
+            <Dependency>gdbm</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>readline</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>pisilinux_platform.patch</Patch>
+            <!-- Look into /usr/lib/pisi-linux first -->
+            <Patch>add-pisilinux-to-search-path.patch</Patch>
+            <!-- Use UTF-8 by default -->
+            <Patch>default-utf8.patch</Patch>
+            <!-- Disable egginfo -->
+            <Patch level="1">disable-egginfo.patch</Patch>
+            <!-- some Turkish locale fixes, usually caused by tolower() -->
+            <Patch level="1">trfix_emaillib.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>python</Name>
+        <RuntimeDependencies>
+            <Dependency>gdbm</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>readline</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <!-- "Makefile" and the config-32/64.h file are needed by
+            distutils/sysconfig.py:_init_posix(), so we include them in the core
+            package, along with their parent directories (https://bugzilla.redhat.com/show_bug.cgi?id=531901)
+            -->
+            <Path fileType="header">/usr/include/python2.7/pyconfig.h</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/etc/pythonstart">pythonstart</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/env.d/04python">04python</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
+        </Provides>
+        <BuildFlags>
+            <Flag>noDelta</Flag>
+        </BuildFlags>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.7.12</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

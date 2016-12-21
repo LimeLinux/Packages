@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pygobject</Name>
+        <Homepage>http://www.pygtk.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Glib bindings for Python</Summary>
+        <Description>pygobject is GLib's GObject library bindings for Python.</Description>
+        <Archive sha1sum="baa04755667fc5159ec99b7f250757bd0bce949c" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/pygobject/3.12/pygobject-3.12.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>python-cairo</Dependency>
+            <Dependency>python3-cairo</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>pygobject</Name>
+        <RuntimeDependencies>
+            <Dependency>cairo</Dependency>
+            <Dependency>python-cairo</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+	    <Dependency>python3-cairo</Dependency>
+	    <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/pygobject</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.12.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

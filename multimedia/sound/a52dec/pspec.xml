@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>a52dec</Name>
+        <Homepage>http://liba52.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>DVD ATSC A/52 streams decoder library</Summary>
+        <Description>liba52 is a free library for decoding ATSC A/52 streams. The A/52 standard is used in a variety of applications, including digital television and DVD. It is also known as AC-3.</Description>
+        <Archive sha1sum="79b33bd8d89dad7436f85b9154ad35667aa37321" type="targz">http://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz</Archive>
+        <Patches>
+            <Patch level="1">a52dec-0.7.4-build.patch</Patch>
+            <Patch level="1">constant.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>a52dec</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.7.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

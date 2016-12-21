@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tls</Name>
+        <Homepage>http://tls.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>library</IsA>
+        <Summary>TLS support for TCL</Summary>
+        <Description>TLS support for TCL.</Description>
+        <Archive sha1sum="badee4d0a096e9951ffc1f82a6530f78b2404a2c" type="targz">mirrors://sourceforge/tls/tls1.6-src.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>tcl</Dependency>
+            <Dependency>openssl</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">tcltls-1.6-no-rpath.patch</Patch>
+            <Patch level="1">tcltls-1.6-openssl.patch</Patch>
+            <Patch level="1">tcltls-1.6-simpleclient.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>tls</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.6</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

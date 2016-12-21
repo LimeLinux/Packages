@@ -1,0 +1,72 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>poppler</Name>
+        <Homepage>http://poppler.freedesktop.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>PDF rendering library</Summary>
+        <Description>poppler is a PDF rendering library based on xpdf.</Description>
+        <Archive sha1sum="7889b8acba0c83a3accd60770a658ff08f4d7ec2" type="tarxz">http://poppler.freedesktop.org/poppler-0.47.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>lcms2</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>poppler</Name>
+        <RuntimeDependencies>
+            <Dependency>lcms2</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>poppler-data</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>freetype</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>poppler-qt5</Name>
+        <Summary>Qt wrapper for poppler</Summary>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency release="current">poppler</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/libpoppler-qt5.so*</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/poppler-qt5.pc</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.47.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

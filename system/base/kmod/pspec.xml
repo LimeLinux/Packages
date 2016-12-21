@@ -1,0 +1,77 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kmod</Name>
+        <Homepage>http://git.kernel.org/?p=utils/kernel/kmod/kmod.git;a=summary</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>app:console</IsA>
+        <Summary>Linux kernel module management utilities</Summary>
+        <Description>Linux kernel module management utilities</Description>
+        <Archive sha1sum="23e9b933887e9405f368a5c429c30414e14148ff" type="tarxz">https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-22.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>chrpath</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>xz</Dependency>
+            <Dependency>zlib</Dependency>
+           <!--    <Dependency>kernel-module-headers</Dependency>-->
+        </BuildDependencies>
+	<Patches>
+	  <Patch level="1">kmod-15-dynamic-kmod.patch</Patch>
+	</Patches>
+    </Source>
+
+    <Package>
+        <Name>kmod</Name>
+        <RuntimeDependencies>
+            <Dependency>xz</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="manfile">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/kmod</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+        <AdditionalFiles>
+            <!-- Blacklist files
+                 These files are basically grabbed from Ubuntu Jaunty and merged into the current Pardus blacklist ones. -->
+            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/blacklist.conf">blacklist/blacklist.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/blacklist-firewire.conf">blacklist/blacklist-firewire.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/blacklist-framebuffer.conf">blacklist/blacklist-framebuffer.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/blacklist-watchdog.conf">blacklist/blacklist-watchdog.conf</AdditionalFile>
+
+            <!-- Grabbed from Fedora -->
+            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/modprobe.conf">modprobe.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/depmod.d/depmod.conf">depmod.conf</AdditionalFile>
+             <!--archlinux thanks-->
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/depmod.d/search.conf">depmod-search.conf</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <!-- FIXME: This backend needs a complete rewrite dude -->
+            <COMAR script="backend.py">Boot.Modules</COMAR>
+            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
+        </Provides>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>22</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

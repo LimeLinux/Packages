@@ -1,0 +1,54 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gfxboot</Name>
+        <Homepage>https://github.com/openSUSE/gfxboot</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <ExcludeArch>armv7h</ExcludeArch>
+        <License>GPLv2</License>
+        <Icon>gfxboot</Icon>
+        <IsA>app:console</IsA>
+        <Summary>Tools to create graphical boot logos</Summary>
+        <Description>Set of tools to create graphical boot logos, for grub, lilo and syslinux. It supports arch-specific boot menus, advanced help menus, multiple keymaps, animated images, and more graphical pretty things.</Description>
+        <Archive sha1sum="fe0174f38b5001b6173c9cbea0108a332ea1628b" type="targz">https://github.com/openSUSE/gfxboot/archive/4.5.12.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>xmlto</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>libxslt</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="0">productname.patch</Patch>
+            <Patch>no-theme-no-git.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gfxboot</Name>
+        <RuntimeDependencies>
+            <Dependency>perl-HTML-Parser</Dependency>
+            <Dependency>freetype</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/share/gfxboot/bin</Path>
+            <Path fileType="data">/usr/share/gfxboot</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.5.12</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

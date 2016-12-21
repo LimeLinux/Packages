@@ -1,0 +1,49 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libproxy</Name>
+        <Homepage>http://code.google.com/p/libproxy/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>app:console</IsA>
+        <Summary>Proxy configuration library</Summary>
+        <Description>libproxy is a library that provides automatic proxy configuration management.</Description>
+        <Archive sha1sum="c037969434095bc65d29437e11a7c9e0293a5149" type="targz">http://libproxy.googlecode.com/files/libproxy-0.4.11.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gconf</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>NetworkManager</Dependency>
+        </BuildDependencies>
+        <Patches>
+	    <Patch level="0">libproxy-0.4.10-mozjs.patch</Patch>
+        <Patch level="1">0001-pacrunner_mozjs-Also-support-mozjs-17.0.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libproxy</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="include">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.4.11</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

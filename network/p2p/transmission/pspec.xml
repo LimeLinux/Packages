@@ -1,0 +1,63 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>transmission</Name>
+        <Homepage>http://www.transmissionbt.com</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <License>GPLv2</License>
+        <Icon>transmission</Icon>
+        <IsA>service</IsA>
+        <IsA>app:console</IsA>
+        <Summary>A fast, easy, and free BitTorrent client</Summary>
+        <Description>Transmission is a free, lightweight Bittorrent client. It features a simple, intuitive interface on top of an efficient backend. This package provides only daemon, web interface and command line client. If you want use Transmission with graphical interface, you should install transmission-gtk or transmission-qt.</Description>
+        <Archive sha1sum="087e886ca20b4aad112df1a0177f130d891c1ba2" type="targz">https://github.com/transmission/transmission/archive/2.92.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libevent</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">fix_desktop_gtk_name.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>transmission</Name>
+        <Summary>Transmission's cli tools, web interface and daemon</Summary>
+        <RuntimeDependencies>
+            <Dependency>libevent</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libevent</Dependency>
+            <Dependency>libnotify</Dependency>       
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/transmission</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.92</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

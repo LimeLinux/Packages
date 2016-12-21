@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libedit</Name>
+        <Homepage>http://www.thrysoee.dk/editline</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>An autotool and libtoolized port of the NetBSD Editline library</Summary>
+        <Description>libedit is a command line editing and history library. It is designed to be used by interactive programs that allow the user to type commands at a terminal prompt.</Description>
+        <Archive sha1sum="c5bf50b433ea35f9fc883400cde674556c44af30" type="targz">http://thrysoee.dk/editline/libedit-20150325-3.1.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>libedit</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+           <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.1_20150325</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

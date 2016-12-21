@@ -1,0 +1,44 @@
+
+<PISI>
+    <Source>
+        <Name>gptfdisk</Name>
+        <Homepage>http://www.rodsbooks.com/gdisk/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>A text-mode partitioning tool that works on GUID Partition Table (GPT) disks</Summary>
+        <Description>A text-mode partitioning tool that works on GUID Partition Table (GPT) disks</Description>
+        <BuildDependencies>
+            <Dependency>ncurses</Dependency>
+            <Dependency>popt</Dependency>
+            <Dependency>util-linux</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="ad28c511c642235815b83fffddf728c117057cba" type="targz">http://sourceforge.net/projects/gptfdisk/files/gptfdisk/1.0.1/gptfdisk-1.0.1.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>gptfdisk</Name>
+        <RuntimeDependencies>
+            <Dependency>ncurses</Dependency>
+            <Dependency>popt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

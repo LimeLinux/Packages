@@ -1,0 +1,71 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM 'www.limelinux.com/standard/pisi-spec.dtd'>
+<PISI>
+    <Source>
+        <Name>libffado</Name>
+        <Homepage>http://www.ffado.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>GPLv3</License>
+        <Summary>Free firewire audio drivers</Summary>
+        <Description>libffado tries to provide open-source drivers for all FireWire based pro-audio devices.</Description>
+        <Archive sha1sum="c7a6cef7cbf8e2ff5f5dbe5ca62fd1bfa0ddaa2a" type="targz">http://www.ffado.org/files/libffado-2.3.0.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>glibmm</Dependency>
+            <Dependency>libxmlpp</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>dbus-c++</Dependency>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>libconfig</Dependency>
+            <Dependency>libraw1394</Dependency>
+            <Dependency>libiec61883</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">libffado-api-doc-only.patch</Patch>
+            <Patch level="1">libffado-gcc6.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libffado</Name>
+        <IsA>library</IsA>
+        <RuntimeDependencies>
+            <Dependency>glibmm</Dependency>
+            <Dependency>dbus-c++</Dependency>
+            <Dependency>libxmlpp</Dependency>
+            <Dependency>libconfig</Dependency>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>libraw1394</Dependency>
+            <Dependency>libiec61883</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="data">/usr/share/libffado</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.3.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

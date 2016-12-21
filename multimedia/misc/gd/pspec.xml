@@ -1,0 +1,65 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gd</Name>
+        <Homepage>http://www.libgd.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>A fast library for creating graphic images</Summary>
+        <Description>The gd graphics library allows your code to quickly draw images complete with lines, arcs, text, multiple colors, cut and paste from other images, and flood fills, and to write out the result as a PNG or JPEG file. This is particularly useful in Web applications, where PNG and JPEG are two of the formats accepted for inline images by most browsers. Note that gd is not a paint program.</Description>
+        <Archive sha1sum="2f8cebec5afd6c83a3d5cb92f40ea4926b4daa98" type="tarxz">https://github.com/libgd/libgd/releases/download/gd-2.2.3/libgd-2.2.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libvpx</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gd</Name>
+        <RuntimeDependencies>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>tiff</Dependency>
+	    <Dependency>webp</Dependency>
+	    <Dependency>libpng</Dependency>
+	    <Dependency>freetype</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc/gd</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="executable">/usr/bin/gdlib-config</Path>
+        </Files>
+    </Package>
+
+ 
+    <Package>
+        <Name>gd-docs</Name>
+        <Summary>Documents for gd</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/doc/gd/html</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.2.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

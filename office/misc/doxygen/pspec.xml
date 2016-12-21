@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>doxygen</Name>
+        <Homepage>http://www.doxygen.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Documentation and analysis tool for C++, C, Java, IDL, PHP and C#</Summary>
+        <Description>Doxygen is a documentation system for C++, C, Java, Objective-C, Python, IDL (Corba and Microsoft flavors) and to some extent PHP, C#, and D.</Description>
+        <Archive sha1sum="c0841007cf8a7910ccf0d8e4f7a5dd8fd2d9fc18" type="targz">http://ftp.stack.nl/pub/doxygen/doxygen-1.8.11.src.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>doxygen</Name>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin/doxygen</Path>
+            <Path fileType="man">/usr/share/man/man1/doxygen.1</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.8.11</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

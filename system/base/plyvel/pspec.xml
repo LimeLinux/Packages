@@ -1,0 +1,42 @@
+
+<PISI>
+    <Source>
+        <Name>plyvel</Name>
+        <Homepage>https://pypi.python.org/pypi/plyvel</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <Summary>Plyvel, a fast and feature-rich Python interface to LevelDB.</Summary>
+        <Description>Plyvel has a rich feature set, high performance, and a friendly Pythonic API.</Description>
+        <BuildDependencies>
+	  <Dependency>cython</Dependency>
+          <Dependency>python</Dependency>
+          <Dependency>leveldb</Dependency>
+          <Dependency>python-setuptools</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="6dfa70be59daafe73ffada429a608592d24a8d3c" type="targz">https://pypi.python.org/packages/source/p/plyvel/plyvel-0.9.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>plyvel</Name>
+        <RuntimeDependencies>
+          <Dependency>python</Dependency>
+          <Dependency>leveldb</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.9</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

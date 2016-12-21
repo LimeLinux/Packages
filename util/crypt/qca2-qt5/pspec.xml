@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qca2-qt5</Name>
+        <Homepage>http://download.kde.org/stable/qca-qt5</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Cryptographic Architecture for QT4</Summary>
+        <Description>QCA aims to provide a straightforward and cross-platform crypto API, using Qt datatypes and conventions. QCA separates the API from the implementation, using plugins known as Providers. QCA2 has been re-written for QT4.</Description>
+        <Archive sha1sum="a4df34c2147c721109594c6dc822f693f572ad04" type="tarxz">http://download.kde.org/stable/qca/2.1.1/src/qca-2.1.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.5.1">qt5</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>doxygen</Dependency>
+            <Dependency>cmake</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>qca2-qt5</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.5.1">qt5</Dependency>
+            <Dependency>nss</Dependency>
+	    <Dependency>cyrus-sasl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/qt/4/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr</Path>
+	   <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.1.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

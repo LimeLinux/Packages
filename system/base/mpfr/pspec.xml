@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mpfr</Name>
+        <Homepage>http://www.mpfr.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <License>LGPLv2+</License>
+        <IsA>library</IsA>
+        <Summary>Multiple precision floating point library</Summary>
+        <Description>The MPFR library is a C library for multiple-precision floating-point computations with exact rounding (also called correct rounding). It is based on the GMP multiple-precision library.</Description>
+        <Archive sha1sum="cedc0055d55b6ee4cd17e1e6119ed412520ff81a" type="tarxz">http://ftp.gnu.org/gnu/mpfr/mpfr-3.1.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gmp</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">mpfr-3.1.4-p1.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>mpfr</Name>
+        <RuntimeDependencies>
+            <Dependency>gmp</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.1.4_p1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

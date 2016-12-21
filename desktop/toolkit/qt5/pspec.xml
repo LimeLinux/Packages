@@ -1,0 +1,86 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qt5</Name>
+        <Homepage>http://qt.nokia.com</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>Qt toolkit version 4</Summary>
+        <Description>Qt is a cross platform GUI toolkit.</Description>
+        <Archive sha1sum="bfc3d07ffba27d96cf070f74148f34a668646a19" type="tarxz">http://download.qt.io/official_releases/qt/5.7/5.7.0/single/qt-everywhere-opensource-src-5.7.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>mariadb</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libmng</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>unixODBC</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>postgresql</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch>no-gtk-qpa-on-wayland.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>qt5</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libmng</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr</Path>
+            <Path fileType="data">/usr/lib/qt4/templates</Path>
+            <Path fileType="localedata">/usr/share/qt4/translations/*_tr.*</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+        <!--AdditionalFiles>
+        <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/qdbusviewer4.desktop">data/qdbusviewer.desktop</AdditionalFile>
+        <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/qtconfig4.desktop">data/qtconfig.desktop</AdditionalFile>
+        </AdditionalFiles-->
+    </Package>
+
+
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.7.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

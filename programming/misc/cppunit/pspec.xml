@@ -1,0 +1,43 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cppunit</Name>
+        <Homepage>http://www.freedesktop.org/wiki/Software/cppunit</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>C++ port of the famous JUnit framework for unit testing</Summary>
+        <Description>cppunit is a C++ unit testing framework. It started its life as a port of JUnit to C++ by Michael Feathers.</Description>
+        <Archive sha1sum="0eaf8bb1dcf4d16b12bec30d0732370390d35e6f" type="targz">http://dev-www.libreoffice.org/src/cppunit-1.13.2.tar.gz</Archive>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>cppunit</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/aclocal</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.13.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

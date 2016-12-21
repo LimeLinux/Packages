@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>texinfo</Name>
+        <Homepage>http://www.gnu.org/software/texinfo/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:console</IsA>
+        <Summary>The GNU info program and utilities</Summary>
+        <Description>Texinfo is a documentation system that can produce both online information and printed output from a single source file. The GNU Project uses the Texinfo file format for most of its documentation.</Description>
+        <Archive sha1sum="b6ed8b4af3fe9a4aa7c72081dc61f095f73d895c" type="targz">mirrors://gnu/texinfo/texinfo-6.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>ncurses</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>texinfo</Name>
+        <RuntimeDependencies>
+            <Dependency>ncurses</Dependency>
+            <Dependency>perl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="data">/usr/share/texinfo</Path>
+	        <Path fileType="data">/usr/share/texmf/tex/texinfo</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+	        <Path fileType="data">/usr/share/texmf/</Path>
+        </Files>
+        <Provides>
+            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>6.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,54 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openssh</Name>
+        <Homepage>http://www.openssh.com/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <IsA>service</IsA>
+        <Summary>Port of OpenBSD's free SSH release</Summary>
+        <Description>OpenSSH is a FREE version of the SSH connectivity tools that technical users of the Internet rely on. Users of telnet, rlogin, and ftp may not realize that their password is transmitted across the Internet unencrypted, but it is. OpenSSH encrypts all traffic (including passwords) to effectively eliminate eavesdropping, connection hijacking, and other attacks.</Description>
+        <Archive sha1sum="70e35d7d6386fe08abbd823b3a12a3ca44ac6d38" type="targz">http://ftp.icm.edu.pl/pub/OpenBSD/OpenSSH/portable/openssh-7.2p2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libedit</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>openssh</Name>
+        <RuntimeDependencies>
+            <Dependency>libedit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/openssh</Path>
+            <Path fileType="data">/var/empty</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+           <AdditionalFile owner="root" permission="0644" target="/etc/pam.d/sshd">sshd.pam</AdditionalFile>
+           <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/sshd.conf">sshd.conf</AdditionalFile> 
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>7.2_p2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

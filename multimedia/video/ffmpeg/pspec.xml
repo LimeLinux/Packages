@@ -1,0 +1,112 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ffmpeg</Name>
+        <Homepage>http://ffmpeg.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>GPLv3</License>
+        <License>LGPLv2</License>
+        <License>LGPLv3</License>
+        <IsA>app:console</IsA>
+        <Summary>A command-line tool to record, convert and stream audio and video</Summary>
+        <Description>FFmpeg is a complete solution to record, convert and stream audio and video.</Description>
+	<Archive sha1sum="ac3341269fe89a41892e8696465b859e1f425213" type="tarxz">http://ffmpeg.org/releases/ffmpeg-3.0.2.tar.xz</Archive>        <BuildDependencies>
+            <Dependency>freetype</Dependency>
+            <Dependency>faac</Dependency>
+            <Dependency>lame</Dependency>
+            <Dependency>x264</Dependency>
+	    <Dependency>x265</Dependency>
+	    <Dependency>gsm</Dependency>
+            <Dependency>libva</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libass</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvdpau</Dependency>
+            <Dependency>libtheora</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>celt</Dependency>
+            <Dependency>opencore-amr</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>frei0r-plugins</Dependency>
+            <Dependency>rtmpdump</Dependency>
+            <Dependency>schroedinger</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>xvid</Dependency>
+            <Dependency>libXv</Dependency>
+	    <Dependency>libnut</Dependency>
+	    <Dependency>vo-amrwbenc</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ffmpeg</Name>
+        <RuntimeDependencies>
+	    <Dependency>vo-amrwbenc</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>faac</Dependency>
+            <Dependency>lame</Dependency>
+            <Dependency>x264</Dependency>
+	    <Dependency>x265</Dependency>
+	    <Dependency>gsm</Dependency>
+            <Dependency>libva</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libass</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvdpau</Dependency>
+            <Dependency>libtheora</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>celt</Dependency>
+	    <Dependency>libdc1394</Dependency>
+	    <Dependency>pulseaudio</Dependency>
+	    <Dependency>libcdio-paranoia</Dependency>
+	    <Dependency>jack-audio-connection-kit</Dependency>
+            <Dependency>opencore-amr</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>frei0r-plugins</Dependency>
+            <Dependency>rtmpdump</Dependency>
+            <Dependency>schroedinger</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>xvid</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libXext</Dependency>
+	    <Dependency>libnut</Dependency>
+            <Dependency>fontconfig</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/ffmpeg</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.0.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

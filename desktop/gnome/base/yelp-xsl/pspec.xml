@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>yelp-xsl</Name>
+        <Homepage>http://www.gnome.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <IsA>data</IsA>
+        <Summary>Yelp XSLT Stylesheets</Summary>
+        <Description>Package of yelp-xsl contains XSL stylesheets that are used by the yelp help browser.</Description>
+        <Archive sha1sum="d06b3c5bd8e30fa83e8cc887b43825640533f2f5" type="tarxz">mirrors://gnome/yelp-xsl/3.12/yelp-xsl-3.12.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libxslt</Dependency>
+            <Dependency>itstool</Dependency>
+            <Dependency>intltool</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>yelp-xsl</Name>
+        <Files>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/yelp-xsl</Path>
+            <Path fileType="data">/usr/share/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.12.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

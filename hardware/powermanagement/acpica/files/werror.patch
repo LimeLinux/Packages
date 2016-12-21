@@ -1,0 +1,28 @@
+--- acpica-unix-20160831.orig/generate/unix/iasl/Makefile	2016-08-31 12:29:36.000000000 -0400
++++ acpica-unix-20160831/generate/unix/iasl/Makefile	2016-09-04 18:07:02.082312238 -0400
+@@ -320,19 +320,19 @@
+ # by the utilities above and they are not necessarily ANSI C, etc.
+ #
+ $(OBJDIR)/aslcompilerlex.o :   $(OBJDIR)/aslcompilerlex.c
+-	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 
+ $(OBJDIR)/aslcompilerparse.o : $(OBJDIR)/aslcompilerparse.c
+-	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 
+ $(OBJDIR)/dtparserlex.o :      $(OBJDIR)/dtparserlex.c
+-	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 
+ $(OBJDIR)/dtparserparse.o :    $(OBJDIR)/dtparserparse.c
+-	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 
+ $(OBJDIR)/prparserlex.o :      $(OBJDIR)/prparserlex.c
+-	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 
+ $(OBJDIR)/prparserparse.o :    $(OBJDIR)/prparserparse.c
+-	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	$(CC) -c $(CFLAGS) -Wall  -o$@ $<

@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cli-installer</Name>
+        <Homepage>https://github.com/manjaro/manjaro-cli-installer</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL</License>
+        <IsA>app:console</IsA>
+        <Summary>Cli installer for Pisi Linux</Summary>
+        <Description>Cli installer for Pisi Linux</Description>
+        <Archive sha1sum="35fe2e7a23dcb5f842b265f73ba7fe55c6204718" type="tarbz2">https://gitlab.com/erturk/cli-installer-master-6dcd586b2ec2b713082dab9eea0356c93f07fe20.tar.bz2</Archive>
+        <Patches>
+            <!--Patch level="1">pisi.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>cli-installer</Name>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+	    <Path fileType="include">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

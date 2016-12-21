@@ -1,0 +1,42 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mesa-glu</Name>
+        <Homepage>http://www.mesa3d.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Mesa OpenGL Utility library</Summary>
+        <Description>Mesa implementation of the standard GLU OpenGL utility API.</Description>
+        <Archive sha1sum="6c547b7c7d5dc0f169f96f1826d44799129bb0aa" type="targz">ftp://ftp.freedesktop.org/pub/mesa/glu/glu-9.0.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mesa</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mesa-glu</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>9.0.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

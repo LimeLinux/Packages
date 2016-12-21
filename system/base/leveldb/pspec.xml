@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>leveldb</Name>
+        <Homepage>https://code.google.com/p/leveldb</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <Summary>A fast and lightweight key/value database library</Summary>
+        <Description>LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.</Description>
+        <BuildDependencies>
+            <Dependency>gperftools</Dependency>
+            <Dependency>snappy</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="18684a0ad7a07920d10f5295b171fbf5eeec7337" type="targz">https://github.com/google/leveldb/archive/v1.18.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>leveldb</Name>
+        <RuntimeDependencies>
+            <Dependency>snappy</Dependency>
+            <Dependency>gperftools</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.18</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

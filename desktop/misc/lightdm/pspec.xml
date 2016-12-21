@@ -1,0 +1,85 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lightdm</Name>
+        <Homepage>http://www.lxde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <IsA>app</IsA>
+        <Summary>LightDM Qt client library</Summary>
+        <Description>LightDM Qt client library</Description>
+        <Archive sha1sum="1e6ca409593cc437903c901496a7c2375d63f0e6" type="tarxz">https://launchpad.net/lightdm/1.15/1.15.0/+download/lightdm-1.15.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>itstool</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>libxklavier</Dependency>
+            <Dependency>xorg-server</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>gtk3</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">lightdm-default-config.patch</Patch>
+        </Patches>
+    </Source>
+
+
+    <Package>
+        <Name>lightdm</Name>
+        <Conflicts>
+            <Package>lxdm</Package>
+            <Package>sddm</Package>
+        </Conflicts>
+        <RuntimeDependencies>
+            <Dependency>pam</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXdmcp</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>libxklavier</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="sysdir">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/sbin</Path>
+            <Path fileType="data">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+
+        <AdditionalFiles>
+            <!--AdditionalFile target="/usr/share/polkit-1/rules.d/lightdm.rules" owner="root" permission="0644">lightdm.rules</AdditionalFile-->
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/lightdm.conf">lightdm.tmpfiles</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/pam.d/lightdm">lightdm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/wrapper">wrapper</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/systemd/system/lightdm.service">lightdm.service</AdditionalFile>
+        </AdditionalFiles>
+
+        <Provides>
+            <!--COMAR script="service.py">System.Service</COMAR-->
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.19.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

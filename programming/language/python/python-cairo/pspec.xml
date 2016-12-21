@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-cairo</Name>
+        <Homepage>http://cairographics.org/pycairo</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Python wrapper for cairo graphics library</Summary>
+        <Description>Pycairo is set of Python bindings for the cairo graphics library.</Description>
+        <Archive sha1sum="2efa8dfafbd6b8e492adaab07231556fec52d6eb" type="tarbz2">http://cairographics.org/releases/py2cairo-1.10.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>cairo</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python-cairo</Name>
+        <RuntimeDependencies>
+            <Dependency>cairo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.10.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

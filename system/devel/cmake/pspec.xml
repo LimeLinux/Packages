@@ -1,0 +1,54 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cmake</Name>
+        <Homepage>http://www.cmake.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <Summary>Cross-platform, open-source make system</Summary>
+        <Description>CMake, the cross-platform, open-source make system. CMake is used to control the software compilation process using simple platform and compiler independent configuration files. CMake generates native makefiles and workspaces that can be used in the compiler environment of your choice.</Description>
+        <Archive sha1sum="4fe15bc983aacca8ae4811f6d8ad8f91b6faa973" type="targz">http://www.cmake.org/files/v3.6/cmake-3.6.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libarchive</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>xz</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>cmake</Name>
+        <RuntimeDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libarchive</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/cmake</Path>
+            <Path fileType="data">/usr/share/aclocal/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.6.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

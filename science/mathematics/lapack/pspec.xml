@@ -1,0 +1,60 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lapack</Name>
+        <Homepage>http://www.netlib.org/lapack</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>Linear Algebra PACKage</Summary>
+        <Description>LAPACK is a standard library for numerical linear algebra.  LAPACK provides routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems.</Description>
+        <Archive sha1sum="5870081889bf5d15fd977993daab29cf3c5ea970" type="targz">http://www.netlib.org/lapack/lapack-3.5.0.tgz</Archive>
+        <Patches>
+            <Patch level="1">lapack-sharedlib.patch</Patch>
+            <!--Patch level="1">lapack-parallel-make.patch</Patch-->
+            <!--Patch level="1">lapack-3.3.1-cmake-sover.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>blas</Name>
+        <Summary>Basic Linear Algebra Subprograms</Summary>
+        <Description>Blas is a standard library which provides a number of basic algorithms for numerical algebra.</Description>
+        <Files>
+            <Path fileType="library">/usr/lib/libblas.so*</Path>
+	    <Path fileType="library">/usr/lib/libblas.a</Path>
+            <Path fileType="library">/usr/lib/pkgconfig/blas.pc</Path>
+        </Files>
+    </Package>
+
+
+    <Package>
+        <Name>lapack</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">blas</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib/liblapack.so*</Path>
+	     <Path fileType="library">/usr/lib/cmake</Path>
+            <Path fileType="library">/usr/lib/liblapack.a</Path>
+            <Path fileType="library">/usr/lib/pkgconfig/lapack.pc</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.5.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

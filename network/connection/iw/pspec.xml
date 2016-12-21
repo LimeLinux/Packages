@@ -1,0 +1,43 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>iw</Name>
+        <Homepage>http://wireless.kernel.org/en/users/Documentation/iw</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>nl80211-based configuration utility for wireless devices</Summary>
+        <Description>iw is a new nl80211 based CLI configuration utility for wireless devices using the mac80211 kernel stack.</Description>
+        <Archive sha1sum="90d3034e596a77f12ed6a3b2b2a3c633813f2c92" type="tarxz">https://www.kernel.org/pub/software/network/iw/iw-4.7.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libnl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>iw</Name>
+        <RuntimeDependencies>
+            <Dependency>libnl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.7</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

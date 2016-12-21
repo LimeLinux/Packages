@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libatomic_ops</Name>
+        <Homepage>https://github.com/ivmai/libatomic_ops/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Atomic memory update operations library</Summary>
+        <Description>libatomic_ops provides implementations for atomic memory update operations on a number of architectures. This allows direct use of these in reasonably portable code.</Description>
+        <Archive sha1sum="9ffb32cbcfc6bb455a5b6ed8f0e1f2a0618db192" type="targz">https://github.com/ivmai/libatomic_ops/archive/libatomic_ops-7_4_2.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>libatomic_ops</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>7.4.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

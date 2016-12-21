@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openexr</Name>
+        <Homepage>http://www.openexr.com</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>A high dynamic-range (HDR) image file format library</Summary>
+        <Description>OpenEXR is a high dynamic-range (HDR) image file format  for use in computer imaging applications. OpenEXR's features include: Higher dynamic range and color precision than existing 8- and 10-bit image file formats; support for 16-bit floating-point, 32-bit floating-point, and 32-bit integer pixels; multiple lossless image compression algorithms; extensibility.</Description>
+        <Archive sha1sum="d09a68c4443b7a12a0484c073adaef348b44cb92" type="targz">http://download.savannah.nongnu.org/releases/openexr/openexr-2.2.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="2.0.1">ilmbase</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>mesa-glu</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>openexr</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="2.0.1">ilmbase</Dependency>
+	        <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/lib*</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/aclocal</Path>
+            <Path fileType="doc">/usr/share/doc/openexr/examples</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.2.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,49 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>psmisc</Name>
+        <Homepage>http://psmisc.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>A set of tools that use the proc filesystem</Summary>
+        <Description>PSmisc is a collection of small utilities using /proc file system, and providing the system administrator with some help in common tasks.</Description>
+        <Archive sha1sum="09fabbef4539b58b6b8738a73da3d21d5daa1a58" type="targz">mirrors://sourceforge/psmisc/psmisc-22.21.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>ncurses</Dependency>
+            <Dependency>gettext</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>psmisc-fuser.patch</Patch>
+        </Patches>  
+    </Source>
+
+    <Package>
+        <Name>psmisc</Name>
+        <RuntimeDependencies>
+            <Dependency>ncurses</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>22.21</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

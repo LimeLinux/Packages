@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gupnp</Name>
+        <Homepage>http://www.gupnp.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>Object-oriented framework for creating UPnP devices and control points</Summary>
+        <Description>GUPnP implements the UPnP specification: resource announcement and discovery, description, control, event notification, and presentation (GUPnP includes basic web server functionality through libsoup).</Description>
+        <Archive sha1sum="eaec209a94e40dc98ba3af96277d79eeba59ddad" type="tarxz">mirrors://gnome/gupnp/0.20/gupnp-0.20.13.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gssdp</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>vala</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gupnp</Name>
+        <RuntimeDependencies>
+            <Dependency>gssdp</Dependency>
+            <Dependency>libsoup</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/gir-1.0/GUPnP-1.0.gir</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/vala/vapi/gupnp*</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.20.13</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

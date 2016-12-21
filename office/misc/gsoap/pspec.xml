@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gsoap</Name>
+        <Homepage>http://sourceforge.net/projects/gsoap2/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>Offers an XML language binding to ease the development of SOAP/XML Web services in C and C/C++</Summary>
+        <Description>The gSOAP toolkit is an extensive suite of portable C and C++ software to develop XML Web services with powerful type-safe XML data bindings.</Description>
+        <Archive sha1sum="e66bbdeaa6b5bdcb11de5141e1f17343a023c5c4" type="zip">http://sourceforge.net/projects/gsoap2/files/gSOAP/gsoap_2.8.22.zip</Archive>
+	   <BuildDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>openssl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gsoap</Name>
+        <RuntimeDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/gsoap</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.8.22</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

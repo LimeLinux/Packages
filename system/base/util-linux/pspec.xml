@@ -1,0 +1,73 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>util-linux</Name>
+        <Homepage>http://userweb.kernel.org/~kzak/util-linux-ng/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>Various useful Linux utilities</Summary>
+        <Description>The util-linux package contains a large variety of low-level system utilities that are necessary for a Linux system to function.</Description>
+        <Archive sha1sum="9720d4ea99f8aff018ea6732dcc5c1fc853f39b3" type="tarxz">https://www.kernel.org/pub/linux/utils/util-linux/v2.28/util-linux-2.28.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>shadow</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>libcap-ng</Dependency>
+        </BuildDependencies>
+        <Patches>
+             <Patch level="1">upstream/util-linux-ng-2.21-login-lastlog.patch</Patch>
+         </Patches>
+    </Source>
+
+    <Package>
+        <Name>util-linux</Name>
+        <RuntimeDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>perl</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>libcap-ng</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="data">/usr/share/misc</Path>
+            <Path fileType="data">/usr/share/getopt</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include/</Path>
+            <AdditionalFiles>
+            <AdditionalFile target="/usr/lib/tmpfiles.d/uuidd.conf" permission="0644" owner="root">uuidd.tmpfiles</AdditionalFile>
+            </AdditionalFiles> 
+        </Files>
+    </Package>
+
+  
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.28</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

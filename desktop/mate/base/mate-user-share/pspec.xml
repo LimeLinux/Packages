@@ -1,0 +1,56 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-user-share</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>mate-file-share-properties</Icon>
+        <IsA>library</IsA>
+        <Summary>User level public file sharing via WebDAV or ObexFTP</Summary>
+        <Description>mate-user-share is a small package that binds together various free software projects to bring easy to use user-level file sharing to the masses.</Description>
+        <Archive sha1sum="7b241f0d969005653a164223b4d458beb9256910" type="tarxz">mirrors://mate/mate-user-share-1.16.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>caja</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libcanberra</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-user-share</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>caja</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libcanberra</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="config">/etc/xdg/autostart</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.16.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

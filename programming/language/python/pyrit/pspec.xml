@@ -1,0 +1,40 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pyrit</Name>
+        <Homepage>https://code.google.com/p/pyrit</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>WPA/WPA2-PSK attacking with gpu and cluster</Summary>
+        <Description>WPA/WPA2-PSK attacking with gpu and cluster</Description>
+        <Archive sha1sum="3041c0d593c21df88f41416be872eca0997cf22b" type="targz">https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/pyrit/pyrit-0.4.0.tar.gz</Archive>
+        <!--BuildDependencies>
+            <Dependency>python-nose</Dependency>
+        </BuildDependencies-->
+    </Source>
+
+    <Package>
+        <Name>pyrit</Name>
+        <Files>
+            <Path fileType="execute">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.4.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

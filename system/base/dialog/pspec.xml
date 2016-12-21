@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dialog</Name>
+        <Homepage>http://www.zsh.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPL2.1</License>
+        <IsA>app:console</IsA>
+        <Summary>A tool to display dialog boxes from shell scripts</Summary>
+        <Description>A tool to display dialog boxes from shell scripts</Description>
+        <Archive sha1sum="6745a288bc49d2b2f8a92411086387c357d880d0" type="targz">ftp://invisible-island.net/dialog/dialog.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>dialog</Name>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+	    <Path fileType="include">/usr/include</Path>
+        </Files>
+	
+        <!--AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/zsh/zprofile">zprofile</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/zsh/zshrc">zshrc</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/zsh/zsh_command_not_found">zsh_command_not_found</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/zsh/site-functions/accept-line">accept-line</AdditionalFile>
+        </AdditionalFiles-->
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

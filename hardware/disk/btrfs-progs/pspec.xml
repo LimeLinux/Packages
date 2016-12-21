@@ -1,0 +1,56 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>btrfs-progs</Name>
+        <Homepage>http://btrfs.wiki.kernel.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Userspace utilities for btrfs</Summary>
+        <Description>btrfs-progs package provides all the userspace programs needed to create, check, modify and correct any inconsistencies in the btrfs filesystem.</Description>
+        <Archive sha1sum="7c589fc44438b1961a996e1e4cb1ec9ea2f1af2a" type="tarxz">https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v4.7.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>xmlto</Dependency>
+            <Dependency>asciidoc</Dependency>
+            <Dependency>lzo</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>e2fsprogs</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>btrfs-progs</Name>
+        <RuntimeDependencies>
+            <Dependency>lzo</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>e2fsprogs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.7.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

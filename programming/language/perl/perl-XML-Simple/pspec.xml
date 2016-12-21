@@ -1,0 +1,42 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>perl-XML-Simple</Name>
+        <Homepage>http://search.cpan.org/~grantm/XML-Simple-2.18</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>XML::Simple Perl module</Summary>
+        <Description>XML::Simple is an easy API to read/write XML. This package provides XML::Simple's Perl module.</Description>
+        <Archive sha1sum="2ececb0960deb51296916186000c63d55cc53092" type="targz">http://pkgs.fedoraproject.org/repo/pkgs/perl-XML-Simple/XML-Simple-2.20.tar.gz/4d10964e123b76eca36678464daa63cd/XML-Simple-2.20.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>perl-XML-Parser</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>perl-XML-Simple</Name>
+        <RuntimeDependencies>
+            <Dependency>perl-XML-Parser</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.20</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

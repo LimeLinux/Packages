@@ -1,0 +1,57 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xorg-input-wacom</Name>
+        <Homepage>http://linuxwacom.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>driver</IsA>
+        <Summary>Input driver for Wacom tablets and drawing devices</Summary>
+        <Description>xorg-input-wacom includes the drivers and tools for Wacom devices.</Description>
+        <Archive sha1sum="3744a2f77010c2726be28e056039810067912543" type="tarbz2">mirrors://sourceforge/linuxwacom/xf86-input-wacom/xf86-input-wacom-0.33.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>xorg-server</Dependency>
+            <Dependency>libXinerama</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xorg-input-wacom</Name>
+        <RuntimeDependencies>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>xorg-server</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/lib/udev</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="data">/usr/share/X11</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/70-wacom.rules">70-wacom.rules</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.33.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

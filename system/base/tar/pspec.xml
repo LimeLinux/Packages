@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tar</Name>
+        <Homepage>http://www.gnu.org/software/tar/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3+</License>
+        <IsA>app:console</IsA>
+        <Summary>A GNU file archiving program</Summary>
+        <Description>The GNU tar program saves many files together in one archive and can restore individual files (or all of the files) from that archive.</Description>
+        <Archive sha1sum="03851c34c90f0656177f2dd375cd61bd1204c51d" type="tarxz">http://mirrors.kernel.org/gnu/tar/tar-1.29.tar.xz</Archive>
+        <AdditionalFiles>
+            <AdditionalFile target="doc/tar.1">tar.1</AdditionalFile>
+        </AdditionalFiles>
+        <BuildDependencies>
+            <Dependency>acl</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>gzip</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>ncompress</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>tar</Name>
+        <RuntimeDependencies>
+            <Dependency>acl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="info">/usr/share/info</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.29</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

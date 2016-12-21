@@ -1,0 +1,58 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libgusb</Name>
+        <Homepage>https://gitorious.org/gusb/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>GObject wrapper for libusb.</Summary>
+        <Description>GLib wrapper around libusb1.</Description>
+        <Archive sha1sum="9116ead26ad89180c151709b711a9a7f97f4ba08" type="tarxz">http://people.freedesktop.org/~hughsient/releases/libgusb-0.2.9.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>vala</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libgusb</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>vala</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libusb</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="data">/usr/share/vala</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.2.9</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

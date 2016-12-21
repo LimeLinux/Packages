@@ -1,0 +1,58 @@
+diff -Nuar xrdp-0.8.0.orig/instfiles/Makefile.am xrdp-0.8.0/instfiles/Makefile.am
+--- xrdp-0.8.0.orig/instfiles/Makefile.am	2014-05-20 08:41:42.000000000 +0300
++++ xrdp-0.8.0/instfiles/Makefile.am	2015-10-09 23:50:51.053615460 +0300
+@@ -28,5 +28,7 @@
+ # must be tab below
+ install-data-hook:
+ 	chmod 755 $(DESTDIR)$(sysconfdir)/xrdp/xrdp.sh
+-	chmod 755 $(DESTDIR)$(sysconfdir)/init.d/xrdp
+-	sed -i 's|__BASE__|$(prefix)|' $(DESTDIR)$(sysconfdir)/init.d/xrdp;
++	if [ -f $(DESTDIR)$(sysconfdir)/init.d/xrdp ]; then \
++	  chmod 755 $(DESTDIR)$(sysconfdir)/init.d/xrdp; \
++	  sed -i 's|__BASE__|$(prefix)|' $(DESTDIR)$(sysconfdir)/init.d/xrdp; \
++	fi
+diff -Nuar xrdp-0.8.0.orig/instfiles/pam.d/xrdp-sesman xrdp-0.8.0/instfiles/pam.d/xrdp-sesman
+--- xrdp-0.8.0.orig/instfiles/pam.d/xrdp-sesman	2014-05-20 08:41:42.000000000 +0300
++++ xrdp-0.8.0/instfiles/pam.d/xrdp-sesman	2015-10-09 23:51:24.559679498 +0300
+@@ -1,5 +1,9 @@
+ #%PAM-1.0
+-@include common-auth
+-@include common-account
+-@include common-session
+-@include common-password
++#@include common-auth
++#@include common-account
++#@include common-session
++#@include common-password
++auth include system-auth
++account include system-auth
++password include system-auth
++session include system-auth
+diff -Nuar xrdp-0.8.0.orig/xrdp/xrdp.ini xrdp-0.8.0/xrdp/xrdp.ini
+--- xrdp-0.8.0.orig/xrdp/xrdp.ini	2014-05-20 08:41:42.000000000 +0300
++++ xrdp-0.8.0/xrdp/xrdp.ini	2015-10-10 00:40:16.454095821 +0300
+@@ -36,7 +36,7 @@
+ #red=ff0000
+ #green=00ff00
+ #background=626c72
+-#autorun=xrdp1
++#autorun=xrdp2
+ #hidelogwindow=yes
+ 
+ # when true, userid/password *must* be passed on cmd line
+@@ -119,6 +119,15 @@
+ # for debugging xrdp, add following line to section xrdp1
+ # chansrvport=/tmp/.xrdp/xrdp_chansrv_socket_7210
+ 
+++[xrdp0]
++name=sesman-Xvnc-delay
++lib=libvnc.so
++username=ask
++password=ask
++ip=127.0.0.1
++port=-1
++delay_ms=2000
++
+ [xrdp1]
+ name=sesman-X11rdp
+ lib=libxup.so

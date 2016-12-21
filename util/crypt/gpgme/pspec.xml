@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gpgme</Name>
+        <Homepage>http://www.gnupg.org/gpgme.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>GnuPG Made Easy is a library for making GnuPG easier to use</Summary>
+        <Description>GPGME is a library designed to make access to GnuPG easier for applications. It provides a high-Level Crypto application programming interface (API) for encryption, decryption, signing, signature verification and key management.</Description>
+        <Archive sha1sum="21510323495f6220f8f67610c3c27a23d761d43d" type="tarbz2">ftp://ftp.gnupg.org/gcrypt/gpgme/gpgme-1.6.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>gnupg</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libassuan</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gpgme</Name>
+        <RuntimeDependencies>
+            <Dependency>gnupg</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libassuan</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/common-lisp</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.6.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

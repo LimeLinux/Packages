@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lynx</Name>
+        <Homepage>http://lynx.isc.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL</License>
+        <PartOf>network.web</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Lynx is the text web browser.</Summary>
+        <Description>This is the top level page for the Lynx software distribution site hosted by the Internet Software Consortium.</Description>
+        <Archive sha1sum="65bbf95627c88723bbb5880155e5fe01c2753d0c" type="tarbz2">http://invisible-mirror.net/archives/lynx/tarballs/lynx2.8.8rel.2.tar.bz2</Archive>
+        <Patches>
+            <Patch level="1">lynx2-8-6-don-t-accept-command-line-args-to-telnet.patch</Patch>
+            <Patch level="1">lynx2-8-6-fix-ugly-color.patch</Patch>
+            <Patch level="1">lynx2-8-7-adapt-to-modern-file-localizations.patch</Patch>
+            <Patch level="1">lynx2-8-7-tmp_dir.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>lynx</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.8.8</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

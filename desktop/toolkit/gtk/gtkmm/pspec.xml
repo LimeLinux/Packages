@@ -1,0 +1,56 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gtkmm</Name>
+        <Homepage>http://gtkmm.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>C++ binding for GTK+</Summary>
+        <Description>gtkmm is the official C++ interface for the popular GUI library GTK+. Highlights include typesafe callbacks, and a comprehensive set of widgets that are easily extensible via inheritance.</Description>
+        <Archive sha1sum="e99866b0cb5a0d7387a7cef79253177310020b3d" type="tarxz">mirrors://gnome/gtkmm/2.24/gtkmm-2.24.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>atkmm</Dependency>
+            <Dependency>glibmm</Dependency>
+            <Dependency>cairomm</Dependency>
+            <Dependency>pangomm</Dependency>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gtkmm</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>atkmm</Dependency>
+            <Dependency>glibmm</Dependency>
+            <Dependency>cairomm</Dependency>
+            <Dependency>pangomm</Dependency>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.24.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

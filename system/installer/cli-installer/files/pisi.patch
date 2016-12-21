@@ -1,0 +1,206 @@
+diff -Nuar manjaro-cli-installer-master.orig/bin/cli-installer.in manjaro-cli-installer-master/bin/cli-installer.in
+--- manjaro-cli-installer-master.orig/bin/cli-installer.in	2016-09-11 21:07:10.000000000 +0300
++++ manjaro-cli-installer-master/bin/cli-installer.in	2016-09-19 12:34:23.414300377 +0300
+@@ -14,7 +14,7 @@
+ 
+ VER=0.9.2
+ # Basis settings
+-TITLE="Manjaro Linux Installation Framework $VER"
++TITLE="Pisi Linux Installation Framework $VER"
+ 
+ REPO_PATH='/opt/live'
+ [[ -d /opt/livecd ]] && REPO_PATH='/opt/livecd'
+@@ -26,10 +26,10 @@
+ arch=$(uname -m)
+ username=''
+ 
+-img_path="/bootmnt/${iso_name}/${arch}"
++img_path="/bootmnt/pisi/${arch}"
+ 
+-if [ -e "${img_path}/${profile}-image.sqfs" ] ; then
+-	DESKTOP_IMG="${profile}-image"
++if [ -e "${img_path}/desktop.sqfs" ] ; then
++	DESKTOP_IMG="desktop"
+ fi
+ 
+ ANSWER="/tmp/.cli-installer"
+@@ -2622,29 +2622,29 @@
+ 
+ dogrub_config(){
+ 	########
+-	BOOT_PART_FS_UUID="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs_uuid" "${DESTDIR}/boot" 2>/dev/null)"
+-	BOOT_PART_FS="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs" "${DESTDIR}/boot" 2>/dev/null)"
++	BOOT_PART_FS_UUID="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs_uuid" "${DESTDIR}/boot" 2>/dev/null)"
++	BOOT_PART_FS="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs" "${DESTDIR}/boot" 2>/dev/null)"
+ 
+-	BOOT_PART_FS_LABEL="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs_label" "${DESTDIR}/boot" 2>/dev/null)"
+-	BOOT_PART_DRIVE="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="drive" "${DESTDIR}/boot" 2>/dev/null)"
+-	BOOT_PART_HINTS_STRING="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="hints_string" "${DESTDIR}/boot" 2>/dev/null)"
++	BOOT_PART_FS_LABEL="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs_label" "${DESTDIR}/boot" 2>/dev/null)"
++	BOOT_PART_DRIVE="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="drive" "${DESTDIR}/boot" 2>/dev/null)"
++	BOOT_PART_HINTS_STRING="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="hints_string" "${DESTDIR}/boot" 2>/dev/null)"
+ 	########
+-	ROOT_PART_FS_UUID="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs_uuid" "${DESTDIR}/" 2>/dev/null)"
+-	ROOT_PART_FS="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs" "${DESTDIR}/" 2>/dev/null)"
+-	ROOT_PART_FS_LABEL="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs_label" "${DESTDIR}/" 2>/dev/null)"
+-	ROOT_PART_DEVICE="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="device" "${DESTDIR}/" 2>/dev/null)"
+-	ROOT_PART_HINTS_STRING="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="hints_string" "${DESTDIR}/" 2>/dev/null)"
++	ROOT_PART_FS_UUID="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs_uuid" "${DESTDIR}/" 2>/dev/null)"
++	ROOT_PART_FS="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs" "${DESTDIR}/" 2>/dev/null)"
++	ROOT_PART_FS_LABEL="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs_label" "${DESTDIR}/" 2>/dev/null)"
++	ROOT_PART_DEVICE="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="device" "${DESTDIR}/" 2>/dev/null)"
++	ROOT_PART_HINTS_STRING="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="hints_string" "${DESTDIR}/" 2>/dev/null)"
+ 	########
+-	USR_PART_FS_UUID="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs_uuid" "${DESTDIR}/usr" 2>/dev/null)"
+-	USR_PART_FS="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs" "${DESTDIR}/usr" 2>/dev/null)"
+-	USR_PART_FS_LABEL="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs_label" "${DESTDIR}/usr" 2>/dev/null)"
+-	USR_PART_HINTS_STRING="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="hints_string" "${DESTDIR}/usr" 2>/dev/null)"
++	USR_PART_FS_UUID="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs_uuid" "${DESTDIR}/usr" 2>/dev/null)"
++	USR_PART_FS="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs" "${DESTDIR}/usr" 2>/dev/null)"
++	USR_PART_FS_LABEL="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs_label" "${DESTDIR}/usr" 2>/dev/null)"
++	USR_PART_HINTS_STRING="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="hints_string" "${DESTDIR}/usr" 2>/dev/null)"
+ 	########
+ 	if [[ "${GRUB_UEFI}" == "1" ]]; then
+-		UEFISYS_PART_FS_UUID="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs_uuid" "${DESTDIR}/boot/efi" 2>/dev/null)"
+-		UEFISYS_PART_FS_LABEL="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="fs_label" "${DESTDIR}/boot/efi" 2>/dev/null)"
+-		UEFISYS_PART_DRIVE="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="drive" "${DESTDIR}/boot/efi" 2>/dev/null)"
+-		UEFISYS_PART_HINTS_STRING="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub-probe" --target="hints_string" "${DESTDIR}/boot/efi" 2>/dev/null)"
++		UEFISYS_PART_FS_UUID="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs_uuid" "${DESTDIR}/boot/efi" 2>/dev/null)"
++		UEFISYS_PART_FS_LABEL="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="fs_label" "${DESTDIR}/boot/efi" 2>/dev/null)"
++		UEFISYS_PART_DRIVE="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="drive" "${DESTDIR}/boot/efi" 2>/dev/null)"
++		UEFISYS_PART_HINTS_STRING="$(LD_LIBRARY_PATH="${DESTDIR}/usr/lib:${DESTDIR}/lib" "${DESTDIR}/usr/bin/grub2-probe" --target="hints_string" "${DESTDIR}/boot/efi" 2>/dev/null)"
+ 	fi
+ 	########
+ 	## udev 180 onwards
+@@ -2977,20 +2977,17 @@
+ 	# freeze and unfreeze xfs filesystems to enable grub(2) installation on xfs filesystems
+ 	freeze_xfs
+ 	chroot_mount
+-	chroot "${DESTDIR}" "/usr/bin/grub-install" \
+-		--directory="/usr/lib/grub/i386-pc" \
+-		--target="i386-pc" \
+-		--boot-directory="/boot" \
++	chroot "${DESTDIR}" "/usr/sbin/grub2-install" \
+ 		--recheck \
+ 		--debug \
+ 		"${bootdev}" &>"/tmp/grub_bios_install.log"
+ 	chroot_umount
+-	mkdir -p "${DESTDIR}/boot/grub/locale"
+-	cp -f "${DESTDIR}/usr/share/locale/en@quot/LC_MESSAGES/grub.mo" "${DESTDIR}/boot/grub/locale/en.mo"
+-	if [[ -e "${DESTDIR}/boot/grub/i386-pc/core.img" ]]; then
+-		GRUB_PREFIX_DIR="boot/grub"
++	#mkdir -p "${DESTDIR}/boot/grub/locale"
++	#cp -f "${DESTDIR}/usr/share/locale/en@quot/LC_MESSAGES/grub.mo" "${DESTDIR}/boot/grub/locale/en.mo"
++	if [[ -e "${DESTDIR}/boot/grub2/i386-pc/core.img" ]]; then
++		GRUB_PREFIX_DIR="boot/grub2"
+ 		GRUB_BIOS="1"
+-		#dogrub_config
++	#	dogrub_config
+ 	swap_partition=$(swapon -s | grep dev -m1 | cut -d" " -f1)
+ 		dogrub_mkconfig
+ 		GRUB_BIOS=""
+@@ -3004,7 +3001,7 @@
+ dogrub_uefi_common(){
+ 	dogrub_common_before
+ 	chroot_mount
+-	chroot "${DESTDIR}" "/usr/bin/grub-install" \
++	chroot "${DESTDIR}" "/usr/sbin/grub2-install" \
+ 		--directory="/usr/lib/grub/${_UEFI_ARCH}-efi" \
+ 		--target="${_UEFI_ARCH}-efi" \
+ 		--efi-directory="/boot/efi" \
+diff -Nuar manjaro-cli-installer-master.orig/data/cli-installer.desktop manjaro-cli-installer-master/data/cli-installer.desktop
+--- manjaro-cli-installer-master.orig/data/cli-installer.desktop	2016-09-11 21:07:10.000000000 +0300
++++ manjaro-cli-installer-master/data/cli-installer.desktop	2016-09-19 12:30:48.878537962 +0300
+@@ -1,9 +1,9 @@
+ [Desktop Entry]
+-Name=Install Manjaro Linux (cli)
+-Name[pl]=Zainstaluj Manjaro Linux (cli)
++Name=Install Pisi Linux
++Name[pl]=Zainstaluj Pisi Linux (cli)
+ GenericName=Cli Installer
+ Comment=Install the operating system to disk
+-Comment[pl]=Zainstaluj Manjaro Linux na swoim komputerze
++Comment[pl]=Zainstaluj Pisi Linux na swoim komputerze
+ Exec=sudo /usr/bin/cli-installer
+ Icon=utilities-terminal
+ Terminal=true
+diff -Nuar manjaro-cli-installer-master.orig/lib/util-inst.sh manjaro-cli-installer-master/lib/util-inst.sh
+--- manjaro-cli-installer-master.orig/lib/util-inst.sh	2016-09-11 21:07:10.000000000 +0300
++++ manjaro-cli-installer-master/lib/util-inst.sh	2016-09-19 12:37:15.043003787 +0300
+@@ -486,7 +486,7 @@
+ 	( \
+ 		touch /tmp/setup-mkinitcpio-running
+ 		echo "${_runninginitcpio}" >> /tmp/mkinitcpio.log; \
+-		chroot "$DESTDIR" /usr/bin/mkinitcpio -p "${kernel}" >>/tmp/mkinitcpio.log 2>&1
++		chroot "$DESTDIR" /usr/bin/mkinitcpio -p "linux" >>/tmp/mkinitcpio.log 2>&1
+ 		echo >> /tmp/mkinitcpio.log
+ 		rm -f /tmp/setup-mkinitcpio-running
+ 	) &
+@@ -509,8 +509,9 @@
+ 	mkdir -p ${DESTDIR}
+ 	#unsquashfs -f -d ${DESTDIR} ${img_path}/root-image.sqfs
+ 	UNSQUASH_TARGET=${DESTDIR}
+-	SQF_FILE=root-image.sqfs
+-	run_unsquashfs
++	SQF_FILE=rootfs.sqfs
++	unsquashfs -f -d ${DESTDIR} ${img_path}/rootfs.sqfs
++	#run_unsquashfs
+ 	echo $? > /tmp/.install-retcode
+ 	if [ $(cat /tmp/.install-retcode) -ne 0 ]; then
+ 		echo -e "\n${_installationfail}" >>/tmp/unsquasherror.log
+@@ -524,7 +525,8 @@
+ 		#unsquashfs -f -d ${DESTDIR} ${img_path}/de-image.sqfs
+ 		UNSQUASH_TARGET=${DESTDIR}
+ 		SQF_FILE=${DESKTOP_IMG}.sqfs
+-		run_unsquashfs
++		#run_unsquashfs
++		unsquashfs -f -d ${DESTDIR} ${img_path}/desktop.sqfs
+ 		echo $? > /tmp/.install-retcode
+ 		if [ $(cat /tmp/.install-retcode) -ne 0 ]; then
+ 			echo -e "\n${_installationfail}" >>/tmp/unsquasherror.log
+@@ -577,7 +579,7 @@
+ 	CP_SOURCE=/source/root-image
+ 	mkdir -p ${CP_SOURCE}
+ 	CP_TARGET=${DESTDIR}
+-	SQF_FILE=root-image.sqfs
++	SQF_FILE=rootfs.sqfs
+ 	run_mount_sqf
+ 	run_cp
+ 	run_umount_sqf
+@@ -644,7 +646,7 @@
+ #    if [[ "${SQFPARAMETER}" == "yes" ]]; then
+ #       installsystem_unsquash
+ #    else
+-	installsystem_cp
++	installsystem_unsquash
+ #    fi
+ }
+ 
+@@ -747,13 +749,13 @@
+ 	chroot_mount
+ 
+ 	# prepare grub.cfg
+-	chroot ${DESTDIR} mkdir -p /boot/grub/locale
+-	chroot ${DESTDIR} cp /usr/share/locale/en@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
++	#chroot ${DESTDIR} mkdir -p /boot/grub/locale
++	#chroot ${DESTDIR} cp /usr/share/locale/en@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
+ 
+ 	# remove splash if no plymouth was found
+-	if [ ! -e ${DESTDIR}/etc/plymouth/plymouthd.conf ] ; then
+-		sed -i -e "s,GRUB_CMDLINE_LINUX_DEFAULT=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"`cat $DESTDIR/etc/default/grub | grep GRUB_CMDLINE_LINUX_DEFAULT | cut -d'"' -f2 | sed s'/splash//'g | sed s'/quiet//'g`\",g" $DESTDIR/etc/default/grub
+-	fi
++	#if [ ! -e ${DESTDIR}/etc/plymouth/plymouthd.conf ] ; then
++	#	sed -i -e "s,GRUB_CMDLINE_LINUX_DEFAULT=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"`cat $DESTDIR/etc/default/grub | grep GRUB_CMDLINE_LINUX_DEFAULT | cut -d'"' -f2 | sed s'/splash//'g | sed s'/quiet//'g`\",g" $DESTDIR/etc/default/grub
++	#fi
+ 
+ 	# generate resume string for suspend to disk
+ 	[ -z "${swap_partition}" -o "${swap_partition}" = "NONE" ] || sed -i -e "s,GRUB_CMDLINE_LINUX_DEFAULT=.*,GRUB_CMDLINE_LINUX_DEFAULT=\"`cat $DESTDIR/etc/default/grub | grep GRUB_CMDLINE_LINUX_DEFAULT | cut -d'"' -f2` resume=UUID=`blkid -s UUID -o value -p ${swap_partition}`\",g" $DESTDIR/etc/default/grub
+@@ -764,7 +766,7 @@
+ 	fi
+ 
+ 	# create grub.cfg
+-	chroot ${DESTDIR} grub-mkconfig -o "/${GRUB_PREFIX_DIR}/grub.cfg" >> /tmp/grub.log 2>&1
++	chroot ${DESTDIR} grub2-mkconfig -o "/${GRUB_PREFIX_DIR}/grub.cfg" >> /tmp/grub.log 2>&1
+ 
+ 	chroot_umount
+ }

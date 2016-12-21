@@ -1,0 +1,65 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ruby</Name>
+        <Homepage>http://www.ruby-lang.org/en/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Ruby</License>
+        <IsA>app:console</IsA>
+        <Summary>An object-oriented scripting language</Summary>
+        <Description>Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</Description>
+        <Archive sha1sum="de97ec6132ac76bb7c0f92b5ca4682138093af1b" type="tarbz2">ftp://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.2.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>tcltk</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ruby</Name>
+        <RuntimeDependencies>
+            <Dependency>db</Dependency>
+            <Dependency>gmp</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>gdbm</Dependency>
+            <Dependency>tcltk</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>libyaml</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/ruby/2.2.0/</Path>
+            <Path fileType="library">/usr/lib/ruby/site_ruby/</Path>
+            <Path fileType="library">/usr/lib/ruby/vendor_ruby/</Path>
+            <Path fileType="library">/usr/lib/ruby/libruby-static.a</Path>
+            <Path fileType="library">/usr/lib/libruby.so.2.2</Path>
+            <Path fileType="library">/usr/lib/libruby.so.2.2.0</Path>
+            <Path fileType="library">/usr/lib/libruby-static.a</Path>
+            <Path fileType="library">/usr/lib/libruby.so</Path>
+            <Path fileType="doc">/usr/share/ri</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin/gem</Path>
+            <Path fileType="library">/usr/lib/ruby/gems</Path>
+            <Path fileType="data">/usr/share/ri/2.2.0/system/Gem</Path>
+            <Path fileType="header">/usr/include</Path>            
+            <Path fileType="header">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.2.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

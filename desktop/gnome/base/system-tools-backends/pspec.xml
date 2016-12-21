@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>system-tools-backends</Name>
+        <Homepage>http://system-tools-backends.freedesktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2.0</License>
+        <Icon>system-tools-backends</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>The System Tools Backends (s-t-b for short) are a set of cross-platform modules for Linux, FreeBSD and other Unix systems.</Summary>
+        <Description>The System Tools Backends (s-t-b for short) are a set of cross-platform modules for Linux, FreeBSD and other Unix systems. The backends provide an common DBus interface to all platforms to modify or read the system configuration in a distro independent fashion.</Description>
+        <Archive sha1sum="509b9644c10d7c268b7935287612c4630ab9b42d" type="tarbz2">http://ftp.gnome.org/pub/GNOME/sources/system-tools-backends/2.10/system-tools-backends-2.10.2.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>system-tools-backends</Name>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="config">/etc/</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/system-tools-backends-2.0</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.10.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

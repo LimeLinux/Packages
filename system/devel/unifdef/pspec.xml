@@ -1,0 +1,37 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>unifdef</Name>
+        <Homepage>http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/unifdef/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <Summary>The unifdef utility selectively processes conditional cpp(1) directives</Summary>
+        <Description>The unifdef utility selectively processes conditional cpp(1) directives. It removes from a file both the directives and any additional text that they specify should be removed, while otherwise leaving the file alone.</Description>
+        <Archive sha1sum="8bc4e4feb914ff4aa164b23230b51d3f526559ac" type="targz">http://dotat.at/prog/unifdef/unifdef-2.10.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>unifdef</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/unifdef</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.10</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

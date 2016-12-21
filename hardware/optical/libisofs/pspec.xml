@@ -1,0 +1,40 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libisofs</Name>
+        <Homepage>http://libburnia-project.org</Homepage>
+        <License>GPLv2</License>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <PartOf>hardware.optical</PartOf>
+        <IsA>library</IsA>
+        <Summary>A library for creating ISO disc images</Summary>
+        <Description>libisofs is a library that handles creating ISO disc image files. It is intended to work together with libburn to write these images to discs</Description>
+        <Archive sha1sum="60e3dfef3c239019ff9ecefebb0114e4febc273c" type="targz">http://files.libburnia-project.org/releases/libisofs-1.4.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>libisofs</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.4.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

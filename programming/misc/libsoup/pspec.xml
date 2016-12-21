@@ -1,0 +1,61 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libsoup</Name>
+        <Homepage>http://live.gnome.org/LibSoup</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>An HTTP library implementation in C</Summary>
+        <Description>libsoup is an HTTP client/server library for GNOME.</Description>
+        <Archive sha1sum="8bd422bd5d19b5e2630bbb35dfb06354b1d56442" type="tarxz">mirrors://gnome/libsoup/2.50/libsoup-2.50.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>tls</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>glib-networking</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+            <Dependency>libxml2</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libsoup</Name>
+        <RuntimeDependencies>
+             <Dependency>libxml2</Dependency>
+             <Dependency>glib-networking</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale/</Path>
+            <Path fileType="library">/usr/lib/girepository-1.0/Soup-2.4.typelib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="header">/usr/share/gir-1.0</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="library">/usr/lib/lib*gnome*</Path>
+            <Path fileType="library">/usr/lib/girepository-1.0/SoupGNOME-2.4.typelib</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.50.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

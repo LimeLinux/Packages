@@ -1,0 +1,84 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>wireshark</Name>
+        <Homepage>http://www.wireshark.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>wireshark</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A commercial-quality network traffic analyzer</Summary>
+        <Description>Wireshark is a commercial-quality network traffic analyzer useful to investigate packets on the network.</Description>
+        <Archive sha1sum="2f7fdef7d2ce829de683917c4ecf8fc0e23fa4a4" type="tarbz2">https://www.wireshark.org/download/src/wireshark-1.12.12.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>gnutls</Dependency>
+            <Dependency>c-ares</Dependency>
+            <Dependency>libpcap</Dependency>
+            <Dependency>net-snmp</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>portaudio</Dependency>
+            <Dependency>libsmi</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>geoip</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libnl</Dependency>
+        </BuildDependencies>
+        <Patches>
+	  <!--<Patch level="1">wireshark-1.10.3-gtk3.10-compile.patch</Patch>-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>wireshark</Name>
+        <RuntimeDependencies>
+            <Dependency>lua</Dependency>
+            <Dependency>sbc</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libnl</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>geoip</Dependency>
+            <Dependency>geoip</Dependency>
+            <Dependency>libsmi</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>c-ares</Dependency>
+            <Dependency>libpcap</Dependency>
+            <Dependency>net-snmp</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>portaudio</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/wireshark</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+	    <Path fileType="header">/usr/include/wireshark</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.12.12</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

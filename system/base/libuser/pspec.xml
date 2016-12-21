@@ -1,0 +1,55 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libuser</Name>
+        <Homepage>https://fedorahosted.org/libuser</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A user and group account administration library</Summary>
+        <Description>libuser implements a standardized interface for manipulating and administering user and group accounts. The library uses pluggable back-ends to interface to its data sources.</Description>
+        <Archive sha1sum="e0fe60dd38f3b5777d0a4ad664725eddd18ef310" type="tarxz">https://fedorahosted.org/releases/l/i/libuser/libuser-0.62.tar.xz</Archive>
+        <BuildDependencies>
+                <Dependency>pam</Dependency>
+                <Dependency>popt</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>python</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libuser</Name>
+        <RuntimeDependencies>
+                <Dependency>pam</Dependency>
+                <Dependency>popt</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>python</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.62</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

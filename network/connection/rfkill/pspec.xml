@@ -1,0 +1,37 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rfkill</Name>
+        <Homepage>http://wireless.kernel.org/en/users/Documentation/rfkill</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>app:console</IsA>
+        <Summary>Small tool to query rfkill devices</Summary>
+        <Description>rfkill is a small tool to query the state of rfkill switches, buttons and subsytem interfaces.</Description>
+        <Archive sha1sum="1bfd0f832b6bbf779ce486d40981d48210d9a15c" type="tarbz2">http://downloads.sourceforge.net/project/kongoni/kongoni/dist/rfkill-0.4.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>rfkill</Name>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

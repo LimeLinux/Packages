@@ -1,0 +1,82 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>baselayout</Name>
+        <Homepage>http://www.pisilinux.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <IsA>data</IsA>
+        <Summary>Filesystem baselayout</Summary>
+        <Description>baselayout creates the Pisi Linux Linux main filesystem hierarchy.</Description>
+        <Archive sha1sum="89cb1dc3c3a2fc47c299ae6c002cad212b7fc56e" type="targz">http://source.pisilinux.org/1.0/baselayout-3.10.0.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>baselayout</Name>
+        <RuntimeDependencies>
+            <Dependency>pypolkit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable" permanent="true">/bin</Path>
+            <Path fileType="executable" permanent="true">/sbin</Path>
+            <Path fileType="library" permanent="true">/lib*</Path>
+            <Path fileType="config" permanent="true">/etc</Path>
+            <Path fileType="data" permanent="true">/etc/pisilinux-release</Path>
+            <Path fileType="data" permanent="true">/media</Path>
+            <Path fileType="data" permanent="true">/boot</Path>
+            <Path fileType="data" permanent="true">/proc</Path>
+            <Path fileType="data" permanent="true">/home</Path>
+            <Path fileType="data" permanent="true">/mnt</Path>
+            <Path fileType="data" permanent="true">/opt</Path>
+            <Path fileType="data" permanent="true">/dev</Path>
+            <Path fileType="data" permanent="true">/run</Path>
+            <Path fileType="data" permanent="true">/sys</Path>
+            <Path fileType="data" permanent="true">/srv</Path>
+            <Path fileType="data" permanent="true">/tmp</Path>
+            <Path fileType="data" permanent="true">/usr</Path>
+            <Path fileType="data" permanent="true">/var</Path>
+            <Path fileType="config">/usr/lib/tmpfiles.d/baselayout.conf</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/baselayout.conf">baselayout.conf</AdditionalFile>
+
+            <!-- Update these from fedora's setup package -->
+            <AdditionalFile owner="root" permission="0644" target="/etc/services">services</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/protocols">protocols</AdditionalFile>
+
+            <AdditionalFile owner="root" permission="0644" target="/etc/sysctl.conf">sysctl.conf</AdditionalFile>
+
+            <!-- Release file for Pisi Linux, there's another in lsb-release package -->
+            <AdditionalFile owner="root" permission="0644" target="/etc/pisilinux-release">pisilinux-release</AdditionalFile>
+
+            <!-- Should be dropped after switching to systemd as the only user is COMAR -->
+            <!--AdditionalFile owner="root" permission="0644" target="/usr/share/man/man8/start-stop-daemon.8">start-stop-daemon.8</AdditionalFile-->
+            <AdditionalFile owner="root" permission="0644" target="/etc/nsswitch.conf">nsswitch.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/securetty">securetty</AdditionalFile> 
+            <AdditionalFile owner="root" permission="0644" target="/etc/os-release">os-release</AdditionalFile> 
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
+            <COMAR script="package.py">System.Package</COMAR>
+            <COMAR script="usermgr.py">User.Manager</COMAR>
+            <COMAR script="stack.py">Network.Stack</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.10.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,49 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>elfutils</Name>
+        <Homepage>https://fedorahosted.org/elfutils/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>OpenSoftware</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>Libraries/utilities to handle ELF objects</Summary>
+        <Description>elfutils contains libraries and utilities to handle ELF objects and is a replacement for libelf.</Description>
+        <Archive sha1sum="00b678e1182c331ea75af982d666bbc38ef8b055" type="tarbz2">https://fedorahosted.org/releases/e/l/elfutils/0.166/elfutils-0.166.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>bzip2</Dependency>
+            <Dependency>xz</Dependency>
+            <Dependency>zlib</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>elfutils</Name>
+        <RuntimeDependencies>
+            <Dependency>xz</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.166</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

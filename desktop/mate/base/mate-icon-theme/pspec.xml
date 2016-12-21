@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-icon-theme</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <License>LGPLv2+</License>
+        <IsA>data</IsA>
+        <Summary>Mate icon theme</Summary>
+        <Description>mate-icon-theme package contains the default icon theme used by the Mate desktop.</Description>
+        <Archive sha1sum="e48ab88a0bf86ca99b1a7fbce8cf6ac4360c5443" type="tarxz">mirrors://mate/mate-icon-theme-1.16.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>mate-common</Dependency>
+            <Dependency>icon-naming-utils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-icon-theme</Name>
+        <RuntimeDependencies>
+            <Dependency>mate-common</Dependency>
+            <Dependency>icon-naming-utils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/pkgconfig/mate-icon-theme.pc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.16.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

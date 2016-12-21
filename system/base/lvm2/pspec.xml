@@ -1,0 +1,56 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lvm2</Name>
+        <Homepage>http://sources.redhat.com/lvm/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Userland logical volume management tools</Summary>
+        <Description>LVM2 includes all of the support for handling read/write operations physical and logical volumes.</Description>
+        <Archive sha1sum="7281dba2a295d13efe854ad06c0baf06c2ae476b" type="targz">ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.160.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>util-linux</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>lvm2</Name>
+        <RuntimeDependencies>
+            <Dependency>readline</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/var</Path>
+            <Path fileType="data">/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <AdditionalFiles>
+             <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/lvm2.conf">tmpfiles.conf</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.02.160</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,73 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>DirectFB</Name>
+        <Homepage>http://www.directfb.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Thin library on top of the Linux framebuffer devices</Summary>
+        <Description>DirectFB is a thin library that provides hardware graphics acceleration, input device handling and abstraction, integrated windowing system with support for translucent windows and multiple display layers.</Description>
+        <Archive sha1sum="205d824906906303db9b096cc2d3bea0662e8860" type="targz">http://sources.webos-ports.org/downloads/DirectFB-1.7.7.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>giflib</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libmng</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>libvdpau</Dependency>
+            <Dependency>libmad</Dependency>
+            <Dependency>libvorbis</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>DirectFB</Name>
+        <RuntimeDependencies>
+            <Dependency>freetype</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libvdpau</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>libdrm</Dependency>
+	    <Dependency>libpng</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.7.7</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

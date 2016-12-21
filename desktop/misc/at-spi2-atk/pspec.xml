@@ -1,0 +1,46 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>at-spi2-atk</Name>
+        <Homepage>http://www.linuxfoundation.org/collaborate/workgroups/accessibility</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2+</License>
+        <IsA>service</IsA>
+        <Summary>Protocol definitions and daemons for D-Bus at-spi</Summary>
+        <Description>at-spi allows assistive technologies to access GTK-based applications. Essentially it exposes the internals of applications over D-Bus for automation.</Description>
+        <Archive sha1sum="b3b8db5f1482b3fba2ed4a9528a7eac98515b607" type="tarxz">mirrors://gnome/at-spi2-atk/2.16/at-spi2-atk-2.16.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>libXtst</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>at-spi2-atk</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.16.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

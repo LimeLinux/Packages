@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-cryptography</Name>
+        <Homepage>https://pypi.python.org/pypi/cryptography</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>apache</License>
+        <IsA>library</IsA>
+        <Summary>Cryptographic recipes and primitives to Python developers</Summary>
+        <Description>A package designed to expose cryptographic recipes and primitives to Python developers</Description>
+        <Archive sha1sum="f769cd5b007b3e1699eeefd6c4a9259ae97908b6" type="targz">https://pypi.io/packages/source/c/cryptography/cryptography-1.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python-setuptools</Dependency>
+            <Dependency>python-cffi</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python-cryptography</Name>
+        <RuntimeDependencies>
+            <Dependency>python-six</Dependency>
+            <Dependency>python-enum34</Dependency>
+            <Dependency>python-cffi</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python2.7/site-packages</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

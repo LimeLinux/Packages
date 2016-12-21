@@ -1,0 +1,57 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libimobiledevice</Name>
+        <Homepage>http://www.libimobiledevice.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2+</License>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Library for connecting to mobile devices</Summary>
+        <Description>libimobiledevice is a library for connecting to mobile devices including phones and music players</Description>
+        <Archive sha1sum="a8e3f21180b1d6df754d04a4080a29cf6891e701" type="tarbz2">http://www.libimobiledevice.org/downloads/libimobiledevice-1.2.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>gnutls</Dependency>
+            <Dependency>usbmuxd</Dependency>
+            <Dependency>libplist</Dependency>
+            <Dependency>libtasn1</Dependency>
+            <Dependency>libgcrypt</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libimobiledevice</Name>
+        <RuntimeDependencies>
+            <Dependency>gnutls</Dependency>
+            <Dependency>usbmuxd</Dependency>
+            <Dependency>libplist</Dependency>
+            <Dependency>libtasn1</Dependency>
+            <Dependency>libgcrypt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+            <Path fileType="doc">/usr/share/doc/libimobiledevice</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.2.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xorg-video-armsoc-odroid</Name>
+        <Homepage>https://github.com/mdrjr/xf86-video-armsoc/tree/r4p0</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+	<ExcludeArch>x86_64</ExcludeArch>
+        <License>GPLV2</License>
+        <IsA>driver</IsA>
+        <Summary>Open-source X.org graphics driver for ARM graphics</Summary>
+        <Description>Open-source X.org graphics driver for ARM graphics</Description>
+	<Archive sha1sum="097004a204586386c622431b5ca91117b244b36f" type="binary">https://raw.githubusercontent.com/bferturk/temel/master/README.md</Archive>        <BuildDependencies>
+            <Dependency>git</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xorg-video-armsoc-odroid</Name>
+        <!--RuntimeDependencies>
+            <Dependency>xorg-server</Dependency>
+        </RuntimeDependencies-->
+        <Files>
+	    <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>20160810</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

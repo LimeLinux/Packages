@@ -1,0 +1,55 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openjpeg</Name>
+        <Homepage>http://www.openjpeg.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>JPEG2000 decoding library</Summary>
+        <Description>openjpeg is an open-source JPEG 2000 codec written in C. It has been developed in order to promote the use of JPEG 2000, the new still-image compression standard from the Joint Photographic Experts Group (JPEG).</Description>
+        <Archive sha1sum="496e99ff1d37b73bbce6a066dd9bd3576ebca0a2" type="targz">http://downloads.sourceforge.net/project/openjpeg.mirror/1.5.2/openjpeg-1.5.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>tiff</Dependency>
+            <Dependency>doxygen</Dependency>
+            <Dependency>libpng</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">openjpeg-20070717svn-mqc-optimize.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>openjpeg</Name>
+        <RuntimeDependencies>
+            <Dependency>libpng</Dependency>
+            <Dependency>tiff</Dependency>
+	    <Dependency>lcms2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/pkgconfig/</Path>
+            <Path fileType="data">/usr/share/openjpeg-1.5</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.5.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

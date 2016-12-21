@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qemu-user-static</Name>
+        <Homepage>http://wiki.qemu.org/Index.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <Summary>A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.</Summary>
+        <Description>A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.</Description>
+        <Archive sha1sum="b291757d5a942609f2f75f576339adfd8ddb9936" type="binary">http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_2.5+dfsg-4~bpo8+1_amd64.deb</Archive>
+    </Source>
+
+    <Package>
+        <Name>qemu-user-static</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/var/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

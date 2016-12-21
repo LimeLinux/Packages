@@ -1,0 +1,55 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dmraid</Name>
+        <Homepage>http://people.redhat.com/~heinzm/sw/dmraid</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Device-Mapper Software RAID support tool and library</Summary>
+        <Description>Device-Mapper Software RAID support tool and library</Description>
+        <Archive sha1sum="162b6173b91a0121a52402d2ed939b43d74ff605" type="tarbz2">http://launchpad.net/dmraid/1.0/1.0.0.rc16-3/+download/dmraid-1.0.0.rc16-3.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>lvm2</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--<Patch>dmraid-destdir-fix.patch</Patch>
+            <Patch level="1">dmraid-fix.patch</Patch>
+            <Patch level="1">dmraid-unsigned.patch</Patch>
+            <Patch level="1">dmraid-as-needed.patch</Patch>-->
+            <Patch level="1">dmraid-diet.patch</Patch>
+            <Patch level="2">dmraid-1.0.0_rc16-return-all-sets.patch</Patch>
+            <Patch level="0">dmraid-1.0.0_rc16-static-build-fixes.patch</Patch>
+            <Patch level="2">dmraid-1.0.0_rc16-undo-p-rename.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>dmraid</Name>
+        <RuntimeDependencies>
+            <Dependency>lvm2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.0_rc16</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

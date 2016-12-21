@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-numpy</Name>
+        <Homepage>http://numeric.scipy.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>library</IsA>
+        <Summary>The fundamental package needed for scientific computing with Python</Summary>
+        <Description>Numpy contains a powerful N-dimensional array object, sophisticated (broadcasting) functions, tools for integrating C/C++ and Fortran code, and useful linear algebra, Fourier transform, and random number capabilities.</Description>
+        <Archive sha1sum="8fe1d5f36bab3f1669520b4c7d8ab59a21a984da" type="targz">mirrors://sourceforge/numpy/numpy-1.8.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>blas</Dependency>
+            <Dependency>python-nose</Dependency>
+            <Dependency>lapack</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python-numpy</Name>
+        <RuntimeDependencies>
+            <Dependency>blas</Dependency>
+            <Dependency>lapack</Dependency>
+            <Dependency>python-nose</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.8.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

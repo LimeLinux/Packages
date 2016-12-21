@@ -1,0 +1,71 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xterm</Name>
+        <Homepage>http://invisible-island.net/xterm</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <Icon>terminal</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Terminal emulator for the X Window System</Summary>
+        <Description>The xterm program is a terminal emulator for the X Window System. It provides DEC VT102 and Tektronix 4014 compatible terminals for programs that can't use the window system directly.</Description>
+        <Archive sha1sum="1b3bb4c57b9c362bc0fa113c95cbace370481685" type="targz">ftp://invisible-island.net/xterm/xterm-326.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libXaw</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>xorg-app</Dependency>
+            <Dependency>libXpm</Dependency>
+            <Dependency>libX11</Dependency>
+        </BuildDependencies>
+        <Patches>
+<!--             <Patch level="1">xterm-226-man-page_paths.patch</Patch> -->
+<!--             <Patch level="1">xterm-238-windowfontops.patch</Patch> -->
+
+            <!-- ftp://invisible-island.net/xterm/16colors.txt -->
+            <Patch>16colors.txt.diff</Patch>
+
+            <!-- Default resources for Pardus -->
+            <Patch>defaults.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>xterm</Name>
+        <RuntimeDependencies>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libXaw</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>xorg-app</Dependency>
+            <Dependency>libXpm</Dependency>
+            <Dependency>libX11</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/X11</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>326</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

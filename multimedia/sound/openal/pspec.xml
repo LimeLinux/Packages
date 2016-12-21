@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openal</Name>
+        <Homepage>http://kcat.strangesoft.net/openal.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Open Audio Library is a vendor-neutral API for interactive spatialized audio</Summary>
+        <Description>OpenAL is a cross-platform 3D audio API appropriate for use with gaming applications and many other types of audio applications. The basic OpenAL objects are a Listener, a Source, and a Buffer.</Description>
+        <Archive sha1sum="5d6151b544caaf53a15b798a495308e421044b0d" type="tarbz2">http://kcat.strangesoft.net/openal-releases/openal-soft-1.17.2.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>alsa-lib</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>openal</Name>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc/openal</Path>
+            <Path fileType="data">/usr/share/openal</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.17.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

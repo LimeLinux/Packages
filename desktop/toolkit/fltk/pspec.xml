@@ -1,0 +1,71 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fltk</Name>
+        <Homepage>http://www.fltk.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>FLTK (pronounced "fulltick") is a cross-platform C++ GUI toolkit</Summary>
+        <Description>FLTK provides modern GUI functionality without the bloat and supports 3D graphics via OpenGL and its built-in GLUT emulation. FLTK is designed to be small and modular enough to be statically linked, but works fine as a shared library. FLTK also includes an excellent UI builder called FLUID that can be used to create applications in minutes.</Description>
+        <Archive sha1sum="873aac49b277149e054b9740378e2ca87b0bd435" type="targz">ftp://ftp.uwsg.indiana.edu/linux/gentoo/distfiles/fltk-1.3.3-source.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">tigervnc.patch</Patch>
+            <Patch level="1">fltk-config-dynlibs.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>fltk</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/etc/env.d</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/env.d/99fltk">99fltk</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.3.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

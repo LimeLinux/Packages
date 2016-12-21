@@ -1,0 +1,59 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>orca</Name>
+        <Homepage>https://code.google.com/p/accounts-sso</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <Summary>Accounts and SSO (Single Sign-On) framework</Summary>
+        <Description>Accounts and SSO (Single Sign-On) framework for Linux and POSIX based platforms.</Description>
+        <Archive sha1sum="f7715a3ccbcd187fbfc420e1a592b62dc37caf35" type="tarxz">mirrors://gnome/orca/3.21/orca-3.21.92.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>brltty</Dependency>
+            <Dependency>itstool</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>liblouis</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>orca</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>brltty</Dependency>
+            <Dependency>liblouis</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>python-pyatspi</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/etc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.21.92</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

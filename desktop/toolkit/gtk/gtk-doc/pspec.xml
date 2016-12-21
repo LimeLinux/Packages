@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gtk-doc</Name>
+        <Homepage>http://www.gtk.org/gtk-doc</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <License>FDL-1.1</License>
+        <IsA>app:console</IsA>
+        <Summary>GTK+ API documentation generator</Summary>
+        <Description>Gtk-Doc is typically used to document the public API of GTK+ and GNOME libraries, but it can also be used to document application code.</Description>
+        <Archive sha1sum="bd93ff19403805b4faddcd86b58a6f338ce1fd6d" type="tarxz">mirrors://gnome/gtk-doc/1.25/gtk-doc-1.25.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>itstool</Dependency>
+            <Dependency>sgml-common</Dependency>
+            <Dependency>docbook-xml</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>libxslt</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gtk-doc</Name>
+        <RuntimeDependencies>
+            <Dependency>docbook-xml</Dependency>
+            <Dependency>sgml-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/omf</Path>
+            <Path fileType="data">/var/lib</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.25</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

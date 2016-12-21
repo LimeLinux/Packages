@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libaio</Name>
+        <Homepage>http://lse.sourceforge.net/io/aio.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Linux-native asynchronous I/O access library</Summary>
+        <Description>libaio has a richer API and capability set than the simple POSIX async I/O facility.</Description>
+        <Archive sha1sum="b772e567e7089bb3ca405b16370f8b1a4997c0b3" type="tarbz2">http://enterprise-storage-os.googlecode.com/files/libaio-0.3.109.tar.bz2</Archive>
+        <Patches>
+            <Patch>libaio-0.3.106-build.patch</Patch>
+            <!--Patch level="1">libaio-install-to-slash.patch</Patch-->
+            <Patch level="1">libaio-0.3.107-ar-ranlib.patch</Patch>
+            <Patch level="1">92_unused_warnings.patch</Patch>
+            <Patch level="0">libaio-0.3.109-testcase-8.patch</Patch>
+            <Patch level="1">libaio-0.3.109-generic-arch.patch</Patch>
+            <Patch level="1">libaio-0.3.109-unify-bits-endian.patch</Patch>
+            <Patch level="1">libaio-0.3.109-x32.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libaio</Name>
+        <Files>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="man">/usr/share/man/man3</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.3.109</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

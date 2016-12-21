@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>swig</Name>
+        <Homepage>http://www.swig.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3+</License>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <Summary>Connects C/C++/Objective C to some high-level programming languages</Summary>
+        <Description>Simplified Wrapper and Interface Generator, SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages. SWIG is used with different types of languages including common scripting languages such as Perl, PHP, Python, Tcl, Ruby and PHP</Description>
+        <Archive sha1sum="e695a14acf39b25f3ea2d7303e23e39dfe284e31" type="targz">mirrors://sourceforge/swig/swig-3.0.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>ruby</Dependency>
+            <Dependency>libpcre</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>perl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>swig</Name>
+        <RuntimeDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>libpcre</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/swig</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.0.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

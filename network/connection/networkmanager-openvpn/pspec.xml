@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>networkmanager-openvpn</Name>
+        <Homepage>http://projects.gnome.org/NetworkManager</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>NetworkManager VPN integration for OpenVPN</Summary>
+        <Description>NetworkManager-openvpn contains software for integrating the openvpn VPN software with NetworkManager and the GNOME desktop.</Description>
+        <Archive sha1sum="9c15a26cb1d8b16412c9166168ddc5049d63481d" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/NetworkManager-openvpn/1.2/NetworkManager-openvpn-1.2.6.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>network-manager-applet</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>networkmanager-openvpn</Name>
+        <RuntimeDependencies>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>openvpn</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib/NetworkManager</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/gnome-vpn-properties</Path>
+            <Path fileType="data">/etc/dbus-1</Path>
+            <Path fileType="data">/etc/NetworkManager/VPN</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.2.6</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

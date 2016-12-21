@@ -1,0 +1,39 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>liblogging</Name>
+        <Homepage>http://www.liblogging.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD-2</License>
+        <IsA>library</IsA>
+        <Summary>Easy to use, portable, open source library for system logging</Summary>
+        <Description>Liblogging offers an enhanced replacement for the syslog() call, but retains its ease of use.</Description>
+        <Archive sha1sum="e202bf9412747ecd384678e8b3024a4646d45c2f" type="targz">http://download.rsyslog.com/liblogging/liblogging-1.0.5.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>liblogging</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/liblogging</Path>
+            <Path fileType="header">/usr/include/liblogging/stdlog.h</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

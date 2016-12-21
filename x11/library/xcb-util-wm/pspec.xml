@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xcb-util-wm</Name>
+        <Homepage>http://xcb.freedesktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>A number of libraries which sit on top of libxcb</Summary>
+        <Description>The xcb-util-wm module provides a number of libraries which sit on top of libxcb, the core X protocol library, and some of the extension libraries.</Description>
+        <Archive sha1sum="7006c52b961c123355320bfc30477cdf90c8bbb7" type="tarbz2">http://xcb.freedesktop.org/dist/xcb-util-wm-0.4.1.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>util-macros</Dependency>
+            <Dependency>libxcb</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xcb-util-wm</Name>
+        <RuntimeDependencies>
+            <Dependency>libxcb</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.4.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

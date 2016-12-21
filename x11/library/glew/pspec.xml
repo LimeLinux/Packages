@@ -1,0 +1,54 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>glew</Name>
+        <Homepage>http://glew.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <License>GLX</License>
+        <License>SGI-B</License>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>OpenGL Extension Wrangler Library</Summary>
+        <Description>OpenGL Extension Wrangler Library (GLEW) is a cross-platform C/C++ extension loading library. GLEW provides efficient run-time mechanisms for determining which OpenGL extensions are supported on the target platform. OpenGL core and extension functionality is exposed in a single header file.</Description>
+        <Archive sha1sum="6e15c84f7e1fad34cd3679f784a233744ddf048f" type="targz">mirrors://sourceforge/glew/2.0.0/glew-2.0.0.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>mesa-glu</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Dont change order of patch, otherwise "add_bin_target" cannot be applied-->
+            <Patch level="1">add_bin_target.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>glew</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>mesa-glu</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.0.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

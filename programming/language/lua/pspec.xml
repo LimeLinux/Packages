@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lua</Name>
+        <Homepage>http://www.lua.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A light-weight programming language</Summary>
+        <Description>lua is a powerful light-weight programming language designed for extending applications.</Description>
+        <Archive sha1sum="a0341bc3d1415b814cc738b2ec01ae56045d64ef" type="targz">http://www.lua.org/ftp/lua-5.3.3.tar.gz</Archive>        
+        <AdditionalFiles>
+	  <AdditionalFile target="lua.pc">lua.pc</AdditionalFile>
+        </AdditionalFiles>
+        <Patches>
+            <Patch level="1">liblua.so.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>lua</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/lua.png">lua.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.3.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

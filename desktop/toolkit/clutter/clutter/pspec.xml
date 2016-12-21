@@ -1,0 +1,77 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>clutter</Name>
+        <Homepage>http://www.clutter-project.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>OpenGL GUI toolkit</Summary>
+        <Description>clutter is an open source software library for creating fast, visually rich graphical user interfaces. The most obvious example of potential usage is in media center type applications.</Description>
+        <Archive sha1sum="f6ebdd5ab5a5d5eca4f3c0db3dfdb8e3ac305b54" type="tarxz">mirrors://gnome/clutter/1.26/clutter-1.26.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libinput</Dependency>
+            <Dependency>json-glib</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>cogl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>clutter</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>cogl</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libinput</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>json-glib</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>libXcomposite</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/girepository-1.0</Path>
+            <Path fileType="library">/usr/lib/libclutter*</Path>
+            <Path fileType="doc">/usr/share/doc/clutter</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="localedata">/usr/share/locale/</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.26.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

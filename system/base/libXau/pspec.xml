@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libXau</Name>
+        <Homepage>http://www.x.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>X.Org Au library</Summary>
+        <Description>libXau provides functions to manage X authorization files</Description>
+        <Archive sha1sum="2544aa44737897832d9bf80151f30f7e0bb4f341" type="targz">http://xorg.freedesktop.org/archive/individual/lib/libXau-1.0.8.tar.gz</Archive>
+        <Patches>
+            <Patch level="1">visibility.patch</Patch>
+        </Patches>     
+        <BuildDependencies>
+            <Dependency>util-macros</Dependency>
+            <Dependency>xorg-proto</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libXau</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include/X11</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.8</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

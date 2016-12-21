@@ -1,0 +1,57 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xrdp</Name>
+        <Homepage>http://xrdp.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Apache</License>
+        <IsA>app:console</IsA>
+        <Summary>An open source remote desktop protocol (RDP) server</Summary>
+        <Description>An open source remote desktop protocol (RDP) server</Description>
+        <Archive sha1sum="5a3eecab952d7118feda1f2e9747a735824f4c4c" type="targz">https://github.com/neutrinolabs/xrdp/archive/v0.8.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>fuse</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>tigervnc</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">config.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>xrdp</Name>
+        <RuntimeDependencies>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+	    <Dependency>tigervnc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc</Path>
+        </Files>
+	<Provides>
+            <COMAR script="postInstall.py">System.Package</COMAR>
+	</Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.8.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

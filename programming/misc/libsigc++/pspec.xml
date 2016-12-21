@@ -1,0 +1,38 @@
+
+<?xml version="1.0"?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libsigc++</Name>
+        <Homepage>http://libsigc.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Typesafe signal framework for C++</Summary>
+        <Description>libsigc++ is a library which implements a full callback system for use in widget libraries, abstract interfaces, and general programming.</Description>
+        <Archive sha1sum="33e0b0f162eababc310d927246627d62bb25cb63" type="tarxz">mirrors://gnome/libsigc++/2.4/libsigc++-2.4.1.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>libsigc++</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.4.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

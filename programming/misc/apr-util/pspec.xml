@@ -1,0 +1,65 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>apr-util</Name>
+        <Homepage>http://apr.apache.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <IsA>library</IsA>
+        <Summary>Apache portable runtime utils</Summary>
+        <Description>Apache portable runtime utils (APR-Util) contains additional utility interfaces for APR; including support for XML, database interfaces, URI parsing and more.</Description>
+        <Archive sha1sum="b00038b5081472ed094ced28bcbf2b5bb56c589d" type="tarbz2">mirrors://apache/apr/apr-util-1.5.4.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>db</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>unixODBC</Dependency>
+            <Dependency>apr</Dependency>
+            <Dependency>mariadb</Dependency>
+            <Dependency>postgresql</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>openldap</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>apr-util</Name>
+        <RuntimeDependencies>
+            <Dependency>db</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>apr</Dependency>
+            <Dependency>unixODBC</Dependency>
+            <Dependency>mariadb</Dependency>
+            <Dependency>postgresql</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>openldap</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.5.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

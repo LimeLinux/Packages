@@ -1,0 +1,81 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libcanberra</Name>
+        <Homepage>http://0pointer.de/lennart/projects/libcanberra/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>A library for generating event sounds on free desktops</Summary>
+        <Description>libcanberra is an implementation of the XDG Sound Theme and Name Specifications, for generating event sounds on free desktops, such as GNOME. It comes with several backends (ALSA, PulseAudio, OSS, GStreamer, null) and is designed to be portable.</Description>
+        <Archive sha1sum="fd4c16e341ffc456d688ed3462930d17ca6f6c20" type="tarxz">http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libogg</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libtdb</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libtdb</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>fontconfig</Dependency>
+	    <Dependency>gstreamer-next</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">fix-pthread.patch</Patch>
+            <Patch level="1">fix-underlinking.patch</Patch>
+        </Patches>
+    </Source>
+    
+    <Package>
+        <Name>libcanberra</Name>
+        <RuntimeDependencies>
+            <Dependency>libtdb</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/gdm</Path>
+            <Path fileType="data">/usr/share/gnome/</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/vala</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="library">/usr/lib/gtk-2*</Path>
+            <Path fileType="library">/usr/lib/libcanberra-gtk.so*</Path>
+            <Path fileType="library">/usr/lib/gtk-3*</Path>
+            <Path fileType="library">/usr/lib/libcanberra-gtk3*</Path>
+            <Path fileType="doc">/usr/share/doc/libcanberra-gtk3</Path>
+            <Path fileType="executable">/usr/bin/canberra-boot</Path>
+            <Path fileType="executable">/usr/bin/canberra-gtk-play</Path>
+        </Files>
+    </Package>
+    
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.30</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

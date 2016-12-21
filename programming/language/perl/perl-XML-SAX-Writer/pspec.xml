@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>perl-XML-SAX-Writer</Name>
+        <Homepage>http://search.cpan.org/~dahut/XML-SAX-Writer</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Artistic</License>
+        <IsA>library</IsA>
+        <Summary>SAX2 Writer</Summary>
+        <Description>Perl SAX is a common parser interface for XML parsers. It allows to write applications that use XML parsers.</Description>
+        <Archive sha1sum="149359419a0b3ae0cc8e4dfc636c11ed08495b8a" type="targz">http://search.cpan.org/CPAN/authors/id/P/PE/PERIGRIN/XML-SAX-Writer-0.54.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>perl-XML-NamespaceSupport</Dependency>
+            <Dependency>perl-Text-Iconv</Dependency>
+            <Dependency>perl-XML-Filter-BufferText</Dependency>
+            <Dependency>perl-XML-SAX</Dependency>
+            <Dependency>perl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>perl-XML-SAX-Writer</Name>
+        <RuntimeDependencies>
+            <Dependency>perl-XML-NamespaceSupport</Dependency>
+            <Dependency>perl-Text-Iconv</Dependency>
+            <Dependency>perl-XML-Filter-BufferText</Dependency>
+            <Dependency>perl-XML-SAX</Dependency>
+            <Dependency>perl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.54</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

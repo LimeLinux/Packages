@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libSM</Name>
+        <Homepage>http://www.x.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>X.Org SM library</Summary>
+        <Description>libSM is the X Session Management library.</Description>
+        <Archive sha1sum="e6d5dab6828dfd296e564518d2ed0a349a25a714" type="tarbz2">mirrors://xorg/individual/lib/libSM-1.2.2.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libICE</Dependency>
+            <Dependency>util-macros</Dependency>
+            <Dependency>xorg-proto</Dependency>
+            <Dependency>xtrans</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libSM</Name>
+        <RuntimeDependencies>
+            <Dependency>libICE</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/X11</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include/X11</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.2.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

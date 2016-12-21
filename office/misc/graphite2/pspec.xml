@@ -1,0 +1,40 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>graphite2</Name>
+        <Homepage>http://sourceforge.net/projects/silgraphite</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <Icon>graphite2</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>SILGraphite: rendering non-roman scripts</Summary>
+        <Description>Graphite is a project within SIL's scripts and software dev groups to provide cross-platform rendering for complex writing systems.</Description>
+        <Archive sha1sum="5b3a907fee3ce0c6efcc2b31d0d98939ec031b7d" type="targz">mirrors://sourceforge/silgraphite/graphite2-1.2.4.tgz</Archive>
+    </Source>
+
+    <Package>
+        <Name>graphite2</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/graphite2</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.2.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

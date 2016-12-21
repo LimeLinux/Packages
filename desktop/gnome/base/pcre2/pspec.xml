@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pcre2</Name>
+        <Homepage>http://www.pcre.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>A library that implements Perl 5-style regular expressions. 2nd version</Summary>
+        <Description>A library that implements Perl 5-style regular expressions. 2nd version</Description>
+        <Archive sha1sum="3be3891e1cb1caaa31fa89db51d015831f8f8089" type="tarbz2">ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre2-10.22.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>readline</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>pcre2</Name>
+        <RuntimeDependencies>
+            <Dependency>readline</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>10.22</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

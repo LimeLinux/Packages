@@ -1,0 +1,107 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>glibc</Name>
+        <Homepage>http://www.gnu.org/software/libc</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>GNU libc6 (also called glibc2) C library</Summary>
+        <Description>The GNU C library is used as the C library in the GNU system and most systems with the Linux kernel. It defines the system calls and other basic C programming language facilities.</Description>
+        <Archive sha1sum="29f5b672b042ebf799051c00d9c7e2c43344e68a" type="tarxz">http://ftp.gnu.org/gnu/libc/glibc-2.23.tar.xz</Archive>
+        <!--
+        <BuildDependencies>
+            <Dependency>kernel-headers</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>locale-no-archive.patch</Patch>
+            <Patch>glibc-2.21-roundup.patch</Patch>
+        </Patches>-->
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="locale.gen">locale.gen.txt</AdditionalFile>  
+        </AdditionalFiles>
+    </Source>
+    
+    <Package>
+        <Name>glibc</Name>
+        <RuntimeDependencies>
+            <Dependency>gettext</Dependency>
+            <Dependency>timezone</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/i18n</Path>
+            <Path fileType="localedata">/usr/lib/locale/tr_*</Path>
+            <Path fileType="localedata">/usr/share/locale/tr*</Path>
+            <Path fileType="localedata">/usr/share/locale/locale.alias</Path>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="data">/var</Path>
+            <Path fileType="localedata">/usr/lib/locale</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/*.o</Path>
+            <Path fileType="library">/usr/lib32/*.o</Path>
+            <Path fileType="library">/usr/lib/*.a</Path>
+            <Path fileType="library">/usr/lib32/*.a</Path>
+            <Path fileType="config">/etc/ld.so.conf.d/60-glibc-32bit.conf</Path>
+            <Path fileType="library">/usr/lib32</Path>
+            <Path fileType="library">/lib32</Path>
+            <Path fileType="library">/lib/ld-linux.so.2</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/locale-gen">locale-gen</AdditionalFile>  
+        </AdditionalFiles>
+    </Package>
+
+
+
+    <Package>
+        <Name>glibc-doc-32bit</Name>
+        <PartOf>system.doc</PartOf>
+        <!-- Do not write dep. any package-->
+        <Summary>32-bit doc for glibc</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">glibc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/usr/lib32/glibc32.txt</Path>
+         </Files>   
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib32/glibc32.txt">glibc32.txt</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <Package>
+        <Name>glibc-docs</Name>
+        <PartOf>system.doc</PartOf>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="info">/usr/share/info</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.23</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>testdisk</Name>
+        <Homepage>http://www.cgsecurity.org/index.html?testdisk.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Powerful free data recovery software</Summary>
+        <Description>TestDisk is a multi-platform tool to check and undelete partitions; supports reiserfs, ntfs, fat32, ext2/3 and many others. Also includes PhotoRec to recover pictures from digital camera memory.</Description>
+        <Archive sha1sum="3badfd88fea3d785f0d14ba0368866a085041c50" type="tarbz2">http://www.cgsecurity.org/testdisk-7.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>ntfs-3g</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>testdisk</Name>
+        <RuntimeDependencies>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>ntfs-3g</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons/hicolor</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>7.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

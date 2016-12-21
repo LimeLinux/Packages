@@ -1,0 +1,68 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dbus</Name>
+        <Homepage>http://dbus.freedesktop.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>AFL-2.1</License>
+        <IsA>service</IsA>
+        <Summary>A message bus system, a simple way for applications to talk to each other</Summary>
+        <Description>D-Bus supplies both a system daemon (for events such as "new hardware device added" or "printer queue changed") and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two apps to communicate directly (without going through the message bus daemon). Currently the communicating applications are on one computer, but TCP/IP option is available and remote support planned.</Description>
+        <Archive sha1sum="86f87cf42f6b9f976ddd9eef8de925ff3d3c0191" type="targz">http://dbus.freedesktop.org/releases/dbus/dbus-1.10.8.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>expat</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>doxygen</Dependency>
+            <Dependency>libcap-ng</Dependency>
+            <Dependency>xmlto</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>dbus</Name>
+        <RuntimeDependencies>
+            <Dependency>expat</Dependency>
+            <Dependency>libcap-ng</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libX11</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="config">/usr/lib/tmpfiles.d/dbus.conf</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/libexec</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/run/dbus</Path>
+            <Path fileType="data">/var/lib/dbus</Path>
+            <Path fileType="data">/lib/systemd/system</Path>
+            <Path fileType="data">/var/run</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/etc/dbus">dbus</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="postInstall.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.10.8</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+  </PISI>

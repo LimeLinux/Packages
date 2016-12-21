@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sip</Name>
+        <Homepage>http://www.riverbankcomputing.co.uk/sip</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>SIP is a tool for generating bindings for C++ classes so that they can be used by Python</Summary>
+        <Description>SIP is a tool for generating bindings for C and C++ libraries so that they can be used by Python. It takes any C or C++ libraries and converts them into Python extension modules.</Description>
+        <Archive sha1sum="6704854bc684de3b76c9db61ce54a74e7de5cf45" type="targz">mirrors://sourceforge/pyqt/sip-4.18.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>python-sip</Name>
+        <Summary>Python 2.x SIP bindings for C and C++ libraries</Summary>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>python</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.18</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

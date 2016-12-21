@@ -1,0 +1,78 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cmus</Name>
+        <Homepage>http://cmus.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Small and fast text mode music player</Summary>
+        <Description>Cmus is a small and fast text mode music player for Linux and many other UNIX like operating systems.</Description>
+        <Archive sha1sum="fd6c63c7cb405e4b4fea6a737074c454f602c202" type="targz">https://github.com/cmus/cmus/archive/v2.5.1.tar.gz</Archive>
+	<Archive sha1sum="129aba6c5f49a1137b9e7ce18c3124adcf084a1e" target="cmus-v2.5.1" type="binary">http://last-cmus.googlecode.com/files/last-cmus.py</Archive>
+        <BuildDependencies>
+            <Dependency>flac</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>libao</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libmad</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libmp4v2</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>pulseaudio</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="0">cmus-v2.4.3-ffmpeg2.0.patch</Patch>
+            <Patch level="1">cmus-2.5.0-opus-support.patch</Patch>
+	    <!--<Patch level="1">cmus-2.5.0-cdio-make-it-work-with-libcdio-0.90.patch</Patch>-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>cmus</Name>
+        <RuntimeDependencies>
+            <Dependency>flac</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>libao</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libcue</Dependency>
+            <Dependency>libmad</Dependency>
+            <Dependency>libcddb</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libmp4v2</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>pulseaudio</Dependency>
+	    <Dependency>libmpcdec</Dependency>
+            <Dependency>libcdio-paranoia</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/cmus</Path>
+            <Path fileType="data">/usr/share/zsh/site-functions</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/doc/cmus/examples/Audioscrobbler-Lastfm_Usage.txt">Audioscrobbler-Lastfm_Usage.txt</AdditionalFile>
+        </AdditionalFiles>
+   </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.5.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

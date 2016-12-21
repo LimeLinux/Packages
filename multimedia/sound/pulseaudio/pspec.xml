@@ -1,0 +1,93 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pulseaudio</Name>
+        <Homepage>http://pulseaudio.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <License>GPLv2</License>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>A networked sound server with an advanced plugin system</Summary>
+        <Description>pulseaudio is a sound server for POSIX and Win32 systems. It allows you to do advanced operations on your sound data as it passes between your application and your hardware.</Description>
+             <Archive sha1sum="d9a9d7cb667ed95ee1de4b6544d5c7444c5a0064" type="tarxz">http://freedesktop.org/software/pulseaudio/releases/pulseaudio-9.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>orc</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>doxygen</Dependency>
+            <Dependency>xcb-proto</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libtdb</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>libasyncns</Dependency>
+            <Dependency>libatomic_ops</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>libasyncns</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>pulseaudio</Name>
+        <RuntimeDependencies>
+            <Dependency>orc</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libtdb</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>libasyncns</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+	    <Dependency>libtool</Dependency>
+	    <Dependency>sbc</Dependency>
+	    <!--Dependency>jack-audio-connection-kit</Dependency-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/pulseaudio</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/var</Path>
+            <Path fileType="data">/lib</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/pulseaudio.conf">pulseaudio.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/pulseaudio">pisilinux/pulseaudio.sysconfig</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>9.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

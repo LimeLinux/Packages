@@ -1,0 +1,60 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>syslog-ng</Name>
+        <Homepage>http://www.balabit.com/network-security/syslog-ng/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <Summary>Next-generation syslogd with advanced networking and filtering capabilities</Summary>
+        <Description>Next-generation syslogd with advanced networking and filtering capabilities</Description>
+        <Archive sha1sum="db5f1a14255582499ad9918917d9bdac1fa743c3" type="targz">https://github.com/balabit/syslog-ng/releases/download/syslog-ng-3.7.3/syslog-ng-3.7.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>json-c</Dependency>
+            <Dependency>libestr</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>liblogging</Dependency>
+	        <Dependency>libfastjson</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>syslog-ng</Name>
+        <RuntimeDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>json-c</Dependency>
+            <Dependency>libestr</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>liblogging</Dependency>
+	        <Dependency>libfastjson</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+	        <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/var</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/logrotate.d/syslog-ng">syslog-ng.logrotate</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/syslog-ng/syslog-ng.conf">syslog-ng.conf</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.7.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

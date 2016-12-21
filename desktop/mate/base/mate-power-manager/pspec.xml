@@ -1,0 +1,80 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-power-manager</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>mate-power-manager</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Mate için güç yöneticisi</Summary>
+        <Description>Power management tool for the MATE desktop.</Description>
+        <Archive sha1sum="a7089947d4ac2151e2b8182f4d130aba08d804d2" type="tarxz">mirrors://mate/mate-power-manager-1.16.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>mate-panel</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-power-manager</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>mate-panel</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/help</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/usr/share/mate*</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="config">/etc/xdg/autostart/</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.16.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

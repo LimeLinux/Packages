@@ -1,0 +1,54 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>driftnet</Name>
+        <Homepage>http://www.sourceforge.net/projects/libnet-dev/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>Listens to network traffic and picks out images from TCP streams it observes</Summary>
+        <Description>Listens to network traffic and picks out images from TCP streams it observes</Description>
+        <Archive sha1sum="aff990ee47eaf5cc149b2b82210ad403711d2a87" type="zip">https://github.com/deiv/driftnet/archive/master.zip</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>giflib</Dependency>
+	    <Dependency>libpng</Dependency>
+	    <Dependency>libpcap</Dependency>
+	    <Dependency>libjpeg-turbo</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>driftnet</Name>
+	<RuntimeDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>giflib</Dependency>
+	    <Dependency>libpng</Dependency>
+	    <Dependency>libpcap</Dependency>
+	    <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.1.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

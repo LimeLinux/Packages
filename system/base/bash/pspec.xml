@@ -1,0 +1,98 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>bash</Name>
+        <Homepage>http://cnswww.cns.cwru.edu/~chet/bash/bashtop.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>The standard GNU Bourne again shell</Summary>
+        <Description>Bash is the GNU Project's Bourne Again SHell, a complete implementation of the IEEE POSIX and Open Group shell specification with interactive command line editing, csh-like features such as history substitution.</Description>
+        <Archive sha1sum="33b1bcc5dca1b72f28b2baeca6efa0d422097964" type="targz">mirrors://gnu/bash/bash-4.3.30.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>ncurses</Dependency>
+        </BuildDependencies>
+        <Patches>
+        <!-- Official Patches ftp://ftp.cwru.edu/pub/bash/bash-4.3-patches/ -->
+            <Patch level="0" compressionType="gzip">official/bash43-031.tar.gz</Patch>
+            <Patch level="0" compressionType="gzip">official/bash43-032.tar.gz</Patch>
+            <Patch level="0" compressionType="gzip">official/bash43-033.tar.gz</Patch>
+            <Patch level="0" compressionType="gzip">official/bash43-034.tar.gz</Patch>
+            <Patch level="0" compressionType="gzip">official/bash43-035.tar.gz</Patch>
+            <Patch level="0" compressionType="gzip">official/bash43-036.tar.gz</Patch>
+            <Patch level="0" compressionType="gzip">official/bash43-037.tar.gz</Patch>
+            <Patch level="0" compressionType="gzip">official/bash43-038.tar.gz</Patch>
+            <Patch level="0" compressionType="gzip">official/bash43-039.tar.gz</Patch>
+            
+	    <Patch level="0">official/bash43-040</Patch>
+	    <Patch level="0">official/bash43-041</Patch>
+	    <Patch level="0">official/bash43-042</Patch>
+	    <Patch level="0">official/bash43-043</Patch>
+	    <Patch level="0">official/bash43-044</Patch>
+	    <Patch level="0">official/bash43-045</Patch>
+	    <Patch level="0">official/bash43-046</Patch>
+	    
+        <!-- Fedora patches -->
+            <Patch level="1">fedora/bash-2.02-security.patch</Patch>
+            <Patch level="1">fedora/bash-2.03-paths.patch</Patch>
+            <Patch level="1">fedora/bash-2.03-profile.patch</Patch>
+            <Patch level="1">fedora/bash-2.05a-interpreter.patch</Patch>
+            <Patch level="1">fedora/bash-2.05b-debuginfo.patch</Patch>
+            <Patch level="1">fedora/bash-2.05b-manso.patch</Patch>
+            <Patch level="1">fedora/bash-2.05b-pgrp_sync.patch</Patch>
+            <Patch level="1">fedora/bash-2.05b-readline-oom.patch</Patch>
+            <Patch level="1">fedora/bash-2.05b-xcc.patch</Patch>
+            <Patch level="1">fedora/bash-3.2-audit.patch</Patch>
+            <Patch level="1">fedora/bash-3.2-ssh_source_bash.patch</Patch>
+            <Patch level="1">fedora/bash-4.0-nobits.patch</Patch>
+            <Patch level="1">fedora/bash-4.1-broken_pipe.patch</Patch>
+            <Patch level="1">fedora/bash-4.1-defer-sigchld-trap.patch</Patch>
+            <Patch level="1">fedora/bash-4.1-examples.patch</Patch>
+            <Patch level="1">fedora/bash-4.2-coverity.patch</Patch>
+            <Patch level="1">fedora/bash-4.2-manpage_trap.patch</Patch>
+            <Patch level="1">fedora/bash-4.2-rc2-logout.patch</Patch>
+            <Patch level="1">fedora/bash-4.2-size_type.patch</Patch>
+            <Patch level="1">fedora/bash-bashbug.patch</Patch>
+            <Patch level="1">fedora/bash-infotags.patch</Patch>
+            <Patch level="1">fedora/bash-requires.patch</Patch>
+            <Patch level="1">fedora/bash-setlocale.patch</Patch>
+            <Patch level="1">fedora/bash-tty-tests.patch</Patch>
+      <!--  <Patch level="1">fedora/bash-4.2-trap.patch</Patch> -->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>bash</Name>
+        <RuntimeDependencies>
+            <Dependency>ncurses</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/bash/bashrc">bashrc</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/profile.d/command-not-found.sh">command-not-found.sh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.3_p46</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

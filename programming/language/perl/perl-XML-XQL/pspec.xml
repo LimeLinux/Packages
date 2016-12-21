@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>perl-XML-XQL</Name>
+        <Homepage>http://search.cpan.org/~tjmather/XML-XQL</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Artistic</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>A perl module for querying XML tree structures with XQL</Summary>
+        <Description>The XML::XQL module implements the XQL (XML Query Language) proposal submitted to the XSL Working Group in September 1998..</Description>
+        <Archive sha1sum="c73905b4f30cb13fd0a8f701d0aedab65d0072d0" type="targz">http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-XQL-0.68.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>perl</Dependency>
+            <!--Dependency>perl-libwww</Dependency>
+            <Dependency>perl-XML-DOM</Dependency>
+            <Dependency>perl-Date-Manip</Dependency>
+            <Dependency>perl-Parse-Yapp</Dependency-->
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>perl-XML-XQL</Name>
+        <RuntimeDependencies>
+            <Dependency>perl</Dependency>
+            <!--Dependency>perl-libwww</Dependency>
+            <Dependency>perl-XML-DOM</Dependency>
+            <Dependency>perl-Date-Manip</Dependency>
+            <Dependency>perl-Parse-Yapp</Dependency-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.68</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

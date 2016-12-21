@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libgcrypt</Name>
+        <Homepage>http://www.gnupg.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>General purpose crypto library</Summary>
+        <Description>Libgcrypt is a general purpose crypto library based on the code used in GNU Privacy Guard.</Description>
+        <Archive sha1sum="85a6a936bcab4c3c05f5efbf6ce847f23d35c0c4" type="tarbz2">https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.7.2.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libgpg-error</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libgcrypt</Name>
+        <RuntimeDependencies>
+            <Dependency>libgpg-error</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="config">/etc/gcrypt</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.7.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>at-spi2-core</Name>
+        <Homepage>http://www.linuxfoundation.org/collaborate/workgroups/accessibility</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2+</License>
+        <IsA>service</IsA>
+        <Summary>Protocol definitions and daemons for D-Bus at-spi</Summary>
+        <Description>at-spi allows assistive technologies to access GTK-based applications. Essentially it exposes the internals of applications over D-Bus for automation.</Description>
+        <Archive sha1sum="efff62fb8cb8f629d5cdb2fca3e249fa69a12899" type="tarxz">mirrors://gnome/at-spi2-core/2.16/at-spi2-core-2.16.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libXi</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>at-spi2-core</Name>
+        <RuntimeDependencies>
+            <Dependency>libXtst</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.16.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,73 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>speech-dispatcher</Name>
+        <Homepage>http://www.freebsoft.org/speechd</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <License>GPLv2</License>
+        <IsA>service</IsA>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>speech dispatcher: common interface to speech synthesis</Summary>
+        <Description>Speech Dispatcher is a device independent layer for speech synthesis that provides a common easy to use interface for both client applications (programs that want to speak) and for software synthesizers (programs actually able to convert text to speech).</Description>
+        <Archive sha1sum="515995c526b6bc8f42f20dc07f4356e6d10cc5e0" type="targz">http://www.freebsoft.org/pub/projects/speechd/speech-dispatcher-0.8.5.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>dotconf</Dependency>
+            <Dependency>espeak</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>texinfo</Dependency>
+            <Dependency>pkgconfig</Dependency>
+            <Dependency>libtool</Dependency>
+            <Dependency>libao</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>pulseaudio</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>speech-dispatcher</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libao</Dependency>
+            <Dependency>espeak</Dependency>
+            <Dependency>dotconf</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>libtool</Dependency>
+            <Dependency>pulseaudio</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc/speech-dispatcher</Path>
+            <Path fileType="data">/var/log/speech-dispatcher</Path>
+            <Path fileType="data">/usr/share/speech-dispatcher</Path>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.8.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,59 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libunique3</Name>
+        <Homepage>http://live.gnome.org/LibUnique</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>A library for writing single instance applications</Summary>
+        <Description>Unique is a library for writing single instance applications. If you launch a single instance application twice, the second instance will either just quit or will send a message to the running instance.</Description>
+        <Archive sha1sum="e0d0db598159ed5bad53ad5f9e4469c2d458267c" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/libunique/3.0/libunique-3.0.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>gtk-doc</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libunique3</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <Package>
+        <Name>libunique3-docs</Name>
+        <IsA>data:doc</IsA>
+        <Summary>Unique reference documents</Summary>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="current">libunique3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.0.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

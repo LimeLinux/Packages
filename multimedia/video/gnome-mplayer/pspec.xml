@@ -1,0 +1,66 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-mplayer</Name>
+        <Homepage>http://code.google.com/p/gnome-mplayer/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>gnome-mplayer</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>MPlayer frontend</Summary>
+        <Description>Simple GUI for MPlayer. It is intended to be a nice tight player and provide a simple and clean interface to MPlayer. GNOME MPlayer has a rich API that is exposed via DBus. Using DBus you can control a single or multiple instances of GNOME MPlayer from a single command.</Description>
+        <Archive sha1sum="3bd45082db715ef05289c6b6a793d3c3a326a54c" type="targz">https://launchpad.net/ubuntu/+archive/primary/+files/gnome-mplayer_1.0.9.orig.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>gmtk</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gnome-mplayer</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>mplayer</Dependency>
+            <Dependency>gmtk</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas</Path>
+            <Path fileType="data">/usr/share/gnome-control-center</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.9</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

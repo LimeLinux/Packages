@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cryptsetup</Name>
+        <Homepage>https://gitlab.com/cryptsetup/cryptsetup</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>cryptsetup</Icon>
+        <IsA>app:cli</IsA>
+        <Summary>Userspace setup tool for transparent encryption of block devices using dm-crypt</Summary>
+        <Description>Userspace setup tool for transparent encryption of block devices using dm-crypt</Description>
+        <Archive sha1sum="1b7005c0f8ad286a7f3d65e99cb555597666605c" type="tarxz">https://www.kernel.org/pub/linux/utils/cryptsetup/v1.7/cryptsetup-1.7.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>lvm2</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>popt</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>cryptsetup</Name>
+        <RuntimeDependencies>
+            <Dependency>popt</Dependency>
+            <Dependency>libgpg-error</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="manfile">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+    
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.6.7</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

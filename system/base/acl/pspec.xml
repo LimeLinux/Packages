@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>acl</Name>
+        <Homepage>http://acl.bestbits.at/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <License>LGPLv2.1</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>Access control list utilities</Summary>
+        <Description>acl contains the getfacl and setfacl utilities needed for manipulating access control lists along with the needed libraries.</Description>
+        <Archive sha1sum="537dddc0ee7b6aa67960a3de2d36f1e2ff2059d9" type="targz">http://download.savannah.gnu.org/releases-noredirect/acl/acl-2.2.52.src.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>attr</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>acl</Name>
+        <RuntimeDependencies>
+            <Dependency>attr</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.2.52</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,70 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>i3-wm</Name>
+        <Homepage>http://i3wm.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <Summary>An improved dynamic tiling window manager</Summary>
+        <Description>An improved dynamic tiling window manager</Description>
+        <Archive sha1sum="264e682c7404ee8d5da76e3d652c546db1662a2b" type="tarbz2">http://i3wm.org/downloads/i3-4.12.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>yajl</Dependency>
+            <Dependency>libev</Dependency>
+            <Dependency>libnl</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>libconfuse</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>xcb-util-wm</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>xcb-util-cursor</Dependency>
+            <Dependency>startup-notification</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>i3-wm</Name>
+        <RuntimeDependencies>
+            <Dependency>yajl</Dependency>
+            <Dependency>libev</Dependency>
+            <Dependency>libnl</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>libconfuse</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>xcb-util-wm</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>xcb-util-cursor</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>startup-notification</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.12</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

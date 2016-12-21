@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>enchant</Name>
+        <Homepage>http://www.abisource.com/enchant/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Spellchecker wrapping library</Summary>
+        <Description>enchant is a library that wraps other spell checking backends.</Description>
+        <Archive sha1sum="321f9cf0abfa1937401676ce60976d8779c39536" type="targz">http://www.abisource.com/downloads/enchant/1.6.0/enchant-1.6.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>aspell</Dependency>
+            <Dependency>hunspell</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>enchant</Name>
+        <RuntimeDependencies>
+            <Dependency>aspell</Dependency>
+            <Dependency>hunspell</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/enchant</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.6.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

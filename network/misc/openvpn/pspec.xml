@@ -1,0 +1,39 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openvpn</Name>
+        <Homepage>http://openvpn.net/index.php/open-source.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>app:console</IsA>
+        <Summary>An easy-to-use, robust, and highly configurable VPN</Summary>
+        <Description>An easy-to-use, robust, and highly configurable VPN</Description>
+        <Archive sha1sum="48ba3ada2da84be4cf66ffbd35a66d4ce30e0e5b" type="tarxz">http://swupdate.openvpn.net/community/releases/openvpn-2.3.11.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>openvpn</Name>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.3.11</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

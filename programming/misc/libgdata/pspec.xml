@@ -1,0 +1,59 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libgdata</Name>
+        <Homepage>http://www.gnome.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A library for accessing online services</Summary>
+        <Description>libgdata is a GLib-based library for accessing online service APIs using the GData protocol.</Description>
+        <Archive sha1sum="f58c61dc7ef55eb6fa689b2c83dc06fe0cd23c66" type="tarxz">mirrors://gnome/libgdata/0.17/libgdata-0.17.5.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gcr</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>p11-kit</Dependency>
+            <Dependency>libsoup</Dependency>
+            <!--Dependency>liboauth</Dependency>
+            <Dependency>gnome-online-accounts</Dependency-->
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libgdata</Name>
+        <RuntimeDependencies>
+            <Dependency>gcr</Dependency>
+            <Dependency>p11-kit</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libsoup</Dependency>
+	    <!--Dependency>liboauth</Dependency>
+            <Dependency>gnome-online-accounts</Dependency-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/vala/vapi</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="data">/usr/share/gtk-doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.17.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

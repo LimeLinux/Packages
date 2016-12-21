@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>neon</Name>
+        <Homepage>http://www.webdav.org/neon/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>HTTP and WebDAV client library</Summary>
+        <Description>neon is an HTTP and WebDAV client library with a C interface; providing a high-level interface to HTTP and WebDAV methods along with a low-level interface for HTTP request handling.</Description>
+        <Archive sha1sum="9e6297945226f90d66258b7ee05f757ff5cea10a" type="targz">http://www.webdav.org/neon/neon-0.30.0.tar.gz</Archive>
+        <Patches>
+            <Patch>fixdocdir.patch</Patch>
+            <Patch level="1">multilib.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>neon</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.30.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

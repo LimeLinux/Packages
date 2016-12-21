@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libcdio</Name>
+        <Homepage>http://www.gnu.org/software/libcdio/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A library to encapsulate CD-ROM reading and control</Summary>
+        <Description>This library provides an interface for CD-ROM access. It can be used by applications that need OS- and device-independent access to CD-ROM devices.</Description>
+        <Archive sha1sum="530031897955729ddb7c850c183f234f7a6516b7" type="targz">mirrors://gnu/libcdio/libcdio-0.92.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libcddb</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">libcdio-0.83-linking.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libcdio</Name>
+        <RuntimeDependencies>
+            <Dependency>libcddb</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.92</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

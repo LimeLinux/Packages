@@ -1,0 +1,41 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>liboauth</Name>
+        <Homepage>http://liboauth.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>C library implementing the OAuth secure authentication protocol</Summary>
+        <Description>liboauth is a collection of POSIX-c functions implementing the OAuth Core RFC 5849 standard.</Description>
+        <Archive sha1sum="5c7a411311c3dd1f9323f905461627d3bdf00b2c" type="targz">https://github.com/x42/liboauth/archive/v1.0.3.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>liboauth</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc/liboauth</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

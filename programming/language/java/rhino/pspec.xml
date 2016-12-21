@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rhino</Name>
+        <Homepage>http://www.mozilla.org/rhino/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <Summary>Open-source implementation of JavaScript written entirely in Java</Summary>
+        <Description>Open-source implementation of JavaScript written entirely in Java</Description>
+        <Archive sha1sum="d8af09f7c33b72c57a80f4f0fc2ba0a86ca3c4be" type="targz">https://github.com/mozilla/rhino/archive/Rhino1_7_7_1_RELEASE.tar.gz</Archive>
+        <Archive sha1sum="57ba5952c98f32e20f0408e7c42debd296fc0b45" type="targz" target="rhino-Rhino1_7_7_1_RELEASE">http://archive.apache.org/dist/xmlbeans/binaries/xmlbeans-2.6.0.tgz</Archive>
+        <AdditionalFiles>
+            <AdditionalFile target="rhino">rhino</AdditionalFile>
+            <AdditionalFile target="rhino.1">rhino.1</AdditionalFile>
+            <AdditionalFile target="rhino-jsc">rhino-jsc</AdditionalFile>
+            <AdditionalFile target="rhino-jsc.1">rhino-jsc.1</AdditionalFile>
+            <AdditionalFile target="rhino-debugger">rhino-debugger</AdditionalFile>
+            <AdditionalFile target="rhino-debugger.1">rhino-debugger.1</AdditionalFile>
+        </AdditionalFiles>
+        <BuildDependencies>
+            <Dependency>ant</Dependency>
+            <Dependency>jdk7-openjdk</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>rhino</Name>
+        <RuntimeDependencies>
+            <Dependency>jdk7-openjdk</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/java/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.7.7.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

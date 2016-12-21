@@ -1,0 +1,43 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmatroska</Name>
+        <Homepage>http://www.matroska.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Extensible multimedia container format based on EBML</Summary>
+        <Description>Matroska is an extensible open standard Audio/Video container. It aims to become THE standard of multimedia container formats. Matroska is usually found as .mkv files (matroska video) and .mka files (matroska audio).</Description>
+        <Archive sha1sum="546a761a763b2d1d15dbbccaa5495eb63dd87223" type="tarbz2">http://dl.matroska.org/downloads/libmatroska/libmatroska-1.4.2.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libebml</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libmatroska</Name>
+        <RuntimeDependencies>
+            <Dependency>libebml</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.4.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

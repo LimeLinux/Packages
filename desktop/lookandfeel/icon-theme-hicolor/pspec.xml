@@ -1,0 +1,36 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>icon-theme-hicolor</Name>
+        <Homepage>http://icon-theme.freedesktop.org/wiki/HicolorTheme</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>data</IsA>
+        <Summary>Default icon theme</Summary>
+        <Description>Hicolor icon theme contains the basic directories and files needed for icon theme support.</Description>
+        <Archive sha1sum="368ecc47521e1a2f72cef0171bee02aae876ff53" type="tarxz">http://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.15.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>icon-theme-hicolor</Name>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.15</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

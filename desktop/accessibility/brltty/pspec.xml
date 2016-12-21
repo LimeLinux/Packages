@@ -1,0 +1,68 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brltty</Name>
+        <Homepage>http://mielke.cc/brltty</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Summary>Braille display driver for Linux/Unix</Summary>
+        <Description>Braille display driver for Linux/Unix</Description>
+        <Archive sha1sum="ade4bbe3e95efb4c00f6ff2755db7520c1438275" type="tarxz">http://mielke.cc/brltty/archive/brltty-5.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gpm</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>espeak</Dependency>
+            <Dependency>libXaw</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>bluez-libs</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>speech-dispatcher</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">brltty-5.2-fix-ldflags.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>brltty</Name>
+        <RuntimeDependencies>
+            <Dependency>gpm</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>espeak</Dependency>
+            <Dependency>libXaw</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>bluez-libs</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>speech-dispatcher</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

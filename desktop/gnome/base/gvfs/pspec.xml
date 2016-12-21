@@ -1,0 +1,79 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gvfs</Name>
+        <Homepage>http://www.gnome.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>New generation gnome-virtual-file-system</Summary>
+        <Description>GVFS is a userspace virtual filesystem designed to work with the I/O abstractions, especially HAL. It supports fuse for directly access for GVFS mounts. It installs several modules and backends that are automatically used by applications.</Description>
+        <Archive sha1sum="8ee4f62aabbe5cc5c2e368d35b737bb7af888093" type="tarxz">mirrors://gnome/gvfs/1.20/gvfs-1.20.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>fuse</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>udisks2</Dependency>
+            <Dependency>libplist</Dependency>
+            <Dependency>libproxy</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libarchive</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>libcdio-paranoia</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>libimobiledevice</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">gvfs-archive-integration.patch</Patch>
+        </Patches>
+    </Source>
+
+
+    <Package>
+        <Name>gvfs</Name>
+        <Summary>gvfs package contains all GVFS backends and translations files</Summary>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>udisks2</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>libcdio-paranoia</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>libplist</Dependency>
+            <Dependency>libarchive</Dependency>
+            <Dependency>libgudev</Dependency>
+            <Dependency>libimobiledevice</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man/</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.20.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

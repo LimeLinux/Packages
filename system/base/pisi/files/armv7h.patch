@@ -1,0 +1,10 @@
+--- pisi-2.6.orig/pisi-spec.rng	2011-06-08 13:07:20.000000000 +0000
++++ pisi-2.6/pisi-spec.rng	2016-07-10 15:13:18.070768553 +0000
+@@ -178,6 +178,7 @@
+                 <value>i686</value>
+                 <value>x86_64</value>
+                 <value>armv7l</value>
++                <value>armv7h</value>
+             </choice>
+         </element>
+     </define>

@@ -1,0 +1,40 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>util-macros</Name>
+        <Homepage>http://www.x.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>X.Org X11 Autotools macros</Summary>
+        <Description>X.Org X11 autotools macros are required for building the various packages that comprise the X Window System.</Description>
+        <Archive sha1sum="00cfc636694000112924198e6b9e4d72f1601338" type="tarbz2">http://xorg.freedesktop.org/releases/individual/util/util-macros-1.19.0.tar.bz2</Archive>
+        <Patches>
+            <Patch level="1">doc.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>util-macros</Name>
+        <Files>
+            <Path fileType="data">/usr/share/aclocal</Path>
+            <Path fileType="data">/usr/share/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.19.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

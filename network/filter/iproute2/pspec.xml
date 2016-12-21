@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>iproute2</Name>
+        <Homepage>http://linux-net.osdl.org/index.php/Iproute2</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Kernel routing and traffic control utilities</Summary>
+        <Description>Iproute2 is a collection of utilites for controlling TCP/IP networking and traffic control in Linux.</Description>
+        <Archive sha1sum="750c17e720b43041c23fed7b8cf0118c0e841036" type="tarxz">https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-4.1.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>iptables</Dependency>
+            <Dependency>linux-atm</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>iproute2</Name>
+        <RuntimeDependencies>
+            <Dependency>linux-atm</Dependency>
+            <Dependency>iptables</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/var/lib</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.1.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rdesktop</Name>
+        <Homepage>http://rdesktop.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A Remote Desktop Protocol Client</Summary>
+        <Description>rdesktop is an open source client to connect to Windows NT/2000 Terminal Servers. Unlike Citrix ICA, no server extensions are required.</Description>
+        <Archive sha1sum="aa1e56043782e04a0121357b24874e3ad6ae7b1d" type="targz">mirrors://sourceforge/rdesktop/rdesktop-1.8.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libao</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>pcsc-lite</Dependency>
+            <Dependency>libgssglue</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>rdesktop</Name>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libao</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>pcsc-lite</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libgssglue</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc/rdesktop</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/rdesktop/keymaps</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.8.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+     </History>
+</PISI>

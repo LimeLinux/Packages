@@ -1,0 +1,37 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libffi</Name>
+        <Homepage>http://sourceware.org/libffi</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>A portable foreign function interface library</Summary>
+        <Description>The libffi library provides a portable, high level programming interface to various calling conventions.</Description>
+        <Archive sha1sum="280c265b789e041c02e5c97815793dfc283fb1e6" type="targz">ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>libffi</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.2.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

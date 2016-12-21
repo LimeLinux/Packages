@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>autoconf-archive</Name>
+        <Homepage>http://www.gnu.org/software/autoconf-archive/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:console</IsA>
+        <Summary>A collection of freely re-usable Autoconf macros</Summary>
+        <Description>A collection of freely re-usable Autoconf macros</Description>
+        <Archive sha1sum="400d1f68a2c19cccb0602e188612bcec49fb4dee" type="tarxz">mirrors://gnu/autoconf-archive/autoconf-archive-2016.09.16.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>texinfo</Dependency>
+            <Dependency>m4</Dependency>
+            <Dependency>perl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>autoconf-archive</Name>
+        <RuntimeDependencies>
+            <Dependency>texinfo</Dependency>
+            <Dependency>m4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share</Path>
+            <Path fileType="data">/usr/share/autoconf</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>20160916</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

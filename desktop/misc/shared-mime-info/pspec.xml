@@ -1,0 +1,65 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>shared-mime-info</Name>
+        <Homepage>http://freedesktop.org/wiki/Software/shared-mime-info</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>data</IsA>
+        <Summary>The shared MIME info database</Summary>
+        <Description>shared-mime-info is a package containing a large number of common MIME types, created by converting the existing KDE and GNOME databases to the new format and merging them together, and software for updating the database based on the share-mime-info specification.</Description>
+        <Archive sha1sum="2252f9093e72f2dc81b47d4f2a3eda50d19f0f70" type="tarxz">http://freedesktop.org/~hadess/shared-mime-info-1.5.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libxml2</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">shared-mime-info-xz.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>shared-mime-info</Name>
+        <RuntimeDependencies>
+            <Dependency>libxml2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/etc/X11/xinit</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/pkgconfig</Path>
+            <Path fileType="localedata">/usr/share/locale/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/etc/X11/xinit/xinitrc.d/30-update-mime-database.sh">update-mime-database.sh</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/defaults.list">defaults.list</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/mimeapps.list">mimeapps.list</AdditionalFile>
+        <!--AdditionalFile owner="root" permission="0644" target="/usr/share/applications/file-roller-defaults.list">file-roller-defaults.list</AdditionalFile>
+        <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/shotwell-viewer-defaults.list">shotwell-viewer-defaults.list</AdditionalFile>
+        <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/totem-defaults.list">totem-defaults.list</AdditionalFile-->
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/mimetypefixes.xml">mimetypefixes.xml</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
+            <COMAR script='package.py'>System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

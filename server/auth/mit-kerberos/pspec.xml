@@ -1,0 +1,60 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mit-kerberos</Name>
+        <Homepage>http://web.mit.edu/kerberos/www/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>MIT Kerberos Library</Summary>
+        <Description>Kerberos is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography.</Description>
+        <Archive sha1sum="6342e29980210c32dee3563dfb0728b4b9592381" type="targz">http://source.pisilinux.org/1.0/krb5-1.13.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>keyutils</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="0">krb5-config_LDFLAGS.patch</Patch>
+            <!--<Patch level="1">mit-krb5-1.12_uninitialized.patch</Patch> -->
+            <Patch level="0">rebuild-configure-scripts.patch</Patch>
+            <Patch level="0">fix-python-detection.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>mit-kerberos</Name>
+        <RuntimeDependencies>
+            <Dependency>keyutils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/var/lib</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/krb5.conf">krb5.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/kdc.conf">kdc.conf</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.13.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

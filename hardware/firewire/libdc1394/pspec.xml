@@ -1,0 +1,49 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libdc1394</Name>
+        <Homepage>http://sourceforge.net/projects/libdc1394/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Programming interface for IEEE 1394 based cameras</Summary>
+        <Description>libdc1394 is a library that is intended to provide a high level programming interface for application developers who wish to control IEEE 1394 based cameras that conform to the 1394-based Digital Camera Specification (found at http://www.1394ta.org/).</Description>
+        <Archive sha1sum="c40bdf37c64e0bce5dcc3e6e868d226e309a3a19" type="targz">http://sourceforge.net/projects/libdc1394/files/libdc1394-2/2.2.3/libdc1394-2.2.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libraw1394</Dependency>
+            <Dependency>libXv</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libdc1394</Name>
+        <RuntimeDependencies>
+            <Dependency>libraw1394</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libusb</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.2.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

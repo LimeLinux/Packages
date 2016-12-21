@@ -1,0 +1,54 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dbus-c++</Name>
+        <Homepage>http://sourceforge.net/projects/dbus-cplusplus/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>C++ bindings for DBus library</Summary>
+        <Description>dbus-c++ attempts to provide a C++ API for D-BUS. The library has a glib/gtk and an Ecore mainloop integration. It also offers an optional own main loop.</Description>
+        <!--http://www.filewatcher.com/m/dbus-c++_0~20090907.orig.tar.gz.855848-0.html-->
+        <Archive sha1sum="105bc04c9ad03c69e612a41e83acd04b7dfd3a41" type="targz">http://sourceforge.net/projects/dbus-cplusplus/files/dbus-c%2B%2B/0.9.0/libdbus-c%2B%2B-0.9.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>dbus</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="0">gcc-44.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>dbus-c++</Name>
+        <RuntimeDependencies>
+            <Dependency>dbus</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.9.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

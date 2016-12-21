@@ -1,0 +1,120 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>subversion</Name>
+        <Homepage>http://subversion.apache.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Subversion</License>
+        <IsA>app:console</IsA>
+        <IsA>service</IsA>
+        <Summary>A compelling replacement for CVS</Summary>
+        <Description>SVN is a version controlling system to store files and control their change history in a repository.</Description>
+        <Archive sha1sum="27e8df191c92095f48314a415194ec37c682cbcf" type="tarbz2">http://archive.apache.org/dist/subversion/subversion-1.9.3.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>expat</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>ruby</Dependency>
+            <Dependency>serf</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>apr-util</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>glib2</Dependency>
+	    <Dependency>openssl</Dependency>
+            <Dependency>swig</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">subversion.perl.LD_RUN_PATH.patch</Patch>
+            <Patch level="1">subversion-1.8.0-kwallet.patch</Patch>
+            <Patch level="1">subversion-1.8.0-pie.patch</Patch>  
+            <Patch level="1">subversion-1.8.0-rpath.patch</Patch-->  
+            <Patch level="1">subversion-swig-perl-install_vendor.patch</Patch>
+            <Patch>subversion.rpath.fix.patch</Patch>
+            <Patch level="1">dont_compile_pyc.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>subversion</Name>
+        <RuntimeDependencies>
+            <Dependency>file</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>apr</Dependency>
+            <Dependency>serf</Dependency>
+            <Dependency>apr-util</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <!--Dependency>libgnome-keyring</Dependency-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/conf.d</Path>
+            <Path fileType="data">/etc/subversion</Path>
+            <Path fileType="data">/etc/bash_completion.d</Path>
+            <Path fileType="data">/usr/share/build</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/var/svn</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/pkgconfig</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/svnserve">svnserve.confd</AdditionalFile>
+
+            <!-- http://websvn.kde.org/trunk/KDE/kdesdk/scripts/ -->
+            <!--AdditionalFile owner="root" permission="0755" target="/usr/bin/svnlastchange">svnlastchange</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/svnrevertlast">svnrevertlast</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/svnlastlog">svnlastlog</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/svnclean">svn-clean</AdditionalFile-->
+            <!-- system-wide configuration file for auto mimetype setting -->
+            <AdditionalFile owner="root" permission="0644" target="/etc/subversion/config">subversion.config</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+
+    <Package>
+        <Name>mod_dav_svn</Name>
+        <PartOf>server.web</PartOf>
+        <RuntimeDependencies>
+            <Dependency>apr</Dependency>
+            <Dependency>apr-util</Dependency>
+            <Dependency>subversion</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/apache2</Path>
+            <Path fileType="executable">/usr/libexec/mod_dav_svn.so</Path>
+            <Path fileType="executable">/usr/libexec/mod_authz_svn.so</Path>
+            <Path fileType="config">/etc/apache2/modules.d</Path>
+            <Path fileType="data">/var/www/localhost/htdocs</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/apache2/modules.d/47_mod_dav_svn.conf">47_mod_dav_svn.conf</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.9.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

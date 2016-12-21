@@ -1,0 +1,71 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mariadb</Name>
+        <Homepage>https://mariadb.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>MariaDB is a drop-in replacement for MySQL</Summary>
+        <Description>MariaDB strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server.</Description>
+        <Archive sha1sum="a9f055d7845b6a4896ad5e2fd62cef8531eefb32" type="targz">http://pkgs.fedoraproject.org/repo/pkgs/mariadb/mariadb-10.1.10.tar.gz/9aa4d68b24c1ddd8cb56923a920684b3/mariadb-10.1.10.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>ncurses</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>libevent</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>libpcre</Dependency>
+            <Dependency>libaio</Dependency>
+            <Dependency>unixODBC</Dependency>
+            <Dependency>cmake</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mariadb</Name>
+        <RuntimeDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpcre</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>libaio</Dependency>
+            <Dependency>unixODBC</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/mysql_config</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="data">/usr/share</Path>
+	    <Path fileType="config">/etc</Path>
+            <Path fileType="data">/var</Path>
+            <Path fileType="data">/run/mysqld</Path>
+        </Files>
+	 <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/mysql/my.cnf">my.cnf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/mariadb.conf">tmpfiles.conf</AdditionalFile>
+        </AdditionalFiles>
+	<Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>10.1.10</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

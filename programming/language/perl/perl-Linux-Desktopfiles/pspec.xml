@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>perl-Linux-Desktopfiles</Name>
+        <Homepage>https://metacpan.org/module/Linux::DesktopFiles</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>Perl module to get and parse the linux desktop files</Summary>
+        <Description>perl-Linux-Desktopfiles Perl module to get and parse the linux desktop files</Description>
+        <Archive sha1sum="caf718ecfd2a219ccf84104b30df609ebf1d8e61" type="targz">http://cpan.metacpan.org/authors/id/T/TR/TRIZEN/Linux-DesktopFiles-0.08.tar.gz</Archive>
+        <BuildDependencies>
+               <Dependency>perl-Module-Build</Dependency>
+        </BuildDependencies>
+     </Source>
+
+    <Package>
+        <Name>perl-Linux-Desktopfiles</Name>
+        <RuntimeDependencies>
+            <Dependency>perl-Module-Build</Dependency>
+            <Dependency>perl-Data-Dump</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>0.08</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

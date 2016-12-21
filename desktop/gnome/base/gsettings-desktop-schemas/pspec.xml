@@ -1,0 +1,41 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gsettings-desktop-schemas</Name>
+        <Homepage>http://www.gnome.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Isa>data</Isa>
+        <Summary>Collection of GSettings schemas for GNOME desktop</Summary>
+        <Description>Gsettings-desktop-schemas contains a collection of GSettings schemas for settings shared by various components of a desktop.</Description>
+        <Archive sha1sum="924bd3fe84eaf6658e6b37d52554e55e2a1c86d1" type="tarxz">mirrors://gnome/gsettings-desktop-schemas/3.22/gsettings-desktop-schemas-3.22.0.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>gsettings-desktop-schemas</Name>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/GConf/</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib/girepository-1.0</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/pkgconfig/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>3.22.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,40 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libtasn1</Name>
+        <Homepage>http://www.gnutls.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>ASN.1 library used in GNUTLS</Summary>
+        <Description>libtasn1 is the ASN.1 library which provides ASN.1 structures parsing capabilities for use with GNUTLS.</Description>
+        <Archive sha1sum="c9b8148f4877ef739d3cf67de491c4c3dd5f5aca" type="targz">http://ftp.gnu.org/gnu/libtasn1/libtasn1-4.9.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>libtasn1</Name>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>4.9</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

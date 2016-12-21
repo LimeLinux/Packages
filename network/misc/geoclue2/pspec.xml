@@ -1,0 +1,59 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>geoclue2</Name>
+        <Homepage>http://www.freedesktop.org/wiki/Software/GeoClue</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>The Geoinformation Service.</Summary>
+        <Description>Geoclue is a modular geoinformation service built on top of the D-Bus messaging system.</Description>
+        <Archive sha1sum="ee1af4ecb7c3a524be66b8caba25355b1a10e936" type="tarxz">http://www.freedesktop.org/software/geoclue/releases/2.4/geoclue-2.4.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libsoup</Dependency>
+            <Dependency>json-glib</Dependency>
+        </BuildDependencies>
+        <Patches/>
+    </Source>
+
+    <Package>
+        <Name>geoclue2</Name>
+        <RuntimeDependencies>
+            <Dependency>geoip</Dependency>
+            <Dependency>json-glib</Dependency>
+            <Dependency>NetworkManager</Dependency>
+	    <Dependency>avahi</Dependency>
+	    <Dependency>libsoup</Dependency>
+
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="executable">/usr/libexec/</Path>
+            <Path fileType="data">/usr/share/geoclue-2.0</Path>
+            <Path fileType="config">/etc/dbus-1/system.d</Path>
+            <Path fileType="data">/usr/share</Path>
+	    <Path fileType="header">/usr/include</Path>
+	    <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.4.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

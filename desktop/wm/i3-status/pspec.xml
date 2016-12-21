@@ -1,0 +1,55 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>i3-status</Name>
+        <Homepage>http://i3.zekjur.net/i3status/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <Summary>An improved dynamic tiling window manager</Summary>
+        <Description>An improved dynamic tiling window manager</Description>
+        <Archive sha1sum="b0bfcac24c9e57958eefd9c3b00aed4b73b2c708" type="tarbz2">https://i3wm.org/i3status/i3status-2.10.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>yajl</Dependency>
+            <Dependency>libnl</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libconfuse</Dependency>
+            <Dependency>pulseaudio</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>i3-status</Name>
+        <RuntimeDependencies>
+            <Dependency>yajl</Dependency>
+            <Dependency>libnl</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libconfuse</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>i3-wm</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.10</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

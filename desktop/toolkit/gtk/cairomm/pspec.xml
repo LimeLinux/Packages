@@ -1,0 +1,55 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cairomm</Name>
+        <Homepage>http://cairographics.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>C++ binding for Cairo</Summary>
+        <Description>cairomm package is the C++ binding for Cairo (it makes possible using Cairo in C++).</Description>
+        <Archive sha1sum="f08bf8a331067f0d1e876523f07238fba6b26b99" type="targz">http://cairographics.org/releases/cairomm-1.10.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>doxygen</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libsigc++</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>cairomm</Name>
+        <RuntimeDependencies>
+            <Dependency>doxygen</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libsigc++</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>cairomm-docs</Name>
+        <Summary>Development documents for cairomm</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/doc/cairomm/html</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.10.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

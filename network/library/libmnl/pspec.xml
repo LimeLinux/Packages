@@ -1,0 +1,39 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmnl</Name>
+        <Homepage>http://netfilter.org/projects/libmnl/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <PartOf>network.library</PartOf>
+        <IsA>app:console</IsA>
+        <Summary>libmnl is a minimalistic user-space library for Netlink developers.</Summary>
+        <Description>libmnl is a minimalistic user-space library for Netlink developers. There are a lot of common tasks involved in parsing, validating, and constructing both the Netlink header and TLVs that are repetitive and easy to get wrong.</Description>
+        <Archive sha1sum="c27e25f67c6422ebf893fc3a844af8085a1c5b63" type="tarbz2">http://netfilter.org/projects/libmnl/files/libmnl-1.0.3.tar.bz2</Archive>
+    </Source>
+    
+    <Package>
+        <Name>libmnl</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc/libmnl</Path>
+	    <Path fileType="header">/usr/include/libmnl</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+  
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
