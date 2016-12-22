@@ -1,0 +1,8 @@
+.directory
+.fuse*
+*.pisi
+*.pyc
+*.svn
+*~
+.dir*
+raw_rc.pyc
