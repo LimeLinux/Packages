@@ -30,9 +30,9 @@
             <!-- Fix xml autocomplete crash (Fixes #8383) -->
 
             <!-- syntax higlighting fixes -->
-	    <!--<Patch level="1">pisilinux/bash_completion.patch</Patch>-->
-            <!--Patch level="1">pisilinux/grub_conf.patch</Patch>
-            <Patch level="1">pisilinux/xorg_conf.patch</Patch>
+	    <!--<Patch level="1">limelinux/bash_completion.patch</Patch>-->
+            <!--Patch level="1">limelinux/grub_conf.patch</Patch>
+            <Patch level="1">limelinux/xorg_conf.patch</Patch>
             <Patch level="1">vim-7.0-warning.patch</Patch>
 	    <Patch>vim-fix-xml-crash.patch</Patch>
 
@@ -63,9 +63,9 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/vim/vimrc">vimrc</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/vim/vimfiles/plugin/actions.vim">pisilinux/actions.vim</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/vim/vimfiles/plugin/pspec.vim">pisilinux/pspec.vim</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/vim/vimfiles/plugin/translations.vim">pisilinux/translations.vim</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/vim/vimfiles/plugin/actions.vim">limelinux/actions.vim</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/vim/vimfiles/plugin/pspec.vim">limelinux/pspec.vim</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/vim/vimfiles/plugin/translations.vim">limelinux/translations.vim</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/vim/vimfiles/plugin/taglist.vim">plugins/taglist.vim</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/vim/vimfiles/plugin/kde-devel-vim.vim">plugins/kde-devel-vim.vim</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/vim/vimfiles/plugin/newpythonfile.vim">plugins/newpythonfile.vim</AdditionalFile>

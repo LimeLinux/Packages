@@ -25,7 +25,7 @@
             <Dependency>texinfo</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- PisiLinux patches -->
+            <!-- limelinux patches -->
             <Patch level="0">remove_am_silent_rules.patch</Patch>
         </Patches>
     </Source>

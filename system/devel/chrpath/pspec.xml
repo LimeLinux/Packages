@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Change the dynamic library load path (rpath) of binaries</Summary>
         <Description>chrpath allows you to modify the dynamic library load path (rpath and runpath) of compiled programs and libraries.</Description>
-        <Archive sha1sum="174bb38c899229f4c928734b20e730f61191795a" type="targz">http://source.pisilinux.org/1.0/chrpath-0.16.tar.gz</Archive>
+        <Archive sha1sum="174bb38c899229f4c928734b20e730f61191795a" type="targz">http://source.limelinux.org/1.0/chrpath-0.16.tar.gz</Archive>
         <Patches>
             <Patch level="1">docdir.patch</Patch>
         </Patches>

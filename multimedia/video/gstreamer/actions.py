@@ -14,8 +14,8 @@ def setup():
     autotools.autoreconf("-vfi")
     #shelltools.system("./autogen.sh --disable-gtk-doc --disable-docbook")
 
-    options = '--with-package-name="GStreamer for PisiLinux" \
-               --with-package-origin="http://www.pisilinux.org" \
+    options = '--with-package-name="GStreamer for limelinux" \
+               --with-package-origin="http://www.limelinux.org" \
                --enable-nls \
                --disable-dependency-tracking \
                --disable-examples \

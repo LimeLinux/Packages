@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Common desktop utilities</Summary>
         <Description>Xdg-utils is a set of command line tools that assist applications with a variety of desktop integration tasks. About half of the tools focus on tasks commonly required during the installation of a desktop application and the other half focuses on integration with the desktop environment while the application is running.</Description>
-        <Archive sha1sum="c72dde66a056aebcc376aae3be6f91e8d76ae2b5" type="tarxz">http://source.pisilinux.org/1.0/xdg-utils.tar.xz</Archive>
+        <Archive sha1sum="c72dde66a056aebcc376aae3be6f91e8d76ae2b5" type="tarxz">http://source.limelinux.org/1.0/xdg-utils.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>xmlto</Dependency>
             <Dependency>docbook-xsl</Dependency>

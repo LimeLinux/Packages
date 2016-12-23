@@ -9,7 +9,7 @@ cc = %(host)s-gcc
 cxx = %(host)s-g++
 compressionlevel = 9
 enableSandbox = True
-fallback = http://source.pisilinux.org/1.0
+fallback = http://source.limelinux.org/1.0
 generateDebug = False
 jobs = -j5
 ldflags = -Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common
@@ -37,7 +37,7 @@ architecture = x86_64
 autoclean = False
 bandwidth_limit = 0
 destinationdirectory = /
-distribution = PisiLinux
+distribution = limelinux
 distribution_release = 0.1
 distribution_id = cp
 # ftp_proxy = None

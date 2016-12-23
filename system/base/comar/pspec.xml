@@ -4,7 +4,7 @@
 <PISI>
     <Source>
         <Name>comar</Name>
-        <Homepage>http://www.pisilinux.org</Homepage>
+        <Homepage>http://www.limelinux.org</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>Manages system configuration</Summary>
         <Description>Pisi Linux programs are packaged with small scripts which configures them to entegrate with system and each other. Çomar is the tool which manages and executes these scripts.</Description>
-        <Archive sha1sum="a0894a20d3c2bb5843de7e25fc98707baf554df1" type="tarbz2">http://source.pisilinux.org/1.0/comar-3.0.3.tar.bz2</Archive> 
+        <Archive sha1sum="a0894a20d3c2bb5843de7e25fc98707baf554df1" type="tarbz2">http://source.limelinux.org/1.0/comar-3.0.3.tar.bz2</Archive> 
         <BuildDependencies>
             <Dependency>cmake</Dependency>
         </BuildDependencies>

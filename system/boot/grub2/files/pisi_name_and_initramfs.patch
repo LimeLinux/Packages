@@ -5,8 +5,8 @@
  
  if [ "x${GRUB_DISTRIBUTOR}" = "x" ] ; then
 -  OS=GNU/Linux
-+  if [ -f "/etc/pisilinux-release" ] ; then
-+    OS="$(sed 's, release .*$,,g' /etc/pisilinux-release)"
++  if [ -f "/etc/limelinux-release" ] ; then
++    OS="$(sed 's, release .*$,,g' /etc/limelinux-release)"
 +  elif [ -e "/etc/system-release" ] ; then
 +    OS="$(sed 's, release .*$,,g' /etc/system-release)"
 +  else

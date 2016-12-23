@@ -76,7 +76,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/pulseaudio.conf">pulseaudio.conf</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/pulseaudio">pisilinux/pulseaudio.sysconfig</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/pulseaudio">limelinux/pulseaudio.sysconfig</AdditionalFile>
         </AdditionalFiles>
     </Package>
 

@@ -7,8 +7,8 @@ diff -Naur comar-api-2.4.9.orig/comar/network.py comar-api-2.4.9/comar/network.p
  
 -from pardus import iniutils
 -from pardus import netutils
-+from pisilinux import iniutils
-+from pisilinux import netutils
++from limelinux import iniutils
++from limelinux import netutils
  
  from comar.service import startService, stopService, loadConfig
  
@@ -22,9 +22,9 @@ diff -Naur comar-api-2.4.9.orig/setup.py comar-api-2.4.9/setup.py
 -        if os.path.exists("/etc/pardus-release"):
 -            self.install_platlib = '$base/lib/pardus'
 -            self.install_purelib = '$base/lib/pardus'
-+        if os.path.exists("/etc/pisilinux-release"):
-+            self.install_platlib = '$base/lib/pisilinux'
-+            self.install_purelib = '$base/lib/pisilinux'
++        if os.path.exists("/etc/limelinux-release"):
++            self.install_platlib = '$base/lib/limelinux'
++            self.install_purelib = '$base/lib/limelinux'
          install.finalize_options(self)
      
      def run(self):

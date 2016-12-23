@@ -45,7 +45,7 @@ def setup():
                          --with-int10=x86emu \
                          --without-systemd-daemon \
                          --disable-systemd-daemon \
-                         --with-os-name=\"PisiLinux\" \
+                         --with-os-name=\"limelinux\" \
                          --with-os-vendor=\"Pisi GNU/Linux Community\" \
                          --with-builderstring=\"Package: %s\" \
                          --with-fontrootdir=/usr/share/fonts \

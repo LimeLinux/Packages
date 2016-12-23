@@ -26,9 +26,9 @@
             <Dependency>readline</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>pisilinux_platform.patch</Patch>
+            <Patch>limelinux_platform.patch</Patch>
             <!-- Look into /usr/lib/pisi-linux first -->
-            <Patch>add-pisilinux-to-search-path.patch</Patch>
+            <Patch>add-limelinux-to-search-path.patch</Patch>
             <!-- Use UTF-8 by default -->
             <Patch>default-utf8.patch</Patch>
             <!-- Disable egginfo -->

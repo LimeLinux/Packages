@@ -39,7 +39,7 @@ def install():
         pisitools.dodir("/usr/lib32")
 
 
-    pisitools.dosym("pisilinux-release", "/etc/system-release")
+    pisitools.dosym("limelinux-release", "/etc/system-release")
 
     shelltools.touch("hostname")
 

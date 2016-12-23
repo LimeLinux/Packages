@@ -20,8 +20,8 @@ def setup():
                           --disable-wayland \
                           --disable-qt \
                           --without-qt \
-                         --with-package-name='PisiLinux gstreamer-plugins-bad package' \
-                         --with-package-origin='http://www.pisilinux.org' \
+                         --with-package-name='limelinux gstreamer-plugins-bad package' \
+                         --with-package-origin='http://www.limelinux.org' \
                          --with-gtk=3.0")
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ") 

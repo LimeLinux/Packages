@@ -4,7 +4,7 @@
 <PISI>
     <Source>
         <Name>baselayout</Name>
-        <Homepage>http://www.pisilinux.org</Homepage>
+        <Homepage>http://www.limelinux.org</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -15,7 +15,7 @@
         <IsA>data</IsA>
         <Summary>Filesystem baselayout</Summary>
         <Description>baselayout creates the Pisi Linux Linux main filesystem hierarchy.</Description>
-        <Archive sha1sum="89cb1dc3c3a2fc47c299ae6c002cad212b7fc56e" type="targz">http://source.pisilinux.org/1.0/baselayout-3.10.0.tar.gz</Archive>
+        <Archive sha1sum="89cb1dc3c3a2fc47c299ae6c002cad212b7fc56e" type="targz">http://source.limelinux.org/1.0/baselayout-3.10.0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -28,7 +28,7 @@
             <Path fileType="executable" permanent="true">/sbin</Path>
             <Path fileType="library" permanent="true">/lib*</Path>
             <Path fileType="config" permanent="true">/etc</Path>
-            <Path fileType="data" permanent="true">/etc/pisilinux-release</Path>
+            <Path fileType="data" permanent="true">/etc/limelinux-release</Path>
             <Path fileType="data" permanent="true">/media</Path>
             <Path fileType="data" permanent="true">/boot</Path>
             <Path fileType="data" permanent="true">/proc</Path>
@@ -54,7 +54,7 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/sysctl.conf">sysctl.conf</AdditionalFile>
 
             <!-- Release file for Pisi Linux, there's another in lsb-release package -->
-            <AdditionalFile owner="root" permission="0644" target="/etc/pisilinux-release">pisilinux-release</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/limelinux-release">limelinux-release</AdditionalFile>
 
             <!-- Should be dropped after switching to systemd as the only user is COMAR -->
             <!--AdditionalFile owner="root" permission="0644" target="/usr/share/man/man8/start-stop-daemon.8">start-stop-daemon.8</AdditionalFile-->

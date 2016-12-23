@@ -37,7 +37,7 @@ CMD_ENV = "/sbin/update-environment"
 HOSTS_PATH = "/etc/hosts"
 
 RESOLV_USER = "/etc/resolv.default.conf"
-RESOLV_PISILINUX = "/usr/share/baselayout/resolv.conf"
+RESOLV_limelinux = "/usr/share/baselayout/resolv.conf"
 
 def getSearchDomain():
     if not os.access(RESOLV_USER, os.R_OK):
@@ -48,11 +48,11 @@ def getSearchDomain():
             return line.split()[1]
     return None
 
-def getPisiLinuxNameServers():
+def getlimelinuxNameServers():
     servers = []
-    if not os.access(RESOLV_PISILINUX, os.R_OK):
+    if not os.access(RESOLV_limelinux, os.R_OK):
         return servers
-    for line in file(RESOLV_PISILINUX):
+    for line in file(RESOLV_limelinux):
         line = line.strip()
         if line.startswith("nameserver"):
             ip = line.split()[1]
@@ -89,7 +89,7 @@ def setNameServers(nameservers, searchdomain):
 def useNameServers(nameservers, searchdomain):
     # Append default name servers
     nameservers.extend(getNameServers())
-    nameservers.extend(getPisiLinuxNameServers())
+    nameservers.extend(getlimelinuxNameServers())
 
     servers = []
     for server in nameservers:

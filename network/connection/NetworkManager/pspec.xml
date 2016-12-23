@@ -1,6 +1,6 @@
 
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://limelinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>NetworkManager</Name>

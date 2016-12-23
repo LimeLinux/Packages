@@ -7,7 +7,7 @@ Index: Lib/platform.py
      'SuSE', 'debian', 'fedora', 'redhat', 'centos',
      'mandrake', 'mandriva', 'rocks', 'slackware', 'yellowdog', 'gentoo',
 -    'UnitedLinux', 'turbolinux')
-+    'UnitedLinux', 'turbolinux', 'pisilinux')
++    'UnitedLinux', 'turbolinux', 'limelinux')
  
  def _parse_release_file(firstline):
  

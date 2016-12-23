@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# PisiLinux/i386 3.8.5 Kernel Configuration
+# limelinux/i386 3.8.5 Kernel Configuration
 #
 # CONFIG_64BIT is not set
 CONFIG_X86_32=y
@@ -62,7 +62,7 @@ CONFIG_KERNEL_GZIP=y
 # CONFIG_KERNEL_LZMA is not set
 # CONFIG_KERNEL_XZ is not set
 # CONFIG_KERNEL_LZO is not set
-CONFIG_DEFAULT_HOSTNAME="(PisiLinux)"
+CONFIG_DEFAULT_HOSTNAME="(limelinux)"
 CONFIG_SWAP=y
 CONFIG_SYSVIPC=y
 CONFIG_SYSVIPC_SYSCTL=y

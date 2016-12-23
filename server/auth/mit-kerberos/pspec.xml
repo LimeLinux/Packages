@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>MIT Kerberos Library</Summary>
         <Description>Kerberos is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography.</Description>
-        <Archive sha1sum="6342e29980210c32dee3563dfb0728b4b9592381" type="targz">http://source.pisilinux.org/1.0/krb5-1.13.1.tar.gz</Archive>
+        <Archive sha1sum="6342e29980210c32dee3563dfb0728b4b9592381" type="targz">http://source.limelinux.org/1.0/krb5-1.13.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>keyutils</Dependency>
         </BuildDependencies>

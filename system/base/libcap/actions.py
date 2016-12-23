@@ -18,7 +18,7 @@ def setup():
     pisitools.dosed("libcap/Makefile", "install.*STALIBNAME", deleteLine=True)
     # change shared libs mode
     pisitools.dosed("libcap/Makefile", "(.*?install -m) 0644 (.*?MINLIBNAME.*)", r"\1 0755 \2")
-    # use pisilinux flags
+    # use limelinux flags
     pisitools.dosed("Make.Rules", "^(CC|CFLAGS|LD)\s:=.*", deleteLine=True)
 
     pisitools.dosed("Make.Rules", "^(PAM_CAP\s:=).*", r"\1 %s" % ("no" if get.buildTYPE() == "emul32" else "yes"))
