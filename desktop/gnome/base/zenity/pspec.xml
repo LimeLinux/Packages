@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A rewrite of gdialog</Summary>
         <Description>Zenity is the GNOME port of dialog which allows you to display dialog boxes from the commandline and shell scripts.</Description>
-        <Archive sha1sum="b0dfb31c8445547de968fb71c4303515cdf0da83" type="tarxz">http://source.limelinux.org/1.0/zenity.tar.xz</Archive>
+        <Archive sha1sum="b0dfb31c8445547de968fb71c4303515cdf0da83" type="tarxz">http://source.limelinux.com/1.0/zenity.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>pango</Dependency>
