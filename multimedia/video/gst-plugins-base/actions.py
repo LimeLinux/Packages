@@ -22,8 +22,8 @@ def setup():
                          --enable-libvisual \
                          --enable-experimental \
                          --enable-introspection=%(introspection)s \
-                         --with-package-name='PisiLinux gstreamer-plugins-base package' \
-                         --with-package-origin='http://www.pisilinux.org' \
+                         --with-package-name='limelinux gstreamer-plugins-base package' \
+                         --with-package-origin='http://www.limelinux.org' \
                         " % opts)
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")

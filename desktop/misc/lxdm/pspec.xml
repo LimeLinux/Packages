@@ -16,7 +16,7 @@
         <Description>LXDM is the future display manager of LXDE.</Description>
         <Archive sha1sum="829528672b46fff945a2949161dd74b7410ddb8f" type="tarxz">mirrors://sourceforge/lxdm/lxdm-0.5.1.tar.xz</Archive>
 
-        <!--Archive sha1sum="1934b7f22adc50445a935db817febe4b6ec1a5f2" target="lxdm-0.5.0" type="tarxz">http://source.pisilinux.org/1.0/lxdm-pisilinux-theme.tar.xz</Archive-->
+        <!--Archive sha1sum="1934b7f22adc50445a935db817febe4b6ec1a5f2" target="lxdm-0.5.0" type="tarxz">http://source.limelinux.org/1.0/lxdm-limelinux-theme.tar.xz</Archive-->
         <BuildDependencies>
             <Dependency>intltool</Dependency>
             <Dependency>iso-codes</Dependency>

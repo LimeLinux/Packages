@@ -20,7 +20,7 @@
         <AdditionalFiles>
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
-            <AdditionalFile target="browserconfig.properties" permission="0644">pisilinux/browserconfig.properties</AdditionalFile> <!--anasayfa ayarlaması-->
+            <AdditionalFile target="browserconfig.properties" permission="0644">limelinux/browserconfig.properties</AdditionalFile> <!--anasayfa ayarlaması-->
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency>wget</Dependency>
@@ -108,17 +108,17 @@
         </Files>
         <AdditionalFiles>
             <!-- Desktop file -->
-            <AdditionalFile target="/usr/share/applications/mozillafirefox.desktop" permission="0644" owner="root">pisilinux/mozillafirefox.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/applications/mozillafirefox.desktop" permission="0644" owner="root">limelinux/mozillafirefox.desktop</AdditionalFile>
 
             <!-- Default options -->
-            <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-l10n.js" permission="0644" owner="root">pisilinux/firefox-l10n.js</AdditionalFile>
-            <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-pisilinux.js" permission="0644" owner="root">pisilinux/default-prefs.js</AdditionalFile>
+            <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-l10n.js" permission="0644" owner="root">limelinux/firefox-l10n.js</AdditionalFile>
+            <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-limelinux.js" permission="0644" owner="root">limelinux/default-prefs.js</AdditionalFile>
 
             <!-- Default bookmarks -->
-            <AdditionalFile target="/usr/lib/firefox/pisilinux/bookmarks-tr.html" permission="0644" owner="root">pisilinux/pisilinux_bookmark-tr.html</AdditionalFile>
-            <AdditionalFile target="/usr/lib/firefox/pisilinux/bookmarks-en.html" permission="0644" owner="root">pisilinux/pisilinux_bookmark-en.html</AdditionalFile>
-            <AdditionalFile target="/usr/lib/firefox/pisilinux/bookmarks-nl.html" permission="0644" owner="root">pisilinux/pisilinux_bookmark-nl.html</AdditionalFile>
-            <AdditionalFile target="/usr/lib/firefox/pisilinux/bookmarks-de.html" permission="0644" owner="root">pisilinux/pisilinux_bookmark-de.html</AdditionalFile>
+            <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-tr.html" permission="0644" owner="root">limelinux/limelinux_bookmark-tr.html</AdditionalFile>
+            <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-en.html" permission="0644" owner="root">limelinux/limelinux_bookmark-en.html</AdditionalFile>
+            <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-nl.html" permission="0644" owner="root">limelinux/limelinux_bookmark-nl.html</AdditionalFile>
+            <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-de.html" permission="0644" owner="root">limelinux/limelinux_bookmark-de.html</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script='package.py'>System.Package</COMAR>

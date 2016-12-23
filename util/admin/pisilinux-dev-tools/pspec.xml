@@ -3,8 +3,8 @@
 <!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>pisilinux-dev-tools</Name>
-        <Homepage>http://www.pisilinux.org</Homepage>
+        <Name>limelinux-dev-tools</Name>
+        <Homepage>http://www.limelinux.org</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -12,8 +12,8 @@
         <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>A collection of useful tools that Pisi Linux developers use to make their developing work a lot easier</Summary>
-        <Description>Pisilinux-dev-tools is a collection of useful tools that Pisilinux developers use to make their developing work a lot easier. Such tools can include packaging preparation, package analysis, etc.</Description>
-        <Archive sha1sum="202e8ba50f95c150fa6049f42780c6b97ed45cd9" type="tarxz">http://source.pisilinux.org/1.0/pisilinux-dev-tools-0.0.2.tar.xz</Archive>
+        <Description>limelinux-dev-tools is a collection of useful tools that limelinux developers use to make their developing work a lot easier. Such tools can include packaging preparation, package analysis, etc.</Description>
+        <Archive sha1sum="202e8ba50f95c150fa6049f42780c6b97ed45cd9" type="tarxz">http://source.limelinux.org/1.0/limelinux-dev-tools-0.0.2.tar.xz</Archive>
         <Patches>
             <Patch>fix_detect_mesa.patch</Patch>
             <Patch>spped_up.patch</Patch>
@@ -22,7 +22,7 @@
     </Source>
 
     <Package>
-        <Name>pisilinux-dev-tools</Name>
+        <Name>limelinux-dev-tools</Name>
         <RuntimeDependencies>
             <Dependency>chrpath</Dependency>
             <Dependency>binutils</Dependency>
@@ -34,10 +34,10 @@
     </Package>
 
     <Package>
-        <Name>pisilinux-dev-tools-devel</Name>
-        <Summary>Development files for pisilinux-dev-tools</Summary>
+        <Name>limelinux-dev-tools-devel</Name>
+        <Summary>Development files for limelinux-dev-tools</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">pisilinux-dev-tools</Dependency>
+            <Dependency release="current">limelinux-dev-tools</Dependency>
         </RuntimeDependencies>
         <Files>
 

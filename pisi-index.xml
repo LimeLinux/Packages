@@ -528,7 +528,7 @@
             <Summary xml:lang="tr">MIT Kerberos kütüphanesi</Summary>
             <Description xml:lang="en">Kerberos is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography.</Description>
             <Description xml:lang="tr">Kerberos bir ağ doğrulama protokolüdür. Sunucu/istemci uygulamalarında, gizli anahtar kriptoloji teknolojisini kullanarak, güçlü bir doğrulama sağlar.</Description>
-            <Archive type="targz" sha1sum="6342e29980210c32dee3563dfb0728b4b9592381">http://source.pisilinux.org/1.0/krb5-1.13.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="6342e29980210c32dee3563dfb0728b4b9592381">http://source.limelinux.org/1.0/krb5-1.13.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>keyutils</Dependency>
             </BuildDependencies>
@@ -791,17 +791,17 @@
             <Summary xml:lang="tr">Linux çekirdeği tarafından kullanılan firmware dosyaları</Summary>
             <Description xml:lang="en">linux-firmware contains different firmware files required for some devices to operate correctly.</Description>
             <Description xml:lang="tr">linux-firmware, bazı aygıtların düzgün çalışabilmesi için gerekli firmware dosyalarını içerir.</Description>
-            <Archive type="tarbz2" sha1sum="5d06fcba6edd042c1add63a770361d357327ae04">http://sourceforge.net/projects/pisilinux/files/source/linux-firmware-20160624.tar.bz2</Archive>
-            <Archive type="tarxz" sha1sum="dd685266f7bc0acb0d455462637d23e3e895bc96" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/common-fw.tar.xz</Archive>
-            <Archive type="tarxz" sha1sum="b2bb7fce3ea67d131f543a48134f7a65f2a8d834" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware-ipw.tar.xz</Archive>
-            <Archive type="tarbz2" sha1sum="a5a616a9f765cf9cbb224deb7ccefdc82a7fe4d9" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/firmware-nonfreebox-2-tar.bz2</Archive>
-            <Archive type="tarbz2" sha1sum="6c18b28e62637fb809eaff89fff623ae1d470500" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/ar9170.tar.bz2</Archive>
-            <Archive type="tarbz2" sha1sum="aa3b414c2948be5f226a25fa5f37e56fd659a3bb" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/ipw2x00-firmware.tar.bz2</Archive>
-            <Archive type="tarbz2" sha1sum="f7ecf5412b7818871fa2798f1b314f8ddddb494e" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/aic94xx-seq.tar.bz2</Archive>
-            <Archive type="tarbz2" sha1sum="16d5f4dcc90f978732a9a5b3b0347672a6cc4c36" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/accessrunner-firmware.tar.bz2</Archive>
-            <Archive type="tarbz2" sha1sum="e40729d30ad6d7a6c88b90ee7bc5fbaeb9458cb7" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/rtl8192se-firmware.tar.bz2</Archive>
-            <Archive type="tarbz2" sha1sum="ff9e7f4b120476a90cd3fb69d76240166c4ff2a5" target="linux-firmware/mix">http://sourceforge.net/projects/pisilinux/files/source/zd12x1.tar.bz2</Archive>
-            <Archive type="tarxz" sha1sum="3239212ae7c5f60baa749764dcb8f5189e1e2f13" target="linux-firmware/mix">http://sourceforge.net/projects/pisilinux/files/source/nouveau-340-32.tar.xz</Archive>
+            <Archive type="tarbz2" sha1sum="5d06fcba6edd042c1add63a770361d357327ae04">http://sourceforge.net/projects/limelinux/files/source/linux-firmware-20160624.tar.bz2</Archive>
+            <Archive type="tarxz" sha1sum="dd685266f7bc0acb0d455462637d23e3e895bc96" target="linux-firmware/mix">http://source.limelinux.org/erdinc/common-fw.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b2bb7fce3ea67d131f543a48134f7a65f2a8d834" target="linux-firmware/mix">http://source.limelinux.org/erdinc/firmware-ipw.tar.xz</Archive>
+            <Archive type="tarbz2" sha1sum="a5a616a9f765cf9cbb224deb7ccefdc82a7fe4d9" target="linux-firmware/mix">http://source.limelinux.org/erdinc/firmware/firmware-nonfreebox-2-tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="6c18b28e62637fb809eaff89fff623ae1d470500" target="linux-firmware/mix">http://source.limelinux.org/erdinc/firmware/ar9170.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="aa3b414c2948be5f226a25fa5f37e56fd659a3bb" target="linux-firmware/mix">http://source.limelinux.org/erdinc/firmware/ipw2x00-firmware.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="f7ecf5412b7818871fa2798f1b314f8ddddb494e" target="linux-firmware/mix">http://source.limelinux.org/erdinc/firmware/aic94xx-seq.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="16d5f4dcc90f978732a9a5b3b0347672a6cc4c36" target="linux-firmware/mix">http://source.limelinux.org/erdinc/firmware/accessrunner-firmware.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="e40729d30ad6d7a6c88b90ee7bc5fbaeb9458cb7" target="linux-firmware/mix">http://source.limelinux.org/erdinc/firmware/rtl8192se-firmware.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="ff9e7f4b120476a90cd3fb69d76240166c4ff2a5" target="linux-firmware/mix">http://sourceforge.net/projects/limelinux/files/source/zd12x1.tar.bz2</Archive>
+            <Archive type="tarxz" sha1sum="3239212ae7c5f60baa749764dcb8f5189e1e2f13" target="linux-firmware/mix">http://sourceforge.net/projects/limelinux/files/source/nouveau-340-32.tar.xz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target="iwlwifi-7260-14.ucode">iwlwifi-7260-14.ucode</AdditionalFile>
                 <AdditionalFile target="iwlwifi-7260-15.ucode">iwlwifi-7260-15.ucode</AdditionalFile>
@@ -1020,7 +1020,7 @@
             <Archive type="tarxz" sha1sum="6024dc49a566ed6296ad6cd707a199d41f090176">https://ftp.mozilla.org/pub/firefox/releases/50.1.0/source/firefox-50.1.0.source.tar.xz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
-                <AdditionalFile target="browserconfig.properties" permission="0644">pisilinux/browserconfig.properties</AdditionalFile>
+                <AdditionalFile target="browserconfig.properties" permission="0644">limelinux/browserconfig.properties</AdditionalFile>
             </AdditionalFiles>
             <BuildDependencies>
                 <Dependency>wget</Dependency>
@@ -1110,13 +1110,13 @@
                 <COMAR script="package.py">System.Package</COMAR>
             </Provides>
             <AdditionalFiles>
-                <AdditionalFile target="/usr/share/applications/mozillafirefox.desktop" permission="0644" owner="root">pisilinux/mozillafirefox.desktop</AdditionalFile>
-                <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-l10n.js" permission="0644" owner="root">pisilinux/firefox-l10n.js</AdditionalFile>
-                <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-pisilinux.js" permission="0644" owner="root">pisilinux/default-prefs.js</AdditionalFile>
-                <AdditionalFile target="/usr/lib/firefox/pisilinux/bookmarks-tr.html" permission="0644" owner="root">pisilinux/pisilinux_bookmark-tr.html</AdditionalFile>
-                <AdditionalFile target="/usr/lib/firefox/pisilinux/bookmarks-en.html" permission="0644" owner="root">pisilinux/pisilinux_bookmark-en.html</AdditionalFile>
-                <AdditionalFile target="/usr/lib/firefox/pisilinux/bookmarks-nl.html" permission="0644" owner="root">pisilinux/pisilinux_bookmark-nl.html</AdditionalFile>
-                <AdditionalFile target="/usr/lib/firefox/pisilinux/bookmarks-de.html" permission="0644" owner="root">pisilinux/pisilinux_bookmark-de.html</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/mozillafirefox.desktop" permission="0644" owner="root">limelinux/mozillafirefox.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-l10n.js" permission="0644" owner="root">limelinux/firefox-l10n.js</AdditionalFile>
+                <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-limelinux.js" permission="0644" owner="root">limelinux/default-prefs.js</AdditionalFile>
+                <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-tr.html" permission="0644" owner="root">limelinux/limelinux_bookmark-tr.html</AdditionalFile>
+                <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-en.html" permission="0644" owner="root">limelinux/limelinux_bookmark-en.html</AdditionalFile>
+                <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-nl.html" permission="0644" owner="root">limelinux/limelinux_bookmark-nl.html</AdditionalFile>
+                <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-de.html" permission="0644" owner="root">limelinux/limelinux_bookmark-de.html</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
@@ -4331,7 +4331,7 @@
                 <COMAR script="package.py">System.Package</COMAR>
             </Provides>
             <AdditionalFiles>
-                <AdditionalFile target="/etc/bash_completion.d/pisilinux" permission="0644" owner="root">pisilinux</AdditionalFile>
+                <AdditionalFile target="/etc/bash_completion.d/limelinux" permission="0644" owner="root">limelinux</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
@@ -5236,9 +5236,9 @@
             </Files>
             <AdditionalFiles>
                 <AdditionalFile target="/etc/vim/vimrc" permission="0644" owner="root">vimrc</AdditionalFile>
-                <AdditionalFile target="/usr/share/vim/vimfiles/plugin/actions.vim" permission="0644" owner="root">pisilinux/actions.vim</AdditionalFile>
-                <AdditionalFile target="/usr/share/vim/vimfiles/plugin/pspec.vim" permission="0644" owner="root">pisilinux/pspec.vim</AdditionalFile>
-                <AdditionalFile target="/usr/share/vim/vimfiles/plugin/translations.vim" permission="0644" owner="root">pisilinux/translations.vim</AdditionalFile>
+                <AdditionalFile target="/usr/share/vim/vimfiles/plugin/actions.vim" permission="0644" owner="root">limelinux/actions.vim</AdditionalFile>
+                <AdditionalFile target="/usr/share/vim/vimfiles/plugin/pspec.vim" permission="0644" owner="root">limelinux/pspec.vim</AdditionalFile>
+                <AdditionalFile target="/usr/share/vim/vimfiles/plugin/translations.vim" permission="0644" owner="root">limelinux/translations.vim</AdditionalFile>
                 <AdditionalFile target="/usr/share/vim/vimfiles/plugin/taglist.vim" permission="0644" owner="root">plugins/taglist.vim</AdditionalFile>
                 <AdditionalFile target="/usr/share/vim/vimfiles/plugin/kde-devel-vim.vim" permission="0644" owner="root">plugins/kde-devel-vim.vim</AdditionalFile>
                 <AdditionalFile target="/usr/share/vim/vimfiles/plugin/newpythonfile.vim" permission="0644" owner="root">plugins/newpythonfile.vim</AdditionalFile>
@@ -5465,7 +5465,7 @@
             <Description xml:lang="en">lsof is a Unix-specific diagnostic tool. Its name stands for LiSt Open Files, and it does just that. It lists information about any files that are open by processes currently running on the system. It can also list communications open by each process.</Description>
             <Description xml:lang="tr">lsof sistemde çalışmakta olan UNIX süreçleri tarafından açılmış dosyaları listeleyen kullanışlı bir araçtır.</Description>
             <Description xml:lang="es">Lsof es una herramienta de diagnostica específica de Unix. Su nombre quiere decir LiSt Open files (listar archivos abiertos), y hace justamente esto. Genera una lista con información sobre cada archivo abierto por procesos que están activos en el sistema. También puede listar comunicaciones abiertas por cada proceso.</Description>
-            <Archive type="tar" sha1sum="6e5f875863091db32212324f669f110e2365b617">http://source.pisilinux.org/1.0/lsof_4.84_src.tar</Archive>
+            <Archive type="tar" sha1sum="6e5f875863091db32212324f669f110e2365b617">http://source.limelinux.org/1.0/lsof_4.84_src.tar</Archive>
             <SourceURI>util/misc/lsof/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -5869,8 +5869,8 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>pisilinux-dev-tools</Name>
-            <Homepage>http://www.pisilinux.org</Homepage>
+            <Name>limelinux-dev-tools</Name>
+            <Homepage>http://www.limelinux.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -5879,17 +5879,17 @@
             <IsA>app:console</IsA>
             <PartOf>util.admin</PartOf>
             <Summary xml:lang="en">A collection of useful tools that Pisi Linux developers use to make their developing work a lot easier</Summary>
-            <Description xml:lang="en">Pisilinux-dev-tools is a collection of useful tools that Pisilinux developers use to make their developing work a lot easier. Such tools can include packaging preparation, package analysis, etc.</Description>
-            <Archive type="tarxz" sha1sum="202e8ba50f95c150fa6049f42780c6b97ed45cd9">http://source.pisilinux.org/1.0/pisilinux-dev-tools-0.0.2.tar.xz</Archive>
+            <Description xml:lang="en">limelinux-dev-tools is a collection of useful tools that limelinux developers use to make their developing work a lot easier. Such tools can include packaging preparation, package analysis, etc.</Description>
+            <Archive type="tarxz" sha1sum="202e8ba50f95c150fa6049f42780c6b97ed45cd9">http://source.limelinux.org/1.0/limelinux-dev-tools-0.0.2.tar.xz</Archive>
             <Patches>
                 <Patch>fix_detect_mesa.patch</Patch>
                 <Patch>spped_up.patch</Patch>
                 <Patch>ignore_glibc-32bit.patch</Patch>
             </Patches>
-            <SourceURI>util/admin/pisilinux-dev-tools/pspec.xml</SourceURI>
+            <SourceURI>util/admin/limelinux-dev-tools/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>pisilinux-dev-tools</Name>
+            <Name>limelinux-dev-tools</Name>
             <RuntimeDependencies>
                 <Dependency>chrpath</Dependency>
                 <Dependency>binutils</Dependency>
@@ -5900,11 +5900,11 @@
             </Files>
         </Package>
         <Package>
-            <Name>pisilinux-dev-tools-devel</Name>
-            <Summary xml:lang="en">Development files for pisilinux-dev-tools</Summary>
-            <Summary xml:lang="tr">pisilinux-dev-tools için geliştirme dosyaları</Summary>
+            <Name>limelinux-dev-tools-devel</Name>
+            <Summary xml:lang="en">Development files for limelinux-dev-tools</Summary>
+            <Summary xml:lang="tr">limelinux-dev-tools için geliştirme dosyaları</Summary>
             <RuntimeDependencies>
-                <Dependency release="1">pisilinux-dev-tools</Dependency>
+                <Dependency release="1">limelinux-dev-tools</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="man">/usr/share/man/man3</Path>
@@ -7480,7 +7480,7 @@
             <Summary xml:lang="tr">Yapılandırma dosyası ayıklama kitaplığı</Summary>
             <Description xml:lang="en">dotconf is a simple-to-use and powerful configuration file parser library written in C.</Description>
             <Description xml:lang="tr">dotconf C dilinde yazılmış, basit kullanımlı ve güçlü bir yapılandırma dosyası ayıklama kitaplığıdır.</Description>
-            <Archive type="targz" sha1sum="0d66468cc264e7e0bfcff437cc22a1d741ca81f5">http://source.pisilinux.org/1.0/dotconf-1.3.tar.gz</Archive>
+            <Archive type="targz" sha1sum="0d66468cc264e7e0bfcff437cc22a1d741ca81f5">http://source.limelinux.org/1.0/dotconf-1.3.tar.gz</Archive>
             <SourceURI>programming/misc/dotconf/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -9373,7 +9373,7 @@
     <SpecFile>
         <Source>
             <Name>gonullu</Name>
-            <Homepage>https://github.com/PisiLinuxNew/gonullu</Homepage>
+            <Homepage>https://github.com/limelinuxNew/gonullu</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -9386,7 +9386,7 @@
             <Summary xml:lang="tr">Gonullu uygulamasi, pisi linux dağıtımının paketlerini derlemek üzere hazırlanmıştır.</Summary>
             <Description xml:lang="en">Application build the packages waiting at queue of build system as PISI packages using docker images and again, sent them to build system.</Description>
             <Description xml:lang="tr">Uygulama docker imajlarını kullanarak, derleme sisteminin kuyruğundan bekleyen paketleri pisi paketi haline getirir ve derleme sistemine gönderir.</Description>
-            <Archive type="targz" sha1sum="4e86fb87595b815839e600d1e7d3ff88c5fe2995">https://github.com/PisiLinuxNew/gonullu/archive/v1.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="4e86fb87595b815839e600d1e7d3ff88c5fe2995">https://github.com/limelinuxNew/gonullu/archive/v1.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3</Dependency>
                 <Dependency>python3-setuptools</Dependency>
@@ -20414,7 +20414,7 @@
             <Summary xml:lang="tr">X.Org libXxf86misc kitaplığı</Summary>
             <Summary xml:lang="de">X.Org libXxf86misc Bibliothek</Summary>
             <Description xml:lang="en">LibXxf86misc is the client library for the XFree86-misc extension.</Description>
-            <Archive type="targz" sha1sum="8bed53f728e646e8c216dd0840a9e41a66c44845">http://source.pisilinux.org/1.0/libXxf86misc-1.0.3.tar.gz</Archive>
+            <Archive type="targz" sha1sum="8bed53f728e646e8c216dd0840a9e41a66c44845">http://source.limelinux.org/1.0/libXxf86misc-1.0.3.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libXext</Dependency>
                 <Dependency>libXxf86miscproto</Dependency>
@@ -21558,9 +21558,9 @@
             <Summary xml:lang="en">GNU GRUB is a Multiboot boot loader.</Summary>
             <Description xml:lang="en">GNU GRUB (short for GNU GRand Unified Bootloader) is a boot loader package from the GNU Project.</Description>
             <Archive type="tarxz" sha1sum="1bf580f1e8bce4909a7ac7ca485cee02b00ed383">ftp://alpha.gnu.org/gnu/grub/grub-2.02~beta2.tar.xz</Archive>
-            <Archive type="tarxz" sha1sum="4ec712aced1c2b4cb6cd1cbd83fc2154249d6977" target="grub-2.02~beta2/grub-extras">http://source.pisilinux.org/1.0/grub2_extras_915resolution_r10.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="4ec712aced1c2b4cb6cd1cbd83fc2154249d6977" target="grub-2.02~beta2/grub-extras">http://source.limelinux.org/1.0/grub2_extras_915resolution_r10.tar.xz</Archive>
             <Archive type="gz" sha1sum="30797ba7a86fc32213b9ae994c9fa45f37d01170">http://ftp.gnu.org/gnu/unifont/unifont-6.3.20131217/unifont-6.3.20131217.bdf.gz</Archive>
-            <Archive type="tarxz" sha1sum="8f8790d18341ae86a2129421f47a3e415ab150f5" target="grub-2.02~beta2/themes">https://sourceforge.net/projects/pisilinux/files/source/grub2-theme-pisilinux-0.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8f8790d18341ae86a2129421f47a3e415ab150f5" target="grub-2.02~beta2/themes">https://sourceforge.net/projects/limelinux/files/source/grub2-theme-limelinux-0.3.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
                 <Dependency>bison</Dependency>
@@ -21778,8 +21778,8 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>gfxtheme-pisilinux-install</Name>
-            <Homepage>www.pisilinux.org</Homepage>
+            <Name>gfxtheme-limelinux-install</Name>
+            <Homepage>www.limelinux.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -21792,7 +21792,7 @@
             <Summary xml:lang="tr">Pisi Linux gfxboot teması</Summary>
             <Description xml:lang="en">Gfxtheme install package for Pisi Linux</Description>
             <Description xml:lang="tr">Kurulum sistemi ve kurulu sistem için Pisi Linux gfxboot teması.</Description>
-            <Archive type="tarxz" sha1sum="e7ba6a4f7afd9a271ba8ce6d1cb980d7d2e265e4">http://source.pisilinux.org/1.0/gfxtheme-pisilinux-install-0.2.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="e7ba6a4f7afd9a271ba8ce6d1cb980d7d2e265e4">http://source.limelinux.org/1.0/gfxtheme-limelinux-install-0.2.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gfxboot</Dependency>
                 <Dependency>fribidi</Dependency>
@@ -21800,12 +21800,12 @@
             <Patches>
                 <Patch>chmod-t.patch</Patch>
             </Patches>
-            <SourceURI>system/boot/gfxtheme-pisilinux-install/pspec.xml</SourceURI>
+            <SourceURI>system/boot/gfxtheme-limelinux-install/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>gfxtheme-pisilinux-install</Name>
+            <Name>gfxtheme-limelinux-install</Name>
             <Files>
-                <Path fileType="data">/usr/share/gfxtheme/pisilinux/install</Path>
+                <Path fileType="data">/usr/share/gfxtheme/limelinux/install</Path>
             </Files>
         </Package>
         <History>
@@ -22198,9 +22198,9 @@
             <Description xml:lang="en">The kbd package contains keytable files and keyboard utilities compatible with kernel version 1.1.54 and later.</Description>
             <Description xml:lang="tr">Kbd paketi,  çekirdek sürüm 1.1.54  ve sonraki sürümlerle uyumlu anahtar tablo dosyaları ve klavye yardımcı uygulamaları içerir.</Description>
             <Archive type="tarxz" sha1sum="0a58dc928386f0f9c981fbefd24f05fc0b8226d7">https://www.kernel.org/pub/linux/utils/kbd/kbd-2.0.3.tar.xz</Archive>
-            <Archive type="tarbz2" sha1sum="17625849ecf4dedf755aefa06d78406b92c31743" target="kbd-2.0.3">http://source.pisilinux.org/1.0/kbd-latarcyrheb-16-fixed.tar.bz2</Archive>
-            <Archive type="tarbz2" sha1sum="a5f6d9dff7a8a484cd5014ec7ffdf1eaed27084a" target="kbd-2.0.3">http://source.pisilinux.org/1.0/kbd-latsun-fonts.tar.bz2</Archive>
-            <Archive type="tarbz2" sha1sum="d52f95fdc761cead041d23992f8802be5ac4bc12" target="kbd-2.0.3">http://source.pisilinux.org/1.0/ro_maps.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="17625849ecf4dedf755aefa06d78406b92c31743" target="kbd-2.0.3">http://source.limelinux.org/1.0/kbd-latarcyrheb-16-fixed.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="a5f6d9dff7a8a484cd5014ec7ffdf1eaed27084a" target="kbd-2.0.3">http://source.limelinux.org/1.0/kbd-latsun-fonts.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="d52f95fdc761cead041d23992f8802be5ac4bc12" target="kbd-2.0.3">http://source.limelinux.org/1.0/ro_maps.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>gettext</Dependency>
                 <Dependency>gzip</Dependency>
@@ -22213,13 +22213,13 @@
                 <Patch level="1">mandriva/kbd-1.12-data_thai.patch</Patch>
                 <Patch level="1">mandriva/kbd-1.15-remove-unneeded-calls.patch</Patch>
                 <Patch level="1">archlinux/fix-euro2.patch</Patch>
-                <Patch level="1">pisilinux/unicode_start-default-font.patch</Patch>
-                <Patch level="1">pisilinux/tr-keypad-comma.patch</Patch>
-                <Patch level="1">pisilinux/tr-no-meta_space.patch</Patch>
-                <Patch level="1">pisilinux/trq-capslock-fix.patch</Patch>
-                <Patch level="1">pisilinux/currency.patch</Patch>
-                <Patch level="1">pisilinux/trf-keymap-fixes.patch</Patch>
-                <Patch level="1">pisilinux/trf-capslock-fix.patch</Patch>
+                <Patch level="1">limelinux/unicode_start-default-font.patch</Patch>
+                <Patch level="1">limelinux/tr-keypad-comma.patch</Patch>
+                <Patch level="1">limelinux/tr-no-meta_space.patch</Patch>
+                <Patch level="1">limelinux/trq-capslock-fix.patch</Patch>
+                <Patch level="1">limelinux/currency.patch</Patch>
+                <Patch level="1">limelinux/trf-keymap-fixes.patch</Patch>
+                <Patch level="1">limelinux/trf-capslock-fix.patch</Patch>
             </Patches>
             <SourceURI>system/base/kbd/pspec.xml</SourceURI>
         </Source>
@@ -22240,9 +22240,9 @@
                 <Path fileType="data">/usr/share/kbd/consoletrans</Path>
             </Files>
             <AdditionalFiles>
-                <AdditionalFile target="/usr/share/kbd/consolefonts/lat5u-12.psf.gz" permission="0644">pisilinux/lat5u-12.psf.gz</AdditionalFile>
-                <AdditionalFile target="/usr/share/kbd/consolefonts/lat5u-14.psf.gz" permission="0644">pisilinux/lat5u-14.psf.gz</AdditionalFile>
-                <AdditionalFile target="/usr/share/kbd/consolefonts/lat5u-16.psf.gz" permission="0644">pisilinux/lat5u-16.psf.gz</AdditionalFile>
+                <AdditionalFile target="/usr/share/kbd/consolefonts/lat5u-12.psf.gz" permission="0644">limelinux/lat5u-12.psf.gz</AdditionalFile>
+                <AdditionalFile target="/usr/share/kbd/consolefonts/lat5u-14.psf.gz" permission="0644">limelinux/lat5u-14.psf.gz</AdditionalFile>
+                <AdditionalFile target="/usr/share/kbd/consolefonts/lat5u-16.psf.gz" permission="0644">limelinux/lat5u-16.psf.gz</AdditionalFile>
                 <AdditionalFile target="/usr/share/kbd/keymaps/mac/all/mac-fr-ext_new.map.gz" permission="0644">mandriva/mac-fr-ext_new.kmap.gz</AdditionalFile>
             </AdditionalFiles>
         </Package>
@@ -22628,8 +22628,8 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>pisilinux-python</Name>
-            <Homepage>http://www.pisilinux.org</Homepage>
+            <Name>limelinux-python</Name>
+            <Homepage>http://www.limelinux.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -22642,15 +22642,15 @@
             <Description xml:lang="en">Python modules for Pisi Linux provides functions for common task, with the aim of easing development.</Description>
             <Description xml:lang="tr">PiSi Linux için Python modülleri genel işler için fonksiyonlar sunarak geliştirme işini kolaylaştırmayı amaçlamaktadır.</Description>
             <Description xml:lang="es">Módulos Python para PiSi Linux facilitan funciones para tareas comunes, para simplificar el desarrollo.</Description>
-            <Archive type="targz" sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40">http://source.pisilinux.org/1.0/pisilinux-python-0.4.8.tar.gz</Archive>
+            <Archive type="targz" sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40">http://source.limelinux.org/1.0/limelinux-python-0.4.8.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python</Dependency>
                 <Dependency>libX11</Dependency>
             </BuildDependencies>
-            <SourceURI>system/base/pisilinux-python/pspec.xml</SourceURI>
+            <SourceURI>system/base/limelinux-python/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>pisilinux-python</Name>
+            <Name>limelinux-python</Name>
             <RuntimeDependencies>
                 <Dependency>python</Dependency>
                 <Dependency>libX11</Dependency>
@@ -23527,7 +23527,7 @@
     <SpecFile>
         <Source>
             <Name>comar</Name>
-            <Homepage>http://www.pisilinux.org</Homepage>
+            <Homepage>http://www.limelinux.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -23541,7 +23541,7 @@
             <Description xml:lang="en">Pisi Linux programs are packaged with small scripts which configures them to entegrate with system and each other. Çomar is the tool which manages and executes these scripts.</Description>
             <Description xml:lang="tr">Pisi Linux yazılımları, birbirleri ve sistemle otomatik olarak uyum sağlayabilmek için yanlarında ufak programcıklar ile paketlenmektedir. Bu programcıkların yönetimi ve işletilmesi Çomar aracı tarafından yapılmaktadır.</Description>
             <Description xml:lang="de">Pisi Linux Programme werden mit einem kleinen Skript paketiert, welches sie konfiguriert, um die Integrität mit dem System und anderen Programmen sicherzustellen. Comar ist das Werkzeug, das diese Skripte verwaltet und ausführt.</Description>
-            <Archive type="tarbz2" sha1sum="a0894a20d3c2bb5843de7e25fc98707baf554df1">http://source.pisilinux.org/1.0/comar-3.0.3.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="a0894a20d3c2bb5843de7e25fc98707baf554df1">http://source.limelinux.org/1.0/comar-3.0.3.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>cmake</Dependency>
             </BuildDependencies>
@@ -24385,7 +24385,7 @@
     <SpecFile>
         <Source>
             <Name>baselayout</Name>
-            <Homepage>http://www.pisilinux.org</Homepage>
+            <Homepage>http://www.limelinux.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -24400,7 +24400,7 @@
             <Description xml:lang="fr">Ce paquet crée la hiérarchie du système de fichier principal de Pisi Linux.</Description>
             <Description xml:lang="en">baselayout creates the Pisi Linux Linux main filesystem hierarchy.</Description>
             <Description xml:lang="tr">Bu paket, Pisi Linux dosya sisteminin temelini oluşturur.</Description>
-            <Archive type="targz" sha1sum="89cb1dc3c3a2fc47c299ae6c002cad212b7fc56e">http://source.pisilinux.org/1.0/baselayout-3.10.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="89cb1dc3c3a2fc47c299ae6c002cad212b7fc56e">http://source.limelinux.org/1.0/baselayout-3.10.0.tar.gz</Archive>
             <SourceURI>system/base/baselayout/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -24413,7 +24413,7 @@
                 <Path fileType="executable" permanent="true">/sbin</Path>
                 <Path fileType="library" permanent="true">/lib*</Path>
                 <Path fileType="config" permanent="true">/etc</Path>
-                <Path fileType="data" permanent="true">/etc/pisilinux-release</Path>
+                <Path fileType="data" permanent="true">/etc/limelinux-release</Path>
                 <Path fileType="data" permanent="true">/media</Path>
                 <Path fileType="data" permanent="true">/boot</Path>
                 <Path fileType="data" permanent="true">/proc</Path>
@@ -24440,7 +24440,7 @@
                 <AdditionalFile target="/etc/services" permission="0644" owner="root">services</AdditionalFile>
                 <AdditionalFile target="/etc/protocols" permission="0644" owner="root">protocols</AdditionalFile>
                 <AdditionalFile target="/etc/sysctl.conf" permission="0644" owner="root">sysctl.conf</AdditionalFile>
-                <AdditionalFile target="/etc/pisilinux-release" permission="0644" owner="root">pisilinux-release</AdditionalFile>
+                <AdditionalFile target="/etc/limelinux-release" permission="0644" owner="root">limelinux-release</AdditionalFile>
                 <AdditionalFile target="/etc/nsswitch.conf" permission="0644" owner="root">nsswitch.conf</AdditionalFile>
                 <AdditionalFile target="/etc/securetty" permission="0644" owner="root">securetty</AdditionalFile>
                 <AdditionalFile target="/etc/os-release" permission="0644" owner="root">os-release</AdditionalFile>
@@ -24752,7 +24752,7 @@
     <SpecFile>
         <Source>
             <Name>comar-api</Name>
-            <Homepage>http://www.pisilinux.org</Homepage>
+            <Homepage>http://www.limelinux.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -24765,10 +24765,10 @@
             <Description xml:lang="fr">Librairie utilitaire générique pour les opérations communes de scripts Comar.</Description>
             <Description xml:lang="en">Generic utility library for common Comar script operations.</Description>
             <Description xml:lang="tr">Çomar betiklerinde sıkça yapılan ortak işlemler için yardımcı fonksiyonlar kitaplığı.</Description>
-            <Archive type="targz" sha1sum="80afa9f07cd15b9042cce9c1b8f1c4dcd457c552">http://source.pisilinux.org/1.0/comar-api-2.4.9.tar.gz</Archive>
+            <Archive type="targz" sha1sum="80afa9f07cd15b9042cce9c1b8f1c4dcd457c552">http://source.limelinux.org/1.0/comar-api-2.4.9.tar.gz</Archive>
             <Patches>
                 <Patch level="1">run_dir.patch</Patch>
-                <Patch level="1">pisilinux.patch</Patch>
+                <Patch level="1">limelinux.patch</Patch>
                 <Patch level="1">add-stopdependencies.patch</Patch>
             </Patches>
             <SourceURI>system/base/comar-api/pspec.xml</SourceURI>
@@ -24776,7 +24776,7 @@
         <Package>
             <Name>comar-api</Name>
             <Files>
-                <Path fileType="library">/usr/lib/pisilinux</Path>
+                <Path fileType="library">/usr/lib/limelinux</Path>
                 <Path fileType="library">/usr/lib/python2.7</Path>
             </Files>
         </Package>
@@ -25094,8 +25094,8 @@
                 <Dependency>readline</Dependency>
             </BuildDependencies>
             <Patches>
-                <Patch>pisilinux_platform.patch</Patch>
-                <Patch>add-pisilinux-to-search-path.patch</Patch>
+                <Patch>limelinux_platform.patch</Patch>
+                <Patch>add-limelinux-to-search-path.patch</Patch>
                 <Patch>default-utf8.patch</Patch>
                 <Patch level="1">disable-egginfo.patch</Patch>
                 <Patch level="1">trfix_emaillib.patch</Patch>
@@ -26160,7 +26160,7 @@
     <SpecFile>
         <Source>
             <Name>pisi</Name>
-            <Homepage>http://www.pisilinux.org/</Homepage>
+            <Homepage>http://www.limelinux.org/</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -26175,7 +26175,7 @@
             <Description xml:lang="en">PISI is a modern package management system implemented in Python. Some of its main features are: package sources are written in XML and python, implements all functions through a simple-to-use API, integrates low-level and high-level package management features.</Description>
             <Description xml:lang="tr">PİSİ Python&apos;da yazılmış modern bir paket yöneticisidir. Bazı ana özellikleri: Paket kaynakları XML ve python kullanılarak yazılır, bütün işlevleri kullanması kolay bir API ile sağlar ve düşük ve yüksek seviyeli paket yönetim işlevlerini birleştirir. </Description>
             <Description xml:lang="pl">PISI jest podstawowym narzędziem do instalacji, aktualizacji i usuwania pakietów. Obsługuje zależności dla poszczególnych pakietów, bibliotek i zadań ÇOMAR-a. Instalacja oprogramowania odbywa się w łatwy i przyjazny sposób. Do przechowywania informacji o pakietach wykorzystuje bazę Berkeley DP, co zapewnia większą stabilność i szybkość.</Description>
-            <Archive type="tarxz" sha1sum="7f16d1a0e4c8d2df73838a329485b74523fe50ad">http://source.pisilinux.org/1.0/pisi-2.6.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="7f16d1a0e4c8d2df73838a329485b74523fe50ad">http://source.limelinux.org/1.0/pisi-2.6.tar.xz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target="pisi.conf-i686" permission="0644">pisi.conf-i686</AdditionalFile>
                 <AdditionalFile target="pisi.conf-x86_64" permission="0644">pisi.conf-x86_64</AdditionalFile>
@@ -26223,7 +26223,7 @@
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="executable">/usr/sbin</Path>
                 <Path fileType="library">/usr/lib</Path>
-                <Path fileType="library">/usr/lib/pisilinux/pisi</Path>
+                <Path fileType="library">/usr/lib/limelinux/pisi</Path>
                 <Path fileType="localedata">/usr/share/locale</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="config">/etc/pisi</Path>
@@ -26240,10 +26240,10 @@
                 <AdditionalFile target="/etc/pisi/mirrors.conf" permission="0644" owner="root">mirrors.conf</AdditionalFile>
                 <AdditionalFile target="/etc/pisi/sandbox.conf" permission="0644" owner="root">sandbox.conf</AdditionalFile>
                 <AdditionalFile target="/usr/share/mime/packages/pisi.xml" permission="0644" owner="root">pisi.xml</AdditionalFile>
-                <AdditionalFile target="/usr/lib/pisilinux/pisi/actionsapi/pkgconfig.py" permission="0644" owner="root">pkgconfig.py</AdditionalFile>
+                <AdditionalFile target="/usr/lib/limelinux/pisi/actionsapi/pkgconfig.py" permission="0644" owner="root">pkgconfig.py</AdditionalFile>
                 <AdditionalFile target="/usr/lib/tmpfiles.d/pisi.conf" permission="0644" owner="root">tmpfiles.conf</AdditionalFile>
-                <AdditionalFile target="/usr/lib/pisilinux/pisi/actionsapi/qt5.py" permission="0644" owner="root">qt5.py</AdditionalFile>
-                <AdditionalFile target="/usr/lib/pisilinux/pisi/actionsapi/kde5.py" permission="0644" owner="root">kde5.py</AdditionalFile>
+                <AdditionalFile target="/usr/lib/limelinux/pisi/actionsapi/qt5.py" permission="0644" owner="root">qt5.py</AdditionalFile>
+                <AdditionalFile target="/usr/lib/limelinux/pisi/actionsapi/kde5.py" permission="0644" owner="root">kde5.py</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
@@ -26781,7 +26781,7 @@
     <SpecFile>
         <Source>
             <Name>pypolkit</Name>
-            <Homepage>http://www.pisilinux.org</Homepage>
+            <Homepage>http://www.limelinux.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -26793,7 +26793,7 @@
             <Summary xml:lang="tr">PolicyKit için Python bağlayıcısı</Summary>
             <Description xml:lang="en">pypolkit is a Python binding for the PolicyKit library.</Description>
             <Description xml:lang="tr">pypolkit PolicyKit için geliştirilmiş bir Python bağlayıcısıdır.</Description>
-            <Archive type="targz" sha1sum="1762dc6e6ea2e5b5cbb153c4c20c72604dbe6a2d">http://source.pisilinux.org/1.0/pypolkit-1.0.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="1762dc6e6ea2e5b5cbb153c4c20c72604dbe6a2d">http://source.limelinux.org/1.0/pypolkit-1.0.2.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>glib2</Dependency>
                 <Dependency>python</Dependency>
@@ -27987,7 +27987,7 @@
     <SpecFile>
         <Source>
             <Name>piksemel</Name>
-            <Homepage>http://pisilinux.org</Homepage>
+            <Homepage>http://limelinux.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -28000,7 +28000,7 @@
             <Description xml:lang="fr">Un analyseur XML simple, rapide, petit et robuste pour Python basé sur iksemel.</Description>
             <Description xml:lang="en">A simple, fast, small and robust XML parser for Python, based on iksemel.</Description>
             <Description xml:lang="tr">Python için basit, hızlı, ufak ve sağlam bir XML ayrıştırıcısı, iksemel tabanlıdır.</Description>
-            <Archive type="targz" sha1sum="b72d130f4f84087a1011400858eb1bfae045bef5">http://source.pisilinux.org/1.0/piksemel-1.3.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="b72d130f4f84087a1011400858eb1bfae045bef5">http://source.limelinux.org/1.0/piksemel-1.3.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python</Dependency>
             </BuildDependencies>
@@ -29448,7 +29448,7 @@
             <Summary xml:lang="tr">Dinamik kitaplık yükleme yolunu (rpath) değiştirme aracı</Summary>
             <Description xml:lang="en">chrpath allows you to modify the dynamic library load path (rpath and runpath) of compiled programs and libraries.</Description>
             <Description xml:lang="tr">chrpath ile derlenmiş kitaplıkların ve programların dinamik kitaplık yükleme yolunu (rpath ve runpath) değiştirebilirsiniz.</Description>
-            <Archive type="targz" sha1sum="174bb38c899229f4c928734b20e730f61191795a">http://source.pisilinux.org/1.0/chrpath-0.16.tar.gz</Archive>
+            <Archive type="targz" sha1sum="174bb38c899229f4c928734b20e730f61191795a">http://source.limelinux.org/1.0/chrpath-0.16.tar.gz</Archive>
             <Patches>
                 <Patch level="1">docdir.patch</Patch>
             </Patches>
@@ -29528,7 +29528,7 @@
             <Description xml:lang="fr">fichiers GNU config.sub et config.guess mis à jour.</Description>
             <Description xml:lang="en">gnuconfig contains updated config.sub and config.guess files from GNU.</Description>
             <Description xml:lang="tr">gnuconfig güncel GNU config.sub ve config.guess dosyaları içerir.</Description>
-            <Archive type="targz" sha1sum="e10971ecff82199b077abad03a264b186273b623">http://source.pisilinux.org/1.0/config-20141105.tar.gz</Archive>
+            <Archive type="targz" sha1sum="e10971ecff82199b077abad03a264b186273b623">http://source.limelinux.org/1.0/config-20141105.tar.gz</Archive>
             <SourceURI>system/devel/gnuconfig/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -30488,7 +30488,7 @@
     <SpecFile>
         <Source>
             <Name>catbox</Name>
-            <Homepage>http://pisilinux.org</Homepage>
+            <Homepage>http://limelinux.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -35143,7 +35143,7 @@
             <Summary xml:lang="tr">Gdialog&apos;un yeniden yazılmış hali</Summary>
             <Description xml:lang="en">Zenity is the GNOME port of dialog which allows you to display dialog boxes from the commandline and shell scripts.</Description>
             <Description xml:lang="tr">Zenity, komut satırından ve betiklerle iletişim kutuları oluşturmanıza imkan verir. Dialog&apos;un Gnome 3 için yeniden yazılmış halidir.</Description>
-            <Archive type="tarxz" sha1sum="b0dfb31c8445547de968fb71c4303515cdf0da83">http://source.pisilinux.org/1.0/zenity.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b0dfb31c8445547de968fb71c4303515cdf0da83">http://source.limelinux.org/1.0/zenity.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gtk3</Dependency>
                 <Dependency>pango</Dependency>
@@ -36389,7 +36389,7 @@
             <Summary xml:lang="en">Common desktop utilities</Summary>
             <Summary xml:lang="tr">Ortak masaüstü komutları</Summary>
             <Description xml:lang="en">Xdg-utils is a set of command line tools that assist applications with a variety of desktop integration tasks. About half of the tools focus on tasks commonly required during the installation of a desktop application and the other half focuses on integration with the desktop environment while the application is running.</Description>
-            <Archive type="tarxz" sha1sum="c72dde66a056aebcc376aae3be6f91e8d76ae2b5">http://source.pisilinux.org/1.0/xdg-utils.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c72dde66a056aebcc376aae3be6f91e8d76ae2b5">http://source.limelinux.org/1.0/xdg-utils.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>xmlto</Dependency>
                 <Dependency>docbook-xsl</Dependency>
@@ -37019,7 +37019,7 @@
             <Summary xml:lang="tr">RTMP yayınları araç takımı</Summary>
             <Description xml:lang="en">rtmpdump is a tool for dumping media content streamed over RTMP. All forms of RTMP are supported, including rtmp://, rtmpt://, rtmpe://, rtmpte://, and rtmps:// .</Description>
             <Description xml:lang="tr">rtmpdump, RTMP üzerinden yayın yapan ortam içeriklerinin dökümünü yapmak için yazılmış bir araçtır. RTMP yayımının bütün biçimleri desteklenmektedir: rtmp://, rtmpt://, rtmpe://, rtmpte://, ve rtmps:// .</Description>
-            <Archive type="targz" sha1sum="b981d669a6aeabb08f2b58262b6299d4ead62c29">http://source.pisilinux.org/1.0/rtmpdump-15012015.tar.gz</Archive>
+            <Archive type="targz" sha1sum="b981d669a6aeabb08f2b58262b6299d4ead62c29">http://source.limelinux.org/1.0/rtmpdump-15012015.tar.gz</Archive>
             <SourceURI>multimedia/stream/rtmpdump/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -40244,7 +40244,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Files>
             <AdditionalFiles>
                 <AdditionalFile target="/usr/lib/tmpfiles.d/pulseaudio.conf" permission="0644" owner="root">pulseaudio.conf</AdditionalFile>
-                <AdditionalFile target="/etc/conf.d/pulseaudio" permission="0644" owner="root">pisilinux/pulseaudio.sysconfig</AdditionalFile>
+                <AdditionalFile target="/etc/conf.d/pulseaudio" permission="0644" owner="root">limelinux/pulseaudio.sysconfig</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
@@ -41947,7 +41947,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">NUT dosya biçemi kitaplığı ve araçları</Summary>
             <Description xml:lang="en">Library and tools to work with NUT multimedia files.</Description>
             <Description xml:lang="tr">libnut NUT çokluortam sistemini kullanmak ve düzenlemek için gerekli olan kitaplıkları ve araçları içerir.</Description>
-            <Archive type="tarbz2" sha1sum="64aa3218c6e51465345c40a19341fd47c966e7c7">http://source.pisilinux.org/1.0/libnut-661.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="64aa3218c6e51465345c40a19341fd47c966e7c7">http://source.limelinux.org/1.0/libnut-661.tar.bz2</Archive>
             <Patches>
                 <Patch level="1">shared.patch</Patch>
             </Patches>

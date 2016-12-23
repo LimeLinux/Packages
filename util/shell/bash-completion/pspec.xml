@@ -25,7 +25,7 @@
             <Path fileType="data">/var</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/etc/bash_completion.d/pisilinux">pisilinux</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/bash_completion.d/limelinux">limelinux</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>

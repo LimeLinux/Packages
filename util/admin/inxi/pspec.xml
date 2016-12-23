@@ -15,7 +15,7 @@
         <Description>script to get system information</Description>
         <Archive sha1sum="c8b9adec1a0f67459af459fbfba29dd7ec73e9c8" type="targz">https://sources.archlinux.org/other/community/inxi/inxi-2.3.0.tar.gz</Archive>
         <Patches>
-<!--             <Patch level="1">distro-pisilinux.patch</Patch> -->
+<!--             <Patch level="1">distro-limelinux.patch</Patch> -->
         </Patches>
     </Source>
 

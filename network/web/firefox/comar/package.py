@@ -29,25 +29,25 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
     if lang:
         # Bookmarks & Search plugins
         if lang.startswith("tr"):
-            symlink("/usr/lib/firefox/pisilinux/bookmarks-tr.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
-            #symlink("/usr/lib/firefox/pisilinux/pisilinux-wiki_tr.xml", "/usr/lib/firefox/browser/searchplugins/pisilinux-wiki.xml")
+            symlink("/usr/lib/firefox/limelinux/bookmarks-tr.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
+            #symlink("/usr/lib/firefox/limelinux/limelinux-wiki_tr.xml", "/usr/lib/firefox/browser/searchplugins/limelinux-wiki.xml")
         elif lang.startswith("nl"):
-            symlink("/usr/lib/firefox/pisilinux/bookmarks-nl.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
-            #symlink("/usr/lib/firefox/pisilinux/pisilinux-wiki_nl.xml", "/usr/lib/firefox/browser/searchplugins/pisilinux-wiki.xml")
+            symlink("/usr/lib/firefox/limelinux/bookmarks-nl.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
+            #symlink("/usr/lib/firefox/limelinux/limelinux-wiki_nl.xml", "/usr/lib/firefox/browser/searchplugins/limelinux-wiki.xml")
         elif lang.startswith("pt"):
-            #symlink("/usr/lib/firefox/pisilinux/pisilinux-wiki_pt.xml", "/usr/lib/firefox/browser/searchplugins/pisilinux-wiki.xml")
+            #symlink("/usr/lib/firefox/limelinux/limelinux-wiki_pt.xml", "/usr/lib/firefox/browser/searchplugins/limelinux-wiki.xml")
             #TODO: translate bookmarks to pt also.
-            symlink("/usr/lib/firefox/pisilinux/bookmarks-en.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
+            symlink("/usr/lib/firefox/limelinux/bookmarks-en.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
         elif lang.startswith("de"):
-            symlink("/usr/lib/firefox/pisilinux/bookmarks-de.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
-            #symlink("/usr/lib/firefox/pisilinux/pisilinux-wiki_en.xml", "/usr/lib/firefox/browser/searchplugins/pisilinux-wiki.xml")
+            symlink("/usr/lib/firefox/limelinux/bookmarks-de.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
+            #symlink("/usr/lib/firefox/limelinux/limelinux-wiki_en.xml", "/usr/lib/firefox/browser/searchplugins/limelinux-wiki.xml")
         elif lang.startswith("es"):
-            symlink("/usr/lib/firefox/pisilinux/bookmarks-en.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
+            symlink("/usr/lib/firefox/limelinux/bookmarks-en.html", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html")
         #else:
-            #symlink("/usr/lib/firefox/pisilinux/pisilinux-wiki_en.xml", "/usr/lib/firefox/browser/searchplugins/pisilinux-wiki.xml")
+            #symlink("/usr/lib/firefox/limelinux/limelinux-wiki_en.xml", "/usr/lib/firefox/browser/searchplugins/limelinux-wiki.xml")
 
 def preRemove():
-    for f in  ("/usr/lib/firefox/.autoreg", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html", "/usr/lib/firefox/browser/searchplugins/pisilinux-wiki.xml"):
+    for f in  ("/usr/lib/firefox/.autoreg", "/usr/lib/firefox/browser/defaults/profile/bookmarks.html", "/usr/lib/firefox/browser/searchplugins/limelinux-wiki.xml"):
         try:
             os.unlink(f)
         except:

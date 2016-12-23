@@ -14,8 +14,8 @@ def setup():
     autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
                          --enable-experimental \
-                         --with-package-name='PisiLinux gstreamer-plugins-base package' \
-                         --with-package-origin='http://www.pisilinux.org'")
+                         --with-package-name='limelinux gstreamer-plugins-base package' \
+                         --with-package-origin='http://www.limelinux.org'")
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 

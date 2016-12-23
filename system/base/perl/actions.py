@@ -44,7 +44,7 @@ def setup():
                       -Duseshrplib \
                       -Dman1ext=1 \
                       -Dman3ext=3pm \
-                      -Dcf_by="PisiLinux" \
+                      -Dcf_by="limelinux" \
                       -Ud_csh \
                       -Di_ndbm \
                       -Di_gdbm \

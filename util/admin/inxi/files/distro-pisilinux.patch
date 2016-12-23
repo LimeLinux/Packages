@@ -6,7 +6,7 @@ diff -Nuar inxi-1.8.34.orig/inxi inxi-1.8.34/inxi
  FILE_MODULES='/proc/modules'
  FILE_MOUNTS='/proc/mounts'
 -FILE_OS_RELEASE='/etc/os-release'
-+FILE_OS_RELEASE='/etc/pisilinux-release'
++FILE_OS_RELEASE='/etc/limelinux-release'
  FILE_PARTITIONS='/proc/partitions'
  FILE_SCSI='/proc/scsi/scsi'
  FILE_XORG_LOG='/var/log/Xorg.0.log' # if not found, search and replace with actual location
@@ -15,7 +15,7 @@ diff -Nuar inxi-1.8.34.orig/inxi inxi-1.8.34/inxi
  # debian_version excluded from DISTROS_PRIMARY so Debian can fall through to /etc/issue detection. Same goes for Ubuntu.
  DISTROS_EXCLUDE_LIST="debian_version ubuntu_version"
 -DISTROS_PRIMARY="arch-release gentoo-release redhat-release slackware-version SuSE-release"
-+DISTROS_PRIMARY="arch-release gentoo-release redhat-release slackware-version SuSE-release pisilinux-release"
++DISTROS_PRIMARY="arch-release gentoo-release redhat-release slackware-version SuSE-release limelinux-release"
  DISTROS_LSB_GOOD="mandrake-release mandriva-release mandrakelinux-release"
  # this is being used both by core distros and derived distros now, eg, solusos uses it for solusos id, while
  # debian, solusos base, uses it as well, so we have to know which it is.

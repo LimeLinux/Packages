@@ -13,8 +13,8 @@ def setup():
     shelltools.export("AUTOPOINT", "true")
     autotools.autoreconf("-vfi")
     
-    options = '--with-package-name="GStreamer for PisiLinux" \
-               --with-package-origin="http://www.pisilinux.org" \
+    options = '--with-package-name="GStreamer for limelinux" \
+               --with-package-origin="http://www.limelinux.org" \
                --enable-nls \
                --disable-dependency-tracking \
                --disable-examples \
