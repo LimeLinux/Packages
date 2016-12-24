@@ -15,7 +15,7 @@ def setup():
     #shelltools.system("./autogen.sh --disable-gtk-doc --disable-docbook")
 
     options = '--with-package-name="GStreamer for limelinux" \
-               --with-package-origin="http://www.limelinux.org" \
+               --with-package-origin="http://www.limelinux.com" \
                --enable-nls \
                --disable-dependency-tracking \
                --disable-examples \

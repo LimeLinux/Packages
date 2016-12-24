@@ -4,7 +4,7 @@
 <PISI>
     <Source>
         <Name>limelinux-dev-tools</Name>
-        <Homepage>http://www.limelinux.org</Homepage>
+        <Homepage>http://www.limelinux.com</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A collection of useful tools that Pisi Linux developers use to make their developing work a lot easier</Summary>
         <Description>limelinux-dev-tools is a collection of useful tools that limelinux developers use to make their developing work a lot easier. Such tools can include packaging preparation, package analysis, etc.</Description>
-        <Archive sha1sum="202e8ba50f95c150fa6049f42780c6b97ed45cd9" type="tarxz">http://source.limelinux.org/1.0/limelinux-dev-tools-0.0.2.tar.xz</Archive>
+        <Archive sha1sum="202e8ba50f95c150fa6049f42780c6b97ed45cd9" type="tarxz">http://source.limelinux.com/1.0/limelinux-dev-tools-0.0.2.tar.xz</Archive>
         <Patches>
             <Patch>fix_detect_mesa.patch</Patch>
             <Patch>spped_up.patch</Patch>
