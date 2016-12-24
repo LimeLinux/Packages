@@ -14,7 +14,7 @@
         <Summary>Icon theme designed for Equinox GTK theme</Summary>
         <Description>Icon theme designed for Equinox GTK theme</Description>
         <Archive sha1sum="9acfb7931482b4202d0e7ce158ccf030f7fc5d7b" type="targz">http://ppa.launchpad.net/tiheum/equinox/ubuntu/pool/main/f/faenza-icon-theme/faenza-icon-theme_1.3.1.tar.gz</Archive>
-<!--         <Archive sha1sum="0d67b5f35323b5a90d65be6e0869681e809455fc" type="tarxz">http://source.limelinux.org/1.0/faenza-add.tar.xz</Archive> -->
+<!--         <Archive sha1sum="0d67b5f35323b5a90d65be6e0869681e809455fc" type="tarxz">http://source.limelinux.com/1.0/faenza-add.tar.xz</Archive> -->
     </Source>
 
     <Package>

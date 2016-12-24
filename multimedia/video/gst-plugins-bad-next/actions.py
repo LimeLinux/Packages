@@ -21,7 +21,7 @@ def setup():
                           --disable-qt \
                           --without-qt \
                          --with-package-name='limelinux gstreamer-plugins-bad package' \
-                         --with-package-origin='http://www.limelinux.org' \
+                         --with-package-origin='http://www.limelinux.com' \
                          --with-gtk=3.0")
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ") 

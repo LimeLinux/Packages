@@ -4,7 +4,7 @@
 <PISI>
     <Source>
         <Name>limelinux-python</Name>
-        <Homepage>http://www.limelinux.org</Homepage>
+        <Homepage>http://www.limelinux.com</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Python modules for Pisi Linux</Summary>
         <Description>Python modules for Pisi Linux provides functions for common task, with the aim of easing development.</Description>
-        <Archive sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40" type="targz">http://source.limelinux.org/1.0/limelinux-python-0.4.8.tar.gz</Archive>
+        <Archive sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40" type="targz">http://source.limelinux.com/1.0/limelinux-python-0.4.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python</Dependency>
 	    <Dependency>libX11</Dependency>

@@ -4,7 +4,7 @@
 <PISI>
     <Source>
         <Name>baselayout</Name>
-        <Homepage>http://www.limelinux.org</Homepage>
+        <Homepage>http://www.limelinux.com</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -15,7 +15,7 @@
         <IsA>data</IsA>
         <Summary>Filesystem baselayout</Summary>
         <Description>baselayout creates the Pisi Linux Linux main filesystem hierarchy.</Description>
-        <Archive sha1sum="89cb1dc3c3a2fc47c299ae6c002cad212b7fc56e" type="targz">http://source.limelinux.org/1.0/baselayout-3.10.0.tar.gz</Archive>
+        <Archive sha1sum="89cb1dc3c3a2fc47c299ae6c002cad212b7fc56e" type="targz">http://source.limelinux.com/1.0/baselayout-3.10.0.tar.gz</Archive>
     </Source>
 
     <Package>

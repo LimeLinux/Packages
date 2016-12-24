@@ -67,7 +67,7 @@ def setup():
                        --includedir=/usr/include \
                        --mandir=/usr/share/man \
                        --infodir=/usr/share/info \
-                       --with-bugurl=http://bugs.limelinux.org \
+                       --with-bugurl=http://bugs.limelinux.com \
                        --enable-languages=c,c++,fortran,lto,objc,obj-c++ \
                        --disable-libgcj \
                        --enable-shared \

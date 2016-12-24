@@ -23,7 +23,7 @@ def setup():
                          --enable-experimental \
                          --enable-introspection=%(introspection)s \
                          --with-package-name='limelinux gstreamer-plugins-base package' \
-                         --with-package-origin='http://www.limelinux.org' \
+                         --with-package-origin='http://www.limelinux.com' \
                         " % opts)
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")

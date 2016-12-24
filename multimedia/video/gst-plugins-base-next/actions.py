@@ -15,7 +15,7 @@ def setup():
     autotools.configure("--disable-static \
                          --enable-experimental \
                          --with-package-name='limelinux gstreamer-plugins-base package' \
-                         --with-package-origin='http://www.limelinux.org'")
+                         --with-package-origin='http://www.limelinux.com'")
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 

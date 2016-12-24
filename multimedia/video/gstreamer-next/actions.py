@@ -14,7 +14,7 @@ def setup():
     autotools.autoreconf("-vfi")
     
     options = '--with-package-name="GStreamer for limelinux" \
-               --with-package-origin="http://www.limelinux.org" \
+               --with-package-origin="http://www.limelinux.com" \
                --enable-nls \
                --disable-dependency-tracking \
                --disable-examples \
