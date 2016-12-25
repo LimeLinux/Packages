@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Console display library used by most text viewer</Summary>
         <Description>S-Lang is a multi-platform programmer's library designed to allow a developer to create robust multi-platform software. It provides facilities required by interactive applications such as display/screen management, keyboard input, keymaps, and so on. The most exciting feature of the library is the slang interpreter that may be easily embedded into a program to make it extensible.</Description>
-        <Archive sha1sum="6e26e90307d4569e5feef195648c0858ba27f7ac" type="tarbz2">http://www.jedsoft.org/releases/slang/slang-2.3.0.tar.bz2</Archive>
+        <Archive sha1sum="a8ea7f1b5736160a94efb67b137a0f5b9916bdf2" type="tarbz2">http://www.jedsoft.org/releases/slang/slang-2.3.1a.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libpng</Dependency>
         </BuildDependencies>
@@ -39,7 +39,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>2.3.1</Version>
+            <Version>2.3.1a</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
