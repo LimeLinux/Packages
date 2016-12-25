@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Library for manipulation of TIFF (Tag Image File Format) images</Summary>
         <Description>This software provides support for the Tag Image File Format (TIFF), a widely used format for storing image data.</Description>
-        <Archive sha1sum="652e97b78f1444237a82cbcfe014310e776eb6f0" type="targz">ftp://ftp.remotesensing.org/pub/libtiff/tiff-4.0.3.tar.gz</Archive>
+        <Archive sha1sum="652e97b78f1444237a82cbcfe014310e776eb6f0" type="targz">http://source.limelinux.com/1.0/tiff-4.0.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>jbigkit</Dependency>
