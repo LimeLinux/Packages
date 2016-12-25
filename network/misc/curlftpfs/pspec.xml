@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>curlftpfs</Name>
+        <Homepage>http://curlftpfs.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>A filesystem for acessing FTP hosts based on FUSE and libcurl.</Summary>
+        <Description>A filesystem for acessing FTP hosts based on FUSE and libcurl.</Description>
+        <Archive sha1sum="83f148afe6bd4d44c9790790f1c30986c8b9ea56" type="targz">mirrors://sourceforge/curlftpfs/curlftpfs-0.9.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>fuse</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>curlftpfs</Name>
+        <RuntimeDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>fuse</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>0.9.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
