@@ -44,10 +44,10 @@ def install():
     shelltools.touch("hostname")
 
     if get.ARCH() == "x86_64":
-        shelltools.echo("hostname", "Cpisi")
+        shelltools.echo("hostname", "Limelinux")
 
     elif get.ARCH() == 'armv7h':
-        shelltools.echo("hostname", "PisiArm")
+        shelltools.echo("hostname", "LimeArm")
 
     pisitools.insinto("/etc", "hostname")
     pisitools.remove("/etc/inittab")
