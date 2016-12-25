@@ -14,7 +14,7 @@
         <Summary>Small and fast text mode music player</Summary>
         <Description>Cmus is a small and fast text mode music player for Linux and many other UNIX like operating systems.</Description>
         <Archive sha1sum="fd6c63c7cb405e4b4fea6a737074c454f602c202" type="targz">https://github.com/cmus/cmus/archive/v2.5.1.tar.gz</Archive>
-	<Archive sha1sum="129aba6c5f49a1137b9e7ce18c3124adcf084a1e" target="cmus-v2.5.1" type="binary">http://last-cmus.googlecode.com/files/last-cmus.py</Archive>
+<!-- 	<Archive sha1sum="129aba6c5f49a1137b9e7ce18c3124adcf084a1e" target="cmus-v2.5.1" type="binary">http://last-cmus.googlecode.com/files/last-cmus.py</Archive> -->
         <BuildDependencies>
             <Dependency>flac</Dependency>
             <Dependency>faad2</Dependency>
