@@ -1,6 +1,6 @@
-NAME="Pisi GNU/Linux"
+NAME="Lime GNU/Linux"
 ID=arch
-PRETTY_NAME="Pisi GNU/Linux"
+PRETTY_NAME="Lime GNU/Linux"
 ANSI_COLOR="0;36"
 HOME_URL="https://www.limelinux.com/"
 
