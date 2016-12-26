@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>gnome-mplayer toolkit</Summary>
         <Description>A set of functions that support non-graphical operations</Description>
-        <Archive sha1sum="b27a1e2ee69437d359d8005e468eb6ec023ef621" type="targz">http://gmtk.googlecode.com/files/gmtk-1.0.8.tar.gz</Archive>
+        <Archive sha1sum="b27a1e2ee69437d359d8005e468eb6ec023ef621" type="targz">http://source.limelinux.com/1.0/gmtk-1.0.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>pango</Dependency>
