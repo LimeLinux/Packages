@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A commercial-quality network traffic analyzer</Summary>
         <Description>Wireshark is a commercial-quality network traffic analyzer useful to investigate packets on the network.</Description>
-        <Archive sha1sum="2f7fdef7d2ce829de683917c4ecf8fc0e23fa4a4" type="tarbz2">https://www.wireshark.org/download/src/wireshark-1.12.12.tar.bz2</Archive>
+        <Archive sha1sum="2f7fdef7d2ce829de683917c4ecf8fc0e23fa4a4" type="tarbz2">https://www.wireshark.org/download/src/all-versions/wireshark-1.12.12.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gnutls</Dependency>
             <Dependency>c-ares</Dependency>
