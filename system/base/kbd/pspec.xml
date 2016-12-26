@@ -34,7 +34,7 @@
             <!--Patch level="1">archlinux/fix-dvorak-es.patch</Patch-->
             <Patch level="1">archlinux/fix-euro2.patch</Patch>
 
-            <!-- Pisi Linux patches -->
+            <!-- Lime Linux patches -->
             <Patch level="1">limelinux/unicode_start-default-font.patch</Patch>
             <Patch level="1">limelinux/tr-keypad-comma.patch</Patch>
             <Patch level="1">limelinux/tr-no-meta_space.patch</Patch>
