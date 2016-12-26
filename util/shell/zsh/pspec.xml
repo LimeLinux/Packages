@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Powerful command line shell</Summary>
         <Description>Zsh is a command interpreter (shell) which has command-line editing, built-in spelling correction, programmable command completion, shell functions (with autoloading), a history mechanism, and a lots of other features.</Description>
-        <Archive sha1sum="a93d034fcaa470bf8557fc11a9d0e86300325936" type="tarxz">http://www.zsh.org/pub/zsh-5.2.tar.xz</Archive>
+        <Archive sha1sum="a93d034fcaa470bf8557fc11a9d0e86300325936" type="tarxz">http://source.limelinux.com/1.0/zsh-5.2.tar.xz</Archive>
     </Source>
 
     <Package>
