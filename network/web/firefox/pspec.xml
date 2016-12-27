@@ -113,12 +113,6 @@
             <!-- Default options -->
             <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-l10n.js" permission="0644" owner="root">limelinux/firefox-l10n.js</AdditionalFile>
             <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-limelinux.js" permission="0644" owner="root">limelinux/default-prefs.js</AdditionalFile>
-
-            <!-- Default bookmarks -->
-            <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-tr.html" permission="0644" owner="root">limelinux/limelinux_bookmark-tr.html</AdditionalFile>
-            <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-en.html" permission="0644" owner="root">limelinux/limelinux_bookmark-en.html</AdditionalFile>
-            <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-nl.html" permission="0644" owner="root">limelinux/limelinux_bookmark-nl.html</AdditionalFile>
-            <AdditionalFile target="/usr/lib/firefox/limelinux/bookmarks-de.html" permission="0644" owner="root">limelinux/limelinux_bookmark-de.html</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script='package.py'>System.Package</COMAR>
