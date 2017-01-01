@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xorg-video-dummy</Name>
+        <Homepage>http://www.x.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>driver</IsA>
+        <Summary>X.Org dummy video driver</Summary>
+        <Description>xorg-video-dummy is a dummy video driver for X.Org.</Description>
+        <Archive sha1sum="b4a189b12406c6cbd5a68628a740ca59acef790a" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-dummy-0.3.7.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>xorg-server-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+<!--             <Patch level="1">git-fixes.diff</Patch> -->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>xorg-video-dummy</Name>
+        <RuntimeDependencies>
+            <Dependency>xorg-server</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-05-02</Date>
+            <Version>0.3.7</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

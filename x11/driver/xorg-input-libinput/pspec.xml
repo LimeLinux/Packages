@@ -1,0 +1,60 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xorg-input-libinput</Name>
+        <Homepage>http://www.x.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>driver</IsA>
+        <Summary>Generic input driver for the X.Org server based on libinput</Summary>
+        <Description>Generic input driver for the X.Org server based on libinput</Description>
+        <Archive sha1sum="fca6b9a7795e6f27cb216fb3818f9c642745beaf" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-libinput-0.22.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>eudev-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
+            <Dependency versionFrom="1.5.0">libinput-devel</Dependency>
+            <Dependency>util-macros</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xorg-input-libinput</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="1.5.0">libinput</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/X11/xorg.conf.d</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>xorg-input-libinput-devel</Name>
+        <Summary>Development files for xorg-input-libinput</Summary>
+        <RuntimeDependencies>
+            <Dependency version="current">xorg-input-libinput</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-11-03</Date>
+            <Version>0.22.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

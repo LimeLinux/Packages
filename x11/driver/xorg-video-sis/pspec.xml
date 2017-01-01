@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xorg-video-sis</Name>
+        <Homepage>http://www.x.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>driver</IsA>
+        <Summary>X.Org sis video driver</Summary>
+        <Description>xorg-video-sis contains the X.Org driver for SiS cards.</Description>
+        <Archive sha1sum="8607cebaf87f3870dfe347bef4db5650a4a0a082" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-sis-0.10.8.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libdrm-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+<!--             <Patch level="1">0001-Disable-UploadToScreen-and-DownloadFromScreen.patch</Patch> -->
+<!--             <Patch level="1">git-fixes.patch</Patch> -->
+<!--             <Patch level="1">Xi.patch</Patch> -->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>xorg-video-sis</Name>
+        <RuntimeDependencies>
+            <Dependency>xorg-server</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-05-02</Date>
+            <Version>0.10.8</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
