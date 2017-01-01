@@ -11,9 +11,9 @@ from pisi.actionsapi import get
 datadir = "/usr/share/gfxtheme/limelinux"
 
 def build():
-    autotools.make('PRODUCT="limelinux"')
+    autotools.make('PRODUCT="LimeLinux"')
 
 def install():
-    pisitools.insinto(datadir, "bootlogo.dir", "install")
-    pisitools.insinto(datadir, "bootlogo", "install")
+    pisitools.insinto(datadir, "isolinux", "install")
+    #pisitools.insinto(datadir, "bootlogo", "install")
 
