@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Cli installer for Pisi Linux</Summary>
         <Description>Cli installer for Pisi Linux</Description>
-        <Archive sha1sum="35fe2e7a23dcb5f842b265f73ba7fe55c6204718" type="tarbz2">https://gitlab.com/erturk/cli-installer-master-6dcd586b2ec2b713082dab9eea0356c93f07fe20.tar.bz2</Archive>
+        <Archive sha1sum="a01dff5d9affd6d491d318e50833fdcd29eff46e" type="targz">https://sourceforge.net/projects/limelinux/files/source/cli-installer-0.1.tar.gz</Archive>
         <Patches>
             <!--Patch level="1">pisi.patch</Patch-->
         </Patches>
