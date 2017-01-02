@@ -10,8 +10,8 @@ from pisi.actionsapi import pisitools
 def setup():
     autotools.configure("--disable-static \
                          --enable-experimental \
-                         --with-package-name='PisiLinux gstreamer-plugins-good package' \
-                         --with-package-origin='http://www.pisilinux.org'")
+                         --with-package-name='LimeLinux gstreamer-plugins-good package' \
+                         --with-package-origin='http://www.limelinux.com'")
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
