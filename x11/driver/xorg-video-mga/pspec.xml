@@ -20,9 +20,9 @@
 <!--             <Patch level="1">mga-1.6.2-shadowfb.patch</Patch> -->
         </Patches>
         <BuildDependencies>
-            <Dependency>libdrm-devel</Dependency>
-            <Dependency>mesa-devel</Dependency>
-            <Dependency>xorg-server-devel</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>xorg-server</Dependency>
         </BuildDependencies>
     </Source>
 

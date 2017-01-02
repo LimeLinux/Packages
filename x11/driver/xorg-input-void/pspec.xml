@@ -16,7 +16,7 @@
         <Archive sha1sum="40c4e9aa7997ee24626aa0b8ecd9e7ac82a5fd63" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-void-1.4.1.tar.bz2</Archive>
         <!--1.4.0 no longer supports Xorg server releases older than 1.10-->
         <BuildDependencies>
-            <Dependency>xorg-server-devel</Dependency>
+            <Dependency>xorg-server</Dependency>
         </BuildDependencies>
     </Source>
 

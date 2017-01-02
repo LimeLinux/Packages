@@ -15,11 +15,11 @@
         <Description>xorg-video-openchrome contains the X.Org driver for VIA video chipsets.</Description>
         <Archive sha1sum="8889aa051acfd2007c4bbd8d5efbaf6f3d39db51" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-openchrome-0.4.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>libdrm-devel</Dependency>
-            <Dependency>libXext-devel</Dependency>
-            <Dependency>libXv-devel</Dependency>
-            <Dependency>libXvMC-devel</Dependency>
-            <Dependency>xorg-server-devel</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libXvMC</Dependency>
+            <Dependency>xorg-server</Dependency>
         </BuildDependencies>
         <Patches>
 <!--             <Patch level="0">openchrome-0.2.904-fix_tvout_flickering.patch</Patch> -->

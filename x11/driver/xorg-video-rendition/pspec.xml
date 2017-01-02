@@ -15,7 +15,7 @@
         <Description>xorg-video-rendition contains the X.Org driver for Rendition (Micron) cards.</Description>
         <Archive sha1sum="b0c097890320be53ca678bd6f18de4c39e2409e8" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-rendition-4.2.6.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>xorg-server-devel</Dependency>
+            <Dependency>xorg-server</Dependency>
         </BuildDependencies>
         <Patches>
 <!--             <Patch level="1">git-fixes.patch</Patch> -->

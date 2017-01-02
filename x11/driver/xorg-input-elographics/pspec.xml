@@ -15,8 +15,8 @@
         <Description>xorg-input-elographics contains the X.Org driver for Linux's generic event devices. It supports all input devices that the kernel knows about.</Description>
         <Archive sha1sum="78455583a34ccd209edc1aba5538926df4faf47f" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-elographics-1.4.1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>xorg-server-devel</Dependency>
-            <Dependency>libmtdev-devel</Dependency>
+            <Dependency>xorg-server</Dependency>
+            <Dependency>libmtdev</Dependency>
             <Dependency>util-macros</Dependency>
         </BuildDependencies>   
     </Source>

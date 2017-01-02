@@ -15,7 +15,7 @@
         <Description>xorg-video-s3virge contains the X.Org driver for S3 Virge cards.</Description>
         <Archive sha1sum="d670f02ec4372e4a4ed299d7f29b5bd6e2fa9e83" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-s3virge-1.10.7.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>xorg-server-devel</Dependency>
+            <Dependency>xorg-server</Dependency>
         </BuildDependencies>
         <Patches>
 <!--             <Patch level="1">git-fixes.patch</Patch> -->

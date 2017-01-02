@@ -15,10 +15,10 @@
         <Description>Generic input driver for the X.Org server based on libinput</Description>
         <Archive sha1sum="fca6b9a7795e6f27cb216fb3818f9c642745beaf" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-libinput-0.22.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>libX11-devel</Dependency>
-            <Dependency>eudev-devel</Dependency>
-            <Dependency>xorg-server-devel</Dependency>
-            <Dependency versionFrom="1.5.0">libinput-devel</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>eudev</Dependency>
+            <Dependency>xorg-server</Dependency>
+            <Dependency versionFrom="1.5.0">libinput</Dependency>
             <Dependency>util-macros</Dependency>
         </BuildDependencies>
     </Source>
@@ -33,16 +33,6 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/usr/share/X11/xorg.conf.d</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>xorg-input-libinput-devel</Name>
-        <Summary>Development files for xorg-input-libinput</Summary>
-        <RuntimeDependencies>
-            <Dependency version="current">xorg-input-libinput</Dependency>
-        </RuntimeDependencies>
-        <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
         </Files>
