@@ -27,26 +27,6 @@
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>xvba-video-32bit</Name>
-        <PartOf>emul32</PartOf>
-        <Summary>32-bit shared libraries for xvba-video</Summary>
-        <BuildType>emul32</BuildType>
-        <BuildDependencies>
-            <Dependency>mesa-32bit</Dependency>
-            <Dependency>libX11-32bit</Dependency>
-            <Dependency>libXext-32bit</Dependency>
-        </BuildDependencies>
-        <RuntimeDependencies>
-            <Dependency>mesa-32bit</Dependency>
-            <Dependency release="current">xvba-video</Dependency>
-            <Dependency>libX11-32bit</Dependency>
-            <Dependency>libXext-32bit</Dependency>
-        </RuntimeDependencies>
-        <Files>
             <Path fileType="library">/usr/lib32</Path>
         </Files>
     </Package>
