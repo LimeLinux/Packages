@@ -10,7 +10,7 @@
             <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv2</License>
-        <ExcludeArch>armv7h</ExcludeArch>
+        <ExcludeArch>x86_64</ExcludeArch>
         <IsA>app:console</IsA>
         <Summary>Multipath tools for Linux (including kpartx)</Summary>
         <Description>Multipath tools for Linux (including kpartx)</Description>
