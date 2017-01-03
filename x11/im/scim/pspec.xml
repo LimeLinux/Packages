@@ -68,7 +68,7 @@
         <Summary>Libraries of SCIM</Summary>
         <RuntimeDependencies>            
             <Dependency>cairo</Dependency>            
-            <Dependency>libtool-ltdl</Dependency>
+            <Dependency>libtool</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libscim-*</Path>
