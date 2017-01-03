@@ -25,7 +25,6 @@
         <Name>libva-intel-driver</Name>
         <RuntimeDependencies>
             <Dependency>libdrm</Dependency>
-            <Dependency>libdrm-intel</Dependency>
             <Dependency versionFrom="1.7.2">libva</Dependency>
         </RuntimeDependencies>
         <Files>

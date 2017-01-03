@@ -1,0 +1,81 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>wxGTK</Name>
+        <Homepage>http://www.wxwidgets.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>wxWinLL-3</License>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <License>wxWinFDL-3</License>
+        <IsA>library</IsA>
+        <Summary>GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit</Summary>
+        <Description>wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
+        <Archive sha1sum="6461eab4428c0a8b9e41781b8787510484dea800" type="tarbz2">mirrors://sourceforge/wxwindows/wxWidgets-3.0.2.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>webkit2gtk</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">make-abicheck-non-fatal.patch</Patch>
+            <Patch level="1">gcc6.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>wxGTK</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>webkit2gtk</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+            <Path fileType="data">/usr/share/aclocal/</Path>
+            <Path fileType="data">/usr/share/bakefile/</Path>
+            <Path fileType="library">/usr/lib/wx/config</Path>
+            <Path fileType="localedata">/usr/share/locale/</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>3.0.2</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

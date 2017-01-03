@@ -10861,6 +10861,70 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>filezilla</Name>
+            <Homepage>http://filezilla-project.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>network.ftp</PartOf>
+            <Summary xml:lang="en">Simple FTP Client</Summary>
+            <Summary xml:lang="tr">FTP ve SFTP istemcisi</Summary>
+            <Description xml:lang="en">Easy-to-use FTP Client which also supports SFTP.</Description>
+            <Description xml:lang="tr">Filezilla; dosyalarınızı ftp, sftp, ftps ile göndermenize ve indirmenize yarar</Description>
+            <Icon>filezilla</Icon>
+            <Archive type="tarbz2" sha1sum="c36f0d7089b94241bccfebc7ac5d6b42a7fe0c54">mirrors://sourceforge/filezilla/FileZilla_3.14.1_src.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libidn</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>gnutls</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>xdg-utils</Dependency>
+                <Dependency>wxGTK</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="0">i18n-filezilla.desktop.patch</Patch>
+            </Patches>
+            <SourceURI>network/ftp/filezilla/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>filezilla</Name>
+            <RuntimeDependencies>
+                <Dependency>wxGTK</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gnutls</Dependency>
+                <Dependency>xdg-utils</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/filezilla</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/appdata/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>3.14.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>iproute2</Name>
             <Homepage>http://linux-net.osdl.org/index.php/Iproute2</Homepage>
             <Packager>
@@ -13790,6 +13854,115 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>webkit2gtk</Name>
+            <Homepage>http://webkitgtk.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <License>LGPLv2.1</License>
+            <License>BSD</License>
+            <IsA>library</IsA>
+            <PartOf>network.misc</PartOf>
+            <Summary xml:lang="en">An opensource web browser engine for GTK+ applications</Summary>
+            <Description xml:lang="en">The GTK+ port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ UI toolkit on platforms like Linux.</Description>
+            <Archive type="tarxz" sha1sum="b5e67ce3f01cdb6d2e202df423794ee228321612">https://www.webkitgtk.org/releases/webkitgtk-2.15.2.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>ruby</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>geoclue</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-libav-next</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+                <Dependency>gst-plugins-bad-next</Dependency>
+                <Dependency>gst-plugins-good-next</Dependency>
+                <Dependency>which</Dependency>
+                <Dependency>icon-theme-hicolor</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>libSM</Dependency>
+            </BuildDependencies>
+            <SourceURI>network/misc/webkit2gtk/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>webkit2gtk</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>geoclue</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-libav-next</Dependency>
+                <Dependency>gst-plugins-bad-next</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+                <Dependency>gst-plugins-good-next</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk/Web*</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk2/html</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk/JavaScriptCore</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-18</Date>
+                <Version>2.15.2</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>reaver</Name>
             <Homepage>http://code.google.com/p/reaver-wps/</Homepage>
             <Packager>
@@ -14295,6 +14468,88 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Date>2016-12-21</Date>
                 <Version>50.1.0</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>wxGTK</Name>
+            <Homepage>http://www.wxwidgets.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>wxWinLL-3</License>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <License>wxWinFDL-3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop</PartOf>
+            <Summary xml:lang="en">GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit</Summary>
+            <Summary xml:lang="tr">Birçok platform için ortak C++ arayüz araç takımı olan wxWindows&apos;un GTK+ sürümü</Summary>
+            <Description xml:lang="fr">wxWidgets/GTK2 est le port GTK2 de la librairie graphique multi-plateforme wxWidgets, offrant des classes pour les contrôles IHM communs ainsi qu&apos;un ensemble complet de classes d&apos;aides pour les tâches applicatives habituelles, allant du réseau à l&apos;affichage HTML en passant par la manipulation d&apos;images.</Description>
+            <Description xml:lang="en">wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
+            <Description xml:lang="tr">wxWidgets/GTK2 birçok platform için ortak bir C++ arayüz kitaplığı olan wxWidgets&apos;ın GTK2 sürümüdür. Ağ araçları, HTML gösterimi ve resim işleme gibi en yaygın kullanılan uygulama görevleri için kapsamlı bir sınıf kümesinin yanında tüm genel GUI denetimlerini içerir.</Description>
+            <Description xml:lang="es">wxWidgets/GTK2 es la versión portada a GTK2 de la librería GUI wxWidgets cross-plataforma en C++, con clases para todos los controles GUI comunes y tambien un conjunto de clases con ayudantes para la mayoría de las tareas comunes de aplicaciones, desde networking a visualización HTML y manipulación de imagenes.</Description>
+            <Archive type="tarbz2" sha1sum="6461eab4428c0a8b9e41781b8787510484dea800">mirrors://sourceforge/wxwindows/wxWidgets-3.0.2.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>zlib</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>webkit2gtk</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">make-abicheck-non-fatal.patch</Patch>
+                <Patch level="1">gcc6.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/wxGTK/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>wxGTK</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>webkit2gtk</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc/</Path>
+                <Path fileType="data">/usr/share/aclocal/</Path>
+                <Path fileType="data">/usr/share/bakefile/</Path>
+                <Path fileType="library">/usr/lib/wx/config</Path>
+                <Path fileType="localedata">/usr/share/locale/</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>3.0.2</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -31423,7 +31678,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Name>libva-intel-driver</Name>
             <RuntimeDependencies>
                 <Dependency>libdrm</Dependency>
-                <Dependency>libdrm-intel</Dependency>
                 <Dependency versionFrom="1.7.2">libva</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -31512,26 +31766,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Files>
                 <Path fileType="library">/usr/lib</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
-            </Files>
-        </Package>
-        <Package>
-            <Name>xvba-video-32bit</Name>
-            <Summary xml:lang="en">32-bit shared libraries for xvba-video</Summary>
-            <Summary xml:lang="tr">xvba-video için 32-bit paylaşımlı kitaplıklar</Summary>
-            <PartOf>emul32</PartOf>
-            <BuildType>emul32</BuildType>
-            <BuildDependencies>
-                <Dependency>mesa-32bit</Dependency>
-                <Dependency>libX11-32bit</Dependency>
-                <Dependency>libXext-32bit</Dependency>
-            </BuildDependencies>
-            <RuntimeDependencies>
-                <Dependency>mesa-32bit</Dependency>
-                <Dependency release="1">xvba-video</Dependency>
-                <Dependency>libX11-32bit</Dependency>
-                <Dependency>libXext-32bit</Dependency>
-            </RuntimeDependencies>
-            <Files>
                 <Path fileType="library">/usr/lib32</Path>
             </Files>
         </Package>
