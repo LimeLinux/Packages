@@ -15,7 +15,7 @@
         <Archive sha1sum="00e9e3fc65346a6d19584f7bee7c4c96c670c178" type="targz">https://sourceforge.net/projects/pisi-source/files/limelinux/gfxboot-limelinux-install-0.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gfxboot</Dependency>
-            <Dependency>fribidi-devel</Dependency>
+            <Dependency>fribidi</Dependency>
         </BuildDependencies>
     </Source>
 
