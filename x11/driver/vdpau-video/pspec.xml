@@ -15,7 +15,7 @@
         <Description>vdpau-video is a backend for the VA API in order to use VDPAU video acceleration drivers available for some NVIDIA and S3 cards.</Description>
         <Archive sha1sum="224318f4ea8bafca6a0fec770e388b7d1a1a66b3" type="tarbz2">http://www.freedesktop.org/software/vaapi/releases/libva-vdpau-driver/libva-vdpau-driver-0.7.4.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.8">libvdpau-devel</Dependency>
+            <Dependency>libvdpau</Dependency>
             <Dependency>libva</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>libX11</Dependency>
@@ -31,7 +31,7 @@
         <Name>vdpau-video</Name>
         <RuntimeDependencies>
             <Dependency>libX11</Dependency>
-            <Dependency versionFrom="0.8">libvdpau</Dependency>
+            <Dependency>libvdpau</Dependency>
             <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>
