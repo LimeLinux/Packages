@@ -25,7 +25,7 @@
             <Dependency>libSM</Dependency>
             <Dependency>libpng</Dependency>
             <Dependency>mesa-glu</Dependency>
-            <Dependency>webkit2gtk</Dependency>
+            <Dependency>webkit-gtk2</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gst-plugins-base</Dependency>
         </BuildDependencies>
@@ -53,7 +53,7 @@
             <Dependency>gstreamer</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXxf86vm</Dependency>
-            <Dependency>webkit2gtk</Dependency>
+            <Dependency>webkit-gtk2</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gst-plugins-base</Dependency>
         </RuntimeDependencies>

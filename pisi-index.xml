@@ -13854,6 +13854,134 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>webkit-gtk2</Name>
+            <Homepage>http://webkitgtk.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <License>LGPLv2.1</License>
+            <License>BSD</License>
+            <IsA>library</IsA>
+            <PartOf>network.misc</PartOf>
+            <Summary xml:lang="en">An opensource web browser engine for GTK+ applications</Summary>
+            <Description xml:lang="en">The GTK+ port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ UI toolkit on platforms like Linux.</Description>
+            <Archive type="tarxz" sha1sum="e425ae86084ab6335dadb368c9e8f53600665d54">http://www.webkitgtk.org/releases/webkitgtk-2.4.11.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>ruby</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>geoclue</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-libav-next</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+                <Dependency>gst-plugins-bad-next</Dependency>
+                <Dependency>gst-plugins-good-next</Dependency>
+                <Dependency>which</Dependency>
+                <Dependency>icon-theme-hicolor</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>libSM</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">install-minibrowser.patch</Patch>
+                <Patch>webkitgtk-2.4.9-abs.patch</Patch>
+            </Patches>
+            <SourceURI>network/misc/webkit-gtk2/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>webkit-gtk2</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>geoclue</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-libav-next</Dependency>
+                <Dependency>gst-plugins-bad-next</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+                <Dependency>gst-plugins-good-next</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>webkit-gtk2-devel</Name>
+            <Summary xml:lang="en">Development files for GTK+ port of WebKit</Summary>
+            <IsA>library</IsA>
+            <IsA>data:doc</IsA>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency release="1">webkit-gtk2</Dependency>
+                <Dependency>libsoup-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk/Web*</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk2/html</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk/JavaScriptCore</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-18</Date>
+                <Version>2.4.11</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>webkit2gtk</Name>
             <Homepage>http://webkitgtk.org</Homepage>
             <Packager>
@@ -14502,7 +14630,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Dependency>libSM</Dependency>
                 <Dependency>libpng</Dependency>
                 <Dependency>mesa-glu</Dependency>
-                <Dependency>webkit2gtk</Dependency>
+                <Dependency>webkit-gtk2</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
                 <Dependency>gst-plugins-base</Dependency>
             </BuildDependencies>
@@ -14530,7 +14658,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Dependency>gstreamer</Dependency>
                 <Dependency>gdk-pixbuf</Dependency>
                 <Dependency>libXxf86vm</Dependency>
-                <Dependency>webkit2gtk</Dependency>
+                <Dependency>webkit-gtk2</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
                 <Dependency>gst-plugins-base</Dependency>
             </RuntimeDependencies>
@@ -30088,7 +30216,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <PartOf>system.installer</PartOf>
             <Summary xml:lang="en">Cli installer for Pisi Linux</Summary>
             <Description xml:lang="en">Cli installer for Pisi Linux</Description>
-            <Archive type="tarbz2" sha1sum="35fe2e7a23dcb5f842b265f73ba7fe55c6204718">https://gitlab.com/erturk/cli-installer-master-6dcd586b2ec2b713082dab9eea0356c93f07fe20.tar.bz2</Archive>
+            <Archive type="targz" sha1sum="a01dff5d9affd6d491d318e50833fdcd29eff46e">https://sourceforge.net/projects/limelinux/files/source/cli-installer-0.1.tar.gz</Archive>
             <SourceURI>system/installer/cli-installer/pspec.xml</SourceURI>
         </Source>
         <Package>
