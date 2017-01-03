@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Open source H265/EVC encoder</Summary>
         <Description>x265 is a commercially funded open source implementation of the H.265/High Efficiency Video Coding (HEVC) compression standard.</Description>
-        <Archive sha1sum="71ef768f8a9d023c19f218feb9519c83c3d4c125" type="targz">https://bitbucket.org/multicoreware/x265/downloads/x265_2.1.tar.gz</Archive>
+        <Archive sha1sum="37ed92b83dbe9e1420e1c226d35caeea16d4b0e4" type="targz">https://bitbucket.org/multicoreware/x265/downloads/x265_2.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>yasm</Dependency>
             <Dependency>cmake</Dependency>
