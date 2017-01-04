@@ -14,6 +14,7 @@
         <Summary>Compiler and tools for the Go programming language from Google</Summary>
         <Description>Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.</Description>
         <Archive sha1sum="24943cf0370c3a14093d00b0d8702639ab4cc2a8" type="targz">https://github.com/golang/go/archive/go1.7.1.tar.gz</Archive>
+        <Archive sha1sum="97058ade5ad63119f78aa5d1717b1ac26c9f5f7b" type="tarbz2" target="go-go1.7.1">https://dev.gentoo.org/~williamh/dist/go-linux-amd64-bootstrap.tbz</Archive>
         <BuildDependencies>
             <Dependency>perl</Dependency>
             <Dependency>gawk</Dependency>
