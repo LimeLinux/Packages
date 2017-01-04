@@ -1,12 +1,11 @@
-
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://limelinux.com/standard/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>dbus</Name>
         <Homepage>http://dbus.freedesktop.org/</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
+            <Name>LimeLinux Community</Name>
             <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv2</License>
@@ -14,13 +13,11 @@
         <IsA>service</IsA>
         <Summary>A message bus system, a simple way for applications to talk to each other</Summary>
         <Description>D-Bus supplies both a system daemon (for events such as "new hardware device added" or "printer queue changed") and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two apps to communicate directly (without going through the message bus daemon). Currently the communicating applications are on one computer, but TCP/IP option is available and remote support planned.</Description>
-        <Archive sha1sum="86f87cf42f6b9f976ddd9eef8de925ff3d3c0191" type="targz">http://dbus.freedesktop.org/releases/dbus/dbus-1.10.8.tar.gz</Archive>
+        <Archive sha1sum="b53ba143b3bc1808eabd4628379f59ea6836694c" type="targz">https://dbus.freedesktop.org/releases/dbus/dbus-1.11.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>expat</Dependency>
             <Dependency>libX11</Dependency>
-            <Dependency>doxygen</Dependency>
             <Dependency>libcap-ng</Dependency>
-            <Dependency>xmlto</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -29,23 +26,24 @@
         <RuntimeDependencies>
             <Dependency>expat</Dependency>
             <Dependency>libcap-ng</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>libX11</Dependency>
+            <!--libX11 dbus-x11 paketi ayrılınca buradan silinecek-->
+            <!--<Dependency>libX11</Dependency>-->
         </RuntimeDependencies>
         <Files>
-            <Path fileType="config">/etc</Path>
+            <Path fileType="config">/etc/dbus</Path>
+            <Path fileType="config">/etc/dbus-1</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="header">/usr/include</Path>
             <Path fileType="config">/usr/lib/tmpfiles.d/dbus.conf</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="library">/usr/libexec</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/run/dbus</Path>
             <Path fileType="data">/var/lib/dbus</Path>
             <Path fileType="data">/lib/systemd/system</Path>
-            <Path fileType="data">/var/run</Path>
-            <Path fileType="header">/usr/include</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0755" target="/etc/dbus">dbus</AdditionalFile>
@@ -55,14 +53,38 @@
         </Provides>
     </Package>
 
+    <Package>
+        <Name>dbus-x11</Name>
+        <PartOf>x11.util</PartOf>
+        <RuntimeDependencies>
+            <Dependency>libX11</Dependency>
+            <Dependency>dbus</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/dbus-launch</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>dbus-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for dbus</Summary>
+        <BuildType>emul32</BuildType>
+        <Files>
+            <Path fileType="data">/usr/lib32/pkgconfig</Path>
+            <Path fileType="library">/usr/lib32</Path>
+            <Path fileType="library">/usr/lib/dbus-1.0/include</Path>
+            <Path fileType="man">/usr/share/man/man3</Path>
+        </Files>
+    </Package>
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.10.8</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Date>2016-12-27</Date>
+            <Version>1.11.0</Version>
+            <Comment>Frist Release</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
         </Update>
     </History>
   </PISI>
