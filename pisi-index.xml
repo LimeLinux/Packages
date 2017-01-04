@@ -4235,6 +4235,48 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>rar</Name>
+            <Homepage>http://www.rarlab.com</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>RAR</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.archive</PartOf>
+            <Summary xml:lang="en">RAR compressor</Summary>
+            <Summary xml:lang="tr">RAR sıkıştırıcı</Summary>
+            <Description xml:lang="en">rar is an compressor supporting multiple volume archives and damage protection. It can also create SFX-archives. This program is shareware and you must register it after 40 days of use.</Description>
+            <Description xml:lang="tr">rar, çoklu arşivleri ve hasar korumayı destekleyen bir sıkıştırıcıdır. rar aynı zamanda SFX arşivleri de yaratabilir. Bu uygulama ücretli olup 40 günlük kullanımdan sonra kayıt olunması gerekmektedir.</Description>
+            <Archive type="targz" sha1sum="f1a15c3f14d49899cbcaf2e6e559c1b878da5c40" target="i686">http://www.rarlab.com/rar/rarlinux-5.3.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="bc6af5e5f941d903e4853ac6f57c82434e2ada01" target="x86_64">http://www.rarlab.com/rar/rarlinux-x64-5.3.0.tar.gz</Archive>
+            <SourceURI>util/archive/rar/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>rar</Name>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/opt/rar/bin</Path>
+                <Path fileType="data">/opt/rar/lib</Path>
+                <Path fileType="data">/opt/rar/etc</Path>
+                <Path fileType="doc">/usr/share/doc/rar</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-27</Date>
+                <Version>5.3.0</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelnux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>ucl</Name>
             <Homepage>http://www.oberhumer.com/opensource/ucl/</Homepage>
             <Packager>
@@ -4588,6 +4630,7 @@
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Packager>
+            <ExcludeArch>x86_64</ExcludeArch>
             <License>GPLv2</License>
             <IsA>app:console</IsA>
             <PartOf>util.misc</PartOf>
@@ -5359,7 +5402,7 @@
             <Summary xml:lang="tr">Açık kaynak kodlu H265/EVC çözücü</Summary>
             <Description xml:lang="en">x265 is a commercially funded open source implementation of the H.265/High Efficiency Video Coding (HEVC) compression standard.</Description>
             <Description xml:lang="tr">x265 H265/EVC görüntü dosyalarını açmak için kullanılan bir kütüphane</Description>
-            <Archive type="targz" sha1sum="71ef768f8a9d023c19f218feb9519c83c3d4c125">https://bitbucket.org/multicoreware/x265/downloads/x265_2.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="37ed92b83dbe9e1420e1c226d35caeea16d4b0e4">https://bitbucket.org/multicoreware/x265/downloads/x265_2.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>yasm</Dependency>
                 <Dependency>cmake</Dependency>
@@ -6692,7 +6735,7 @@
             <Summary xml:lang="tr">Dirac kodek kitaplığı</Summary>
             <Description xml:lang="en">C-based libraries and GStreamer plugins for the Dirac video codec.</Description>
             <Description xml:lang="tr">C ile kodlanmış Dirac video kodeği kitaplıkları ve GStreamer eklentileri</Description>
-            <Archive type="targz" sha1sum="c01ee0bed6c1bd7608763927f719f94ebc6aaa41">http://www.diracvideo.org/download/schroedinger/schroedinger-1.0.11.tar.gz</Archive>
+            <Archive type="targz" sha1sum="c01ee0bed6c1bd7608763927f719f94ebc6aaa41">https://launchpad.net/schroedinger/trunk/1.0.11/+download/schroedinger-1.0.11.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>orc</Dependency>
             </BuildDependencies>
@@ -24885,7 +24928,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Name>expat</Name>
             <Homepage>http://expat.sourceforge.net/</Homepage>
             <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Packager>
             <License>as-is</License>
@@ -24899,26 +24942,46 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Archive type="tarbz2" sha1sum="8453bc52324be4c796fd38742ec48470eef358b3">mirrors://sourceforge/expat/expat-2.2.0.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>gnuconfig</Dependency>
+                <Dependency>glibc</Dependency>
             </BuildDependencies>
+            <Patches>
+                <Patch>expat-2.2.0-CVE-2016-0718-regression.patch</Patch>
+            </Patches>
             <SourceURI>system/base/expat/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>expat</Name>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
                 <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc/expat/html</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>expat-32bit</Name>
+            <Summary xml:lang="en">32-bit shared libraries for expat</Summary>
+            <Summary xml:lang="tr">expat için 32-bit paylaşımlı kitaplıklar</Summary>
+            <PartOf>emul32</PartOf>
+            <BuildType>emul32</BuildType>
+            <RuntimeDependencies>
+                <Dependency release="1">expat</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib32</Path>
+                <Path fileType="library">/usr/lib32/pkgconfig</Path>
             </Files>
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
+                <Date>2016-04-06</Date>
                 <Version>2.2.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
+                <Comment>First release</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -27802,7 +27865,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Name>dbus</Name>
             <Homepage>http://dbus.freedesktop.org/</Homepage>
             <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Packager>
             <License>GPLv2</License>
@@ -27814,13 +27877,11 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="fr">D-Bus fourni à la fois un daemon système (pour les événements els que l&apos;&quot;ajout d&apos;un nouveau périphérique&quot; ou &quot;file d&apos;impression changée&quot;) et un daemon propre à chaque session utilisateur (pour les besoins généraux de communication entre processus utilisateurs). De plus, le bus de message est construit en se basant sur un framework (cadre de développement) de passage de message de un-vers-un pouvant être utilisé par n&apos;importe quelles applications pour communiquer directement (sans passer par le daemon de bus de message). Pour l&apos;instant les applications pouvant communiquer doivent être situées sur le même ordinateur, mais l&apos;option TCP/IP est disponible et le support de processus distant est prévu.</Description>
             <Description xml:lang="en">D-Bus supplies both a system daemon (for events such as &quot;new hardware device added&quot; or &quot;printer queue changed&quot;) and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two apps to communicate directly (without going through the message bus daemon). Currently the communicating applications are on one computer, but TCP/IP option is available and remote support planned.</Description>
             <Description xml:lang="tr">D-Bus, sistem ve kullanıcılar için olmak üzere iki tane artalan süreci (daemon) sunar. Mesaj yolu, bire bir mesaj geçiş araçları üzerine inşa edilmiştir. Bu sayede iki program birbiriyle bir mesaj yolu artalan süreci kullanmadan, direkt olarak haberleşebilir. Şu an için haberleşme araçları aynı bilgisayar üzerinde çalışabilmektedir, fakat TCP/IP ile uzaktan haberleşme de planlanmaktadır.</Description>
-            <Archive type="targz" sha1sum="86f87cf42f6b9f976ddd9eef8de925ff3d3c0191">http://dbus.freedesktop.org/releases/dbus/dbus-1.10.8.tar.gz</Archive>
+            <Archive type="targz" sha1sum="b53ba143b3bc1808eabd4628379f59ea6836694c">https://dbus.freedesktop.org/releases/dbus/dbus-1.11.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>expat</Dependency>
                 <Dependency>libX11</Dependency>
-                <Dependency>doxygen</Dependency>
                 <Dependency>libcap-ng</Dependency>
-                <Dependency>xmlto</Dependency>
             </BuildDependencies>
             <SourceURI>system/base/dbus/pspec.xml</SourceURI>
         </Source>
@@ -27829,23 +27890,22 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <RuntimeDependencies>
                 <Dependency>expat</Dependency>
                 <Dependency>libcap-ng</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libX11</Dependency>
             </RuntimeDependencies>
             <Files>
-                <Path fileType="config">/etc</Path>
+                <Path fileType="config">/etc/dbus</Path>
+                <Path fileType="config">/etc/dbus-1</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include</Path>
                 <Path fileType="config">/usr/lib/tmpfiles.d/dbus.conf</Path>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="library">/usr/lib</Path>
                 <Path fileType="library">/usr/libexec</Path>
-                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="man">/usr/share/man</Path>
                 <Path fileType="data">/run/dbus</Path>
                 <Path fileType="data">/var/lib/dbus</Path>
                 <Path fileType="data">/lib/systemd/system</Path>
-                <Path fileType="data">/var/run</Path>
-                <Path fileType="header">/usr/include</Path>
             </Files>
             <Provides>
                 <COMAR script="postInstall.py">System.Package</COMAR>
@@ -27854,13 +27914,37 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <AdditionalFile target="/etc/dbus" permission="0755" owner="root">dbus</AdditionalFile>
             </AdditionalFiles>
         </Package>
+        <Package>
+            <Name>dbus-x11</Name>
+            <PartOf>x11.util</PartOf>
+            <RuntimeDependencies>
+                <Dependency>libX11</Dependency>
+                <Dependency>dbus</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin/dbus-launch</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>dbus-32bit</Name>
+            <Summary xml:lang="en">32-bit shared libraries for dbus</Summary>
+            <Summary xml:lang="tr">dbus için 32-bit paylaşımlı kitaplıklar</Summary>
+            <PartOf>emul32</PartOf>
+            <BuildType>emul32</BuildType>
+            <Files>
+                <Path fileType="data">/usr/lib32/pkgconfig</Path>
+                <Path fileType="library">/usr/lib32</Path>
+                <Path fileType="library">/usr/lib/dbus-1.0/include</Path>
+                <Path fileType="man">/usr/share/man/man3</Path>
+            </Files>
+        </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>1.10.8</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
+                <Date>2016-12-27</Date>
+                <Version>1.11.0</Version>
+                <Comment>Frist Release</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -30055,10 +30139,10 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <PartOf>system.boot</PartOf>
             <Summary xml:lang="en">Lime Linux gfxboot install theme</Summary>
             <Description xml:lang="en">Gfxtheme install package for Lime Linux</Description>
-            <Archive type="targz" sha1sum="00e9e3fc65346a6d19584f7bee7c4c96c670c178">https://sourceforge.net/projects/pisi-source/files/limelinux/gfxboot-limelinux-install-0.8.tar.gz</Archive>
+            <Archive type="targz" sha1sum="00e9e3fc65346a6d19584f7bee7c4c96c670c178">https://sourceforge.net/projects/pisi-source/files/limelinux/gfxtheme-limelinux-install-0.8.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>gfxboot</Dependency>
-                <Dependency>fribidi-devel</Dependency>
+                <Dependency>fribidi</Dependency>
             </BuildDependencies>
             <SourceURI>system/boot/gfxtheme-limelinux-install/pspec.xml</SourceURI>
         </Source>
@@ -31390,7 +31474,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="tr">xorg-video-nouveau, NVIDIA ekran kartları için X.Org sürücüsünü içerir.</Description>
             <Archive type="tarbz2" sha1sum="814bbdb849c35e79fac4ae881ab5e4153521fd85">mirrors://xorg/individual/driver/xf86-video-nouveau-1.0.13.tar.bz2</Archive>
             <BuildDependencies>
-                <Dependency>libdrm-nouveau</Dependency>
+                <Dependency>libdrm</Dependency>
                 <Dependency>libpciaccess</Dependency>
                 <Dependency>mesa</Dependency>
                 <Dependency>eudev</Dependency>
@@ -31403,7 +31487,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <RuntimeDependencies>
                 <Dependency>libdrm</Dependency>
                 <Dependency>eudev</Dependency>
-                <Dependency>libdrm-nouveau</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library">/usr/lib/xorg</Path>
@@ -32713,7 +32796,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="tr">vdpau-video, bazı NVIDIA ve S3 kartlar için mevcut olan VDPAU video hızlandırma sürücülerini kullanmak için bir VA API arka ucudur.</Description>
             <Archive type="tarbz2" sha1sum="224318f4ea8bafca6a0fec770e388b7d1a1a66b3">http://www.freedesktop.org/software/vaapi/releases/libva-vdpau-driver/libva-vdpau-driver-0.7.4.tar.bz2</Archive>
             <BuildDependencies>
-                <Dependency versionFrom="0.8">libvdpau-devel</Dependency>
+                <Dependency>libvdpau</Dependency>
                 <Dependency>libva</Dependency>
                 <Dependency>mesa</Dependency>
                 <Dependency>libX11</Dependency>
@@ -32729,7 +32812,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Name>vdpau-video</Name>
             <RuntimeDependencies>
                 <Dependency>libX11</Dependency>
-                <Dependency versionFrom="0.8">libvdpau</Dependency>
+                <Dependency>libvdpau</Dependency>
                 <Dependency>mesa</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -33033,7 +33116,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="en">Libraries of SCIM</Summary>
             <RuntimeDependencies>
                 <Dependency>cairo</Dependency>
-                <Dependency>libtool-ltdl</Dependency>
+                <Dependency>libtool</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library">/usr/lib/libscim-*</Path>
@@ -39659,7 +39742,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">Gonullu uygulamasi, pisi linux dağıtımının paketlerini derlemek üzere hazırlanmıştır.</Summary>
             <Description xml:lang="en">Application build the packages waiting at queue of build system as PISI packages using docker images and again, sent them to build system.</Description>
             <Description xml:lang="tr">Uygulama docker imajlarını kullanarak, derleme sisteminin kuyruğundan bekleyen paketleri pisi paketi haline getirir ve derleme sistemine gönderir.</Description>
-            <Archive type="targz" sha1sum="4e86fb87595b815839e600d1e7d3ff88c5fe2995">https://github.com/limelinuxNew/gonullu/archive/v1.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="4e86fb87595b815839e600d1e7d3ff88c5fe2995">https://github.com/pisilinuxNew/gonullu/archive/v1.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3</Dependency>
                 <Dependency>python3-setuptools</Dependency>
@@ -45145,6 +45228,134 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Update>
         </History>
     </SpecFile>
+    <Package>
+        <Name>dbus</Name>
+        <Summary xml:lang="en">A message bus system, a simple way for applications to talk to each other</Summary>
+        <Summary xml:lang="tr">Uygulamaların birbirleriyle haberleşmesinin basit bir yöntemi</Summary>
+        <Description xml:lang="fr">D-Bus fourni à la fois un daemon système (pour les événements els que l&apos;&quot;ajout d&apos;un nouveau périphérique&quot; ou &quot;file d&apos;impression changée&quot;) et un daemon propre à chaque session utilisateur (pour les besoins généraux de communication entre processus utilisateurs). De plus, le bus de message est construit en se basant sur un framework (cadre de développement) de passage de message de un-vers-un pouvant être utilisé par n&apos;importe quelles applications pour communiquer directement (sans passer par le daemon de bus de message). Pour l&apos;instant les applications pouvant communiquer doivent être situées sur le même ordinateur, mais l&apos;option TCP/IP est disponible et le support de processus distant est prévu.</Description>
+        <Description xml:lang="en">D-Bus supplies both a system daemon (for events such as &quot;new hardware device added&quot; or &quot;printer queue changed&quot;) and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two apps to communicate directly (without going through the message bus daemon). Currently the communicating applications are on one computer, but TCP/IP option is available and remote support planned.</Description>
+        <Description xml:lang="tr">D-Bus, sistem ve kullanıcılar için olmak üzere iki tane artalan süreci (daemon) sunar. Mesaj yolu, bire bir mesaj geçiş araçları üzerine inşa edilmiştir. Bu sayede iki program birbiriyle bir mesaj yolu artalan süreci kullanmadan, direkt olarak haberleşebilir. Şu an için haberleşme araçları aynı bilgisayar üzerinde çalışabilmektedir, fakat TCP/IP ile uzaktan haberleşme de planlanmaktadır.</Description>
+        <IsA>service</IsA>
+        <PartOf>system.base</PartOf>
+        <License>GPLv2</License>
+        <License>AFL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency>expat</Dependency>
+            <Dependency>libcap-ng</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <COMAR script="postInstall.py">System.Package</COMAR>
+        </Provides>
+        <History>
+            <Update release="1">
+                <Date>2016-12-27</Date>
+                <Version>1.11.0</Version>
+                <Comment>Frist Release</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@limelinux.com</Email>
+            </Update>
+        </History>
+        <BuildHost>localhost</BuildHost>
+        <Distribution>LimeLinux</Distribution>
+        <DistributionRelease>1.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>1114606</InstalledSize>
+        <PackageSize>349803</PackageSize>
+        <PackageHash>4a5d16b5440ab834127bbfaaf730e2dae5c6f1f0</PackageHash>
+        <InstallTarHash>2d1c7e72aa2f75facec51c2206929706a143da52</InstallTarHash>
+        <PackageURI>system/base/dbus/dbus-1.11.0-1-lm-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>dbus</Name>
+            <Homepage>http://dbus.freedesktop.org/</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>dbus-32bit</Name>
+        <Summary xml:lang="en">32-bit shared libraries for dbus</Summary>
+        <Summary xml:lang="tr">dbus için 32-bit paylaşımlı kitaplıklar</Summary>
+        <Description xml:lang="fr">D-Bus fourni à la fois un daemon système (pour les événements els que l&apos;&quot;ajout d&apos;un nouveau périphérique&quot; ou &quot;file d&apos;impression changée&quot;) et un daemon propre à chaque session utilisateur (pour les besoins généraux de communication entre processus utilisateurs). De plus, le bus de message est construit en se basant sur un framework (cadre de développement) de passage de message de un-vers-un pouvant être utilisé par n&apos;importe quelles applications pour communiquer directement (sans passer par le daemon de bus de message). Pour l&apos;instant les applications pouvant communiquer doivent être situées sur le même ordinateur, mais l&apos;option TCP/IP est disponible et le support de processus distant est prévu.</Description>
+        <Description xml:lang="en">D-Bus supplies both a system daemon (for events such as &quot;new hardware device added&quot; or &quot;printer queue changed&quot;) and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two apps to communicate directly (without going through the message bus daemon). Currently the communicating applications are on one computer, but TCP/IP option is available and remote support planned.</Description>
+        <Description xml:lang="tr">D-Bus, sistem ve kullanıcılar için olmak üzere iki tane artalan süreci (daemon) sunar. Mesaj yolu, bire bir mesaj geçiş araçları üzerine inşa edilmiştir. Bu sayede iki program birbiriyle bir mesaj yolu artalan süreci kullanmadan, direkt olarak haberleşebilir. Şu an için haberleşme araçları aynı bilgisayar üzerinde çalışabilmektedir, fakat TCP/IP ile uzaktan haberleşme de planlanmaktadır.</Description>
+        <IsA>service</IsA>
+        <PartOf>emul32</PartOf>
+        <License>GPLv2</License>
+        <License>AFL-2.1</License>
+        <History>
+            <Update release="1">
+                <Date>2016-12-27</Date>
+                <Version>1.11.0</Version>
+                <Comment>Frist Release</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@limelinux.com</Email>
+            </Update>
+        </History>
+        <BuildHost>localhost</BuildHost>
+        <Distribution>LimeLinux</Distribution>
+        <DistributionRelease>1.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>323435</InstalledSize>
+        <PackageSize>117917</PackageSize>
+        <PackageHash>184d49ab9e5b422d6b9db580eb62d43702587f5f</PackageHash>
+        <InstallTarHash>6128d7ffe2d163d070a02ac6cb947b7594892b71</InstallTarHash>
+        <PackageURI>system/base/dbus/dbus-32bit-1.11.0-1-lm-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>dbus</Name>
+            <Homepage>http://dbus.freedesktop.org/</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>dbus-x11</Name>
+        <Summary xml:lang="en">A message bus system, a simple way for applications to talk to each other</Summary>
+        <Summary xml:lang="tr">Uygulamaların birbirleriyle haberleşmesinin basit bir yöntemi</Summary>
+        <Description xml:lang="fr">D-Bus fourni à la fois un daemon système (pour les événements els que l&apos;&quot;ajout d&apos;un nouveau périphérique&quot; ou &quot;file d&apos;impression changée&quot;) et un daemon propre à chaque session utilisateur (pour les besoins généraux de communication entre processus utilisateurs). De plus, le bus de message est construit en se basant sur un framework (cadre de développement) de passage de message de un-vers-un pouvant être utilisé par n&apos;importe quelles applications pour communiquer directement (sans passer par le daemon de bus de message). Pour l&apos;instant les applications pouvant communiquer doivent être situées sur le même ordinateur, mais l&apos;option TCP/IP est disponible et le support de processus distant est prévu.</Description>
+        <Description xml:lang="en">D-Bus supplies both a system daemon (for events such as &quot;new hardware device added&quot; or &quot;printer queue changed&quot;) and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two apps to communicate directly (without going through the message bus daemon). Currently the communicating applications are on one computer, but TCP/IP option is available and remote support planned.</Description>
+        <Description xml:lang="tr">D-Bus, sistem ve kullanıcılar için olmak üzere iki tane artalan süreci (daemon) sunar. Mesaj yolu, bire bir mesaj geçiş araçları üzerine inşa edilmiştir. Bu sayede iki program birbiriyle bir mesaj yolu artalan süreci kullanmadan, direkt olarak haberleşebilir. Şu an için haberleşme araçları aynı bilgisayar üzerinde çalışabilmektedir, fakat TCP/IP ile uzaktan haberleşme de planlanmaktadır.</Description>
+        <IsA>service</IsA>
+        <PartOf>x11.util</PartOf>
+        <License>GPLv2</License>
+        <License>AFL-2.1</License>
+        <RuntimeDependencies>
+            <Dependency>libX11</Dependency>
+            <Dependency>dbus</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2016-12-27</Date>
+                <Version>1.11.0</Version>
+                <Comment>Frist Release</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@limelinux.com</Email>
+            </Update>
+        </History>
+        <BuildHost>localhost</BuildHost>
+        <Distribution>LimeLinux</Distribution>
+        <DistributionRelease>1.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>27320</InstalledSize>
+        <PackageSize>12618</PackageSize>
+        <PackageHash>f6db386882baf302bbf2bf9f7f42c677dee65c0b</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>system/base/dbus/dbus-x11-1.11.0-1-lm-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>dbus</Name>
+            <Homepage>http://dbus.freedesktop.org/</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+        </Source>
+    </Package>
     <Component>
         <Name>system</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
