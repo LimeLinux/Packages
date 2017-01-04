@@ -1,11 +1,12 @@
+
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://limelinux.com/standard/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>expat</Name>
         <Homepage>http://expat.sourceforge.net/</Homepage>
         <Packager>
-            <Name>LimeLinux Community</Name>
+            <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Packager>
         <License>as-is</License>
@@ -15,10 +16,8 @@
         <Archive sha1sum="8453bc52324be4c796fd38742ec48470eef358b3" type="tarbz2">mirrors://sourceforge/expat/expat-2.2.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gnuconfig</Dependency>
-            <Dependency>glibc</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>expat-2.2.0-CVE-2016-0718-regression.patch</Patch>
         </Patches>
     </Source>
 
@@ -26,39 +25,21 @@
         <Name>expat</Name>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="doc">/usr/share/doc/expat/html</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
 
-    <Package>
-        <Name>expat-32bit</Name>
-        <PartOf>emul32</PartOf>
-        <Summary>32-bit shared libraries for expat</Summary>
-        <BuildType>emul32</BuildType>
-        <BuildDependencies>
-            
-        </BuildDependencies>
-        <RuntimeDependencies>
-            <Dependency release="current">expat</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib32</Path>
-            <Path fileType="library">/usr/lib32/pkgconfig</Path>
-        </Files>
-    </Package>
 
     <History>
         <Update release="1">
-            <Date>2016-04-06</Date>
+            <Date>2016-12-21</Date>
             <Version>2.2.0</Version>
-            <Comment>First release</Comment>
-            <Name>Ergün Salman</Name>
-            <Email>poyraz76@limelinux.com</Email>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

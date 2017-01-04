@@ -19,8 +19,6 @@ def setup():
 def build():
     autotools.make()
 
-def check():
-    autotools.make("check")
 
 def install():
     autotools.rawInstall('DESTDIR=%s man1dir=/usr/share/man/man1' % get.installDIR())
