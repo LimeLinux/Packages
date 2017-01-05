@@ -1,0 +1,56 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>suspend</Name>
+        <Homepage>http://suspend.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>A set of tools to support sleep modes</Summary>
+        <Description>suspend package allows users to suspend-to-ram, suspend-to-disk, and suspend-to-both.</Description>
+        <Archive sha1sum="77d9ae2af73f5faffcec351910fcd9b015a9501c" type="tarxz">http://dev.gentoo.org/~bircoph/distfiles/suspend-1.0_p20120915.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>lzo</Dependency>
+            <Dependency>pciutils</Dependency>
+            <Dependency>libx86</Dependency>
+            <Dependency>libgcrypt</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1" compressionType="xz">suspend-1.0_p20150810.patch.xz</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>suspend</Name>
+        <RuntimeDependencies>
+            <Dependency>lzo</Dependency>
+            <Dependency>libx86</Dependency>
+            <Dependency>pciutils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/suspend.conf</Path>
+            <Path fileType="config">/etc/suspend.key</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/man</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/sbin/configure-suspend-encryption">suse/configure-suspend-encryption.sh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>1.0_p20120915</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
