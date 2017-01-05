@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Simple low-level library</Summary>
         <Description>libdnet is a simplified, portable interface to several low-level networking routines, providing C and Python API.</Description>
-        <Archive sha1sum="71302be302e84fc19b559e811951b5d600d976f8" type="targz">http://libdnet.googlecode.com/files/libdnet-1.12.tgz</Archive>
+        <Archive sha1sum="71302be302e84fc19b559e811951b5d600d976f8" type="targz">https://sourceforge.net/projects/pisi-source/files/libdnet-1.12.tgz</Archive>
         <BuildDependencies>
             <Dependency>python</Dependency>
         </BuildDependencies>
