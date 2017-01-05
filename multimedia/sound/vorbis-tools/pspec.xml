@@ -1,0 +1,55 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>vorbis-tools</Name>
+        <Homepage>http://www.vorbis.com/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>app:console</IsA>
+        <Summary>Tools for using the Ogg Vorbis sound file format</Summary>
+        <Description>This set of tools allow you to play and encode Ogg Vorbis files.</Description>
+        <Archive sha1sum="fc6a820bdb5ad6fcac074721fab5c3f96eaf6562" type="targz">http://downloads.xiph.org/releases/vorbis/vorbis-tools-1.4.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libao</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libkate</Dependency>
+	        <Dependency>curl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>vorbis-tools</Name>
+        <RuntimeDependencies>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libao</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libkate</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>1.4.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
