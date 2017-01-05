@@ -96,22 +96,6 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>webkit-gtk2-devel</Name>
-        <IsA>library</IsA>
-        <IsA>data:doc</IsA>
-        <Summary>Development files for GTK+ port of WebKit</Summary>
-        <RuntimeDependencies>
-            <Dependency>libgcc</Dependency>
-            <Dependency>gtk2-devel</Dependency>
-            <Dependency>glib2-devel</Dependency>
-            <Dependency release="current">webkit-gtk2</Dependency>
-            <Dependency>libsoup-devel</Dependency>
-        </RuntimeDependencies>
-        <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
