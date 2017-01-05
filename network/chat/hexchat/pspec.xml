@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>hexchat</Name>
+        <Homepage>http://hexchat.github.io/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv1</License>
+        <IsA>app</IsA>
+        <Summary>IRC (chat) client</Summary>
+        <Description>A popular and easy to use graphical IRC (chat) client</Description>
+        <Archive sha1sum="aaa57cd59131fced7c675cea9240359adc7dcf8b" type="tarxz">https://dl.hexchat.net/hexchat/hexchat-2.12.4.tar.xz</Archive>
+        <AdditionalFiles>
+            <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
+        </AdditionalFiles>
+        <BuildDependencies>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libproxy</Dependency>
+            <Dependency>pciutils</Dependency>
+            <Dependency>enchant</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libXext</Dependency>
+			<Dependency>lua</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>hexchat</Name>
+        <RuntimeDependencies>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libproxy</Dependency>
+            <Dependency>enchant</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>pango</Dependency>
+			<Dependency>lua</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/hexchat.png">hexchat.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+     <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>2.12.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
