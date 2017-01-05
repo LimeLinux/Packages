@@ -13,7 +13,7 @@
         <IsA>app</IsA>
         <Summary>A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.</Summary>
         <Description>A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.</Description>
-        <Archive sha1sum="b291757d5a942609f2f75f576339adfd8ddb9936" type="binary">http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_2.5+dfsg-4~bpo8+1_amd64.deb</Archive>
+        <Archive sha1sum="371671a57e287c3363b6b39bcc9fcc9e958b4518" type="binary">http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_2.8+dfsg-1_amd64.deb</Archive>
     </Source>
 
     <Package>
