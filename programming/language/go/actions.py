@@ -26,11 +26,11 @@ def build():
     shelltools.export("GOBIN", "$GOROOT/bin")
     shelltools.export("GOPATH", "%s" % get.workDIR())
     shelltools.export("GOROOT_FINAL", "/usr/lib/go")
-    shelltools.export("GOROOT_BOOTSTRAP", "/usr/lib/go")
+    shelltools.export("GOROOT_BOOTSTRAP", "%s/go-go1.7.1/go-linux-amd64-bootstrap" % get.workDIR())
 
     shelltools.export("GOOS","linux")
     shelltools.export("GOARCH","amd64")
-    shelltools.system("bash make.bash")
+    shelltools.system("./make.bash")
 
     shelltools.cd("%s/go-go1.7.1" % get.workDIR())
 
@@ -41,7 +41,7 @@ def build():
         shelltools.system("$GOROOT/bin/go build -v -x -o $GOPATH/bin/%s golang.org/x/tools/cmd/%s" % (tool, tool))
 
 
-    for tool in ["benchcmp" ,"bundle", "callgraph", "digraph", "eg", "fiximports", "guru", "html2article", "oracle", "present", "ssadump", "stress", "stringer"]:
+    for tool in ["benchcmp" ,"bundle", "callgraph", "digraph", "eg", "fiximports", "guru", "html2article", "present", "ssadump", "stress", "stringer"]:
         shelltools.system("$GOROOT/bin/go get -d golang.org/x/tools/cmd/%s" % tool)
         shelltools.system("$GOROOT/bin/go build -v -x -o $GOROOT/pkg/tool/$GOOS\_$GOARCH/%s golang.org/x/tools/cmd/%s" % (tool, tool))
 
