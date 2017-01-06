@@ -12,7 +12,7 @@
         <License>BSD</License>
         <Summary>A full-featured and high-performance event loop</Summary>
         <Description>A full-featured and high-performance event loop</Description>
-        <Archive sha1sum="4affcba78dc17239f2ccd84d6e3e6dec2bd1f8ba" type="targz">http://dist.schmorp.de/libev/libev-4.22.tar.gz</Archive>
+        <Archive sha1sum="4affcba78dc17239f2ccd84d6e3e6dec2bd1f8ba" type="targz">https://fossies.org/linux/misc/libev-4.24.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>glib2</Dependency>
             <Dependency>intltool</Dependency>
