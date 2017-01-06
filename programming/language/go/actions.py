@@ -30,7 +30,7 @@ def build():
 
     shelltools.export("GOOS","linux")
     shelltools.export("GOARCH","amd64")
-    shelltools.system("./make.bash")
+    shelltools.system("bash make.bash")
 
     shelltools.cd("%s/go-go1.7.1" % get.workDIR())
 
