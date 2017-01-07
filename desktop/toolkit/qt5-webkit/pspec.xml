@@ -1,0 +1,89 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qt5-webkit</Name>
+        <Homepage>http://qt.digia.com/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <Summary>Classes for a WebKit2 based implementation and a new QML API</Summary>
+        <Description>Classes for a WebKit2 based implementation and a new QML API</Description>
+        <License>LGPLv2.1-linking-exception</License>
+        <Archive sha1sum="62812994831a0e335398a5eb9db906f519d3d6ba" type="tarxz">http://download.qt.io/community_releases/5.7/5.7.0/qtwebkit-opensource-src-5.7.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>ruby</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libpcre</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>perl-Digest-MD5</Dependency>
+            <Dependency>gperf</Dependency>
+            <Dependency>bison</Dependency>
+            <Dependency>flex</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>qt5-webkit</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>5.7.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

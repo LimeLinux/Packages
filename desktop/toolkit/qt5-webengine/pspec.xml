@@ -1,0 +1,119 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qt5-webengine</Name>
+        <Homepage>http://qt.digia.com/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <Summary>Provides support for web applications using the Chromium browser project</Summary>
+        <Description>Provides support for web applications using the Chromium browser project</Description>
+        <License>LGPLv2.1-linking-exception</License>
+        <Archive sha1sum="bff07a36115d0a3f44e396c738ce9579ef2cec5b" type="tarxz">http://download.qt.io/official_releases/qt/5.7/5.7.0/submodules/qtwebengine-opensource-src-5.7.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>bison</Dependency>
+            <Dependency>ninja</Dependency>
+            <Dependency>gperf</Dependency>
+            <Dependency>snappy</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>harfbuzz</Dependency>
+            <Dependency>json-c</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>libevent</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libcap</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>pciutils</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>perl</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>x264</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>git</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>qt5-webengine</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="localedata">/usr/share/qt5/translations</Path>
+            <Path fileType="data">/usr/share/qt5</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/lib/qt5/bin/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="headers">/usr/include</Path>
+            <Path fileType="data">/usr</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>nss</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>snappy</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>harfbuzz</Dependency>
+            <Dependency>libevent</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>5.7.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
