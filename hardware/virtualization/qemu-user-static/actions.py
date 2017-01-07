@@ -11,7 +11,7 @@ from pisi.actionsapi import shelltools
 
 
 def setup():
-    shelltools.system("ar x qemu-user-static_2.8+dfsg-1_amd64.deb" % get.srcVERSION())
+    shelltools.system("ar xf qemu-user-static_2.8+dfsg-1_amd64.deb")
     shelltools.system("tar -xJf data.tar.xz")
 
 
