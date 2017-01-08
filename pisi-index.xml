@@ -13554,6 +13554,46 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>babl</Name>
+            <Homepage>http://gegl.org/babl</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <License>LGPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>multimedia.graphics</PartOf>
+            <Summary xml:lang="en">A dynamic, any to any, pixel format translation library</Summary>
+            <Summary xml:lang="tr">Dinamik piksel biçimi dönüştürme kütüphanesi</Summary>
+            <Description xml:lang="en">babl is a library that allows converting between different methods of storing pixels known as pixel formats that have with different bitdepths and other data representations, color models and component permutations.</Description>
+            <Description xml:lang="tr">babl, çeşitli piksel saklama yöntemleri arasında dönüşüme izin veren bir programlama kütüphanesidir.</Description>
+            <Archive type="tarbz2" sha1sum="b9a811d9d05717d66bc107a18447fbd74cff7eea">http://download.gimp.org/pub/babl/0.1/babl-0.1.12.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>gobject-introspection</Dependency>
+            </BuildDependencies>
+            <SourceURI>multimedia/graphics/babl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>babl</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>0.1.12</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>librsvg</Name>
             <Homepage>http://librsvg.sourceforge.net/</Homepage>
             <Packager>
@@ -14037,6 +14077,84 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>gegl</Name>
+            <Homepage>http://gegl.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3+</License>
+            <License>LGPLv3+</License>
+            <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>multimedia.graphics</PartOf>
+            <Summary xml:lang="en">A graph based image processing framework</Summary>
+            <Summary xml:lang="tr">Graf tabanlı resim işleme altyapısı</Summary>
+            <Description xml:lang="en">gegl (Generic Graphics Library) provides infrastructure to do demand based cached non destructive image editing on larger than RAM buffers. Through babl it provides support for a wide range of color models and pixel storage formats for input and output.</Description>
+            <Description xml:lang="tr">gegl, orijinal kopyaya zarar vermeden (non-destructive) isteğe bağlı (demand based) resim işleme altyapısı sunan bir kütüphanedir.</Description>
+            <Archive type="tarbz2" sha1sum="764cc66cb3c7b261b8fc18a6268a0e264a91d573">http://ftp.gimp.org/pub/gegl/0.2/gegl-0.2.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libspiro</Dependency>
+                <Dependency>openexr</Dependency>
+                <Dependency>ffmpeg</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>libv4l</Dependency>
+                <Dependency>jasper</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>exiv2</Dependency>
+                <Dependency>babl</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>lua</Dependency>
+                <Dependency>asciidoc</Dependency>
+                <Dependency>intltool</Dependency>
+                <Dependency>ruby</Dependency>
+                <Dependency>ilmbase</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">gegl-0.2.0-cve-2012-4433-1e92e523.patch</Patch>
+                <Patch level="1">gegl-0.2.0-cve-2012-4433-4757cdf7.patch</Patch>
+                <Patch level="0">gegl-0.2.0-ffmpeg-0.11.patch</Patch>
+            </Patches>
+            <SourceURI>multimedia/graphics/gegl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gegl</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libspiro</Dependency>
+                <Dependency>jasper</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>babl</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale/</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/gtk-doc/html</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>0.2.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>imagemagick</Name>
             <Homepage>http://www.imagemagick.org/</Homepage>
             <Packager>
@@ -14112,6 +14230,56 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>6.8.9.7</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lcms</Name>
+            <Homepage>http://www.littlecms.com/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>app:console</IsA>
+            <IsA>library</IsA>
+            <PartOf>multimedia.graphics</PartOf>
+            <Summary xml:lang="fr">Moteur de gestion de couleurs léger et optimisé pour la vitesse.</Summary>
+            <Summary xml:lang="en">A lightweight, speed optimized color management engine</Summary>
+            <Summary xml:lang="tr">Hız geliştirmesi yapılmış, hafif bir renk yönetim motoru</Summary>
+            <Description xml:lang="en">LittleCMS intends to be a small-footprint, speed optimized color management engine in open source form.</Description>
+            <Archive type="targz" sha1sum="d5b075ccffc0068015f74f78e4bc39138bcfe2d4">mirrors://sourceforge/project/lcms/lcms/1.19/lcms-1.19.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>swig</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>CVE-2009-0793.patch</Patch>
+            </Patches>
+            <SourceURI>multimedia/graphics/lcms/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lcms</Name>
+            <RuntimeDependencies>
+                <Dependency>tiff</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>1.19</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -14216,6 +14384,1156 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.3.21</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gimp</Name>
+            <Homepage>http://www.gimp.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <PartOf>multimedia.graphics</PartOf>
+            <Summary xml:lang="en">GNU Image Manipulation Program</Summary>
+            <Summary xml:lang="tr">Bir resim işleme programı</Summary>
+            <Description xml:lang="fr">Programme de Manipulation d&apos;Image GNU.</Description>
+            <Description xml:lang="en">GIMP is a mature image editor with many advanced features and plugin support.</Description>
+            <Description xml:lang="tr">Piksel düzeyinde işlem yapılabilen gelişmiş bir grafik düzenleme programı</Description>
+            <Archive type="tarbz2" sha1sum="42434a0782c37803fbd184dbb9b648be887f4f40">http://download.gimp.org/pub/gimp/v2.8/gimp-2.8.18.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>xdg-utils</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>lcms</Dependency>
+                <Dependency>gegl</Dependency>
+                <Dependency>babl</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>aalib</Dependency>
+                <Dependency>bzip2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libwmf</Dependency>
+                <Dependency>jasper</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libmng</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libXpm</Dependency>
+                <Dependency>libXmu</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>dbus-glib</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libgudev</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>python-gtk</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>ghostscript</Dependency>
+                <Dependency>webkit-gtk2</Dependency>
+                <Dependency>poppler</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>intltool</Dependency>
+            </BuildDependencies>
+            <SourceURI>multimedia/graphics/gimp/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gimp</Name>
+            <RuntimeDependencies>
+                <Dependency>gegl</Dependency>
+                <Dependency>babl</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>aalib</Dependency>
+                <Dependency>bzip2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libwmf</Dependency>
+                <Dependency>libXpm</Dependency>
+                <Dependency>libmng</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libXmu</Dependency>
+                <Dependency>jasper</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libgudev</Dependency>
+                <Dependency>dbus-glib</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>eudev</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>ghostscript</Dependency>
+                <Dependency>webkit-gtk2</Dependency>
+                <Dependency>poppler</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-tr</Name>
+            <Summary xml:lang="en">Gimp translation files for Turkish</Summary>
+            <Summary xml:lang="tr">Türkçe için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:tr</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/tr</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ast</Name>
+            <Summary xml:lang="en">Gimp translation files for Asturian</Summary>
+            <Summary xml:lang="tr">Asturya dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ast</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ast</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-my</Name>
+            <Summary xml:lang="en">Gimp translation files for Burmese</Summary>
+            <Summary xml:lang="tr">Burmese dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:my</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/my</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-nds</Name>
+            <Summary xml:lang="en">Gimp translation files for Low Saxon</Summary>
+            <Summary xml:lang="tr">Aşağı Saxon dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:nds</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/nds</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-el</Name>
+            <Summary xml:lang="en">Gimp translation files for Greek</Summary>
+            <Summary xml:lang="tr">Yunanca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:el</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/el</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-gu</Name>
+            <Summary xml:lang="en">Gimp translation files for Gujarati</Summary>
+            <Summary xml:lang="tr">Gujarati dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:gu</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/gu</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-be</Name>
+            <Summary xml:lang="en">Gimp translation files for Belarusian</Summary>
+            <Summary xml:lang="tr">Belarusça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:be</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/be</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-vi</Name>
+            <Summary xml:lang="en">Gimp translation files for Vietnamese</Summary>
+            <Summary xml:lang="tr">Viyetnamca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:vi</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/vi</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ca</Name>
+            <Summary xml:lang="en">Gimp translation files for Catalan</Summary>
+            <Summary xml:lang="tr">Katalanca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ca</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ca</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-eo</Name>
+            <Summary xml:lang="en">Gimp translation files for Esperanto</Summary>
+            <Summary xml:lang="tr">Esperanto için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:eo</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/eo</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-cs</Name>
+            <Summary xml:lang="en">Gimp translation files for Czech</Summary>
+            <Summary xml:lang="tr">Çekçe için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:cs</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/cs</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ca_valencia</Name>
+            <Summary xml:lang="en">Gimp translation files for Catalan (Valencia)</Summary>
+            <Summary xml:lang="tr">Valensiya Katalancası için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ca@valencia</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ca@valencia</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-an</Name>
+            <Summary xml:lang="en">Gimp translation files for Hollanda Antilleri</Summary>
+            <IsA>locale:ar</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/an</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ar</Name>
+            <Summary xml:lang="en">Gimp translation files for Arabic</Summary>
+            <Summary xml:lang="tr">Arapça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ar</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ar</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-bs</Name>
+            <Summary xml:lang="en">Gimp translation files for Bahama</Summary>
+            <IsA>locale:ar</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/bs</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-km</Name>
+            <Summary xml:lang="en">Gimp translation files for Khmer</Summary>
+            <Summary xml:lang="tr">Khmer dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:km</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/km</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ga</Name>
+            <Summary xml:lang="en">Gimp translation files for Irish Gaelic</Summary>
+            <Summary xml:lang="tr">Gaelik İrlandacası için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ga</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ga</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-fi</Name>
+            <Summary xml:lang="en">Gimp translation files for Finnish</Summary>
+            <Summary xml:lang="tr">Fince için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:fi</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/fi</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-eu</Name>
+            <Summary xml:lang="en">Gimp translation files for Basque</Summary>
+            <Summary xml:lang="tr">Baskça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:eu</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/eu</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-et</Name>
+            <Summary xml:lang="en">Gimp translation files for Estonian</Summary>
+            <Summary xml:lang="tr">Estonyaca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:et</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/et</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-xh</Name>
+            <Summary xml:lang="en">Gimp translation files for Xhosa</Summary>
+            <Summary xml:lang="tr">Xhosa dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:xh</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/xh</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-gl</Name>
+            <Summary xml:lang="en">Gimp translation files for Galician</Summary>
+            <Summary xml:lang="tr">Galiçya dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:gl</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/gl</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-id</Name>
+            <Summary xml:lang="en">Gimp translation files for Indonesian</Summary>
+            <Summary xml:lang="tr">Endonezyaca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:id</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/id</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-es</Name>
+            <Summary xml:lang="en">Gimp translation files for Spanish</Summary>
+            <Summary xml:lang="tr">İspanyolca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:es</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/es</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ru</Name>
+            <Summary xml:lang="en">Gimp translation files for Russian</Summary>
+            <Summary xml:lang="tr">Rusça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ru</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ru</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-rw</Name>
+            <Summary xml:lang="en">Gimp translation files for Kinyarwanda</Summary>
+            <Summary xml:lang="tr">Kinyarwanda dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:rw</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/rw</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-nl</Name>
+            <Summary xml:lang="en">Gimp translation files for Dutch</Summary>
+            <Summary xml:lang="tr">Hollandaca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:nl</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/nl</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-nn</Name>
+            <Summary xml:lang="en">Gimp translation files for Norwegian Nynorsk</Summary>
+            <Summary xml:lang="tr">Norveç Nynorsk dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:nn</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/nn</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-nb</Name>
+            <Summary xml:lang="en">Gimp translation files for Norwegian Bookmal</Summary>
+            <Summary xml:lang="tr">Norveç Bookmal dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:nb</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/nb</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ne</Name>
+            <Summary xml:lang="en">Gimp translation files for Nepali</Summary>
+            <Summary xml:lang="tr">Nepali dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ne</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ne</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-lt</Name>
+            <Summary xml:lang="en">Gimp translation files for Lithuanian</Summary>
+            <Summary xml:lang="tr">Litvanyaca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:lt</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/lt</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-pa</Name>
+            <Summary xml:lang="en">Gimp translation files for Punjabi</Summary>
+            <Summary xml:lang="tr">Punjabi dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:pa</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/pa</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ro</Name>
+            <Summary xml:lang="en">Gimp translation files for Romanian</Summary>
+            <Summary xml:lang="tr">Rumence için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ro</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ro</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-en_GB</Name>
+            <Summary xml:lang="en">Gimp translation files for British English</Summary>
+            <Summary xml:lang="tr">İngiliz İngilizcesi için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:en_GB</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/en_GB</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-yi</Name>
+            <Summary xml:lang="en">Gimp translation files for Yi</Summary>
+            <Summary xml:lang="tr">Yi dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:yi</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/yi</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-en_CA</Name>
+            <Summary xml:lang="en">Gimp translation files for Catalan (en)</Summary>
+            <Summary xml:lang="tr">Katalanca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:en_CA</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/en_CA</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-fr</Name>
+            <Summary xml:lang="en">Gimp translation files for French</Summary>
+            <Summary xml:lang="tr">Fransızca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:fr</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/fr</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-bg</Name>
+            <Summary xml:lang="en">Gimp translation files for Bulgarian</Summary>
+            <Summary xml:lang="tr">Bulgarca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:bg</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/bg</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ms</Name>
+            <Summary xml:lang="en">Gimp translation files for Malay</Summary>
+            <Summary xml:lang="tr">Malay dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ms</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ms</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-pt_BR</Name>
+            <Summary xml:lang="en">Gimp translation files for Brazilian Portuguese</Summary>
+            <Summary xml:lang="tr">Brezilya Portekizcesi için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:pt_BR</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/pt_BR</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-hr</Name>
+            <Summary xml:lang="en">Gimp translation files for Croatian (Hrvatski)</Summary>
+            <Summary xml:lang="tr">Hırvatça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:hr</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/hr</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-zh_TW</Name>
+            <Summary xml:lang="en">Gimp translation files for Chinese Traditional</Summary>
+            <Summary xml:lang="tr">Geleneksel Çince için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:zh_TW</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/zh_TW</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ko</Name>
+            <Summary xml:lang="en">Gimp translation files for Korean</Summary>
+            <Summary xml:lang="tr">Korece için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ko</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ko</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-it</Name>
+            <Summary xml:lang="en">Gimp translation files for Italian</Summary>
+            <Summary xml:lang="tr">İtalyanca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:it</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/it</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-fa</Name>
+            <Summary xml:lang="en">Gimp translation files for Farsi (Persian)</Summary>
+            <Summary xml:lang="tr">Farsça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:fa</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/fa</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-dz</Name>
+            <Summary xml:lang="en">Gimp translation files for Dzongkha</Summary>
+            <Summary xml:lang="tr">Dzongkha dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:dz</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/dz</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-sr_Latn</Name>
+            <Summary xml:lang="en">Gimp translation files for Serbian Latin</Summary>
+            <Summary xml:lang="tr">Latin sırpça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:sr@Latn</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/sr@latin</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-da</Name>
+            <Summary xml:lang="en">Gimp translation files for Danish</Summary>
+            <Summary xml:lang="tr">Danimarkaca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:da</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/da</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ja</Name>
+            <Summary xml:lang="en">Gimp translation files for Japanese</Summary>
+            <Summary xml:lang="tr">Japonca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ja</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ja</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-he</Name>
+            <Summary xml:lang="en">Gimp translation files for Hebrew</Summary>
+            <Summary xml:lang="tr">İbranice için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:he</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/he</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-pt</Name>
+            <Summary xml:lang="en">Gimp translation files for Portuguese</Summary>
+            <Summary xml:lang="tr">Portekizce için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:pt</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/pt</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-zh_CN</Name>
+            <Summary xml:lang="en">Gimp translation files for Chinese Simplified</Summary>
+            <Summary xml:lang="tr">Basitleştirilmiş Çince için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:zh_CN</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/zh_CN</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-sr</Name>
+            <Summary xml:lang="en">Gimp translation files for Serbian</Summary>
+            <Summary xml:lang="tr">Sırpça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:sr</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/sr</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-oc</Name>
+            <Summary xml:lang="en">Gimp translation files for Occitan</Summary>
+            <Summary xml:lang="tr">Occitan dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:oc</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/oc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-sv</Name>
+            <Summary xml:lang="en">Gimp translation files for Swedish</Summary>
+            <Summary xml:lang="tr">İsveççe için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:sv</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/sv</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-mk</Name>
+            <Summary xml:lang="en">Gimp translation files for Macedonian</Summary>
+            <Summary xml:lang="tr">Makedonyaca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:mk</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/mk</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-sk</Name>
+            <Summary xml:lang="en">Gimp translation files for Slovak</Summary>
+            <Summary xml:lang="tr">Slovakça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:sk</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/sk</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-de</Name>
+            <Summary xml:lang="en">Gimp translation files for German</Summary>
+            <Summary xml:lang="tr">Almanca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:de</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/de</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-pl</Name>
+            <Summary xml:lang="en">Gimp translation files for Polish</Summary>
+            <Summary xml:lang="tr">Lehçe için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:pl</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/pl</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-uk</Name>
+            <Summary xml:lang="en">Gimp translation files for Ukrainian</Summary>
+            <Summary xml:lang="tr">Ukraynaca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:uk</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/uk</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-sl</Name>
+            <Summary xml:lang="en">Gimp translation files for Slovenian</Summary>
+            <Summary xml:lang="tr">Slovence için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:sl</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/sl</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-hu</Name>
+            <Summary xml:lang="en">Gimp translation files for Hungarian</Summary>
+            <Summary xml:lang="tr">Macarca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:hu</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/hu</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-tt</Name>
+            <Summary xml:lang="en">Gimp translation files for Tatarish</Summary>
+            <Summary xml:lang="tr">Tatarca için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:tt</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/tt</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-az</Name>
+            <Summary xml:lang="en">Gimp translation files for Azerbaijani</Summary>
+            <Summary xml:lang="tr">Azerice için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:az</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/az</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-am</Name>
+            <Summary xml:lang="en">Gimp translation files for Amharic</Summary>
+            <Summary xml:lang="tr">Amharic dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:am</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/am</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-is</Name>
+            <Summary xml:lang="en">Gimp translation files for Icelandic</Summary>
+            <Summary xml:lang="tr">İzlanda dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:is</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/is</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-lv</Name>
+            <Summary xml:lang="en">Gimp translation files for Latvia</Summary>
+            <Summary xml:lang="tr">Latvia dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:lv</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/lv</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-th</Name>
+            <Summary xml:lang="en">Gimp translation files for Thai</Summary>
+            <Summary xml:lang="tr">Thai dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:th</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/th</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ka</Name>
+            <Summary xml:lang="en">Gimp translation files for Georgian</Summary>
+            <Summary xml:lang="tr">Gürcüce için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ka</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ka</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-hi</Name>
+            <Summary xml:lang="en">Gimp translation files for Hindi</Summary>
+            <Summary xml:lang="tr">Hindi dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:hi</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/hi</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-zh_HK</Name>
+            <Summary xml:lang="en">Gimp translation files for Chinese Hong Kong</Summary>
+            <Summary xml:lang="tr">Hong Kong Çincesi için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:zh_HK</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/zh_HK</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ml</Name>
+            <Summary xml:lang="en">Gimp translation files for Malayalam</Summary>
+            <Summary xml:lang="tr">Malayalam dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ml</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ml</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-ta</Name>
+            <Summary xml:lang="en">Gimp translation files for Tamil</Summary>
+            <Summary xml:lang="tr">Tamil dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:ta</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/ta</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-kn</Name>
+            <Summary xml:lang="en">Gimp translation files for Kannada</Summary>
+            <Summary xml:lang="tr">Kannada dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:kn</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/kn</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-si</Name>
+            <Summary xml:lang="en">Gimp translation files for Sinhala</Summary>
+            <Summary xml:lang="tr">Sinhala dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:si</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/si</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-kk</Name>
+            <Summary xml:lang="en">Gimp translation files for Kazakh</Summary>
+            <Summary xml:lang="tr">Kazakça için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:kk</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/kk</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-br</Name>
+            <Summary xml:lang="en">Gimp translation files for Breton</Summary>
+            <Summary xml:lang="tr">Breton dili için GIMP yerelleştirme dosyaları</Summary>
+            <IsA>locale:br</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/br</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-te</Name>
+            <Summary xml:lang="en">Gimp translation files for Telugu</Summary>
+            <IsA>locale:te</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/te</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-csb</Name>
+            <Summary xml:lang="en">Gimp translation files for Kashubian</Summary>
+            <IsA>locale:csb</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/csb</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>gimp-i18n-gd</Name>
+            <Summary xml:lang="en">Gimp translation files for Scottish Gaelic</Summary>
+            <IsA>locale:gd</IsA>
+            <PartOf>multimedia.graphics.gimp.l10n</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">gimp</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/share/locale/gd</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>2.8.18</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -16205,6 +17523,43 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libspiro</Name>
+            <Homepage>http://libspiro.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>science.mathematics</PartOf>
+            <Summary xml:lang="en">Library to simplify the drawing of beautiful curves</Summary>
+            <Summary xml:lang="tr">Eğri çizimi kütüphanesi</Summary>
+            <Description xml:lang="en">libspiro is a library that will take an array of spiro control points and convert them into a series of bezier splines which can then be used in the myriad of ways the world has come to use beziers.</Description>
+            <Description xml:lang="tr">libspiro, verilen kontrol noktalarını bezier eğrilerine çeviren bir kütüphanedir.</Description>
+            <Archive type="targz" sha1sum="2a1614b1762e3984ab0d629cf5b41a0f4c12f850">https://github.com/fontforge/libspiro/archive/0.5.20150702.tar.gz</Archive>
+            <SourceURI>science/mathematics/libspiro/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libspiro</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="man">/usr/share/man/man3</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>20150702</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -46303,6 +47658,51 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Date>2016-12-012</Date>
                 <Version>2.2.9</Version>
                 <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>geany</Name>
+            <Homepage>http://www.geany.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>editor</PartOf>
+            <Summary xml:lang="en">GTK+ based fast and lightweight IDE</Summary>
+            <Description xml:lang="en">GTK+ based fast and lightweight IDE</Description>
+            <Archive type="tarbz2" sha1sum="592853f9c9b4e64b7c8353af9c472bcd1f311d71">http://download.geany.org/geany-1.29.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>vte</Dependency>
+            </BuildDependencies>
+            <SourceURI>editor/geany/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>geany</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="include">/usr/include/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>1.24.1</Version>
+                <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>

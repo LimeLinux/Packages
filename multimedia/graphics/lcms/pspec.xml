@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lcms</Name>
+        <Homepage>http://www.littlecms.com/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>A lightweight, speed optimized color management engine</Summary>
+        <Description>LittleCMS intends to be a small-footprint, speed optimized color management engine in open source form.</Description>
+        <Archive sha1sum="d5b075ccffc0068015f74f78e4bc39138bcfe2d4" type="targz">mirrors://sourceforge/project/lcms/lcms/1.19/lcms-1.19.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>swig</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>CVE-2009-0793.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>lcms</Name>
+        <RuntimeDependencies>
+            <Dependency>tiff</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>1.19</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
