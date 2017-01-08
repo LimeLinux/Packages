@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Cli installer for Pisi Linux</Summary>
         <Description>Cli installer for Pisi Linux</Description>
-        <Archive sha1sum="a01dff5d9affd6d491d318e50833fdcd29eff46e" type="targz">https://sourceforge.net/projects/limelinux/files/source/cli-installer-0.1.tar.gz</Archive>
+        <Archive sha1sum="6e62b54133c3c4b2fb880fee16e1aa2eb400f581" type="targz">https://github.com/LimeLinux/cli-installer/archive/v0.1.1.tar.gz</Archive>
         <Patches>
             <!--Patch level="1">pisi.patch</Patch-->
         </Patches>
@@ -21,6 +21,10 @@
 
     <Package>
         <Name>cli-installer</Name>
+        <RuntimeDependencies>
+            <Dependency>dialog</Dependency>
+	    	<Dependency>dmraid</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
@@ -33,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2016-12-21</Date>
+            <Version>0.1.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>5.2</Version>
