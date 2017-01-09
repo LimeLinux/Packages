@@ -28,7 +28,7 @@ def install():
     pisitools.removeDir("/lib") 
     pisitools.dosym("usr/lib", "lib")
     pisitools.dodir("/usr/share/locale")
-    pisitools.dodir("/usr/share/locale-gen")
+    pisitools.dodir("/usr/lib/locale")
 
 
     if get.ARCH() == "x86_64":
