@@ -305,6 +305,8 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
 
     # Tell init to reload new inittab
     os.system("/sbin/telinit q")
+    
+    #language openrc baselayout
     os.system("/usr/bin/locale-gen")
 
     # Save user defined DNS

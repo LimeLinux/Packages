@@ -22,6 +22,7 @@
         <Name>baselayout</Name>
         <RuntimeDependencies>
             <Dependency>pypolkit</Dependency>
+            <Dependency>glibc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable" permanent="true">/bin</Path>
@@ -71,6 +72,13 @@
     </Package>
 
     <History>
+       <Update release="3">
+            <Date>2017-07-08</Date>
+            <Version>3.10.0</Version>
+            <Comment>Change language os.probe add</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="2">
             <Date>2016-12-24</Date>
             <Version>3.10.0</Version>
