@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-pygobject3</Name>
+        <Homepage>http://www.pygtk.org</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Glib bindings for Python</Summary>
+        <Description>pygobject is GLib's GObject library bindings for Python.</Description>
+        <Archive sha1sum="a8eb98b56defa47fa0644a7a1c5578973e02137b" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/pygobject/3.22/pygobject-3.22.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libffi</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>python-cairo</Dependency>
+            <Dependency>python3-cairo</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>glib2</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python-pygobject3</Name>
+        <Summary>python2 için pygobject3</Summary>
+        <RuntimeDependencies>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>python-cairo</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib/python2.7</Path>
+            <Path fileType="library">/usr/lib/libpyglib-gi-2.0-python2.7.so*</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/pygobject</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>python3-pygobject3</Name>
+        <Summary>python3 için pygobject3</Summary>
+        <RuntimeDependencies>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>python3-cairo</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python3.5</Path>
+            <Path fileType="library">/usr/lib/libpyglib-gi-2.0-python3.5.so*</Path>
+        </Files>
+    </Package>
+
+       <History>
+        <Update release="1">
+            <Date>2016-05-08</Date>
+            <Version>3.18.2</Version>
+            <Comment>First release</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
