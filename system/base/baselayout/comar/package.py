@@ -305,7 +305,7 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
 
     # Tell init to reload new inittab
     os.system("/sbin/telinit q")
-    os.system("locale-gen")
+    os.system("/usr/bin/locale-gen")
 
     # Save user defined DNS
     if not os.access("/etc/resolv.default.conf", os.R_OK):
