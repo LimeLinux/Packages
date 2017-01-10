@@ -13,7 +13,7 @@
         <IsA>console</IsA>
         <Summary>Pisi GNU/ Linux service scripts for openrc</Summary>
         <Description>Pisi GNU/ Linux service scripts for openrc</Description>
-        <Archive sha1sum="72dda24a89d33b8b3c3173e6420306f4f2071ac1" type="targz">https://github.com/LimeLinux/openrc-services/archive/v1.1.tar.gz</Archive>
+        <Archive sha1sum="72dda24a89d33b8b3c3173e6420306f4f2071ac1" type="targz">https://github.com/LimeLinux/openrc-services/archive/v1.1.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>openrc</Dependency>
         </BuildDependencies>
@@ -38,7 +38,14 @@
     </Package>
     
     <History>
-<Update release="2">
+	<Update release="3">
+            <Date>2017-01-08</Date>
+            <Version>1.1.1</Version>
+            <Comment>Bluethooth star and auto run add</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+	<Update release="2">
             <Date>2017-01-08</Date>
             <Version>1.1</Version>
             <Comment>Bluethoot star and auto run add</Comment>
