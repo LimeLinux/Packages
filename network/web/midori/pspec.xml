@@ -29,9 +29,9 @@
             <Dependency>webkit-gtk2</Dependency>
             <Dependency>libzeitgeist</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--Patches>
             <Patch level="1">default-sets.patch</Patch>
-        </Patches>
+        </Patches-->
     </Source>
 
     <Package>
@@ -40,15 +40,17 @@
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
+            <Dependency>gcr</Dependency>
             <Dependency>libsoup</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>webkit-gtk2</Dependency>
             <Dependency>libzeitgeist</Dependency>
-            <Dependency>libsoup-gnome</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>glib-networking</Dependency>
-            <Dependency>gsettings-desktop-schemas</Dependency>
+            <Dependency>gst-libav-next</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+            <Dependency>gst-plugins-good-next</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

@@ -7,16 +7,20 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
-
+from pisi.actionsapi import shelltools
 def setup():
+
+    autotools.autoreconf("-vfi")
     autotools.configure("--disable-static")
 
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
+
 def build():
-    autotools.make("V=1")
+    autotools.make("LC_ALL=en_US.UTF-8")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("COPY*", "README", "NEWS", "AUTHORS")
 
-    pisitools.remove("/usr/share/doc/%s/INSTALL" % get.srcNAME())
+

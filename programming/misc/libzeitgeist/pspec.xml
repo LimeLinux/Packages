@@ -14,9 +14,12 @@
         <IsA>library</IsA>
         <Summary>Client library for Zeitgeist</Summary>
         <Description>libzeitgeist provides a client library for applications that want to interact with the Zeitgeist daemon. The library is written in C using glib and provides an asynchronous GObject oriented API.</Description>
-        <Archive sha1sum="3d4ca1d294828f5f90bf5a5b6eacf883ffd9f8ae" type="targz">https://launchpad.net/libzeitgeist/0.3/0.3.18/+download/libzeitgeist-0.3.18.tar.gz</Archive>
+        <Archive sha1sum="1b2b9d1d70481c8bc4204b624118a2a3199bd3e8" type="tarxz">https://launchpad.net/zeitgeist/0.9/0.9.16/+download/zeitgeist-0.9.16.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
+            <Dependency>telepathy-glib</Dependency>
+			<Dependency>raptor2</Dependency>
+			<Dependency>python-rdflib</Dependency>
         </BuildDependencies>
         <Patches>
         </Patches>
@@ -24,9 +27,16 @@
 
     <Package>
         <Name>libzeitgeist</Name>
+        <RuntimeDependencies>
+            <Dependency>telepathy-glib</Dependency>
+			<Dependency>raptor2</Dependency>
+			<Dependency>python-rdflib</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/etc</Path>
             <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
@@ -35,7 +45,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>0.3.18</Version>
+            <Version>0.9.16</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

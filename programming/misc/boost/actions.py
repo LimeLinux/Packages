@@ -11,6 +11,9 @@ from pisi.actionsapi import shelltools
 def setup():
     shelltools.system("./bootstrap.sh --with-toolset=gcc --with-icu --with-python=/usr/bin/python2.7 --prefix=%s/usr" % get.installDIR())
     
+    shelltools.echo("project-config.jam","using python : 3.5 : /usr/bin/python3 : /usr/include/python3.5m : /usr/lib ;")
+
+
 def build():
     shelltools.system("./b2 \
                        variant=release \
@@ -29,5 +32,3 @@ def install():
     shelltools.copytree("tools/boostbook/xsl", "%s/usr/share/boostbook/xsl" % get.installDIR())
     shelltools.copytree("tools/boostbook/dtd", "%s/usr/share/boostbook" % get.installDIR())
     shelltools.system("./b2 install threading=multi link=shared")
-
-

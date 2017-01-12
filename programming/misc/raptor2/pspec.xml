@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>raptor2</Name>
+        <Homepage>http://librdf.org/raptor</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <Summary>The RDF Parser Toolkit</Summary>
+        <Description>Raptor2 is the RDF Parser Toolkit for Redland that provides a set of Resource Description Framework (RDF) parsers and serializers.</Description>
+        <Archive sha1sum="504231f87024df9aceb90eb957196b557b4b8e38" type="targz">http://download.librdf.org/source/raptor2-2.0.15.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mpfr</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>libxslt</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>raptor2</Name>
+        <IsA>library</IsA>
+        <RuntimeDependencies>
+            <Dependency>icu4c</Dependency>
+            <Dependency>libxslt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>2.0.15</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

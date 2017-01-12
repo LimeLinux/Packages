@@ -1,0 +1,47 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-rdflib</Name>
+        <Homepage>http://www.rdflib.net</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>RDF library for Python</Summary>
+        <Description>python-rdflib is a Python library for working with RDF, a simple yet powerful language for representing information. The library contains parsers and serializers for RDF/XML, N3, NTriples, Turtle, TriX and RDFa.</Description>
+        <Archive sha1sum="5970c89814d74a463857fbb747f55e8aad8ba918" type="targz">http://pypi.python.org/packages/source/r/rdflib/rdflib-4.2.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python</Dependency>
+            <Dependency>python-isodate</Dependency>
+            <Dependency>python-nose</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python-rdflib</Name>
+        <RuntimeDependencies>
+            <Dependency>python-isodate</Dependency>
+            <Dependency>python-nose</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-01-12</Date>
+            <Version>4.2.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

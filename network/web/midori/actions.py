@@ -9,23 +9,21 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import shelltools
 
+
 shelltools.export("LC_ALL", "C")
-WorkDir = "."
 
 def setup():
-    shelltools.cd('midori-%s' %(get.srcVERSION()) )
-    autotools.rawConfigure("--prefix=/usr")
-    cmaketools.configure("-DCMAKE_SKIP_RPATH=ON -DCMAKE_SKIP_INSTALL_RPATH=ON")
-    
+    shelltools.makedirs("build")
+    shelltools.cd("build")
+    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DUSE_GTK3=0 -G Ninja", sourceDir="..")
 
 def build():
-    shelltools.cd('midori-%s' %(get.srcVERSION()) )
-    cmaketools.make()
+    shelltools.cd("build")
+    shelltools.system("ninja")
 
 
 def install():
-    shelltools.cd('midori-%s' %(get.srcVERSION()) )
-    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
-    
+    shelltools.system("DESTDIR='%s' ninja -C  '%s/build' install" % (get.installDIR(),get.curDIR()))
+
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "README")
 
