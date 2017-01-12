@@ -10,7 +10,8 @@ from pisi.actionsapi import get
 
 
 def setup():
-    autotools.configure("-disable-debug")
+    autotools.configure("--without-included-popt \
+                         -disable-debug")
 
 def build():
     autotools.make()
