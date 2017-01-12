@@ -42,6 +42,7 @@
         <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>bluez-libs</Dependency>
+            <Dependency>python-pygobject3</Dependency>
             <Dependency>startup-notification</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -60,6 +61,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2017-01-11</Date>
+            <Version>2.0.4</Version>
+            <Comment>Fix run dependency</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2017-01-11</Date>
             <Version>2.0.4</Version>
