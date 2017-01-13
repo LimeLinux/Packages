@@ -13,7 +13,7 @@
         <IsA>console</IsA>
         <Summary>Pisi GNU/ Linux service scripts for openrc</Summary>
         <Description>Pisi GNU/ Linux service scripts for openrc</Description>
-        <Archive sha1sum="72dda24a89d33b8b3c3173e6420306f4f2071ac1" type="targz">https://github.com/LimeLinux/openrc-services/archive/v1.1.1.tar.gz</Archive>
+        <Archive sha1sum="0cc0f672ca236d73005ad22c33837cf341bb8de3" type="targz">https://github.com/LimeLinux/openrc-services/archive/v1.1.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>openrc</Dependency>
         </BuildDependencies>
