@@ -1,0 +1,13 @@
+
+  !!After Update TCL* REBUILD tcl needed files!!!
+  
+  !!TCl serisi yükseltildikten sonra tcl bağımlısı paketleri yeniden derleyin!!!
+  
+  python
+  python3
+  ruby
+  expeckt
+  newt
+  postgresql-pl
+  python-imaging
+  
