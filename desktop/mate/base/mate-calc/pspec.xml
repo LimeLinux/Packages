@@ -1,0 +1,53 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-calc</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <License>GPLv2+</License>
+        <License>LGPLv2+</License>
+        <Icon>desktop</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Calculator for the Mate desktop environment</Summary>
+        <Description>mate-calc, Mate masaüstü için hesap makinesi.</Description>
+        <Archive sha1sum="6ae665c68d492ef965d0b7f7bdd0e58318cf75ba" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-calc-1.17.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libxslt</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-calc</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>            
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="bin">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/help</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/mate-calc</Path>
+            <Path fileType="data">/usr/share/appdata/</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-01-12</Date>
+            <Version>1.17.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

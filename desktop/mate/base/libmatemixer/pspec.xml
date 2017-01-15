@@ -6,14 +6,14 @@
         <Name>libmatemixer</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>LGPL</License>
         <IsA>library</IsA>
         <Summary>Mixer library for MATE Desktop</Summary>
         <Description>Mixer library for MATE Desktop</Description>
-        <Archive sha1sum="72895e05834856c6ed3185ae152a9c8030ccdf54" type="tarxz">mirrors://mate/libmatemixer-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="c16d1f7df5fc1267f7e3caadfcc963730b3e5745" type="tarxz">http://pub.mate-desktop.org/releases/1.17/libmatemixer-1.17.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
@@ -52,10 +52,10 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+            <Version>1.17.0</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

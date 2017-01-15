@@ -6,15 +6,15 @@
         <Name>libmatekbd</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv2+</License>
         <License>LGPLv2+</License>
         <IsA>library</IsA>
         <Summary>GNOME keybord configration library</Summary>
         <Description>libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
-        <Archive sha1sum="3d73769c887cf709b0615808679fdac02491cd0a" type="tarxz">mirrors://mate/libmatekbd-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="dadda672fdb78ab1b85cf8d55c91755b3be320ad" type="tarxz">http://pub.mate-desktop.org/releases/1.17/libmatekbd-1.17.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
@@ -50,11 +50,11 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+             <Date>2016-12-21</Date>
+            <Version>1.17.0</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

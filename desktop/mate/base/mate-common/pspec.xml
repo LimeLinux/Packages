@@ -6,14 +6,14 @@
         <Name>mate-common</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv3+</License>
         <IsA>library</IsA>
         <Summary>Common files for development of Mate packages</Summary>
         <Description>maate-common package contains aclocal macros, makefile headers and documents tools in order to build Mate sources.</Description>
-        <Archive sha1sum="5ab91d9e471b5819a5983e57b8d224855fbd93f1" type="tarxz">mirrors://mate/mate-common-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="58bb5b556e2e3bee0c73979d297baeb448d9147f" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-common-1.17.0.tar.xz</Archive>
     </Source>
     <Package>
         <Name>mate-common</Name>
@@ -28,11 +28,11 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Date>2017-01-12</Date>
+            <Version>1.17.1</Version>
+            <Comment>First release</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

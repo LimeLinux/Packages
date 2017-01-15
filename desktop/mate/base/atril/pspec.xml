@@ -6,15 +6,15 @@
         <Name>atril</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
         <Icon>atril</Icon>
         <IsA>app:gui</IsA>
         <Summary>Atril is a document viewer for the MATE desktop</Summary>
         <Description>Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript.</Description>
-        <Archive sha1sum="0573c0afdc81f29115409c42e06bd4fecb785302" type="tarxz">mirrors://mate/atril-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="8c36867a654056b9cf122988f8fe859e76d0648f" type="tarxz">http://pub.mate-desktop.org/releases/1.17/atril-1.17.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>tiff</Dependency>
@@ -32,6 +32,10 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libspectre</Dependency>
             <Dependency>poppler</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>itstool</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -52,7 +56,12 @@
             <Dependency>libsecret</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libspectre</Dependency>
-            <Dependency>poppler</Dependency>
+            <Dependency>poppler</Dependency>3
+            <Dependency>gtk3</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -73,11 +82,11 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Date>2017-01-12</Date>
+            <Version>1.17.0</Version>
+            <Comment>First release</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

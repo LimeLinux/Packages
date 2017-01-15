@@ -6,8 +6,8 @@
         <Name>mate-polkit</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv2+</License>
         <License>LGPLv2+</License>
@@ -15,7 +15,7 @@
         <IsA>library</IsA>
         <Summary>Authentication agent for polkit</Summary>
         <Description>mate-polkit package provides an authentication agent for polkit that integrates well with the Mate desktop environment.</Description>
-        <Archive sha1sum="d4add9b8ad5ffd249f961dbc7f69fd372013bd46" type="tarxz">mirrors://mate/mate-polkit-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="1b784f67e6595f362713749bc97e7d6deb3fcd33" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-polkit-1.17.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
@@ -54,10 +54,10 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+            <Version>1.17.0</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

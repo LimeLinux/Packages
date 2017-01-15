@@ -6,15 +6,15 @@
         <Name>mate-utils</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
         <Icon>system-search</Icon>
         <IsA>app:gui</IsA>
         <Summary>MATE utility programs</Summary>
         <Description>The mate-utils package contains a set of small "desk accessory" utility applications for MATE, such as a dictionary, a disk usage analyzer, a screenshot tool and others.</Description>
-        <Archive sha1sum="8435a42773bd2f5fcf27e2e6e71373fbf216eef9" type="tarxz">mirrors://mate/mate-utils-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="cc531fc0e2118a97da6e2fe2c24bb0805a6fa1f2" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-utils-1.17.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
@@ -59,11 +59,11 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+            <Date>2017-01-12</Date>
+            <Version>1.17.0</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

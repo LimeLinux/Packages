@@ -8,13 +8,12 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
-
+from pisi.actionsapi import shelltools
 def setup():
     autotools.configure("--disable-static \
                          --enable-unique \
                          --with-gnu-ld \
-                         --with-gtk=2.0")
-    
+                         --with-gtk=3.0")   
 
 def build():
     autotools.make()

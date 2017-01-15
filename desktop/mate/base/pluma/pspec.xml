@@ -6,15 +6,15 @@
         <Name>pluma</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>accessories-text-editor</Icon>
         <IsA>app:gui</IsA>
         <Summary>Mate metin editörü</Summary>
         <Description>mate masaüstü için metin editörü.</Description>
-        <Archive sha1sum="14a0497fade1e3fd40a39eafb28390975abd12a6" type="tarxz">mirrors://mate/pluma-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="446692469d2700225838f2ee38cc727705de7f99" type="tarxz">http://pub.mate-desktop.org/releases/1.17/pluma-1.17.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
@@ -47,7 +47,9 @@
             <Dependency>python-gtk</Dependency>
             <Dependency>python-gtk</Dependency>
             <Dependency>gtksourceview</Dependency>
+            <Dependency>gtksourceview3</Dependency>
             <Dependency>python-gtksourceview</Dependency>
+            <Dependency>libpeas</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -66,11 +68,11 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+            <Date>2017-01-12</Date>
+            <Version>1.17.3</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

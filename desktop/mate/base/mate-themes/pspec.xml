@@ -6,15 +6,15 @@
         <Name>mate-themes</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv2+</License>
         <License>LGPLv2+</License>
         <IsA>data</IsA>
         <Summary>MATE Desktop themes</Summary>
         <Description>mate-themes, mate masaüstü temalarını barındırır.</Description>
-        <Archive sha1sum="3948c32a8f1b366620401244c528d09e38c7233f" type="tarxz">http://pub.mate-desktop.org/releases/themes/3.22/mate-themes-3.22.3.tar.xz</Archive>
+        <Archive sha1sum="eef5bd16eba9772adbdc2dc7a6fbc1fb0d7c6fb7" type="tarxz">http://pub.mate-desktop.org/releases/themes/3.22/mate-themes-3.22.6.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mate-common</Dependency>
             <Dependency>gtk-engines</Dependency>
@@ -45,11 +45,11 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>3.22.3</Version>
+            <Date>2017-01-12</Date>
+            <Version>3.22.6</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

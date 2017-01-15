@@ -6,8 +6,8 @@
         <Name>mate-desktop</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>MIT</License>
         <License>GPLv2+</License>
@@ -16,10 +16,8 @@
         <IsA>app:gui</IsA>
         <Summary>Basic Mate libraries and dialogs</Summary>
         <Description>mate-desktop contains basic Mate libraries and information applications.</Description>
-        <Archive sha1sum="624d2e7af6416cb81d1d0946ab66bbb34fc7d150" type="tarxz">mirrors://mate/mate-desktop-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="aed9772afe17a3577b376dbc37a597f8b36fc273" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-desktop-1.17.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>itstool</Dependency>
-            <Dependency>gtk-doc</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>docbook-xsl</Dependency>
@@ -32,6 +30,9 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>startup-notification</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libxslt</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -65,11 +66,11 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+            <Date>2017-01-12</Date>
+            <Version>1.17.1</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

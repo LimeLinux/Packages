@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-applets</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>data</IsA>
+        <Summary>Applets for MATE panel (GTK2 version</Summary>
+        <Description>Applets for MATE panel (GTK2 version</Description>
+	<Archive sha1sum="64742a98be03cf89099dbdd14e7b6baf2f9a0c2f" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-applets-1.17.0.tar.xz</Archive>
+	    <BuildDependencies>
+             <Dependency>gtksourceview</Dependency>
+             <Dependency>mate-panel</Dependency>
+             <Dependency>mate-common</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-applets</Name>
+        <Files>
+            <Path fileType="exectuable">/usr/bin/mate-cpufreq-selector</Path>
+            <Path fileType="data">/etc/dbus-1/system.d/org.mate.CPUFreqSelector.conf</Path>
+            <Path fileType="data">/etc/sound/events/mate-battstat_applet.soundlist</Path>
+            <Path fileType="data">/usr/share/help/</Path>
+            <Path fileType="data">/usr/share/mate-panel/</Path>
+            <Path fileType="locale">/usr/share/locale/</Path>
+            <Path fileType="data">/usr/share/mate/</Path>
+            <Path fileType="man">/usr/share/man/</Path>
+            <Path fileType="icons">/usr/share/icons/</Path>
+            <Path fileType="doç">/usr/share/doc/</Path>
+            <Path fileType="service">/usr/share/dbus-1/</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-01-12</Date>
+            <Version>1.17.0</Version>
+            <Comment>First release</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
