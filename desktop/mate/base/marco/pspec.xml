@@ -6,14 +6,14 @@
         <Name>marco</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>GTK+ based window manager</Summary>
         <Description>Marco is a small window manager, using GTK+ to do everything.</Description>
-        <Archive sha1sum="b9b3c14812fcb7ab5dfd2c3498eac639d2e63be6" type="tarxz">mirrors://mate/marco-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="d8d165f75618a02eaa5a89b86c4e2c7ee4995d2f" type="tarxz">http://pub.mate-desktop.org/releases/1.17/marco-1.17.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>itstool</Dependency>
             <Dependency>atk</Dependency>
@@ -28,7 +28,6 @@
             <Dependency>libcanberra</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>libXfixes</Dependency>
-            <Dependency>zenity</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>libXcursor</Dependency>
@@ -85,11 +84,11 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+             <Date>2016-12-21</Date>
+            <Version>1.17.0</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

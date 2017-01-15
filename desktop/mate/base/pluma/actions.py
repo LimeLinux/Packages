@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--prefix=/usr \
                          --enable-gvfs-metadata \
-                        --with-gtk=2.0 \
+                        --with-gtk=3.0 \
                          --enable-python ")
     
     # for fix unused dependency

@@ -6,15 +6,15 @@
         <Name>libmateweather</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv2+</License>
         <License>LGPLv2+</License>
         <IsA>library</IsA>
         <Summary>libmateweather</Summary>
         <Description>libmateweather is a collection of documentation utilities for the Mate project.</Description>
-        <Archive sha1sum="db775a80ec76ea0f8f9277a4b2011471eabaee65" type="tarxz">mirrors://mate/libmateweather-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="e3af963f2faccd608e595d47bd318c8a35579487" type="tarxz">http://pub.mate-desktop.org/releases/1.17/libmateweather-1.17.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>mate-common</Dependency>
@@ -46,11 +46,11 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+             <Date>2016-12-21</Date>
+            <Version>1.17.0</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-applets-gtk3</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>data</IsA>
+        <Summary>Applets for MATE panel (GTK2 version)</Summary>
+        <Description>Applets for MATE panel (GTK3 version)</Description>
+	<Archive sha1sum="64742a98be03cf89099dbdd14e7b6baf2f9a0c2f" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-applets-1.17.0.tar.xz</Archive>
+	    <BuildDependencies>
+             <Dependency>gtksourceview3</Dependency>
+             <Dependency>mate-panel</Dependency>
+             <Dependency>mate-common</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-applets-gtk3</Name>
+        <Files>
+            <Path fileType="exectuable">/etc/</Path>
+            <Path fileType="exectuable">/usr/share/doc/mate-applets-gtk3/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-01-12</Date>
+            <Version>1.17.0</Version>
+            <Comment>First release</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

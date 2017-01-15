@@ -6,15 +6,15 @@
         <Name>eom</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
         <Icon>eom</Icon>
         <IsA>app:gui</IsA>
         <Summary>Eye of MATE, an image viewer for MATE</Summary>
         <Description>This is the Eye of MATE, an image viewer program.  It is meant to be a fast and functional image viewer.</Description>
-        <Archive sha1sum="9c2d032f971a1296a2300c9cacdeb4cef931ac20" type="tarxz">mirrors://mate/eom-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="0ade89543565e052163dfd7203e2a1e0e13a3555" type="tarxz">http://pub.mate-desktop.org/releases/1.17/eom-1.17.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -27,6 +27,9 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-desktop</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>yelp-tools</Dependency>
+            <Dependency>libpeas</Dependency>
+            <Dependency>gtksourceview3</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -63,10 +66,10 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+            <Version>1.17.2</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

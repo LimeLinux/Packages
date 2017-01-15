@@ -6,15 +6,15 @@
         <Name>mate-power-manager</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
         <Icon>mate-power-manager</Icon>
         <IsA>app:gui</IsA>
         <Summary>Mate için güç yöneticisi</Summary>
         <Description>Power management tool for the MATE desktop.</Description>
-        <Archive sha1sum="a7089947d4ac2151e2b8182f4d130aba08d804d2" type="tarxz">mirrors://mate/mate-power-manager-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="dbd991820c7e332bd2d01ee519466a3c65f1d662" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-power-manager-1.17.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
@@ -71,10 +71,10 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+            <Version>1.17.0</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

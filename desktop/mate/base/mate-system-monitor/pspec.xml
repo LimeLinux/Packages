@@ -6,15 +6,15 @@
         <Name>mate-system-monitor</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>utilities-system-monitor</Icon>
         <IsA>app:gui</IsA>
         <Summary>Process and resource monitor</Summary>
         <Description>Process viewer and system resource monitor for MATE</Description>
-        <Archive sha1sum="4d0c2bca7690f52b1278b5e83ce3231bc75469e2" type="tarxz">mirrors://mate/mate-system-monitor-1.16.0.tar.xz</Archive>
+        <Archive sha1sum="ced3bf3dd676b15a7066ef3539984e7657b6ff95" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-system-monitor-1.17.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
@@ -53,16 +53,17 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="lib">/usr/libexec/mate-system-monitor/</Path>
         </Files>
     </Package>
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.16.0</Version>
+            <Date>2017-01-12</Date>
+            <Version>1.17.0</Version>
             <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>
