@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libindicator</Name>
+        <Homepage>https://launchpad.net/libindicator</Homepage>
+        <Packager>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:console</IsA>
+        <Summary>A set of symbols and convience functions that all indicators would like to use.</Summary>
+        <Description>Libary with a set of symbols and convience functions that all indicators would like to use (GTK+ 2 library)</Description>
+        <Archive sha1sum="25c8a0a150651ee6b2198df3f36fcbb49f0295c2" type="targz">https://launchpad.net/libindicator/12.10/12.10.1/+download/libindicator-12.10.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">indicator.patch</Patch>
+       </Patches>
+    </Source>
+    
+    <Package>
+        <Name>libindicator</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="config">/etc/X11</Path>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2017-01-15</Date>
+            <Version>12.10.1</Version>
+            <Comment>First release</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

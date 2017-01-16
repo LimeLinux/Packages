@@ -1,0 +1,71 @@
+diff -Nuar a/configure b/configure
+--- a/configure	2012-09-19 18:40:08.143406486 +0300
++++ b/configure	2017-01-16 08:44:16.715906353 +0300
+@@ -12052,7 +12052,7 @@
+ { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_mw__mwvalidcheckl" >&5
+ $as_echo "$ac_cv_lib_mw__mwvalidcheckl" >&6; }
+ if test "x$ac_cv_lib_mw__mwvalidcheckl" = xyes; then :
+-  LIBM="-lmw"
++  LIBM=" -lmw"
+ fi
+ 
+   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for cos in -lm" >&5
+@@ -12061,7 +12061,7 @@
+   $as_echo_n "(cached) " >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lm  $LIBS"
++LIBS=" -lm  $LIBS"
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ 
+@@ -12103,7 +12103,7 @@
+   $as_echo_n "(cached) " >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lm  $LIBS"
++LIBS=" -lm  $LIBS"
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ 
+@@ -12134,14 +12134,14 @@
+ { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_m_cos" >&5
+ $as_echo "$ac_cv_lib_m_cos" >&6; }
+ if test "x$ac_cv_lib_m_cos" = xyes; then :
+-  LIBM="-lm"
++  LIBM=" -lm"
+ fi
+ 
+   ;;
+ esac
+ 
+ 
+-LIBINDICATOR_LIBS+="$LIBM"
++LIBINDICATOR_LIBS+=" $LIBM"
+ 
+ ##############################
+ # Custom Junk
+diff -Nuar a/libindicator/Makefile.am b/libindicator/Makefile.am
+--- a/libindicator/Makefile.am	2012-09-19 18:38:05.113919565 +0300
++++ b/libindicator/Makefile.am	2017-01-16 08:43:05.872908806 +0300
+@@ -57,7 +57,7 @@
+ 	$(LIBINDICATOR_CFLAGS) \
+ 	$(COVERAGE_CFLAGS) \
+ 	-DG_LOG_DOMAIN=\"libindicator\" \
+-	-Wall -Werror
++	-Wall -Werror -Wno-deprecated-declarations
+ 
+ libindicator_la_LIBADD = \
+ 	$(LIBINDICATOR_LIBS)
+diff -Nuar a/libindicator/Makefile.in b/libindicator/Makefile.in
+--- a/libindicator/Makefile.in	2012-09-19 18:40:09.127898512 +0300
++++ b/libindicator/Makefile.in	2017-01-16 08:43:05.873908806 +0300
+@@ -380,7 +380,7 @@
+ 	$(LIBINDICATOR_CFLAGS) \
+ 	$(COVERAGE_CFLAGS) \
+ 	-DG_LOG_DOMAIN=\"libindicator\" \
+-	-Wall -Werror
++	-Wall -Werror -Wno-deprecated-declarations
+ 
+ libindicator_la_LIBADD = \
+ 	$(LIBINDICATOR_LIBS)
