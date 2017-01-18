@@ -48,12 +48,20 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/docker">docker.confd</AdditionalFile>
         </AdditionalFiles>
         <Provides>
-            <!--COMAR script="service.py">System.Service</COMAR-->
+            <COMAR script="service.py">System.Service</COMAR>
             <COMAR script="package.py">System.Package</COMAR>
         </Provides>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2017-01-18</Date>
+            <Version>1.12.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>1.12.1</Version>
