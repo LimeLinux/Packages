@@ -12,7 +12,7 @@
         <Summary>Classes for a WebKit2 based implementation and a new QML API</Summary>
         <Description>Classes for a WebKit2 based implementation and a new QML API</Description>
         <License>LGPLv2.1-linking-exception</License>
-        <Archive sha1sum="62812994831a0e335398a5eb9db906f519d3d6ba" type="tarxz">http://download.qt.io/community_releases/5.7/5.7.0/qtwebkit-opensource-src-5.7.0.tar.xz</Archive>
+        <Archive sha1sum="cd44a529cf24cf6f9eda93ac88c7d65dc2de3359" type="tarxz">http://download.qt.io/community_releases/5.7/5.7.1/qtwebkit-opensource-src-5.7.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>mesa</Dependency>
@@ -40,7 +40,6 @@
             <Dependency>gperf</Dependency>
             <Dependency>bison</Dependency>
             <Dependency>flex</Dependency>
-            <Dependency>qt5-phonon</Dependency>
             <Dependency>gstreamer</Dependency>
             <Dependency>gstreamer-next</Dependency>
             <Dependency>gst-plugins-base-next</Dependency>
@@ -80,7 +79,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>5.7.0</Version>
+            <Version>5.7.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

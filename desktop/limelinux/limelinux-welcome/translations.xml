@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>limelinux-welcome</Name>
+        <Summary xml:lang="tr">lime Linux Hoşgeldin Uygulaması</Summary>
+        <Description xml:lang="tr">Hoşgeldin uygulaması, bilgisayarınız ilk defa açıldığında sizi karşılar.</Description>
+    </Source>
+</PISI>

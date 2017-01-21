@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Qt toolkit version 4</Summary>
         <Description>Qt is a cross platform GUI toolkit.</Description>
-        <Archive sha1sum="bfc3d07ffba27d96cf070f74148f34a668646a19" type="tarxz">http://download.qt.io/official_releases/qt/5.7/5.7.0/single/qt-everywhere-opensource-src-5.7.0.tar.xz</Archive>
+        <Archive sha1sum="bedd61b2767239bad01fa9ce3d1e2e63ecf721bd" type="tarxz">http://download.qt.io/official_releases/qt/5.7/5.7.1/single/qt-everywhere-opensource-src-5.7.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mariadb</Dependency>
             <Dependency>cups</Dependency>
@@ -61,8 +61,8 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="data">/usr</Path>
-            <Path fileType="data">/usr/lib/qt4/templates</Path>
-            <Path fileType="localedata">/usr/share/qt4/translations/*_tr.*</Path>
+            <Path fileType="data">/usr/lib/*</Path>
+            <Path fileType="localedata">/usr/share/*</Path>
             <Path fileType="header">/usr/include</Path>
         </Files>
         <!--AdditionalFiles>
@@ -75,6 +75,13 @@
 
 
     <History>
+		<Update release="2">
+            <Date>2017-01-21</Date>
+            <Version>5.7.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>5.7.0</Version>

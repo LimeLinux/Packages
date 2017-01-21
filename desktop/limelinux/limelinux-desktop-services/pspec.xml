@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>limelinux-desktop-services</Name>
+        <Homepage>http://limelinux.com</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Lime Linux Desktop Services</Summary>
+        <Description>limelinux-desktop-services is a wrapper python module for integrating various desktop environments using PyQt.</Description>
+        <Archive sha1sum="2351a0e61002047309742e3df0c792e7060afbec" type="targz">https://github.com/PisiLinuxNew/pds/archive/2.0.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python-qt5</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">environment.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>limelinux-desktop-services</Name>
+        <RuntimeDependencies>
+            <Dependency>python-qt5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>2.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

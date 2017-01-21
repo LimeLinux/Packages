@@ -85,7 +85,7 @@ def setup():
                        --enable-lto \
                        --enable-plugin \
                        --with-linker-hash-style=gnu \
-                       --with-pkgversion="Pisi Linux" \
+                       --with-pkgversion="Lime Linux" \
                        --disable-werror \
                        --enable-checking=release \
                        --build=%s \
