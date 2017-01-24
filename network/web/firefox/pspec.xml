@@ -103,8 +103,6 @@
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="executable">/usr/lib/firefox</Path>
             <Path fileType="data">/usr/share/applications</Path>
-	    <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-US@firefox.mozilla.org</Path>
-            <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-tr@firefox.mozilla.org</Path>
         </Files>
         <AdditionalFiles>
             <!-- Desktop file -->
@@ -119,7 +117,7 @@
         </Provides>
     </Package>
 
-    <!--Package>
+    <Package>
         <Name>firefox-lang-az</Name>
         <Icon>lang-az</Icon>
         <Summary>Firefox üçün Türkçe dil faylı</Summary>
@@ -523,9 +521,16 @@
         <Files>
             <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-uk@firefox.mozilla.org</Path>
         </Files>
-    </Package-->
+    </Package>
 
     <History>
+		<Update release="2">
+            <Date>2017-01-25</Date>
+            <Version>50.1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>50.1.0</Version>
