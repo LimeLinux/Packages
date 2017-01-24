@@ -1,0 +1,168 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>chromium</Name>
+        <Homepage>http://code.google.com/chromium</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>chromium</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A WebKit powered web browser</Summary>
+        <Description>Chromium-browser is an open-source web browser, powered by WebKit.</Description>
+        <Archive sha1sum="8a36da476a83068871ea0e6b1a92cb52b7f049be" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-55.0.2883.75.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>faac</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>pciutils</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gperf</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
+            <Dependency>libavc1394</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+            <Dependency>speech-dispatcher</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gsm</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>harfbuzz</Dependency>
+            <Dependency>hunspell</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>imlib2</Dependency>
+            <Dependency>lame</Dependency>
+            <Dependency>libdc1394</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libevent</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libmtp</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libtheora</Dependency>
+            <Dependency>libvdpau</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>opencore-amr</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>python-lxml</Dependency>
+            <Dependency>schroedinger</Dependency>
+            <Dependency>snappy</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>valgrind</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>x264</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>xvid</Dependency>
+            <Dependency>ninja</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>yasm</Dependency>
+            <Dependency>usbutils</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">chromium-52.0.2743.116-unset-madv_free.patch</Patch>
+            <Patch level="1">chromium-widevine.patch</Patch>
+            <Patch level="1">chromium-icu58.patch</Patch>
+            <Patch level="1">limelinux/gfx_jpeg_codec.patch</Patch>
+            <Patch level="1">limelinux/fix_build_with_newer_gcc.patch</Patch>
+            <Patch level="1">limelinux/last_commit_position.patch</Patch>
+        </Patches>
+    </Source>
+    <Package>
+        <Name>chromium</Name>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libevent</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>minizip</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>pepperflash</Dependency> <!-- no remove -->
+            <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>speech-dispatcher</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>pciutils</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>snappy</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>harfbuzz</Dependency>             
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/chromium-browser/master_preferences" >master_preferences</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/chromium-browser.desktop" >chromium-browser.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-12</Date>
+            <Version>55.0.2883.75</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

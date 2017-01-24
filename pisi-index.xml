@@ -3388,7 +3388,7 @@
             <Description xml:lang="fr">La collection de compilateurs GNU inclus des façades pour le C, C++, Objective-C, Fortran, hava et Ada ainsi que des librairies pour ces langages (libstdc++, libgcj...)</Description>
             <Description xml:lang="en">The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, as well as libraries for these languages</Description>
             <Description xml:lang="tr">C, C++, Objective-C, Fortran programlama dilleri ile bu dillere ait kütüphaneleri içeren, GNU derleyici paketi</Description>
-            <Archive type="tarbz2" sha1sum="583e29c7fe69d9a1031a89752c2551ab5aeacb91">ftp://gcc.gnu.org/pub/gcc/releases/gcc-6.2.0/gcc-6.2.0.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="928ab552666ee08eed645ff20ceb49d139205dea">ftp://gcc.gnu.org/pub/gcc/releases/gcc-6.3.0/gcc-6.3.0.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
                 <Dependency>bison</Dependency>
@@ -3452,6 +3452,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>6.3.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>6.2.0</Version>
@@ -8362,8 +8369,8 @@
             <Description xml:lang="fr">SQLite est une petite librairie C implémentant un moteur de base de données SQL auto-configurée, auto-suffisante, pouvant être embarquée. Gère des bases de données de tailles allant jusqu&apos;à 2 téraOctets.</Description>
             <Description xml:lang="en">SQLite is a small C library that implements a self-contained, embeddable, zero-configuration SQL database engine. Supports databases up to 2 terabytes in size.</Description>
             <Description xml:lang="tr">SQLite hiçbir ayar gerektirmeyen, başka programların içine gömülebilir bir SQL veritabanı motorudur. 2 terabayta kadar büyüklükteki veritabanlarını tutabilir.</Description>
-            <Archive type="targz" sha1sum="f6f76e310389e3f510b23826f805850449ae8653">http://www.sqlite.org/2016/sqlite-autoconf-3130000.tar.gz</Archive>
-            <Archive type="zip" sha1sum="1f10c30709c67bdb62d0d86f2b36c0148f64ed21">http://www.sqlite.org/2016/sqlite-doc-3130000.zip</Archive>
+            <Archive type="targz" sha1sum="64ca578ad44a94115b1db0406740e14288f74bb8">http://sqlite.org/2017/sqlite-autoconf-3160200.tar.gz</Archive>
+            <Archive type="zip" sha1sum="c3424040e2368dd78cf9aac801de8d8988549439">http://sqlite.org/2017/sqlite-doc-3160200.zip</Archive>
             <BuildDependencies>
                 <Dependency>readline</Dependency>
             </BuildDependencies>
@@ -8394,6 +8401,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>3.16.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>3.13.0</Version>
@@ -12830,7 +12844,7 @@
             <Summary xml:lang="tr">WebKit2 tabanlı uygulama ve yeni QML API için sınıflar</Summary>
             <Description xml:lang="en">Classes for a WebKit2 based implementation and a new QML API</Description>
             <Description xml:lang="tr">WebKit2 tabanlı uygulama ve yeni QML API için sınıflar</Description>
-            <Archive type="tarxz" sha1sum="62812994831a0e335398a5eb9db906f519d3d6ba">http://download.qt.io/community_releases/5.7/5.7.0/qtwebkit-opensource-src-5.7.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="cd44a529cf24cf6f9eda93ac88c7d65dc2de3359">http://download.qt.io/community_releases/5.7/5.7.1/qtwebkit-opensource-src-5.7.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>qt5</Dependency>
                 <Dependency>mesa</Dependency>
@@ -12858,7 +12872,6 @@
                 <Dependency>gperf</Dependency>
                 <Dependency>bison</Dependency>
                 <Dependency>flex</Dependency>
-                <Dependency>qt5-phonon</Dependency>
                 <Dependency>gstreamer</Dependency>
                 <Dependency>gstreamer-next</Dependency>
                 <Dependency>gst-plugins-base-next</Dependency>
@@ -12897,7 +12910,7 @@
         <History>
             <Update release="1">
                 <Date>2016-07-26</Date>
-                <Version>5.7.0</Version>
+                <Version>5.7.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -12922,7 +12935,7 @@
             <Description xml:lang="en">Qt is a cross platform GUI toolkit.</Description>
             <Description xml:lang="tr">Qt bir çok platformda çalışabilen ve grafiksel kullanıcı arayüzü (GUI) oluşturmaya yarayan bir araç takımıdır.</Description>
             <Description xml:lang="es">Qt es un toolkit para GUI multiplataforma.</Description>
-            <Archive type="tarxz" sha1sum="bfc3d07ffba27d96cf070f74148f34a668646a19">http://download.qt.io/official_releases/qt/5.7/5.7.0/single/qt-everywhere-opensource-src-5.7.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="bedd61b2767239bad01fa9ce3d1e2e63ecf721bd">http://download.qt.io/official_releases/qt/5.7/5.7.1/single/qt-everywhere-opensource-src-5.7.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>mariadb</Dependency>
                 <Dependency>cups</Dependency>
@@ -12966,12 +12979,19 @@
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/share</Path>
                 <Path fileType="data">/usr</Path>
-                <Path fileType="data">/usr/lib/qt4/templates</Path>
-                <Path fileType="localedata">/usr/share/qt4/translations/*_tr.*</Path>
+                <Path fileType="data">/usr/lib/*</Path>
+                <Path fileType="localedata">/usr/share/*</Path>
                 <Path fileType="header">/usr/include</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-01-21</Date>
+                <Version>5.7.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>5.7.0</Version>
@@ -14473,6 +14493,347 @@
                 <Date>2016-12-21</Date>
                 <Version>2.32.1</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>package-manager</Name>
+            <Homepage>http://www.limelinux.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.limelinux</PartOf>
+            <Summary xml:lang="en">PiSi graphical user interface</Summary>
+            <Summary xml:lang="tr">PiSi kullanıcı grafik arayüzü</Summary>
+            <Description xml:lang="fr">PiSi est une interface graphique permettant d&apos;effectuer l&apos;installation, la suppression et la mise à jour de paquet PiSi depuis un environnement graphique.</Description>
+            <Description xml:lang="en">Package Manager is PiSi&apos;s easy-to-use graphical user interface.</Description>
+            <Description xml:lang="tr">PiSi paket yöneticisine ait paket kurma, kaldırma ve güncelleme gibi işlerin grafik ortamda yapılabilmesini sağlayan PiSi grafik arayüzü.</Description>
+            <Archive type="targz" sha1sum="5ab6c9f833d3fb7628674de16a98e88aaed76f32">https://github.com/PisiLinuxNew/package-manager/archive/package-manager.4.1.6.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>docutils</Dependency>
+                <Dependency>python-qt5</Dependency>
+                <Dependency>python-sip</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/limelinux/package-manager/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>package-manager</Name>
+            <RuntimeDependencies>
+                <Dependency>pisi</Dependency>
+                <Dependency>python-qt5</Dependency>
+                <Dependency>python-sip</Dependency>
+                <Dependency>limelinux-desktop-services</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/share</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-08-09</Date>
+                <Version>4.1.6</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>limelinux-desktop-services</Name>
+            <Homepage>http://limelinux.com</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.limelinux</PartOf>
+            <Summary xml:lang="en">Lime Linux Desktop Services</Summary>
+            <Summary xml:lang="tr">Pisi Linux Masaüstü Hizmetleri</Summary>
+            <Description xml:lang="en">limelinux-desktop-services is a wrapper python module for integrating various desktop environments using PyQt.</Description>
+            <Description xml:lang="tr">limelinux-desktop-services, Pisi Linux Uygulamalarının farklı masaüstü ortamları ile bütünleşik bir şekilde çalışmasını sağlayan bir Python modülüdür.</Description>
+            <Archive type="targz" sha1sum="2351a0e61002047309742e3df0c792e7060afbec">https://github.com/PisiLinuxNew/pds/archive/2.0.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python-qt5</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">environment.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/limelinux/limelinux-desktop-services/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>limelinux-desktop-services</Name>
+            <RuntimeDependencies>
+                <Dependency>python-qt5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pisiplayer</Name>
+            <Homepage>http://limelinux.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.limelinux</PartOf>
+            <Summary xml:lang="en">Video Player</Summary>
+            <Description xml:lang="en">Video Player for Pisi Linux</Description>
+            <Icon>pisiplayer</Icon>
+            <Archive type="targz" sha1sum="cbd2ea4b1c3377a19cd98fed77c1cf0826d34a86">https://github.com/mthnzbk/pisi-player/archive/0.9.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python3-setuptools</Dependency>
+                <Dependency>python3-devel</Dependency>
+                <Dependency>python3-qt5</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/limelinux/pisiplayer/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pisiplayer</Name>
+            <RuntimeDependencies>
+                <Dependency>python3-qt5</Dependency>
+                <Dependency>python3-sip</Dependency>
+                <Dependency>python3-youtube_dl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/lib/pisiplayer</Path>
+                <Path fileType="data">/usr/lib/python3.4/site-packages</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-04</Date>
+                <Version>0.9</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>limelinux-welcome</Name>
+            <Homepage>http://limelinux.com</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.limelinux</PartOf>
+            <Summary xml:lang="en">Pisi Linux Welcome Application</Summary>
+            <Summary xml:lang="tr">lime Linux Hoşgeldin Uygulaması</Summary>
+            <Description xml:lang="en">Pisi Linux Welcome Application</Description>
+            <Description xml:lang="tr">Hoşgeldin uygulaması, bilgisayarınız ilk defa açıldığında sizi karşılar.</Description>
+            <Icon>limelinux-welcome</Icon>
+            <Archive type="targz" sha1sum="cde9530f2ba60be79f4cd89e4cfc62d59d6d4d6a">https://github.com/limelinuxNew/limelinux-welcome/archive/1.0Beta4.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python3-setuptools</Dependency>
+                <Dependency>python3-qt5</Dependency>
+                <Dependency>python3-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/limelinux/limelinux-welcome/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>limelinux-welcome</Name>
+            <RuntimeDependencies>
+                <Dependency>python3-qt5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/welcome</Path>
+                <Path fileType="data">/usr/lib/python3.4/site-packages</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localdata">/usr/share/welcome/languages</Path>
+                <Path fileType="config">/etc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-08-26</Date>
+                <Version>1.0b</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>service-manager</Name>
+            <Homepage>http://limelinux.com</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.limelinux</PartOf>
+            <Summary xml:lang="en">System Service configuration GUI</Summary>
+            <Summary xml:lang="tr">Servis yönetim arayüzü</Summary>
+            <Description xml:lang="fr">Le gestionnaire de Service est utilisé pour administrer les services lancés dans Pisi Linux.</Description>
+            <Description xml:lang="en">This system service configuration software is developed for Pisi Linux. It provides managing system services.</Description>
+            <Description xml:lang="tr">Servis yöneticisi, Pisi Linux&apos;da çalışan sunucu ve servislerin yönetilmesini sağlar</Description>
+            <Archive type="targz" sha1sum="70f31cd176beb227769c6431198e7fb5ef0102b1">https://github.com/limelinuxNew/service-manager/archive/3.1.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>limelinux-desktop-services</Dependency>
+                <Dependency>docutils</Dependency>
+                <Dependency>python-qt5-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/limelinux/service-manager/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>service-manager</Name>
+            <RuntimeDependencies>
+                <Dependency>python-qt5</Dependency>
+                <Dependency>limelinux-desktop-services</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/share</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-03</Date>
+                <Version>3.1.0</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>history-manager</Name>
+            <Homepage>http://ish.kodzilla.org/pardus/history-manager/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.limelinux</PartOf>
+            <Summary xml:lang="en">KDE5 port of History Manager Tool</Summary>
+            <Summary xml:lang="tr">Pisi Geçmiş Yöneticisi uygulaması</Summary>
+            <Description xml:lang="en">History manager is a graphical interface to pisi snapshot facilities.</Description>
+            <Description xml:lang="tr">Pisi ile yapılan işlem geçmişini gösterme, sistemi belirli noktaya döndürme, yeni görüntü alma gibi geçmiş yönetimi işlemleri yapmayı sağlayan araç.</Description>
+            <Archive type="targz" sha1sum="100f05962b829e781fc336b47bf85a210a93859a">https://github.com/limelinuxNew/history-manager/archive/0.2.8.0-Beta.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python-qt5-devel</Dependency>
+                <Dependency>pypolkit</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>python-setuptools</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/limelinux/history-manager/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>history-manager</Name>
+            <RuntimeDependencies>
+                <Dependency>python-qt5</Dependency>
+                <Dependency>pypolkit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="library">/usr/lib/python*</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-18</Date>
+                <Version>0.2.8.0b</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>kaptan</Name>
+            <Homepage>http://limelinux.com</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.limelinux</PartOf>
+            <Summary xml:lang="en">Kaptan, Pisi Linux workspace configuration wizard</Summary>
+            <Summary xml:lang="tr">Pisi Linux Kaptan</Summary>
+            <Summary xml:lang="es">Pisi Linux Kaptan</Summary>
+            <Description xml:lang="en">Kaptan lets you configure your workspace on first login.</Description>
+            <Description xml:lang="tr">Kaptan, bilgisayarınız ilk defa açıldığında çalışma ortamınızı kişiselleştirmenize yardımcı olur.</Description>
+            <Description xml:lang="es">Kaptan, el asistente de inicio de Pisi Linux que le ayudará a personalizar su entorno de trabajo.</Description>
+            <Icon>kaptan</Icon>
+            <Archive type="targz" sha1sum="3e7bd80b87298eabb290242d7ea2cde497bcbbd8">https://github.com/limelinuxNew/kaptan/archive/beta6.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python3-setuptools</Dependency>
+                <Dependency>python3-qt5</Dependency>
+                <Dependency>python3-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/limelinux/kaptan/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>kaptan</Name>
+            <RuntimeDependencies>
+                <Dependency>python3-qt5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/kaptan</Path>
+                <Path fileType="data">/usr/lib/python3.4/site-packages</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localdata">/usr/share/kaptan/languages</Path>
+                <Path fileType="config">/etc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-08-09</Date>
+                <Version>5.0</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -28448,6 +28809,42 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>docutils</Name>
+            <Homepage>http://docutils.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>public-domain</License>
+            <IsA>library</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">A library for processing plaintext documentation</Summary>
+            <Summary xml:lang="tr">Düz yazı belgelendirme işleme için kütüphane</Summary>
+            <Description xml:lang="en">A library for processing plaintext documentation into useful formats, such as HTML, XML, and LaTeX.</Description>
+            <Description xml:lang="es">Librería para procesamiento de texto plano para conversión a formatos útiles como HTML, XML, y LaTeX.</Description>
+            <Archive type="targz" sha1sum="3894ebcbcbf8aa54ce7c3d2c8f05460544912d67">mirrors://sourceforge/docutils/docutils-0.11.tar.gz</Archive>
+            <SourceURI>office/misc/docutils/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>docutils</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.11</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>sudo</Name>
             <Homepage>http://www.sudo.ws/</Homepage>
             <Packager>
@@ -33820,8 +34217,6 @@
                 <Path fileType="data">/usr/share/pixmaps</Path>
                 <Path fileType="executable">/usr/lib/firefox</Path>
                 <Path fileType="data">/usr/share/applications</Path>
-                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-US@firefox.mozilla.org</Path>
-                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-tr@firefox.mozilla.org</Path>
             </Files>
             <Provides>
                 <COMAR script="package.py">System.Package</COMAR>
@@ -33832,7 +34227,420 @@
                 <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-limelinux.js" permission="0644" owner="root">limelinux/default-prefs.js</AdditionalFile>
             </AdditionalFiles>
         </Package>
+        <Package>
+            <Name>firefox-lang-az</Name>
+            <Summary xml:lang="en">Firefox üçün Türkçe dil faylı</Summary>
+            <Summary xml:lang="az">Firefox üçün Türkçe dil faylı</Summary>
+            <IsA>locale:az</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-az</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-az@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-be</Name>
+            <Summary xml:lang="be">Беларуская мова пакет для Firefox</Summary>
+            <Summary xml:lang="en">Беларуская мова пакет для Firefox</Summary>
+            <IsA>locale:be</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-be</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-be@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-bs</Name>
+            <Summary xml:lang="en">Engleskom jeziku paket za Firefox</Summary>
+            <Summary xml:lang="bs">Engleskom jeziku paket za Firefox</Summary>
+            <IsA>locale:bs</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-bs</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-bs@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-ca</Name>
+            <Summary xml:lang="ca">Arxiu d&apos;idioma català del Firefox</Summary>
+            <Summary xml:lang="en">Arxiu d&apos;idioma català del Firefox</Summary>
+            <IsA>locale:ca</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-ca</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-ca@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-da</Name>
+            <Summary xml:lang="en">Dansk sprogpakke til Firefox</Summary>
+            <Summary xml:lang="da">Dansk sprogpakke til Firefox</Summary>
+            <IsA>locale:da</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-da</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-da@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-de</Name>
+            <Summary xml:lang="de">Deutsch Sprachdatei für Firefox</Summary>
+            <Summary xml:lang="en">Deutsch Sprachdatei für Firefox</Summary>
+            <IsA>locale:de</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-de</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-de@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-el</Name>
+            <Summary xml:lang="el">Ελληνική γλώσσα pack για τον Firefox</Summary>
+            <Summary xml:lang="en">Ελληνική γλώσσα pack για τον Firefox</Summary>
+            <IsA>locale:el</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-el</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-el@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-en-US</Name>
+            <Summary xml:lang="en-US">English language pack for Firefox</Summary>
+            <Summary xml:lang="en">English language pack for Firefox</Summary>
+            <IsA>locale:en-US</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-en-US</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-US@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-en-ZA</Name>
+            <Summary xml:lang="en">South African English language pack for Firefox</Summary>
+            <Summary xml:lang="en-ZA">South African English language pack for Firefox</Summary>
+            <IsA>locale:en-ZA</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-en-ZA</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-en-GB</Name>
+            <Summary xml:lang="en-GB">British English language pack for Firefox</Summary>
+            <Summary xml:lang="en">British English language pack for Firefox</Summary>
+            <IsA>locale:en-GB</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-en-GB</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-es-AR</Name>
+            <Summary xml:lang="es-AR">Paquete de idioma español para Firefox</Summary>
+            <Summary xml:lang="en">Paquete de idioma español para Firefox</Summary>
+            <IsA>locale:es-AR</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-es-AR</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-es-AR@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-es-CL</Name>
+            <Summary xml:lang="es-CL">Paquete de idioma español para Firefox</Summary>
+            <Summary xml:lang="en">Paquete de idioma español para Firefox</Summary>
+            <IsA>locale:es-CL</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-es-CL</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-es-CL@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-es-ES</Name>
+            <Summary xml:lang="en">Paquete de idioma español para Firefox</Summary>
+            <Summary xml:lang="es-ES">Paquete de idioma español para Firefox</Summary>
+            <IsA>locale:es-ES</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-es-ES</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-es-ES@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-fi</Name>
+            <Summary xml:lang="fi">Suomen kielen pack for Firefox</Summary>
+            <Summary xml:lang="en">Suomen kielen pack for Firefox</Summary>
+            <IsA>locale:fi</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-fi</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-fi@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-fr</Name>
+            <Summary xml:lang="fr">Paquet de langue française pour Firefox</Summary>
+            <Summary xml:lang="en">Paquet de langue française pour Firefox</Summary>
+            <IsA>locale:fr</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-fr</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-fr@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-hr</Name>
+            <Summary xml:lang="hr">Hrvatski jezični paket za Firefox</Summary>
+            <Summary xml:lang="en">Hrvatski jezični paket za Firefox</Summary>
+            <IsA>locale:hr</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-hr</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-hr@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-hu</Name>
+            <Summary xml:lang="en">Magyar nyelvű pack for Firefox</Summary>
+            <Summary xml:lang="hu">Magyar nyelvű pack for Firefox</Summary>
+            <IsA>locale:hu</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-hu</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-hu@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-it</Name>
+            <Summary xml:lang="en">Language Pack italiano per Firefox</Summary>
+            <Summary xml:lang="it">Language Pack italiano per Firefox</Summary>
+            <IsA>locale:it</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-it</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-it@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-lt</Name>
+            <Summary xml:lang="lt">Lietuvių kalbos paketas Firefox</Summary>
+            <Summary xml:lang="en">Lietuvių kalbos paketas Firefox</Summary>
+            <IsA>locale:lt</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-lt</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-lt@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-nl</Name>
+            <Summary xml:lang="en">Nederlands taalpakket voor Firefox</Summary>
+            <Summary xml:lang="nl">Nederlands taalpakket voor Firefox</Summary>
+            <IsA>locale:nl</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-nl</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-nl@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-pl</Name>
+            <Summary xml:lang="en">Polski pakiet językowy dla programu Firefox</Summary>
+            <Summary xml:lang="pl">Polski pakiet językowy dla programu Firefox</Summary>
+            <IsA>locale:pl</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-pl</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-pl@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-pt-BR</Name>
+            <Summary xml:lang="en">Pacote de idioma português para o Firefox</Summary>
+            <Summary xml:lang="pt-BR">Pacote de idioma português para o Firefox</Summary>
+            <IsA>locale:pt-BR</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-pt-BR</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-pt-BR@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-pt-PT</Name>
+            <Summary xml:lang="pt-PT">Pacote de idioma português para o Firefox</Summary>
+            <Summary xml:lang="en">Pacote de idioma português para o Firefox</Summary>
+            <IsA>locale:pt-PT</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-pt-PT</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-pt-PT@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-ro</Name>
+            <Summary xml:lang="en">Pachet de limba română pentru Firefox</Summary>
+            <Summary xml:lang="ro">Pachet de limba română pentru Firefox</Summary>
+            <IsA>locale:ro</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-ro</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-ro@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-ru</Name>
+            <Summary xml:lang="ru">Русский языковый пакет для Firefox</Summary>
+            <Summary xml:lang="en">Русский языковый пакет для Firefox</Summary>
+            <IsA>locale:ru</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-ru</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-ru@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-sr</Name>
+            <Summary xml:lang="sr">Паковање српски језик за Фирефок</Summary>
+            <Summary xml:lang="en">Паковање српски језик за Фирефок</Summary>
+            <IsA>locale:sr</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-sr</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-sr@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-sv-SE</Name>
+            <Summary xml:lang="sv-SE">Svenska språkpaket för Firefox</Summary>
+            <Summary xml:lang="en">Svenska språkpaket för Firefox</Summary>
+            <IsA>locale:sv-SE</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-sv-SE</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-sv-SE@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-tr</Name>
+            <Summary xml:lang="en">Firefox için Türkçe dil dosyası</Summary>
+            <Summary xml:lang="tr">Firefox için Türkçe dil dosyası</Summary>
+            <IsA>locale:tr</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-tr</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-tr@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>firefox-lang-uk</Name>
+            <Summary xml:lang="en">Український мовний пакет для Firefox</Summary>
+            <Summary xml:lang="uk">Український мовний пакет для Firefox</Summary>
+            <IsA>locale:uk</IsA>
+            <PartOf>system.locale</PartOf>
+            <Icon>lang-uk</Icon>
+            <RuntimeDependencies>
+                <Dependency releaseFrom="2">firefox</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-uk@firefox.mozilla.org</Path>
+            </Files>
+        </Package>
         <History>
+            <Update release="2">
+                <Date>2017-01-25</Date>
+                <Version>50.1.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>50.1.0</Version>
@@ -33907,6 +34715,172 @@
                 <Date>2016-07-26</Date>
                 <Version>0.5.11</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>chromium</Name>
+            <Homepage>http://code.google.com/chromium</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>network.web</PartOf>
+            <Summary xml:lang="en">A WebKit powered web browser</Summary>
+            <Description xml:lang="en">Chromium-browser is an open-source web browser, powered by WebKit.</Description>
+            <Icon>chromium</Icon>
+            <Archive type="tarxz" sha1sum="8a36da476a83068871ea0e6b1a92cb52b7f049be">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-55.0.2883.75.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>at-spi2-atk</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>faac</Dependency>
+                <Dependency>ffmpeg</Dependency>
+                <Dependency>flac</Dependency>
+                <Dependency>pciutils</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>jack-audio-connection-kit</Dependency>
+                <Dependency>libavc1394</Dependency>
+                <Dependency>libgnome-keyring</Dependency>
+                <Dependency>speech-dispatcher</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gsm</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>hunspell</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>imlib2</Dependency>
+                <Dependency>lame</Dependency>
+                <Dependency>libdc1394</Dependency>
+                <Dependency>libdrm</Dependency>
+                <Dependency>libevent</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>libmtp</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>libopus</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>libtheora</Dependency>
+                <Dependency>libvdpau</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>libvpx</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>opencore-amr</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>python-lxml</Dependency>
+                <Dependency>schroedinger</Dependency>
+                <Dependency>snappy</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>speex</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>valgrind</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>x264</Dependency>
+                <Dependency>xdg-utils</Dependency>
+                <Dependency>xvid</Dependency>
+                <Dependency>ninja</Dependency>
+                <Dependency>libffi</Dependency>
+                <Dependency>yasm</Dependency>
+                <Dependency>usbutils</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">chromium-52.0.2743.116-unset-madv_free.patch</Patch>
+                <Patch level="1">chromium-widevine.patch</Patch>
+                <Patch level="1">chromium-icu58.patch</Patch>
+                <Patch level="1">limelinux/gfx_jpeg_codec.patch</Patch>
+                <Patch level="1">limelinux/fix_build_with_newer_gcc.patch</Patch>
+                <Patch level="1">limelinux/last_commit_position.patch</Patch>
+            </Patches>
+            <SourceURI>network/web/chromium/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>chromium</Name>
+            <RuntimeDependencies>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>flac</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libevent</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>libopus</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>minizip</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>pepperflash</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>speech-dispatcher</Dependency>
+                <Dependency>speex</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>pciutils</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>snappy</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>harfbuzz</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/lib/chromium-browser/master_preferences" permission="0644" owner="root">master_preferences</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/chromium-browser.desktop" permission="0644" owner="root">chromium-browser.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-12</Date>
+                <Version>55.0.2883.75</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -36365,12 +37339,11 @@
             <Description xml:lang="fr">Le format de Graphique Réseau Portable (Portable Network Graphics - PNG) a été conçu pour remplacer le format GIF plus simple et vieillissant ainsi que, d&apos;une certaine manière, le format TIFF beaucoup plus complexe. L&apos;objectif principal du projet est de se concentrer sur deux aspects majeurs : La toile mondiale (World Wide Web - WWW) et l&apos;édition d&apos;image.</Description>
             <Description xml:lang="en">The Portable Network Graphics (PNG) format was designed to replace the older and simpler GIF format and, to some extent, the much more complex TIFF format. Project&apos;s main aim is to concentrate on two major uses: the World Wide Web (WWW) and image-editing.</Description>
             <Description xml:lang="tr">Taşınabilir Ağ Grafikleri (PNG) formatı eski ve daha basit GIF formatının yerine geçmek ve daha karmaşık yapıdaki TIFF formatını biraz daha genişletmek için tasarlanmıştır. Projenin ana hedefi iki önemli parça üzerine konsantre olmaktır: World Wide Web (WWW) ve resim düzenleme.</Description>
-            <Archive type="tarxz" sha1sum="c6e06510d30beba08c96c468ab269fafb2bb256f">mirrors://sourceforge/libpng/libpng-1.6.18.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="ff4dceadb15e2c929ad26283118d56f66f4a6cff">http://downloads.sourceforge.net/libpng/libpng-1.6.28.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>zlib</Dependency>
             </BuildDependencies>
             <Patches>
-                <Patch compressionType="gz" level="1">libpng-1.6.18-apng.patch.gz</Patch>
                 <Patch level="1">libpng-multilib.patch</Patch>
             </Patches>
             <SourceURI>multimedia/graphics/libpng/pspec.xml</SourceURI>
@@ -36389,6 +37362,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-01-21</Date>
+                <Version>1.6.18</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.6.18</Version>
@@ -36821,7 +37801,7 @@
             <Summary xml:lang="tr">webp resim formatı kütüphanesi ve png,jpeg,tiff resim formatlarına dönüştürme aracı</Summary>
             <Description xml:lang="en">webp image format and format conversion png,jpeg,tiff</Description>
             <Description xml:lang="tr">webp resim formatı kütüphanesi ve png,jpeg,tiff resim formatlarına dönüştürme aracı</Description>
-            <Archive type="targz" sha1sum="1c307a61c4d0018620b4ba9a58e8f48a8d6640ef">http://downloads.webmproject.org/releases/webp/libwebp-0.4.3.tar.gz</Archive>
+            <Archive type="targz" sha1sum="c3adfa47f96a3909fb05e41636fdcbe3826edfbd">http://downloads.webmproject.org/releases/webp/libwebp-0.5.2.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>mesa</Dependency>
                 <Dependency>mesa-glu</Dependency>
@@ -36853,6 +37833,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-01-21</Date>
+                <Version>0.5.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>0.4.3</Version>
@@ -36876,13 +37863,10 @@
             <Summary xml:lang="en">MMX, SSE, and SSE2 SIMD accelerated JPEG library</Summary>
             <Description xml:lang="en">libjpeg-turbo is a derivative of libjpeg for x86 and x86-64 processors which
 uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression and decompression. libjpeg-turbo is generally 2-4x as fast as the unmodified version of libjpeg v6b, all else being equal.</Description>
-            <Archive type="targz" sha1sum="5fa19252e5ca992cfa40446a0210ceff55fbe468">mirrors://sourceforge/libjpeg-turbo/1.3.1/libjpeg-turbo-1.3.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="ebb3f9e94044c77831a3e8c809c7ea7506944622">http://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-1.5.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>nasm</Dependency>
             </BuildDependencies>
-            <Patches>
-                <Patch>fix_doc.patch</Patch>
-            </Patches>
             <SourceURI>multimedia/graphics/libjpeg-turbo/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -36896,6 +37880,13 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>1.5.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.3.1</Version>
@@ -41660,6 +42651,61 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>python3-qt5</Name>
+            <Homepage>http://www.riverbankcomputing.co.uk/software/pyqt</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python3</PartOf>
+            <Summary xml:lang="en">A set of Python bindings for the Qt 5.x Toolkit</Summary>
+            <Description xml:lang="en">Qt is a set of C++ libraries and development tools that includes platform independent abstractions for graphical user interfaces, networking, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, and user and application settings. PyQt implements 440 of these classes as a set of Python modules.</Description>
+            <Archive type="targz" sha1sum="46aae31f8196d4beed878bc70ed9ed2938f3c73f">mirrors://sourceforge/pyqt/PyQt5/PyQt-5.7.1/PyQt5_gpl-5.7.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>dbus</Dependency>
+                <Dependency>python3</Dependency>
+                <Dependency>qt5</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python3/python3-qt5/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python3-qt5</Name>
+            <Summary xml:lang="en">A set of Python 3.x bindings for the Qt 5.x Toolkit</Summary>
+            <RuntimeDependencies>
+                <Dependency>gcc</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>python3</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>python3-sip</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin/pyuic5</Path>
+                <Path fileType="library">/usr/lib/python3.5/site-packages/*</Path>
+                <Path fileType="library">/usr/lib/python2.7/site-packages/*</Path>
+                <Path fileType="library">/usr/lib/qt5/plugins/PyQt5/libpyqt5qmlplugin.so</Path>
+                <Path fileType="library">/usr/lib/qt5/plugins/designer/libpyqt5.so.0</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/qt5/qsci/api/python/PyQt5.api</Path>
+                <Path fileType="executable">/usr/bin/pyrcc5</Path>
+                <Path fileType="executable">/usr/bin/pylupdate5</Path>
+                <Path fileType="data">/usr/share/sip/*</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-01-29</Date>
+                <Version>5.7.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>python3-youtube_dl</Name>
             <Homepage>http://rg3.github.io/youtube-dl</Homepage>
             <Packager>
@@ -42436,6 +43482,54 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>python3-sip</Name>
+            <Homepage>http://www.riverbankcomputing.co.uk/sip</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>programming.language.python3</PartOf>
+            <Summary xml:lang="en">SIP is a tool for generating bindings for C++ classes so that they can be used by Python3</Summary>
+            <Summary xml:lang="tr">C ve C++ kütüphaneleri için python bağlayıcıları oluşturan bir araç</Summary>
+            <Summary xml:lang="pl">Generator powiązań Pythona z bibliotekami klas C++</Summary>
+            <Description xml:lang="en">SIP is a tool for generating bindings for C and C++ libraries so that they can be used by Python3. It takes any C or C++ libraries and converts them into Python extension modules.</Description>
+            <Description xml:lang="tr">SIP3 C ve C++ kütüphanelerini Python&apos;da kullanabilmek için bağlayıcılar oluşturan bir araçtır. Herhangi bir C veya C++ kütüphanesini Python genişletme modülüne dönüştürür.</Description>
+            <Description xml:lang="pl">Generuje powiązania Pythona z bibliotekami klas C++ ze zbioru plików ze specyfikacjami klas. Obsługiwany jest Python 2 i 3.</Description>
+            <Archive type="targz" sha1sum="ac654bacb07dac8e86c138a9f30bf6a04e26845b">mirrors://sourceforge/pyqt/sip-4.19.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt5</Dependency>
+                <Dependency>python3</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python3/python3-sip/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python3-sip</Name>
+            <Summary xml:lang="en">Python 3.x SIP bindings for C and C++ libraries</Summary>
+            <RuntimeDependencies>
+                <Dependency>gcc</Dependency>
+                <Dependency>python3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/licenses</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-18</Date>
+                <Version>4.19</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>python-pygobject</Name>
             <Homepage>http://www.pygtk.org</Homepage>
             <Packager>
@@ -43115,6 +44209,53 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>python-lxml</Name>
+            <Homepage>http://codespeak.net/lxml</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>BSD</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">lxml is the most feature-rich and easy-to-use library</Summary>
+            <Summary xml:lang="tr">Zengin içerikli ve kolay kullanımlı bir kütüphane.</Summary>
+            <Description xml:lang="en">lxml is the most feature-rich and easy-to-use library for working with XML and HTML in the Python language.</Description>
+            <Description xml:lang="tr">Python dilinde xml ve html ile çalışmak için, zengin içerikli ve kolay kullanımlı bir kütüphane.</Description>
+            <Archive type="targz" sha1sum="7a6e92f8ca482aab79835e1c9cd8410400792cd9">http://lxml.de/files/lxml-3.3.5.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>libxml2</Dependency>
+                <Dependency>python</Dependency>
+                <Dependency>cython</Dependency>
+                <Dependency>libxslt</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python/python-lxml/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python-lxml</Name>
+            <RuntimeDependencies>
+                <Dependency>libxslt</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>python</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>3.3.5</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>python-gtksourceview</Name>
             <Homepage>http://www.gnome.org/</Homepage>
             <Packager>
@@ -43588,28 +44729,23 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">Qt5.x araçları için python bağlayıcıları</Summary>
             <Description xml:lang="en">Qt is a set of C++ libraries and development tools that includes platform independent abstractions for graphical user interfaces, networking, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, and user and application settings. PyQt implements 440 of these classes as a set of Python modules.</Description>
             <Description xml:lang="tr">Qt5, C++ kütüphaneleri dizisi ve geliştirme araçları olup grafik kullanıcı arabirimleri için, ağ bağlantısı, iş parçacığı, Unicode, düzenli ifadeler, SQL veritabanları, SVG, OpenGL, XML ve kullanıcıve uygulama ayarları gibi platform bağımsız uygulamalara ayrılır. PyQt, Python modülü seti olarak bu sınıftan 440 kadar uygulamayı çalıştırır.</Description>
-            <Archive type="targz" sha1sum="8920e4094470ff93f79e257c37c46f5cd0bff7ab">mirrors://sourceforge/pyqt/PyQt5/PyQt-5.6/PyQt5_gpl-5.6.tar.gz</Archive>
+            <Archive type="targz" sha1sum="46aae31f8196d4beed878bc70ed9ed2938f3c73f">mirrors://sourceforge/pyqt/PyQt5/PyQt-5.7.1/PyQt5_gpl-5.7.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>dbus</Dependency>
-                <Dependency>dbus-python</Dependency>
-                <Dependency>python</Dependency>
-                <Dependency>python-sip</Dependency>
+                <Dependency>python3</Dependency>
                 <Dependency>qt5</Dependency>
             </BuildDependencies>
-            <Patches>
-                <Patch>PyQt5_gpl-5.6-dbus_ftbfs.patch</Patch>
-            </Patches>
             <SourceURI>programming/language/python/python-qt5/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>python-qt5</Name>
-            <Summary xml:lang="en">A set of Python 2.x bindings for the Qt 5.x Toolkit</Summary>
+            <Summary xml:lang="en">A set of Python 3.x bindings for the Qt 5.x Toolkit</Summary>
             <RuntimeDependencies>
                 <Dependency>libgcc</Dependency>
                 <Dependency>dbus</Dependency>
-                <Dependency>python</Dependency>
-                <Dependency versionFrom="5.6.0">qt5</Dependency>
-                <Dependency>python-sip</Dependency>
+                <Dependency>python3</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>python3-sip</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin/py2uic5</Path>
@@ -43621,6 +44757,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-01-21</Date>
+                <Version>5.7.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>5.6</Version>
@@ -43989,7 +45132,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <PartOf>programming.language.python</PartOf>
             <Summary xml:lang="en">SIP is a tool for generating bindings for C++ classes so that they can be used by Python</Summary>
             <Description xml:lang="en">SIP is a tool for generating bindings for C and C++ libraries so that they can be used by Python. It takes any C or C++ libraries and converts them into Python extension modules.</Description>
-            <Archive type="targz" sha1sum="6704854bc684de3b76c9db61ce54a74e7de5cf45">mirrors://sourceforge/pyqt/sip-4.18.tar.gz</Archive>
+            <Archive type="targz" sha1sum="ac654bacb07dac8e86c138a9f30bf6a04e26845b">mirrors://sourceforge/pyqt/sip-4.19.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>qt5</Dependency>
             </BuildDependencies>
@@ -44010,7 +45153,14 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
+                <Date>2017-01-21</Date>
+                <Version>4.19</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2016-01-21</Date>
                 <Version>4.18</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
@@ -44070,7 +45220,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="en">Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</Description>
             <Description xml:lang="tr">Ruby, basitlik ve üretkenliğe odaklanan açık kaynaklı, dinamik bir betik dilidir. Okuması ve yazması kolay, şık bir sözdizime sahiptir.</Description>
             <Description xml:lang="es">Ruby es un lenguaje dinámico, de código abierto, y con enfoque en simplicidad y productividad. Tiene una sintaxis elegante que permite leer naturalmente y escribirlo de manera fácil.</Description>
-            <Archive type="tarbz2" sha1sum="de97ec6132ac76bb7c0f92b5ca4682138093af1b">ftp://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.2.tar.bz2</Archive>
+            <Archive type="tarxz" sha1sum="038804bbd0e77508dd2510b729a9f3b325489b2e">http://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>tcltk</Dependency>
             </BuildDependencies>
@@ -44090,25 +45240,28 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib/ruby/2.2.0/</Path>
-                <Path fileType="library">/usr/lib/ruby/site_ruby/</Path>
+                <Path fileType="library">/usr/lib/ruby/*</Path>
                 <Path fileType="library">/usr/lib/ruby/vendor_ruby/</Path>
                 <Path fileType="library">/usr/lib/ruby/libruby-static.a</Path>
-                <Path fileType="library">/usr/lib/libruby.so.2.2</Path>
-                <Path fileType="library">/usr/lib/libruby.so.2.2.0</Path>
-                <Path fileType="library">/usr/lib/libruby-static.a</Path>
-                <Path fileType="library">/usr/lib/libruby.so</Path>
+                <Path fileType="library">/usr/lib/libruby*</Path>
                 <Path fileType="doc">/usr/share/ri</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="man">/usr/share/man</Path>
                 <Path fileType="executable">/usr/bin/gem</Path>
                 <Path fileType="library">/usr/lib/ruby/gems</Path>
-                <Path fileType="data">/usr/share/ri/2.2.0/system/Gem</Path>
+                <Path fileType="data">/usr/share/ri/2.4/system/Gem</Path>
                 <Path fileType="header">/usr/include</Path>
                 <Path fileType="header">/usr/lib/pkgconfig</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>2.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.2.2</Version>
@@ -47229,7 +48382,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="en">ICU is a mature, widely used set of C/C++ and Java libraries for Unicode support, software internationalization and globalization (i18n/g11n). This package contains the C/C++ libraries.</Description>
             <Description xml:lang="tr">ICU, Unicode desteği, yazılım uluslararasılaştırma ve yerelleştirme konusunda yaygın olarak kullanılan gelişmiş bir kitaplıktır. ICU, Unicode ve u10a desteği için C/C++ ve Java kitaplıklarını içerir.</Description>
             <Description xml:lang="es">ICU es un conjunto maduro y muy utilizado de librerías C/C++ y Java para soporte Unicode, internacionalización y globalización de software (i18n/g11n). Este paque te contiene las librerías C/C++.</Description>
-            <Archive type="targz" sha1sum="3bb301c11be0e239c653e8aa2925c53f6f4dc88d">http://download.icu-project.org/files/icu4c/55.1/icu4c-55_1-src.tgz</Archive>
+            <Archive type="targz" sha1sum="b67913c90a484c59fda011797c6f3959d84bdc7c">http://download.icu-project.org/files/icu4c/58.2/icu4c-58_2-src.tgz</Archive>
             <SourceURI>programming/misc/icu4c/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -47245,6 +48398,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>58.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>55.1</Version>

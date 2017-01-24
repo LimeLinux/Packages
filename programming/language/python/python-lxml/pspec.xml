@@ -1,0 +1,51 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-lxml</Name>
+        <Homepage>http://codespeak.net/lxml</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>lxml is the most feature-rich and easy-to-use library</Summary>
+        <Description>lxml is the most feature-rich and easy-to-use library for working with XML and HTML in the Python language.</Description>
+        <Archive sha1sum="7a6e92f8ca482aab79835e1c9cd8410400792cd9" type="targz">http://lxml.de/files/lxml-3.3.5.tgz</Archive>
+        <BuildDependencies>
+            <Dependency>libxml2</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>cython</Dependency>
+            <Dependency>libxslt</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--<Patch level="1">python-lxml-2.2.6-fix-2to3.patch</Patch>-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>python-lxml</Name>
+        <RuntimeDependencies>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>python</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>3.3.5</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
