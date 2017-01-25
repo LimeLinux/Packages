@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "chromium%s" % get.srcVERSION()
+WorkDir = "chromium-%s" % get.srcVERSION()
 
 shelltools.export("HOME", get.workDIR())
 
