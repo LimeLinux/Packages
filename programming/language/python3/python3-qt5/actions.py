@@ -29,8 +29,8 @@ def install():
     autotools.rawInstall("-C pyrcc DESTDIR=%(DESTDIR)s INSTALL_ROOT=%(DESTDIR)s" % {'DESTDIR':get.installDIR()})
     autotools.rawInstall("-C pylupdate DESTDIR=%(DESTDIR)s INSTALL_ROOT=%(DESTDIR)s" % {'DESTDIR':get.installDIR()})
     autotools.rawInstall("DESTDIR=%(DESTDIR)s INSTALL_ROOT=%(DESTDIR)s" % {'DESTDIR':get.installDIR()})
-    #pisitools.rename("/usr/lib/qt5/plugins/designer/libpyqt5.so", "libpyqt5.so.0")
-    #pisitools.rename("/usr/lib/python2.7/site-packages/dbus/mainloop/pyqt5.so", "pyqt5.so.0")   
+    pisitools.rename("/usr/lib/qt5/plugins/designer/libpyqt5.so", "libpyqt5.so.0")
+    pisitools.rename("/usr/lib/python2.7/site-packages/dbus/mainloop/pyqt5.so", "pyqt5.so.0")   
 
     
     pisitools.dohtml("doc/html/*")
