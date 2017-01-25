@@ -1,0 +1,19 @@
+diff -u  numpy-1.8.1/numpy/core/src/multiarray/numpyos.c.orig numpy-1.8.1/numpy/core/src/multiarray/numpyos.c
+--- numpy-1.8.1/numpy/core/src/multiarray/numpyos.c.orig	2014-03-25 21:43:24.000000000 +0200
++++ numpy-1.8.1/numpy/core/src/multiarray/numpyos.c	2017-01-25 16:29:01.271964218 +0300
+@@ -529,6 +529,7 @@
+             }
+             memcpy(buffer, s, n);
+             buffer[n] = '\0';
++            result = PyOS_string_to_double(buffer, &q, NULL);
+             result = NumPyOS_ascii_strtod_plain(buffer, &q);
+             if (endptr != NULL) {
+                 *endptr = (char*)(s + (q - buffer));
+@@ -537,6 +538,7 @@
+         }
+     }
+     /* End of ##2 */
++    return PyOS_string_to_double(s, endptr, NULL);
+ 
+     return NumPyOS_ascii_strtod_plain(s, endptr);
+ }

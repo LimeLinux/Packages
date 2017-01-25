@@ -16,7 +16,7 @@
         <IsA>app:gui</IsA>
         <Summary>Firefox Web Browser</Summary>
         <Description>It is more secure and faster to browse the web with Firefox web browser. You can personalize your web browser with many specifications that is not enough to explain in two sentences.</Description>
-        <Archive sha1sum="6024dc49a566ed6296ad6cd707a199d41f090176" type="tarxz">https://ftp.mozilla.org/pub/firefox/releases/50.1.0/source/firefox-50.1.0.source.tar.xz</Archive>
+        <Archive sha1sum="e7219a81b16d34d92872b4604051ce5ddb818126" type="tarxz">https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/51.0/source/firefox-51.0.source.tar.xz</Archive>
         <AdditionalFiles>
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
@@ -51,6 +51,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">firefox-install-dir.patch</Patch>
+            <Patch level="1">harfbuz.patch</Patch>
         </Patches>
     </Source>
 
@@ -526,8 +527,8 @@
     <History>
 		<Update release="2">
             <Date>2017-01-25</Date>
-            <Version>50.1.0</Version>
-            <Comment>First Release</Comment>
+            <Version>51.0</Version>
+            <Comment>Version Bump</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Update>

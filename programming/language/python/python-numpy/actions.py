@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Licensed under the GNU General Public License, version 3.
-# See the file http://www.gnu.org/licenses/gpl.txt
+# Licensed under the GNU General Public License, version 2.
+# See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import pythonmodules
@@ -27,4 +27,4 @@ def install():
     pisitools.doman("numpy/f2py/f2py.1")
 
     pisitools.insinto(f2py_docs, "numpy/f2py/docs/*.txt")
-    pisitools.dodoc("COMPATIBILITY", "DEV_README.txt", "LICENSE.txt", "THANKS.txt")
+    pisitools.dodoc("COMPATIBILITY", "DEV_README.txt", "THANKS.txt")

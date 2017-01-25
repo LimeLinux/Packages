@@ -8,17 +8,19 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import cmaketools
+from pisi.actionsapi import qt4
 from pisi.actionsapi import get
 
 
 def setup():   
     shelltools.makedirs("build")
     shelltools.cd("build")
+    qt4.configure("-DBUILD_TESTING=OFF")
     shelltools.system("qmake ../WebKit.pro")
 
 def build():
-    shelltools.cd("build")
-    autotools.make()
+    qt4.make()
+    qt4.make("docs")
 
 def install():
     shelltools.cd("build")

@@ -19,6 +19,11 @@
             <Dependency>python-nose</Dependency>
             <Dependency>lapack</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">numpy-1.0.1-f2py.patch</Patch>
+            <Patch level="1">numpy-remove-PyOS_ascii_strtod.patch</Patch>
+            <Patch level="0">numpy_doublefree.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
