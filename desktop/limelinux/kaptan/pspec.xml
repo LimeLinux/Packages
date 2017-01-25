@@ -16,10 +16,10 @@
         <Description>Kaptan lets you configure your workspace on first login.</Description>
         <Archive sha1sum="3e7bd80b87298eabb290242d7ea2cde497bcbbd8" type="targz">https://github.com/limelinuxNew/kaptan/archive/beta6.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>python3-setuptools</Dependency>
+            <Dependency>python3</Dependency>
             <Dependency>python3-qt5</Dependency>
-            <Dependency>python3-devel</Dependency>
-            <Dependency>qt5-linguist</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>qt5</Dependency>
         </BuildDependencies>
     </Source>
 

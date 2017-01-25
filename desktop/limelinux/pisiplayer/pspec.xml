@@ -16,8 +16,7 @@
         <Description>Video Player for Pisi Linux</Description>
         <Archive sha1sum="cbd2ea4b1c3377a19cd98fed77c1cf0826d34a86" type="targz">https://github.com/mthnzbk/pisi-player/archive/0.9.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>python3-setuptools</Dependency>
-            <Dependency>python3-devel</Dependency>
+            <Dependency>python3</Dependency>
             <Dependency>python3-qt5</Dependency>
         </BuildDependencies>
     </Source>
@@ -27,7 +26,7 @@
         <RuntimeDependencies>
             <Dependency>python3-qt5</Dependency>
             <Dependency>python3-sip</Dependency>
-            <Dependency>python3-youtube_dl</Dependency>
+            <!--Dependency>python3-youtube_dl</Dependency-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

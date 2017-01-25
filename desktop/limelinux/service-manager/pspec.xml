@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>limelinux-desktop-services</Dependency>
             <Dependency>docutils</Dependency>
-            <Dependency>python-qt5-devel</Dependency>
+            <Dependency>python-qt5</Dependency>
         </BuildDependencies>
     </Source>
 
