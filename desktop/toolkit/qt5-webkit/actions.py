@@ -15,12 +15,12 @@ from pisi.actionsapi import get
 def setup():   
     shelltools.makedirs("build")
     shelltools.cd("build")
-    qt4.configure("-DBUILD_TESTING=OFF")
     shelltools.system("qmake ../WebKit.pro")
 
 def build():
-    qt4.make()
-    qt4.make("docs")
+    shelltools.cd("build")
+    autotools.make()
+    autotools.make("docs")
 
 def install():
     shelltools.cd("build")
