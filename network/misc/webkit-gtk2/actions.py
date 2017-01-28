@@ -46,12 +46,12 @@ def setup():
 def build():
     shelltools.export("CFLAGS", cflags)
     shelltools.export("CXXFLAGS", cxxflags)
-    autotools.make("-j1 all stamp-po")
+    autotools.make()
 
 def install():
     shelltools.export("CFLAGS", cflags)
     shelltools.export("CXXFLAGS", cxxflags)
-    autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall(" DESTDIR=%s" % get.installDIR())
 
     pisitools.domove("/usr/share/gtk-doc/html", "/usr/share/doc/webkit-gtk2")
 

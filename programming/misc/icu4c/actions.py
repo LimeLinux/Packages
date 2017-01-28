@@ -26,11 +26,5 @@ def build():
 
 def install():
     autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
-    pisitools.dosym("/usr/lib/libicudata.so.58.2","/usr/lib/libicudata.so.55")
-    pisitools.dosym("/usr/lib/libicuio.so.58.2","/usr/lib/libicuio.so.55")
-    pisitools.dosym("/usr/lib/libicutest.so.58.2","/usr/lib/libicutest.so.55")
-    pisitools.dosym("/usr/lib/libicutu.so.58.2","/usr/lib/libicutu.so.55")
-    pisitools.dosym("/usr/lib/libicuuc.so.58.2","/usr/lib/libicuuc.so.55")
-    pisitools.dosym("/usr/lib/libicui18n.so.58.2","/usr/lib/libicui18n.so.55")
 
     pisitools.dohtml("../*.html")

@@ -18,6 +18,7 @@
         <BuildDependencies>
             <Dependency>python3</Dependency>
             <Dependency>python3-qt5</Dependency>
+            <Dependency>python3-setuptools</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,7 +32,7 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/lib/pisiplayer</Path>
-            <Path fileType="data">/usr/lib/python3.4/site-packages</Path>
+            <Path fileType="data">/usr/lib/python3.5/site-packages</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="doc">/usr/share/doc</Path>

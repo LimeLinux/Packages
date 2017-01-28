@@ -7,16 +7,27 @@
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import qt4
+from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 import os
 
 WorkDir = "qt-everywhere-opensource-src-%s" % get.srcVERSION().replace('_','-').replace('pre1', 'tp')
+absoluteWorkDir = "%s/%s" % (get.workDIR(), WorkDir)
 
 
 def setup():
+    checkdeletepath="%s/qtbase/src/3rdparty"  % absoluteWorkDir
+    for dir in ('libjpeg', 'freetype', 'libpng', 'zlib', "xcb", "sqlite"):
+        if os.path.exists(checkdeletepath+dir):
+            shelltools.unlinkDir(checkdeletepath+dir)
 
+    filteredCFLAGS = get.CFLAGS().replace("-g3", "-g")
+    filteredCXXFLAGS = get.CXXFLAGS().replace("-g3", "-g")
+
+
+    shelltools.export("CFLAGS", filteredCFLAGS)
+    shelltools.export("CXXFLAGS", filteredCXXFLAGS)
     shelltools.system("unset QMAKESPEC")
     shelltools.export("QT5DIR", get.curDIR())
     shelltools.export("PATH", "%s/bin:%s" % (get.curDIR(), get.ENV("PATH")))

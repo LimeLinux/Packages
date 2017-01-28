@@ -26,8 +26,7 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.dosym("/usr/lib/libwebp.so.6.0.2","/usr/lib/libwebp.so.5")
-    pisitools.dosym("/usr/lib/libwebpdemux.so.2.0.1","/usr/lib/libwebpdemux.so.1")
+
 
     pisitools.dodoc("AUTHORS", "COPYING", "ChangeLog", "NEWS", "PATENTS", "README")
     #shelltools.move("%s/libwebp-0.2.1/doc/*" % get.workDIR(),"%s/usr/share/doc/webp" % get.installDIR())

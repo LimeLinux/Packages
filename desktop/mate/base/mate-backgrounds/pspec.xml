@@ -16,24 +16,27 @@
 	    <BuildDependencies>
              <Dependency>mate-common</Dependency>
              <Dependency>intltool</Dependency>
+             <Dependency>gtksourceview3</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">mate-backgrounds-1.6.1-add-image.patch</Patch>
         </Patches>
         <AdditionalFiles>
-            <AdditionalFile target="nature/1.jpg">nature/1.jpg</AdditionalFile>
-            <AdditionalFile target="nature/2.jpg">nature/2.jpg</AdditionalFile>
-            <AdditionalFile target="nature/3.jpg">nature/3.jpg</AdditionalFile>
-            <AdditionalFile target="nature/4.jpg">nature/4.jpg</AdditionalFile>
-            <AdditionalFile target="nature/5.jpg">nature/5.jpg</AdditionalFile>
-            <AdditionalFile target="nature/6.jpg">nature/6.jpg</AdditionalFile>
-            <AdditionalFile target="nature/7.jpg">nature/7.jpg</AdditionalFile>
-            <AdditionalFile target="nature/8.jpg">nature/8.jpg</AdditionalFile>
+            <AdditionalFile target="nature/1.png">nature/1.png</AdditionalFile>
+            <AdditionalFile target="nature/2.png">nature/2.png</AdditionalFile>
+            <AdditionalFile target="nature/3.png">nature/3.png</AdditionalFile>
+            <AdditionalFile target="nature/4.png">nature/4.png</AdditionalFile>
+            <AdditionalFile target="nature/5.png">nature/5.png</AdditionalFile>
+            <AdditionalFile target="nature/6.png">nature/6.png</AdditionalFile>
         </AdditionalFiles>
     </Source>
-
     <Package>
         <Name>mate-backgrounds</Name>
+        <RuntimeDependencies>
+             <Dependency>mate-common</Dependency>
+             <Dependency>intltool</Dependency>
+             <Dependency>gtksourceview3</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
@@ -44,6 +47,13 @@
     </Package>
 
     <History>
+         <Update release="2">
+            <Date>2017-01-12</Date>
+            <Version>1.17.0</Version>
+            <Comment>First release</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2017-01-12</Date>
             <Version>1.17.0</Version>
