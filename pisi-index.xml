@@ -5780,6 +5780,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>2.6</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.6</Version>
@@ -10347,7 +10354,7 @@
             <Description xml:lang="en">Netscape Portable Runtime (NSPR) provides a platform-neutral API for system level and libc like functions. The API is used in the Mozilla client, many of Netscape/AOL/iPlanet&apos;s and other software offerings.</Description>
             <Description xml:lang="tr">Netscape Taşınabilir çalışma Zamanı (NSPR) sistem seviyesindeki libc ve benzeri fonksiyonlar için platform bağımsız bir programlama arayüzü sunar. Bu arayüz, Mozilla istemcilerinde, Netscape/AOL/iPlanet&apos;in diğer yazılımlarında kullanılmaktadır.</Description>
             <Description xml:lang="es">Netscape Portable Runtime (NSPR) provee un API independiente de la plataforma a nivel de sistema y funciones como libc. El API está usado en el cliente Mozilla, y muchos otros software de Netscape/AOL/iPlanet.</Description>
-            <Archive type="targz" sha1sum="c9274bb5cc33a388a7e8cd9b378873c59190f74b">https://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.13/src/nspr-4.13.tar.gz</Archive>
+            <Archive type="targz" sha1sum="ec6660257d41267a0e6ee25812e9012cb9ddd274">https://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.13.1/src/nspr-4.13.1.tar.gz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target="nspr/config/nspr.pc.in">nspr.pc.in</AdditionalFile>
                 <AdditionalFile target="generate-pc-config.sh" permission="0755">generate-pc-config.sh</AdditionalFile>
@@ -10363,6 +10370,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-01-21</Date>
+                <Version>4.13.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>4.13</Version>
@@ -11485,56 +11499,6 @@
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.6.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>qtermwidget5</Name>
-            <Homepage>https://github.com/qterminal/qtermwidget</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:gui</IsA>
-            <PartOf>desktop.toolkit</PartOf>
-            <Summary xml:lang="en">Terminal widget for Qt5</Summary>
-            <Summary xml:lang="tr">Qt tabanlı uygulamalar için basit bir terminal modulü</Summary>
-            <Description xml:lang="en">A simple terminal widget for using with Qt5 based applications</Description>
-            <Archive type="tarxz" sha1sum="fc3afd69fcc449d7f3f225ae2f36e529cbce411d">https://github.com/qterminal/qtermwidget/releases/download/0.6.0/qtermwidget-0.6.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>cmake</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>qt5</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/toolkit/qtermwidget5/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>qtermwidget5</Name>
-            <Summary xml:lang="en">Development files for qtermwidget5</Summary>
-            <RuntimeDependencies>
-                <Dependency>libgcc</Dependency>
-                <Dependency>qt5</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin/consoleq</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>0.6.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -12715,6 +12679,56 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>qtermwidget5</Name>
+            <Homepage>https://github.com/qterminal/qtermwidget</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.toolkit.qt5</PartOf>
+            <Summary xml:lang="en">Terminal widget for Qt5</Summary>
+            <Summary xml:lang="tr">Qt tabanlı uygulamalar için basit bir terminal modulü</Summary>
+            <Description xml:lang="en">A simple terminal widget for using with Qt5 based applications</Description>
+            <Archive type="tarxz" sha1sum="fc3afd69fcc449d7f3f225ae2f36e529cbce411d">https://github.com/qterminal/qtermwidget/releases/download/0.6.0/qtermwidget-0.6.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/toolkit/qt5/qtermwidget5/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qtermwidget5</Name>
+            <Summary xml:lang="en">Development files for qtermwidget5</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin/consoleq</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-21</Date>
+                <Version>0.6.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>qt5-webengine</Name>
             <Homepage>http://qt.digia.com/</Homepage>
             <Packager>
@@ -12722,12 +12736,12 @@
                 <Email>admin@limelinux.com</Email>
             </Packager>
             <License>LGPLv2.1-linking-exception</License>
-            <PartOf>desktop.toolkit</PartOf>
+            <PartOf>desktop.toolkit.qt5</PartOf>
             <Summary xml:lang="en">Provides support for web applications using the Chromium browser project</Summary>
             <Summary xml:lang="tr">Chromium tarayıcı projelerini kullanan web uygulamaları için destek sağlar</Summary>
             <Description xml:lang="en">Provides support for web applications using the Chromium browser project</Description>
             <Description xml:lang="tr">Chromium tarayıcı projelerini kullanan web uygulamaları için destek sağlar</Description>
-            <Archive type="tarxz" sha1sum="bff07a36115d0a3f44e396c738ce9579ef2cec5b">http://download.qt.io/official_releases/qt/5.7/5.7.0/submodules/qtwebengine-opensource-src-5.7.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="758390df92c80fa72ff5df4228b443d5b460a7f0">http://download.qt.io/official_releases/qt/5.7/5.7.1/submodules/qtwebengine-opensource-src-5.7.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>qt5</Dependency>
                 <Dependency>bison</Dependency>
@@ -12774,7 +12788,7 @@
                 <Dependency>zlib</Dependency>
                 <Dependency>git</Dependency>
             </BuildDependencies>
-            <SourceURI>desktop/toolkit/qt5-webengine/pspec.xml</SourceURI>
+            <SourceURI>desktop/toolkit/qt5/qt5-webengine/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>qt5-webengine</Name>
@@ -12822,6 +12836,13 @@
         </Package>
         <History>
             <Update release="1">
+                <Date>2017-07-26</Date>
+                <Version>5.7.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+            <Update release="1">
                 <Date>2016-07-26</Date>
                 <Version>5.7.0</Version>
                 <Comment>First Release</Comment>
@@ -12839,7 +12860,7 @@
                 <Email>admin@limelinux.com</Email>
             </Packager>
             <License>LGPLv2.1-linking-exception</License>
-            <PartOf>desktop.toolkit</PartOf>
+            <PartOf>desktop.toolkit.qt5</PartOf>
             <Summary xml:lang="en">Classes for a WebKit2 based implementation and a new QML API</Summary>
             <Summary xml:lang="tr">WebKit2 tabanlı uygulama ve yeni QML API için sınıflar</Summary>
             <Description xml:lang="en">Classes for a WebKit2 based implementation and a new QML API</Description>
@@ -12876,7 +12897,7 @@
                 <Dependency>gstreamer-next</Dependency>
                 <Dependency>gst-plugins-base-next</Dependency>
             </BuildDependencies>
-            <SourceURI>desktop/toolkit/qt5-webkit/pspec.xml</SourceURI>
+            <SourceURI>desktop/toolkit/qt5/qt5-webkit/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>qt5-webkit</Name>
@@ -12928,7 +12949,7 @@
             <License>LGPLv2.1</License>
             <License>GPLv3</License>
             <IsA>library</IsA>
-            <PartOf>desktop.toolkit</PartOf>
+            <PartOf>desktop.toolkit.qt5</PartOf>
             <Summary xml:lang="en">Qt toolkit version 4</Summary>
             <Summary xml:lang="tr">Qt araç takımı, sürüm 5</Summary>
             <Description xml:lang="fr">Qt est une boîte à outils graphique multi-plateforme.</Description>
@@ -12956,7 +12977,7 @@
                 <Dependency>libjpeg-turbo</Dependency>
                 <Dependency>gst-plugins-base</Dependency>
             </BuildDependencies>
-            <SourceURI>desktop/toolkit/qt5/pspec.xml</SourceURI>
+            <SourceURI>desktop/toolkit/qt5/qt5/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>qt5</Name>
@@ -14608,9 +14629,9 @@
             <Icon>pisiplayer</Icon>
             <Archive type="targz" sha1sum="cbd2ea4b1c3377a19cd98fed77c1cf0826d34a86">https://github.com/mthnzbk/pisi-player/archive/0.9.tar.gz</Archive>
             <BuildDependencies>
-                <Dependency>python3-setuptools</Dependency>
-                <Dependency>python3-devel</Dependency>
+                <Dependency>python3</Dependency>
                 <Dependency>python3-qt5</Dependency>
+                <Dependency>python3-setuptools</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/limelinux/pisiplayer/pspec.xml</SourceURI>
         </Source>
@@ -14619,12 +14640,11 @@
             <RuntimeDependencies>
                 <Dependency>python3-qt5</Dependency>
                 <Dependency>python3-sip</Dependency>
-                <Dependency>python3-youtube_dl</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/lib/pisiplayer</Path>
-                <Path fileType="data">/usr/lib/python3.4/site-packages</Path>
+                <Path fileType="data">/usr/lib/python3.5/site-packages</Path>
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/icons</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
@@ -14658,10 +14678,9 @@
             <Icon>limelinux-welcome</Icon>
             <Archive type="targz" sha1sum="cde9530f2ba60be79f4cd89e4cfc62d59d6d4d6a">https://github.com/limelinuxNew/limelinux-welcome/archive/1.0Beta4.tar.gz</Archive>
             <BuildDependencies>
-                <Dependency>python3-setuptools</Dependency>
+                <Dependency>python3</Dependency>
                 <Dependency>python3-qt5</Dependency>
-                <Dependency>python3-devel</Dependency>
-                <Dependency>qt5-linguist</Dependency>
+                <Dependency>qt5</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/limelinux/limelinux-welcome/pspec.xml</SourceURI>
         </Source>
@@ -14707,11 +14726,11 @@
             <Description xml:lang="fr">Le gestionnaire de Service est utilisé pour administrer les services lancés dans Pisi Linux.</Description>
             <Description xml:lang="en">This system service configuration software is developed for Pisi Linux. It provides managing system services.</Description>
             <Description xml:lang="tr">Servis yöneticisi, Pisi Linux&apos;da çalışan sunucu ve servislerin yönetilmesini sağlar</Description>
-            <Archive type="targz" sha1sum="70f31cd176beb227769c6431198e7fb5ef0102b1">https://github.com/limelinuxNew/service-manager/archive/3.1.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="70f31cd176beb227769c6431198e7fb5ef0102b1">https://github.com/PisiLinuxNew/service-manager/archive/3.1.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>limelinux-desktop-services</Dependency>
                 <Dependency>docutils</Dependency>
-                <Dependency>python-qt5-devel</Dependency>
+                <Dependency>python-qt5</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/limelinux/service-manager/pspec.xml</SourceURI>
         </Source>
@@ -14755,11 +14774,11 @@
             <Description xml:lang="tr">Pisi ile yapılan işlem geçmişini gösterme, sistemi belirli noktaya döndürme, yeni görüntü alma gibi geçmiş yönetimi işlemleri yapmayı sağlayan araç.</Description>
             <Archive type="targz" sha1sum="100f05962b829e781fc336b47bf85a210a93859a">https://github.com/limelinuxNew/history-manager/archive/0.2.8.0-Beta.tar.gz</Archive>
             <BuildDependencies>
-                <Dependency>python-qt5-devel</Dependency>
+                <Dependency>python-qt5</Dependency>
                 <Dependency>pypolkit</Dependency>
-                <Dependency>qt5-base-devel</Dependency>
-                <Dependency>python-setuptools</Dependency>
-                <Dependency>qt5-linguist</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>python</Dependency>
+                <Dependency>qt5</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/limelinux/history-manager/pspec.xml</SourceURI>
         </Source>
@@ -14806,10 +14825,10 @@
             <Icon>kaptan</Icon>
             <Archive type="targz" sha1sum="3e7bd80b87298eabb290242d7ea2cde497bcbbd8">https://github.com/limelinuxNew/kaptan/archive/beta6.tar.gz</Archive>
             <BuildDependencies>
-                <Dependency>python3-setuptools</Dependency>
+                <Dependency>python3</Dependency>
                 <Dependency>python3-qt5</Dependency>
-                <Dependency>python3-devel</Dependency>
-                <Dependency>qt5-linguist</Dependency>
+                <Dependency>python3</Dependency>
+                <Dependency>qt5</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/limelinux/kaptan/pspec.xml</SourceURI>
         </Source>
@@ -14849,7 +14868,7 @@
             </Packager>
             <License>GPLv3</License>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.extras</PartOf>
             <Summary xml:lang="en">A set of symbols and convience functions that all indicators would like to use.</Summary>
             <Description xml:lang="en">Libary with a set of symbols and convience functions that all indicators would like to use (GTK+ 2 library)</Description>
             <Archive type="targz" sha1sum="25c8a0a150651ee6b2198df3f36fcbb49f0295c2">https://launchpad.net/libindicator/12.10/12.10.1/+download/libindicator-12.10.1.tar.gz</Archive>
@@ -14895,7 +14914,7 @@
             </Packager>
             <License>GPLv2+</License>
             <IsA>data</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Default wallpapers for the Mate desktop</Summary>
             <Summary xml:lang="tr">Mate masaüstü için öntanımlı duvar kağıtları</Summary>
             <Description xml:lang="en">gnome-backgrounds contains default wallpapers for the Mate desktop.</Description>
@@ -14914,6 +14933,7 @@
             <BuildDependencies>
                 <Dependency>mate-common</Dependency>
                 <Dependency>intltool</Dependency>
+                <Dependency>gtksourceview3</Dependency>
             </BuildDependencies>
             <Patches>
                 <Patch level="1">mate-backgrounds-1.6.1-add-image.patch</Patch>
@@ -14922,6 +14942,11 @@
         </Source>
         <Package>
             <Name>mate-backgrounds</Name>
+            <RuntimeDependencies>
+                <Dependency>mate-common</Dependency>
+                <Dependency>intltool</Dependency>
+                <Dependency>gtksourceview3</Dependency>
+            </RuntimeDependencies>
             <Files>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="data">/usr/share/pixmaps</Path>
@@ -14931,6 +14956,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-01-12</Date>
+                <Version>1.17.0</Version>
+                <Comment>First release</Comment>
+                <Name>Ali Murat Algül</Name>
+                <Email>alimuratgulle@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2017-01-12</Date>
                 <Version>1.17.0</Version>
@@ -14950,7 +14982,7 @@
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Mate Menus</Summary>
             <Summary xml:lang="tr">Mate menüleri</Summary>
             <Description xml:lang="en">mate-menus has got desktop-directories, Mate menus library and its python bindings.</Description>
@@ -14997,7 +15029,7 @@
             <License>GPLv2+</License>
             <License>LGPLv2+</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">libmateweather</Summary>
             <Summary xml:lang="tr">libmateweather</Summary>
             <Description xml:lang="en">libmateweather is a collection of documentation utilities for the Mate project.</Description>
@@ -15051,7 +15083,7 @@
             <License>GPLv2+</License>
             <License>LGPLv2+</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">The MATE Desktop configuration tool</Summary>
             <Summary xml:lang="tr">Mate yapılandırma araçları</Summary>
             <Description xml:lang="en">mate-control-center is Mate&apos;s main interface for configuration of various aspects of your Mate desktop.</Description>
@@ -15148,7 +15180,7 @@
             <License>GPLv2+</License>
             <License>LGPLv2+</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Calculator for the Mate desktop environment</Summary>
             <Description xml:lang="en">mate-calc, Mate masaüstü için hesap makinesi.</Description>
             <Icon>desktop</Icon>
@@ -15196,7 +15228,7 @@
             </Packager>
             <License>GPLv3</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Eye of MATE, an image viewer for MATE</Summary>
             <Summary xml:lang="tr">Mate için resim görüntüleyicisi</Summary>
             <Description xml:lang="en">This is the Eye of MATE, an image viewer program.  It is meant to be a fast and functional image viewer.</Description>
@@ -15269,7 +15301,7 @@
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Mate metin editörü</Summary>
             <Description xml:lang="en">mate masaüstü için metin editörü.</Description>
             <Icon>accessories-text-editor</Icon>
@@ -15344,7 +15376,7 @@
             </Packager>
             <License>GPLv2+</License>
             <IsA>data</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Applets for MATE panel (GTK2 version</Summary>
             <Description xml:lang="en">Applets for MATE panel (GTK2 version</Description>
             <Archive type="tarxz" sha1sum="64742a98be03cf89099dbdd14e7b6baf2f9a0c2f">http://pub.mate-desktop.org/releases/1.17/mate-applets-1.17.0.tar.xz</Archive>
@@ -15392,7 +15424,7 @@
             </Packager>
             <License>GPLv3</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">MATE terminal emulator application</Summary>
             <Description xml:lang="en">mate-terminal, masaüstü için terminal uygulaması.</Description>
             <Description xml:lang="tr">mate-terminal, masaüstü için terminal uygulaması.</Description>
@@ -15457,7 +15489,7 @@
             <License>GPLv2+</License>
             <License>LGPLv2+</License>
             <IsA>data</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Mate icon theme</Summary>
             <Summary xml:lang="tr">Mate simge teması</Summary>
             <Description xml:lang="en">mate-icon-theme package contains the default icon theme used by the Mate desktop.</Description>
@@ -15502,7 +15534,7 @@
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Process and resource monitor</Summary>
             <Description xml:lang="en">Process viewer and system resource monitor for MATE</Description>
             <Icon>utilities-system-monitor</Icon>
@@ -15570,7 +15602,7 @@
             <License>GPLv2+</License>
             <License>LGPLv2+</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Basic Mate libraries and dialogs</Summary>
             <Summary xml:lang="tr">Mate masaüstü</Summary>
             <Description xml:lang="en">mate-desktop contains basic Mate libraries and information applications.</Description>
@@ -15643,7 +15675,7 @@
             </Packager>
             <License>GPLv3</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">User level public file sharing via WebDAV or ObexFTP</Summary>
             <Description xml:lang="en">mate-user-share is a small package that binds together various free software projects to bring easy to use user-level file sharing to the masses.</Description>
             <Icon>mate-file-share-properties</Icon>
@@ -15698,7 +15730,7 @@
             <License>LGPLv2+</License>
             <IsA>app:gui</IsA>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Authentication agent for polkit</Summary>
             <Summary xml:lang="tr">polkit için kimlik denetim yardımcısı</Summary>
             <Description xml:lang="en">mate-polkit package provides an authentication agent for polkit that integrates well with the Mate desktop environment.</Description>
@@ -15758,7 +15790,7 @@
             <License>GPLv2+</License>
             <License>LGPLv2+</License>
             <IsA>data</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">MATE Desktop themes</Summary>
             <Summary xml:lang="tr">Mate temaları</Summary>
             <Description xml:lang="en">mate-themes, mate masaüstü temalarını barındırır.</Description>
@@ -15812,7 +15844,7 @@
             <License>GPLv2+</License>
             <License>LGPLv2+</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Default file manager for the Mate desktop.</Summary>
             <Summary xml:lang="tr">Mate masasütü için öntanımlı dosya yöneticisi</Summary>
             <Description xml:lang="en">Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
@@ -15904,7 +15936,7 @@
             </Packager>
             <License>LGPL</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Mixer library for MATE Desktop</Summary>
             <Description xml:lang="en">Mixer library for MATE Desktop</Description>
             <Archive type="tarxz" sha1sum="c16d1f7df5fc1267f7e3caadfcc963730b3e5745">http://pub.mate-desktop.org/releases/1.17/libmatemixer-1.17.0.tar.xz</Archive>
@@ -15962,7 +15994,7 @@
             </Packager>
             <License>GPLv3+</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Common files for development of Mate packages</Summary>
             <Summary xml:lang="tr">Mate uygulamalarının geliştirmede kullandığı yaygın dosyalar</Summary>
             <Description xml:lang="en">maate-common package contains aclocal macros, makefile headers and documents tools in order to build Mate sources.</Description>
@@ -16000,7 +16032,7 @@
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">GTK+ based window manager</Summary>
             <Summary xml:lang="tr">GTK+ tabanlı pencere yöneticisi</Summary>
             <Description xml:lang="en">Marco is a small window manager, using GTK+ to do everything.</Description>
@@ -16093,7 +16125,7 @@
             </Packager>
             <License>GPLv3</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Atril is a document viewer for the MATE desktop</Summary>
             <Description xml:lang="en">Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript.</Description>
             <Icon>atril</Icon>
@@ -16181,7 +16213,7 @@
             </Packager>
             <License>GPLv3.0</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">MATE media programs</Summary>
             <Description xml:lang="en">This package contains a few media utilities for the MATE desktop, including a volume control.</Description>
             <Icon>multimedia-volume-control</Icon>
@@ -16257,7 +16289,7 @@
             </Packager>
             <License>GPLv2+</License>
             <IsA>data</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Applets for MATE panel (GTK2 version)</Summary>
             <Description xml:lang="en">Applets for MATE panel (GTK3 version)</Description>
             <Archive type="tarxz" sha1sum="64742a98be03cf89099dbdd14e7b6baf2f9a0c2f">http://pub.mate-desktop.org/releases/1.17/mate-applets-1.17.0.tar.xz</Archive>
@@ -16295,7 +16327,7 @@
             </Packager>
             <License>GPLv3</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Mate için güç yöneticisi</Summary>
             <Summary xml:lang="tr">Mate için güç yöneticisi</Summary>
             <Description xml:lang="en">Power management tool for the MATE desktop.</Description>
@@ -16374,7 +16406,7 @@
             <License>GPLv2+</License>
             <License>LGPLv2+</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">GNOME keybord configration library</Summary>
             <Summary xml:lang="tr">Mate klavye kontrol kütüphanesi</Summary>
             <Description xml:lang="en">libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
@@ -16432,7 +16464,7 @@
             </Packager>
             <License>GPLv3</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">MATE utility programs</Summary>
             <Description xml:lang="en">The mate-utils package contains a set of small &quot;desk accessory&quot; utility applications for MATE, such as a dictionary, a disk usage analyzer, a screenshot tool and others.</Description>
             <Icon>system-search</Icon>
@@ -16497,7 +16529,7 @@
             </Packager>
             <License>GPLv2+</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">MATE Session Manager</Summary>
             <Description xml:lang="en">MATE session manager, as well as a configuration program to choose applications starting on login.</Description>
             <Icon>mate-session-properties</Icon>
@@ -16567,7 +16599,7 @@
             </Packager>
             <License>GPLv3</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Mate file manager eklentileri</Summary>
             <Summary xml:lang="tr">Caja eklentileri</Summary>
             <Description xml:lang="en">caja-extensions, Mate file manager eklentileri.</Description>
@@ -16627,7 +16659,7 @@
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">GNOME panel</Summary>
             <Summary xml:lang="tr">Mate paneli</Summary>
             <Description xml:lang="en">GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
@@ -16711,7 +16743,7 @@
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Mate notification daemon</Summary>
             <Summary xml:lang="tr">Mate masaüstü bilgilendirme hizmeti</Summary>
             <Description xml:lang="en">mate-notification-daemon is the server implementation of the Mate desktop notification specification.</Description>
@@ -16777,7 +16809,7 @@
             </Packager>
             <License>GPLv3</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Engrampa is an archive manager for the MATE environment.</Summary>
             <Description xml:lang="en">Engrampa is an archive manager for the MATE environment.  This means that you can create and modify archives; view the content of an archive; view and modify a file contained in the archive; extract files from the archive.</Description>
             <Icon>engrampa</Icon>
@@ -16838,7 +16870,7 @@
             </Packager>
             <License>GPLv2+</License>
             <IsA>service</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">System settings daemon for MATE desktop</Summary>
             <Description xml:lang="en">gnome-settings-daemon shares MATE specific settings with other applications via DBus connection.</Description>
             <Archive type="tarxz" sha1sum="24e8ff57d4a10a217a26d47b634412c38cba09db">http://pub.mate-desktop.org/releases/1.17/mate-settings-daemon-1.17.0.tar.xz</Archive>
@@ -17894,6 +17926,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>1.2.7</Version>
+                <Comment>Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.2.7</Version>
@@ -29630,7 +29669,7 @@
             <Description xml:lang="en">Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other security standards.</Description>
             <Description xml:lang="tr">NSS, platform bağımsız güvenli ağ servisi geliştirme kitaplıklarından oluşur. Bu kitaplık yardımı ile SSL v2 ve v3, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 sertifikaları ve diğer bir çok güvenlik standardına uygun güvenli sunucu-istemci yazılımları geliştirilebilir.</Description>
             <Description xml:lang="es">Network Security Services (NSS) es un conjunto de librerías para desarrollo cross-plataforma de aplicaciones cliente-servidor con facilidad de seguridad. Aplicaciones usando NSS pueden soportar certificados SSL v2 y v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3, y otros estándares de seguridad.</Description>
-            <Archive type="targz" sha1sum="b63dc5ab4608b9954ffe3edd4152c90e1b93bf6a">https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_27_2_RTM/src/nss-3.27.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="75f220c1c20d8346cde43fb96726d3447c11cf22">https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_28_1_RTM/src/nss-3.28.1.tar.gz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target="dist/pkgconfig/nss.pc.in">nss.pc.in</AdditionalFile>
                 <AdditionalFile target="dist/pkgconfig/nss-config.in">nss-config.in</AdditionalFile>
@@ -29660,6 +29699,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>3.28.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>3.27.2</Version>
@@ -30384,6 +30430,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>8.0.0016</Version>
+                <Comment>Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>8.0.0016</Version>
@@ -31130,6 +31183,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>1.5.6</Version>
+                <Comment>Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.5.6</Version>
@@ -32631,6 +32691,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-06-18</Date>
+                <Version>2.4.11</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-06-18</Date>
                 <Version>2.4.11</Version>
@@ -33150,6 +33217,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-06-18</Date>
+                <Version>2.15.2</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-06-18</Date>
                 <Version>2.15.2</Version>
@@ -34131,7 +34205,7 @@
             <Description xml:lang="pl">Mozilla Firefox – otwarta przeglądarka internetowa oparta na silniku Gecko, stworzona i rozwijana przez Korporację Mozilla oraz ochotników.</Description>
             <Description xml:lang="es">Navegue por la web de forma rápida y segura. Navegador web de código abierto que se puede personalizar con características adicionales.</Description>
             <Icon>firefox</Icon>
-            <Archive type="tarxz" sha1sum="6024dc49a566ed6296ad6cd707a199d41f090176">https://ftp.mozilla.org/pub/firefox/releases/50.1.0/source/firefox-50.1.0.source.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b73255fd4f90fd0c1b107b566679da2df3f31cf1">https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/51.0.1/source/firefox-51.0.1.source.tar.xz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
                 <AdditionalFile target="browserconfig.properties" permission="0644">limelinux/browserconfig.properties</AdditionalFile>
@@ -34235,7 +34309,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-az</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-az@firefox.mozilla.org</Path>
@@ -34249,7 +34323,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-be</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-be@firefox.mozilla.org</Path>
@@ -34263,7 +34337,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-bs</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-bs@firefox.mozilla.org</Path>
@@ -34277,7 +34351,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-ca</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-ca@firefox.mozilla.org</Path>
@@ -34291,7 +34365,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-da</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-da@firefox.mozilla.org</Path>
@@ -34305,7 +34379,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-de</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-de@firefox.mozilla.org</Path>
@@ -34319,7 +34393,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-el</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-el@firefox.mozilla.org</Path>
@@ -34333,7 +34407,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-en-US</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-US@firefox.mozilla.org</Path>
@@ -34347,7 +34421,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-en-ZA</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org</Path>
@@ -34361,7 +34435,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-en-GB</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org</Path>
@@ -34375,7 +34449,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-es-AR</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-es-AR@firefox.mozilla.org</Path>
@@ -34389,7 +34463,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-es-CL</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-es-CL@firefox.mozilla.org</Path>
@@ -34403,7 +34477,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-es-ES</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-es-ES@firefox.mozilla.org</Path>
@@ -34417,7 +34491,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-fi</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-fi@firefox.mozilla.org</Path>
@@ -34431,7 +34505,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-fr</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-fr@firefox.mozilla.org</Path>
@@ -34445,7 +34519,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-hr</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-hr@firefox.mozilla.org</Path>
@@ -34459,7 +34533,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-hu</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-hu@firefox.mozilla.org</Path>
@@ -34473,7 +34547,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-it</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-it@firefox.mozilla.org</Path>
@@ -34487,7 +34561,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-lt</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-lt@firefox.mozilla.org</Path>
@@ -34501,7 +34575,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-nl</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-nl@firefox.mozilla.org</Path>
@@ -34515,7 +34589,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-pl</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-pl@firefox.mozilla.org</Path>
@@ -34529,7 +34603,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-pt-BR</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-pt-BR@firefox.mozilla.org</Path>
@@ -34543,7 +34617,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-pt-PT</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-pt-PT@firefox.mozilla.org</Path>
@@ -34557,7 +34631,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-ro</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-ro@firefox.mozilla.org</Path>
@@ -34571,7 +34645,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-ru</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-ru@firefox.mozilla.org</Path>
@@ -34585,7 +34659,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-sr</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-sr@firefox.mozilla.org</Path>
@@ -34599,7 +34673,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-sv-SE</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-sv-SE@firefox.mozilla.org</Path>
@@ -34613,7 +34687,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-tr</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-tr@firefox.mozilla.org</Path>
@@ -34627,17 +34701,24 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-uk</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="2">firefox</Dependency>
+                <Dependency releaseFrom="3">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-uk@firefox.mozilla.org</Path>
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2017-01-25</Date>
+                <Version>51.0.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="2">
                 <Date>2017-01-25</Date>
-                <Version>50.1.0</Version>
-                <Comment>First Release</Comment>
+                <Version>51.0</Version>
+                <Comment>Version Bump</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -34734,7 +34815,7 @@
             <Summary xml:lang="en">A WebKit powered web browser</Summary>
             <Description xml:lang="en">Chromium-browser is an open-source web browser, powered by WebKit.</Description>
             <Icon>chromium</Icon>
-            <Archive type="tarxz" sha1sum="8a36da476a83068871ea0e6b1a92cb52b7f049be">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-55.0.2883.75.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8a36da476a83068871ea0e6b1a92cb52b7f049be">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-55.0.2883.87.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>alsa-lib</Dependency>
                 <Dependency>at-spi2-atk</Dependency>
@@ -34809,9 +34890,6 @@
                 <Patch level="1">chromium-52.0.2743.116-unset-madv_free.patch</Patch>
                 <Patch level="1">chromium-widevine.patch</Patch>
                 <Patch level="1">chromium-icu58.patch</Patch>
-                <Patch level="1">limelinux/gfx_jpeg_codec.patch</Patch>
-                <Patch level="1">limelinux/fix_build_with_newer_gcc.patch</Patch>
-                <Patch level="1">limelinux/last_commit_position.patch</Patch>
             </Patches>
             <SourceURI>network/web/chromium/pspec.xml</SourceURI>
         </Source>
@@ -34879,7 +34957,7 @@
         <History>
             <Update release="1">
                 <Date>2016-12-12</Date>
-                <Version>55.0.2883.75</Version>
+                <Version>55.0.2883.87</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -35175,6 +35253,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>0.10.36</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>0.10.36</Version>
@@ -35856,6 +35941,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>1.10.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.10.2</Version>
@@ -36063,6 +36155,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>1.10.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.10.2</Version>
@@ -37551,6 +37650,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>6.8.9.7</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>6.8.9.7</Version>
@@ -37969,7 +38075,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="fr">Programme de Manipulation d&apos;Image GNU.</Description>
             <Description xml:lang="en">GIMP is a mature image editor with many advanced features and plugin support.</Description>
             <Description xml:lang="tr">Piksel düzeyinde işlem yapılabilen gelişmiş bir grafik düzenleme programı</Description>
-            <Archive type="tarbz2" sha1sum="42434a0782c37803fbd184dbb9b648be887f4f40">http://download.gimp.org/pub/gimp/v2.8/gimp-2.8.18.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="42434a0782c37803fbd184dbb9b648be887f4f40">https://download.gimp.org/pub/gimp/v2.8/gimp-2.8.18.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>gtk-doc</Dependency>
                 <Dependency>atk</Dependency>
@@ -38066,7 +38172,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:tr</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/tr</Path>
@@ -38079,7 +38185,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ast</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ast</Path>
@@ -38092,7 +38198,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:my</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/my</Path>
@@ -38105,7 +38211,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:nds</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/nds</Path>
@@ -38118,7 +38224,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:el</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/el</Path>
@@ -38131,7 +38237,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:gu</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/gu</Path>
@@ -38144,7 +38250,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:be</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/be</Path>
@@ -38157,7 +38263,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:vi</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/vi</Path>
@@ -38170,7 +38276,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ca</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ca</Path>
@@ -38183,7 +38289,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:eo</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/eo</Path>
@@ -38196,7 +38302,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:cs</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/cs</Path>
@@ -38209,7 +38315,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ca@valencia</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ca@valencia</Path>
@@ -38221,7 +38327,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ar</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/an</Path>
@@ -38234,7 +38340,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ar</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ar</Path>
@@ -38246,7 +38352,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ar</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/bs</Path>
@@ -38259,7 +38365,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:km</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/km</Path>
@@ -38272,7 +38378,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ga</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ga</Path>
@@ -38285,7 +38391,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:fi</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/fi</Path>
@@ -38298,7 +38404,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:eu</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/eu</Path>
@@ -38311,7 +38417,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:et</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/et</Path>
@@ -38324,7 +38430,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:xh</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/xh</Path>
@@ -38337,7 +38443,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:gl</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/gl</Path>
@@ -38350,7 +38456,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:id</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/id</Path>
@@ -38363,7 +38469,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:es</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/es</Path>
@@ -38376,7 +38482,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ru</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ru</Path>
@@ -38389,7 +38495,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:rw</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/rw</Path>
@@ -38402,7 +38508,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:nl</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/nl</Path>
@@ -38415,7 +38521,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:nn</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/nn</Path>
@@ -38428,7 +38534,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:nb</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/nb</Path>
@@ -38441,7 +38547,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ne</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ne</Path>
@@ -38454,7 +38560,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:lt</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/lt</Path>
@@ -38467,7 +38573,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:pa</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/pa</Path>
@@ -38480,7 +38586,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ro</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ro</Path>
@@ -38493,7 +38599,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:en_GB</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/en_GB</Path>
@@ -38506,7 +38612,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:yi</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/yi</Path>
@@ -38519,7 +38625,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:en_CA</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/en_CA</Path>
@@ -38532,7 +38638,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:fr</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/fr</Path>
@@ -38545,7 +38651,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:bg</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/bg</Path>
@@ -38558,7 +38664,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ms</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ms</Path>
@@ -38571,7 +38677,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:pt_BR</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/pt_BR</Path>
@@ -38584,7 +38690,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:hr</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/hr</Path>
@@ -38597,7 +38703,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:zh_TW</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/zh_TW</Path>
@@ -38610,7 +38716,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ko</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ko</Path>
@@ -38623,7 +38729,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:it</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/it</Path>
@@ -38636,7 +38742,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:fa</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/fa</Path>
@@ -38649,7 +38755,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:dz</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/dz</Path>
@@ -38662,7 +38768,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:sr@Latn</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/sr@latin</Path>
@@ -38675,7 +38781,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:da</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/da</Path>
@@ -38688,7 +38794,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ja</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ja</Path>
@@ -38701,7 +38807,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:he</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/he</Path>
@@ -38714,7 +38820,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:pt</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/pt</Path>
@@ -38727,7 +38833,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:zh_CN</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/zh_CN</Path>
@@ -38740,7 +38846,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:sr</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/sr</Path>
@@ -38753,7 +38859,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:oc</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/oc</Path>
@@ -38766,7 +38872,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:sv</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/sv</Path>
@@ -38779,7 +38885,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:mk</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/mk</Path>
@@ -38792,7 +38898,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:sk</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/sk</Path>
@@ -38805,7 +38911,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:de</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/de</Path>
@@ -38818,7 +38924,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:pl</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/pl</Path>
@@ -38831,7 +38937,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:uk</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/uk</Path>
@@ -38844,7 +38950,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:sl</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/sl</Path>
@@ -38857,7 +38963,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:hu</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/hu</Path>
@@ -38870,7 +38976,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:tt</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/tt</Path>
@@ -38883,7 +38989,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:az</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/az</Path>
@@ -38896,7 +39002,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:am</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/am</Path>
@@ -38909,7 +39015,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:is</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/is</Path>
@@ -38922,7 +39028,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:lv</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/lv</Path>
@@ -38935,7 +39041,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:th</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/th</Path>
@@ -38948,7 +39054,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ka</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ka</Path>
@@ -38961,7 +39067,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:hi</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/hi</Path>
@@ -38974,7 +39080,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:zh_HK</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/zh_HK</Path>
@@ -38987,7 +39093,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ml</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ml</Path>
@@ -39000,7 +39106,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:ta</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/ta</Path>
@@ -39013,7 +39119,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:kn</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/kn</Path>
@@ -39026,7 +39132,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:si</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/si</Path>
@@ -39039,7 +39145,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:kk</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/kk</Path>
@@ -39052,7 +39158,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:br</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/br</Path>
@@ -39064,7 +39170,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:te</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/te</Path>
@@ -39076,7 +39182,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:csb</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/csb</Path>
@@ -39088,13 +39194,20 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <IsA>locale:gd</IsA>
             <PartOf>multimedia.graphics.gimp.l10n</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">gimp</Dependency>
+                <Dependency release="2">gimp</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/share/locale/gd</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-07-26</Date>
+                <Version>2.8.18</Version>
+                <Comment>Relase</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-07-26</Date>
                 <Version>2.8.18</Version>
@@ -39186,6 +39299,13 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>2.36.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.36.0</Version>
@@ -41726,6 +41846,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>2.2.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.2.3</Version>
@@ -42377,6 +42504,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>1.7.7</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.7.7</Version>
@@ -44667,6 +44801,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>0.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>0.1</Version>
@@ -45093,6 +45234,11 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Dependency>python-nose</Dependency>
                 <Dependency>lapack</Dependency>
             </BuildDependencies>
+            <Patches>
+                <Patch level="1">numpy-1.0.1-f2py.patch</Patch>
+                <Patch level="1">numpy-remove-PyOS_ascii_strtod.patch</Patch>
+                <Patch level="0">numpy_doublefree.patch</Patch>
+            </Patches>
             <SourceURI>programming/language/python/python-numpy/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -48398,6 +48544,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2017-01-21</Date>
+                <Version>58.2</Version>
+                <Comment>Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="2">
                 <Date>2017-12-21</Date>
                 <Version>58.2</Version>
@@ -49182,6 +49335,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-07-26</Date>
+                <Version>2.0.15</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-07-26</Date>
                 <Version>2.0.15</Version>
@@ -49398,6 +49558,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>2.0.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.0.0</Version>
@@ -49565,6 +49732,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2017-12-21</Date>
+                <Version>1.59.0</Version>
+                <Comment>Fix build python module</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.59.0</Version>
@@ -49781,6 +49955,57 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Update>
         </History>
     </SpecFile>
+    <Package>
+        <Name>python-qt5</Name>
+        <Summary xml:lang="en">A set of Python 3.x bindings for the Qt 5.x Toolkit</Summary>
+        <Description xml:lang="en">Qt is a set of C++ libraries and development tools that includes platform independent abstractions for graphical user interfaces, networking, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, and user and application settings. PyQt implements 440 of these classes as a set of Python modules.</Description>
+        <Description xml:lang="tr">Qt5, C++ kütüphaneleri dizisi ve geliştirme araçları olup grafik kullanıcı arabirimleri için, ağ bağlantısı, iş parçacığı, Unicode, düzenli ifadeler, SQL veritabanları, SVG, OpenGL, XML ve kullanıcıve uygulama ayarları gibi platform bağımsız uygulamalara ayrılır. PyQt, Python modülü seti olarak bu sınıftan 440 kadar uygulamayı çalıştırır.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.language.python</PartOf>
+        <License>GPLv2</License>
+        <License>GPLv3</License>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>python3-sip</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="2">
+                <Date>2017-01-21</Date>
+                <Version>5.7.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2016-12-21</Date>
+                <Version>5.6</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+        <BuildHost>buildfarm</BuildHost>
+        <Distribution>LimeLinux</Distribution>
+        <DistributionRelease>1.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>24763578</InstalledSize>
+        <PackageSize>3383052</PackageSize>
+        <PackageHash>af5ccd1e9aab2243f1d5f53af03232483c0530ec</PackageHash>
+        <InstallTarHash>a88843f8b8039e118658ede88a236099d011d21f</InstallTarHash>
+        <PackageURI>programming/language/python/python-qt5/python-qt5-5.7.1-2-lm-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>python-qt5</Name>
+            <Homepage>http://www.riverbankcomputing.co.uk/software/pyqt</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+        </Source>
+    </Package>
     <Component>
         <Name>system</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
