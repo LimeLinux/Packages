@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Kaptan, Pisi Linux workspace configuration wizard</Summary>
         <Description>Kaptan lets you configure your workspace on first login.</Description>
-        <Archive sha1sum="3e7bd80b87298eabb290242d7ea2cde497bcbbd8" type="targz">https://github.com/limelinuxNew/kaptan/archive/beta6.tar.gz</Archive>
+        <Archive sha1sum="3e7bd80b87298eabb290242d7ea2cde497bcbbd8" type="targz">https://github.com/PisiLinuxNew/kaptan/archive/beta6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
             <Dependency>python3-qt5</Dependency>

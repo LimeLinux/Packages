@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Pisi Linux Welcome Application</Summary>
         <Description>Pisi Linux Welcome Application</Description>
-        <Archive sha1sum="cde9530f2ba60be79f4cd89e4cfc62d59d6d4d6a" type="targz">https://github.com/limelinuxNew/limelinux-welcome/archive/1.0Beta4.tar.gz</Archive>
+        <Archive sha1sum="cde9530f2ba60be79f4cd89e4cfc62d59d6d4d6a" type="targz">https://github.com/PisiLinuxNew/pisilinux-welcome/archive/1.0Beta4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
             <Dependency>python3-qt5</Dependency>

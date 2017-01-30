@@ -13,13 +13,12 @@
         <IsA>app:gui</IsA>
         <Summary>KDE5 port of History Manager Tool</Summary>
         <Description>History manager is a graphical interface to pisi snapshot facilities.</Description>
-        <Archive sha1sum="100f05962b829e781fc336b47bf85a210a93859a" type="targz">https://github.com/limelinuxNew/history-manager/archive/0.2.8.0-Beta.tar.gz</Archive>
+        <Archive sha1sum="100f05962b829e781fc336b47bf85a210a93859a" type="targz">https://github.com/PisiLinuxNew/history-manager/archive/0.2.8.0-Beta.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-qt5</Dependency>
             <Dependency>pypolkit</Dependency>
             <Dependency>qt5</Dependency>
             <Dependency>python</Dependency> 
-            <Dependency>qt5</Dependency>
         </BuildDependencies>
     </Source>
 
