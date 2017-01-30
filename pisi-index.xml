@@ -14676,7 +14676,7 @@
             <Description xml:lang="en">Pisi Linux Welcome Application</Description>
             <Description xml:lang="tr">Hoşgeldin uygulaması, bilgisayarınız ilk defa açıldığında sizi karşılar.</Description>
             <Icon>limelinux-welcome</Icon>
-            <Archive type="targz" sha1sum="cde9530f2ba60be79f4cd89e4cfc62d59d6d4d6a">https://github.com/limelinuxNew/limelinux-welcome/archive/1.0Beta4.tar.gz</Archive>
+            <Archive type="targz" sha1sum="cde9530f2ba60be79f4cd89e4cfc62d59d6d4d6a">https://github.com/PisiLinuxNew/pisilinux-welcome/archive/1.0Beta4.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3</Dependency>
                 <Dependency>python3-qt5</Dependency>
@@ -14772,13 +14772,12 @@
             <Summary xml:lang="tr">Pisi Geçmiş Yöneticisi uygulaması</Summary>
             <Description xml:lang="en">History manager is a graphical interface to pisi snapshot facilities.</Description>
             <Description xml:lang="tr">Pisi ile yapılan işlem geçmişini gösterme, sistemi belirli noktaya döndürme, yeni görüntü alma gibi geçmiş yönetimi işlemleri yapmayı sağlayan araç.</Description>
-            <Archive type="targz" sha1sum="100f05962b829e781fc336b47bf85a210a93859a">https://github.com/limelinuxNew/history-manager/archive/0.2.8.0-Beta.tar.gz</Archive>
+            <Archive type="targz" sha1sum="100f05962b829e781fc336b47bf85a210a93859a">https://github.com/PisiLinuxNew/history-manager/archive/0.2.8.0-Beta.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python-qt5</Dependency>
                 <Dependency>pypolkit</Dependency>
                 <Dependency>qt5</Dependency>
                 <Dependency>python</Dependency>
-                <Dependency>qt5</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/limelinux/history-manager/pspec.xml</SourceURI>
         </Source>
@@ -14823,7 +14822,7 @@
             <Description xml:lang="tr">Kaptan, bilgisayarınız ilk defa açıldığında çalışma ortamınızı kişiselleştirmenize yardımcı olur.</Description>
             <Description xml:lang="es">Kaptan, el asistente de inicio de Pisi Linux que le ayudará a personalizar su entorno de trabajo.</Description>
             <Icon>kaptan</Icon>
-            <Archive type="targz" sha1sum="3e7bd80b87298eabb290242d7ea2cde497bcbbd8">https://github.com/limelinuxNew/kaptan/archive/beta6.tar.gz</Archive>
+            <Archive type="targz" sha1sum="3e7bd80b87298eabb290242d7ea2cde497bcbbd8">https://github.com/PisiLinuxNew/kaptan/archive/beta6.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3</Dependency>
                 <Dependency>python3-qt5</Dependency>
@@ -34205,7 +34204,7 @@
             <Description xml:lang="pl">Mozilla Firefox – otwarta przeglądarka internetowa oparta na silniku Gecko, stworzona i rozwijana przez Korporację Mozilla oraz ochotników.</Description>
             <Description xml:lang="es">Navegue por la web de forma rápida y segura. Navegador web de código abierto que se puede personalizar con características adicionales.</Description>
             <Icon>firefox</Icon>
-            <Archive type="tarxz" sha1sum="b73255fd4f90fd0c1b107b566679da2df3f31cf1">https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/51.0.1/source/firefox-51.0.1.source.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="6024dc49a566ed6296ad6cd707a199d41f090176">https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/50.1.0/source/firefox-50.1.0.source.tar.xz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
                 <AdditionalFile target="browserconfig.properties" permission="0644">limelinux/browserconfig.properties</AdditionalFile>
@@ -34710,7 +34709,7 @@
         <History>
             <Update release="3">
                 <Date>2017-01-25</Date>
-                <Version>51.0.1</Version>
+                <Version>50.1.0</Version>
                 <Comment>Version Bump</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
