@@ -17350,7 +17350,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Abstraction to system policy and authentication features</Summary>
             <Description xml:lang="en">Framework which lets applications perform actions as a privileged user</Description>
             <Archive type="tarxz" sha1sum="58636047a952d2c0a2c2f4f9ea2d21da21a4d2f2">mirrors://kde/stable/frameworks/5.29/kauth-5.29.0.tar.xz</Archive>
@@ -17400,7 +17400,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Access and manipulate bookmarks stored using XBEL format</Summary>
             <Description xml:lang="en">Framework which lets you access and manipulate bookmarks stored using XBEL format</Description>
             <Archive type="tarxz" sha1sum="883edde2bea526ef1f860f0df696613d76aeaf70">mirrors://kde/stable/frameworks/5.29/kbookmarks-5.29.0.tar.xz</Archive>
@@ -17462,7 +17462,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Open Collaboration Service client library, based on Qt 5</Summary>
             <Description xml:lang="en">Attica is a library to access Open Collaboration Service servers, based on Qt 5.</Description>
             <Archive type="tarxz" sha1sum="c894b693700c8ada5453ff6aa842542de59856e7">mirrors://kde/stable/frameworks/5.29/attica-5.29.0.tar.xz</Archive>
@@ -17509,7 +17509,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Kcrash crash handling application</Summary>
             <Description xml:lang="en">KCrash provides support for intercepting and handling application crashes.</Description>
             <Archive type="tarxz" sha1sum="056a6e90286ad74c2d16acc580d02df034e4452c">mirrors://kde/stable/frameworks/5.29/kcrash-5.29.0.tar.xz</Archive>
@@ -17562,7 +17562,7 @@
             </Packager>
             <License>GPL2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Summary>
             <Description xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Description>
             <Archive type="tarbz2" sha1sum="042b8a42e88bd578c27600e9b70c4e142a39da91">http://download.kde.org/stable/apps/KDE4.x/admin/polkit-qt-1-0.112.0.tar.bz2</Archive>
@@ -17613,7 +17613,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE Partition Manager is a utility program to help you manage the disk devices, partitions and file systems on your computer</Summary>
             <Summary xml:lang="tr">KDE Disk Bölümü Yöneticisi</Summary>
             <Description xml:lang="en">It allows you to easily create, copy, move, delete, resize without losing data, backup and restore partitions..</Description>
@@ -17685,7 +17685,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Extra cmake modules for KDE5</Summary>
             <Description xml:lang="en">Extra cmake modules KDE5</Description>
             <Archive type="tarxz" sha1sum="6827eb313d6c3cdeedcc7e147ba53c1c8b02bf2e">mirrors://kde/stable/frameworks/5.29/extra-cmake-modules-5.29.0.tar.xz</Archive>
@@ -17728,7 +17728,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Plugin framework for user interface components</Summary>
             <Description xml:lang="en">This library implements the framework for KDE parts, which are elaborate widgets with a user-interface defined in terms of actions (menu items, toolbar icons).</Description>
             <Archive type="tarxz" sha1sum="2ee956a3d24db3d93f56d7e6a4fb07480cb728c0">mirrors://kde/stable/frameworks/5.29/kparts-5.29.0.tar.xz</Archive>
@@ -17808,7 +17808,7 @@
             <IsA>library</IsA>
             <IsA>app:console</IsA>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Kconfig widgets</Summary>
             <Description xml:lang="en">KConfigWidgets provides easy-to-use classes to create configuration dialogs, as well as a set of widgets which uses KConfig to store their settings.</Description>
             <Archive type="tarxz" sha1sum="195de3d0e2c22fc95fb3be5b640f86303446374e">mirrors://kde/stable/frameworks/5.29/kconfigwidgets-5.29.0.tar.xz</Archive>
@@ -17871,7 +17871,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Framework for managing menu and toolbar actions</Summary>
             <Description xml:lang="en">Kxmlgui provides a framework for managing menu and toolbar actions in an abstract way.</Description>
             <Archive type="tarxz" sha1sum="13c74bd7ae3b553273e21de07656e72f5225c807">mirrors://kde/stable/frameworks/5.29/kxmlgui-5.29.0.tar.xz</Archive>
@@ -17943,7 +17943,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE5 hardware integration framework</Summary>
             <Description xml:lang="en">Solid is a device integration framework.It provides a way of querying and interacting with hardware independently of the underlying operating system.</Description>
             <Archive type="tarxz" sha1sum="2e73c05fb925e2d37ecdf1c128d9420e09befc8e">mirrors://kde/stable/frameworks/5.29/solid-5.29.0.tar.xz</Archive>
@@ -17998,7 +17998,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE5 icon utilities</Summary>
             <Description xml:lang="en">This library contains classes to improve the handling of icons in applications using the KDE Frameworks.</Description>
             <Archive type="tarxz" sha1sum="92e558187127ffad54d6947b401fa0b45075dccc">mirrors://kde/stable/frameworks/5.29/kiconthemes-5.29.0.tar.xz</Archive>
@@ -18059,7 +18059,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Addon with auto completion widgets and classes</Summary>
             <Description xml:lang="en">KCompletion provides widgets with advanced completion support as well as a lower-level completion class which can be used with your own widgets.</Description>
             <Archive type="tarxz" sha1sum="b85d92ba1a895109772c5eaec055ef75006ba9c5">mirrors://kde/stable/frameworks/5.29/kcompletion-5.29.0.tar.xz</Archive>
@@ -18112,7 +18112,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE5 document generator</Summary>
             <Description xml:lang="en">kdoctools is an application aims to generate documents from DocBook.</Description>
             <Archive type="tarxz" sha1sum="1d5e8fca51bc7d2f17b94ce13d5008e1ea9bf589">mirrors://kde/stable/frameworks/5.29/kdoctools-5.29.0.tar.xz</Archive>
@@ -18173,7 +18173,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Resource and network access abstraction</Summary>
             <Description xml:lang="en">Network transparent access to files and data</Description>
             <Archive type="tarxz" sha1sum="f7a0669894f16deffd95fd279acab3d8b180d7f0">mirrors://kde/stable/frameworks/5.29/kio-5.29.0.tar.xz</Archive>
@@ -18274,7 +18274,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Set of item models extending the Qt model-view framework</Summary>
             <Description xml:lang="en">KItemViews includes a set of views, which can be used with item models. It includes views for categorizing lists and to add search filters to flat and hierarchical lists.</Description>
             <Archive type="tarxz" sha1sum="9dd4e0cc0dd22077e27bd77b7afc124d8593f539">mirrors://kde/stable/frameworks/5.29/kitemviews-5.29.0.tar.xz</Archive>
@@ -18322,7 +18322,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE5 window manager access framework</Summary>
             <Description xml:lang="en">KWindowSystem provides information about the state of the window manager and allows asking the window manager to change the using a more high-level interface than the NETWinInfo/NETRootInfo low-level classes.</Description>
             <Archive type="tarxz" sha1sum="f11a249ad713de21878f692519e1396f4cebeffb">mirrors://kde/stable/frameworks/5.29/kwindowsystem-5.29.0.tar.xz</Archive>
@@ -18382,7 +18382,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Extra modules for Qt-DBus</Summary>
             <Description xml:lang="en">KDE5-KDBusAddons provides convenience classes on top of QtDBus, as well as an API to create KDED modules.</Description>
             <Archive type="tarxz" sha1sum="e6995a1626d8415fe353671029adc27a5ad3b7b6">mirrors://kde/stable/frameworks/5.29/kdbusaddons-5.29.0.tar.xz</Archive>
@@ -18431,7 +18431,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Widgets for showing progress of asynchronous jobs</Summary>
             <Description xml:lang="en">KJobWIdgets provides widgets for showing progress of asynchronous jobs.</Description>
             <Archive type="tarxz" sha1sum="6f7d152857352cdfe231eafbbbf17072de159e7c">mirrors://kde/stable/frameworks/5.29/kjobwidgets-5.29.0.tar.xz</Archive>
@@ -18484,7 +18484,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE spell schecking library</Summary>
             <Description xml:lang="en">This framework contains two main components: Interface to KWallet, the safe desktop-wide storage for passwords on KDE workspaces. The kwalletd used to safely store the passwords on KDE work spaces.</Description>
             <Archive type="tarxz" sha1sum="768cf074d2d6ec8c89040e1d0f18ecfaf79d1f03">mirrors://kde/stable/frameworks/5.29/sonnet-5.29.0.tar.xz</Archive>
@@ -18536,7 +18536,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Library for managing partitions.</Summary>
             <Description xml:lang="en">Library for managing partitions.</Description>
             <Archive type="targz" sha1sum="a35942c03a7d750d6a709ab5f045dac273292ed3">https://sourceforge.net/projects/pisi-source/files/kpmcore-2.9.91.tar.gz</Archive>
@@ -18608,7 +18608,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE5 Desktop Services</Summary>
             <Description xml:lang="en">Kservice Provides a plugin framework for handling desktop services. Services can be applications or libraries. They can be bound to MIME types or handled by application specific code.</Description>
             <Archive type="tarxz" sha1sum="1b4fd5dd07d163b576f755a9c2217ec23a114498">mirrors://kde/stable/frameworks/5.29/kservice-5.29.0.tar.xz</Archive>
@@ -18671,7 +18671,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE5 desktop widgets</Summary>
             <Description xml:lang="en">KdeWidgetsAddons is a framework contains addon widgets and shared libraries for applications using Qt5-Widgets.</Description>
             <Archive type="tarxz" sha1sum="aa0208e645ef0c299474eea1481ad35d11252e57">mirrors://kde/stable/frameworks/5.29/kwidgetsaddons-5.29.0.tar.xz</Archive>
@@ -18718,7 +18718,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Qt 5 addon providing access to numerous types of archives</Summary>
             <Description xml:lang="en">KArchive provides classes for easy reading, creation and manipulation of &quot;archive&quot; formats like ZIP and TAR.</Description>
             <Archive type="tarxz" sha1sum="64a07fd4fa8c2153315e85d0333af061c6fb7828">mirrors://kde/stable/frameworks/5.29/karchive-5.29.0.tar.xz</Archive>
@@ -18771,7 +18771,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Utilities for core application functionality and accessing the OS</Summary>
             <Description xml:lang="en">KCoreAddons provides classes built on top of QtCore to perform various tasks such as manipulating mime types, autosaving files, creating backup files, generating random sequences, performing text manipulations such as macro replacement, accessing user information and many more.</Description>
             <Archive type="tarxz" sha1sum="cbbe3edd720dcebcb81dd77e98caa4460002a0c5">http://download.kde.org/stable/frameworks/5.29/kcoreaddons-5.29.0.tar.xz</Archive>
@@ -18823,7 +18823,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Plugins allowing Qt applications to access further types of images</Summary>
             <Description xml:lang="en">KDE5 KCodecs provide a collection of methods to manipulate strings using various encodings.</Description>
             <Archive type="tarxz" sha1sum="92605c0fb0a8697546c3b6774e4e19bd52eb06a0">mirrors://kde/stable/frameworks/5.29/kcodecs-5.29.0.tar.xz</Archive>
@@ -18870,7 +18870,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Global desktop keyboard shortcuts</Summary>
             <Description xml:lang="en">KGlobalAccel allows you to have global accelerators that are independent of the focused window.</Description>
             <Archive type="tarxz" sha1sum="93c545cb1d251940aa1616bfacacce8fa3b47cea">mirrors://kde/stable/frameworks/5.29/kglobalaccel-5.29.0.tar.xz</Archive>
@@ -18935,7 +18935,7 @@
             <License>LGPLv2</License>
             <IsA>library</IsA>
             <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE5 text editing widgets</Summary>
             <Description xml:lang="en">KTextWidgets provides widgets for displaying and editing text. It supports rich text as well as plain text.</Description>
             <Archive type="tarxz" sha1sum="1f9db0687635d090834d45324b78b126574891d1">mirrors://kde/stable/frameworks/5.29/ktextwidgets-5.29.0.tar.xz</Archive>
@@ -19006,7 +19006,7 @@
             <IsA>library</IsA>
             <IsA>app:console</IsA>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Advanced configuration system for KDE Frameworks 5</Summary>
             <Description xml:lang="en">Kconfig provides advanced libraries and tools for accessing configuration files.</Description>
             <Archive type="tarxz" sha1sum="208da5a4433360955c7eb113e380f6881b027376">mirrors://kde/stable/frameworks/5.29/kconfig-5.29.0.tar.xz</Archive>
@@ -19054,7 +19054,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">Utilities for graphical user interfaces</Summary>
             <Description xml:lang="en">The KDE GUI addons provide utilities for graphical user interfaces in the areas of colors, fonts, text, images, keyboard input. Development files.</Description>
             <Archive type="tarxz" sha1sum="f04ed44ca5be0d87c9dcb173ffab2a7ca0cb6ca1">mirrors://kde/stable/frameworks/5.29/kguiaddons-5.29.0.tar.xz</Archive>
@@ -19102,7 +19102,7 @@
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.kde.framework</PartOf>
             <Summary xml:lang="en">KDE Gettext-based UI text internationalization.</Summary>
             <Summary xml:lang="tr">KDE grafik arabirim yerelleştirme kitaplığı</Summary>
             <Description xml:lang="en">KI18n provides functionality for internationalizing user interface text in applications, based on the GNU Gettext translation system.</Description>
