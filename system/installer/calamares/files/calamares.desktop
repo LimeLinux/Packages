@@ -2,10 +2,10 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Pisi Linux — System Installer
+Name=Lime Linux — System Installer
 Name[tr_TR]=Lime Linux Sistem Yükleyici
 Comment=Lime Linux — System Installer
-Comment[tr_TR]=Pisi Linux Sistem Yükleyici
+Comment[tr_TR]=Lime Linux Sistem Yükleyici
 Exec=gksu LC_ALL=en_US calamares %f
 Icon=calamares
 Terminal=false
