@@ -9,7 +9,6 @@
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Packager>
-        <ExcludeArch>armv7h</ExcludeArch>
         <License>GPLv2</License>
         <Icon>gfxboot</Icon>
         <IsA>app:console</IsA>

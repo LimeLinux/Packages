@@ -9,7 +9,6 @@
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Packager>
-        <ExcludeArch>armv7h</ExcludeArch>
         <License>LGPL2.1</License>
         <IsA>app:console</IsA>
         <Summary>Tools and library to manipulate EFI variables</Summary>

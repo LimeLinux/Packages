@@ -9,7 +9,6 @@
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Packager>
-        <ExcludeArch>armv7h</ExcludeArch>
         <License>GPLv3</License>
         <IsA>app:gui</IsA>
         <Summary>GNU GRUB is a Multiboot boot loader.</Summary>
