@@ -25,6 +25,7 @@ def setup():
     autotools.configure("\
                         --libexecdir=/usr/lib/WebKitGTK \
                         --disable-static \
+                        --disable-webkit2 \
                         --disable-gtk-doc \
                         --disable-silent-rules \
                         --disable-wayland-target \
@@ -33,7 +34,7 @@ def setup():
                         --enable-webgl \
                         --with-gnu-ld \
                         --with-gstreamer=1.0 \
-                        --with-gtk=2.0 \
+                        --with-gtk=3.0 \
                         --enable-x11-target \
                         --enable-video \
                         --enable-web-audio \
@@ -52,7 +53,7 @@ def install():
     shelltools.export("CXXFLAGS", cxxflags)
     autotools.rawInstall(" DESTDIR=%s" % get.installDIR())
 
-    pisitools.domove("/usr/share/gtk-doc/html", "/usr/share/doc/webkit-gtk2")
+    pisitools.domove("/usr/share/gtk-doc/html", "/usr/share/doc/webkit-gtk3")
 
     pisitools.dodoc("NEWS")
     shelltools.cd("Source")
