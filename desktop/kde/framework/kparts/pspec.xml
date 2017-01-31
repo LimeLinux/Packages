@@ -1,0 +1,81 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kparts</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Plugin framework for user interface components</Summary>
+        <Description>This library implements the framework for KDE parts, which are elaborate widgets with a user-interface defined in terms of actions (menu items, toolbar icons).</Description>
+        <Archive sha1sum="2ee956a3d24db3d93f56d7e6a4fb07480cb728c0" type="tarxz">mirrors://kde/stable/frameworks/5.29/kparts-5.29.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency versionFrom="5.29.0">kauth</Dependency>
+            <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.29.0">ktextwidgets</Dependency>
+            <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.29.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.29.0">kitemviews</Dependency>
+            <Dependency versionFrom="5.29.0">karchive</Dependency>
+            <Dependency versionFrom="5.29.0">attica</Dependency>
+            <Dependency versionFrom="5.29.0">kconfig</Dependency>
+            <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.29.0">ki18n</Dependency>
+            <Dependency versionFrom="5.29.0">kio</Dependency>
+            <Dependency versionFrom="5.29.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.29.0">kservice</Dependency>
+            <Dependency versionFrom="5.29.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.29.0">kbookmarks</Dependency>
+            <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.29.0">sonnet</Dependency>
+            <Dependency versionFrom="5.29.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.29.0">solid</Dependency>
+            <Dependency versionFrom="5.29.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kparts</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency versionFrom="5.29.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.29.0">kconfig</Dependency>
+            <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.29.0">ki18n</Dependency>
+            <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.29.0">kservice</Dependency>
+            <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.29.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.29.0">kio</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>5.29.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

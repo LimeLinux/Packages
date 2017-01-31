@@ -1,0 +1,51 @@
+
+<PISI>
+    <Source>
+        <Name>polkit-qt</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A library that allows developers to access PolicyKit API with a nice Qt-style API</Summary>
+        <Description>A library that allows developers to access PolicyKit API with a nice Qt-style API</Description>
+        <Archive sha1sum="042b8a42e88bd578c27600e9b70c4e142a39da91" type="tarbz2">http://download.kde.org/stable/apps/KDE4.x/admin/polkit-qt-1-0.112.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>cmake</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>systembus-usage.patch</Patch>
+        </Patches>
+    </Source>
+    <Package>
+        <Name>polkit-qt</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="header">/usr/include/polkit-qt5-1</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-10-21</Date>
+            <Version>0.112</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

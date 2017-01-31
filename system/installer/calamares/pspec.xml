@@ -1,0 +1,111 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>calamares</Name>
+        <Homepage>http://limelinux.com</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <Summary>A distribution independent installer framework</Summary>
+        <Description>Calamares is a distribution-independent system installer, with an advanced partitioning feature for both manual and automated partitioning operations.</Description>
+        <Archive sha1sum="237805b3a73ce7e19942e9fae1c546b4a3e9dd57" type="targz">https://sourceforge.net/projects/pisi-source/files/limelinux/calamares-2.4.7.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gettext</Dependency>
+            <Dependency>yaml-cpp</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>parted</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>udisks2</Dependency>
+            <Dependency>libyaml</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>polkit-qt</Dependency>
+            <Dependency>libatasmart</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>e2fsprogs</Dependency>
+            <Dependency>squashfs-tools</Dependency>
+            <Dependency>efibootmgr</Dependency>
+            <Dependency>rsync</Dependency>
+            <Dependency>gptfdisk</Dependency>
+            <Dependency>kpmcore</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kparts</Dependency>            
+            <Dependency>parted</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">pisi_set_hostname.patch</Patch>
+            <Patch level="1">no_fsck_and_pymouth.patch</Patch>
+      </Patches>
+    </Source>
+    
+    <Package>
+        <Name>calamares</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>parted</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>rsync</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>libatasmart</Dependency>
+            <Dependency>qt5</Dependency>            
+            <Dependency>rsync</Dependency>
+            <Dependency>ntfs-3g</Dependency>
+            <Dependency>gptfdisk</Dependency>
+            <Dependency>e2fsprogs</Dependency>
+            <Dependency>dmidecode</Dependency>
+            <Dependency>efibootmgr</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>dosfstools</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>kpmcore</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>partitionmanager</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kparts</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/*</Path>
+            <Path fileType="library">/usr/lib/calamares/</Path>
+            <Path fileType="data">/usr/include/libcalamares/*</Path>
+            <Path fileType="library">/usr/lib/cmake/calamares/</Path>
+            <Path fileType="library">/usr/lib/calamares/modules/*</Path>
+            <Path fileType="library">/usr/libexec/</Path>
+            <Path fileType="library">/etc/languages</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/calamares.desktop">calamares.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/languages">languages</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-12-13</Date>
+            <Version>2.4.7</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
