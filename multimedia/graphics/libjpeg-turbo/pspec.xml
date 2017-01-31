@@ -30,7 +30,23 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
-             <Path fileType="data">/usr/include/</Path>
+            <Path fileType="data">/usr/include/</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libjpeg-turbo-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for jpeg</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>jpeg-32bit</Package>
+        </Replaces>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
         </Files>
     </Package>
 

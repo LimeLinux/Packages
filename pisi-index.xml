@@ -13004,6 +13004,19 @@
                 <Path fileType="localedata">/usr/share/*</Path>
                 <Path fileType="header">/usr/include</Path>
             </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/qt5/translations/assistant_tr.qm" permission="0644" owner="root">assistant_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/assistant5.desktop" permission="0644" owner="root">assistant.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/assistant5.png" permission="0644" owner="root">assistant.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/designer5.desktop" permission="0644" owner="root">designer.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/qt5/translations/designer_tr.qm" permission="0644" owner="root">designer_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/designer5.png" permission="0644" owner="root">designer.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/linguist5.desktop" permission="0644" owner="root">linguist.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/linguist5.png" permission="0644" owner="root">linguist.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/qt5/translations/linguist_tr.qm" permission="0644" owner="root">linguist_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/qdbusviewer5.desktop" permission="0644" owner="root">qdbusviewer.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/qdbusviewer5.png" permission="0644" owner="root">assistant.png</AdditionalFile>
+            </AdditionalFiles>
         </Package>
         <History>
             <Update release="2">
@@ -15389,18 +15402,10 @@
         <Package>
             <Name>mate-applets</Name>
             <Files>
-                <Path fileType="exectuable">/usr/bin/mate-cpufreq-selector</Path>
-                <Path fileType="data">/etc/dbus-1/system.d/org.mate.CPUFreqSelector.conf</Path>
-                <Path fileType="data">/etc/sound/events/mate-battstat_applet.soundlist</Path>
-                <Path fileType="data">/usr/share/help/</Path>
-                <Path fileType="data">/usr/share/mate-panel/</Path>
-                <Path fileType="locale">/usr/share/locale/</Path>
-                <Path fileType="data">/usr/share/mate/</Path>
-                <Path fileType="man">/usr/share/man/</Path>
-                <Path fileType="icons">/usr/share/icons/</Path>
-                <Path fileType="doç">/usr/share/doc/</Path>
-                <Path fileType="service">/usr/share/dbus-1/</Path>
-                <Path fileType="data">/usr/share/polkit-1/actions/</Path>
+                <Path fileType="exectuable">/etc/</Path>
+                <Path fileType="exectuable">/usr/bin/</Path>
+                <Path fileType="library">/usr/lib/*</Path>
+                <Path fileType="data">/usr/share/*</Path>
             </Files>
         </Package>
         <History>
@@ -16280,44 +16285,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>mate-applets-gtk3</Name>
-            <Homepage>http://www.mate-desktop.org</Homepage>
-            <Packager>
-                <Name>Ali Murat Algül</Name>
-                <Email>alimuratgulle@limelinux.com</Email>
-            </Packager>
-            <License>GPLv2+</License>
-            <IsA>data</IsA>
-            <PartOf>desktop.mate.base</PartOf>
-            <Summary xml:lang="en">Applets for MATE panel (GTK2 version)</Summary>
-            <Description xml:lang="en">Applets for MATE panel (GTK3 version)</Description>
-            <Archive type="tarxz" sha1sum="64742a98be03cf89099dbdd14e7b6baf2f9a0c2f">http://pub.mate-desktop.org/releases/1.17/mate-applets-1.17.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>gtksourceview3</Dependency>
-                <Dependency>mate-panel</Dependency>
-                <Dependency>mate-common</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/mate/base/mate-applets-gtk3/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>mate-applets-gtk3</Name>
-            <Files>
-                <Path fileType="exectuable">/etc/</Path>
-                <Path fileType="exectuable">/usr/share/doc/mate-applets-gtk3/</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2017-01-12</Date>
-                <Version>1.17.0</Version>
-                <Comment>First release</Comment>
-                <Name>Ali Murat Algül</Name>
-                <Email>alimuratgulle@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>mate-power-manager</Name>
             <Homepage>http://www.mate-desktop.org</Homepage>
             <Packager>
@@ -16951,7 +16918,7 @@
             <PartOf>desktop.wm</PartOf>
             <Summary xml:lang="en">A full-featured and high-performance event loop</Summary>
             <Description xml:lang="en">A full-featured and high-performance event loop</Description>
-            <Archive type="targz" sha1sum="4affcba78dc17239f2ccd84d6e3e6dec2bd1f8ba">https://fossies.org/linux/misc/libev-4.24.tar.gz</Archive>
+            <Archive type="targz" sha1sum="436dd8eff00a45f8805b8cacfe4dd3bd993caedb">https://fossies.org/linux/misc/libev-4.24.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>glib2</Dependency>
                 <Dependency>intltool</Dependency>
@@ -17943,6 +17910,87 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>noto-fonts</Name>
+            <Homepage>http://www.google.com/get/noto</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>Apache</License>
+            <IsA>data:font</IsA>
+            <PartOf>desktop.font</PartOf>
+            <Summary xml:lang="en">Google Noto TTF fonts</Summary>
+            <Summary xml:lang="tr">Google Noto TTF yazı tipleri</Summary>
+            <Description xml:lang="en">Noto fonts are open source. All Noto fonts are published under the SIL Open Font License, Version 1.1. Language data and some sample texts are from the Unicode CLDR project.</Description>
+            <Description xml:lang="tr">Tüm diller/karakterlerin desktelendiği yazı tipidir.</Description>
+            <Archive type="targz" sha1sum="3e4ce66b114d87c05433f2dbdfabf50f8231ce14">https://github.com/googlei18n/noto-fonts/archive/v2015-09-29-license-adobe.tar.gz</Archive>
+            <SourceURI>desktop/font/noto-fonts/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>noto-fonts</Name>
+            <Files>
+                <Path fileType="data">/usr/share/doc</Path>
+                <Path fileType="doc">/usr/share/fonts/noto</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>noto-fonts-ttf-croscore</Name>
+            <Summary xml:lang="en">noto-fonts-ttf-croscore, Chrome OS core fonts</Summary>
+            <Summary xml:lang="tr">noto-fonts-ttf-croscore, Chrome OS için temel yazı tipleri</Summary>
+            <Files>
+                <Path fileType="data">/usr/share/fonts/TTF</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>20150929</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>liberation-fonts</Name>
+            <Homepage>https://fedorahosted.org/liberation-fonts/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>data:font</IsA>
+            <PartOf>desktop.font</PartOf>
+            <Summary xml:lang="en">Font collection similar to ones found in Microsoft Windows</Summary>
+            <Summary xml:lang="tr">Microsoft Windows fontlarına benzeyen bir dizi font ailesi</Summary>
+            <Description xml:lang="en">A set of fonts similar to Microsoft Windows fonts. There are three sets: Sans (a substitute for Arial, Albany, Helvetica, Nimbus Sans L, and Bitstream Vera Sans), Serif (a substitute for Times New Roman, Thorndale, Nimbus Roman, and Bitstream Vera Serif) and Mono (a substitute for Courier New, Cumberland, Courier, Nimbus Mono L, and Bitstream Vera Sans Mono).</Description>
+            <Description xml:lang="tr">liberation-fonts MS Windows fontlarına benzer bir yazı tipi ailesidir. Sans, serif ve mono olmak üzere 3 setten oluşur.</Description>
+            <Archive type="targz" sha1sum="1d56c6f319401012e53818fa6e9e26ebf6429da0">http://dev-www.libreoffice.org/src/cfbf1ac6f61bf6cf45342a0cc9381be5-liberation-fonts-ttf-2.00.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>fontforge</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/font/liberation-fonts/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>liberation-fonts</Name>
+            <Files>
+                <Path fileType="data">/usr/share/fonts</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.00.0</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>dejavu-fonts</Name>
             <Homepage>http://www.dejavu-fonts.org</Homepage>
             <Packager>
@@ -18109,6 +18157,42 @@
                 <Date>2016-12-21</Date>
                 <Version>2.6.5</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnu-gs-fonts-std</Name>
+            <Homepage>http://www.ghostscript.com</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.font</PartOf>
+            <Summary xml:lang="en">Ghostscript standard fonts</Summary>
+            <Summary xml:lang="tr">Ghostscript standard yazıtipleri</Summary>
+            <Description xml:lang="fr">Ces fontes ont été construites à partir des fontes URW distribuées avec ghostcript. Il n&apos;y AUCUN changemen dans leur partie latine.</Description>
+            <Description xml:lang="en">gnu-gs-fonts-std contains fonts that were made from the free URW fonts distributed with ghostcript. There are no changes in the latin part of them.</Description>
+            <Description xml:lang="tr">Bu yazıtipleri ghostscript ile birlikte dağıtılan özgür URW yazıtiplerinden türetilmiştir. Latin bölümünde hiçbir değişiklik yapılmamıştır.</Description>
+            <Archive type="targz" sha1sum="2a7198e8178b2e7dba87cb5794da515200b568f5">mirrors://sourceforge/ghostscript/ghostscript-fonts-std-8.11.tar.gz</Archive>
+            <SourceURI>desktop/font/gnu-gs-fonts-std/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnu-gs-fonts-std</Name>
+            <Files>
+                <Path fileType="data">/usr/share/fonts/default/ghostscript</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>8.11</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -32214,6 +32298,48 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>pepperflash</Name>
+            <Homepage>http://www.google.com</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>custom:chrome</License>
+            <IsA>library</IsA>
+            <PartOf>network.plugin</PartOf>
+            <Summary xml:lang="en">Chromium tarayıcısı için Google chrom eklentisi olan Pepper Flash Eklentisi.</Summary>
+            <Summary xml:lang="tr">Google Chrome&apos;s Pepper Flash plugin for Chromium.</Summary>
+            <Description xml:lang="en">Google Chrome&apos;s Pepper Flash plugin for Chromium (stable version)</Description>
+            <Description xml:lang="tr">Chromium tarayıcısı için Google chrom eklentisi olan Pepper Flash Eklentisi (Kararlı sürüm)</Description>
+            <Archive type="targz" sha1sum="c8a8424a4d89152bfe3f7e9bd2336ba85515611f">https://sourceforge.net/projects/pisi-source/files/pepperflash-23.0.0.207.tar.gz</Archive>
+            <SourceURI>network/plugin/pepperflash/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pepperflash</Name>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/etc/chromium</Path>
+                <Path fileType="library">/usr/lib/chromium/</Path>
+                <Path fileType="library">/usr/lib/chromium/PepperFlash</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/etc/chromium/pepperflash-plugin.conf">pepperflash-plugin.conf</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-13</Date>
+                <Version>23.0.0.207</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>daq</Name>
             <Homepage>http://www.snort.org</Homepage>
             <Packager>
@@ -34814,7 +34940,7 @@
             <Summary xml:lang="en">A WebKit powered web browser</Summary>
             <Description xml:lang="en">Chromium-browser is an open-source web browser, powered by WebKit.</Description>
             <Icon>chromium</Icon>
-            <Archive type="tarxz" sha1sum="8a36da476a83068871ea0e6b1a92cb52b7f049be">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-55.0.2883.87.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="47545a688caa388b1eb2098d273cd9c9f556ebf1">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-55.0.2883.87.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>alsa-lib</Dependency>
                 <Dependency>at-spi2-atk</Dependency>
@@ -34917,12 +35043,11 @@
                 <Dependency>libXrender</Dependency>
                 <Dependency>libXScrnSaver</Dependency>
                 <Dependency>libXtst</Dependency>
-                <Dependency>minizip</Dependency>
                 <Dependency>mit-kerberos</Dependency>
                 <Dependency>nss</Dependency>
                 <Dependency>pango</Dependency>
                 <Dependency>pepperflash</Dependency>
-                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>pulseaudio</Dependency>
                 <Dependency>speech-dispatcher</Dependency>
                 <Dependency>speex</Dependency>
                 <Dependency>webp</Dependency>
@@ -34949,8 +35074,8 @@
                 <Path fileType="data">/usr/share/applications</Path>
             </Files>
             <AdditionalFiles>
-                <AdditionalFile target="/usr/lib/chromium-browser/master_preferences" permission="0644" owner="root">master_preferences</AdditionalFile>
-                <AdditionalFile target="/usr/share/applications/chromium-browser.desktop" permission="0644" owner="root">chromium-browser.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/lib/chromium/master_preferences" permission="0644" owner="root">master_preferences</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/chromium.desktop" permission="0644" owner="root">chromium.desktop</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
@@ -35199,6 +35324,28 @@
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/icons</Path>
                 <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libv4l-32bit</Name>
+            <Summary xml:lang="en">32-bit shared libraries for libv4l</Summary>
+            <Summary xml:lang="tr">libv4l için 32-bit paylaşımlı kitaplıklar</Summary>
+            <Summary xml:lang="pl">32-bitowe biblioteki libv4l</Summary>
+            <PartOf>emul32</PartOf>
+            <BuildType>emul32</BuildType>
+            <BuildDependencies>
+                <Dependency>libjpeg-turbo-32bit</Dependency>
+                <Dependency>libX11-32bit</Dependency>
+                <Dependency>alsa-lib-32bit</Dependency>
+                <Dependency>qt5</Dependency>
+            </BuildDependencies>
+            <RuntimeDependencies>
+                <Dependency>libjpeg-turbo-32bit</Dependency>
+                <Dependency release="1">libv4l</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib32/lib*</Path>
+                <Path fileType="library">/usr/lib32/v4l*</Path>
             </Files>
         </Package>
         <History>
@@ -37983,6 +38130,21 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Path fileType="man">/usr/share/man</Path>
                 <Path fileType="data">/usr/include/</Path>
             </Files>
+        </Package>
+        <Package>
+            <Name>libjpeg-turbo-32bit</Name>
+            <Summary xml:lang="en">32-bit shared libraries for jpeg</Summary>
+            <PartOf>emul32</PartOf>
+            <BuildType>emul32</BuildType>
+            <RuntimeDependencies>
+                <Dependency release="2">libjpeg-turbo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib32</Path>
+            </Files>
+            <Replaces>
+                <Package>jpeg-32bit</Package>
+            </Replaces>
         </Package>
         <History>
             <Update release="2">

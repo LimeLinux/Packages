@@ -65,10 +65,19 @@
             <Path fileType="localedata">/usr/share/*</Path>
             <Path fileType="header">/usr/include</Path>
         </Files>
-        <!--AdditionalFiles>
-        <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/qdbusviewer4.desktop">data/qdbusviewer.desktop</AdditionalFile>
-        <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/qtconfig4.desktop">data/qtconfig.desktop</AdditionalFile>
-        </AdditionalFiles-->
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/assistant_tr.qm">assistant_tr.qm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/assistant5.desktop">assistant.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/assistant5.png">assistant.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/designer5.desktop">designer.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/designer_tr.qm">designer_tr.qm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/designer5.png">designer.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/linguist5.desktop">linguist.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/linguist5.png">linguist.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/qt5/translations/linguist_tr.qm">linguist_tr.qm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/qdbusviewer5.desktop">qdbusviewer.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/qdbusviewer5.png">assistant.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
 

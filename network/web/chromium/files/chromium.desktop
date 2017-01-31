@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Chromium
+GenericName=Web Browser
+GenericName[tr]=Web Tarayıcı
+Comment=Access the Internet
+Comment[tr]=İnternet'e erişin
+Exec=chromium %U  --ppapi-flash-path=/usr/lib/chromium/PepperFlash/libpepflashplayer.so --ppapi-flash-version=$version
+Terminal=false
+Icon=chromium
+Type=Application
+Categories=Application;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=Chromium
+StartupNotify=true
+Name[tr_TR]=chromium

@@ -23,18 +23,10 @@
     <Package>
         <Name>mate-applets</Name>
         <Files>
-            <Path fileType="exectuable">/usr/bin/mate-cpufreq-selector</Path>
-            <Path fileType="data">/etc/dbus-1/system.d/org.mate.CPUFreqSelector.conf</Path>
-            <Path fileType="data">/etc/sound/events/mate-battstat_applet.soundlist</Path>
-            <Path fileType="data">/usr/share/help/</Path>
-            <Path fileType="data">/usr/share/mate-panel/</Path>
-            <Path fileType="locale">/usr/share/locale/</Path>
-            <Path fileType="data">/usr/share/mate/</Path>
-            <Path fileType="man">/usr/share/man/</Path>
-            <Path fileType="icons">/usr/share/icons/</Path>
-            <Path fileType="doç">/usr/share/doc/</Path>
-            <Path fileType="service">/usr/share/dbus-1/</Path>
-            <Path fileType="data">/usr/share/polkit-1/actions/</Path>
+            <Path fileType="exectuable">/etc/</Path>
+            <Path fileType="exectuable">/usr/bin/</Path>
+            <Path fileType="library">/usr/lib/*</Path>
+            <Path fileType="data">/usr/share/*</Path>
         </Files>
     </Package>
 

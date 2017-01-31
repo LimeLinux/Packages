@@ -9,7 +9,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
-pisitools.cflags.add("-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64")
+pisitools.cflags.add("-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 ")
 pisitools.cflags.sub("-O[\d]", "-Os")
 
 def setup():
@@ -32,8 +32,8 @@ def setup():
                --disable-runuser \
                --disable-utmpdump \
                --disable-chfn-chsh \
-	        --disable-mountpoint \
-                --disable-sulogin \
+	           --disable-mountpoint \
+               --disable-sulogin \
                --disable-makeinstall-chown \
                --disable-socket-activation \
               "

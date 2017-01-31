@@ -128,4 +128,3 @@ def install():
     for i in gdbpy_files:
         pisitools.domove("/usr/lib/%s" % shelltools.baseName(i), gdbpy_dir)
 
-

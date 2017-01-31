@@ -58,6 +58,27 @@
         </Files>
     </Package> 
 
+    <Package>
+        <Name>libv4l-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for libv4l</Summary>
+        <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>libjpeg-turbo-32bit</Dependency>
+            <Dependency>libX11-32bit</Dependency>
+            <Dependency>alsa-lib-32bit</Dependency>
+            <Dependency>qt5</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency>libjpeg-turbo-32bit</Dependency>
+            <Dependency release="current">libv4l</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32/lib*</Path>
+            <Path fileType="library">/usr/lib32/v4l*</Path>
+        </Files>
+    </Package>
+
 
     <History>
         <Update release="1">

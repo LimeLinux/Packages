@@ -13,11 +13,12 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--prefix=/usr \
                          --sysconfdir=/etc \
-                         --libexecdir=/usr/lib/${_pkgbase} \
+                         --libexecdir=/usr/lib/ \
                          --enable-polkit \
                          --enable-ipv6 \
                          --with-gtk=2.0 \
-                          --disable-static")
+                         --with-gtk=3.0 \
+                         --disable-static")
 
 def build():
     autotools.make()
