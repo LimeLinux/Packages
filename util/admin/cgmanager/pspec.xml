@@ -1,0 +1,54 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cgmanager</Name>
+        <Homepage>https://github.com/lxc/cgmanager</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL</License>
+        <IsA>app:console</IsA>
+        <Summary>Central cgroup management daemon</Summary>
+        <Description>CGManager is a central privileged daemon that manages all your cgroups for you through a simple DBus API.</Description>
+        <Archive sha1sum="63d3f1fa8388484c4f8091b216ce4e9cd1988f54" type="targz">https://github.com/lxc/cgmanager/archive/v0.39.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libnih</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>help2man</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>cgmanager</Name>
+        <RuntimeDependencies>
+            <Dependency>libnih</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>dbus</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/lib/security</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/cgmanager</Path>
+            <Path fileType="library">/usr/lib/libcgmanager*</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-08</Date>
+            <Version>0.39</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

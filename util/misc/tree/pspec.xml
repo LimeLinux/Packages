@@ -1,0 +1,41 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tree</Name>
+        <Homepage>http://mama.indstate.edu/users/ice/tree/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Recursive directory listing tool</Summary>
+        <Description>Tree lists directories recursively, and produces an indented listing of files.</Description>
+        <Archive sha1sum="35bd212606e6c5d60f4d5062f4a59bb7b7b25949" type="targz">ftp://mama.indstate.edu/linux/tree/tree-1.7.0.tgz</Archive>
+    </Source>
+
+    <Package>
+        <Name>tree</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/bash-completion</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/bash-completion/tree">tree.bashcomp</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-08</Date>
+            <Version>1.7.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

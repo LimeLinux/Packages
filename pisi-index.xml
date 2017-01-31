@@ -8426,6 +8426,126 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>systemd</Name>
+            <Homepage>http://www.freedesktop.org/wiki/Software/systemd</Homepage>
+            <Packager>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>app:console</IsA>
+            <IsA>service</IsA>
+            <PartOf>system.base</PartOf>
+            <Summary xml:lang="en">A System and Session Manager</Summary>
+            <Summary xml:lang="tr">Sistem ve Oturum Yöneticisi</Summary>
+            <Description xml:lang="en">systemd is a system and session manager for Linux, compatible with SysV and LSB init scripts.</Description>
+            <Description xml:lang="tr">systemd SysV ve LSB başlangıç betikleriyle uyumlu bir Linux sistem ve oturum yöneticisidir.</Description>
+            <Archive type="tarxz" sha1sum="e179aac02a4b084e0b03ecdc2289e9b4be1fc09b">http://www.freedesktop.org/software/systemd/systemd-218.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>pam</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>util-linux</Dependency>
+                <Dependency>docbook-xsl</Dependency>
+                <Dependency>libcap</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>eudev</Dependency>
+                <Dependency>dbus-glib</Dependency>
+                <Dependency>tcp-wrappers</Dependency>
+                <Dependency>cryptsetup</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">0001-login-Match-multiple-sessions-reboot-policy-with-pow.patch</Patch>
+                <Patch level="1">no-nsswitch.patch</Patch>
+                <Patch level="1">bootchart-segfault.patch</Patch>
+                <Patch level="1">0001-mtd_probe-Include-stdint.patch</Patch>
+            </Patches>
+            <SourceURI>system/base/systemd/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>systemd</Name>
+            <RuntimeDependencies>
+                <Dependency>pam</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>libcap</Dependency>
+                <Dependency>eudev</Dependency>
+                <Dependency>util-linux</Dependency>
+                <Dependency>tcp-wrappers</Dependency>
+                <Dependency>cryptsetup</Dependency>
+                <Dependency>gawk</Dependency>
+                <Dependency>coreutils</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/sbin</Path>
+                <Path fileType="executable">/bin/systemd</Path>
+                <Path fileType="executable">/bin/systemd-notify</Path>
+                <Path fileType="executable">/bin/systemd-loginctl</Path>
+                <Path fileType="executable">/bin/systemd-ask-password</Path>
+                <Path fileType="executable">/bin/systemd-tty-ask-password-agent</Path>
+                <Path fileType="executable">/bin/systemd-machine-id-setup</Path>
+                <Path fileType="executable">/usr/bin/systemd-cgls</Path>
+                <Path fileType="executable">/usr/bin/*</Path>
+                <Path fileType="executable">/usr/bin/systemd-nspawn</Path>
+                <Path fileType="executable">/usr/bin/systemd-stdio-bridge</Path>
+                <Path fileType="executable">/usr/bin/systemd-analyze</Path>
+                <Path fileType="executable">/lib/systemd</Path>
+                <Path fileType="executable">/lib/systemd/system-generators/systemd-cryptsetup-generator</Path>
+                <Path fileType="executable">/lib/systemd/system-generators/systemd-getty-generator</Path>
+                <Path fileType="executable">/usr/libexec/systemd</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/lib/security/pam_systemd.so</Path>
+                <Path fileType="library">/lib/*</Path>
+                <Path fileType="library">/usr/lib/libsystemd*</Path>
+                <Path fileType="config">/etc/dbus-1/system.d</Path>
+                <Path fileType="config">/etc/*</Path>
+                <Path fileType="config">/etc/systemd/system.conf</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/lib/*</Path>
+                <Path fileType="data">/usr/lib/systemd/user</Path>
+                <Path fileType="data">/lib/udev/rules.d</Path>
+                <Path fileType="data">/usr/share/dbus-1/services</Path>
+                <Path fileType="data">/usr/share/*</Path>
+                <Path fileType="data">/usr/share/dbus-1/system-services</Path>
+                <Path fileType="data">/usr/share/dbus-1/interfaces</Path>
+                <Path fileType="data">/usr/share/systemd</Path>
+                <Path fileType="data">/usr/share/polkit-1/actions</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc/systemd</Path>
+                <Path fileType="executable">/var/lib/systemd</Path>
+                <Path fileType="doc">/var/log/*</Path>
+                <Path fileType="executable">/bin/systemctl</Path>
+                <Path fileType="executable">/bin/systemd-tmpfiles</Path>
+                <Path fileType="config">/etc/systemd</Path>
+                <Path fileType="data">/etc/bash_completion.d</Path>
+                <Path fileType="config">/etc/xdg/systemd</Path>
+                <Path fileType="data">/lib/systemd/system</Path>
+                <Path fileType="data">/usr/lib/tmpfiles.d</Path>
+                <Path fileType="data">/usr/lib/sysctl.d</Path>
+                <Path fileType="data">/usr/lib/binfmt.d</Path>
+                <Path fileType="data">/usr/lib/modules-load.d</Path>
+                <Path fileType="data">/etc/tmpfiles.d</Path>
+                <Path fileType="data">/etc/sysctl.d</Path>
+                <Path fileType="data">/etc/binfmt.d</Path>
+                <Path fileType="data">/etc/modules-load.d</Path>
+                <Path fileType="data">/usr/share/pkgconfig/systemd.pc</Path>
+                <Path fileType="man">/usr/share/man/man1/systemctl.*</Path>
+            </Files>
+            <Provides>
+                <COMAR script="packageHandler.py">System.PackageHandler</COMAR>
+                <COMAR script="system-package-units.py">System.Package</COMAR>
+            </Provides>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-08-25</Date>
+                <Version>218</Version>
+                <Comment>New Packages</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>leveldb</Name>
             <Homepage>https://code.google.com/p/leveldb</Homepage>
             <Packager>
@@ -10460,6 +10580,52 @@
                 <Date>2016-12-21</Date>
                 <Version>0.12.1</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>module-bbswitch</Name>
+            <Homepage>https://github.com/Bumblebee-Project/bbswitch</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPL</License>
+            <IsA>app:gui</IsA>
+            <PartOf>kernel.drivers</PartOf>
+            <Summary xml:lang="en">Kernel module allowing to switch dedicated graphics card on Optimus laptops</Summary>
+            <Summary xml:lang="tr">Optimus grafik kartlı bir dizüstü bilgisayarda grafik kartını seçmeye yarayan çekirdek modülüdür.</Summary>
+            <Description xml:lang="en">kernel module allowing to switch dedicated graphics card on Optimus laptops</Description>
+            <Description xml:lang="tr">Eski ve yeni optimus teknolojisine sahip dizüstü bilgisyarlarda çalışabilmektedir.</Description>
+            <Archive type="targz" sha1sum="e282ee682d794e3962baa4dead01917c42571e78">https://github.com/Bumblebee-Project/bbswitch/archive/v0.8.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency version="4.6.4">kernel-module-headers</Dependency>
+            </BuildDependencies>
+            <SourceURI>kernel/drivers/module-bbswitch/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>module-bbswitch</Name>
+            <RuntimeDependencies>
+                <Dependency version="4.6.4">kernel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library" permanent="true">/lib/modules</Path>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/etc/modprobe.d/bbswitch.conf" permission="0644" owner="root">bbswitch.conf</AdditionalFile>
+                <AdditionalFile target="/etc/debmod.d/kmod-bbswitch.conf" permission="0644" owner="root">kmod-bbswitch.conf</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-10</Date>
+                <Version>0.8</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -24807,6 +24973,49 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>alternatives</Name>
+            <Homepage>http://git.fedorahosted.org/git/?p=chkconfig.git;a=summary</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>x11.util</PartOf>
+            <Summary xml:lang="en">Alternative management system</Summary>
+            <Summary xml:lang="tr">Alternatif yönetim sistemi</Summary>
+            <Description xml:lang="en">alternatives creates, removes, maintains and displays information about the symbolic links comprising the alternatives system. Alternatives system determines the defaults when several programs fulfilling the same or similar functions to be installed on a single system at the same time.</Description>
+            <Description xml:lang="tr">alternatives, alternatives sisteminin parçası olan sembolik bağlantıları oluşturan, silen, yöneten ve bunlar hakkında bilgi gösteren araçtır. Alternatives sistemi, birbirine benzer ya da aynı işlevleri sunan programların aynı anda aynı sisteme kurulduğu zamanlarda öntanımlıları belirler.</Description>
+            <Archive type="tarxz" sha1sum="c02e19919064e9da9e51ffeb5b796b4c3d8be093">https://git.fedorahosted.org/cgit/chkconfig.git/snapshot/chkconfig-chkconfig-1.3.63.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>popt</Dependency>
+                <Dependency>newt</Dependency>
+            </BuildDependencies>
+            <SourceURI>x11/util/alternatives/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>alternatives</Name>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/var</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-05-02</Date>
+                <Version>1.3.63</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>font-util</Name>
             <Homepage>http://www.x.org/</Homepage>
             <Packager>
@@ -26985,6 +27194,68 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>bumblebee</Name>
+            <Homepage>http://bumblebee-project.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>kernel.default.drivers</PartOf>
+            <Summary xml:lang="en">a project aiming to support NVIDIA Optimus technology under Linux.</Summary>
+            <Description xml:lang="en">The Bumblebee Project proudly presents version 3.0 of Bumblebee, a project aiming to support NVIDIA Optimus technology under Linux. After two months of hard work this version has finally been considered stable enough for release.</Description>
+            <Archive type="targz" sha1sum="a715f4aa1b0c24dd4352ff7e0bc390f1e4e03cd9">http://www.bumblebee-project.org/bumblebee-3.2.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libbsd</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>glib2</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">bb-hexadecimal.patch</Patch>
+                <Patch level="1">nv-uvm-modeset.patch</Patch>
+            </Patches>
+            <SourceURI>x11/misc/bumblebee/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bumblebee</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>module-bbswitch</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libbsd</Dependency>
+                <Dependency>primus</Dependency>
+                <Dependency>virtualgl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="config">/usr/lib/tmpfiles.d/bumblebee.conf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="data">/lib/udev/rules.d</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <Provides>
+                <COMAR script="service.py">System.Service</COMAR>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/lib/tmpfiles.d/bumblebee.conf" permission="0644" owner="root">tmpfiles.conf</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-05-02</Date>
+                <Version>3.2.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>xorg-font</Name>
             <Homepage>http://www.x.org/</Homepage>
             <Packager>
@@ -27279,6 +27550,116 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>xorg-xdpyinfo</Name>
+            <Homepage>http://xorg.freedesktop.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>custom</License>
+            <IsA>app:console</IsA>
+            <PartOf>x11.misc</PartOf>
+            <Summary xml:lang="en">Display information utility for X</Summary>
+            <Summary xml:lang="tr">Display information utility for X</Summary>
+            <Description xml:lang="en">Xdpyinfo is a utility for displaying information about an X server. It is used to examine the capabilities of a server, the predefined values for various parameters used in communicating between clients and the server, and the different types of screens and visuals that are available.</Description>
+            <Description xml:lang="tr">Xdpyinfo is a utility for displaying information about an X server. It is used to examine the capabilities of a server, the predefined values for various parameters used in communicating between clients and the server, and the different types of screens and visuals that are available.</Description>
+            <Archive type="tarbz2" sha1sum="0922fc31f8fc82ac20e326a6c9eb33ed7d57ad87">https://www.x.org/releases/individual/app/xdpyinfo-1.3.2.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>xorg-util</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libdmx</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libXxf86dga</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </BuildDependencies>
+            <SourceURI>x11/misc/xorg-xdpyinfo/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>xorg-xdpyinfo</Name>
+            <RuntimeDependencies>
+                <Dependency>libX11</Dependency>
+                <Dependency>libdmx</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libXxf86dga</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-11-24</Date>
+                <Version>1.3.2</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>primus</Name>
+            <Homepage>https://github.com/amonakov/primus</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>ISC</License>
+            <IsA>library</IsA>
+            <PartOf>x11.misc</PartOf>
+            <Summary xml:lang="en">Minimalistic and efficient OpenGL offloading for Bumblebee</Summary>
+            <Description xml:lang="en">Primus is a shared library that provides OpenGL and GLX APIs and implements low-overhead local-only client-side OpenGL offloading via GLX forking, similar to VirtualGL.</Description>
+            <Archive type="targz" sha1sum="07619d043cbb1e85a23499b25835aedb7921c480">mirrors://sourceforge/pisilinux/source/primus-20160408.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libX11</Dependency>
+                <Dependency>mesa</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">primus-nvidia-libs.patch</Patch>
+            </Patches>
+            <SourceURI>x11/misc/primus/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>primus</Name>
+            <RuntimeDependencies>
+                <Dependency>libX11</Dependency>
+                <Dependency>mesa</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-05-02</Date>
+                <Version>2016.05.02</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>xinit</Name>
             <Homepage>http://www.x.org</Homepage>
             <Packager>
@@ -27342,6 +27723,66 @@
                 <Date>2016-12-21</Date>
                 <Version>1.3.4</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>virtualgl</Name>
+            <Homepage>http://virtualgl.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>x11.misc</PartOf>
+            <Summary xml:lang="en">A toolkit for displaying OpenGL applications to thin clients</Summary>
+            <Summary xml:lang="tr">OpenGL uygulamaları ince istemcilerde göstermek için bir kitaplık</Summary>
+            <Description xml:lang="en">Redirects 3D commands from an OpenGL application onto a server-side 3D graphics card.</Description>
+            <Description xml:lang="tr">Bir OpenGL uygulamadan gelen 3D komutlarını sunucu tarafındaki 3D grafik kartına yönlendirir.</Description>
+            <Archive type="targz" sha1sum="20ec8daa09d2bd5bb2437628a2416f9a4ca0fa63">https://sourceforge.net/projects/virtualgl/files/2.5.1/VirtualGL-2.5.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>fltk</Dependency>
+                <Dependency>libXv</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </BuildDependencies>
+            <SourceURI>x11/misc/virtualgl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>virtualgl</Name>
+            <RuntimeDependencies>
+                <Dependency>fltk</Dependency>
+                <Dependency>libXv</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/lib/fakelib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/lib32/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-11-02</Date>
+                <Version>2.5.1</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -28967,6 +29408,96 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>logrotate</Name>
+            <Homepage>https://fedorahosted.org/releases/l/o/logrotate</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.admin</PartOf>
+            <Summary xml:lang="en">Rotates, compresses, removes and emails system log files</Summary>
+            <Summary xml:lang="tr">Sistem günlük (log) dosyalarını yönetmeyi kolaylaştıran bir araç</Summary>
+            <Description xml:lang="en">logrotate is designed to ease administration of systems that generate large numbers of log files. It allows automatic rotation, compression, removal, and emailing of log files.</Description>
+            <Description xml:lang="tr">Logrotate kayıt dosyalarının rotasyonunu, silinmesini veya e-posta ile gönderilmesi gibi işlevleri ile sistem yönetimini kolaylaştırıan bir uygulamadır.</Description>
+            <Archive type="targz" sha1sum="e1acb9d15abc0d9f6a4f6e58409e0319e5d41f4e">https://fedorahosted.org/releases/l/o/logrotate/logrotate-3.8.8.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>popt</Dependency>
+                <Dependency>acl</Dependency>
+            </BuildDependencies>
+            <SourceURI>util/admin/logrotate/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>logrotate</Name>
+            <RuntimeDependencies>
+                <Dependency>popt</Dependency>
+                <Dependency>acl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>3.8.8</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>utempter</Name>
+            <Homepage>http://www.redhat.com/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <License>LGPLv2.1</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.admin</PartOf>
+            <Summary xml:lang="en">Application that allows non-privileged applications to write utmp (login) info</Summary>
+            <Summary xml:lang="tr">utemper, utmp(oturum açma) bilgilerini yazmak için ayrıcalıksız uygulamalara izin veren bir uygulamadır.</Summary>
+            <Description xml:lang="en">Utempter is a utility that allows non-privileged applications such as terminal emulators to modify the utmp database without having to setuid root.</Description>
+            <Description xml:lang="tr">Utempter, terminal emulatörleri gibi, yetkisiz uygulamalara setuid e ihtiyaç duymadan utmp veritabanına yazma hakkı verir.</Description>
+            <Archive type="tarbz2" sha1sum="1964279755290c4b576f2db0ed518e2b45a9ca53">ftp://ftp.altlinux.org/pub/people/ldv/utempter/libutempter-1.1.6.tar.bz2</Archive>
+            <Patches>
+                <Patch level="1">libutempter-pierelro.patch</Patch>
+            </Patches>
+            <SourceURI>util/admin/utempter/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>utempter</Name>
+            <Files>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>1.1.6</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>sudo</Name>
             <Homepage>http://www.sudo.ws/</Homepage>
             <Packager>
@@ -29054,7 +29585,7 @@
                 <Patch>spped_up.patch</Patch>
                 <Patch>ignore_glibc-32bit.patch</Patch>
             </Patches>
-            <SourceURI>util/admin/pisilinux-dev-tools/pspec.xml</SourceURI>
+            <SourceURI>util/admin/limelinux-dev-tools/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>limelinux-dev-tools</Name>
@@ -29083,6 +29614,131 @@
                 <Date>2016-12-21</Date>
                 <Version>0.0.2</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>isodumper</Name>
+            <Homepage>https://github.com/papoteur-mga/isodumper</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>util.admin</PartOf>
+            <Summary xml:lang="en">A tool for writing ISO images on a USB stick. It&apos;s a fork of usb-imagewriter.</Summary>
+            <Summary xml:lang="tr">IsoDumper, bir USB bellek üzerine ISO imaj dosyası yazma aracıdır.</Summary>
+            <Description xml:lang="en">A tool for writing ISO images on a USB stick. It&apos;s a fork of usb-imagewriter.</Description>
+            <Description xml:lang="tr">IsoDumper, bir USB bellek üzerine ISO imaj dosyası yazma aracıdır.</Description>
+            <Archive type="targz" sha1sum="25c0e48228a98ecd524c3cf2a0d265ff92d852fe">http://gitweb.mageia.org/software/isodumper/snapshot/isodumper-0.45.tar.gz</Archive>
+            <AdditionalFiles>
+                <AdditionalFile target="isodumper.svg" permission="0644" owner="root">isodumper.svg</AdditionalFile>
+                <AdditionalFile target="isodumper.png" permission="0644" owner="root">isodumper.png</AdditionalFile>
+                <AdditionalFile target="share/isodumper/header.png" permission="0644" owner="root">header.png</AdditionalFile>
+                <AdditionalFile target="share/isodumper/header.svg" permission="0644" owner="root">header.svg</AdditionalFile>
+                <AdditionalFile target="share/applications/isodumper.desktop.in" permission="0644" owner="root">isodumper.desktop.in</AdditionalFile>
+                <AdditionalFile target="po/tr.po" permission="0644" owner="root">tr.po</AdditionalFile>
+            </AdditionalFiles>
+            <BuildDependencies>
+                <Dependency>intltool</Dependency>
+                <Dependency>imagemagick</Dependency>
+            </BuildDependencies>
+            <SourceURI>util/admin/isodumper/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>isodumper</Name>
+            <RuntimeDependencies>
+                <Dependency>coreutils</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>polkit</Dependency>
+                <Dependency>procps</Dependency>
+                <Dependency>imagemagick</Dependency>
+                <Dependency>python-gtk</Dependency>
+                <Dependency>python-cairo</Dependency>
+                <Dependency>python-pygobject</Dependency>
+                <Dependency>libglade</Dependency>
+                <Dependency>python</Dependency>
+                <Dependency>dbus-python</Dependency>
+                <Dependency>pyparted</Dependency>
+                <Dependency>udisks2</Dependency>
+                <Dependency>xterm</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/libexec</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/isodumper</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>0.45</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cgmanager</Name>
+            <Homepage>https://github.com/lxc/cgmanager</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPL</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.admin</PartOf>
+            <Summary xml:lang="en">Central cgroup management daemon</Summary>
+            <Summary xml:lang="tr">Merkezi cgroup yönetimi uygulamacığı</Summary>
+            <Description xml:lang="en">CGManager is a central privileged daemon that manages all your cgroups for you through a simple DBus API.</Description>
+            <Description xml:lang="tr">CGManager basit bir DBUS api üzerinden sizin için tüm cgruplarınızı yöneten merkezi ayrıcalıklı bir uygulamacıktır.</Description>
+            <Archive type="targz" sha1sum="63d3f1fa8388484c4f8091b216ce4e9cd1988f54">https://github.com/lxc/cgmanager/archive/v0.39.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libnih</Dependency>
+                <Dependency>pam</Dependency>
+                <Dependency>help2man</Dependency>
+            </BuildDependencies>
+            <SourceURI>util/admin/cgmanager/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cgmanager</Name>
+            <RuntimeDependencies>
+                <Dependency>libnih</Dependency>
+                <Dependency>pam</Dependency>
+                <Dependency>dbus</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/lib/security</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/cgmanager</Path>
+                <Path fileType="library">/usr/lib/libcgmanager*</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+            <Provides>
+                <COMAR script="service.py">System.Service</COMAR>
+            </Provides>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>0.39</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -29311,6 +29967,115 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>audit</Name>
+            <Homepage>http://people.redhat.com/sgrubb/audit/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>app:console</IsA>
+            <IsA>library</IsA>
+            <IsA>service</IsA>
+            <PartOf>util.admin</PartOf>
+            <Summary xml:lang="en">User space tools for kernel auditing</Summary>
+            <Summary xml:lang="tr">Linux çekirdeğinin 2.6 sürümü için inceleme/denetleme araçları</Summary>
+            <Description xml:lang="en">audit contains the user space utilities for storing and searching the audit records generated by the audit subsystem in the Linux 2.6 kernel.</Description>
+            <Description xml:lang="tr">audit Linux çekirdeğinin 2.6 sürümünün inceleme altyapısı tarafından üretilen inceleme kayıtlarını aramak ve saklamak için kullanılan araçları içerir.</Description>
+            <Archive type="targz" sha1sum="423d181dc668d2cdecc66c5b5308ed6c4f301476">http://people.redhat.com/sgrubb/audit/audit-2.3.7.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python</Dependency>
+                <Dependency>kernel-module-headers</Dependency>
+                <Dependency>libcap-ng</Dependency>
+                <Dependency>tcp-wrappers</Dependency>
+                <Dependency>swig</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">without_openldap.patch</Patch>
+            </Patches>
+            <SourceURI>util/admin/audit/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>audit</Name>
+            <RuntimeDependencies>
+                <Dependency>libcap-ng</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/var/log/audit</Path>
+                <Path fileType="data">/var/spool/audit</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="man">/usr/share/man/man3</Path>
+            </Files>
+            <Provides>
+                <COMAR script="service.py">System.Service</COMAR>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
+        </Package>
+        <Package>
+            <Name>python-audit</Name>
+            <Summary xml:lang="en">Python bindings for audit</Summary>
+            <Summary xml:lang="tr">audit için Python bağlayıcısı</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">audit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/python*</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>2.3.7</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>dash</Name>
+            <Homepage>http://gondor.apana.org.au/~herbert/dash/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.shell</PartOf>
+            <Summary xml:lang="en">Small and fast POSIX-compliant shell</Summary>
+            <Summary xml:lang="tr">Ufak ve hızlı POSIX uyumlu kabuk</Summary>
+            <Description xml:lang="en">DASH is a POSIX-compliant implementation of /bin/sh that aims to be as small as possible.</Description>
+            <Description xml:lang="tr">DASH, POSIX uyumlu bir /bin/sh gerçeklemesi olup, olabildiğince ufak olmayı hedefleyen bir kabuktur.</Description>
+            <Archive type="targz" sha1sum="cd058935bba545427caa375337afe8a6309477d2">http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.8.tar.gz</Archive>
+            <SourceURI>util/shell/dash/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>dash</Name>
+            <Files>
+                <Path fileType="executable">/bin/dash</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>0.5.8</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>zsh</Name>
             <Homepage>http://www.zsh.org</Homepage>
             <Packager>
@@ -29524,6 +30289,53 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>quazip</Name>
+            <Homepage>http://quazip.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>util.archive</PartOf>
+            <Summary xml:lang="en">A C++/Qt ZIP library</Summary>
+            <Description xml:lang="en">A Qt/C++ wrapper for Gilles Vollant&apos;s ZIP/UNZIP C package (minizip). Provides access to ZIP archives from Qt programs using QIODevice API.</Description>
+            <Archive type="targz" sha1sum="f34a1bbfff1d00b802e80175ef01ea6045c3818b">http://sourceforge.net/projects/quazip/files/quazip/0.7.2/quazip-0.7.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt5</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>cmake</Dependency>
+            </BuildDependencies>
+            <SourceURI>util/archive/quazip/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>quazip</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/cmake/Modules/FindQuaZip5.cmake</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>0.7.2</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>libzip</Name>
             <Homepage>http://www.nih.at/libzip/</Homepage>
             <Packager>
@@ -29570,6 +30382,41 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>cabextract</Name>
+            <Homepage>http://www.cabextract.org.uk/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.archive</PartOf>
+            <Summary xml:lang="en">A program to extract from Microsoft Cabinet files</Summary>
+            <Summary xml:lang="tr">Microsoft Cabinet dosyalarını açan bir program</Summary>
+            <Description xml:lang="en">cabextract is a program to extract files from Microsoft Cabinet files.</Description>
+            <Description xml:lang="tr">cabextract Microsoft Cabinet (.cab) dosyalarından dosya çıkarmaya yarayan bir programdır.</Description>
+            <Archive type="targz" sha1sum="64f6d5056d3e417a943648c23cb22218b7079ced">http://www.cabextract.org.uk/cabextract-1.6.tar.gz</Archive>
+            <SourceURI>util/archive/cabextract/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cabextract</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>1.6</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>ucl</Name>
             <Homepage>http://www.oberhumer.com/opensource/ucl/</Homepage>
             <Packager>
@@ -29599,6 +30446,95 @@
                 <Date>2016-12-21</Date>
                 <Version>1.03</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>areca</Name>
+            <Homepage>http://www.areca-backup.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>util.archive</PartOf>
+            <Summary xml:lang="en">Easy to use and reliable backup solution for Linux.</Summary>
+            <Summary xml:lang="tr">Easy to use and reliable backup solution for Linux.</Summary>
+            <Description xml:lang="en">Areca Backup is very versatile and as simple as possible.</Description>
+            <Description xml:lang="tr">Areca Backup is very versatile and as simple as possible.</Description>
+            <Icon>areca</Icon>
+            <Archive type="targz" sha1sum="8066dca3a26fd33039644d14c5c957c4419f4dc3">http://sourceforge.net/projects/areca/files/areca-stable/areca-7.5/areca-7.5-linux-gtk-64.tar.gz</Archive>
+            <SourceURI>util/archive/areca/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>areca</Name>
+            <RuntimeDependencies>
+                <Dependency>acl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/opt/areca/</Path>
+                <Path fileType="data">/usr</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/bin/areca" permission="0755" owner="root">areca</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/areca.desktop" permission="0644" owner="root">areca.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/areca.png" permission="0644" owner="root">areca.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>7.5</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>rar</Name>
+            <Homepage>http://www.rarlab.com</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>RAR</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.archive</PartOf>
+            <Summary xml:lang="en">RAR compressor</Summary>
+            <Summary xml:lang="tr">RAR sıkıştırıcı</Summary>
+            <Description xml:lang="en">rar is an compressor supporting multiple volume archives and damage protection. It can also create SFX-archives. This program is shareware and you must register it after 40 days of use.</Description>
+            <Description xml:lang="tr">rar, çoklu arşivleri ve hasar korumayı destekleyen bir sıkıştırıcıdır. rar aynı zamanda SFX arşivleri de yaratabilir. Bu uygulama ücretli olup 40 günlük kullanımdan sonra kayıt olunması gerekmektedir.</Description>
+            <Archive type="targz" sha1sum="f1a15c3f14d49899cbcaf2e6e559c1b878da5c40" target="i686">http://www.rarlab.com/rar/rarlinux-5.3.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="bc6af5e5f941d903e4853ac6f57c82434e2ada01" target="x86_64">http://www.rarlab.com/rar/rarlinux-x64-5.3.0.tar.gz</Archive>
+            <SourceURI>util/archive/rar/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>rar</Name>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/opt/rar/bin</Path>
+                <Path fileType="data">/opt/rar/lib</Path>
+                <Path fileType="data">/opt/rar/etc</Path>
+                <Path fileType="doc">/usr/share/doc/rar</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>5.3.0</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -29642,6 +30578,44 @@
                 <Date>2016-12-21</Date>
                 <Version>3.91</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>unrar</Name>
+            <Homepage>http://www.rarsoft.com/rar_add.htm</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>unRAR</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.archive</PartOf>
+            <Summary xml:lang="en">RAR decompressor</Summary>
+            <Summary xml:lang="tr">RAR açma uygulaması</Summary>
+            <Description xml:lang="en">unrar is a program to decompress RAR archives.</Description>
+            <Description xml:lang="tr">Unrar, RAR biçimli sıkıştırılmış dosyaları açar.</Description>
+            <Archive type="targz" sha1sum="67a744b08c2ecf1d893bf0b0a7a51d486affb9a2">http://www.rarlab.com/rar/unrarsrc-5.3.4.tar.gz</Archive>
+            <Patches>
+                <Patch level="1">unrar-5.3.4-soname.patch</Patch>
+            </Patches>
+            <SourceURI>util/archive/unrar/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>unrar</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>5.3.4</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -30045,6 +31019,50 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>libmcrypt</Name>
+            <Homepage>http://mcrypt.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>util.crypt</PartOf>
+            <Summary xml:lang="en">A thread-safe encryption library</Summary>
+            <Summary xml:lang="tr">Güvenli şifreleme kütüphanesi.</Summary>
+            <Description xml:lang="en">libmcrypt is a thread-safe encryption library. It allows developers to use a wide range of encryption functions, without making drastic changes to their code. It allows users to encrypt files or data streams without having to be cryptographers.</Description>
+            <Description xml:lang="tr">libmcrypt bir güvenli şifreleme kütüphanesidir. Geliştiricilere kodlarında çok büyük bir değişikliğe gerek duymadan kullanabilecekleri, geniş bir şifreleme fonksiyon kaynağı sunar. Şifreleme uzmanı olmadan dosya ve verileri kolayca şifrelemenizi sağlar.</Description>
+            <Archive type="tarbz2" sha1sum="b4d4d8851db543e6fda80572a54a4901b4e767da">mirrors://sourceforge/mcrypt/libmcrypt-2.5.8.tar.bz2</Archive>
+            <Patches>
+                <Patch level="1">libmcrypt-2.5.8-nolibltdl.patch</Patch>
+                <Patch level="1">libmcrypt-2.5.8-prototypes.patch</Patch>
+                <Patch level="1">libmcrypt-2.5.8-uninitialized.patch</Patch>
+            </Patches>
+            <SourceURI>util/crypt/libmcrypt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libmcrypt</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc/libmcrypt</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/aclocal</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>2.5.8</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>libtasn1</Name>
             <Homepage>http://www.gnutls.org/</Homepage>
             <Packager>
@@ -30240,6 +31258,50 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>strace</Name>
+            <Homepage>http://sourceforge.net/projects/strace/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.misc</PartOf>
+            <Summary xml:lang="en">Tracks and displays system calls associated with a running process</Summary>
+            <Summary xml:lang="tr">Çalışan bir süreç ile ilişkili sistem çağrılarını gösteren bir araç</Summary>
+            <Summary xml:lang="es">Herramienta útil para diagnostico, aprendizaje y depuración</Summary>
+            <Description xml:lang="en">strace intercepts and records the system calls called and received by a running process. strace can print a record of each system call, its arguments and its return value.</Description>
+            <Description xml:lang="tr">strace, çalışan bir UNIX süreci tarafından çağırılan ve alınan sistem çağrılarını, bu çağrılara verilen parametreleri ve dönüş değerlerini gösteren bir hata ayıklama aracıdır.</Description>
+            <Archive type="tarxz" sha1sum="5e6c78f0dc75e64814e5f8ef49c66823b7f00ae9">https://sourceforge.net/projects/strace/files/strace/4.9/strace-4.9.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>libaio</Dependency>
+                <Dependency>libunwind</Dependency>
+            </BuildDependencies>
+            <SourceURI>util/misc/strace/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>strace</Name>
+            <RuntimeDependencies>
+                <Dependency>libunwind</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>4.9</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>ctags</Name>
             <Homepage>http://ctags.sourceforge.net</Homepage>
             <Packager>
@@ -30369,6 +31431,147 @@
                 <Date>2016-12-21</Date>
                 <Version>4.4.0</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>tidy</Name>
+            <Homepage>http://tidy.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.misc</PartOf>
+            <Summary xml:lang="en">HTML and XML error checking</Summary>
+            <Summary xml:lang="tr">HTML ve XML hata denetleme aracı</Summary>
+            <Description xml:lang="en">tidy, as the name suggests, tidies the layout of and corrects errors in HTML and XML documents.</Description>
+            <Description xml:lang="tr">tidy, HTML ve XML belgelerinin düzenini denetleyen ve hatalarını düzelten bir araçtır.</Description>
+            <Archive type="tarbz2" sha1sum="3688e2cc254e7ee49756def8cd5b1c91721edc00">http://anduin.linuxfromscratch.org/sources/BLFS/svn/t/tidy-cvs_20101110.tar.bz2</Archive>
+            <SourceURI>util/misc/tidy/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>tidy</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>20101110</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pugixml</Name>
+            <Homepage>http://pugixml.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <PartOf>util.misc</PartOf>
+            <Summary xml:lang="en">Light-weight, simple and fast XML parser for C++ with XPath support</Summary>
+            <Description xml:lang="en">Light-weight, simple and fast XML parser for C++ with XPath support</Description>
+            <Archive type="targz" sha1sum="b32212efbae781a1830711798aabbc2974c8c552">https://github.com/zeux/pugixml/releases/download/v1.7/pugixml-1.7.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+            </BuildDependencies>
+            <SourceURI>util/misc/pugixml/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pugixml</Name>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/cmake</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-11-12</Date>
+                <Version>1.7</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mc</Name>
+            <Homepage>http://www.midnight-commander.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.misc</PartOf>
+            <Summary xml:lang="en">GNU Midnight Commander cli-based file manager</Summary>
+            <Summary xml:lang="tr">GNU Midnight Commander konsol kip dosya yöneticisi</Summary>
+            <Description xml:lang="en">Contains GNU Midnight Commander cli-based file manager. You can do lots of file management and editing tasks, both in normal terminals and in terminal emulators of X. Also has file transfer capabilities over FTP, SSH, and Samba.</Description>
+            <Description xml:lang="tr">GNU Midnight Commander (mc), komut satırında çalışan metin tabanlı bir dosya yönetim ve düzenleme uygulamasıdır. İki sistem arasında FTP, SSH ve Samba protokollerini kullanarak dosya transferlerine de olanak verir.</Description>
+            <Archive type="tarxz" sha1sum="cd122d30f93db66f5153700500c3253653245542">http://www.midnight-commander.org/downloads/mc-4.8.15.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gpm</Dependency>
+                <Dependency>check</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>doxygen</Dependency>
+                <Dependency>slang</Dependency>
+                <Dependency>libpcre</Dependency>
+                <Dependency>samba</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>util-linux</Dependency>
+            </BuildDependencies>
+            <SourceURI>util/misc/mc/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mc</Name>
+            <RuntimeDependencies>
+                <Dependency>gpm</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>slang</Dependency>
+                <Dependency>samba</Dependency>
+                <Dependency>util-linux</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/etc/profile.d</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/libexec</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/mc</Path>
+                <Path fileType="config">/etc/mc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/etc/profile.d/mc.sh" permission="0644" owner="root">mc.profile</AdditionalFile>
+                <AdditionalFile target="/usr/share/mc/extfs/u7z" permission="0755" owner="root">u7z</AdditionalFile>
+                <AdditionalFile target="/usr/share/mc/mc.ini" permission="0755" owner="root">mc.ini</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>4.8.15</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -30531,6 +31734,47 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>bleachbit</Name>
+            <Homepage>http://bleachbit.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>util.misc</PartOf>
+            <Summary xml:lang="en">Deletes unneeded files to free disk space and maintain privacy.</Summary>
+            <Description xml:lang="en">BleachBit quickly frees disk space and tirelessly guards your privacy. Free cache, delete cookies, clear Internet history, shred temporary files, delete logs, and discard junk you didn&apos;t know was there.</Description>
+            <Archive type="tarbz2" sha1sum="36e73fbed16ea215b5bcb94dd1f71648c8a57b3a">https://sourceforge.net/projects/bleachbit/files/bleachbit/1.12/bleachbit-1.12.tar.bz2</Archive>
+            <SourceURI>util/misc/bleachbit/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bleachbit</Name>
+            <RuntimeDependencies>
+                <Dependency>python-gtk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/bleachbit/cleaners</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-04</Date>
+                <Version>1.12</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>ibus</Name>
             <Homepage>http://code.google.com/p/ibus/</Homepage>
             <Packager>
@@ -30596,6 +31840,97 @@
                 <Date>2016-12-21</Date>
                 <Version>1.5.10</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>augeas</Name>
+            <Homepage>http://augeas.net</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2+</License>
+            <IsA>app:console</IsA>
+            <IsA>library</IsA>
+            <PartOf>util.misc</PartOf>
+            <Summary xml:lang="en">A library for changing configuration files</Summary>
+            <Summary xml:lang="tr">Yapılandırma dosyalarını düzenlemek için bir kitaplık</Summary>
+            <Description xml:lang="en">augeas is a library for programmatically editing configuration files. Augeas parses configuration files into a tree structure, which it exposes through its public API.</Description>
+            <Description xml:lang="tr">augeas yapılandırma dosyalarının programlama dilleri üzerinden düzenlenmesini sağlayan bir kitaplıktır. augeas yapılandırma dosyalarını ayıklayıp bir ağaç yapısı şeklinde programcıya sunar.</Description>
+            <Archive type="targz" sha1sum="27b563bb173eed6163d76b5b21f3a1566c82351b">http://download.augeas.net/augeas-1.4.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libxml2</Dependency>
+                <Dependency>readline</Dependency>
+            </BuildDependencies>
+            <SourceURI>util/misc/augeas/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>augeas</Name>
+            <RuntimeDependencies>
+                <Dependency>libxml2</Dependency>
+                <Dependency>readline</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/augeas</Path>
+                <Path fileType="data">/usr/share/vim/vimfiles</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="man">/usr/share/man/man3</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>1.4.0</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>tree</Name>
+            <Homepage>http://mama.indstate.edu/users/ice/tree/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>util.misc</PartOf>
+            <Summary xml:lang="en">Recursive directory listing tool</Summary>
+            <Summary xml:lang="tr">Dizin listeleme aracı</Summary>
+            <Description xml:lang="en">Tree lists directories recursively, and produces an indented listing of files.</Description>
+            <Description xml:lang="tr">Dizinleri özyineli olarak listeler ve dosya listesini girintili olarak gösterir.</Description>
+            <Archive type="targz" sha1sum="35bd212606e6c5d60f4d5062f4a59bb7b7b25949">ftp://mama.indstate.edu/linux/tree/tree-1.7.0.tgz</Archive>
+            <SourceURI>util/misc/tree/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>tree</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/bash-completion</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/bash-completion/tree" permission="0644" owner="root">tree.bashcomp</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-08</Date>
+                <Version>1.7.0</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -30807,6 +32142,40 @@
                 <Date>2016-12-21</Date>
                 <Version>4.7</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mobile-broadband-provider-info</Name>
+            <Homepage>http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>public-domain</License>
+            <IsA>data</IsA>
+            <PartOf>network.connection</PartOf>
+            <Summary xml:lang="en">Service provider specific settings of mobile broadband providers in different countries</Summary>
+            <Summary xml:lang="tr">Çeşitli ülkelerdeki mobil genişbant servis sağlayıcıları hakkında bilgileri içeren ayar veritabanı</Summary>
+            <Description xml:lang="en">The mobile-broadband-provider-info package contains listings of mobile broadband (3G) providers and associated network and plan information.</Description>
+            <Description xml:lang="tr">mobile-broadband-provider-info paketi, dünya üzerindeki mobil genişbant sağlayıcılarının ve ilgili tarifelerinin listesini tutan bir veritabanıdır.</Description>
+            <Archive type="tarxz" sha1sum="cb09ed36024d08a7ed836d930e1cbc6a45eb4ba1">ftp://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/20120614/mobile-broadband-provider-info-20120614.tar.xz</Archive>
+            <SourceURI>network/connection/mobile-broadband-provider-info/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mobile-broadband-provider-info</Name>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>20120614</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -33611,6 +34980,119 @@
                 <Date>2016-12-21</Date>
                 <Version>0.4</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>webkit-gtk3</Name>
+            <Homepage>http://webkitgtk.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <License>LGPLv2.1</License>
+            <License>BSD</License>
+            <IsA>library</IsA>
+            <PartOf>network.misc</PartOf>
+            <Summary xml:lang="en">An opensource web browser engine for GTK+ applications</Summary>
+            <Description xml:lang="en">The GTK+ port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ UI toolkit on platforms like Linux.</Description>
+            <Archive type="tarxz" sha1sum="e425ae86084ab6335dadb368c9e8f53600665d54">http://www.webkitgtk.org/releases/webkitgtk-2.4.11.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>ruby</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>geoclue</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-libav-next</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+                <Dependency>gst-plugins-bad-next</Dependency>
+                <Dependency>gst-plugins-good-next</Dependency>
+                <Dependency>which</Dependency>
+                <Dependency>icon-theme-hicolor</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>libSM</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">install-minibrowser.patch</Patch>
+                <Patch>webkitgtk-2.4.9-abs.patch</Patch>
+            </Patches>
+            <SourceURI>network/misc/webkit-gtk3/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>webkit-gtk3</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>geoclue</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-libav-next</Dependency>
+                <Dependency>gst-plugins-bad-next</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+                <Dependency>gst-plugins-good-next</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk/Web*</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk2/html</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk/JavaScriptCore</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-18</Date>
+                <Version>2.4.11</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -47646,6 +49128,52 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>libnih</Name>
+            <Homepage>https://launchpad.net/libnih</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPL</License>
+            <IsA>app:library</IsA>
+            <PartOf>programming.library</PartOf>
+            <Summary xml:lang="en">Small library for C application development</Summary>
+            <Summary xml:lang="tr">C uygulama geliştirme için küçük bir kütüphane</Summary>
+            <Description xml:lang="en">Small library for C application development.</Description>
+            <Description xml:lang="tr">C uygulama geliştirme için küçük bir kütüphane.</Description>
+            <Archive type="targz" sha1sum="db1f3e46a47f8a58f8179ca56f304d1550f41eb0">https://launchpad.net/libnih/1.0/1.0.3/+download/libnih-1.0.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>dbus</Dependency>
+                <Dependency>expat</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/library/libnih/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libnih</Name>
+            <RuntimeDependencies>
+                <Dependency>dbus</Dependency>
+                <Dependency>expat</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="locale">/usr/share/aclocal</Path>
+                <Path fileType="library">/usr/lib/*</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>1.0.3</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>libgudev</Name>
             <Homepage>https://wiki.gnome.org/Projects/libgudev</Homepage>
             <Packager>
@@ -50161,6 +51689,53 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
         <Source>
             <Name>python-qt5</Name>
             <Homepage>http://www.riverbankcomputing.co.uk/software/pyqt</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>virtualgl</Name>
+        <Summary xml:lang="en">A toolkit for displaying OpenGL applications to thin clients</Summary>
+        <Summary xml:lang="tr">OpenGL uygulamaları ince istemcilerde göstermek için bir kitaplık</Summary>
+        <Description xml:lang="en">Redirects 3D commands from an OpenGL application onto a server-side 3D graphics card.</Description>
+        <Description xml:lang="tr">Bir OpenGL uygulamadan gelen 3D komutlarını sunucu tarafındaki 3D grafik kartına yönlendirir.</Description>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <PartOf>x11.misc</PartOf>
+        <License>LGPLv2.1</License>
+        <RuntimeDependencies>
+            <Dependency>fltk</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2016-11-02</Date>
+                <Version>2.5.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+        <BuildHost>localhost</BuildHost>
+        <Distribution>LimeLinux</Distribution>
+        <DistributionRelease>1.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>2784653</InstalledSize>
+        <PackageSize>672248</PackageSize>
+        <PackageHash>2605551b889bf816984fad4f5e17a4d293032f85</PackageHash>
+        <InstallTarHash>f0bd753bdf09cecaa2e6c0e50c6cfa5147f2288f</InstallTarHash>
+        <PackageURI>x11/misc/virtualgl/virtualgl-2.5.1-1-lm-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>virtualgl</Name>
+            <Homepage>http://virtualgl.org</Homepage>
             <Packager>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>

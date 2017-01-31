@@ -1,0 +1,48 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>areca</Name>
+        <Homepage>http://www.areca-backup.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>areca</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Easy to use and reliable backup solution for Linux.</Summary>
+        <Description>Areca Backup is very versatile and as simple as possible.</Description>
+        <Archive sha1sum="8066dca3a26fd33039644d14c5c957c4419f4dc3" type="targz">http://sourceforge.net/projects/areca/files/areca-stable/areca-7.5/areca-7.5-linux-gtk-64.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>areca</Name>
+        <RuntimeDependencies>
+            <Dependency>acl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/opt/areca/</Path>
+            <Path fileType="data">/usr</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/areca">areca</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/areca.desktop">areca.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/areca.png">areca.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-08</Date>
+            <Version>7.5</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,37 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dash</Name>
+        <Homepage>http://gondor.apana.org.au/~herbert/dash/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <Summary>Small and fast POSIX-compliant shell</Summary>
+        <Description>DASH is a POSIX-compliant implementation of /bin/sh that aims to be as small as possible.</Description>
+        <Archive sha1sum="cd058935bba545427caa375337afe8a6309477d2" type="targz">http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.8.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>dash</Name>
+        <Files>
+            <Path fileType="executable">/bin/dash</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-08</Date>
+            <Version>0.5.8</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
