@@ -30558,6 +30558,72 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>homebank</Name>
+            <Homepage>http://homebank.free.fr</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>office</PartOf>
+            <Summary xml:lang="en">Free, easy, personal accounting for everyone</Summary>
+            <Summary xml:lang="tr">Protein dizi analizi için profil SMM (Saklı Markov Modeli) yazılımı</Summary>
+            <Description xml:lang="en">«HomeBank» is free software that will assist you to manage your personal accounting.</Description>
+            <Description xml:lang="tr">HomeBank (&quot;serbest konuşma&quot; olarak ve &quot;bedava bira&quot; gibi) kişisel muhasebe yönetmek için yardımcı olacak ücretsiz bir yazılımdır..</Description>
+            <Icon>homebank</Icon>
+            <Archive type="targz" sha1sum="b2b5f993aed9e241febc39af84bc2d9964dd0258">http://source.limelinux.com/1.0/homebank-5.1.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>cairo</Dependency>
+                <Dependency>libofx</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>pixman</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gettext</Dependency>
+                <Dependency>pkgconfig</Dependency>
+                <Dependency>libofx</Dependency>
+                <Dependency>intltool</Dependency>
+                <Dependency>at-spi2-core</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/homebank/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>homebank</Name>
+            <RuntimeDependencies>
+                <Dependency>cairo</Dependency>
+                <Dependency>libofx</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>glib2</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/application-registry</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/icons/hicolor</Path>
+                <Path fileType="data">/usr/share/homebank/datas</Path>
+                <Path fileType="data">/usr/share/mime-info</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>5.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>docbook-xsl</Name>
             <Homepage>http://wiki.docbook.org/topic/DocBookXslStylesheets</Homepage>
             <Packager>
@@ -31104,6 +31170,451 @@
                 <Date>2016-12-21</Date>
                 <Version>1.6.0</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-de</Name>
+            <Homepage>http://www.j3e.de/ispell/igerman98</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>GPLv3</License>
+            <IsA>locale:de</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">German hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">Almanca hunspell sözlüğü</Summary>
+            <Description xml:lang="en">hunspell-dict-de includes German, Switzerland, etc. hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-de Almanca ve İsviçre Almancası için hunspell sözlüklerini içermektedir.</Description>
+            <Archive type="tarbz2" sha1sum="ae310d6c92c49cfddbc569431bcb296bcfbad5a1">https://www.j3e.de/ispell/igerman98/dict/igerman98-20131206.tar.bz2</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-de/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-de</Name>
+            <Files>
+                <Path fileType="data">/usr/share/hunspell</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-11</Date>
+                <Version>0.0_20131216</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-pt</Name>
+            <Homepage>http://www.broffice.org/verortografico/baixar</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <License>GPLv2+</License>
+            <IsA>locale:pt</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">Portuguese hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">Portekizce hunspell sözlükleri</Summary>
+            <Description xml:lang="en">hunspell-dict-pt includes Portuguese hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-pt Portekizce hunspell sözlükleri içerir.</Description>
+            <Archive type="targz" sha1sum="0a135db0d392fe720b96c37294c7e831d3ea5029">http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/hunspell-pt_PT-20150704.tar.gz</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-pt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-pt</Name>
+            <Files>
+                <Path fileType="data">/usr/share/hunspell</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>20150704</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-it</Name>
+            <Homepage>http://linguistico.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>locale:it</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">Italian hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">İtalyanca hunspell sözlükleri</Summary>
+            <Description xml:lang="en">hunspell-dict-it includes Italian hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-it İtalyanca hunspell sözlüklerini içerir.</Description>
+            <Archive type="zip" sha1sum="b5c50c8afcad3f82757827ac7dd696b550b06d80">http://downloads.sourceforge.net/sourceforge/linguistico/italiano_2_4_2007_09_01.zip</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-it/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-it</Name>
+            <Files>
+                <Path fileType="data">/usr/share/hunspell</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.4</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-ca</Name>
+            <Homepage>http://www.softcatala.org/wiki/Projectes/Corrector_ortogràfic</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>locale:ca</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">Catalan hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">Katalanca hunspell sözlüğü</Summary>
+            <Description xml:lang="en">hunspell-dict-ca includes Catalan hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-ca Katalanca hunspell sözlüğünü içermektedir.</Description>
+            <Archive type="tarbz2" sha1sum="2e9d39ad10e02bb8fc03b735b50a2cf6b76fb905">http://source.limelinux.org/1.0/hunspell-dict-ca-20090319.tar.bz2</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-ca/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-ca</Name>
+            <Files>
+                <Path fileType="data">/usr/share/hunspell</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.0_20090319</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-sv</Name>
+            <Homepage>http://dsso.se/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>locale:sv</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">Swedish hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">İsveççe hunspell sözlükleri</Summary>
+            <Description xml:lang="en">hunspell-dict-sv includes Swedish hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-sv İsveççe hunspell sözlüklerini içerir.</Description>
+            <Archive type="binary" sha1sum="00ffbd1d3950d0eb9e1db1c227397facca23bcd0">http://extensions.libreoffice.org/extension-center/swedish-spelling-dictionary-den-stora-svenska-ordlistan/releases/2.40/ooo_swedish_dict_2-40.oxt</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-sv/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-sv</Name>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.40</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-nl</Name>
+            <Homepage>http://www.opentaal.org/english.php</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2+</License>
+            <IsA>locale:nl</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">Dutch hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">Flemenkçe hunspell sözlükleri</Summary>
+            <Description xml:lang="en">hunspell-dict-nl includes Dutch hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-nl Flemenkçe hunspell sözlüklerini içerir.</Description>
+            <Archive type="binary" sha1sum="b81870e2decc3671c066e77b4f3764f819b5a86a">http://pkgs.fedoraproject.org/repo/pkgs/hunspell-nl/OpenTaal-210G-LO.oxt/3c96686c2555e3ae23b5de06ba08631b/OpenTaal-210G-LO.oxt</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-nl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-nl</Name>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.10g</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-en</Name>
+            <Homepage>http://wordlist.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2+</License>
+            <License>BSD</License>
+            <IsA>locale:en</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">English hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">İngilizce hunspell sözlükleri</Summary>
+            <Description xml:lang="en">hunspell-dict-en includes English (US, UK, etc.) hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-en İngilizce (US, UK vs.) hunspell sözlüklerini içerir.</Description>
+            <Archive type="zip" sha1sum="a4172755005d80cc4d89d919aed08fb998db7635" target="wordlist">http://downloads.sourceforge.net/project/wordlist/speller/2015.05.18/hunspell-en_US-2015.05.18.zip</Archive>
+            <Archive type="zip" sha1sum="84722666d4f7a9c1b3d46a4c47f595cc6f9e1d80" target="wordlist">http://downloads.sourceforge.net/project/wordlist/speller/2015.05.18/hunspell-en_CA-2015.05.18.zip</Archive>
+            <Archive type="zip" sha1sum="daf8e7d03571990199cb0986e18e469a951e8ab0" target="wordlist">http://downloads.sourceforge.net/project/wordlist/speller/2015.05.18/hunspell-en_GB-large-2015.05.18.zip</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-en/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-en</Name>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2015.05.18</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-fr</Name>
+            <Homepage>http://dico.savant.free.fr/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <License>MPL-1.1</License>
+            <IsA>locale:fr</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">French hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">Fransızca hunspell sözlükleri</Summary>
+            <Description xml:lang="en">hunspell-dict-fr includes French (France, Belgium, etc.) hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-fr Fransızca (Fransa, Belçika vs.) hunspell sözlüklerini içerir.</Description>
+            <Archive type="zip" sha1sum="a3d2cbebe84b02e3c417785bacd472cb724e7749">http://dico.savant.free.fr/_download/fr_FR_2-3-2.zip</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-fr/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-fr</Name>
+            <Files>
+                <Path fileType="data">/usr/share/hunspell</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.3.2</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-pl</Name>
+            <Homepage>http://www.kurnik.pl/dictionary/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2+</License>
+            <License>GPLv2+</License>
+            <License>MPL-1.1</License>
+            <IsA>locale:pl</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">Polish hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">Polonya dili için hunspell sözlükleri</Summary>
+            <Description xml:lang="en">hunspell-dict-pl includes Polish hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-pl Polonya dili için hunspell sözlükleri içerir.</Description>
+            <Archive type="zip" sha1sum="3b244cff863547d2f6542130940fd82a9472f8d4">https://sources.archlinux.org/other/community/hunspell-pl/sjp-myspell-pl-20150428.zip</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-pl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-pl</Name>
+            <Files>
+                <Path fileType="data">/usr/share/hunspell</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>20100428</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-es</Name>
+            <Homepage>http://es.openoffice.org/programa/diccionario.html</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv3+</License>
+            <License>GPLv3+</License>
+            <License>MPL-1.1</License>
+            <IsA>locale:es</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">Spanish hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">İspanyolca hunspell sözlükleri</Summary>
+            <Description xml:lang="en">hunspell-dict-es includes Spanish (Spain, Mexico, etc.) hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-es İspanyolca (İspanya, Meksika vs.) hunspell sözlüklerini içerir.</Description>
+            <Archive type="zip" sha1sum="61f9a8f31991edbd0806b62eb7694c599ed18002">http://pkgs.fedoraproject.org/repo/pkgs/hunspell-es/es_ANY.zip/a88e2244de48c0ff42f1b77c4a80c8a0/es_ANY.zip</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-es/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-es</Name>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.0_20081215</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-tr</Name>
+            <Homepage>http://extensions.libreoffice.org/extension-center/turkish-spellcheck-dictionary/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2+</License>
+            <License>BSD</License>
+            <IsA>locale:en</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">Turkish hunspell dictionaries</Summary>
+            <Description xml:lang="en">Turkish hunspell dictionaries</Description>
+            <Archive type="binary" sha1sum="9689b49d177f7a501d718da60d76d2b74b1a980a">http://extensions.libreoffice.org/extension-center/turkish-spellcheck-dictionary/releases/1.1-2014.12.11/tr-tr.oxt</Archive>
+            <BuildDependencies>
+                <Dependency>hunspell</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/dictionary/hunspell-dict-tr/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-tr</Name>
+            <Files>
+                <Path fileType="library">/usr/lib/libreoffice/share/extensions/hunspell_tr/</Path>
+                <Path fileType="data">/usr/share/hunspell</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>hunspell-dict-ru</Name>
+            <Homepage>ftp://ftp.vsu.ru/mirrors/scon155.phys.msu.su/pub/russian/ispell/myspell</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>locale:ru</IsA>
+            <IsA>data</IsA>
+            <PartOf>office.dictionary</PartOf>
+            <Summary xml:lang="en">Russian hunspell dictionaries</Summary>
+            <Summary xml:lang="tr">Rusça hunspell sözlükleri</Summary>
+            <Description xml:lang="en">hunspell-dict-ru includes Russian hunspell dictionaries.</Description>
+            <Description xml:lang="tr">hunspell-dict-ru Rusça hunspell sözlüklerini içerir.</Description>
+            <Archive type="targz" sha1sum="1a1eab7dda00b05cc44a2a0950392643fd0bb395">http://pkgs.fedoraproject.org/repo/pkgs/hunspell-ru/rus-myspell-0.99f7.tar.gz/05a7c3a7bea2432410a35d93161b4c0a/rus-myspell-0.99f7.tar.gz</Archive>
+            <SourceURI>office/dictionary/hunspell-dict-ru/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>hunspell-dict-ru</Name>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.99f_7</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -31960,6 +32471,92 @@
             <Update release="1">
                 <Date>2016-06-09</Date>
                 <Version>0.4.14</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>evince</Name>
+            <Homepage>http://projects.gnome.org/evince/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>gnome.addons</PartOf>
+            <Summary xml:lang="en">A document viewer, built without GConf and GNOME keyring support</Summary>
+            <Summary xml:lang="tr">Hafif ve özgür bir PDF görüntüleyici</Summary>
+            <Description xml:lang="en">Evince is a document viewer for multiple document formats. The goal of evince is to replace the multiple document viewers that exist on the GNOME Desktop with a single simple application.</Description>
+            <Description xml:lang="tr">evince değişik tipte belgeleri görüntülemek için kullanılan bir araçtır. Evince&apos;in amacı, GNOME Masaüstü ortamı için basit bir belge görüntüleyici olarak diğer belge görüntüleyicilerinin yerini almaktır.</Description>
+            <Archive type="tarxz" sha1sum="eab33bc1db02ca0099c4594b08ff1ddfb44996dd">mirrors://gnome/evince/3.20/evince-3.20.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>itstool</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>libgxps</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>djvu</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>poppler</Dependency>
+                <Dependency>intltool</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/evince/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>evince</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>djvu</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libgxps</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libspectre</Dependency>
+                <Dependency>poppler</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/lib/evince</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/evince</Path>
+                <Path fileType="data">/usr/share/evince/icons</Path>
+                <Path fileType="data">/usr/share/GConf</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/libexec/evinced</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/gtk-doc/html</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-09-07</Date>
+                <Version>3.20.1</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
