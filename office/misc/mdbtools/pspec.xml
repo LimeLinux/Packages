@@ -1,0 +1,57 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mdbtools</Name>
+        <Homepage>https://github.com/brianb/mdbtools</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>MDB Tools is a suite of programs for accessing data stored in Microsoft Access databases</Summary>
+        <Description>mdbtools contains set of libraries and utilities for reading Microsoft Access database (MDB) files.</Description>
+        <Archive sha1sum="33b746f29c1308909a1e82546ec24e8f835d461a" type="targz">https://github.com/brianb/mdbtools/archive/0.7.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>unixODBC</Dependency>
+            <!--<Dependency>libglade-devel</Dependency>
+            <Dependency>libgnomeui-devel</Dependency>-->
+            <Dependency>glib2</Dependency>
+            <Dependency>readline</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mdbtools</Name>
+        <RuntimeDependencies>
+            <Dependency>unixODBC</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>readline</Dependency>
+        </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="4">mdbtools-gui</Package>
+        </Conflicts>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>0.7.1</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

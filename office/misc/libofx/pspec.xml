@@ -1,0 +1,54 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libofx</Name>
+        <Homepage>http://libofx.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>A library for supporting Open Financial Exchange (OFX) format</Summary>
+        <Description>libofx is a library designed to allow applications to very easily support OFX command responses, usually provided by financial institutions.</Description>
+        <Archive sha1sum="33f394c963c087217cb6c508af842d4844bc0823" type="targz">http://sourceforge.net/projects/libofx/files/libofx/0.9.10/libofx-0.9.10.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>opensp</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--<Patch level="1">libofx-assorted-c++-fu.patch</Patch>-->
+            <Patch level="1">libofx-0.9.5-gcc47.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libofx</Name>
+        <RuntimeDependencies>
+            <Dependency>opensp</Dependency>
+            <Dependency>libgcc</Dependency>            
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/libofx</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+            <Path fileType="doc">/usr/share/doc/libofx/html</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>0.9.10</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

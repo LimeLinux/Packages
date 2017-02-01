@@ -1,0 +1,56 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libvisio</Name>
+        <Homepage>http://www.ohloh.net/p/libvisio</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <IsA>app:console</IsA>
+        <Summary>A C++ library for parsing binary Microsoft Visio documents</Summary>
+        <Description>A C++ library for parsing binary Microsoft Visio documents (.vsd). Includes a converter to XHTML with embedded SVG files.</Description>
+        <Archive sha1sum="02daada854aee55ff847b42916536de143c7dda4" type="tarxz">http://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.5.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>icu4c</Dependency>
+            <Dependency>librevenge</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>gperf</Dependency>
+            <Dependency>cppunit</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libvisio</Name>
+        <RuntimeDependencies>
+            <Dependency>cppunit</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>librevenge</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxml2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc/libvisio</Path>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>0.1.5</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

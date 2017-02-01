@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>enca</Name>
+        <Homepage>http://cihar.com/software/enca</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>Charset analyzer</Summary>
+        <Description>enca is a character set analyzer that can detect and convert character set of text files.</Description>
+        <Archive sha1sum="1913e045a1a8c402c4a77222075b12cfe85625a4" type="tarxz">http://dl.cihar.com/enca/enca-1.16.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>recode</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>gtk-doc</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>enca</Name>
+        <RuntimeDependencies>
+            <Dependency>recode</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/libexec/enca</Path>
+            <Path fileType="doc">/usr/share/doc/enca</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>1.16</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
