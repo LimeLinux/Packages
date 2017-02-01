@@ -1655,7 +1655,7 @@
             <Summary xml:lang="pl">Narzędzie do wykrywania innych systemów operacyjnych na dyskach</Summary>
             <Description xml:lang="en">os-probe detects other OSes available on a system and outputs the results in a generic machine-readable format. Support for new OSes and Linux distributions can be added easily.</Description>
             <Description xml:lang="pl">os-prober wykrywa inne systemy operacyjne dostępne na komputerze i przekazuje rezultaty w standardowym, odczytywalnym maszynowo, formacie. </Description>
-            <Archive type="tarxz" sha1sum="7d603d603208fe8b065f84da62dcfb6ee965a9eb">http://http.debian.net/debian/pool/main/o/os-prober/os-prober_1.71.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="34d7bd94d68929c51def6d93c1a00b826e9e657b">http://http.kali.org/pool/main/o/os-prober/os-prober_1.73.tar.xz</Archive>
             <SourceURI>system/boot/os-prober/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -1671,7 +1671,7 @@
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>1.71</Version>
+                <Version>1.73</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -11768,6 +11768,133 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>qtcreator</Name>
+            <Homepage>http://qt-project.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>programming.environment</PartOf>
+            <Summary xml:lang="en">Lightweight, cross-platform integrated development environment</Summary>
+            <Summary xml:lang="tr">Hafif, çapraz platform tümleşik geliştirme ortamı</Summary>
+            <Description xml:lang="en">Lightweight, cross-platform integrated development environment</Description>
+            <Description xml:lang="tr">Hafif, çapraz platform tümleşik geliştirme ortamı</Description>
+            <Archive type="targz" sha1sum="be07f52421e5552b06bbe584fd2f957494c11aaf">http://download.qt.io/official_releases/qtcreator/4.0/4.0.0/qt-creator-opensource-src-4.0.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>cmake</Dependency>
+                <Dependency>git</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>openssh</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>valgrind</Dependency>
+                <Dependency>llvm-clang</Dependency>
+                <Dependency>llvm</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/toolkit/qtcreator/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qtcreator</Name>
+            <Summary xml:lang="en">Lightweight, cross-platform integrated development environment</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/libexec/qtcreator</Path>
+                <Path fileType="library">/usr/lib/qtcreator</Path>
+                <Path fileType="data">/usr/share/applications/qtcreator.desktop</Path>
+                <Path fileType="data">/usr/share/licenses</Path>
+                <Path fileType="data">/usr/share/qtcreator</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="icon">/usr/share/icons</Path>
+                <Path fileType="data">/etc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/qtcreator.desktop" permission="0644" owner="root">qtcreator.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/bin/qtcreator.sh" permission="0644" owner="root">qtcreator.sh</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>4.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>colord-gtk</Name>
+            <Homepage>http://www.freedesktop.org/software/colord/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv3+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.toolkit</PartOf>
+            <Summary xml:lang="en">GTK support library for colord</Summary>
+            <Summary xml:lang="tr">Colord için GTK destek kütüphanesi</Summary>
+            <Description xml:lang="en">colord-gtk is a GTK+ support library.</Description>
+            <Archive type="tarxz" sha1sum="60b85227d93758a66f5dc30d0a98f8f58415103d">http://www.freedesktop.org/software/colord/releases/colord-gtk-0.1.26.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>colord</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>vala</Dependency>
+                <Dependency>intltool</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>glib2</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/toolkit/colord-gtk/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>colord-gtk</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>colord</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>lcms2</Dependency>
+                <Dependency>glib2</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/vala/vapi/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man/man1</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="library">/usr/lib/pkgconfig/</Path>
+                <Path fileType="header">/usr/include/colord-1/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-11-17</Date>
+                <Version>0.1.26</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>cairomm</Name>
             <Homepage>http://cairographics.org/</Homepage>
             <Packager>
@@ -13298,6 +13425,73 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>qscintilla2</Name>
+            <Homepage>http://www.riverbankcomputing.co.uk/qscintilla/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.toolkit</PartOf>
+            <Summary xml:lang="en">Qt port of Scintilla</Summary>
+            <Summary xml:lang="tr">QScintilla2, Neil Hodgson&apos;un Scintilla C++ editör sınıfının bir Qt4 uyarlamasıdır.</Summary>
+            <Summary xml:lang="pl">Port do Qt klas C++ edytora Scintilla autorstwa Neila Hodgsona.</Summary>
+            <Description xml:lang="en">QScintilla2 is a port to Qt4 of Neil Hodgson&apos;s Scintilla C++ editor class.</Description>
+            <Description xml:lang="tr">QScintilla2, Neil Hodgson&apos;un Scintilla C++ editör sınıfının bir Qt4 uyarlamasıdır.</Description>
+            <Description xml:lang="pl">QScintilla jest portem do Qt klas C++ edytora Scintilla autorstwa Neila Hodgsona.</Description>
+            <Archive type="targz" sha1sum="63f367af50fd73a8815e4ff4596932c7dad12e41">mirrors://sourceforge/pyqt/QScintilla2/QScintilla-2.9.1/QScintilla-gpl-2.9.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python-qt5</Dependency>
+                <Dependency>python3-qt5</Dependency>
+                <Dependency>python</Dependency>
+                <Dependency>python3</Dependency>
+                <Dependency>python3-sip</Dependency>
+                <Dependency>python-sip</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>chrpath</Dependency>
+                <Dependency>mesa</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>configure.py.patch</Patch>
+                <Patch>libname.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/toolkit/qscintilla2/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qscintilla2</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/lib/qt5/plugins</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/qt5/mkspecs</Path>
+                <Path fileType="localedata">/usr/share/qt5/translations</Path>
+                <Path fileType="header">/usr/include/qt5/Qsci</Path>
+                <Path fileType="doc">/usr/share/doc/qscintilla2/Scintilla</Path>
+                <Path fileType="doc">/usr/share/doc/qscintilla2/html</Path>
+                <Path fileType="library">/usr/lib/python3*</Path>
+                <Path fileType="library">/usr/lib/python2*</Path>
+                <Path fileType="data">/usr/share/qt5/qsci</Path>
+                <Path fileType="data">/usr/share/sip</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.9.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>newt</Name>
             <Homepage>https://fedorahosted.org/newt/</Homepage>
             <Packager>
@@ -13815,6 +14009,58 @@
                 <Date>2016-12-21</Date>
                 <Version>0.20.10</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>glibmm</Name>
+            <Homepage>http://gtkmm.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome.base</PartOf>
+            <Summary xml:lang="en">C++ interface for glib2</Summary>
+            <Summary xml:lang="tr">glib2 kitaplığı için C++ programlama dili arayüzü</Summary>
+            <Description xml:lang="fr">Glibmm est l&apos;interface officielle C++ pour la librairie IHM populaire GTK+. Au menu des callbacks (rappels) typesafe (avec vérification de type à la compilation) ainsi qu&apos;un ensemble large et complet de widgets (objets graphiques) facilement extensible via héritage.</Description>
+            <Description xml:lang="en">Glibmm is the official C++ interface for the popular GUI library GTK+. Highlights include typesafe callbacks and a comprehensive set of widgets that are easily extensible via inheritance.</Description>
+            <Description xml:lang="tr">Glibmm, ünlü GUI kitaplığı GTK+ için resmi C++ arayüzüdür. Önemli özelliklerinin arasında tip bağımsız çağırmalar ve miras ile genişleyebilen uyumlu parçacıklar vardır.</Description>
+            <Archive type="tarxz" sha1sum="aa152d6f19bde44cd528b88f089c53913d0cd0ea">mirrors://gnome/glibmm/2.44/glibmm-2.44.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>libsigc++</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>pkgconfig</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome/base/glibmm/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>glibmm</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libsigc++</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/glibmm-*</Path>
+                <Path fileType="data">/usr/lib/giomm-*</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/share/aclocal</Path>
+                <Path fileType="data">/usr/share/glibmm-*</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.44.0</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>

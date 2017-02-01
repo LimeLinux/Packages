@@ -1,0 +1,66 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qscintilla2</Name>
+        <Homepage>http://www.riverbankcomputing.co.uk/qscintilla/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>Qt port of Scintilla</Summary>
+        <Description>QScintilla2 is a port to Qt4 of Neil Hodgson's Scintilla C++ editor class.</Description>
+        <Archive type="targz" sha1sum="63f367af50fd73a8815e4ff4596932c7dad12e41">mirrors://sourceforge/pyqt/QScintilla2/QScintilla-2.9.1/QScintilla-gpl-2.9.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python-qt5</Dependency>
+            <Dependency>python3-qt5</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>python3-sip</Dependency>
+            <Dependency>python-sip</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>chrpath</Dependency>
+            <Dependency>mesa</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>configure.py.patch</Patch>
+            <Patch>libname.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>qscintilla2</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5/plugins</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/qt5/mkspecs</Path>
+            <Path fileType="localedata">/usr/share/qt5/translations</Path>
+            <Path fileType="header">/usr/include/qt5/Qsci</Path>
+            <Path fileType="doc">/usr/share/doc/qscintilla2/Scintilla</Path>
+            <Path fileType="doc">/usr/share/doc/qscintilla2/html</Path>
+            <Path fileType="library">/usr/lib/python3*</Path>
+            <Path fileType="library">/usr/lib/python2*</Path>
+            <Path fileType="data">/usr/share/qt5/qsci</Path>
+            <Path fileType="data">/usr/share/sip</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>2.9.1</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

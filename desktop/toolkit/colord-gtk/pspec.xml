@@ -1,0 +1,66 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>colord-gtk</Name>
+        <Homepage>http://www.freedesktop.org/software/colord/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv3+</License>
+        <IsA>app:gui</IsA>
+        <Summary>GTK support library for colord</Summary>
+        <Description>colord-gtk is a GTK+ support library.</Description>
+        <Archive sha1sum="60b85227d93758a66f5dc30d0a98f8f58415103d" type="tarxz">http://www.freedesktop.org/software/colord/releases/colord-gtk-0.1.26.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>colord</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>vala</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>glib2</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>colord-gtk</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>colord</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>glib2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path> 
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/vala/vapi/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="library">/usr/lib/pkgconfig/</Path>
+            <Path fileType="header">/usr/include/colord-1/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-11-17</Date>
+            <Version>0.1.26</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

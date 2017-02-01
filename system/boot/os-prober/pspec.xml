@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Utility to detect other OSes on a set of drives</Summary>
         <Description>os-probe detects other OSes available on a system and outputs the results in a generic machine-readable format. Support for new OSes and Linux distributions can be added easily.</Description>
-        <Archive sha1sum="7d603d603208fe8b065f84da62dcfb6ee965a9eb" type="tarxz">http://http.debian.net/debian/pool/main/o/os-prober/os-prober_1.71.tar.xz</Archive>
+        <Archive sha1sum="34d7bd94d68929c51def6d93c1a00b826e9e657b" type="tarxz">http://http.kali.org/pool/main/o/os-prober/os-prober_1.73.tar.xz</Archive>
     </Source>
     <Package>
         <Name>os-prober</Name>
@@ -28,7 +28,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>1.71</Version>
+            <Version>1.73</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

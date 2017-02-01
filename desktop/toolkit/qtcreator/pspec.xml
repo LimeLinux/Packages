@@ -1,0 +1,64 @@
+
+<PISI>
+    <Source>
+        <Name>qtcreator</Name>
+        <Homepage>http://qt-project.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <PartOf>programming.environment</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Lightweight, cross-platform integrated development environment</Summary>
+        <Description>Lightweight, cross-platform integrated development environment</Description>
+        <Archive type="targz" sha1sum="be07f52421e5552b06bbe584fd2f957494c11aaf">http://download.qt.io/official_releases/qtcreator/4.0/4.0.0/qt-creator-opensource-src-4.0.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>git</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>openssh</Dependency>
+            <Dependency >qt5</Dependency>
+            <Dependency>valgrind</Dependency>
+            <Dependency>llvm-clang</Dependency>
+            <Dependency>llvm</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>qtcreator</Name>
+        <Summary>Lightweight, cross-platform integrated development environment</Summary>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec/qtcreator</Path>
+            <Path fileType="library">/usr/lib/qtcreator</Path>
+            <Path fileType="data">/usr/share/applications/qtcreator.desktop</Path>
+            <Path fileType="data">/usr/share/licenses</Path>
+            <Path fileType="data">/usr/share/qtcreator</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="icon">/usr/share/icons</Path>
+            <Path fileType="data">/etc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/qtcreator.desktop">qtcreator.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/bin/qtcreator.sh">qtcreator.sh</AdditionalFile>
+<!--             <AdditionalFile owner="root" permission="0644" target="/etc/ld.so.conf.d/80-qtcreator.conf">80-qtcreator.conf</AdditionalFile> -->
+        </AdditionalFiles>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>4.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
