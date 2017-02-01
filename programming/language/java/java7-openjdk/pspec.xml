@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Open Java Development Kit</Summary>
         <Description>OpenJDK (Open Java Development Kit) is a free and open source implementation of the Java Platform, Standard Edition (Java SE).</Description>
-        <Archive sha1sum="564d8abe079a04f71eee90daa79f08c67c22ba49" type="targz">http://icedtea.wildebeest.org/download/source/icedtea-2.6.7.tar.gz</Archive>
+        <Archive sha1sum="564d8abe079a04f71eee90daa79f08c67c22ba49" type="targz">http://icedtea.wildebeest.org/download/source/icedtea-2.6.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ant</Dependency>
             <Dependency>wget</Dependency>
@@ -300,7 +300,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>7u_85.2.6.7</Version>
+            <Version>7u_121.2.6.8</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
