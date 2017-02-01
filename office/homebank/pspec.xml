@@ -1,0 +1,67 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>homebank</Name>
+        <Homepage>http://homebank.free.fr</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>homebank</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Free, easy, personal accounting for everyone</Summary>
+        <Description>«HomeBank» is free software that will assist you to manage your personal accounting.</Description>
+        <Archive sha1sum="b2b5f993aed9e241febc39af84bc2d9964dd0258" type="targz">http://source.limelinux.com/1.0/homebank-5.1.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cairo</Dependency>
+            <Dependency>libofx</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>pixman</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>pkgconfig</Dependency>
+            <Dependency>libofx</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+        </BuildDependencies>
+     </Source>
+
+    <Package>
+        <Name>homebank</Name>
+     <RuntimeDependencies>
+        <Dependency>cairo</Dependency>
+        <Dependency>libofx</Dependency>
+        <Dependency>pango</Dependency>
+        <Dependency>gdk-pixbuf</Dependency>
+        <Dependency>gtk3</Dependency>
+        <Dependency>glib2</Dependency>
+     </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/application-registry</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/icons/hicolor</Path>
+             <Path fileType="data">/usr/share/homebank/datas</Path>
+             <Path fileType="data">/usr/share/mime-info</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>5.1</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

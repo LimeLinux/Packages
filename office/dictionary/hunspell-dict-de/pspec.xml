@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>hunspell-dict-de</Name>
+        <Homepage>http://www.j3e.de/ispell/igerman98</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>GPLv3</License>
+        <IsA>locale:de</IsA>
+        <IsA>data</IsA>
+        <Summary>German hunspell dictionaries</Summary>
+        <Description>hunspell-dict-de includes German, Switzerland, etc. hunspell dictionaries.</Description>
+        <Archive sha1sum="ae310d6c92c49cfddbc569431bcb296bcfbad5a1" type="tarbz2">https://www.j3e.de/ispell/igerman98/dict/igerman98-20131206.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>hunspell-dict-de</Name>
+        <Files>
+            <Path fileType="data">/usr/share/hunspell</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-11</Date>
+            <Version>0.0_20131216</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>hunspell-dict-ca</Name>
+        <Homepage>http://www.softcatala.org/wiki/Projectes/Corrector_ortogràfic</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>locale:ca</IsA>
+        <IsA>data</IsA>
+        <Summary>Catalan hunspell dictionaries</Summary>
+        <Description>hunspell-dict-ca includes Catalan hunspell dictionaries.</Description>
+        <!-- svn checkout svn://softcatala.org/corrector/trunk/resultats/hunspell -->
+        <Archive sha1sum="2e9d39ad10e02bb8fc03b735b50a2cf6b76fb905" type="tarbz2">http://source.limelinux.org/1.0/hunspell-dict-ca-20090319.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>hunspell-dict-ca</Name>
+        <Files>
+            <Path fileType="data">/usr/share/hunspell</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>0.0_20090319</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

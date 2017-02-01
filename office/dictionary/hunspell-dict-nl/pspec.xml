@@ -1,0 +1,37 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>hunspell-dict-nl</Name>
+        <Homepage>http://www.opentaal.org/english.php</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2+</License>
+        <IsA>locale:nl</IsA>
+        <IsA>data</IsA>
+        <Summary>Dutch hunspell dictionaries</Summary>
+        <Description>hunspell-dict-nl includes Dutch hunspell dictionaries.</Description>
+        <Archive sha1sum="b81870e2decc3671c066e77b4f3764f819b5a86a" type="binary">http://pkgs.fedoraproject.org/repo/pkgs/hunspell-nl/OpenTaal-210G-LO.oxt/3c96686c2555e3ae23b5de06ba08631b/OpenTaal-210G-LO.oxt</Archive>
+    </Source>
+
+    <Package>
+        <Name>hunspell-dict-nl</Name>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>2.10g</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

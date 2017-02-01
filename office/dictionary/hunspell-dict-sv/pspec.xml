@@ -1,0 +1,37 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>hunspell-dict-sv</Name>
+        <Homepage>http://dsso.se/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>locale:sv</IsA>
+        <IsA>data</IsA>
+        <Summary>Swedish hunspell dictionaries</Summary>
+        <Description>hunspell-dict-sv includes Swedish hunspell dictionaries.</Description>
+        <Archive sha1sum="00ffbd1d3950d0eb9e1db1c227397facca23bcd0" type="binary">http://extensions.libreoffice.org/extension-center/swedish-spelling-dictionary-den-stora-svenska-ordlistan/releases/2.40/ooo_swedish_dict_2-40.oxt</Archive>
+    </Source>
+
+    <Package>
+        <Name>hunspell-dict-sv</Name>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>2.40</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
