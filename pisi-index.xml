@@ -1221,6 +1221,119 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>ntp</Name>
+            <Homepage>http://www.ntp.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <License>BSD</License>
+            <License>GPLv2+</License>
+            <IsA>service</IsA>
+            <PartOf>server</PartOf>
+            <Summary xml:lang="en">NTP daemon and client</Summary>
+            <Summary xml:lang="tr">NTP hizmeti ve istemcisi</Summary>
+            <Description xml:lang="en">Network Time Protocol utilities and daemons that will synchronize your computer&apos;s time to Coordinated Universal Time (UTC) via the NTP protocol and NTP servers.</Description>
+            <Description xml:lang="tr">ntp, NTP protokolü üzerinden uzak sunucuları kullanarak sisteminizin zamanını eşitlemek için gerekli araçları ve hizmetleri içerir.</Description>
+            <Archive type="targz" sha1sum="208ae3e2ce1237ad684c3bc818b6314d28636e46">https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p8.tar.gz</Archive>
+            <AdditionalFiles>
+                <AdditionalFile target="fix-man-pages" permission="0755">fix-man-pages.sh</AdditionalFile>
+            </AdditionalFiles>
+            <BuildDependencies>
+                <Dependency>avahi</Dependency>
+                <Dependency>libedit</Dependency>
+                <Dependency>net-snmp</Dependency>
+                <Dependency>perl-HTML-Parser</Dependency>
+                <Dependency>libcap</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>libevent</Dependency>
+            </BuildDependencies>
+            <SourceURI>server/ntp/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ntp-server</Name>
+            <Summary xml:lang="en">NTP server</Summary>
+            <Summary xml:lang="tr">NTP hizmeti</Summary>
+            <RuntimeDependencies>
+                <Dependency>avahi</Dependency>
+                <Dependency>libedit</Dependency>
+                <Dependency>net-snmp</Dependency>
+                <Dependency>libcap</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>libevent</Dependency>
+                <Dependency release="1">ntp-client</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/ntp.conf</Path>
+                <Path fileType="config">/etc/conf.d</Path>
+                <Path fileType="config">/etc/ntp/crypto</Path>
+                <Path fileType="executable">/usr/bin/ntpstat</Path>
+                <Path fileType="executable">/usr/bin/update-leap</Path>
+                <Path fileType="executable">/usr/bin/calc_tickadj</Path>
+                <Path fileType="data">/usr/share/ntp/lib/NTP/Util.pm</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/var/lib/ntp</Path>
+            </Files>
+            <Provides>
+                <COMAR script="ntp-server-package.py">System.Package</COMAR>
+                <COMAR script="ntpd-service.py" name="ntpd">System.Service</COMAR>
+            </Provides>
+            <AdditionalFiles>
+                <AdditionalFile target="/etc/ntp.conf" permission="0644" owner="root">fedora/ntp.conf</AdditionalFile>
+                <AdditionalFile target="/etc/ntp/crypto/pw" permission="0600" owner="root">fedora/ntp.cryptopw</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>ntp-client</Name>
+            <Summary xml:lang="en">NTP client</Summary>
+            <Summary xml:lang="tr">NTP istemcisi</Summary>
+            <IsA>app:console</IsA>
+            <PartOf>util.admin</PartOf>
+            <Files>
+                <Path fileType="config">/etc/conf.d/ntpdate</Path>
+                <Path fileType="config">/etc/ntp/step-tickers</Path>
+                <Path fileType="config">/etc/ntp/keys</Path>
+                <Path fileType="executable">/usr/sbin/ntpdate</Path>
+                <Path fileType="man">/usr/share/man/man8/ntpdate.8*</Path>
+            </Files>
+            <Provides>
+                <COMAR script="ntpdate-service.py" name="ntpdate">System.Service</COMAR>
+                <COMAR script="ntpdate-package.py">System.Package</COMAR>
+            </Provides>
+            <AdditionalFiles>
+                <AdditionalFile target="/etc/conf.d/ntpdate" permission="0644" owner="root">fedora/ntpdate.sysconfig</AdditionalFile>
+                <AdditionalFile target="/etc/ntp/step-tickers" permission="0644" owner="root">fedora/ntp.step-tickers</AdditionalFile>
+                <AdditionalFile target="/etc/ntp/keys" permission="0600" owner="root">fedora/ntp.keys</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>ntp-docs</Name>
+            <Summary xml:lang="en">NTP documentation</Summary>
+            <Summary xml:lang="tr">NTP belgeleri</Summary>
+            <IsA>data:doc</IsA>
+            <RuntimeDependencies>
+                <Dependency release="1">ntp-client</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc/ntp/html</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-10-27</Date>
+                <Version>4.2.8_p8</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>apache</Name>
             <Homepage>http://httpd.apache.org/</Homepage>
             <Packager>
