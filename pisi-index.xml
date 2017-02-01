@@ -11485,88 +11485,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>wxGTK</Name>
-            <Homepage>http://www.wxwidgets.org/</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>wxWinLL-3</License>
-            <License>GPLv2</License>
-            <License>LGPLv2</License>
-            <License>wxWinFDL-3</License>
-            <IsA>library</IsA>
-            <PartOf>desktop</PartOf>
-            <Summary xml:lang="en">GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit</Summary>
-            <Summary xml:lang="tr">Birçok platform için ortak C++ arayüz araç takımı olan wxWindows&apos;un GTK+ sürümü</Summary>
-            <Description xml:lang="fr">wxWidgets/GTK2 est le port GTK2 de la librairie graphique multi-plateforme wxWidgets, offrant des classes pour les contrôles IHM communs ainsi qu&apos;un ensemble complet de classes d&apos;aides pour les tâches applicatives habituelles, allant du réseau à l&apos;affichage HTML en passant par la manipulation d&apos;images.</Description>
-            <Description xml:lang="en">wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
-            <Description xml:lang="tr">wxWidgets/GTK2 birçok platform için ortak bir C++ arayüz kitaplığı olan wxWidgets&apos;ın GTK2 sürümüdür. Ağ araçları, HTML gösterimi ve resim işleme gibi en yaygın kullanılan uygulama görevleri için kapsamlı bir sınıf kümesinin yanında tüm genel GUI denetimlerini içerir.</Description>
-            <Description xml:lang="es">wxWidgets/GTK2 es la versión portada a GTK2 de la librería GUI wxWidgets cross-plataforma en C++, con clases para todos los controles GUI comunes y tambien un conjunto de clases con ayudantes para la mayoría de las tareas comunes de aplicaciones, desde networking a visualización HTML y manipulación de imagenes.</Description>
-            <Archive type="tarbz2" sha1sum="6461eab4428c0a8b9e41781b8787510484dea800">mirrors://sourceforge/wxwindows/wxWidgets-3.0.2.tar.bz2</Archive>
-            <BuildDependencies>
-                <Dependency>zlib</Dependency>
-                <Dependency>tiff</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>expat</Dependency>
-                <Dependency>libSM</Dependency>
-                <Dependency>libpng</Dependency>
-                <Dependency>mesa-glu</Dependency>
-                <Dependency>webkit-gtk2</Dependency>
-                <Dependency>libjpeg-turbo</Dependency>
-                <Dependency>gst-plugins-base</Dependency>
-            </BuildDependencies>
-            <Patches>
-                <Patch level="1">make-abicheck-non-fatal.patch</Patch>
-                <Patch level="1">gcc6.patch</Patch>
-            </Patches>
-            <SourceURI>desktop/wxGTK/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>wxGTK</Name>
-            <RuntimeDependencies>
-                <Dependency>gtk2</Dependency>
-                <Dependency>mesa</Dependency>
-                <Dependency>tiff</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>expat</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>libSM</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libpng</Dependency>
-                <Dependency>gstreamer</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-                <Dependency>libXxf86vm</Dependency>
-                <Dependency>webkit-gtk2</Dependency>
-                <Dependency>libjpeg-turbo</Dependency>
-                <Dependency>gst-plugins-base</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="library">/usr/lib/</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="doc">/usr/share/doc/</Path>
-                <Path fileType="data">/usr/share/aclocal/</Path>
-                <Path fileType="data">/usr/share/bakefile/</Path>
-                <Path fileType="library">/usr/lib/wx/config</Path>
-                <Path fileType="localedata">/usr/share/locale/</Path>
-                <Path fileType="header">/usr/include</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-06-09</Date>
-                <Version>3.0.2</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>fltk</Name>
             <Homepage>http://www.fltk.org</Homepage>
             <Packager>
@@ -13060,6 +12978,88 @@
                 <Date>2016-12-21</Date>
                 <Version>2.11.2</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>wxGTK</Name>
+            <Homepage>http://www.wxwidgets.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>wxWinLL-3</License>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <License>wxWinFDL-3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.toolkit</PartOf>
+            <Summary xml:lang="en">GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit</Summary>
+            <Summary xml:lang="tr">Birçok platform için ortak C++ arayüz araç takımı olan wxWindows&apos;un GTK+ sürümü</Summary>
+            <Description xml:lang="fr">wxWidgets/GTK2 est le port GTK2 de la librairie graphique multi-plateforme wxWidgets, offrant des classes pour les contrôles IHM communs ainsi qu&apos;un ensemble complet de classes d&apos;aides pour les tâches applicatives habituelles, allant du réseau à l&apos;affichage HTML en passant par la manipulation d&apos;images.</Description>
+            <Description xml:lang="en">wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
+            <Description xml:lang="tr">wxWidgets/GTK2 birçok platform için ortak bir C++ arayüz kitaplığı olan wxWidgets&apos;ın GTK2 sürümüdür. Ağ araçları, HTML gösterimi ve resim işleme gibi en yaygın kullanılan uygulama görevleri için kapsamlı bir sınıf kümesinin yanında tüm genel GUI denetimlerini içerir.</Description>
+            <Description xml:lang="es">wxWidgets/GTK2 es la versión portada a GTK2 de la librería GUI wxWidgets cross-plataforma en C++, con clases para todos los controles GUI comunes y tambien un conjunto de clases con ayudantes para la mayoría de las tareas comunes de aplicaciones, desde networking a visualización HTML y manipulación de imagenes.</Description>
+            <Archive type="tarbz2" sha1sum="6461eab4428c0a8b9e41781b8787510484dea800">mirrors://sourceforge/wxwindows/wxWidgets-3.0.2.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>zlib</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>webkit-gtk2</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">make-abicheck-non-fatal.patch</Patch>
+                <Patch level="1">gcc6.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/toolkit/wxGTK/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>wxGTK</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>webkit-gtk2</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc/</Path>
+                <Path fileType="data">/usr/share/aclocal/</Path>
+                <Path fileType="data">/usr/share/bakefile/</Path>
+                <Path fileType="library">/usr/lib/wx/config</Path>
+                <Path fileType="localedata">/usr/share/locale/</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>3.0.2</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -47878,6 +47878,50 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Date>2016-12-21</Date>
                 <Version>2.6</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pyparted</Name>
+            <Homepage>http://people.redhat.com/dcantrel/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">Python bindings for parted</Summary>
+            <Summary xml:lang="tr">Disk bölümleme tablolarını yönetmek için kullanılan parted kütüphanesine erişim sağlayan Python modülü.</Summary>
+            <Description xml:lang="fr">pyparted est un module python permettant d&apos;utiliser le paquet GNU Parted depuis python. À l&apos;aide de ce module, les programmeurs peuvent depuis python détruire, re-dimensionner, vérifier et copier des partitions et les systèmes de fichier présents dessus.</Description>
+            <Description xml:lang="en">pyparted is the python module which enables to use GNU Parted package from python. Using python with this module, programmers can create, destroy, resize, check and copy partitions, and the file systems on them.</Description>
+            <Description xml:lang="tr">pyparted, GNU Parted uygulamasının python programlama diliyle kullanılabilmesi için gerekli olan kütüphanedir. Bu modülü kullanan programcılar, python ile yeni disk bölümleri ya da dosya sistemleri oluşturabilir, bunları silebilir, yeniden boyutlandırabilir, kontrol edebilir ve kopyalayabilir.</Description>
+            <Archive type="targz" sha1sum="3b8d3dcb3ce2c15ed4305748eff251d5c90a1548">https://github.com/rhinstaller/pyparted/archive/v3.10.5.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python</Dependency>
+                <Dependency>parted</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python/pyparted/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pyparted</Name>
+            <RuntimeDependencies>
+                <Dependency>parted</Dependency>
+                <Dependency>python</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>3.10.5</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
