@@ -14,7 +14,7 @@
         <IsA>Libry</IsA>
         <Summary>yaml-cpp is a YAML parser and emitter in C++ matching the YAML 1.2 spec.</Summary>
         <Description>To get a feel for how it can be used, see the Tutorial or How to Emit YAML.</Description>
-        <Archive sha1sum="61edcbb18b106dfc240f151998e233c03bdbf9f3" type="targz">https://github.com/jbeder/yaml-cpp/archive/release-0.5.2.tar.gz</Archive>
+        <Archive sha1sum="c7cb8fecdcb3470176157d9b8641f24606a1dd69" type="targz">https://github.com/jbeder/yaml-cpp/archive/release-0.5.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cmake</Dependency>
             <Dependency>boost</Dependency>
@@ -31,8 +31,8 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.5.2</Version>
+            <Date>2017-01-21</Date>
+            <Version>0.5.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
