@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Linux-native asynchronous I/O access library</Summary>
         <Description>libaio has a richer API and capability set than the simple POSIX async I/O facility.</Description>
-        <Archive sha1sum="b772e567e7089bb3ca405b16370f8b1a4997c0b3" type="tarbz2">http://enterprise-storage-os.googlecode.com/files/libaio-0.3.109.tar.bz2</Archive>
+        <Archive sha1sum="b772e567e7089bb3ca405b16370f8b1a4997c0b3" type="tarbz2">http://pkgs.fedoraproject.org/repo/pkgs/libaio/libaio-0.3.109.tar.gz/435a5b16ca6198eaf01155263d855756/libaio-0.3.109.tar.gz</Archive>
         <Patches>
             <Patch>libaio-0.3.106-build.patch</Patch>
             <!--Patch level="1">libaio-install-to-slash.patch</Patch-->
