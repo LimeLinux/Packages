@@ -31301,7 +31301,7 @@
             <Summary xml:lang="tr">Katalanca hunspell sözlüğü</Summary>
             <Description xml:lang="en">hunspell-dict-ca includes Catalan hunspell dictionaries.</Description>
             <Description xml:lang="tr">hunspell-dict-ca Katalanca hunspell sözlüğünü içermektedir.</Description>
-            <Archive type="tarbz2" sha1sum="2e9d39ad10e02bb8fc03b735b50a2cf6b76fb905">http://source.limelinux.org/1.0/hunspell-dict-ca-20090319.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="2e9d39ad10e02bb8fc03b735b50a2cf6b76fb905">http://source.pisilinux.org/1.0/hunspell-dict-ca-20090319.tar.bz2</Archive>
             <SourceURI>office/dictionary/hunspell-dict-ca/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -50825,6 +50825,41 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>npapi-sdk</Name>
+            <Homepage>http://code.google.com/p/npapi-sdk/</Homepage>
+            <Packager>
+                <Name>Lime GNU/Linux</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MPLv1.1</License>
+            <IsA>app:gui</IsA>
+            <PartOf>programming.language.java</PartOf>
+            <Summary xml:lang="en">NPAPI-SDK is a bundle of Netscape Plugin Application Programming Interface headers by Mozilla.</Summary>
+            <Description xml:lang="en">NPAPI-SDK is a bundle of Netscape Plugin Application Programming Interface headers by Mozilla. This package provides a clear way to install those headers and depend on them.</Description>
+            <Archive type="tarbz2" sha1sum="5aac3c76ea59aa2ac8113e2f742af51f4ae0c60c">https://bitbucket.org/mgorny/npapi-sdk/downloads/npapi-sdk-0.27.2.tar.bz2</Archive>
+            <SourceURI>programming/language/java/npapi-sdk/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>npapi-sdk</Name>
+            <Summary xml:lang="en">Development files for npapi-sdk</Summary>
+            <Files>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/npapi-sdk</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-01-08</Date>
+                <Version>0.27.2</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/Linux</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>java7-openjdk</Name>
             <Homepage>http://icedtea.classpath.org</Homepage>
             <Packager>
@@ -52671,7 +52706,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="en">yaml-cpp is a YAML parser and emitter in C++ matching the YAML 1.2 spec.</Summary>
             <Description xml:lang="en">To get a feel for how it can be used, see the Tutorial or How to Emit YAML.</Description>
             <Icon>yalm-cpp</Icon>
-            <Archive type="targz" sha1sum="61edcbb18b106dfc240f151998e233c03bdbf9f3">https://github.com/jbeder/yaml-cpp/archive/release-0.5.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="c7cb8fecdcb3470176157d9b8641f24606a1dd69">https://github.com/jbeder/yaml-cpp/archive/release-0.5.3.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>cmake</Dependency>
                 <Dependency>boost</Dependency>
@@ -52689,8 +52724,8 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>0.5.2</Version>
+                <Date>2017-01-21</Date>
+                <Version>0.5.3</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
