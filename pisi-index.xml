@@ -30662,6 +30662,57 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>opensp</Name>
+            <Homepage>http://openjade.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:console</IsA>
+            <PartOf>office.docbook</PartOf>
+            <Summary xml:lang="en">A SGML parsing and entity management toolkit</Summary>
+            <Summary xml:lang="tr">SGML ayrıştırma araç seti</Summary>
+            <Description xml:lang="en">OpenSP is a free, object-oriented toolkit for Standard Generalized Markup Language (SGML) parsing and entity management maintained by the OpenJade project.</Description>
+            <Description xml:lang="tr">OpenSP SGML sözdizimsel ayrıştırma ve içerik yönetimi için nesne-odaklı bir araç setidir ve OpenJade projesinin bir parçasıdır.</Description>
+            <Archive type="targz" sha1sum="b4e903e980f8a8b3887396a24e067bef126e97d5">mirrors://sourceforge/openjade/OpenSP-1.5.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>docbook-xml</Dependency>
+                <Dependency>libgcc</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>opensp-1.5-gcc34.patch</Patch>
+                <Patch level="1">opensp-sigsegv.patch</Patch>
+            </Patches>
+            <SourceURI>office/docbook/opensp/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>opensp</Name>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc/opensp</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/sgml</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>1.5.2</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>xmlto</Name>
             <Homepage>https://fedorahosted.org/xmlto/</Homepage>
             <Packager>
@@ -31060,6 +31111,42 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>txt2man</Name>
+            <Homepage>http://mvertes.free.fr/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">A converter from flat ASCII text to man page format</Summary>
+            <Summary xml:lang="tr">Düz ASCII metinleri man sayfası formatına dönüştürücü</Summary>
+            <Description xml:lang="en">txt2man converts flat ASCII text to man page format.</Description>
+            <Description xml:lang="tr">txt2man düz ASCII metinleri man sayfası formatına dönüştürür.</Description>
+            <Archive type="targz" sha1sum="ef1392785333ea88f7e01f4f4c519ecfbdd498bd">http://mvertes.free.fr/download/txt2man-1.5.6.tar.gz</Archive>
+            <SourceURI>office/misc/txt2man/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>txt2man</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>1.5.6</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>graphite2</Name>
             <Homepage>http://sourceforge.net/projects/silgraphite</Homepage>
             <Packager>
@@ -31090,6 +31177,42 @@
                 <Date>2016-12-21</Date>
                 <Version>1.2.4</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>dos2unix</Name>
+            <Homepage>http://www.xs4all.nl/~waterlan/dos2unix.html</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>freedist</License>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">Convert DOS and MAC text files to UNIX format</Summary>
+            <Summary xml:lang="tr">DOS ve MAC metin dosyalarını UNIX biçimine dönüştürme uygulaması</Summary>
+            <Description xml:lang="en">dos2unix can convert DOS and MAC files to UNIX format, processing character encoding and line ending characters.</Description>
+            <Description xml:lang="tr">dos2unix DOS ve MAC düzmetin dosyalarını karakter kodlamalarını ve satırsonu karakterlerini değiştirerek UNIX biçimine çevirir.</Description>
+            <Archive type="targz" sha1sum="3cc653ab32344446345e77b736d4578c80ef4d5c">http://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.3.tar.gz</Archive>
+            <SourceURI>office/misc/dos2unix/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>dos2unix</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>7.3</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -31176,6 +31299,234 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>libofx</Name>
+            <Homepage>http://libofx.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>app:console</IsA>
+            <IsA>library</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">A library for supporting Open Financial Exchange (OFX) format</Summary>
+            <Summary xml:lang="tr">Açık Finansal Takas (OXF) dosya biçimi kitaplığı</Summary>
+            <Description xml:lang="en">libofx is a library designed to allow applications to very easily support OFX command responses, usually provided by financial institutions.</Description>
+            <Description xml:lang="tr">libofx, uygulamaların finansal kuruluşlar tarafından sağlanan OFX yapılarını desteklemesini sağlayan bir kitaplıktır.</Description>
+            <Archive type="targz" sha1sum="33f394c963c087217cb6c508af842d4844bc0823">http://sourceforge.net/projects/libofx/files/libofx/0.9.10/libofx-0.9.10.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>opensp</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">libofx-0.9.5-gcc47.patch</Patch>
+            </Patches>
+            <SourceURI>office/misc/libofx/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libofx</Name>
+            <RuntimeDependencies>
+                <Dependency>opensp</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/libofx</Path>
+                <Path fileType="man">/usr/share/man/man1</Path>
+                <Path fileType="doc">/usr/share/doc/libofx/html</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.9.10</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>recode</Name>
+            <Homepage>http://www.gnu.org/software/recode/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">File character set converter</Summary>
+            <Summary xml:lang="tr">Karakter kümesi dönüşümü aracı</Summary>
+            <Description xml:lang="en">Recode can convert files to various character sets (e.g. utf8, iso-8859-1, koi8r..).</Description>
+            <Description xml:lang="tr">Recode dosyaların bir karakter kümesinden bir başkasına dönüştürülmesine imkân verir. Çok sayıda karakter kümesini destekler.</Description>
+            <Archive type="targz" sha1sum="2de90cd2ba553bc07d75a29913ea4424dd9e616b">http://pkgs.fedoraproject.org/repo/pkgs/recode/recode-3.6.tar.gz/be3f40ad2e93dae5cd5f628264bf1877/recode-3.6.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>gettext</Dependency>
+                <Dependency>texinfo</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">recode.patch</Patch>
+                <Patch level="1">recode-3.6-getcwd.patch</Patch>
+                <Patch level="0">recode-bool-bitfield.patch</Patch>
+                <Patch level="1">recode-flex-m4.patch</Patch>
+                <Patch level="1">stdlib.patch</Patch>
+                <Patch level="1">recode-3.6-gettextfix.diff</Patch>
+                <Patch level="1">system-aclocal.diff</Patch>
+                <Patch>recode-3.6-segfault.patch</Patch>
+                <Patch level="1">recode-automake.patch</Patch>
+            </Patches>
+            <SourceURI>office/misc/recode/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>recode</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="info">/usr/share/info</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>3.6</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>podofo</Name>
+            <Homepage>http://podofo.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <License>LGPLv3</License>
+            <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">A library to work with the PDF file format</Summary>
+            <Summary xml:lang="tr">PDF dosya biçimiyle çalışmak için bir kütüphane</Summary>
+            <Summary xml:lang="pl">Biblioteka do obsługi PDF-ów</Summary>
+            <Description xml:lang="en">The PoDoFo library is a free, portable C++ library which includes classes to parse PDF files and modify their contents into memory. The changes can be written back to disk easily. The parser can also be used to extract information from a PDF file (for example the parser could be used in a PDF viewer). Besides parsing PoDoFo includes also very simple classes to create your own PDF files. All classes are documented so it is easy to start writing your own application using PoDoFo.</Description>
+            <Description xml:lang="tr">podofo, PDF dosyalarını ayıklamak ve düzenlemek için geliştirilmiş, ücretsiz bir C++ kütüphanesidir.</Description>
+            <Archive type="targz" sha1sum="e3b08af1266eb480032456e3bde030c75452d380">mirrors://sourceforge/podofo/podofo-0.9.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>lua51</Dependency>
+                <Dependency>cppunit</Dependency>
+                <Dependency>libidn</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>openssl</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/podofo/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>podofo</Name>
+            <RuntimeDependencies>
+                <Dependency>tiff</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>lua51</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libidn</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.9.3</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mdbtools</Name>
+            <Homepage>https://github.com/brianb/mdbtools</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">MDB Tools is a suite of programs for accessing data stored in Microsoft Access databases</Summary>
+            <Summary xml:lang="tr">Microsoft Access veritabanı dosyalarında tutulan verilere erişmek için kullanılan araç ve kitaplıklar</Summary>
+            <Description xml:lang="en">mdbtools contains set of libraries and utilities for reading Microsoft Access database (MDB) files.</Description>
+            <Description xml:lang="tr">mdbtools Microsoft Access veritabanı dosyalarını (MDB) okumak için gereken araçları ve kütüphaneleri içermektedir.</Description>
+            <Archive type="targz" sha1sum="33b746f29c1308909a1e82546ec24e8f835d461a">https://github.com/brianb/mdbtools/archive/0.7.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>unixODBC</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>readline</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/mdbtools/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mdbtools</Name>
+            <RuntimeDependencies>
+                <Dependency>unixODBC</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>readline</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+            <Conflicts>
+                <Package releaseTo="4">mdbtools-gui</Package>
+            </Conflicts>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.7.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>rarian</Name>
             <Homepage>http://rarian.freedesktop.org</Homepage>
             <Packager>
@@ -31222,6 +31573,57 @@
                 <Date>2016-12-21</Date>
                 <Version>0.8.1</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>enca</Name>
+            <Homepage>http://cihar.com/software/enca</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <IsA>library</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">Charset analyzer</Summary>
+            <Summary xml:lang="tr">Karakter seti yorumlayıcı</Summary>
+            <Description xml:lang="en">enca is a character set analyzer that can detect and convert character set of text files.</Description>
+            <Description xml:lang="tr">enca, metin dosyalarının karakter setini tanımlama ve dönüştürme aracıdır.</Description>
+            <Archive type="tarxz" sha1sum="1913e045a1a8c402c4a77222075b12cfe85625a4">http://dl.cihar.com/enca/enca-1.16.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>recode</Dependency>
+                <Dependency>gettext</Dependency>
+                <Dependency>intltool</Dependency>
+                <Dependency>gtk-doc</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/enca/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>enca</Name>
+            <RuntimeDependencies>
+                <Dependency>recode</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/libexec/enca</Path>
+                <Path fileType="doc">/usr/share/doc/enca</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>1.16</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -31280,6 +31682,52 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>librevenge</Name>
+            <Homepage>http://dev-www.libreoffice.org/src/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MPL-1.0</License>
+            <IsA>library</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">A base library for writing document import filters</Summary>
+            <Description xml:lang="en">librevenge is a base library for writing document import filters. It has interfaces for text documents, vector graphics, spreadsheets and presentations.</Description>
+            <Archive type="tarbz2" sha1sum="4e0358331031571dcb1adae4b174099f84a34355">http://dev-www.libreoffice.org/src/librevenge-0.0.4.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>boost</Dependency>
+                <Dependency>cppunit</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>doxygen</Dependency>
+                <Dependency>libtool</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/librevenge/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>librevenge</Name>
+            <RuntimeDependencies>
+                <Dependency>zlib</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-11</Date>
+                <Version>0.0.4</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>djvu</Name>
             <Homepage>http://djvu.sourceforge.net</Homepage>
             <Packager>
@@ -31329,6 +31777,54 @@
                 <Date>2016-12-21</Date>
                 <Version>3.5.27</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libpagemaker</Name>
+            <Homepage>https://wiki.documentfoundation.org/DLP/Libraries/libpagemaker</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MPL2</License>
+            <IsA>library</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">a library that parses the file format of Aldus/Adobe PageMaker documents</Summary>
+            <Description xml:lang="en">a library that parses the file format of Aldus/Adobe PageMaker documents</Description>
+            <Icon>libpagemaker</Icon>
+            <Archive type="targz" sha1sum="f4b57adf287a39daf60dfb82650be38eb2758c8a">http://dev-www.libreoffice.org/src/libpagemaker/libpagemaker-0.0.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>boost</Dependency>
+                <Dependency>doxygen</Dependency>
+                <Dependency>help2man</Dependency>
+                <Dependency>librevenge</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/libpagemaker/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libpagemaker</Name>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>librevenge</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib/libpagemaker-*</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.0.2</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -31412,6 +31908,185 @@
                 <Date>2016-12-21</Date>
                 <Version>2.8.40</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>qpdfview</Name>
+            <Homepage>https://launchpad.net/qpdfview</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GNU GPL v2</License>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">qpdfview is a tabbed document viewer</Summary>
+            <Description xml:lang="en">It uses Poppler for PDF support, libspectre for PS support, DjVuLibre for DjVu support, CUPS for printing support and the Qt toolkit for its interface</Description>
+            <Archive type="targz" sha1sum="0730b34b333bbe1d66713d3689c4e971638df72c">https://launchpad.net/qpdfview/trunk/0.4.14/+download/qpdfview-0.4.14.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>djvu</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>poppler-qt5</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>libspectre</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>pkgconfig</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/qpdfview/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qpdfview</Name>
+            <Summary xml:lang="en">qpdfview is a tabbed document viewer.</Summary>
+            <RuntimeDependencies>
+                <Dependency>qt5</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>djvu</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libspectre</Dependency>
+                <Dependency>poppler-qt5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.4.14</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>chmlib</Name>
+            <Homepage>http://www.jedrea.com/chmlib/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">A library for dealing with Microsoft ITSS/CHM format files</Summary>
+            <Summary xml:lang="tr">Microsoft ITSS/CHM tipindeki dosyalar için gereken kütüphane</Summary>
+            <Description xml:lang="fr">Chmlib est une librairie s&apos;occupant des formats de fichiers Microsoft ITSS/CHM. Pour l&apos;instant, il s&apos;agit d&apos;une librairie toute simple, mais suffisante pour gérer tout les fichiers .chm.</Description>
+            <Description xml:lang="en">Chmlib is a library for dealing with Microsoft ITSS/CHM format files. Right now, it is a very simple library, but sufficient for dealing with all of the .chm files.</Description>
+            <Description xml:lang="tr">Chmlib, Microsoft ITSS/CHM tipindeki dosyalar için gereken bir kütüphanedir. Şimdilik çok basit bir kütüphanedir ancak tüm .chm dosyalarına erişmek konusunda başarılıdır.</Description>
+            <Description xml:lang="es">Chmlib es una librería para manejar archivos del formato Microsoft ITSS/CHM. Actualmente es una librería muy simple, pero suficiente para manejar todo tipo de archivos .chm.</Description>
+            <Archive type="tarbz2" sha1sum="5231d7531e8808420d7f89fd1e4fdbac1ed7a167">http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2</Archive>
+            <SourceURI>office/misc/chmlib/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>chmlib</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.40</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>texi2html</Name>
+            <Homepage>http://savannah.nongnu.org/projects/texi2html/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">Texinfo to HTML converter</Summary>
+            <Summary xml:lang="tr">Texinfo&apos;dan HTML&apos;ye dönüştürücü</Summary>
+            <Description xml:lang="en">texi2html is a Perl script which can generate HTML from Texinfo source files.</Description>
+            <Description xml:lang="tr">text2html Texinfo kaynak dosyalarından HTML çıktı üretebilen bir Perl betiğidir.</Description>
+            <Archive type="tarbz2" sha1sum="20072444ce814d0e74fd7e467d1506908f8c889c">http://download.savannah.gnu.org/releases/texi2html/texi2html-5.0.tar.bz2</Archive>
+            <SourceURI>office/misc/texi2html/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>texi2html</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="info">/usr/share/info</Path>
+                <Path fileType="doc">/usr/share/doc/texi2html</Path>
+                <Path fileType="man">/usr/share/man/man1</Path>
+                <Path fileType="data">/usr/share/texi2html</Path>
+                <Path fileType="data">/usr/share/texinfo</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>5.0</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>qpdf</Name>
+            <Homepage>http://qpdf.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>Artistic-2</License>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">A Content-Preserving PDF Transformation System</Summary>
+            <Description xml:lang="en">A command-line program that does structural, content-preserving transformations on PDF files</Description>
+            <Archive type="targz" sha1sum="15ebe09d9b9ddd2309a67e4295693fcf82494e33">mirrors://sourceforge/qpdf/qpdf-6.0.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libpcre</Dependency>
+                <Dependency>zlib</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/qpdf/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qpdf</Name>
+            <RuntimeDependencies>
+                <Dependency>zlib</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpcre</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>6.0.0</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -31506,6 +32181,61 @@
                 <Date>2016-12-21</Date>
                 <Version>0.2.2</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libvisio</Name>
+            <Homepage>http://www.ohloh.net/p/libvisio</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2.1</License>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">A C++ library for parsing binary Microsoft Visio documents</Summary>
+            <Summary xml:lang="tr">A C++ library for parsing binary Microsoft Visio documents.</Summary>
+            <Description xml:lang="en">A C++ library for parsing binary Microsoft Visio documents (.vsd). Includes a converter to XHTML with embedded SVG files.</Description>
+            <Description xml:lang="tr">A C++ library for parsing binary Microsoft Visio documents (.vsd). Includes a converter to XHTML with embedded SVG files.</Description>
+            <Archive type="tarxz" sha1sum="02daada854aee55ff847b42916536de143c7dda4">http://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.5.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>icu4c</Dependency>
+                <Dependency>librevenge</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>cppunit</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/libvisio/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libvisio</Name>
+            <RuntimeDependencies>
+                <Dependency>cppunit</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>librevenge</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxml2</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc/libvisio</Path>
+                <Path fileType="header">/usr/include/</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.1.5</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -49383,6 +50113,65 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Date>2016-12-21</Date>
                 <Version>0.32.1</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lua51</Name>
+            <Homepage>http://www.lua.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language</PartOf>
+            <Summary xml:lang="en">A light-weight programming language</Summary>
+            <Summary xml:lang="tr">Hafif bir programlama dili</Summary>
+            <Description xml:lang="en">lua51 is a powerful light-weight programming language designed for extending applications.</Description>
+            <Description xml:lang="tr">lua51, uygulamaları genişletmek için tasarlanmış hafif ve güçlü bir programlama dilidir.</Description>
+            <Description xml:lang="es">Lua51 es un lenguaje de programación liviano y potente con todas las herramientas imaginables</Description>
+            <Archive type="targz" sha1sum="b3882111ad02ecc6b972f8c1241647905cb2e3fc">http://www.lua.org/ftp/lua-5.1.5.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>readline</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">lua-5.1-cflags.diff</Patch>
+                <Patch level="1">lua-arch.patch</Patch>
+            </Patches>
+            <SourceURI>programming/language/lua51/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lua51</Name>
+            <RuntimeDependencies>
+                <Dependency>readline</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man/man1</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/sbin/lsmod</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/lua5.1</Path>
+                <Path fileType="data">/luac5.1.1/luac.1</Path>
+                <Path fileType="data">/lua5.1.1/lua.1</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/lua51.png" permission="0644" owner="root">lua.png</AdditionalFile>
+                <AdditionalFile target="/usr/lib/pkgconfig/lua5.1.pc" permission="644">lua.pc</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>5.1.5</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
