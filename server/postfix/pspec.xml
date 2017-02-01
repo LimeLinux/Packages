@@ -40,7 +40,7 @@
             <Dependency>openssl</Dependency>
             <Dependency>mariadb</Dependency>
             <Dependency>cyrus-sasl</Dependency>
-            <Dependency>bind-libs</Dependency>
+            <Dependency>bind</Dependency>
             <Dependency>openldap</Dependency>
             <Dependency>postgresql</Dependency>
             <Dependency>mit-kerberos</Dependency>
