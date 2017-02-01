@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Trivial database library</Summary>
         <Description>libtdb contains C library and Python bindings to access to a trivial database. TDB is very much like GDBM and BSDDB except that it allows multiple simultaneous writers and uses locking internally to keep writers from trampling on each other.</Description>
-        <Archive sha1sum="417b67602501dd351fbfed08890cff8b72fbe38c" type="targz">http://www.samba.org/ftp/tdb/tdb-1.3.7.tar.gz</Archive>
+        <Archive sha1sum="86fec2b5e698ef15da07be4a26672773575e37cd" type="targz">https://www.samba.org/ftp/tdb/tdb-1.3.12.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libxslt</Dependency>
             <Dependency>docbook-xsl</Dependency>
@@ -38,7 +38,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>1.3.7</Version>
+            <Version>1.3.12</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
