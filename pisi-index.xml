@@ -47954,8 +47954,8 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Name>python3-youtube_dl</Name>
             <Homepage>http://rg3.github.io/youtube-dl</Homepage>
             <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
+                <Name>Lime GNU/Linux Admins</Name>
+                <Email>admins@limelinux.com</Email>
             </Packager>
             <License>GPLv3</License>
             <IsA>app:console</IsA>
@@ -47965,7 +47965,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="en">Youtube Video Downloader</Description>
             <Description xml:lang="tr">Youtube&apos;dan video indirmeyi sağlayan bir uygulama.</Description>
             <Icon>youtube_dl</Icon>
-            <Archive type="targz" sha1sum="1075e03c48040e7ef84d4bbeef43b0911688b429">https://github.com/rg3/youtube-dl/archive/2016.07.17.tar.gz</Archive>
+            <Archive type="targz" sha1sum="ab63291ad2c0afacbfd7ea550d8216acaff57036">https://github.com/rg3/youtube-dl/releases/download/2017.01.31/youtube-dl-2017.01.31.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3-setuptools</Dependency>
                 <Dependency>python3</Dependency>
@@ -47980,13 +47980,20 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/etc</Path>
-                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/lib/python3.5/site-packages</Path>
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/man/man1</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-01</Date>
+                <Version>2017.01.31</Version>
+                <Comment>First release</Comment>
+                <Name>Metehan Özbek</Name>
+                <Email>metehan@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2016.07.17</Version>
@@ -49035,7 +49042,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">HTTP istemci kitaplığı</Summary>
             <Description xml:lang="en">httplib2 is a comprehensive HTTP client library that supports many features left out of other HTTP libraries.</Description>
             <Description xml:lang="tr">python-httplib2, diğer HTTP kütüphanelerinin desteklemediği bir çok özellik içeren bir HTTP istemci kitaplığıdır</Description>
-            <Archive type="targz" sha1sum="169815e9417bfe0fdbb74644a3d3b892c0647612">http://source.limelinux.com/1.0/httplib2-0.8.tar.gz</Archive>
+            <Archive type="targz" sha1sum="3821350a9612b3e1fb382d55484b2465cb8fb9c5">http://source.limelinux.com/1.0/httplib2-0.8.tar.gz</Archive>
             <SourceURI>programming/language/python/python-httplib2/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -54252,7 +54259,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">talloc bellek yönetim kitaplığına dayanan olay sistemi kitaplığı</Summary>
             <Description xml:lang="en">libtevent is an event system based on the talloc memory management library. It is the core event system used in Samba. Tevent has support for many event types, including timers, signals, and the classic file descriptor events.</Description>
             <Description xml:lang="tr">libtevent Samba uygulamasının en temel olay sistem kitaplığıdır. Zamanlayıcı, dosya tanımlayıcı gibi çeşitli olay türlerini desteklemektedir.</Description>
-            <Archive type="targz" sha1sum="80ed9a89e9d3ce1d70a44d36ddeaa507d9509af6">http://samba.org/ftp/tevent/tevent-0.9.25.tar.gz</Archive>
+            <Archive type="targz" sha1sum="328a2e179c398d081dc9277659542fd1ff079434">https://www.samba.org/ftp/tevent/tevent-0.9.31.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libtalloc</Dependency>
                 <Dependency>libxslt</Dependency>
@@ -54274,7 +54281,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>0.9.25</Version>
+                <Version>0.9.31</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -54333,7 +54340,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">Bellek yönetim kitaplığı</Summary>
             <Description xml:lang="en">libtalloc is a library which implements a hierarchical allocator with destructors which is the core memory allocator in samba.</Description>
             <Description xml:lang="tr">libtalloc, samba hizmetinin temel bellek ayırıcısını oluşturan hiyerarşik havuz tabanlı ayırıcıyı gerçekleyen kitaplıktır.</Description>
-            <Archive type="targz" sha1sum="bdf3b3d8449e2c354f1ebc43d3e1058160eb4adb">http://www.samba.org/ftp/talloc/talloc-2.1.5.tar.gz</Archive>
+            <Archive type="targz" sha1sum="c91fded4fad84a42dd91c9feb0951ea43a29893e">https://www.samba.org/ftp/talloc/talloc-2.1.8.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>docbook-xsl</Dependency>
                 <Dependency>libxslt</Dependency>
@@ -54351,8 +54358,8 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>2.1.5</Version>
+                <Date>2017-01-21</Date>
+                <Version>2.1.8</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
