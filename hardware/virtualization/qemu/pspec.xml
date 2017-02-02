@@ -89,20 +89,13 @@
             <AdditionalFile owner="root" permission="0755" target="/lib/udev/rules.d/65-kvm.rules">65-kvm.rules</AdditionalFile>
         </AdditionalFiles>
         <Provides>
-            <COMAR script="ksm-service.py" name="ksm">System.Service</COMAR>
-            <COMAR script="ksmtuned-service.py" name="ksmtuned">System.Service</COMAR>
+            <!--COMAR script="ksm-service.py" name="ksm">System.Service</COMAR>
+            <COMAR script="ksmtuned-service.py" name="ksmtuned">System.Service</COMAR-->
         </Provides>
     </Package>
 
 
     <History>
-        <Update release="2">
-            <Date>2017-01-18</Date>
-            <Version>2.7.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>2.7.0</Version>

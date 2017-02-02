@@ -63,7 +63,7 @@
         </AdditionalFiles>
         <Provides>
             <COMAR script="ntp-server-package.py">System.Package</COMAR>
-            <COMAR script="ntpd-service.py" name="ntpd">System.Service</COMAR>
+            <!--COMAR script="ntpd-service.py" name="ntpd">System.Service</COMAR-->
         </Provides>
     </Package>
 

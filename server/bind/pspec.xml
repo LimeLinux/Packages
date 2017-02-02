@@ -94,7 +94,7 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/logrotate.d/named">fedora/named.logrotate</AdditionalFile>
         </AdditionalFiles>
         <Provides>
-            <COMAR script="service.py">System.Service</COMAR>
+            <!--COMAR script="service.py">System.Service</COMAR-->
             <COMAR script="bind_package.py">System.Package</COMAR>
         </Provides>
     </Package>

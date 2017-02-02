@@ -36,7 +36,7 @@
             <Path fileType="data">/var/db</Path>
         </Files>
         <Provides>
-            <COMAR script="package.py">System.Package</COMAR>
+            <!--COMAR script="service.py">System.Service</COMAR-->
         </Provides>
     </Package>
 

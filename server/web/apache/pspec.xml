@@ -62,19 +62,19 @@
         </Files>
         <AdditionalFiles>
             <!-- systemd service file -->
-            <AdditionalFile target="/lib/systemd/system/apache.service" permission="0644" owner="root">apache.service</AdditionalFile>
+            <!--AdditionalFile target="/lib/systemd/system/apache.service" permission="0644" owner="root">apache.service</AdditionalFile-->
             <!-- Init script & configuration -->
-            <AdditionalFile target="/etc/conf.d/apache2" permission="0644" owner="root">apache2.confd</AdditionalFile>
+            <!--AdditionalFile target="/etc/conf.d/apache2" permission="0644" owner="root">apache2.confd</AdditionalFile-->
             <!-- HTTPD configuration -->
-            <AdditionalFile target="/etc/apache2/httpd.conf" permission="0644" owner="root">httpd.conf</AdditionalFile>
+            <!--AdditionalFile target="/etc/apache2/httpd.conf" permission="0644" owner="root">httpd.conf</AdditionalFile-->
             <!-- Vhosts configuration -->
-            <AdditionalFile target="/etc/apache2/vhosts.d/00_default_vhost.conf" permission="0644" owner="root">00_default_vhost.conf</AdditionalFile>
+            <!--AdditionalFile target="/etc/apache2/vhosts.d/00_default_vhost.conf" permission="0644" owner="root">00_default_vhost.conf</AdditionalFile-->
             <!-- Modules configuration -->
-            <AdditionalFile target="/etc/apache2/modules.d/00_apache_manual.conf" permission="0644" owner="root">00_apache_manual.conf</AdditionalFile>
+            <!--AdditionalFile target="/etc/apache2/modules.d/00_apache_manual.conf" permission="0644" owner="root">00_apache_manual.conf</AdditionalFile>
             <AdditionalFile target="/etc/apache2/modules.d/40_mod_ssl.conf" permission="0644" owner="root">40_mod_ssl.conf</AdditionalFile>
             <AdditionalFile target="/etc/apache2/modules.d/41_mod_ssl.default-vhost.conf" permission="0644" owner="root">41_mod_ssl.default-vhost.conf</AdditionalFile>
             <AdditionalFile target="/etc/apache2/modules.d/45_mod_dav.conf" permission="0644" owner="root">45_mod_dav.conf</AdditionalFile>
-            <AdditionalFile target="/etc/apache2/modules.d/46_mod_ldap.conf" permission="0644" owner="root">46_mod_ldap.conf</AdditionalFile>
+            <AdditionalFile target="/etc/apache2/modules.d/46_mod_ldap.conf" permission="0644" owner="root">46_mod_ldap.conf</AdditionalFile-->
             <!-- Default webroot -->
             <AdditionalFile target="/var/www/localhost/htdocs/apache.css" permission="0755" owner="root">webroot/apache.css</AdditionalFile>
             <AdditionalFile target="/var/www/localhost/htdocs/apache_pb.gif" permission="0755" owner="root">webroot/apache_pb.gif</AdditionalFile>
@@ -87,7 +87,7 @@
         </AdditionalFiles>
         <Provides>
              <COMAR script="package.py">System.Package</COMAR>
-             <COMAR script="service.py">System.Service</COMAR>
+             <!--COMAR script="service.py">System.Service</COMAR-->
         </Provides>
     </Package>
 

@@ -44,7 +44,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/avahi.conf">avahi.conf</AdditionalFile>
         </AdditionalFiles>
         <Provides>
-            <COMAR script="postInstall.py">System.Package</COMAR>
+            <!--COMAR script="service.py">System.Service</COMAR-->
         </Provides>
     </Package>
 

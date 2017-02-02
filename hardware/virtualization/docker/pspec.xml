@@ -48,7 +48,7 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/docker">docker.confd</AdditionalFile>
         </AdditionalFiles>
         <Provides>
-            <COMAR script="service.py">System.Service</COMAR>
+            <!--COMAR script="service.py">System.Service</COMAR-->
             <COMAR script="package.py">System.Package</COMAR>
         </Provides>
     </Package>

@@ -38,7 +38,7 @@
             <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
         <Provides>
-            <COMAR script="service.py">System.Service</COMAR>
+            <!--COMAR script="service.py">System.Service</COMAR-->
         </Provides>
     </Package>
 
