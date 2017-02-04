@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Qt toolkit version 4</Summary>
         <Description>Qt is a cross platform GUI toolkit.</Description>
-        <Archive sha1sum="bedd61b2767239bad01fa9ce3d1e2e63ecf721bd" type="tarxz">http://download.qt.io/official_releases/qt/5.7/5.7.1/single/qt-everywhere-opensource-src-5.7.1.tar.xz</Archive>
+        <Archive sha1sum="bedd61b2767239bad01fa9ce3d1e2e63ecf721bd" type="tarxz">http://download.qt.io/archive/qt/5.8/5.8.0/single/qt-everywhere-opensource-src-5.8.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mariadb</Dependency>
             <Dependency>cups</Dependency>

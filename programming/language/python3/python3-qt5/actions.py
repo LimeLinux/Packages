@@ -16,8 +16,8 @@ def setup():
     pythonmodules.run("configure.py --confirm-license \
                                     --qsci-api \
                                     --sip /usr/bin/sip \
-                                    --destdir='/usr/lib/python3.5/site-packages' \
-                                    --sip-incdir='/usr/include/python3.5m' \
+                                    --destdir='/usr/lib/python3.6/site-packages' \
+                                    --sip-incdir='/usr/include/python3.6m' \
                                     ")
     shelltools.system("find -name 'Makefile' | xargs sed -i 's|-Wl,-rpath,/usr/lib||g;s|-Wl,-rpath,.* ||g'")
 
