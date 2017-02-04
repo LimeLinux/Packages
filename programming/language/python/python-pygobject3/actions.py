@@ -15,7 +15,7 @@ def setup():
     shelltools.makedirs("build-python3")
 
     shelltools.cd("build-python3")
-    shelltools.export("PYTHON", "/usr/bin/python3.5")
+    shelltools.export("PYTHON", "/usr/bin/python3.6")
     shelltools.system("../configure --prefix=/usr \
                        --localstatedir=/var \
                        --disable-static")
