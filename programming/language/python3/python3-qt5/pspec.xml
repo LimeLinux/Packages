@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>A set of Python bindings for the Qt 5.x Toolkit</Summary>
         <Description>Qt is a set of C++ libraries and development tools that includes platform independent abstractions for graphical user interfaces, networking, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, and user and application settings. PyQt implements 440 of these classes as a set of Python modules.</Description>
-        <Archive sha1sum="46aae31f8196d4beed878bc70ed9ed2938f3c73f" type="targz">mirrors://sourceforge/pyqt/PyQt5/PyQt-5.7.1/PyQt5_gpl-5.7.1.tar.gz</Archive>
+        <Archive sha1sum="46aae31f8196d4beed878bc70ed9ed2938f3c73f" type="targz">mirrors://sourceforge/pyqt/PyQt5/PyQt-5.8.0/PyQt5_gpl-5.8.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>dbus</Dependency>
             <Dependency>python3</Dependency>
@@ -37,7 +37,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/pyuic5</Path>
-            <Path fileType="library">/usr/lib/python3.5/site-packages/*</Path>
+            <Path fileType="library">/usr/lib/python3.*/site-packages/*</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/*</Path>
             <Path fileType="library">/usr/lib/qt5/plugins/PyQt5/libpyqt5qmlplugin.so</Path>
             <Path fileType="library">/usr/lib/qt5/plugins/designer/libpyqt5.so.0</Path>
@@ -52,7 +52,7 @@
     <History>
         <Update release="1">
             <Date>2017-01-29</Date>
-            <Version>5.7.1</Version>
+            <Version>5.8.0</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

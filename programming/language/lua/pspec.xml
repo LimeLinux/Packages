@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A light-weight programming language</Summary>
         <Description>lua is a powerful light-weight programming language designed for extending applications.</Description>
-        <Archive sha1sum="a0341bc3d1415b814cc738b2ec01ae56045d64ef" type="targz">http://www.lua.org/ftp/lua-5.3.3.tar.gz</Archive>        
+        <Archive sha1sum="79790cfd40e09ba796b01a571d4d63b52b1cd950" type="targz">http://www.lua.org/ftp/lua-5.3.4.tar.gz</Archive>        
         <AdditionalFiles>
 	  <AdditionalFile target="lua.pc">lua.pc</AdditionalFile>
         </AdditionalFiles>
@@ -41,8 +41,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>5.3.3</Version>
+            <Date>2017-01-21</Date>
+            <Version>5.3.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -58,7 +58,6 @@ def setup():
 		    -reduce-relocations \
 		    -no-separate-debug-info \
 		    -opengl \
-		    -no-openvg \
 		    -skip qtwebengine \
 		    -glib"
 
