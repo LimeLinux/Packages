@@ -1,0 +1,11 @@
+--- /icu.orig/source/i18n/ucol_res.cpp	2016-09-28 05:26:02.000000000 +0300
++++ /var/pisi/icu4c-58.2-1/work/icu/source/i18n/ucol_res.cpp	2017-02-04 20:24:29.616624408 +0200
+@@ -680,6 +680,7 @@
+         return NULL;
+     }
+     memcpy(en, &defaultKeywordValues, sizeof(UEnumeration));
++    ulist_resetList(sink.values);  // Initialize the iterator.
+     en->context = sink.values;
+     sink.values = NULL;  // Avoid deletion in the sink destructor.
+     return en;
+

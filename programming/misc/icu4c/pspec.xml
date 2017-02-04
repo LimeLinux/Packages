@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>International Components for Unicode</Summary>
         <Description>ICU is a mature, widely used set of C/C++ and Java libraries for Unicode support, software internationalization and globalization (i18n/g11n). This package contains the C/C++ libraries.</Description>
-        <Archive sha1sum="b67913c90a484c59fda011797c6f3959d84bdc7c" type="targz">http://download.icu-project.org/files/icu4c/58.2/icu4c-58_2-src.tgz</Archive>
+        <Archive sha1sum="e1ce290a9ae4bb3db1530d9635b37bf56c7c9ee8" type="tarxz">http://source.limelinux.com/1.0/icu4c-58_2-src.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -32,7 +32,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>55.1</Version>
+            <Version>58.2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
