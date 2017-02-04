@@ -14,7 +14,7 @@
         <Summary>Python3 wrapper for cairo graphics library</Summary>
         <Description>Pycairo is set of Python3 bindings for the cairo graphics library.</Description>
         <Archive sha1sum="b4283aa1cc9aafd12fd72ad371303a486da1d014" type="tarbz2">http://cairographics.org/releases/pycairo-1.10.0.tar.bz2</Archive>
-        <Archive sha1sum="27e01d7acb3083cbe12503d0706a083d19921faf" type="tarbz2">http://download.openpkg.org/components/cache/waf/waf-1.7.15.tar.bz2</Archive>
+        <Archive sha1sum="56a197761aff590f3bd7213bcb85aab9fb0a60cb" type="tarbz2">http://pkgs.fedoraproject.org/repo/pkgs/waf/waf-1.7.15.stripped.tar.bz2/9387d390b9a5e9fedf0ef775a30f5b92/waf-1.7.15.stripped.tar.bz2</Archive>
 	   
         <AdditionalFiles>
             <AdditionalFile target="waf">waf</AdditionalFile>
