@@ -28,7 +28,7 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/etc</Path>
-            <Path fileType="data">/usr/lib/python3.5/site-packages</Path>
+            <Path fileType="data">/usr/lib/python3.*/site-packages</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/man/man1</Path>
             <Path fileType="doc">/usr/share/doc</Path>
