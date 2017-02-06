@@ -2817,8 +2817,8 @@
             <PartOf>network.misc</PartOf>
             <Summary xml:lang="en">Suite of VNC servers and clients.</Summary>
             <Description xml:lang="en">Suite of VNC servers and clients. Based on the VNC 4 branch of TightVNC.</Description>
-            <Archive type="targz" sha1sum="2e2edd6a94be18380a8b00b064e268ac892c8070">https://github.com/TigerVNC/tigervnc/archive/v1.6.0.tar.gz</Archive>
-            <Archive type="binary" sha1sum="f37f9ca17d211552c775c3ce78ff03385026bf3a">mirrors://xorg/individual/xserver/xorg-server-1.18.0.tar.bz2</Archive>
+            <Archive type="targz" sha1sum="e6924a1c0a092d3f4b4d389087592a1279cf1728">https://github.com/TigerVNC/tigervnc/archive/v1.7.1.tar.gz-</Archive>
+            <Archive type="tarbz2" sha1sum="13c81e0ebb6ac1359a611d0503805c6dc0315477">mirrors://xorg/individual/xserver/xorg-server-1.19.1.tar.bz2-</Archive>
             <BuildDependencies>
                 <Dependency>font-util</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
@@ -2861,7 +2861,6 @@
             </BuildDependencies>
             <Patches>
                 <Patch level="1">gethomedir.patch</Patch>
-                <Patch level="1">xorg118.patch</Patch>
             </Patches>
             <SourceURI>network/misc/tigervnc/pspec.xml</SourceURI>
         </Source>
@@ -2887,13 +2886,12 @@
             </Files>
             <AdditionalFiles>
                 <AdditionalFile target="/usr/lib/systemd/system/vncserver.service" permission="0755" owner="root">vncserver.service</AdditionalFile>
-                <AdditionalFile target="/usr/share/applications/vncviewer.desktop" permission="0644" owner="root">vncviewer.desktop</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>1.6.0</Version>
+                <Version>1.7.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -3068,7 +3066,7 @@
             <Description xml:lang="pl">Mozilla Firefox – otwarta przeglądarka internetowa oparta na silniku Gecko, stworzona i rozwijana przez Korporację Mozilla oraz ochotników.</Description>
             <Description xml:lang="es">Navegue por la web de forma rápida y segura. Navegador web de código abierto que se puede personalizar con características adicionales.</Description>
             <Icon>firefox</Icon>
-            <Archive type="tarxz" sha1sum="6024dc49a566ed6296ad6cd707a199d41f090176">https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/50.1.0/source/firefox-50.1.0.source.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="6024dc49a566ed6296ad6cd707a199d41f090176">https://ftp.mozilla.org/pub/firefox/releases/51.0.1/source/firefox-51.0.1.source.tar.xz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
                 <AdditionalFile target="browserconfig.properties" permission="0644">limelinux/browserconfig.properties</AdditionalFile>
@@ -3172,7 +3170,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-az</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-az@firefox.mozilla.org</Path>
@@ -3186,7 +3184,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-be</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-be@firefox.mozilla.org</Path>
@@ -3200,7 +3198,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-bs</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-bs@firefox.mozilla.org</Path>
@@ -3214,7 +3212,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-ca</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-ca@firefox.mozilla.org</Path>
@@ -3228,7 +3226,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-da</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-da@firefox.mozilla.org</Path>
@@ -3242,7 +3240,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-de</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-de@firefox.mozilla.org</Path>
@@ -3256,7 +3254,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-el</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-el@firefox.mozilla.org</Path>
@@ -3270,7 +3268,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-en-US</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-US@firefox.mozilla.org</Path>
@@ -3284,7 +3282,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-en-ZA</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org</Path>
@@ -3298,7 +3296,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-en-GB</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org</Path>
@@ -3312,7 +3310,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-es-AR</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-es-AR@firefox.mozilla.org</Path>
@@ -3326,7 +3324,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-es-CL</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-es-CL@firefox.mozilla.org</Path>
@@ -3340,7 +3338,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-es-ES</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-es-ES@firefox.mozilla.org</Path>
@@ -3354,7 +3352,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-fi</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-fi@firefox.mozilla.org</Path>
@@ -3368,7 +3366,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-fr</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-fr@firefox.mozilla.org</Path>
@@ -3382,7 +3380,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-hr</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-hr@firefox.mozilla.org</Path>
@@ -3396,7 +3394,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-hu</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-hu@firefox.mozilla.org</Path>
@@ -3410,7 +3408,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-it</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-it@firefox.mozilla.org</Path>
@@ -3424,7 +3422,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-lt</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-lt@firefox.mozilla.org</Path>
@@ -3438,7 +3436,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-nl</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-nl@firefox.mozilla.org</Path>
@@ -3452,7 +3450,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-pl</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-pl@firefox.mozilla.org</Path>
@@ -3466,7 +3464,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-pt-BR</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-pt-BR@firefox.mozilla.org</Path>
@@ -3480,7 +3478,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-pt-PT</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-pt-PT@firefox.mozilla.org</Path>
@@ -3494,7 +3492,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-ro</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-ro@firefox.mozilla.org</Path>
@@ -3508,7 +3506,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-ru</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-ru@firefox.mozilla.org</Path>
@@ -3522,7 +3520,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-sr</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-sr@firefox.mozilla.org</Path>
@@ -3536,7 +3534,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-sv-SE</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-sv-SE@firefox.mozilla.org</Path>
@@ -3550,7 +3548,7 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-tr</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-tr@firefox.mozilla.org</Path>
@@ -3564,30 +3562,16 @@
             <PartOf>system.locale</PartOf>
             <Icon>lang-uk</Icon>
             <RuntimeDependencies>
-                <Dependency releaseFrom="3">firefox</Dependency>
+                <Dependency releaseFrom="1">firefox</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="localedata">/usr/lib/firefox/browser/extensions/langpack-uk@firefox.mozilla.org</Path>
             </Files>
         </Package>
         <History>
-            <Update release="3">
-                <Date>2017-01-25</Date>
-                <Version>50.1.0</Version>
-                <Comment>Version Bump</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="2">
-                <Date>2017-01-25</Date>
-                <Version>51.0</Version>
-                <Comment>Version Bump</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>50.1.0</Version>
+                <Date>2017-02-21</Date>
+                <Version>51.0.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -8033,7 +8017,7 @@
             <Archive type="tarbz2" sha1sum="23e861f40ba0f0cbbfd7db7ba2ef623762ffca17">mirrors://xorg/individual/proto/xf86driproto-2.1.1.tar.bz2</Archive>
             <Archive type="tarbz2" sha1sum="11d54c3210887631ea71e8f8030a77692e964fc4">mirrors://xorg/individual/proto/xf86vidmodeproto-2.3.1.tar.bz2</Archive>
             <Archive type="tarbz2" sha1sum="818bffc16139d6e3de4344c83f00c495d3536753">mirrors://xorg/individual/proto/xineramaproto-1.2.1.tar.bz2</Archive>
-            <Archive type="targz" sha1sum="4e222a8f616a521a40fc254357da326e5eef1634">mirrors://xorg/individual/proto/xproto-7.0.29.tar.gz</Archive>
+            <Archive type="targz" sha1sum="f496ce16048c0b6b854fd6aefd6efb183eb61822">mirrors://xorg/individual/proto/xproto-7.0.31.tar.gz</Archive>
             <Archive type="tarbz2" sha1sum="4abb036371670ecc25d32e48b3277fe203ae5203">mirrors://xorg/individual/proto/xproxymanagementprotocol-1.0.3.tar.bz2</Archive>
             <Archive type="tarbz2" sha1sum="90f8600fb06c0c347551ad7096ef50492d86ba45">https://github.com/bbidulock/vncproto/releases/download/vncproto-1.1/vncproto-1.1.tar.bz2</Archive>
             <BuildDependencies>
@@ -8056,7 +8040,7 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
+                <Date>2017-02-21</Date>
                 <Version>7.6</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
@@ -8334,16 +8318,9 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2017-12-21</Date>
-                <Version>6.3.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>6.2.0</Version>
+                <Date>2017-01-21</Date>
+                <Version>6.3.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -44685,6 +44662,9 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/pixmaps</Path>
             </Files>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
             <AdditionalFiles>
                 <AdditionalFile target="/usr/share/pixmaps/idle3.png" permission="0644">python-logo.png</AdditionalFile>
                 <AdditionalFile target="/usr/share/applications/idle3.desktop" permission="0644">idle.desktop</AdditionalFile>
@@ -53585,6 +53565,51 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>libXfont2</Name>
+            <Homepage>http://www.x.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>library</IsA>
+            <PartOf>x11.library</PartOf>
+            <Summary xml:lang="en">X.Org Xfont library</Summary>
+            <Description xml:lang="en">libXfont is the Xorg library that allows using various types of fonts.</Description>
+            <Archive type="tarbz2" sha1sum="4cf056ab00bf631649e040051cf8e2b096cc245b">https://www.x.org/releases/individual/lib/libXfont2-2.0.1.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libfontenc</Dependency>
+                <Dependency>util-macros</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>xorg-proto</Dependency>
+                <Dependency>xtrans</Dependency>
+            </BuildDependencies>
+            <SourceURI>x11/library/libXfont2/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libXfont2</Name>
+            <RuntimeDependencies>
+                <Dependency>libfontenc</Dependency>
+                <Dependency>freetype</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-02-21</Date>
+                <Version>2.0.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>libXi</Name>
             <Homepage>http://www.x.org/</Homepage>
             <Packager>
@@ -54135,7 +54160,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="en">X server is the main application that allows a graphical interface.</Description>
             <Description xml:lang="tr">X sunucu, grafiksel arayüz için gerekli ana uygulamadır.</Description>
             <Description xml:lang="pl">X serwer to główna aplikacja, która umożliwia interfejs graficzny.</Description>
-            <Archive type="tarbz2" sha1sum="f37f9ca17d211552c775c3ce78ff03385026bf3a">mirrors://xorg/individual/xserver/xorg-server-1.18.0.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="13c81e0ebb6ac1359a611d0503805c6dc0315477">mirrors://xorg/individual/xserver/xorg-server-1.19.1.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>font-util</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
@@ -54174,7 +54199,11 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Dependency>libXau</Dependency>
                 <Dependency>libICE</Dependency>
                 <Dependency>libSM</Dependency>
+                <Dependency>libXfont2</Dependency>
             </BuildDependencies>
+            <Patches>
+                <Patch level="1">xorg-server-1.19.1-add_prime_support-1.patch</Patch>
+            </Patches>
             <SourceURI>x11/server/xorg-server/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -54359,8 +54388,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>1.18.0</Version>
+                <Date>2017-02-08</Date>
+                <Version>1.19.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -55093,6 +55122,59 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>mesa-demos</Name>
+            <Homepage>http://www.mesa3d.org</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admins@limelinux.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:console</IsA>
+            <PartOf>x11.misc</PartOf>
+            <Summary xml:lang="en">Mesa demos</Summary>
+            <Summary xml:lang="tr">Mesa demoları</Summary>
+            <Description xml:lang="en">Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.</Description>
+            <Description xml:lang="tr">Mesa, OpenGL belirtiminin (etkileşimli 3B grafiklerin gerçeklenmesi için bir sistem) açık kaynaklı bir uyarlamasıdır.</Description>
+            <Archive type="tarbz2" sha1sum="468a8f24938ab07e2e31828cf961515371d45b56">ftp://ftp.freedesktop.org/pub/mesa/demos/8.3.0/mesa-demos-8.3.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>glew</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>freeglut</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>glibc</Dependency>
+            </BuildDependencies>
+            <SourceURI>x11/misc/mesa-demos/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mesa-demos</Name>
+            <RuntimeDependencies>
+                <Dependency>glew</Dependency>
+                <Dependency>freeglut</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>libX11</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/mesa-demos</Path>
+                <Path fileType="executable">/usr/lib/mesa/demos</Path>
+                <Path fileType="executable">/usr/bin</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-02-09</Date>
+                <Version>8.3.0</Version>
+                <Comment>First release</Comment>
+                <Name>Marcin Bojara</Name>
+                <Email>marcin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>xdm</Name>
             <Homepage>http://www.x.org</Homepage>
             <Packager>
@@ -55189,7 +55271,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">X klavye yapılandırma veritabanı</Summary>
             <Description xml:lang="en">xkeyboard-config aims to provide consistent and well-structured X keyboard configuration data for X Window System implementations.</Description>
             <Description xml:lang="tr">xkeyboard-config, X Pencere Sistemi için tutarlı ve iyi tasarlanmış X klavye yapılandırma verisi sağlamayı amaçlar.</Description>
-            <Archive type="tarbz2" sha1sum="6e647952c2a15c0c3c388e36a602fb228db7a5fa">mirrors://xorg/individual/data/xkeyboard-config/xkeyboard-config-2.19.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="fe36dc8259571721776f885ba66060e0b5a0616c">http://xorg.freedesktop.org/archive/individual/data/xkeyboard-config/xkeyboard-config-2.20.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>intltool</Dependency>
                 <Dependency>xorg-proto</Dependency>
@@ -55225,8 +55307,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>2.19</Version>
+                <Date>2017-02-08</Date>
+                <Version>2.20</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>

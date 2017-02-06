@@ -93,6 +93,9 @@
             <AdditionalFile permission="0644" target="/usr/share/pixmaps/idle3.png">python-logo.png</AdditionalFile>
             <AdditionalFile permission="0644" target="/usr/share/applications/idle3.desktop">idle.desktop</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
     </Package>
 
     <History>
