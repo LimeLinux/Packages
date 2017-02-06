@@ -2,8 +2,9 @@
 Type=Application
 Name=TigerVNC Viewer
 Comment=VNC client
-Exec=/usr/bin/vncviewer
+Exec=
 Icon=tigervnc
 Terminal=false
 StartupNotify=false
 Categories=Network;RemoteAccess;
+Name[C]=vncviewer

@@ -13,8 +13,8 @@
         <IsA>app:console</IsA>
         <Summary>Suite of VNC servers and clients.</Summary>
         <Description>Suite of VNC servers and clients. Based on the VNC 4 branch of TightVNC.</Description>
-        <Archive sha1sum="2e2edd6a94be18380a8b00b064e268ac892c8070" type="targz">https://github.com/TigerVNC/tigervnc/archive/v1.6.0.tar.gz</Archive>
-        <Archive sha1sum="f37f9ca17d211552c775c3ce78ff03385026bf3a" type="binary">mirrors://xorg/individual/xserver/xorg-server-1.18.0.tar.bz2</Archive>
+        <Archive sha1sum="e6924a1c0a092d3f4b4d389087592a1279cf1728" type="targz">https://github.com/TigerVNC/tigervnc/archive/v1.7.1.tar.gz-</Archive>
+        <Archive sha1sum="13c81e0ebb6ac1359a611d0503805c6dc0315477" type="tarbz2">mirrors://xorg/individual/xserver/xorg-server-1.19.1.tar.bz2-</Archive>                                                      
         <BuildDependencies>
             <Dependency>font-util</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
@@ -57,7 +57,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">gethomedir.patch</Patch>
-            <Patch level="1">xorg118.patch</Patch>
+            <!--Patch level="1">xorg118.patch</Patch-->
         </Patches>
     </Source>
 
@@ -84,14 +84,14 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0755" target="/usr/lib/systemd/system/vncserver.service">vncserver.service</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/vncviewer.desktop">vncviewer.desktop</AdditionalFile>
+            <!--AdditionalFile owner="root" permission="0644" target="/usr/share/applications/vncviewer.desktop">vncviewer.desktop</AdditionalFile-->
         </AdditionalFiles>
     </Package>
 
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>1.6.0</Version>
+            <Version>1.7.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

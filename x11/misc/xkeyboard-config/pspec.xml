@@ -13,7 +13,7 @@
         <IsA>data</IsA>
         <Summary>X keyboard configuration database</Summary>
         <Description>xkeyboard-config aims to provide consistent and well-structured X keyboard configuration data for X Window System implementations.</Description>
-        <Archive sha1sum="6e647952c2a15c0c3c388e36a602fb228db7a5fa" type="tarbz2">mirrors://xorg/individual/data/xkeyboard-config/xkeyboard-config-2.19.tar.bz2</Archive>
+        <Archive sha1sum="fe36dc8259571721776f885ba66060e0b5a0616c" type="tarbz2">http://xorg.freedesktop.org/archive/individual/data/xkeyboard-config/xkeyboard-config-2.20.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>intltool</Dependency>
             <Dependency>xorg-proto</Dependency>
@@ -50,8 +50,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.19</Version>
+            <Date>2017-02-08</Date>
+            <Version>2.20</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

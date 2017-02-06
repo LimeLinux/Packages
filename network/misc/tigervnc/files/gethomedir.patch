@@ -1,6 +1,6 @@
 diff -ur tigervnc-1.2.0.orig/unix/xserver/hw/vnc/Makefile.am tigervnc-1.2.0/unix/xserver/hw/vnc/Makefile.am
---- tigervnc-1.2.0.orig/unix/xserver/hw/vnc/Makefile.am	2011-10-31 09:14:40.000000000 +0100
-+++ tigervnc-1.2.0/unix/xserver/hw/vnc/Makefile.am	2012-09-06 19:44:04.431123087 +0200
+--- tigervnc-1.7.1.orig/unix/xserver/hw/vnc/Makefile.am	2011-10-31 09:14:40.000000000 +0100
++++ tigervnc-1.7.1/unix/xserver/hw/vnc/Makefile.am	2012-09-06 19:44:04.431123087 +0200
 @@ -5,6 +5,7 @@
  RDR_LIB=$(LIB_DIR)/rdr/librdr.la
  NETWORK_LIB=$(LIB_DIR)/network/libnetwork.la
