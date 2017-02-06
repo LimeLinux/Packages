@@ -22,6 +22,8 @@
         </BuildDependencies>
         <Patches>
             <!--Patch>PyQt5_gpl-5.6-dbus_ftbfs.patch</Patch-->
+            <Patch>pyqt-qt5.8.patch</Patch>
+            <Patch>pyqt5-fix-check-license.patch</Patch>
         </Patches>
     </Source>
     

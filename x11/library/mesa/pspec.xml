@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Mesa graphics libraries and utilities</Summary>
         <Description>Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.</Description>
-        <Archive sha1sum="3c36c91faf4d06a3d5e7bdaf3b2eabb28b21c2a9" type="tarxz">ftp://ftp.freedesktop.org/pub/mesa/12.0.3/mesa-12.0.3.tar.xz</Archive>
+        <Archive sha1sum="b5527aefe1a783f023f7e0c6e7cb87a837f54749" type="tarxz">ftp://ftp.freedesktop.org/pub/mesa/13.0.4/mesa-13.0.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>xorg-proto</Dependency>
             <Dependency>libdrm</Dependency>
@@ -31,6 +31,9 @@
             <Dependency>llvm</Dependency>
             <Dependency>libxshmfence</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">mesa-13.0.4-add_xdemos-1.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -69,7 +72,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>12.0.3</Version>
+            <Version>13.0.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -55,7 +55,7 @@
             <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib/python3.5</Path>
+            <Path fileType="library">/usr/lib/python3.6</Path>
             <Path fileType="library">/usr/lib/libpyglib-gi-2.0-python3.5.so*</Path>
         </Files>
     </Package>

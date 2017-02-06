@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Python bindings for at-spi2-core</Summary>
         <Description>python-pyatspi provides a python client library for the AT-SPI D-Bus accessibility infrastructure.</Description>
-        <Archive sha1sum="71cf7a9fdea76fa4e3af023144db8858fe4844e7" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/pyatspi/2.20/pyatspi-2.20.2.tar.xz</Archive>
+        <Archive sha1sum="822ffbdd4c689b930f71f9ba6511e70b5ad55e1c" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/pyatspi/2.20/pyatspi-2.20.3.tar.xz</Archive>
          <BuildDependencies>
             <Dependency>pygobject</Dependency>
         </BuildDependencies>
@@ -33,8 +33,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.20.2</Version>
+            <Date>2017-02-21</Date>
+            <Version>2.20.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
