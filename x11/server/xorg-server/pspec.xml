@@ -55,6 +55,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">xorg-server-1.19.1-add_prime_support-1.patch</Patch>
+            <!--Patch level="1">xorg-server-1.19.0.patch</Patch-->
         </Patches>
     </Source>
 

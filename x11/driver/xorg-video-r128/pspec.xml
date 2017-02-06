@@ -13,7 +13,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org r128 video driver</Summary>
         <Description>xorg-video-r128 contains the X.Org driver for ATI Rage128 video cards.</Description>
-        <Archive sha1sum="25559ee795b7f417770086a53d9acdfaad8423da" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-r128-6.10.1.tar.bz2</Archive>
+        <Archive sha1sum="ea3c739efda6ce785b057ac9c39f9247ae9ede8e" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-r128-6.10.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libdrm</Dependency>
             <Dependency>mesa</Dependency>
@@ -35,8 +35,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-05-02</Date>
-            <Version>6.10.1</Version>
+            <Date>2017-02-02</Date>
+            <Version>6.10.2</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
