@@ -3066,7 +3066,7 @@
             <Description xml:lang="pl">Mozilla Firefox – otwarta przeglądarka internetowa oparta na silniku Gecko, stworzona i rozwijana przez Korporację Mozilla oraz ochotników.</Description>
             <Description xml:lang="es">Navegue por la web de forma rápida y segura. Navegador web de código abierto que se puede personalizar con características adicionales.</Description>
             <Icon>firefox</Icon>
-            <Archive type="tarxz" sha1sum="6024dc49a566ed6296ad6cd707a199d41f090176">https://ftp.mozilla.org/pub/firefox/releases/51.0.1/source/firefox-51.0.1.source.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b73255fd4f90fd0c1b107b566679da2df3f31cf1">https://ftp.mozilla.org/pub/firefox/releases/51.0.1/source/firefox-51.0.1.source.tar.xz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
                 <AdditionalFile target="browserconfig.properties" permission="0644">limelinux/browserconfig.properties</AdditionalFile>
@@ -10198,7 +10198,7 @@
             <Summary xml:lang="tr">C programlama dili için glib kütüphanesi</Summary>
             <Description xml:lang="en">glib2 is the low-level core library that forms the basis for projects such as GTK+ and GNOME. It provides data structure handling for C, portability wrappers, and interfaces for such runtime functionality as an event loop, threads, dynamic loading, and an object system.</Description>
             <Description xml:lang="tr">glib2, GTK+ ve GNOME gibi projelerin temelini oluşturan düşük seviyeli çekirdek kütüphanedir. C için veri yapıları, taşınabilirlik katmanları ve çeşitli çalışma zamanı işlevleri için arabirimler sunar.</Description>
-            <Archive type="tarxz" sha1sum="ca40ca81bd3d4c3628fabfa70829f3854b01104b">mirrors://gnome/glib/2.50/glib-2.50.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="cc10b0dc8dd68b4333a6f33877e49a68b02eacfc">https://ftp.gnome.org/pub/gnome/sources/glib/2.51/glib-2.51.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency versionFrom="8.36">libpcre</Dependency>
                 <Dependency>zlib</Dependency>
@@ -10250,7 +10250,7 @@
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>2.50.0</Version>
+                <Version>2.51.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -12048,6 +12048,52 @@
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>481</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>limelinux-python</Name>
+            <Homepage>http://www.limelinux.com</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>system.base</PartOf>
+            <Summary xml:lang="en">Python modules for Pisi Linux</Summary>
+            <Summary xml:lang="tr">PiSi Linux için Python modülleri</Summary>
+            <Description xml:lang="en">Python modules for Pisi Linux provides functions for common task, with the aim of easing development.</Description>
+            <Description xml:lang="tr">PiSi Linux için Python modülleri genel işler için fonksiyonlar sunarak geliştirme işini kolaylaştırmayı amaçlamaktadır.</Description>
+            <Description xml:lang="es">Módulos Python para PiSi Linux facilitan funciones para tareas comunes, para simplificar el desarrollo.</Description>
+            <Archive type="targz" sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40">http://source.limelinux.com/1.0/limelinux-python-0.4.8.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python</Dependency>
+                <Dependency>libX11</Dependency>
+            </BuildDependencies>
+            <SourceURI>system/base/pisilinux-python/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>limelinux-python</Name>
+            <RuntimeDependencies>
+                <Dependency>python</Dependency>
+                <Dependency>libX11</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="library">/usr/lib/python2.7/site-packages/pardus/xorg</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-21</Date>
+                <Version>0.4.8</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
