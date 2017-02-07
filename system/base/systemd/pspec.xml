@@ -21,7 +21,6 @@
             <Dependency>docbook-xsl</Dependency>
             <Dependency>libcap</Dependency>
             <Dependency>libxslt</Dependency>
-            <Dependency>eudev</Dependency>
             <Dependency>dbus-glib</Dependency>
             <Dependency>tcp-wrappers</Dependency>
             <Dependency>cryptsetup</Dependency>
@@ -40,7 +39,6 @@
             <Dependency>pam</Dependency>
             <Dependency>dbus</Dependency>
             <Dependency>libcap</Dependency>
-            <Dependency>eudev</Dependency>
             <Dependency>util-linux</Dependency>
             <Dependency>tcp-wrappers</Dependency>
             <Dependency>cryptsetup</Dependency>

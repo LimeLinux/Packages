@@ -3633,7 +3633,7 @@
             <Summary xml:lang="en">A WebKit powered web browser</Summary>
             <Description xml:lang="en">Chromium-browser is an open-source web browser, powered by WebKit.</Description>
             <Icon>chromium</Icon>
-            <Archive type="tarxz" sha1sum="7f40746a894635692e82dffca2fb8e58a92a8c3f">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-56.0.2924.76.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="ffb5069dc0abc8e388b3fb5bf74c0050797d8a7e">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-57.0.2987.21.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>alsa-lib</Dependency>
                 <Dependency>at-spi2-atk</Dependency>
@@ -3705,7 +3705,6 @@
                 <Dependency>usbutils</Dependency>
             </BuildDependencies>
             <Patches>
-                <Patch level="1">chromium-glib-2.24.patch</Patch>
                 <Patch level="1">chromium-widevine.patch</Patch>
                 <Patch level="1">chromium-system-ffmpeg-r4.patch</Patch>
             </Patches>
@@ -3774,7 +3773,7 @@
         <History>
             <Update release="1">
                 <Date>2017-02-12</Date>
-                <Version>56.0.2924.76</Version>
+                <Version>57.0.2987.21</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -9294,73 +9293,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>eudev</Name>
-            <Homepage>https://www.gentoo.org/proj/en/eudev/</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <PartOf>system.base</PartOf>
-            <Summary xml:lang="en">eudev is a fork of system-udev</Summary>
-            <Summary xml:lang="tr">eudev sistemd-udev uygulamasının çatalı</Summary>
-            <Description xml:lang="en">eudev is a fork of system-udev with the goal of obtaining better compatibility with existing software such as OpenRC and Upstart, older kernels, various toolchains and anything else required by users and various distributions.</Description>
-            <Description xml:lang="tr">eudev sistem-udev uygulamasının OpenRC, Upstart gibi başlangıç sistemleri ile uyumu için  hazırlanmış çatalı</Description>
-            <Archive type="targz" sha1sum="2898e23da5a3ba481cf5742d8189242d33e30868">https://github.com/gentoo/eudev/archive/v3.2.tar.gz</Archive>
-            <BuildDependencies>
-                <Dependency>util-linux</Dependency>
-                <Dependency>libpcre</Dependency>
-                <Dependency>libxslt</Dependency>
-            </BuildDependencies>
-            <SourceURI>system/base/eudev/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>eudev</Name>
-            <RuntimeDependencies>
-                <Dependency>kmod</Dependency>
-                <Dependency>util-linux</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/bin</Path>
-                <Path fileType="executable">/sbin</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="executable">/usr/sbin</Path>
-                <Path fileType="executable">/lib/udev</Path>
-                <Path fileType="library">/lib</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="header">/usr/include/</Path>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="config">/usr/lib/tmpfiles.d/udev.conf</Path>
-                <Path fileType="data">/run/udev</Path>
-                <Path fileType="data">/lib/systemd</Path>
-                <Path fileType="data">/etc/udev/rules.d</Path>
-                <Path fileType="data">/lib/udev/rules.d</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="man">/usr/share/man</Path>
-            </Files>
-            <Conflicts>
-                <Package>systemd</Package>
-                <Package>vdev</Package>
-            </Conflicts>
-            <Provides>
-                <COMAR script="package.py">System.Package</COMAR>
-            </Provides>
-            <AdditionalFiles>
-                <AdditionalFile target="/usr/lib/tmpfiles.d/udev.conf" permission="0644" owner="root">tmpfiles.conf</AdditionalFile>
-            </AdditionalFiles>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>3.2</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>libusb</Name>
             <Homepage>http://libusb.org/</Homepage>
             <Packager>
@@ -11707,7 +11639,6 @@
                 <Dependency>docbook-xsl</Dependency>
                 <Dependency>libcap</Dependency>
                 <Dependency>libxslt</Dependency>
-                <Dependency>eudev</Dependency>
                 <Dependency>dbus-glib</Dependency>
                 <Dependency>tcp-wrappers</Dependency>
                 <Dependency>cryptsetup</Dependency>
@@ -11726,7 +11657,6 @@
                 <Dependency>pam</Dependency>
                 <Dependency>dbus</Dependency>
                 <Dependency>libcap</Dependency>
-                <Dependency>eudev</Dependency>
                 <Dependency>util-linux</Dependency>
                 <Dependency>tcp-wrappers</Dependency>
                 <Dependency>cryptsetup</Dependency>
@@ -23751,7 +23681,6 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Dependency>libgudev</Dependency>
                 <Dependency>dbus-glib</Dependency>
                 <Dependency>libXfixes</Dependency>
-                <Dependency>eudev</Dependency>
                 <Dependency>libXcursor</Dependency>
                 <Dependency>fontconfig</Dependency>
                 <Dependency>gdk-pixbuf</Dependency>
@@ -34610,7 +34539,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Archive type="tarxz" sha1sum="2e73c05fb925e2d37ecdf1c128d9420e09befc8e">mirrors://kde/stable/frameworks/5.29/solid-5.29.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>qt5</Dependency>
-                <Dependency>eudev</Dependency>
                 <Dependency>udisks2</Dependency>
                 <Dependency>upower</Dependency>
                 <Dependency>media-player-info</Dependency>
@@ -34624,7 +34552,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Dependency>qt5</Dependency>
                 <Dependency>media-player-info</Dependency>
                 <Dependency>libgcc</Dependency>
-                <Dependency>eudev</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="data">/usr/share</Path>
@@ -50044,7 +49971,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Dependency>libdrm</Dependency>
                 <Dependency>libpciaccess</Dependency>
                 <Dependency>mesa</Dependency>
-                <Dependency>eudev</Dependency>
                 <Dependency>xorg-server</Dependency>
             </BuildDependencies>
             <SourceURI>x11/driver/xorg-video-nouveau/pspec.xml</SourceURI>
@@ -50053,7 +49979,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Name>xorg-video-nouveau</Name>
             <RuntimeDependencies>
                 <Dependency>libdrm</Dependency>
-                <Dependency>eudev</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library">/usr/lib/xorg</Path>
@@ -50089,7 +50014,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Archive type="tarbz2" sha1sum="fca6b9a7795e6f27cb216fb3818f9c642745beaf">mirrors://xorg/individual/driver/xf86-input-libinput-0.22.0.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>libX11</Dependency>
-                <Dependency>eudev</Dependency>
                 <Dependency>xorg-server</Dependency>
                 <Dependency versionFrom="1.5.0">libinput</Dependency>
                 <Dependency>util-macros</Dependency>

@@ -89,7 +89,6 @@
             <Dependency>libgudev</Dependency>
             <Dependency>dbus-glib</Dependency>
             <Dependency>libXfixes</Dependency>
-            <Dependency>eudev</Dependency>
             <Dependency>libXcursor</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>

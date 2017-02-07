@@ -16,7 +16,6 @@
         <Archive sha1sum="fca6b9a7795e6f27cb216fb3818f9c642745beaf" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-libinput-0.22.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libX11</Dependency>
-            <Dependency>eudev</Dependency>
             <Dependency>xorg-server</Dependency>
             <Dependency versionFrom="1.5.0">libinput</Dependency>
             <Dependency>util-macros</Dependency>

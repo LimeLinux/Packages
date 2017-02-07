@@ -17,7 +17,6 @@
         <Archive sha1sum="2e73c05fb925e2d37ecdf1c128d9420e09befc8e" type="tarxz">mirrors://kde/stable/frameworks/5.29/solid-5.29.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency>eudev</Dependency>
             <Dependency>udisks2</Dependency>
             <Dependency>upower</Dependency>
             <Dependency>media-player-info</Dependency>
@@ -31,7 +30,6 @@
             <Dependency>qt5</Dependency>
             <Dependency>media-player-info</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>eudev</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
