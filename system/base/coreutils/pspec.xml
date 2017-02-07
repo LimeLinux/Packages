@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A set of basic GNU tools commonly used in shell scripts</Summary>
         <Description>Standard GNU file utilities (chmod, cp, dd, dir, ls...), text utilities (sort, tr, head, wc..), and shell utilities (whoami, who,...)</Description>
-        <Archive sha1sum="301f186c24afb882a3ca73d19a102a2ce6f456c3" type="tarxz">http://ftp.gnu.org/gnu/coreutils/coreutils-8.25.tar.xz</Archive>
+        <Archive sha1sum="d6268b2495c52d7a0ecc6156e36e0eca16e601ea" type="tarxz">http://ftp.gnu.org/gnu/coreutils/coreutils-8.26.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>acl</Dependency>
             <Dependency>attr</Dependency>
@@ -27,6 +27,7 @@
         <Patches>
             <!-- limelinux patches -->
             <Patch level="0">remove_am_silent_rules.patch</Patch>
+            <Patch level="1">coreutils-8.26-i18n-1.patch</Patch>
         </Patches>
     </Source>
 
