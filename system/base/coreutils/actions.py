@@ -10,10 +10,17 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
 
-movetobin = ["arch", "basename", "cat", "chgrp", "chmod", "chown", "cp", "cut", "date", "dd", "df",
-             "dir", "echo", "env", "false", "link", "ln", "ls", "mkdir", "mknod", "mktemp", "mv",
-             "nice", "pwd", "readlink", "rm", "rmdir", "sleep", "sort", "stty", "sync", "touch",
-             "true", "uname", "unlink", "vdir"]
+movetobin = ["arch", "basename", "cat", "chgrp", "chmod", "chown", "cp", "cut", "chroot", "cksum", "comm", "date", "dd", "df",
+             "dir", "echo", "env", "false", "link", "ln", "ls", "mkdir", "mknod", "mktemp", "mv","nice", "pwd", "readlink", 
+             "rm", "rmdir", "sleep", "sort", "stty", "sync", "touch", "true", "uname", "unlink", "vdir","csplit", "dircolors", 
+             "dirname", "du", "expand", "expr", "factor", "flock", "fmt", "fold", "groups", "head", "hostid", "id", "install",
+             "join", "logname", "md5sum", "mkfifo", "nohup", "nproc", "od", "paste", "pathchk", "pinky", "pr", "printenv", "printf",
+             "ptx", "runcon", "sha*sum", "seq", "shred", "split", "stat",  "sum", "tac", "tail", "tee", "test", "timeout", "tr", 
+             "truncate", "tsort", "tty", "unexpand", "uniq", "users", "wc", "who", "whoami", "yes"]
+
+
+
+  
 
 symtousrbin = ["env", "cut", "readlink"]
 
