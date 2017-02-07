@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A WebKit powered web browser</Summary>
         <Description>Chromium-browser is an open-source web browser, powered by WebKit.</Description>
-        <Archive sha1sum="7f40746a894635692e82dffca2fb8e58a92a8c3f" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-56.0.2924.76.tar.xz</Archive>
+        <Archive sha1sum="ffb5069dc0abc8e388b3fb5bf74c0050797d8a7e" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-57.0.2987.21.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>at-spi2-atk</Dependency>
@@ -86,7 +86,7 @@
             <Dependency>usbutils</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">chromium-glib-2.24.patch</Patch>
+            <!--Patch level="1">chromium-glib-2.24.patch</Patch-->
             <Patch level="1">chromium-widevine.patch</Patch>
             <Patch level="1">chromium-system-ffmpeg-r4.patch</Patch>
             <!--Patch level="1">limelinux/gfx_jpeg_codec.patch</Patch>
@@ -158,7 +158,7 @@
     <History>
         <Update release="1">
             <Date>2017-02-12</Date>
-            <Version>56.0.2924.76</Version>
+            <Version>57.0.2987.21</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
