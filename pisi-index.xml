@@ -5591,92 +5591,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>apache</Name>
-            <Homepage>http://httpd.apache.org/</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>Apache-2.0</License>
-            <IsA>service</IsA>
-            <PartOf>server.web</PartOf>
-            <Summary xml:lang="tr">Apache web sunucusu</Summary>
-            <Summary xml:lang="de">Apache Webserver</Summary>
-            <Summary xml:lang="en">Apache web server</Summary>
-            <Description xml:lang="en">Apache HTTP Server is a free software/open source web server for Unix-like systems, Microsoft Windows, Novell NetWare and other operating systems. Apache is notable for playing a key role in the initial growth of the World Wide Web, and continues to be the most popular web server in use, serving as the de facto reference platform against which other web servers are designed and judged.</Description>
-            <Description xml:lang="tr">Dünyanın en çok tercih edilen web sunucu olan Apache artık diğer genelağ sunucularının standartlarını belirlemek için takip ettiği hızlı, güçlü, esnek ve yüksek özelleştirilebilirliğe sahip bir genelağ sunucusudur.</Description>
-            <Archive type="tarbz2" sha1sum="cefe8ea4a3f81c7a08e36c80ebbd792c67ab361b">http://archive.apache.org/dist/httpd/httpd-2.4.20.tar.bz2</Archive>
-            <BuildDependencies>
-                <Dependency>apr</Dependency>
-                <Dependency>nss</Dependency>
-                <Dependency>lua</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>openssl</Dependency>
-                <Dependency>libxml2</Dependency>
-                <Dependency>db</Dependency>
-                <Dependency>expat</Dependency>
-                <Dependency>libpcre</Dependency>
-                <Dependency>apr-util</Dependency>
-                <Dependency>cyrus-sasl</Dependency>
-            </BuildDependencies>
-            <SourceURI>server/web/apache/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>apache</Name>
-            <RuntimeDependencies>
-                <Dependency>nss</Dependency>
-                <Dependency>apr</Dependency>
-                <Dependency>lua</Dependency>
-                <Dependency>apr-util</Dependency>
-                <Dependency>cyrus-sasl</Dependency>
-                <Dependency>openldap</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>openssl</Dependency>
-                <Dependency>libxml2</Dependency>
-                <Dependency>libpcre</Dependency>
-                <Dependency>db</Dependency>
-                <Dependency>expat</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="executable">/usr/sbin</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/var/log/apache2</Path>
-                <Path fileType="config">/var/www</Path>
-                <Path fileType="data">/run/apache2</Path>
-                <Path fileType="data">/var/cache</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="data">/lib/systemd/system</Path>
-            </Files>
-            <Provides>
-                <COMAR script="package.py">System.Package</COMAR>
-            </Provides>
-            <AdditionalFiles>
-                <AdditionalFile target="/var/www/localhost/htdocs/apache.css" permission="0755" owner="root">webroot/apache.css</AdditionalFile>
-                <AdditionalFile target="/var/www/localhost/htdocs/apache_pb.gif" permission="0755" owner="root">webroot/apache_pb.gif</AdditionalFile>
-                <AdditionalFile target="/var/www/localhost/htdocs/index.html" permission="0755" owner="root">webroot/index.html</AdditionalFile>
-                <AdditionalFile target="/var/www/localhost/htdocs/index-tr.html" permission="0755" owner="root">webroot/index-tr.html</AdditionalFile>
-                <AdditionalFile target="/var/www/localhost/htdocs/index-ptbr.html" permission="0755" owner="root">webroot/index-ptbr.html</AdditionalFile>
-                <AdditionalFile target="/var/www/localhost/htdocs/index-es.html" permission="0755" owner="root">webroot/index-es.html</AdditionalFile>
-                <AdditionalFile target="/var/www/localhost/htdocs/index-de.html" permission="0755" owner="root">webroot/index-de.html</AdditionalFile>
-                <AdditionalFile target="/var/www/localhost/htdocs/pisi-linux.png" permission="0755" owner="root">webroot/pisi-linux.png</AdditionalFile>
-            </AdditionalFiles>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-06-14</Date>
-                <Version>2.4.20</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>libvncserver</Name>
             <Homepage>http://libvncserver.sourceforge.net/</Homepage>
             <Packager>
@@ -11720,7 +11634,7 @@
             </Files>
             <Provides>
                 <COMAR script="packageHandler.py">System.PackageHandler</COMAR>
-                <COMAR script="system-package-units.py">System.Package</COMAR>
+                <COMAR script="package.py">System.Package</COMAR>
             </Provides>
         </Package>
         <History>
@@ -44354,7 +44268,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="es">Apache Ant es una herramienta de compilación (build) basado en Java. Teróricamente se puede comparar con Make, pero sin las vueltas que tiene aquel.</Description>
             <Archive type="tarbz2" sha1sum="8eee8f30fecbf16c5bc430969d119d8081521b4d">http://archive.apache.org/dist/ant/source/apache-ant-1.9.6-src.tar.bz2</Archive>
             <BuildDependencies>
-                <Dependency>jdk7-openjdk</Dependency>
+                <Dependency>java7-openjdk</Dependency>
             </BuildDependencies>
             <SourceURI>programming/build/ant/pspec.xml</SourceURI>
         </Source>
@@ -49050,7 +48964,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Archive type="zip" sha1sum="903e8c2cb521cc91636eccae66b8594435516ff5">http://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/R-4.4.2-201502041700/ecjsrc-4.4.2.jar</Archive>
             <BuildDependencies>
                 <Dependency>ant</Dependency>
-                <Dependency>jdk7-openjdk</Dependency>
+                <Dependency>java7-openjdk</Dependency>
             </BuildDependencies>
             <Patches>
                 <Patch level="0">01-ecj-include-props.patch</Patch>
@@ -49061,7 +48975,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         <Package>
             <Name>eclipse-ecj</Name>
             <RuntimeDependencies>
-                <Dependency>jdk7-openjdk</Dependency>
+                <Dependency>java7-openjdk</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="man">/usr/share/man</Path>
@@ -49141,14 +49055,14 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </AdditionalFiles>
             <BuildDependencies>
                 <Dependency>ant</Dependency>
-                <Dependency>jdk7-openjdk</Dependency>
+                <Dependency>java7-openjdk</Dependency>
             </BuildDependencies>
             <SourceURI>programming/language/java/rhino/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>rhino</Name>
             <RuntimeDependencies>
-                <Dependency>jdk7-openjdk</Dependency>
+                <Dependency>java7-openjdk</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="man">/usr/share/man</Path>
@@ -55690,6 +55604,58 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Update>
         </History>
     </SpecFile>
+    <Package>
+        <Name>systemd</Name>
+        <Summary xml:lang="en">A System and Session Manager</Summary>
+        <Summary xml:lang="tr">Sistem ve Oturum Yöneticisi</Summary>
+        <Description xml:lang="en">systemd is a system and session manager for Linux, compatible with SysV and LSB init scripts.</Description>
+        <Description xml:lang="tr">systemd SysV ve LSB başlangıç betikleriyle uyumlu bir Linux sistem ve oturum yöneticisidir.</Description>
+        <IsA>app:console</IsA>
+        <IsA>service</IsA>
+        <PartOf>system.base</PartOf>
+        <License>GPLv2+</License>
+        <RuntimeDependencies>
+            <Dependency>pam</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>libcap</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>tcp-wrappers</Dependency>
+            <Dependency>cryptsetup</Dependency>
+            <Dependency>gawk</Dependency>
+            <Dependency>coreutils</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <COMAR script="packageHandler.py">System.PackageHandler</COMAR>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+        <History>
+            <Update release="1">
+                <Date>2011-08-25</Date>
+                <Version>218</Version>
+                <Comment>New Packages</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@limelinux.com</Email>
+            </Update>
+        </History>
+        <BuildHost>buildfarm</BuildHost>
+        <Distribution>LimeLinux</Distribution>
+        <DistributionRelease>1.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>25958265</InstalledSize>
+        <PackageSize>3654932</PackageSize>
+        <PackageHash>8cc73d20905054b8be2b2db5066ada290b259167</PackageHash>
+        <InstallTarHash>40f31a8039e16ba399c06bf4d5705508b1ba3202</InstallTarHash>
+        <PackageURI>system/base/systemd/systemd-218-1-lm-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>systemd</Name>
+            <Homepage>http://www.freedesktop.org/wiki/Software/systemd</Homepage>
+            <Packager>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@limelinux.com</Email>
+            </Packager>
+        </Source>
+    </Package>
     <Component>
         <Name>system</Name>
         <LocalName xml:lang="en">FIXME</LocalName>

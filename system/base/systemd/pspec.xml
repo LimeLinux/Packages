@@ -105,7 +105,7 @@
         </Files>
         <Provides>
             <COMAR script="packageHandler.py">System.PackageHandler</COMAR>
-            <COMAR script="system-package-units.py">System.Package</COMAR>
+            <COMAR script="package.py">System.Package</COMAR>
         </Provides>
     </Package>
 
