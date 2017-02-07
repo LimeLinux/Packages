@@ -20,6 +20,8 @@ def install():
 
     pisitools.remove("/bin/pidof")
     pisitools.dosym("killall5", "/sbin/pidof")
+
+    #systemd
     pisitools.remove ("/usr/share/man/man8/telinit.8")
     pisitools.remove ("/sbin/reboot")
     pisitools.remove ("/sbin/poweroff")
@@ -30,3 +32,23 @@ def install():
     pisitools.remove ("/usr/share/man/man8/runlevel.8")
     pisitools.remove ("/usr/share/man/man8/halt.8")
     pisitools.remove ("/usr/share/man/man8/reboot.8")
+
+    #util-linux
+
+    pisitools.remove ("/usr/bin/mesg")
+    pisitools.remove ("/usr/bin/wall")
+    pisitools.remove ("/usr/bin/last")
+    pisitools.remove ("/sbin/sulogin")
+    pisitools.remove ("/usr/bin/lastb")
+    pisitools.remove ("/bin/mountpoint")
+    pisitools.remove ("/usr/bin/utmpdump")
+    pisitools.remove ("/usr/share/man/man1/mesg.1")
+    pisitools.remove ("/usr/share/man/man1/wall.1")
+    pisitools.remove ("/usr/share/man/man8/sulogin.8")
+    pisitools.remove ("/usr/share/man/man1/lastb.1")
+    pisitools.remove ("/usr/share/man/man1/last.1")
+    pisitools.remove ("/usr/share/man/man1/utmpdump.1")
+    pisitools.remove ("/usr/share/man/man1/mountpoint.1")
+
+
+

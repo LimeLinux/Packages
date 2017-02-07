@@ -18,25 +18,9 @@ def setup():
     shelltools.export("AUTOPOINT", "/bin/true")
 
     options = "\
-               --disable-rpath \
-               --disable-silent-rules \
-               --disable-use-tty-group \
-               --disable-su  \
-               --disable-last \
-               --disable-mesg \
-               --disable-vipw \
-               --disable-wall \
-               --disable-login \
-               --disable-nologin \
-               --disable-newgrp \
-               --disable-runuser \
-               --disable-utmpdump \
-               --disable-chfn-chsh \
-	           --disable-mountpoint \
-               --disable-sulogin \
-               --disable-makeinstall-chown \
-               --disable-socket-activation \
-              "
+            --disable-login \
+            --disable-nologin \
+            --disable-chfn-chsh"
 
     if get.buildTYPE() == "emul32":
         options += "\
@@ -63,7 +47,7 @@ def setup():
                      --enable-write \
                      --enable-tunelp \
                      --without-audit \
-                     --with-udev \
+                     --with-systemd \
                      --without-utempter \
                    "
 
