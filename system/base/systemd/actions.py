@@ -96,16 +96,7 @@ def install():
 
     # Remove unwanted rpm macro
     pisitools.removeDir ("/usr/lib/rpm")
-    pisitools.remove ("/usr/share/man/man8/telinit.8")
-    pisitools.remove ("/sbin/reboot")
-    pisitools.remove ("/sbin/poweroff")
-    pisitools.remove ("/sbin/halt")
-    pisitools.remove ("/sbin/shutdown")
-    pisitools.remove ("/usr/share/man/man8/shutdown.8")
-    pisitools.remove ("/usr/share/man/man8/poweroff.8")
-    pisitools.remove ("/usr/share/man/man8/runlevel.8")
-    pisitools.remove ("/usr/share/man/man8/halt.8")
-    pisitools.remove ("/usr/share/man/man8/reboot.8")
+
 
     # We do not use nsswitch.conf - so don't break our networking.
     pisitools.remove("/usr/share/factory/etc/nsswitch.conf")
