@@ -44268,7 +44268,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="es">Apache Ant es una herramienta de compilación (build) basado en Java. Teróricamente se puede comparar con Make, pero sin las vueltas que tiene aquel.</Description>
             <Archive type="tarbz2" sha1sum="8eee8f30fecbf16c5bc430969d119d8081521b4d">http://archive.apache.org/dist/ant/source/apache-ant-1.9.6-src.tar.bz2</Archive>
             <BuildDependencies>
-                <Dependency>java7-openjdk</Dependency>
+                <Dependency>jre7-openjdk</Dependency>
             </BuildDependencies>
             <SourceURI>programming/build/ant/pspec.xml</SourceURI>
         </Source>
@@ -48648,6 +48648,138 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>eclipse-ecj</Name>
+            <Homepage>http://www.eclipse.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>EPL</License>
+            <IsA>app:web</IsA>
+            <PartOf>programming.language.java</PartOf>
+            <Summary xml:lang="en">Eclipse java bytecode compiler</Summary>
+            <Description xml:lang="en">Eclipse java bytecode compiler</Description>
+            <Archive type="zip" sha1sum="903e8c2cb521cc91636eccae66b8594435516ff5">http://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/R-4.4.2-201502041700/ecjsrc-4.4.2.jar</Archive>
+            <BuildDependencies>
+                <Dependency>ant</Dependency>
+                <Dependency>jre7-openjdk</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="0">01-ecj-include-props.patch</Patch>
+                <Patch level="0">02-buildxml-fix-manifest.patch</Patch>
+            </Patches>
+            <SourceURI>programming/language/java/eclipse-ecj/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>eclipse-ecj</Name>
+            <RuntimeDependencies>
+                <Dependency>jre7-openjdk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/java</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/bin/ecj" permission="0755" owner="root">ecj</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-21</Date>
+                <Version>4.4.2_201502041700</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>npapi-sdk</Name>
+            <Homepage>http://code.google.com/p/npapi-sdk/</Homepage>
+            <Packager>
+                <Name>Lime GNU/Linux</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MPLv1.1</License>
+            <IsA>app:gui</IsA>
+            <PartOf>programming.language.java</PartOf>
+            <Summary xml:lang="en">NPAPI-SDK is a bundle of Netscape Plugin Application Programming Interface headers by Mozilla.</Summary>
+            <Description xml:lang="en">NPAPI-SDK is a bundle of Netscape Plugin Application Programming Interface headers by Mozilla. This package provides a clear way to install those headers and depend on them.</Description>
+            <Archive type="tarbz2" sha1sum="5aac3c76ea59aa2ac8113e2f742af51f4ae0c60c">https://bitbucket.org/mgorny/npapi-sdk/downloads/npapi-sdk-0.27.2.tar.bz2</Archive>
+            <SourceURI>programming/language/java/npapi-sdk/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>npapi-sdk</Name>
+            <Summary xml:lang="en">Development files for npapi-sdk</Summary>
+            <Files>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/npapi-sdk</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-01-08</Date>
+                <Version>0.27.2</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/Linux</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>rhino</Name>
+            <Homepage>http://www.mozilla.org/rhino/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPL2</License>
+            <PartOf>programming.language.java</PartOf>
+            <Summary xml:lang="en">Open-source implementation of JavaScript written entirely in Java</Summary>
+            <Description xml:lang="en">Open-source implementation of JavaScript written entirely in Java</Description>
+            <Archive type="targz" sha1sum="d8af09f7c33b72c57a80f4f0fc2ba0a86ca3c4be">https://github.com/mozilla/rhino/archive/Rhino1_7_7_1_RELEASE.tar.gz</Archive>
+            <Archive type="targz" sha1sum="57ba5952c98f32e20f0408e7c42debd296fc0b45" target="rhino-Rhino1_7_7_1_RELEASE">http://archive.apache.org/dist/xmlbeans/binaries/xmlbeans-2.6.0.tgz</Archive>
+            <AdditionalFiles>
+                <AdditionalFile target="rhino">rhino</AdditionalFile>
+                <AdditionalFile target="rhino.1">rhino.1</AdditionalFile>
+                <AdditionalFile target="rhino-jsc">rhino-jsc</AdditionalFile>
+                <AdditionalFile target="rhino-jsc.1">rhino-jsc.1</AdditionalFile>
+                <AdditionalFile target="rhino-debugger">rhino-debugger</AdditionalFile>
+                <AdditionalFile target="rhino-debugger.1">rhino-debugger.1</AdditionalFile>
+            </AdditionalFiles>
+            <BuildDependencies>
+                <Dependency>ant</Dependency>
+                <Dependency>jre7-openjdk</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/java/rhino/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>rhino</Name>
+            <RuntimeDependencies>
+                <Dependency>jre7-openjdk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/java/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-21</Date>
+                <Version>1.7.7.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>java7-openjdk</Name>
             <Homepage>http://icedtea.classpath.org</Homepage>
             <Packager>
@@ -48690,7 +48822,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Dependency>libXinerama</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
             </BuildDependencies>
-            <SourceURI>programming/language/java/java7-openjdk/pspec.xml</SourceURI>
+            <SourceURI>programming/language/java/jre7-openjdk/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>jre7-openjdk-headless</Name>
@@ -48942,138 +49074,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>7u_121.2.6.8</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>eclipse-ecj</Name>
-            <Homepage>http://www.eclipse.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>EPL</License>
-            <IsA>app:web</IsA>
-            <PartOf>programming.language.java</PartOf>
-            <Summary xml:lang="en">Eclipse java bytecode compiler</Summary>
-            <Description xml:lang="en">Eclipse java bytecode compiler</Description>
-            <Archive type="zip" sha1sum="903e8c2cb521cc91636eccae66b8594435516ff5">http://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/R-4.4.2-201502041700/ecjsrc-4.4.2.jar</Archive>
-            <BuildDependencies>
-                <Dependency>ant</Dependency>
-                <Dependency>java7-openjdk</Dependency>
-            </BuildDependencies>
-            <Patches>
-                <Patch level="0">01-ecj-include-props.patch</Patch>
-                <Patch level="0">02-buildxml-fix-manifest.patch</Patch>
-            </Patches>
-            <SourceURI>programming/language/java/eclipse-ecj/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>eclipse-ecj</Name>
-            <RuntimeDependencies>
-                <Dependency>java7-openjdk</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share/java</Path>
-            </Files>
-            <AdditionalFiles>
-                <AdditionalFile target="/usr/bin/ecj" permission="0755" owner="root">ecj</AdditionalFile>
-            </AdditionalFiles>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>4.4.2_201502041700</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>npapi-sdk</Name>
-            <Homepage>http://code.google.com/p/npapi-sdk/</Homepage>
-            <Packager>
-                <Name>Lime GNU/Linux</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>MPLv1.1</License>
-            <IsA>app:gui</IsA>
-            <PartOf>programming.language.java</PartOf>
-            <Summary xml:lang="en">NPAPI-SDK is a bundle of Netscape Plugin Application Programming Interface headers by Mozilla.</Summary>
-            <Description xml:lang="en">NPAPI-SDK is a bundle of Netscape Plugin Application Programming Interface headers by Mozilla. This package provides a clear way to install those headers and depend on them.</Description>
-            <Archive type="tarbz2" sha1sum="5aac3c76ea59aa2ac8113e2f742af51f4ae0c60c">https://bitbucket.org/mgorny/npapi-sdk/downloads/npapi-sdk-0.27.2.tar.bz2</Archive>
-            <SourceURI>programming/language/java/npapi-sdk/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>npapi-sdk</Name>
-            <Summary xml:lang="en">Development files for npapi-sdk</Summary>
-            <Files>
-                <Path fileType="data">/usr/lib/pkgconfig</Path>
-                <Path fileType="header">/usr/include/npapi-sdk</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2017-01-08</Date>
-                <Version>0.27.2</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/Linux</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>rhino</Name>
-            <Homepage>http://www.mozilla.org/rhino/</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPL2</License>
-            <PartOf>programming.language.java</PartOf>
-            <Summary xml:lang="en">Open-source implementation of JavaScript written entirely in Java</Summary>
-            <Description xml:lang="en">Open-source implementation of JavaScript written entirely in Java</Description>
-            <Archive type="targz" sha1sum="d8af09f7c33b72c57a80f4f0fc2ba0a86ca3c4be">https://github.com/mozilla/rhino/archive/Rhino1_7_7_1_RELEASE.tar.gz</Archive>
-            <Archive type="targz" sha1sum="57ba5952c98f32e20f0408e7c42debd296fc0b45" target="rhino-Rhino1_7_7_1_RELEASE">http://archive.apache.org/dist/xmlbeans/binaries/xmlbeans-2.6.0.tgz</Archive>
-            <AdditionalFiles>
-                <AdditionalFile target="rhino">rhino</AdditionalFile>
-                <AdditionalFile target="rhino.1">rhino.1</AdditionalFile>
-                <AdditionalFile target="rhino-jsc">rhino-jsc</AdditionalFile>
-                <AdditionalFile target="rhino-jsc.1">rhino-jsc.1</AdditionalFile>
-                <AdditionalFile target="rhino-debugger">rhino-debugger</AdditionalFile>
-                <AdditionalFile target="rhino-debugger.1">rhino-debugger.1</AdditionalFile>
-            </AdditionalFiles>
-            <BuildDependencies>
-                <Dependency>ant</Dependency>
-                <Dependency>java7-openjdk</Dependency>
-            </BuildDependencies>
-            <SourceURI>programming/language/java/rhino/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>rhino</Name>
-            <RuntimeDependencies>
-                <Dependency>java7-openjdk</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share/java/</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>1.7.7.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
