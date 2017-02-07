@@ -33,6 +33,7 @@
         </Patches>
     </Source>
 
+
     <Package>
         <Name>systemd</Name>
         <RuntimeDependencies>
@@ -61,26 +62,35 @@
             <Path fileType="executable">/usr/bin/systemd-nspawn</Path>
             <Path fileType="executable">/usr/bin/systemd-stdio-bridge</Path>
             <Path fileType="executable">/usr/bin/systemd-analyze</Path>
-            <Path fileType="executable">/lib/systemd</Path>
+            <Path fileType="executable">/lib/systemd/*</Path>
             <Path fileType="executable">/lib/systemd/system-generators/systemd-cryptsetup-generator</Path>
             <Path fileType="executable">/lib/systemd/system-generators/systemd-getty-generator</Path>
             <Path fileType="executable">/usr/libexec/systemd</Path>
-            <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/lib/security/pam_systemd.so</Path>
-            <Path fileType="library">/lib/*</Path>
             <Path fileType="library">/usr/lib/libsystemd*</Path>
+            <Path fileType="library">/usr/lib/systemd/*</Path>
+            <Path fileType="library">/usr/lib/udev/*</Path>
+            <Path fileType="library">/usr/lib/kernel/*</Path>
+            <Path fileType="library">/usr/lib/libnss_myhostname.so.2</Path>
+            <Path fileType="library">/usr/lib/libnss_mymachines.so.2</Path>
+            <Path fileType="library">/usr/lib/libnss_resolve.so.2</Path>
+            <Path fileType="library">/lib/udev/udevd</Path>
+            <Path fileType="library">/usr/lib/sysusers.d/*</Path>
+            <Path fileType="library">/usr/lib/python*/*</Path>
             <Path fileType="config">/etc/dbus-1/system.d</Path>
             <Path fileType="config">/etc/*</Path>
             <Path fileType="config">/etc/systemd/system.conf</Path>
-            <Path fileType="data">/usr/lib/pkgconfig</Path>
-            <Path fileType="data">/usr/lib/*</Path>
             <Path fileType="data">/usr/lib/systemd/user</Path>
             <Path fileType="data">/lib/udev/rules.d</Path>
             <Path fileType="data">/usr/share/dbus-1/services</Path>
-            <Path fileType="data">/usr/share/*</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services</Path>
+            <Path fileType="data">/usr/share/zsh/site-functions/*</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/*</Path>
             <Path fileType="data">/usr/share/dbus-1/interfaces</Path>
             <Path fileType="data">/usr/share/systemd</Path>
+            <Path fileType="data">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/factory</Path>
+            <Path fileType="data">/usr/share/pkgconfig/udev.pc</Path>
             <Path fileType="data">/usr/share/polkit-1/actions</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc/systemd</Path>
@@ -107,7 +117,26 @@
             <COMAR script="packageHandler.py">System.PackageHandler</COMAR>
             <COMAR script="package.py">System.Package</COMAR>
         </Provides>
-    </Package>
+       </Package>
+
+      <Package>
+       <Name>libgudev</Name>
+        <PartOf>system.devel</PartOf>
+        <Summary>Development files for systemd</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">systemd</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/*</Path>
+            <Path fileType="library">/usr/lib/pkgconfig/*</Path>
+            <Path fileType="library">/usr/lib/libudev.so</Path>
+            <Path fileType="library">/usr/lib/libudev.so*</Path>
+            <Path fileType="library">/usr/lib/libgudev*</Path>
+            <Path fileType="library">/usr/lib/girepository-1.0/*</Path>
+            <Path fileType="data">/usr/share/gir-1.0/GUdev-1.0.gir</Path>
+        </Files>
+      </Package>
+
 
     <History>
         <Update release="1">

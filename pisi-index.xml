@@ -8815,7 +8815,7 @@
             <Summary xml:lang="tr">Standart dosya, metin ve kabuk uygulamaları</Summary>
             <Description xml:lang="en">Utilitaires standards GNU pour fichiers (chmod, cp, dd, dir, ls...), utilitaires texte (sort, tr, head, wc...) et utilitaires d&apos;interpréteur de commande (shell) (whoami, who...)</Description>
             <Description xml:lang="tr">GNU dosya uygulamaları (chmod, cp, dd, dir, ls...), sh uygulamaları (whoami, who,...) ve metin uygulamalarının (sort, tr, head, wc..) birlikteliğinden oluşmaktadır.</Description>
-            <Archive type="tarxz" sha1sum="301f186c24afb882a3ca73d19a102a2ce6f456c3">http://ftp.gnu.org/gnu/coreutils/coreutils-8.25.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d6268b2495c52d7a0ecc6156e36e0eca16e601ea">http://ftp.gnu.org/gnu/coreutils/coreutils-8.26.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>acl</Dependency>
                 <Dependency>attr</Dependency>
@@ -8828,6 +8828,7 @@
             </BuildDependencies>
             <Patches>
                 <Patch level="0">remove_am_silent_rules.patch</Patch>
+                <Patch level="1">coreutils-8.26-i18n-1.patch</Patch>
             </Patches>
             <SourceURI>system/base/coreutils/pspec.xml</SourceURI>
         </Source>
@@ -11590,26 +11591,35 @@
                 <Path fileType="executable">/usr/bin/systemd-nspawn</Path>
                 <Path fileType="executable">/usr/bin/systemd-stdio-bridge</Path>
                 <Path fileType="executable">/usr/bin/systemd-analyze</Path>
-                <Path fileType="executable">/lib/systemd</Path>
+                <Path fileType="executable">/lib/systemd/*</Path>
                 <Path fileType="executable">/lib/systemd/system-generators/systemd-cryptsetup-generator</Path>
                 <Path fileType="executable">/lib/systemd/system-generators/systemd-getty-generator</Path>
                 <Path fileType="executable">/usr/libexec/systemd</Path>
-                <Path fileType="header">/usr/include</Path>
                 <Path fileType="library">/lib/security/pam_systemd.so</Path>
-                <Path fileType="library">/lib/*</Path>
                 <Path fileType="library">/usr/lib/libsystemd*</Path>
+                <Path fileType="library">/usr/lib/systemd/*</Path>
+                <Path fileType="library">/usr/lib/udev/*</Path>
+                <Path fileType="library">/usr/lib/kernel/*</Path>
+                <Path fileType="library">/usr/lib/libnss_myhostname.so.2</Path>
+                <Path fileType="library">/usr/lib/libnss_mymachines.so.2</Path>
+                <Path fileType="library">/usr/lib/libnss_resolve.so.2</Path>
+                <Path fileType="library">/lib/udev/udevd</Path>
+                <Path fileType="library">/usr/lib/sysusers.d/*</Path>
+                <Path fileType="library">/usr/lib/python*/*</Path>
                 <Path fileType="config">/etc/dbus-1/system.d</Path>
                 <Path fileType="config">/etc/*</Path>
                 <Path fileType="config">/etc/systemd/system.conf</Path>
-                <Path fileType="data">/usr/lib/pkgconfig</Path>
-                <Path fileType="data">/usr/lib/*</Path>
                 <Path fileType="data">/usr/lib/systemd/user</Path>
                 <Path fileType="data">/lib/udev/rules.d</Path>
                 <Path fileType="data">/usr/share/dbus-1/services</Path>
-                <Path fileType="data">/usr/share/*</Path>
                 <Path fileType="data">/usr/share/dbus-1/system-services</Path>
+                <Path fileType="data">/usr/share/zsh/site-functions/*</Path>
+                <Path fileType="data">/usr/share/bash-completion/completions/*</Path>
                 <Path fileType="data">/usr/share/dbus-1/interfaces</Path>
                 <Path fileType="data">/usr/share/systemd</Path>
+                <Path fileType="data">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/factory</Path>
+                <Path fileType="data">/usr/share/pkgconfig/udev.pc</Path>
                 <Path fileType="data">/usr/share/polkit-1/actions</Path>
                 <Path fileType="man">/usr/share/man</Path>
                 <Path fileType="doc">/usr/share/doc/systemd</Path>
@@ -11636,6 +11646,23 @@
                 <COMAR script="packageHandler.py">System.PackageHandler</COMAR>
                 <COMAR script="package.py">System.Package</COMAR>
             </Provides>
+        </Package>
+        <Package>
+            <Name>libgudev</Name>
+            <Summary xml:lang="en">Development files for systemd</Summary>
+            <PartOf>system.devel</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">systemd</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include/*</Path>
+                <Path fileType="library">/usr/lib/pkgconfig/*</Path>
+                <Path fileType="library">/usr/lib/libudev.so</Path>
+                <Path fileType="library">/usr/lib/libudev.so*</Path>
+                <Path fileType="library">/usr/lib/libgudev*</Path>
+                <Path fileType="library">/usr/lib/girepository-1.0/*</Path>
+                <Path fileType="data">/usr/share/gir-1.0/GUdev-1.0.gir</Path>
+            </Files>
         </Package>
         <History>
             <Update release="1">
@@ -41929,53 +41956,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>libgudev</Name>
-            <Homepage>https://wiki.gnome.org/Projects/libgudev</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPL2</License>
-            <IsA>library</IsA>
-            <PartOf>programming.library</PartOf>
-            <Summary xml:lang="en">GObject bindings for Udev (Eudev)</Summary>
-            <Description xml:lang="en">GObject bindings for Udev (Eudev)</Description>
-            <Icon>eudev</Icon>
-            <Archive type="tarxz" sha1sum="964ff42115e012f7b52994251e73a48317867d43">https://download.gnome.org/sources/libgudev/230/libgudev-230.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>gobject-introspection</Dependency>
-                <Dependency>gtk-doc</Dependency>
-                <Dependency>libxslt</Dependency>
-                <Dependency>docbook-xsl</Dependency>
-                <Dependency>glib2</Dependency>
-            </BuildDependencies>
-            <SourceURI>programming/library/libgudev/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>libgudev</Name>
-            <RuntimeDependencies>
-                <Dependency>glib2</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="data">/usr/share/gir-1.0</Path>
-                <Path fileType="data">/usr/share/gtk-doc</Path>
-                <Path fileType="library">/usr/lib/pkgconfig</Path>
-                <Path fileType="header">/usr/include/gudev-1.0</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>230</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>libbsd</Name>
             <Homepage>http://libbsd.freedesktop.org</Homepage>
             <Packager>
@@ -55604,58 +55584,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Update>
         </History>
     </SpecFile>
-    <Package>
-        <Name>systemd</Name>
-        <Summary xml:lang="en">A System and Session Manager</Summary>
-        <Summary xml:lang="tr">Sistem ve Oturum Yöneticisi</Summary>
-        <Description xml:lang="en">systemd is a system and session manager for Linux, compatible with SysV and LSB init scripts.</Description>
-        <Description xml:lang="tr">systemd SysV ve LSB başlangıç betikleriyle uyumlu bir Linux sistem ve oturum yöneticisidir.</Description>
-        <IsA>app:console</IsA>
-        <IsA>service</IsA>
-        <PartOf>system.base</PartOf>
-        <License>GPLv2+</License>
-        <RuntimeDependencies>
-            <Dependency>pam</Dependency>
-            <Dependency>dbus</Dependency>
-            <Dependency>libcap</Dependency>
-            <Dependency>util-linux</Dependency>
-            <Dependency>tcp-wrappers</Dependency>
-            <Dependency>cryptsetup</Dependency>
-            <Dependency>gawk</Dependency>
-            <Dependency>coreutils</Dependency>
-        </RuntimeDependencies>
-        <Provides>
-            <COMAR script="packageHandler.py">System.PackageHandler</COMAR>
-            <COMAR script="package.py">System.Package</COMAR>
-        </Provides>
-        <History>
-            <Update release="1">
-                <Date>2011-08-25</Date>
-                <Version>218</Version>
-                <Comment>New Packages</Comment>
-                <Name>Ergün Salman</Name>
-                <Email>poyraz76@limelinux.com</Email>
-            </Update>
-        </History>
-        <BuildHost>buildfarm</BuildHost>
-        <Distribution>LimeLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>25958265</InstalledSize>
-        <PackageSize>3654932</PackageSize>
-        <PackageHash>8cc73d20905054b8be2b2db5066ada290b259167</PackageHash>
-        <InstallTarHash>40f31a8039e16ba399c06bf4d5705508b1ba3202</InstallTarHash>
-        <PackageURI>system/base/systemd/systemd-218-1-lm-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>systemd</Name>
-            <Homepage>http://www.freedesktop.org/wiki/Software/systemd</Homepage>
-            <Packager>
-                <Name>Ergün Salman</Name>
-                <Email>poyraz76@limelinux.com</Email>
-            </Packager>
-        </Source>
-    </Package>
     <Component>
         <Name>system</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
