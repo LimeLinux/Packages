@@ -8,11 +8,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 
 def setup():
-    autotools.autoreconf("-fiv")
-    autotools.configure("\
-                         --disable-static \
-                         --disable-silent-rules \
-                        ")
+    autotools.configure()
 
 def build():
     autotools.make()
