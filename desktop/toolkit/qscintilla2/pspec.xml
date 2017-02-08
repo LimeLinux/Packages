@@ -42,7 +42,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="library">/usr/lib/qt5/plugins</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/qt5/mkspecs</Path>
+            <Path fileType="data">/usr/*</Path>
             <Path fileType="localedata">/usr/share/qt5/translations</Path>
             <Path fileType="header">/usr/include/qt5/Qsci</Path>
             <Path fileType="doc">/usr/share/doc/qscintilla2/Scintilla</Path>
