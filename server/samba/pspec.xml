@@ -71,14 +71,14 @@
             <Path fileType="config">/etc</Path>
             <Path fileType="data">/var/lib</Path>
             <Path fileType="data">/var/log</Path>
-            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/*</Path>
             <Path fileType="executable">/sbin</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/usr/sbin</Path>
             <Path fileType="library">/lib/security</Path>
             <Path fileType="data">/usr/share/samba</Path>
-            <Path fileType="data">/usr/share/perl5</Path>
+            <Path fileType="data">/usr/share/*</Path>
             <Path fileType="data">/var/cache/samba</Path>
 	    <Path fileType="data">/var/run/ctdb</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
