@@ -62,7 +62,7 @@ def install():
     shelltools.cd("../Python3")
     #autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     qt5.install("INSTALL_ROOT=%s" % get.installDIR())
-    pisitools.insinto("/usr/lib/python3.4/site-packages/PyQt5", "Qsci.so")
+    pisitools.insinto("/usr/lib/python3.6/site-packages/PyQt5", "Qsci.so")
     shelltools.cd("../Python")
     #autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     qt5.install("INSTALL_ROOT=%s" % get.installDIR())

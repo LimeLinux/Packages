@@ -11,6 +11,8 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import libtools
 
 def setup():
+    shelltools.system("sed -i 's#l \(gtk-.*\).sgml#& -o \1#' docs/faq/Makefile.in")
+    shelltools.system("sed -i 's#l \(gtk-.*\).sgml#& -o \1#' docs/tutorial/Makefile.in")
     options = "-with-xinput=yes \
                --enable-man"
 
