@@ -67,6 +67,7 @@
         <Files>
             <Path fileType="header">/usr/src/linux-headers*</Path>
             <Path fileType="header">/tmp-headers*</Path>
+             <Path fileType="config">/etc/modprobe.d</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile permission="0644" target="/etc/modprobe.d/nouveau.conf">nvidia/nouveau.conf</AdditionalFile>
