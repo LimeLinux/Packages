@@ -1,37 +1,35 @@
-
-<?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>dash</Name>
-        <Homepage>http://gondor.apana.org.au/~herbert/dash/</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
+            <Name>LimeLinuz Developers</Name>
             <Email>admin@limelinux.com</Email>
         </Packager>
-        <License>BSD</License>
-        <IsA>app:console</IsA>
-        <Summary>Small and fast POSIX-compliant shell</Summary>
-        <Description>DASH is a POSIX-compliant implementation of /bin/sh that aims to be as small as possible.</Description>
-        <Archive sha1sum="cd058935bba545427caa375337afe8a6309477d2" type="targz">http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.8.tar.gz</Archive>
+        <Summary>POSIX compliant shell</Summary>
+        <Description>Dash is a POSIX compliant shell. It can be installed as /bin/sh or as the default shell for either root or a second user with a userid of 0. It depends on fewer libraries than the Bash shell and is therefore less likely to be affected by an upgrade problem or disk failure. Dash is also useful for checking that a script is completely compatible with POSIX syntax.</Description>
+        <License>GPLv3+</License>
+       <Archive sha1sum="b9e9fbf21d95b5317f6e876fe7086a8fe69b3806" type="targz">http://source.limelinux.com/1.0/dash-0.5.9.tar.gz</Archive>
     </Source>
-
+    
     <Package>
         <Name>dash</Name>
         <Files>
-            <Path fileType="executable">/bin/dash</Path>
+            <Path fileType="executable">/bin</Path>
             <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
-
+    
     <History>
         <Update release="1">
-            <Date>2016-06-08</Date>
-            <Version>0.5.8</Version>
-            <Comment>First release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
+            <Date>2017-02.05</Date>
+            <Version>0.5.7</Version>
+            <Comment>Add dash to repositories</Comment>
+            <Name>LimeLinux Developers</Name>
             <Email>admin@limelinux.com</Email>
         </Update>
     </History>
+    
 </PISI>
+

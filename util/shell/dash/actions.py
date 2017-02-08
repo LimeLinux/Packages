@@ -1,20 +1,20 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-#
-# Licensed under the GNU General Public License, version 3.
-# See the file http://www.gnu.org/licenses/gpl.txt
 
-from pisi.actionsapi import autotools
-from pisi.actionsapi import pisitools
-from pisi.actionsapi import get
+#!/usr/bin/python
+
+
+
+from pisi.actionsapi import shelltools, get, autotools, pisitools
 
 def setup():
-    autotools.configure("--prefix=/")
-
+	autotools.rawConfigure ("--bindir=/bin\
+							 --mandir=/usr/share/man")
+						
 def build():
-    autotools.make()
-
+	autotools.make ()
+	
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+	autotools.rawInstall ("DESTDIR=%s" % get.installDIR())
+	
+	# Make dash the default shell on our system
+	pisitools.dosym ("/bin/dash", "/bin/sh")
 
-    pisitools.dodoc("COPYING")
