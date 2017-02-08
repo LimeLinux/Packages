@@ -103,6 +103,7 @@
                 <Dependency>p11-kit</Dependency>
             </RuntimeDependencies>
             <Files>
+                <Path fileType="library">/usr/lib/systemd/user/glib-pacrunner.service</Path>
                 <Path fileType="library">/usr/lib/gio/modules</Path>
                 <Path fileType="executable">/usr/libexec</Path>
                 <Path fileType="data">/usr/share</Path>
@@ -515,7 +516,7 @@
             <Summary xml:lang="tr">Gelişmiş bir torrent kitaplığı</Summary>
             <Description xml:lang="en">Rasterbar&apos;s C++ library that aims to be a good alternative to all the other bittorrent implementations around. It is a library and not a full featured client, although it comes with a working example client.</Description>
             <Description xml:lang="tr">Libtorrent Rasterbar C++ kitaplığı, diğer bittorrent kitaplıklarına karşın iyi bir alternatifdir.</Description>
-            <Archive type="targz" sha1sum="f269399bf7bbc90579f8f115be40ea612c56f5c5">https://downloads.sourceforge.net/project/libtorrent/libtorrent/libtorrent-rasterbar-1.0.5.tar.gz</Archive>
+            <Archive type="targz" sha1sum="8ddf7f7c614986acdbdd4cc293b01844e4dc8fd5">https://github.com/arvidn/libtorrent/releases/download/libtorrent-1_0_11/libtorrent-rasterbar-1.0.11.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libsigc++</Dependency>
                 <Dependency>boost</Dependency>
@@ -541,7 +542,7 @@
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>1.0.5</Version>
+                <Version>1.0.11</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -11666,7 +11667,7 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2011-08-25</Date>
+                <Date>2017-02-25</Date>
                 <Version>218</Version>
                 <Comment>New Packages</Comment>
                 <Name>Ergün Salman</Name>
@@ -19423,15 +19424,19 @@
             <IsA>kernel</IsA>
             <PartOf>kernel</PartOf>
             <Summary xml:lang="fr">Noyau Linux Pisi Linux pour machine monoprocesseur.</Summary>
-            <Summary xml:lang="en">The Linux kernel (the core of the Linux operating system) for Pisi Linux</Summary>
+            <Summary xml:lang="en">The Linux kernel (the core of the Linux operating system) for Lime Linux</Summary>
             <Summary xml:lang="tr">Pisi Linux için Linux çekirdeği</Summary>
             <Summary xml:lang="es">El kernel de Linux (el núcleo del sistema operativo Linux) de Pisi Linux</Summary>
             <Description xml:lang="en">kernel contains the Linux kernel, the core of any Linux operating system. The kernel handles the basic functions of the operating system: memory allocation, process allocation, device input and output, etc.</Description>
-            <Archive type="targz" sha1sum="23125f8e24753fa08f8f28b90277073dd8105450">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.6.4.tar.gz</Archive>
+            <Archive type="targz" sha1sum="5efda6db44192b4b0d3fead3038db815baa817fe">https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.7.tar.gz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target="configs/kernel-i686-config">configs/kernel-i686-config</AdditionalFile>
                 <AdditionalFile target="configs/kernel-x86_64-config">configs/kernel-x86_64-config</AdditionalFile>
                 <AdditionalFile target="generate-module-list" permission="0755">scripts/generate-module-list</AdditionalFile>
+                <AdditionalFile target="apply_patches" permission="0755">scripts/apply_patches</AdditionalFile>
+                <AdditionalFile target="create_quilt_tree" permission="0755">scripts/create_quilt_tree</AdditionalFile>
+                <AdditionalFile target="kcooker-rebase" permission="0755">scripts/kcooker-rebase</AdditionalFile>
+                <AdditionalFile target="update_configs" permission="0755">scripts/update_configs</AdditionalFile>
             </AdditionalFiles>
             <BuildDependencies>
                 <Dependency>bc</Dependency>
@@ -19442,8 +19447,9 @@
                 <Dependency>xmlto</Dependency>
             </BuildDependencies>
             <Patches>
-                <Patch level="1">patches/mageia/fs-aufs-4.6.patch</Patch>
-                <Patch level="1">patches/mageia/fs-aufs-4.6-modular.patch</Patch>
+                <Patch level="1">linux-2.6-intel-iommu-igfx.patch</Patch>
+                <Patch level="1">overload-on-wakeup.patch</Patch>
+                <Patch level="1">revert-rtl.patch</Patch>
             </Patches>
             <SourceURI>kernel/kernel/pspec.xml</SourceURI>
         </Source>
@@ -19477,7 +19483,11 @@
             <Files>
                 <Path fileType="header">/usr/src/linux-headers*</Path>
                 <Path fileType="header">/tmp-headers*</Path>
+                <Path fileType="config">/etc/modprobe.d</Path>
             </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/etc/modprobe.d/nouveau.conf" permission="0644">nvidia/nouveau.conf</AdditionalFile>
+            </AdditionalFiles>
         </Package>
         <Package>
             <Name>kernel-docs</Name>
@@ -19491,8 +19501,8 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>4.6.4</Version>
+                <Date>2017-02-09</Date>
+                <Version>4.9.7</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -20348,10 +20358,14 @@
             <Description xml:lang="tr">DirectFB donanımsal grafik hızlandırması, giriş aygıtları işleme ve soyutlama sağlayan yarısaydam pencereler ve çoklu görüntü katmanlarını destekleyen pencere sistemi ile bütünleşik bir kütüphanedir.</Description>
             <Archive type="targz" sha1sum="205d824906906303db9b096cc2d3bea0662e8860">http://sources.webos-ports.org/downloads/DirectFB-1.7.7.tar.gz</Archive>
             <BuildDependencies>
+                <Dependency>libgcc</Dependency>
                 <Dependency>giflib</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>zlib</Dependency>
                 <Dependency>tiff</Dependency>
                 <Dependency>jasper</Dependency>
                 <Dependency>freetype</Dependency>
+                <Dependency>libpng</Dependency>
                 <Dependency>libXext</Dependency>
                 <Dependency>mesa</Dependency>
                 <Dependency>webp</Dependency>
@@ -27053,35 +27067,32 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     <SpecFile>
         <Source>
             <Name>dash</Name>
-            <Homepage>http://gondor.apana.org.au/~herbert/dash/</Homepage>
             <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Name>LimeLinuz Developers</Name>
                 <Email>admin@limelinux.com</Email>
             </Packager>
-            <License>BSD</License>
-            <IsA>app:console</IsA>
+            <License>GPLv3+</License>
             <PartOf>util.shell</PartOf>
-            <Summary xml:lang="en">Small and fast POSIX-compliant shell</Summary>
+            <Summary xml:lang="en">POSIX compliant shell</Summary>
             <Summary xml:lang="tr">Ufak ve hızlı POSIX uyumlu kabuk</Summary>
-            <Description xml:lang="en">DASH is a POSIX-compliant implementation of /bin/sh that aims to be as small as possible.</Description>
+            <Description xml:lang="en">Dash is a POSIX compliant shell. It can be installed as /bin/sh or as the default shell for either root or a second user with a userid of 0. It depends on fewer libraries than the Bash shell and is therefore less likely to be affected by an upgrade problem or disk failure. Dash is also useful for checking that a script is completely compatible with POSIX syntax.</Description>
             <Description xml:lang="tr">DASH, POSIX uyumlu bir /bin/sh gerçeklemesi olup, olabildiğince ufak olmayı hedefleyen bir kabuktur.</Description>
-            <Archive type="targz" sha1sum="cd058935bba545427caa375337afe8a6309477d2">http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.8.tar.gz</Archive>
+            <Archive type="targz" sha1sum="b9e9fbf21d95b5317f6e876fe7086a8fe69b3806">http://source.limelinux.com/1.0/dash-0.5.9.tar.gz</Archive>
             <SourceURI>util/shell/dash/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>dash</Name>
             <Files>
-                <Path fileType="executable">/bin/dash</Path>
+                <Path fileType="executable">/bin</Path>
                 <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
             </Files>
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-06-08</Date>
-                <Version>0.5.8</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Date>2017-02.05</Date>
+                <Version>0.5.7</Version>
+                <Comment>Add dash to repositories</Comment>
+                <Name>LimeLinux Developers</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -27855,7 +27866,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="en">QCA aims to provide a straightforward and cross-platform crypto API, using Qt datatypes and conventions. QCA separates the API from the implementation, using plugins known as Providers. QCA2 has been re-written for QT4.</Description>
             <Archive type="tarxz" sha1sum="a4df34c2147c721109594c6dc822f693f572ad04">http://download.kde.org/stable/qca/2.1.1/src/qca-2.1.1.tar.xz</Archive>
             <BuildDependencies>
-                <Dependency versionFrom="5.5.1">qt5</Dependency>
+                <Dependency>qt5</Dependency>
                 <Dependency>nss</Dependency>
                 <Dependency>doxygen</Dependency>
                 <Dependency>cmake</Dependency>
@@ -27865,7 +27876,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         <Package>
             <Name>qca2-qt5</Name>
             <RuntimeDependencies>
-                <Dependency versionFrom="5.5.1">qt5</Dependency>
+                <Dependency>qt5</Dependency>
                 <Dependency>nss</Dependency>
                 <Dependency>cyrus-sasl</Dependency>
             </RuntimeDependencies>
@@ -37749,7 +37760,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="en">QScintilla2 is a port to Qt4 of Neil Hodgson&apos;s Scintilla C++ editor class.</Description>
             <Description xml:lang="tr">QScintilla2, Neil Hodgson&apos;un Scintilla C++ editör sınıfının bir Qt4 uyarlamasıdır.</Description>
             <Description xml:lang="pl">QScintilla jest portem do Qt klas C++ edytora Scintilla autorstwa Neila Hodgsona.</Description>
-            <Archive type="targz" sha1sum="63f367af50fd73a8815e4ff4596932c7dad12e41">mirrors://sourceforge/pyqt/QScintilla2/QScintilla-2.9.1/QScintilla-gpl-2.9.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="0aea19d76a291b1bc7ecff26d18d1ae619d5bf05">http://downloads.sourceforge.net/pyqt/QScintilla_gpl-2.9.4.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python-qt5</Dependency>
                 <Dependency>python3-qt5</Dependency>
@@ -37790,8 +37801,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-06-09</Date>
-                <Version>2.9.1</Version>
+                <Date>2017-02-09</Date>
+                <Version>2.9.4</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -38118,7 +38129,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="fr">GTK+ est une boîte à outil multi-plateforme servant à créer des interfaces graphiques. Offrant un ensemble complet de widgets (objets graphiques), GTK+ convient aussi bien pour les petits projets que pour les suites complètes d&apos;applications.</Description>
             <Description xml:lang="en">GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off projects to complete application suites.</Description>
             <Description xml:lang="tr">GTK+, grafik kullanıcı arayüzü oluşturma amaçlı araçlardan oluşur. GTK+ hem küçük, hem de büyük uygulamalar için ideal olan, eksiksiz bir araçtır.</Description>
-            <Archive type="tarxz" sha1sum="f3c2f1a3728ed51d08054f6b4c7384fbf99477c0">mirrors://gnome/gtk+/2.24/gtk+-2.24.28.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c3d828135994a52cc9428a60175bd2b294656611">mirrors://gnome/gtk+/2.24/gtk+-2.24.31.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>cups</Dependency>
                 <Dependency>libXi</Dependency>
@@ -38193,8 +38204,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>2.24.28</Version>
+                <Date>2017-02-11</Date>
+                <Version>2.24.31</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -38217,7 +38228,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="en">GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off projects to complete application suites.</Description>
             <Description xml:lang="tr">GTK+, grafik kullanıcı arayüzü oluşturma amaçlı araçlardan oluşur. GTK+ hem küçük, hem de büyük uygulamalar için ideal olan, eksiksiz bir araçtır.</Description>
             <Description xml:lang="pl">Wersja 3 bibliotek przeznaczonych do tworzenia interfejsów graficznych programów — GTK+. Interfejs GTK+ znany jest z takich programów, jak GIMP i Inkscape, oraz środowisk graficznych GNOME i Xfce.</Description>
-            <Archive type="tarxz" sha1sum="47def49000d2b1b1fdde4a362f3cb81ca0b80611">mirrors://gnome/gtk+/3.22/gtk+-3.22.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="7c8949f786d6c77c04d4789a4f611573e8584de1">ftp://ftp.gnome.org/pub/gnome/sources/gtk+/3.22/gtk+-3.22.7.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk</Dependency>
                 <Dependency>cups</Dependency>
@@ -38304,8 +38315,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>3.22.0</Version>
+                <Date>2017-02-09</Date>
+                <Version>3.22.7</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -39372,7 +39383,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">İsveççe hunspell sözlükleri</Summary>
             <Description xml:lang="en">hunspell-dict-sv includes Swedish hunspell dictionaries.</Description>
             <Description xml:lang="tr">hunspell-dict-sv İsveççe hunspell sözlüklerini içerir.</Description>
-            <Archive type="binary" sha1sum="00ffbd1d3950d0eb9e1db1c227397facca23bcd0">http://extensions.libreoffice.org/extension-center/swedish-spelling-dictionary-den-stora-svenska-ordlistan/releases/2.40/ooo_swedish_dict_2-40.oxt</Archive>
+            <Archive type="binary" sha1sum="00ffbd1d3950d0eb9e1db1c227397facca23bcd0">https://people.freebsd.org/~sunpoet/distfiles/hunspell/ooo_swedish_dict_2-40.oxt</Archive>
             <SourceURI>office/dictionary/hunspell-dict-sv/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -40505,7 +40516,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="pl">Biblioteka do obsługi PDF-ów</Summary>
             <Description xml:lang="en">The PoDoFo library is a free, portable C++ library which includes classes to parse PDF files and modify their contents into memory. The changes can be written back to disk easily. The parser can also be used to extract information from a PDF file (for example the parser could be used in a PDF viewer). Besides parsing PoDoFo includes also very simple classes to create your own PDF files. All classes are documented so it is easy to start writing your own application using PoDoFo.</Description>
             <Description xml:lang="tr">podofo, PDF dosyalarını ayıklamak ve düzenlemek için geliştirilmiş, ücretsiz bir C++ kütüphanesidir.</Description>
-            <Archive type="targz" sha1sum="e3b08af1266eb480032456e3bde030c75452d380">mirrors://sourceforge/podofo/podofo-0.9.3.tar.gz</Archive>
+            <Archive type="targz" sha1sum="25c84a9e4815197e967bdb93fc2de8e1654a2812">mirrors://sourceforge/podofo/podofo-0.9.5.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>cmake</Dependency>
                 <Dependency>zlib</Dependency>
@@ -40546,8 +40557,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-06-09</Date>
-                <Version>0.9.3</Version>
+                <Date>2017-06-09</Date>
+                <Version>0.9.5</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -41204,7 +41215,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">İmla denetimi kitaplığı</Summary>
             <Description xml:lang="en">enchant is a library that wraps other spell checking backends.</Description>
             <Description xml:lang="tr">enchant, diğer imla denetim kitaplıklarını arkauç olarak kullanan bir imla denetim kitaplığıdır.</Description>
-            <Archive type="targz" sha1sum="321f9cf0abfa1937401676ce60976d8779c39536">http://www.abisource.com/downloads/enchant/1.6.0/enchant-1.6.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="321f9cf0abfa1937401676ce60976d8779c39536">http://pkgs.fedoraproject.org/repo/pkgs/enchant/enchant-1.6.0.tar.gz/de11011aff801dc61042828041fb59c7/enchant-1.6.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>aspell</Dependency>
                 <Dependency>hunspell</Dependency>
@@ -42027,6 +42038,43 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Update release="1">
                 <Date>2017-01-21</Date>
                 <Version>0.5.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>tslib</Name>
+            <Homepage>https://github.com/kergoth/tslib</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>programming.library</PartOf>
+            <Summary xml:lang="en">Touchscreen Access Library</Summary>
+            <Description xml:lang="en">Touchscreen Access Library.</Description>
+            <Archive type="targz" sha1sum="a247788987c679f1951bd77cec3666b569bfcc11">https://github.com/kergoth/tslib/releases/download/1.4/tslib-1.4.tar.gz</Archive>
+            <SourceURI>programming/library/tslib/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>tslib</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="config">/etc/ts.conf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/*</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="man">/usr/share/man/*</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-07-26</Date>
+                <Version>1.4</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -49363,7 +49411,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">X.Org joystick giriş aygıtı sürücüsü</Summary>
             <Description xml:lang="en">xorg-input-joystick contains the X.Org driver for joysticks.</Description>
             <Description xml:lang="tr">xorg-input-joystick, oyun çubukları için X.Org sürücüsünü içerir.</Description>
-            <Archive type="tarbz2" sha1sum="61658b8d829fdaed6064c7c26232c3884d359187">mirrors://xorg/individual/driver/xf86-input-joystick-1.6.2.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="b8664249d50ed266556877e15e3782c40614459c">mirrors://xorg/individual/driver/xf86-input-joystick-1.6.3.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>xorg-server</Dependency>
                 <Dependency>util-macros</Dependency>
@@ -49381,8 +49429,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-05-02</Date>
-                <Version>1.6.2</Version>
+                <Date>2017-05-02</Date>
+                <Version>1.6.3</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -49588,7 +49636,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">X.Org intel ekran kartı sürücüsü</Summary>
             <Description xml:lang="en">xorg-video-intel contains the X.Org driver for Intel video chipsets.</Description>
             <Description xml:lang="tr">xorg-video-intel, Intel ekran kartları için X.Org sürücüsünü içerir.</Description>
-            <Archive type="tarxz" sha1sum="6f00866f1bec46b1f3bd3fb89e1cbc3a00032315">ftp://anduin.linuxfromscratch.org/BLFS/xf86-video-intel/xf86-video-intel-0340718.tar.xz</Archive>
+            <Archive type="tarbz2" sha1sum="6c36b08cb940e75d32b2c9dcb0f9159cc45d81e2">http://anduin.linuxfromscratch.org/BLFS/xf86-video-intel/xf86-video-intel-20160902.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>libX11</Dependency>
                 <Dependency>libxcb</Dependency>
@@ -50263,7 +50311,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">X.Org siliconmotion ekran kartı sürücüsü</Summary>
             <Description xml:lang="en">xorg-video-siliconmotion contains the X.Org driver for Silicon Motion cards.</Description>
             <Description xml:lang="tr">xorg-video-siliconmotion, Silicon Motion ekran kartları için X.Org sürücüsünü içerir.</Description>
-            <Archive type="tarbz2" sha1sum="d620309a9068437df2a9c83dc1384571ed7754f2">mirrors://xorg/individual/driver/xf86-video-siliconmotion-1.7.8.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="8b694bf2b64a1c6808708ed8cb4b013493ea5ffa">mirrors://xorg/individual/driver/xf86-video-siliconmotion-1.7.9.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>xorg-server</Dependency>
             </BuildDependencies>
@@ -50282,8 +50330,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-05-02</Date>
-                <Version>1.7.8</Version>
+                <Date>2017-05-02</Date>
+                <Version>1.7.9</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -50517,16 +50565,13 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">X.Org glint ekran kartı sürücüsü</Summary>
             <Description xml:lang="en">xorg-video-glint contains the X.Org driver for 3DLabs Permedia cards.</Description>
             <Description xml:lang="tr">xorg-video-glint, 3DLabs Permedia ekran kartları için X.Org sürücüsünü içerir.</Description>
-            <Archive type="tarbz2" sha1sum="40f817c3aaac1b04bff28f4552bc4b4fe522013b">mirrors://xorg/individual/driver/xf86-video-glint-1.2.8.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="93b56f77d5d57f7b8746f58a5098a05ca9825b1d">mirrors://xorg/individual/driver/xf86-video-glint-1.2.9.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>libdrm</Dependency>
                 <Dependency>mesa</Dependency>
                 <Dependency>util-macros</Dependency>
                 <Dependency>xorg-server</Dependency>
             </BuildDependencies>
-            <Patches>
-                <Patch level="1">git-fix.diff</Patch>
-            </Patches>
             <SourceURI>x11/driver/xorg-video-glint/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -50542,8 +50587,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-05-02</Date>
-                <Version>1.2.8</Version>
+                <Date>2017-02-02</Date>
+                <Version>1.2.9</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -50924,14 +50969,11 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">X.Org sisusb ekran kartı sürücüsü</Summary>
             <Description xml:lang="en">xorg-video-sisusb contains the X.Org driver for SiS video chips connected via a Net2280-based USB dongle.</Description>
             <Description xml:lang="tr">xorg-video-sisusb, Net2280 tabanlı USB dongle ile bağlı SiS ekran kartları için X.Org sürücüsünü içerir.</Description>
-            <Archive type="tarbz2" sha1sum="acb96457a0f3f5631129841cb4477d61fd2707dd">mirrors://xorg/individual/driver/xf86-video-sisusb-0.9.6.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="b747632eca72ed685a160ad16481ace5404c7828">mirrors://xorg/individual/driver/xf86-video-sisusb-0.9.7.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>util-macros</Dependency>
                 <Dependency>xorg-server</Dependency>
             </BuildDependencies>
-            <Patches>
-                <Patch level="1">git-fixes.patch</Patch>
-            </Patches>
             <SourceURI>x11/driver/xorg-video-sisusb/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -50948,7 +50990,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         <History>
             <Update release="1">
                 <Date>2016-05-02</Date>
-                <Version>0.9.6</Version>
+                <Version>0.9.7</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -50970,7 +51012,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">X.Org trident ekran kartı sürücüsü</Summary>
             <Description xml:lang="en">xorg-video-trident contains the X.Org driver for Trident cards.</Description>
             <Description xml:lang="tr">xorg-video-trident, Trident ekran kartları için X.Org sürücüsünü içerir.</Description>
-            <Archive type="tarbz2" sha1sum="b8cce16caa30e6725bdea078e05ab74b4b8020e7">mirrors://xorg/individual/driver/xf86-video-trident-1.3.7.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="8d6aa7a52dad9029b54f41ec817bdc4ece44dec3">mirrors://xorg/individual/driver/xf86-video-trident-1.3.8.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>xorg-server</Dependency>
             </BuildDependencies>
@@ -50989,8 +51031,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-05-02</Date>
-                <Version>1.3.7</Version>
+                <Date>2017-05-02</Date>
+                <Version>1.3.8</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>

@@ -11,7 +11,7 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>kernel</IsA>
-        <Summary>The Linux kernel (the core of the Linux operating system) for Pisi Linux</Summary>
+        <Summary>The Linux kernel (the core of the Linux operating system) for Lime Linux</Summary>
         <Description>kernel contains the Linux kernel, the core of any Linux operating system. The kernel handles the basic functions of the operating system: memory allocation, process allocation, device input and output, etc.</Description>
         <Archive sha1sum="5efda6db44192b4b0d3fead3038db815baa817fe" type="targz">https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.7.tar.gz</Archive>
         <AdditionalFiles>
