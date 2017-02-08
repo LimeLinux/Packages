@@ -42,7 +42,6 @@ def setup():
                          --with-cluster-support \
                          --with-dnsupdate \
                          --with-pam \
-                         --with-pam_smbpass \
                          --with-quotas \
                          --with-sendfile-support \
                          --with-shared-modules=%s \
