@@ -6707,7 +6707,7 @@
             <PartOf>system.devel</PartOf>
             <Summary xml:lang="en">Header files for the Linux kernel for use by glibc</Summary>
             <Description xml:lang="en">Header files for the Linux kernel for use by glibc</Description>
-            <Archive type="targz" sha1sum="23125f8e24753fa08f8f28b90277073dd8105450">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.6.4.tar.gz</Archive>
+            <Archive type="targz" sha1sum="5efda6db44192b4b0d3fead3038db815baa817fe">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.7.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>patch</Dependency>
                 <Dependency>texinfo</Dependency>
@@ -6722,8 +6722,8 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>4.6.4</Version>
+                <Date>2017-02-21</Date>
+                <Version>4.9.7</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -19206,7 +19206,7 @@
             <Description xml:lang="tr">Bu paket VirtualBox sunucu makinesi ile misafir sistemler arası fare entegrasyonu ve paylaşımlı dizin desteği için gerekli çekirdek modüllerini içerir.</Description>
             <Archive type="tarxz" sha1sum="b81d45dab1bc991b80b504def83b275f152bd4bf">https://sourceforge.net/projects/pisi-source/files/kernel-4.7/module-virtualbox-guest-5.1.4.tar.xz</Archive>
             <BuildDependencies>
-                <Dependency version="4.6.4">kernel-module-headers</Dependency>
+                <Dependency version="4.9.7">kernel-module-headers</Dependency>
             </BuildDependencies>
             <SourceURI>kernel/drivers/module-virtualbox-guest/pspec.xml</SourceURI>
         </Source>
@@ -19216,7 +19216,7 @@
                 <Flag>noDelta</Flag>
             </BuildFlags>
             <RuntimeDependencies>
-                <Dependency version="4.6.4">kernel</Dependency>
+                <Dependency version="4.9.7">kernel</Dependency>
                 <Dependency>baselayout</Dependency>
                 <Dependency version="5.1.4">module-virtualbox-guest-userspace</Dependency>
             </RuntimeDependencies>
@@ -19244,7 +19244,7 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
+                <Date>2017-02-11</Date>
                 <Version>5.1.4</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
@@ -19267,7 +19267,7 @@
             <Description xml:lang="en">This package provides the kernel support for VirtualBox.</Description>
             <Archive type="tarxz" sha1sum="5c8ec1f8f106a2a7a06ab0c2427e292d7690959a">https://sourceforge.net/projects/pisi-source/files/kernel-4.7/module-virtualbox-5.1.4.tar.xz</Archive>
             <BuildDependencies>
-                <Dependency version="4.6.4">kernel-module-headers</Dependency>
+                <Dependency version="4.9.7">kernel-module-headers</Dependency>
             </BuildDependencies>
             <SourceURI>kernel/drivers/module-virtualbox/pspec.xml</SourceURI>
         </Source>
@@ -19277,7 +19277,7 @@
                 <Flag>noDelta</Flag>
             </BuildFlags>
             <RuntimeDependencies>
-                <Dependency version="4.6.4">kernel</Dependency>
+                <Dependency version="4.9.7">kernel</Dependency>
                 <Dependency version="5.1.4">module-virtualbox-userspace</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -19300,7 +19300,7 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
+                <Date>2017-02-09</Date>
                 <Version>5.1.4</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
@@ -19325,14 +19325,14 @@
             <Description xml:lang="tr">Eski ve yeni optimus teknolojisine sahip dizüstü bilgisyarlarda çalışabilmektedir.</Description>
             <Archive type="targz" sha1sum="e282ee682d794e3962baa4dead01917c42571e78">https://github.com/Bumblebee-Project/bbswitch/archive/v0.8.tar.gz</Archive>
             <BuildDependencies>
-                <Dependency version="4.6.4">kernel-module-headers</Dependency>
+                <Dependency version="4.9.7">kernel-module-headers</Dependency>
             </BuildDependencies>
             <SourceURI>kernel/drivers/module-bbswitch/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>module-bbswitch</Name>
             <RuntimeDependencies>
-                <Dependency version="4.6.4">kernel</Dependency>
+                <Dependency version="4.9.7">kernel</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library" permanent="true">/lib/modules</Path>
@@ -19346,7 +19346,7 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-10</Date>
+                <Date>2017-02-10</Date>
                 <Version>0.8</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
@@ -32225,6 +32225,64 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Comment>First release</Comment>
                 <Name>Ali Murat Algül</Name>
                 <Email>alimuratgulle@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>caja-dropbox</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/Linux</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Mate file manager eklentileri</Summary>
+            <Description xml:lang="en">caja-extensions, Mate file manager eklentileri.</Description>
+            <Archive type="tarxz" sha1sum="1c38aed94cd0ffc8118ef287ff558cc3055e6d05">http://pub.mate-desktop.org/releases/1.17/caja-dropbox-1.17.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>caja</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-desktop</Dependency>
+                <Dependency>gupnp</Dependency>
+                <Dependency>gksu</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/mate/base/caja-dropbox/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>caja-dropbox</Name>
+            <RuntimeDependencies>
+                <Dependency>caja</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gupnp</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-desktop</Dependency>
+                <Dependency>gksu</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="data">/usr/share/MateConf</Path>
+                <Path fileType="data">/usr/share/glib-2.0/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/gtk-doc/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-21</Date>
+                <Version>1.17.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/Linux</Name>
+                <Email>admin@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>
