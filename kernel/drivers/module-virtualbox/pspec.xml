@@ -15,14 +15,14 @@
         <Description>This package provides the kernel support for VirtualBox.</Description>
         <Archive sha1sum="5c8ec1f8f106a2a7a06ab0c2427e292d7690959a" type="tarxz">https://sourceforge.net/projects/pisi-source/files/kernel-4.7/module-virtualbox-5.1.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency version="4.6.4">kernel-module-headers</Dependency>
+            <Dependency version="4.9.7">kernel-module-headers</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>module-virtualbox</Name>
         <RuntimeDependencies>
-            <Dependency version="4.6.4">kernel</Dependency>
+            <Dependency version="4.9.7">kernel</Dependency>
             <Dependency version="current">module-virtualbox-userspace</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -49,7 +49,7 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
+            <Date>2017-02-09</Date>
             <Version>5.1.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>

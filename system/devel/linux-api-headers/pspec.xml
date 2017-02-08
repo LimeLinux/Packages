@@ -12,7 +12,7 @@
         <License>GPL2</License>
         <Summary>Header files for the Linux kernel for use by glibc</Summary>
         <Description>Header files for the Linux kernel for use by glibc</Description>
-        <Archive sha1sum="23125f8e24753fa08f8f28b90277073dd8105450" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.6.4.tar.gz</Archive>
+        <Archive sha1sum="5efda6db44192b4b0d3fead3038db815baa817fe" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>patch</Dependency>
             <Dependency>texinfo</Dependency>
@@ -28,8 +28,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>4.6.4</Version>
+            <Date>2017-02-21</Date>
+            <Version>4.9.7</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
