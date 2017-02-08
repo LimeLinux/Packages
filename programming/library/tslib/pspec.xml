@@ -1,0 +1,40 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tslib</Name>
+        <Homepage>https://github.com/kergoth/tslib</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Touchscreen Access Library</Summary>
+        <Description>Touchscreen Access Library.</Description>
+        <Archive sha1sum="a247788987c679f1951bd77cec3666b569bfcc11" type="targz">https://github.com/kergoth/tslib/releases/download/1.4/tslib-1.4.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>tslib</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc/ts.conf</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/*</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="man">/usr/share/man/*</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-07-26</Date>
+            <Version>1.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

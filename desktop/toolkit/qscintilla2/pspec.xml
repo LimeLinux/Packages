@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Qt port of Scintilla</Summary>
         <Description>QScintilla2 is a port to Qt4 of Neil Hodgson's Scintilla C++ editor class.</Description>
-        <Archive type="targz" sha1sum="63f367af50fd73a8815e4ff4596932c7dad12e41">mirrors://sourceforge/pyqt/QScintilla2/QScintilla-2.9.1/QScintilla-gpl-2.9.1.tar.gz</Archive>
+        <Archive type="targz" sha1sum="0aea19d76a291b1bc7ecff26d18d1ae619d5bf05">http://downloads.sourceforge.net/pyqt/QScintilla_gpl-2.9.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-qt5</Dependency>
             <Dependency>python3-qt5</Dependency>
@@ -56,8 +56,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-06-09</Date>
-            <Version>2.9.1</Version>
+            <Date>2017-02-09</Date>
+            <Version>2.9.4</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
