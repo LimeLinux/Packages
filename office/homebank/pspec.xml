@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Free, easy, personal accounting for everyone</Summary>
         <Description>«HomeBank» is free software that will assist you to manage your personal accounting.</Description>
-        <Archive sha1sum="b2b5f993aed9e241febc39af84bc2d9964dd0258" type="targz">http://source.limelinux.com/1.0/homebank-5.1.3.tar.gz</Archive>
+        <Archive sha1sum="7793631ebfe6939bf947c57896efaf2e5e9a7ea9" type="targz">http://homebank.free.fr/public/homebank-5.1.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cairo</Dependency>
             <Dependency>libofx</Dependency>
