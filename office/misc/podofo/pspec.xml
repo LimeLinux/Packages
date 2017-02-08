@@ -15,7 +15,7 @@
         <IsA>app:console</IsA>
         <Summary>A library to work with the PDF file format</Summary>
         <Description>The PoDoFo library is a free, portable C++ library which includes classes to parse PDF files and modify their contents into memory. The changes can be written back to disk easily. The parser can also be used to extract information from a PDF file (for example the parser could be used in a PDF viewer). Besides parsing PoDoFo includes also very simple classes to create your own PDF files. All classes are documented so it is easy to start writing your own application using PoDoFo.</Description>
-        <Archive sha1sum="e3b08af1266eb480032456e3bde030c75452d380" type="targz">mirrors://sourceforge/podofo/podofo-0.9.3.tar.gz</Archive>
+        <Archive sha1sum="25c84a9e4815197e967bdb93fc2de8e1654a2812" type="targz">mirrors://sourceforge/podofo/podofo-0.9.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cmake</Dependency>
             <Dependency>zlib</Dependency>
@@ -59,8 +59,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-06-09</Date>
-            <Version>0.9.3</Version>
+            <Date>2017-06-09</Date>
+            <Version>0.9.5</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

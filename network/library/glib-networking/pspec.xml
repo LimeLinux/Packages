@@ -28,6 +28,7 @@
             <Dependency>p11-kit</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="library">/usr/lib/systemd/user/glib-pacrunner.service</Path>
             <Path fileType="library">/usr/lib/gio/modules</Path>
             <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="data">/usr/share</Path>
