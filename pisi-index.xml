@@ -38187,7 +38187,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="fr">GTK+ est une boîte à outil multi-plateforme servant à créer des interfaces graphiques. Offrant un ensemble complet de widgets (objets graphiques), GTK+ convient aussi bien pour les petits projets que pour les suites complètes d&apos;applications.</Description>
             <Description xml:lang="en">GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off projects to complete application suites.</Description>
             <Description xml:lang="tr">GTK+, grafik kullanıcı arayüzü oluşturma amaçlı araçlardan oluşur. GTK+ hem küçük, hem de büyük uygulamalar için ideal olan, eksiksiz bir araçtır.</Description>
-            <Archive type="tarxz" sha1sum="c3d828135994a52cc9428a60175bd2b294656611">mirrors://gnome/gtk+/2.24/gtk+-2.24.31.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="f3c2f1a3728ed51d08054f6b4c7384fbf99477c0">mirrors://gnome/gtk+/2.24/gtk+-2.24.28.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>cups</Dependency>
                 <Dependency>libXi</Dependency>
@@ -38263,7 +38263,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         <History>
             <Update release="1">
                 <Date>2017-02-11</Date>
-                <Version>2.24.31</Version>
+                <Version>2.24.28</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -44688,54 +44688,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>4.0.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>pygobject</Name>
-            <Homepage>http://www.pygtk.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2.1</License>
-            <IsA>library</IsA>
-            <PartOf>programming.language.python3</PartOf>
-            <Summary xml:lang="en">Glib bindings for Python</Summary>
-            <Description xml:lang="en">pygobject is GLib&apos;s GObject library bindings for Python.</Description>
-            <Archive type="tarxz" sha1sum="baa04755667fc5159ec99b7f250757bd0bce949c">http://ftp.acc.umu.se/pub/GNOME/sources/pygobject/3.12/pygobject-3.12.2.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>python-cairo</Dependency>
-                <Dependency>python3-cairo</Dependency>
-                <Dependency>gobject-introspection</Dependency>
-            </BuildDependencies>
-            <SourceURI>programming/language/python3/pygobject/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>pygobject</Name>
-            <RuntimeDependencies>
-                <Dependency>cairo</Dependency>
-                <Dependency>python-cairo</Dependency>
-                <Dependency>gobject-introspection</Dependency>
-                <Dependency>python3-cairo</Dependency>
-                <Dependency>python3</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/pkgconfig</Path>
-                <Path fileType="data">/usr/share/pygobject</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>3.12.2</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
