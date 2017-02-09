@@ -17313,60 +17313,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>libfreebob</Name>
-            <Homepage>http://freebob.sourceforge.net</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>hardware.firewire</PartOf>
-            <Summary xml:lang="en">FreeBoB firewire audio driver library</Summary>
-            <Summary xml:lang="tr">FreeBoB firewire ses sürücü kütüphanesi</Summary>
-            <Description xml:lang="en">libfreebob implements a userland driver for BeBoB-based firewire audio devices.</Description>
-            <Description xml:lang="tr">libfreebob BeBoB tabanlı firewire ses aygıtları için sürücü kütüphanesi içerir.</Description>
-            <Archive type="targz" sha1sum="cde4a90e2e23f1ba4ed4b665d1663520fef85980">mirrors://sourceforge/freebob/libfreebob-1.0.11.tar.gz</Archive>
-            <BuildDependencies>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>libraw1394</Dependency>
-                <Dependency>libavc1394</Dependency>
-                <Dependency>libiec61883</Dependency>
-            </BuildDependencies>
-            <Patches>
-                <Patch level="1">libfreebob-1.0.11-includes.patch</Patch>
-                <Patch level="1">gcc-4.5.patch</Patch>
-                <Patch level="1">fix_usleep.patch</Patch>
-            </Patches>
-            <SourceURI>hardware/firewire/libfreebob/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>libfreebob</Name>
-            <RuntimeDependencies>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>libraw1394</Dependency>
-                <Dependency>libavc1394</Dependency>
-                <Dependency>libiec61883</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>1.0.11</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>libavc1394</Name>
             <Homepage>http://sourceforge.net/projects/libavc1394/</Homepage>
             <Packager>
