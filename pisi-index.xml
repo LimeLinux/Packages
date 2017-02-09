@@ -18902,7 +18902,7 @@
             <PartOf>hardware.virtualization</PartOf>
             <Summary xml:lang="en">A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.</Summary>
             <Description xml:lang="en">A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.</Description>
-            <Archive type="binary" sha1sum="371671a57e287c3363b6b39bcc9fcc9e958b4518">http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_2.8+dfsg-1_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="2480844de416a9dcc74a1388663cea4637ea64c4">http://ftp.us.debian.org/debian/pool/main/q/qemu/qemu-user-static_2.8+dfsg-2_amd64.deb</Archive>
             <SourceURI>hardware/virtualization/qemu-user-static/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -18917,7 +18917,7 @@
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>2.5</Version>
+                <Version>2.8</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -22032,28 +22032,6 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/icons</Path>
                 <Path fileType="localedata">/usr/share/locale</Path>
-            </Files>
-        </Package>
-        <Package>
-            <Name>libv4l-32bit</Name>
-            <Summary xml:lang="en">32-bit shared libraries for libv4l</Summary>
-            <Summary xml:lang="tr">libv4l için 32-bit paylaşımlı kitaplıklar</Summary>
-            <Summary xml:lang="pl">32-bitowe biblioteki libv4l</Summary>
-            <PartOf>emul32</PartOf>
-            <BuildType>emul32</BuildType>
-            <BuildDependencies>
-                <Dependency>libjpeg-turbo-32bit</Dependency>
-                <Dependency>libX11-32bit</Dependency>
-                <Dependency>alsa-lib-32bit</Dependency>
-                <Dependency>qt5</Dependency>
-            </BuildDependencies>
-            <RuntimeDependencies>
-                <Dependency>libjpeg-turbo-32bit</Dependency>
-                <Dependency release="1">libv4l</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="library">/usr/lib32/lib*</Path>
-                <Path fileType="library">/usr/lib32/v4l*</Path>
             </Files>
         </Package>
         <History>
@@ -31084,7 +31062,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">Gdialog&apos;un yeniden yazılmış hali</Summary>
             <Description xml:lang="en">Zenity is the GNOME port of dialog which allows you to display dialog boxes from the commandline and shell scripts.</Description>
             <Description xml:lang="tr">Zenity, komut satırından ve betiklerle iletişim kutuları oluşturmanıza imkan verir. Dialog&apos;un Gnome 3 için yeniden yazılmış halidir.</Description>
-            <Archive type="tarxz" sha1sum="b0dfb31c8445547de968fb71c4303515cdf0da83">http://source.limelinux.com/1.0/zenity.tar.xz</Archive>
+            <Archive type="targz" sha1sum="d631a112d4747e6cf1d5db48c07802d5dcd179b5">https://github.com/GNOME/zenity/archive/ZENITY_3_22_0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>gtk3</Dependency>
                 <Dependency>pango</Dependency>
@@ -31115,7 +31093,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>3.10.2</Version>
+                <Version>3.22.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -33158,9 +33136,9 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         <Package>
             <Name>mate-applets</Name>
             <Files>
-                <Path fileType="exectuable">/etc/</Path>
+                <Path fileType="data">/etc/</Path>
                 <Path fileType="exectuable">/usr/bin/</Path>
-                <Path fileType="library">/usr/lib/*</Path>
+                <Path fileType="library">/usr/lib/</Path>
                 <Path fileType="data">/usr/share/*</Path>
             </Files>
         </Package>

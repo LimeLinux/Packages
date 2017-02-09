@@ -23,9 +23,9 @@
     <Package>
         <Name>mate-applets</Name>
         <Files>
-            <Path fileType="exectuable">/etc/</Path>
+            <Path fileType="data">/etc/</Path>
             <Path fileType="exectuable">/usr/bin/</Path>
-            <Path fileType="library">/usr/lib/*</Path>
+            <Path fileType="library">/usr/lib/</Path>
             <Path fileType="data">/usr/share/*</Path>
         </Files>
     </Package>

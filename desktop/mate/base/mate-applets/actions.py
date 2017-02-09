@@ -11,13 +11,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--prefix=/usr \
-                         --sysconfdir=/etc \
-                         --libexecdir=/usr/lib/ \
-                         --enable-polkit \
-                         --enable-ipv6 \
-                         --with-gtk=2.0 \
-                         --with-gtk=3.0 \
+    autotools.configure("--with-gtk=3.0 \
                          --disable-static")
 
 def build():

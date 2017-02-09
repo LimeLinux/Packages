@@ -13,7 +13,7 @@
         <IsA>app</IsA>
         <Summary>A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.</Summary>
         <Description>A generic and open source processor emulator which achieves a good emulation speed by using dynamic translation, statically linked.</Description>
-        <Archive sha1sum="371671a57e287c3363b6b39bcc9fcc9e958b4518" type="binary">http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_2.8+dfsg-1_amd64.deb</Archive>
+        <Archive sha1sum="2480844de416a9dcc74a1388663cea4637ea64c4" type="binary">http://ftp.us.debian.org/debian/pool/main/q/qemu/qemu-user-static_2.8+dfsg-2_amd64.deb</Archive>
     </Source>
 
     <Package>
@@ -29,7 +29,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>2.5</Version>
+            <Version>2.8</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

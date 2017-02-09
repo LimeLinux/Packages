@@ -58,7 +58,7 @@
         </Files>
     </Package> 
 
-    <Package>
+    <!--Package>
         <Name>libv4l-32bit</Name>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for libv4l</Summary>
@@ -77,7 +77,7 @@
             <Path fileType="library">/usr/lib32/lib*</Path>
             <Path fileType="library">/usr/lib32/v4l*</Path>
         </Files>
-    </Package>
+    </Package-->
 
 
     <History>
