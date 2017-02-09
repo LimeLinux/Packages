@@ -1,7 +1,6 @@
-﻿#!/usr/bin/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/licenses/gpl.txt
 
@@ -11,16 +10,17 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--with-gtk=3.0")
+    autotools.configure("--disable-static \
+                         --enable-gtk \
+                         --disable-python3 \
+                         --enable-python2")
     
-    # for fix unused dependency
-    pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
-    autotools.make()
+    autotools.make("V=0")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    
 
-    pisitools.dodoc("README", "NEWS", "ChangeLog", "AUTHORS", "COPYING")
+    pisitools.dodoc("AUTHORS", "COPYING", "README")

@@ -388,7 +388,7 @@
             <Description xml:lang="en">Deluge is a Bittorrent client. Deluge is intended to bring a native, full-featured client to Linux GTK+ desktop environments such as GNOME and Xfce.</Description>
             <Description xml:lang="tr">Deluge, bir Bittorrent istemcisidir. Xfce ve GNOME gibi GTK+ tabanlı masaüstü ortamlarıyla görsel kitaplıkları açısından uyumlu çalışması için yazılmış tam donanımlı bir istemcidir.</Description>
             <Icon>deluge</Icon>
-            <Archive type="tarlzma" sha1sum="5815be680cd6564e2c239b02c425e25564d5447d">http://download.deluge-torrent.org/source/deluge-1.3.11.tar.lzma</Archive>
+            <Archive type="tarxz" sha1sum="530827157dc225aea21d5ce43990a41a344fdf65">http://download.deluge-torrent.org/source/deluge-1.3.13.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>boost</Dependency>
                 <Dependency>python-Twisted</Dependency>
@@ -433,7 +433,7 @@
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>1.3.11</Version>
+                <Version>1.3.13</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -2635,14 +2635,13 @@
             <Summary xml:lang="tr">Proxy yapılandırma kitaplığı</Summary>
             <Description xml:lang="en">libproxy is a library that provides automatic proxy configuration management.</Description>
             <Description xml:lang="tr">Otomatik proxy yapılandırma yönetimini sağlayan bir kitaplığı.</Description>
-            <Archive type="targz" sha1sum="c037969434095bc65d29437e11a7c9e0293a5149">http://libproxy.googlecode.com/files/libproxy-0.4.11.tar.gz</Archive>
+            <Archive type="tarxz" sha1sum="5e6b9ce9797528879df5ab00ee0241e281207759">https://github.com/libproxy/libproxy/releases/download/0.4.14/libproxy-0.4.14.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gconf</Dependency>
                 <Dependency>libXmu</Dependency>
                 <Dependency>NetworkManager</Dependency>
             </BuildDependencies>
             <Patches>
-                <Patch level="0">libproxy-0.4.10-mozjs.patch</Patch>
                 <Patch level="1">0001-pacrunner_mozjs-Also-support-mozjs-17.0.patch</Patch>
             </Patches>
             <SourceURI>network/misc/libproxy/pspec.xml</SourceURI>
@@ -2659,8 +2658,8 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>0.4.11</Version>
+                <Date>2017-12-21</Date>
+                <Version>0.4.14</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -5100,7 +5099,7 @@
             <Summary xml:lang="tr">Linux için Windows ağ paylaşım servisi</Summary>
             <Description xml:lang="en">samba is a free software implementation of Microsoft&apos;s networking protocol released under the GNU General Public License. As of version 3, Samba not only provides file and print services for various Microsoft Windows clients but can also integrate with a Windows Server domain, either as a Primary Domain Controller (PDC) or as a Domain Member. It can also be part of an Active Directory domain.</Description>
             <Description xml:lang="tr">Samba, Linux ve Unix işletim sistemleri ile Windows NT ve Windows 9x işletim sistemleri arasındaki iletişimi sağlayan bir ağ sunucusu uygulamasıdır. Samba yalnızca Linux ve windows makinaların birbirlerini görmelerini sağlamaz aynı zamanda Linux çalıştıran bilgisayarların windows ağında yazıcı sunucusu gibi işlevleri edinmesi içinde kullanılır. Ayrıca Active Directory ile de uyumludur.</Description>
-            <Archive type="targz" sha1sum="db188ea6986b2373463a2a4f3ad026cf38e03ca8">https://download.samba.org/pub/samba/stable/samba-4.5.5.tar.gz</Archive>
+            <Archive type="targz" sha1sum="cff0168e67ef797c0d71c13b6b1208d2ecdc4e6b">https://download.samba.org/pub/samba/stable/samba-4.5.5.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>keyutils</Dependency>
                 <Dependency>libcap</Dependency>
@@ -5158,14 +5157,14 @@
                 <Path fileType="config">/etc</Path>
                 <Path fileType="data">/var/lib</Path>
                 <Path fileType="data">/var/log</Path>
-                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/*</Path>
                 <Path fileType="executable">/sbin</Path>
                 <Path fileType="man">/usr/share/man</Path>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="executable">/usr/sbin</Path>
                 <Path fileType="library">/lib/security</Path>
                 <Path fileType="data">/usr/share/samba</Path>
-                <Path fileType="data">/usr/share/perl5</Path>
+                <Path fileType="data">/usr/share/*</Path>
                 <Path fileType="data">/var/cache/samba</Path>
                 <Path fileType="data">/var/run/ctdb</Path>
                 <Path fileType="localedata">/usr/share/locale</Path>
@@ -9067,17 +9066,10 @@
             </AdditionalFiles>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2016-12-21</Date>
+            <Update release="1">
+                <Date>2017-01-21</Date>
                 <Version>2.7.13</Version>
                 <Comment>Version Bump</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>2.7.12</Version>
-                <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -20405,13 +20397,6 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2017-12-21</Date>
-                <Version>1.7.7</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.7.7</Version>
@@ -28704,7 +28689,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="en">lsof is a Unix-specific diagnostic tool. Its name stands for LiSt Open Files, and it does just that. It lists information about any files that are open by processes currently running on the system. It can also list communications open by each process.</Description>
             <Description xml:lang="tr">lsof sistemde çalışmakta olan UNIX süreçleri tarafından açılmış dosyaları listeleyen kullanışlı bir araçtır.</Description>
             <Description xml:lang="es">Lsof es una herramienta de diagnostica específica de Unix. Su nombre quiere decir LiSt Open files (listar archivos abiertos), y hace justamente esto. Genera una lista con información sobre cada archivo abierto por procesos que están activos en el sistema. También puede listar comunicaciones abiertas por cada proceso.</Description>
-            <Archive type="tar" sha1sum="6e5f875863091db32212324f669f110e2365b617">http://source.limelinux.com/1.0/lsof_4.84_src.tar</Archive>
+            <Archive type="tar" sha1sum="6e5f875863091db32212324f669f110e2365b617">https://sourceforge.net/projects/pisi-source/files/limelinux/lsof_4.84_src.tar</Archive>
             <SourceURI>util/misc/lsof/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -30503,6 +30488,59 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Version>1.20.2</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libpeas</Name>
+            <Homepage>https://live.gnome.org/Libpeas</Homepage>
+            <Packager>
+                <Name>Lime GNU/Linux</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome.base</PartOf>
+            <Summary xml:lang="en">A gobject-based plugins engine</Summary>
+            <Summary xml:lang="tr">Gobject tabanlı eklenti motoru</Summary>
+            <Description xml:lang="en">libpeas is a gobject-based plugins engine, and is targetted at giving every application the chance to assume its own extensibility.</Description>
+            <Archive type="tarxz" sha1sum="3844f00f0ab3ded28c6a8c6c1c3186856bccdc30">mirrors://gnome/libpeas/1.20/libpeas-1.20.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>python-pygobject3</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome/base/libpeas/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libpeas</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>webkit-gtk3</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-01-30</Date>
+                <Version>1.20.0</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -33541,7 +33579,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/lib/pisiplayer</Path>
-                <Path fileType="data">/usr/lib/python3.5/site-packages</Path>
+                <Path fileType="data">/usr/lib/python3.*/site-packages</Path>
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/icons</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
@@ -36786,9 +36824,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Path fileType="data">/usr/share</Path>
                 <Path fileType="data">/etc/conf.d/xdm</Path>
             </Files>
-            <Provides>
-                <COMAR script="package.py">System.Package</COMAR>
-            </Provides>
             <AdditionalFiles>
                 <AdditionalFile target="/usr/share/display-managers/lxdm.desktop" permission="0644" owner="root">lxdm.desktop</AdditionalFile>
             </AdditionalFiles>
@@ -37846,7 +37881,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Path fileType="library">/usr/lib</Path>
                 <Path fileType="library">/usr/lib/qt5/plugins</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="data">/usr/share/qt5/mkspecs</Path>
+                <Path fileType="data">/usr/*</Path>
                 <Path fileType="localedata">/usr/share/qt5/translations</Path>
                 <Path fileType="header">/usr/include/qt5/Qsci</Path>
                 <Path fileType="doc">/usr/share/doc/qscintilla2/Scintilla</Path>
@@ -39627,7 +39662,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="en">«HomeBank» is free software that will assist you to manage your personal accounting.</Description>
             <Description xml:lang="tr">HomeBank (&quot;serbest konuşma&quot; olarak ve &quot;bedava bira&quot; gibi) kişisel muhasebe yönetmek için yardımcı olacak ücretsiz bir yazılımdır..</Description>
             <Icon>homebank</Icon>
-            <Archive type="targz" sha1sum="b2b5f993aed9e241febc39af84bc2d9964dd0258">http://source.limelinux.com/1.0/homebank-5.1.3.tar.gz</Archive>
+            <Archive type="targz" sha1sum="7793631ebfe6939bf947c57896efaf2e5e9a7ea9">http://homebank.free.fr/public/homebank-5.1.3.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>cairo</Dependency>
                 <Dependency>libofx</Dependency>
@@ -50144,7 +50179,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">X.Org sis ekran kartı sürücüsü</Summary>
             <Description xml:lang="en">xorg-video-sis contains the X.Org driver for SiS cards.</Description>
             <Description xml:lang="tr">xorg-video-sis, SiS ekran kartları için X.Org sürücüsünü içerir.</Description>
-            <Archive type="tarbz2" sha1sum="8607cebaf87f3870dfe347bef4db5650a4a0a082">mirrors://xorg/individual/driver/xf86-video-sis-0.10.8.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="c0009118307b8cf110d43dbd0a174de2f90dfbcc">mirrors://xorg/individual/driver/xf86-video-sis-0.10.9.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>libdrm</Dependency>
                 <Dependency>mesa</Dependency>
@@ -50166,7 +50201,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         <History>
             <Update release="1">
                 <Date>2016-05-02</Date>
-                <Version>0.10.8</Version>
+                <Version>0.10.9</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
