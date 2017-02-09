@@ -15,7 +15,7 @@
         <Description>python-pyatspi provides a python client library for the AT-SPI D-Bus accessibility infrastructure.</Description>
         <Archive sha1sum="822ffbdd4c689b930f71f9ba6511e70b5ad55e1c" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/pyatspi/2.20/pyatspi-2.20.3.tar.xz</Archive>
          <BuildDependencies>
-            <Dependency>pygobject</Dependency>
+            <Dependency>python-pygobject3</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>python-pyatspi</Name>
         <RuntimeDependencies>
             <Dependency>at-spi2-core</Dependency>
-            <Dependency>pygobject</Dependency>
+            <Dependency>python-pygobject3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/lib/python*</Path>
