@@ -11,17 +11,13 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>kernel</IsA>
-        <Summary>The Linux kernel (the core of the Linux operating system) for Lime Linux</Summary>
+        <Summary>The Linux kernel (the core of the Linux operating system) for Pisi Linux</Summary>
         <Description>kernel contains the Linux kernel, the core of any Linux operating system. The kernel handles the basic functions of the operating system: memory allocation, process allocation, device input and output, etc.</Description>
-        <Archive sha1sum="5efda6db44192b4b0d3fead3038db815baa817fe" type="targz">https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.7.tar.gz</Archive>
+        <Archive sha1sum="23125f8e24753fa08f8f28b90277073dd8105450" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.6.4.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="configs/kernel-i686-config">configs/kernel-i686-config</AdditionalFile>
             <AdditionalFile target="configs/kernel-x86_64-config">configs/kernel-x86_64-config</AdditionalFile>
             <AdditionalFile permission="0755" target="generate-module-list">scripts/generate-module-list</AdditionalFile>
-            <AdditionalFile permission="0755" target="apply_patches">scripts/apply_patches</AdditionalFile>
-            <AdditionalFile permission="0755" target="create_quilt_tree">scripts/create_quilt_tree</AdditionalFile>
-            <AdditionalFile permission="0755" target="kcooker-rebase">scripts/kcooker-rebase</AdditionalFile>
-            <AdditionalFile permission="0755" target="update_configs">scripts/update_configs</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency>bc</Dependency>
@@ -32,9 +28,12 @@
             <Dependency>xmlto</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">linux-2.6-intel-iommu-igfx.patch</Patch>
-            <Patch level="1">overload-on-wakeup.patch</Patch>
-            <Patch level="1">revert-rtl.patch</Patch>
+            <!-- Linux patches -->
+            <!--Patch level="1" compressionType="xz">patches/linux/patch-4.6.3.xz</Patch>
+            <Mageia Linux patches // compatible with http://svnweb.mageia.org/packages/cauldron/kernel/releases/4.6.3/1.mga6/PATCHES/patches/series>
+            <other patches-->
+            <Patch level="1">patches/mageia/fs-aufs-4.6.patch</Patch>
+            <Patch level="1">patches/mageia/fs-aufs-4.6-modular.patch</Patch>
         </Patches>
     </Source>
 
@@ -67,11 +66,7 @@
         <Files>
             <Path fileType="header">/usr/src/linux-headers*</Path>
             <Path fileType="header">/tmp-headers*</Path>
-             <Path fileType="config">/etc/modprobe.d</Path>
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile permission="0644" target="/etc/modprobe.d/nouveau.conf">nvidia/nouveau.conf</AdditionalFile>
-        </AdditionalFiles>
     </Package>
 
     <Package>
@@ -85,8 +80,8 @@
 
     <History>
         <Update release="1">
-            <Date>2017-02-09</Date>
-            <Version>4.9.7</Version>
+            <Date>2016-12-21</Date>
+            <Version>4.6.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

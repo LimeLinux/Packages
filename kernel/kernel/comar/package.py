@@ -10,9 +10,10 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
     gcf = "/boot/grub2/grub.cfg"
     if not os.path.isfile(gcf): return
 
-    if os.path.isfile("/etc/locale.conf"): os.environ["LANG"] = read_file("/etc/locale.conf").split("\n")[0]
+    #if os.path.isfile("/etc/mudur/locale"): os.environ["LANG"] = read_file("/etc/mudur/locale").split("\n")[0]
     os.environ["PATH"] = "/usr/sbin:/usr/bin:/sbin:/bin"
     os.system("grub2-mkconfig -o %s" % gcf)
+    os.system("locale-gen")
 
     # Update GRUB entry
     #if os.path.exists("/boot/grub/grub.conf"):

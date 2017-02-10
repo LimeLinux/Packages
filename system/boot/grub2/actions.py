@@ -14,7 +14,7 @@ WorkDir="grub-%s" % (get.srcVERSION().replace("_", "~"))
 
 def setup():
     
-    shelltools.copy("../unifont*.bdf", "./unifont.bdf")
+    #shelltools.copy("../unifont*.bdf", "./unifont.bdf")
     shelltools.export("GRUB_CONTRIB", "%s/grub-%s/grub-extras" % (get.workDIR(), get.srcVERSION()))
 
     pisitools.cflags.remove("-fstack-protector", "-fasynchronous-unwind-tables", "-fexceptions", "-fPIC")
@@ -64,21 +64,10 @@ def install():
     pisitools.insinto("/boot/grub2", "unicode.pf2")
 
     # Insall our theme
-    pisitools.insinto("/usr/share/grub/themes/","themes/limelinux")
+    pisitools.insinto("/usr/share/grub/themes/","themes/grub-2.02~beta3/themes/limelinux")
+    #shelltools.copy("ascii.pf2","%s/usr/share/grub/themes/limelinux" % get.installDIR())
 
-    #remove -r 0x0-0x7F entries to fix ugly fonts or find a suitable range parameter -r ***
-    shelltools.system("./grub-mkfont -o DejaVuSans-10.pf2 -r 0x0-0x7F -s 10 /usr/share/fonts/dejavu/DejaVuSans.ttf")
-    shelltools.system("./grub-mkfont -o DejaVuSans-12.pf2 -r 0x0-0x7F -s 12 /usr/share/fonts/dejavu/DejaVuSans.ttf")
-    shelltools.system("./grub-mkfont -o DejaVuSans-14.pf2 -r 0x0-0x7F -s 14 /usr/share/fonts/dejavu/DejaVuSans.ttf")
-    shelltools.system("./grub-mkfont -o DejaVuSans-16.pf2 -r 0x0-0x7F -s 16 /usr/share/fonts/dejavu/DejaVuSans.ttf")
-    shelltools.system("./grub-mkfont -o DejaVuSans-Bold-14.pf2 -r 0x0-0x7F -s 14 /usr/share/fonts/dejavu/DejaVuSans-Bold.ttf")
-    shelltools.system("./grub-mkfont -o DejaVuSans-Mono-14.pf2 -r 0x0-0x7F -s 14 /usr/share/fonts/dejavu/DejaVuSansMono.ttf")
-    shelltools.copy("ascii.pf2","%s/usr/share/grub/themes/limelinux" % get.installDIR())
 
-    # Do not install auto generated dejavu* fonts
-    fonts=["DejaVuSans-10.pf2" , "DejaVuSans-12.pf2" , "DejaVuSans-14.pf2" , "DejaVuSans-16.pf2" , "DejaVuSans-Mono-14.pf2", "DejaVuSans-Bold-14.pf2"]
-    for font in fonts:
-        shelltools.copy(font,"%s/usr/share/grub/themes/limelinux" % get.installDIR())
 
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
@@ -91,6 +80,3 @@ def install():
     
     shelltools.copytree("/%s/efi/usr/lib/grub/x86_64-efi" % get.installDIR(), "%s/usr/lib/grub/x86_64-efi" % get.installDIR())
     pisitools.removeDir("/efi")
-
-
-
