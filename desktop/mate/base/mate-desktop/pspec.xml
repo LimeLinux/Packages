@@ -65,6 +65,13 @@
     </Package>
 
     <History>
+	    <Update release="2">
+            <Date>2017-01-12</Date>
+            <Version>1.17.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2017-01-12</Date>
             <Version>1.17.1</Version>
