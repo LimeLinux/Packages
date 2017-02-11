@@ -45,6 +45,13 @@
 
 
     <History>
+        <Update release="2">
+            <Date>2016-12-21</Date>
+            <Version>2.88</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>2.88</Version>

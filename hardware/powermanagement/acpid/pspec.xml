@@ -36,7 +36,7 @@
             <AdditionalFile owner="root" permission="0755" target="/etc/acpi/actions/power.sh">acpid.power.sh</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/acpi/events/power.conf">fedora/acpid.power.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/acpi/events/video.conf">fedora/acpid.video.conf</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/acpid">fedora/acpid.sysconfig</AdditionalFile>
+            <!--AdditionalFile owner="root" permission="0644" target="/etc/conf.d/acpid">fedora/acpid.sysconfig</AdditionalFile-->
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/acpid.service">fedora/acpid.service</AdditionalFile>
         </AdditionalFiles>
     </Package>
