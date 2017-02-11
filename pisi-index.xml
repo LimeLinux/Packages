@@ -2277,7 +2277,7 @@
             <Summary xml:lang="pl">Narzędzie do wykrywania innych systemów operacyjnych na dyskach</Summary>
             <Description xml:lang="en">os-probe detects other OSes available on a system and outputs the results in a generic machine-readable format. Support for new OSes and Linux distributions can be added easily.</Description>
             <Description xml:lang="pl">os-prober wykrywa inne systemy operacyjne dostępne na komputerze i przekazuje rezultaty w standardowym, odczytywalnym maszynowo, formacie. </Description>
-            <Archive type="tarxz" sha1sum="34d7bd94d68929c51def6d93c1a00b826e9e657b">http://http.debian.net/debian/pool/main/o/os-prober/os-prober_1.73.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="f7008494924ee60468bb27df8d926d7e0234edab">http://http.debian.net/debian/pool/main/o/os-prober/os-prober_1.74.tar.xz</Archive>
             <SourceURI>system/boot/os-prober/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -2293,7 +2293,7 @@
         <History>
             <Update release="2">
                 <Date>2016-12-21</Date>
-                <Version>1.73</Version>
+                <Version>1.74</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -3267,7 +3267,7 @@
             <Summary xml:lang="tr">Çeşitli kullanışlı Linux araçları</Summary>
             <Description xml:lang="en">The util-linux package contains a large variety of low-level system utilities that are necessary for a Linux system to function.</Description>
             <Description xml:lang="tr">util-linux paketi, bir Linux sisteminin işlevsel olması için gerekli olan birçok düşük seviye sistem uygulamasını içerir.</Description>
-            <Archive type="tarxz" sha1sum="9720d4ea99f8aff018ea6732dcc5c1fc853f39b3">https://www.kernel.org/pub/linux/utils/util-linux/v2.28/util-linux-2.28.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="ed267cb80af92d327c53a45360addf1a19a1a0b6">https://www.kernel.org/pub/linux/utils/util-linux/v2.29/util-linux-2.29.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>zlib</Dependency>
                 <Dependency>python</Dependency>
@@ -3310,6 +3310,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="1">
+                <Date>2016-12-21</Date>
+                <Version>2.29</Version>
+                <Comment>Version Bump.</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.28</Version>
@@ -7597,7 +7604,7 @@
             <Summary xml:lang="tr">Alternatif yönetim sistemi</Summary>
             <Description xml:lang="en">alternatives creates, removes, maintains and displays information about the symbolic links comprising the alternatives system. Alternatives system determines the defaults when several programs fulfilling the same or similar functions to be installed on a single system at the same time.</Description>
             <Description xml:lang="tr">alternatives, alternatives sisteminin parçası olan sembolik bağlantıları oluşturan, silen, yöneten ve bunlar hakkında bilgi gösteren araçtır. Alternatives sistemi, birbirine benzer ya da aynı işlevleri sunan programların aynı anda aynı sisteme kurulduğu zamanlarda öntanımlıları belirler.</Description>
-            <Archive type="tarxz" sha1sum="e02a02a0fbc14bcabded474f19bff715b7db8fb1">https://git.fedorahosted.org/cgit/chkconfig.git/snapshot/chkconfig-1.3.62.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c02e19919064e9da9e51ffeb5b796b4c3d8be093">https://git.fedorahosted.org/cgit/chkconfig.git/snapshot/chkconfig-chkconfig-1.3.63.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>popt</Dependency>
                 <Dependency>newt</Dependency>
@@ -7616,10 +7623,17 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-05-02</Date>
+                <Version>1.3.63</Version>
+                <Comment>Revert</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>1.3.62</Version>
-                <Comment>First Release</Comment>
+                <Date>2016-05-02</Date>
+                <Version>1.3.63</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -7907,6 +7921,13 @@
             </Provides>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>2.88</Version>
+                <Comment>Release bump.</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.88</Version>
@@ -14851,7 +14872,6 @@
                 <AdditionalFile target="/etc/acpi/actions/power.sh" permission="0755" owner="root">acpid.power.sh</AdditionalFile>
                 <AdditionalFile target="/etc/acpi/events/power.conf" permission="0644" owner="root">fedora/acpid.power.conf</AdditionalFile>
                 <AdditionalFile target="/etc/acpi/events/video.conf" permission="0644" owner="root">fedora/acpid.video.conf</AdditionalFile>
-                <AdditionalFile target="/etc/conf.d/acpid" permission="0644" owner="root">fedora/acpid.sysconfig</AdditionalFile>
                 <AdditionalFile target="/lib/systemd/system/acpid.service" permission="0644" owner="root">fedora/acpid.service</AdditionalFile>
             </AdditionalFiles>
         </Package>
@@ -48927,56 +48947,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Date>2016-12-21</Date>
                 <Version>1.3.1</Version>
                 <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>alternatives</Name>
-            <Homepage>http://git.fedorahosted.org/git/?p=chkconfig.git;a=summary</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>app:console</IsA>
-            <PartOf>x11.util</PartOf>
-            <Summary xml:lang="en">Alternative management system</Summary>
-            <Summary xml:lang="tr">Alternatif yönetim sistemi</Summary>
-            <Description xml:lang="en">alternatives creates, removes, maintains and displays information about the symbolic links comprising the alternatives system. Alternatives system determines the defaults when several programs fulfilling the same or similar functions to be installed on a single system at the same time.</Description>
-            <Description xml:lang="tr">alternatives, alternatives sisteminin parçası olan sembolik bağlantıları oluşturan, silen, yöneten ve bunlar hakkında bilgi gösteren araçtır. Alternatives sistemi, birbirine benzer ya da aynı işlevleri sunan programların aynı anda aynı sisteme kurulduğu zamanlarda öntanımlıları belirler.</Description>
-            <Archive type="tarxz" sha1sum="c02e19919064e9da9e51ffeb5b796b4c3d8be093">https://git.fedorahosted.org/cgit/chkconfig.git/snapshot/chkconfig-chkconfig-1.3.63.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>popt</Dependency>
-                <Dependency>newt</Dependency>
-            </BuildDependencies>
-            <SourceURI>x11/util/alternatives/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>alternatives</Name>
-            <Files>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="executable">/usr/sbin</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="data">/var</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="2">
-                <Date>2017-05-02</Date>
-                <Version>1.3.63</Version>
-                <Comment>Revert</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-05-02</Date>
-                <Version>1.3.63</Version>
-                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
