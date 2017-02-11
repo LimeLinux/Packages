@@ -7,7 +7,6 @@ from pisi.actionsapi import get
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 
-Libdir = "/usr/lib32" if get.buildTYPE() == "emul32" else "/usr/lib"
 
 def setup():
    # autotools.autoreconf("-vif")
@@ -68,8 +67,8 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.domove("%s/libGL.so.1.2.0" % Libdir, "%s/mesa" % Libdir)
-    pisitools.dosym("libGL.so.1.2.0", "%s/libGL.so.1.2" % Libdir)
+    pisitools.insinto("/usr/lib/", "/usr/lib/mesa/libGL.so.1.2.0")
+    pisitools.dosym("/usr/lib/libGL.so.1.2.0", "/usr/lib/libGL.so.1.2")
 
     if get.buildTYPE() == "emul32":
         return
