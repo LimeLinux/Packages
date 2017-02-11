@@ -1,0 +1,64 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>darkice</Name>
+        <Homepage>http://darkice.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Live audio streamer</Summary>
+        <Description>DarkIce as a live audio streamer. It records audio from an audio interface (e.g. sound card), encodes it and sends it to a streaming server.</Description>
+        <Archive sha1sum="508eb0560a7cdf0990a8793f4b8d324ae74bc343" type="targz">https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/darkice/darkice-1.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>pulseaudio</Dependency> 
+            <Dependency>lame</Dependency>
+            <Dependency>faac</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>twolame</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>libopus</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="0">darkice-1.0-gcc44.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>darkice</Name>
+        <RuntimeDependencies>
+            <Dependency>pulseaudio</Dependency> 
+            <Dependency>lame</Dependency>
+            <Dependency>faac</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>twolame</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libopus</Dependency>
+        </RuntimeDependencies>
+        <Files>
+           <Path fileType="config">/etc</Path>
+           <Path fileType="doc">/usr/share/doc</Path>
+           <Path fileType="man">/usr/share/man</Path>
+           <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>1.2</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
