@@ -1,5 +1,5 @@
 [build]
-build_host = localhost
+build_host = localehost
 # buildhelper = None
 commonflags = -mtune=generic -march=x86-64 -O2 -pipe -fstack-protector -D_FORTIFY_SOURCE=2 -g -fPIC
 cflags = %(commonflags)s
