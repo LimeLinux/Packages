@@ -34,7 +34,6 @@
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Update>
-    </History>
         <Update release="1">
             <Date>2017-02-21</Date>
             <Version>4.6.4</Version>
