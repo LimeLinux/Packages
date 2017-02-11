@@ -66,8 +66,8 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    pisitools.insinto("/usr/lib/", "/usr/lib/mesa/libGL.so.1.2.0")
+    
+    pisitools.insinto("/usr/lib/mesa/", "/usr/lib/libGL.so.1.2.0")
     pisitools.dosym("/usr/lib/libGL.so.1.2.0", "/usr/lib/libGL.so.1.2")
 
     if get.buildTYPE() == "emul32":
