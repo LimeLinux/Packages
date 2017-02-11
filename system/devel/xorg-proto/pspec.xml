@@ -14,7 +14,7 @@
         <Summary>X.Org Protocol Headers</Summary>
         <Description>This package includes the protocol headers needed for X11 development.</Description>
         <Archive sha1sum="ef1765eeb5e9e38d080225fe6a64ed7cd2984b46" type="tarbz2">mirrors://xorg/individual/proto/bigreqsproto-1.1.2.tar.bz2</Archive>
-        <Archive sha1sum="432371cdc464881029c3f39f9bf81cc80a484e54" type="tarbz2">mirrors://xorg/individual/proto/presentproto-1.0.tar.bz2</Archive>
+        <Archive sha1sum="b1294dbb3a8337f79252142b45aa123ee1aa7602" type="tarbz2">mirrors://xorg/individual/proto/presentproto-1.1.tar.bz2</Archive>
         <Archive sha1sum="aa7b5abcfd5bbfad7cb681ce89dc1d6e381e3044" type="tarbz2">mirrors://xorg/individual/proto/compositeproto-0.4.2.tar.bz2</Archive>
         <Archive sha1sum="bd0f0f4dc8f37eaabd9279d10fe2889710507358" type="tarbz2">mirrors://xorg/individual/proto/damageproto-1.2.1.tar.bz2</Archive>
         <Archive sha1sum="3b8b273b8ef3d8dbab998df9ec1dddf99edf4d91" type="tarbz2">mirrors://xorg/individual/proto/dmxproto-2.3.1.tar.bz2</Archive>
