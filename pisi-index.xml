@@ -1384,9 +1384,16 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>4.6.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2017-02-21</Date>
-                <Version>4.9.7</Version>
+                <Version>4.6.4</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -2037,7 +2044,7 @@
             <Description xml:lang="en">This package includes the protocol headers needed for X11 development.</Description>
             <Description xml:lang="tr">Bu paket, X11 geliştirme için gerekli protokol başlıklarını içerir.</Description>
             <Archive type="tarbz2" sha1sum="ef1765eeb5e9e38d080225fe6a64ed7cd2984b46">mirrors://xorg/individual/proto/bigreqsproto-1.1.2.tar.bz2</Archive>
-            <Archive type="tarbz2" sha1sum="432371cdc464881029c3f39f9bf81cc80a484e54">mirrors://xorg/individual/proto/presentproto-1.0.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="b1294dbb3a8337f79252142b45aa123ee1aa7602">mirrors://xorg/individual/proto/presentproto-1.1.tar.bz2</Archive>
             <Archive type="tarbz2" sha1sum="aa7b5abcfd5bbfad7cb681ce89dc1d6e381e3044">mirrors://xorg/individual/proto/compositeproto-0.4.2.tar.bz2</Archive>
             <Archive type="tarbz2" sha1sum="bd0f0f4dc8f37eaabd9279d10fe2889710507358">mirrors://xorg/individual/proto/damageproto-1.2.1.tar.bz2</Archive>
             <Archive type="tarbz2" sha1sum="3b8b273b8ef3d8dbab998df9ec1dddf99edf4d91">mirrors://xorg/individual/proto/dmxproto-2.3.1.tar.bz2</Archive>
@@ -2084,6 +2091,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>7.7</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2017-02-21</Date>
                 <Version>7.6</Version>
@@ -18384,6 +18398,57 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>gst-python</Name>
+            <Homepage>http://gstreamer.freedesktop.org/modules/gst-python.html</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">GStreamer Python bindings</Summary>
+            <Summary xml:lang="tr">GStreamer Python bağlayıcıları</Summary>
+            <Description xml:lang="en">gst-python is a Python frontend to GStreamer.</Description>
+            <Description xml:lang="tr">gst-python GStreamer için Python arabirimidir.</Description>
+            <Archive type="tarbz2" sha1sum="7012445d921ae1b325c162500750c9b0e777201f">http://gstreamer.freedesktop.org/src/gst-python/gst-python-0.10.22.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>python-gtk</Dependency>
+                <Dependency>python-pygobject</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>python</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python/gst-python/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gst-python</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.10.22</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>python-beaker</Name>
             <Homepage>http://beaker.groovie.org/</Homepage>
             <Packager>
@@ -34638,6 +34703,101 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>libchromaprint</Name>
+            <Homepage>http://acoustid.org/chromaprint</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>app:console</IsA>
+            <PartOf>multimedia.plugin</PartOf>
+            <Summary xml:lang="en">Chromaprint is the core component of the Acoustid project.</Summary>
+            <Description xml:lang="en">Chromaprint is the core component of the Acoustid project. It&apos;s a client-side library that implements a custom algorithm for extracting fingerprints from any audio source.</Description>
+            <Archive type="targz" sha1sum="439c5d34a3ff46bcdb54cbcb613da175eb4d83c5">https://bitbucket.org/acoustid/chromaprint/downloads/chromaprint-1.3.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>boost</Dependency>
+                <Dependency>fftw3</Dependency>
+                <Dependency>ffmpeg</Dependency>
+                <Dependency>cmake</Dependency>
+            </BuildDependencies>
+            <SourceURI>multimedia/plugin/libchromaprint/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libchromaprint</Name>
+            <RuntimeDependencies>
+                <Dependency>ffmpeg</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-11-17</Date>
+                <Version>1.3.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ladspa-sdk</Name>
+            <Homepage>http://www.ladspa.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>multimedia.plugin</PartOf>
+            <Summary xml:lang="en">The Linux Audio Developer&apos;s Simple Plugin API</Summary>
+            <Summary xml:lang="tr">Ses geliştiricisinin temel eklenti kütüphanesi</Summary>
+            <Description xml:lang="fr">La Linux Audio Developer&apos;s Simple Plugin API (LADSPA - L&apos;API de plugin (greffon) simple pour développeurs linux audio) tente de donner aux programmeurs la possibilité d&apos;écrire en C/C++ des processeurs audio simples sous forme de plugin&apos; et les lier dynamiquement à différentes applications hôte.</Description>
+            <Description xml:lang="en">The Linux Audio Developer&apos;s Simple Plugin API (LADSPA) attempts to give programmers the ability to write simple `plugin&apos; audio processors in C/C++ and link them dynamically against a range of host applications</Description>
+            <Description xml:lang="tr">ladspa, Linux üzerinde ses uygulamaları geliştiren programcıların temel ses işleme eklentileri geliştirmelerini ve bu eklentileri bir seri ses uygulaması ile birlikte kullanabilmelerini sağlar.</Description>
+            <Description xml:lang="es">El Linux Audio Developer&apos;s Simple Plugin API (LADSPA) intenta facilitar a programadores la tarea de escribir procesadores simples de audio en C/C++ y enlazarlos dinámicamente con una gama de aplicaciones host.</Description>
+            <Archive type="targz" sha1sum="2b69e28afb62c0d97943124f48ed82de796f83ed">http://pkgs.fedoraproject.org/repo/pkgs/ladspa/ladspa_sdk_1.13.tgz/671be3e1021d0722cadc7fb27054628e/ladspa_sdk_1.13.tgz</Archive>
+            <Patches>
+                <Patch>ladspa-sdk-1.12-gcc4.patch</Patch>
+                <Patch level="2">properbuild.patch</Patch>
+                <Patch>asneeded.patch</Patch>
+                <Patch level="2">notests.patch</Patch>
+            </Patches>
+            <SourceURI>multimedia/plugin/ladspa-sdk/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ladspa-sdk</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="doc">/usr/share/doc/ladspa-sdk</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc/ladspa-sdk/html</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/etc/env.d/60ladspa" permission="0644" owner="root">60ladspa</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>1.13</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>live555</Name>
             <Homepage>http://www.live555.com</Homepage>
             <Packager>
@@ -34671,6 +34831,181 @@
                 <Date>2016-12-21</Date>
                 <Version>2016.09.22</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libmms</Name>
+            <Homepage>http://sourceforge.net/projects/libmms</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>multimedia.stream</PartOf>
+            <Summary xml:lang="en">A common library for accessing MMS media streaming protocol</Summary>
+            <Summary xml:lang="tr">MMS protokolüne erişim sağlayan bir kütüphane</Summary>
+            <Description xml:lang="en">libmms is a library for accessing Microsoft Media Server (MMS) media streaming protocol.</Description>
+            <Description xml:lang="tr">libmms, Microsoft Media Server(MMS) akış protokolünü kullanan ses kaynaklarına erişmek için kullanılan bir kütüphanedir.</Description>
+            <Archive type="targz" sha1sum="b03ef84a9eedc68fdf2866265b667b75e1a33bee">mirrors://sourceforge/libmms/libmms-0.6.4.tar.gz</Archive>
+            <SourceURI>multimedia/stream/libmms/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libmms</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>0.6.4</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>icecast</Name>
+            <Homepage>http://www.icecast.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>service</IsA>
+            <PartOf>multimedia.stream</PartOf>
+            <Summary xml:lang="en">ShoutCast compatible streaming media server</Summary>
+            <Summary xml:lang="tr">Shoutcast uyumlu muzik yayın sunucusu</Summary>
+            <Description xml:lang="en">Icecast is a streaming media server which currently supports Ogg Vorbis and MP3 audio streams. It can be used to create an Internet radio station or a privately running jukebox and many things in between.</Description>
+            <Description xml:lang="tr">Icecast, Ogg Vorbis ve Mp3 formatlarını destekleyerek ağ üzerinden muzik yayını yapmanızı sağlar. Icecast ile bir internet radyo istasyonu kurabilir ya da kendinize özel bir şarkı liste oluşturup paylaşabilirsiniz.</Description>
+            <Icon>icecast</Icon>
+            <Archive type="targz" sha1sum="230e2aa5abf80010c42d41cc7c0b078fb542b080">http://downloads.xiph.org/releases/icecast/icecast-2.4.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libxslt</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>libkate</Dependency>
+                <Dependency>speex</Dependency>
+                <Dependency>libtheora</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>openssl</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">pthread_flag.patch</Patch>
+                <Patch level="1">icecast.conf.patch</Patch>
+            </Patches>
+            <SourceURI>multimedia/stream/icecast/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>icecast</Name>
+            <RuntimeDependencies>
+                <Dependency>libxslt</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>libkate</Dependency>
+                <Dependency>speex</Dependency>
+                <Dependency>libtheora</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>openssl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/icecast</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icecast</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/var</Path>
+                <Path fileType="data">/run</Path>
+                <Path fileType="config">/usr/lib/tmpfiles.d/icecast.conf</Path>
+            </Files>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/lib/tmpfiles.d/icecast.conf" permission="0644" owner="root">tmpfiles.conf</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.4.3</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>darkice</Name>
+            <Homepage>http://darkice.sourceforge.net/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:console</IsA>
+            <PartOf>multimedia.stream</PartOf>
+            <Summary xml:lang="en">Live audio streamer</Summary>
+            <Summary xml:lang="tr">Canlı müzik, ses yayınlama aracı</Summary>
+            <Description xml:lang="en">DarkIce as a live audio streamer. It records audio from an audio interface (e.g. sound card), encodes it and sends it to a streaming server.</Description>
+            <Description xml:lang="tr">Darkice bir canlı müzik, ses yayınlama uygulamasıdır. Bir ses arayüzünden (örneğin bir ses kartı) sesleri kaydeder, kodlar ve yayınlayacak sunucuya gönderir.</Description>
+            <Archive type="targz" sha1sum="508eb0560a7cdf0990a8793f4b8d324ae74bc343">https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/darkice/darkice-1.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>lame</Dependency>
+                <Dependency>faac</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>twolame</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>libsamplerate</Dependency>
+                <Dependency>libopus</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="0">darkice-1.0-gcc44.patch</Patch>
+            </Patches>
+            <SourceURI>multimedia/stream/darkice/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>darkice</Name>
+            <RuntimeDependencies>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>lame</Dependency>
+                <Dependency>faac</Dependency>
+                <Dependency>libogg</Dependency>
+                <Dependency>twolame</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>libsamplerate</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libopus</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>1.2</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
