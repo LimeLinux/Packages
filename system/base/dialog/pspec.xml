@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A tool to display dialog boxes from shell scripts</Summary>
         <Description>A tool to display dialog boxes from shell scripts</Description>
-        <Archive sha1sum="6745a288bc49d2b2f8a92411086387c357d880d0" type="targz">ftp://invisible-island.net/dialog/dialog.tar.gz</Archive>
+        <Archive sha1sum="6c3282f6b8ef9e942c5a169ff93fb14ad80bddc4" type="targz">ftp://invisible-island.net/dialog/dialog.tar.gz</Archive>
     </Source>
 
     <Package>
