@@ -47,7 +47,6 @@ def setup():
                      --enable-write \
                      --enable-tunelp \
                      --without-audit \
-                     --with-systemd \
                      --without-utempter \
                    "
 
