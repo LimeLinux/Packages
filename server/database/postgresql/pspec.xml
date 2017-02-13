@@ -69,7 +69,6 @@
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Update>
-    </History>
         <Update release="1">
             <Date>2017-12-21</Date>
             <Version>9.5.4</Version>
