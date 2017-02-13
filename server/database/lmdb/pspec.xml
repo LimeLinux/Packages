@@ -15,7 +15,7 @@
         <IsA>app:console</IsA>
         <Summary>Symas Lightning Memory-Mapped Database</Summary>
         <Description>An ultra-fast, ultra-compact key-value embedded data store.</Description>
-        <Archive sha1sum="367182e1d9dbc314db76459a71be719209f131b4" type="targz">https://github.com/LMDB/lmdb/archive/LMDB_0.9.16.tar.gz</Archive>
+        <Archive sha1sum="5f236169298e277241467b0058b1b36a60d087d6" type="targz">https://github.com/LMDB/lmdb/archive/LMDB_0.9.19.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -31,8 +31,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.9.16</Version>
+            <Date>2017-02-11</Date>
+            <Version>0.9.19</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
