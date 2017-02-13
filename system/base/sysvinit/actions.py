@@ -21,17 +21,6 @@ def install():
     pisitools.remove("/bin/pidof")
     pisitools.dosym("killall5", "/sbin/pidof")
 
-    #systemd
-    pisitools.remove ("/usr/share/man/man8/telinit.8")
-    pisitools.remove ("/sbin/reboot")
-    pisitools.remove ("/sbin/poweroff")
-    pisitools.remove ("/sbin/halt")
-    pisitools.remove ("/sbin/shutdown")
-    pisitools.remove ("/usr/share/man/man8/shutdown.8")
-    pisitools.remove ("/usr/share/man/man8/poweroff.8")
-    pisitools.remove ("/usr/share/man/man8/runlevel.8")
-    pisitools.remove ("/usr/share/man/man8/halt.8")
-    pisitools.remove ("/usr/share/man/man8/reboot.8")
 
     #util-linux
 
