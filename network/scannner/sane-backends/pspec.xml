@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sane-backends</Name>
+        <Homepage>http://www.sane-project.org</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>sane</Icon>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>Scanner access software</Summary>
+        <Description>Scanner Access Now Easy (SANE) is a universal scanner interface. The SANE application programming interface provides standardized access to any raster image scanner hardware.</Description>
+        <Archive sha1sum="05824922d91571e1fc2f5cdd270745783d593754" type="targz">https://sources.archlinux.org/other/sane/sane-backends-1.0.25.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libieee1284</Dependency>
+            <Dependency>libusb-compat</Dependency>
+            <Dependency>libnl</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>libgphoto2</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>net-snmp</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">sane-backends-1.0.20-open-macro.patch</Patch>
+            <Patch level="1">sane-backends-1.0.23-sane-config-multilib.patch</Patch>
+            <Patch level="1">sane-backends-1.0.23-soname.patch</Patch>
+            <Patch level="1">sane-backends-1.0.23-udev.patch</Patch>
+            <Patch level="1">archlinux/network.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>sane-backends</Name>
+        <RuntimeDependencies>
+            <Dependency>libnl</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>libusb-compat</Dependency>
+            <Dependency>libieee1284</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>libgphoto2</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>net-snmp</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>libexif</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/etc/sane.d/dll.d</Path>
+            <Path fileType="data">/etc/env.d</Path>
+            <Path fileType="config">/etc/sane.d</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc/sane-backends/README</Path>
+            <Path fileType="doc">/usr/share/doc/sane-backends/COPYING</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="data">/usr/share/sane</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/sane.png">sane.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/env.d/30sane">30sane</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <Package>
+        <Name>sane-backends-docs</Name>
+        <Summary>Documentation for SANE backends</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2016-06-09</Date>
+            <Version>1.0.25</Version>
+            <Comment>Release Bump</Comment>
+            <Name>Pisi Linux Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-04-01</Date>
+            <Version>1.0.25</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
