@@ -15,7 +15,7 @@ shelltools.export("LC_ALL", "C")
 def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")
-    cmaketools.configure("-DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DUSE_GTK3=0 -G Ninja", sourceDir="..")
+    cmaketools.configure(" -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DHALF_BRO_INCOM_WEBKIT2=ON -G Ninja", sourceDir="..")
 
 def build():
     shelltools.cd("build")

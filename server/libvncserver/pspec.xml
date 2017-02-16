@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Library for creating VNC (Virtual Network Computing) servers</Summary>
         <Description>libvncserver provides a C library to create VNC servers.</Description>
-        <Archive sha1sum="2004c6ae493baeff3da40b61e0a0f73c83182dad" type="targz">mirrors://sourceforge/libvncserver/LibVNCServer-0.9.9.tar.gz</Archive>
+        <Archive sha1sum="d844a2c9e69465d104a8468dce515a49e4db9585" type="targz">https://github.com/LibVNC/libvncserver/archive/LibVNCServer-0.9.11.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gnutls</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
@@ -44,8 +44,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.9.9</Version>
+            <Date>2017-02-16</Date>
+            <Version>0.9.11</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
