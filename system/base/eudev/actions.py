@@ -16,7 +16,7 @@ def setup():
                --sbindir=/sbin \
                --libdir=/usr/lib \
                --enable-split-usr \
-		       --enable-manpages \
+	       --enable-manpages \
                --enable-logging \
                --sysconfdir=/etc \
                --libexecdir=/lib  \
