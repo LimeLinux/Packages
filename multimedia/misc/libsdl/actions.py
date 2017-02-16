@@ -45,6 +45,7 @@ def setup():
                --with-x \
                --disable-rpath \
                --disable-arts \
+               --disable-libts \
                --disable-dga \
                --disable-esd \
                --disable-nas \

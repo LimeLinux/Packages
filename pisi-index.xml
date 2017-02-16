@@ -166,7 +166,7 @@
             <Description xml:lang="fr">SVN est un gestionnaire de configuration permettant de stocker des fichiers et de contrôler leur historique de changement dans un dépôt.</Description>
             <Description xml:lang="en">SVN is a version controlling system to store files and control their change history in a repository.</Description>
             <Description xml:lang="tr">Daha gelişmiş özellikleri olan ve önceki CVS yerine kullanılan, bir sürüm yönetim sistemidir.</Description>
-            <Archive type="tarbz2" sha1sum="27e8df191c92095f48314a415194ec37c682cbcf">http://archive.apache.org/dist/subversion/subversion-1.9.3.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="8bd6a44a1aed30c4c6b6b068488dafb44eaa6adf">http://www.apache.org/dist/subversion/subversion-1.9.5.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>expat</Dependency>
                 <Dependency>zlib</Dependency>
@@ -248,7 +248,7 @@
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>1.9.3</Version>
+                <Version>1.9.5</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -7668,43 +7668,6 @@
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>3.0.2</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>tslib</Name>
-            <Homepage>https://github.com/kergoth/tslib</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>programming.library</PartOf>
-            <Summary xml:lang="en">Touchscreen Access Library</Summary>
-            <Description xml:lang="en">Touchscreen Access Library.</Description>
-            <Archive type="targz" sha1sum="db039d5e190bfe49f4cbdf86fd2ccc319ed9437e">https://github.com/kergoth/tslib/archive/1.5.tar.gz</Archive>
-            <SourceURI>programming/library/tslib/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>tslib</Name>
-            <Files>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="config">/etc/ts.conf</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="doc">/usr/share/*</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="man">/usr/share/man/*</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2017-07-26</Date>
-                <Version>1.5</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -21125,7 +21088,7 @@
             <Description xml:lang="en">Wireshark is a commercial-quality network traffic analyzer useful to investigate packets on the network.</Description>
             <Description xml:lang="tr">Wireshark ağdaki paketleri ve içeriklerini incelemek için kullanılan bir yazılımdır.</Description>
             <Icon>wireshark</Icon>
-            <Archive type="tarbz2" sha1sum="2f7fdef7d2ce829de683917c4ecf8fc0e23fa4a4">https://www.wireshark.org/download/src/all-versions/wireshark-1.12.12.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="fe07ab3582f39111ce5c78f5de6f44a8667000ac">https://www.wireshark.org/download/src/all-versions/wireshark-2.2.1.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>gnutls</Dependency>
                 <Dependency>c-ares</Dependency>
@@ -21140,6 +21103,9 @@
                 <Dependency>gtk3</Dependency>
                 <Dependency>libnl</Dependency>
             </BuildDependencies>
+            <Patches>
+                <Patch level="1">wireshark-2.2.1-lua_5_3_1-1.patch</Patch>
+            </Patches>
             <SourceURI>network/misc/wireshark/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -22244,7 +22210,7 @@
             <Description xml:lang="en">Easy-to-use FTP Client which also supports SFTP.</Description>
             <Description xml:lang="tr">Filezilla; dosyalarınızı ftp, sftp, ftps ile göndermenize ve indirmenize yarar</Description>
             <Icon>filezilla</Icon>
-            <Archive type="tarbz2" sha1sum="c36f0d7089b94241bccfebc7ac5d6b42a7fe0c54">mirrors://sourceforge/filezilla/FileZilla_3.14.1_src.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="955eb2da0bdf7875ad7ce1192c589a3b10fc4f10">https://sourceforge.net/projects/filezilla/files/FileZilla_Client/3.24.0/FileZilla_3.24.0_src.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>libidn</Dependency>
                 <Dependency>dbus</Dependency>
@@ -22284,8 +22250,8 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-06-09</Date>
-                <Version>3.14.1</Version>
+                <Date>2017-06-09</Date>
+                <Version>3.24.0</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -22595,6 +22561,42 @@
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.50.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libfilezilla</Name>
+            <Homepage>https://github.com/martinpitt/umockdev/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>Libry</IsA>
+            <PartOf>network.library</PartOf>
+            <Summary xml:lang="en">Recording and replay of usbdevfs (for PtP/MTP devices) and evdev (touch pads, Wacom tablets, etc.) ioctls.</Summary>
+            <Description xml:lang="en">You can use this from the command line, and a wide range of programming languages (C, Vala, and everything which supports gobject-introspection, such as JavaScript or Python).</Description>
+            <Archive type="tarbz2" sha1sum="008cbe1dfdaa06503806b7c30aaf764cef43bf5a">http://download.filezilla-project.org/libfilezilla/libfilezilla-0.9.0.tar.bz2</Archive>
+            <SourceURI>network/library/libfilezilla/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libfilezilla</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="data">/usr/include/*</Path>
+                <Path fileType="data">/usr/lib/pkgconfig/</Path>
+                <Path fileType="doc">/usr/share/*</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-01-21</Date>
+                <Version>0.9.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>

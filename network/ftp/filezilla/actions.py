@@ -14,10 +14,8 @@ def setup():
     #shelltools.export("LDFLAGS", "%s -lpthread" % get.LDFLAGS())
     #pisitools.dosed("data/filezilla.desktop", "Icon=filezilla", "Icon=/usr/share/pixmaps/filezilla.png")
     autotools.configure("--disable-static \
-                         --disable-manualupdatecheck \
-                         --disable-autoupdatecheck \
-                         --with-pugixml=builtin \
-                         --prefix=/usr ")
+                        --disable-manualupdatecheck \
+                        --disable-autoupdatecheck")
 
 def build():
     autotools.make()

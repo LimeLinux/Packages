@@ -23,7 +23,7 @@ def setup():
                          --with-sqlite=/usr \
                          --with-zlib=/usr \
                          --with-jikes=no \
-                         --without-berkeley-db \
+                         --without-marian-db \
                          --disable-mod-activation")
 
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
