@@ -13,7 +13,7 @@
         <IsA>data</IsA>
         <Summary>Norman Walsh's XSL stylesheets for DocBook XML</Summary>
         <Description>These XSL stylesheets allow you to transform any DocBook XML document to other formats such as HTML, FO and XHTML.</Description>
-        <Archive sha1sum="1d668c845bb43c65115d1a1d9542f623801cfb6f" type="tarbz2">http://sourceforge.net/projects/docbook/files/docbook-xsl/1.78.1/docbook-xsl-1.78.1.tar.bz2</Archive>
+        <Archive sha1sum="7487b2acc7106253bb77fcddc7e1a9788601ad23" type="tarbz2">http://downloads.sourceforge.net/docbook/docbook-xsl-1.79.1.tar.bz2</Archive>
         <AdditionalFiles>
             <AdditionalFile target="Makefile">Makefile</AdditionalFile>
         </AdditionalFiles>
@@ -22,7 +22,6 @@
             <Patch level="1">docbook-xsl-newmethods.patch</Patch>
             <Patch level="1">docbook-xsl-non-constant-expressions.patch</Patch>
             <Patch level="1">docbook-xsl-list-item-body.patch</Patch>
-            <Patch level="1">docbook-xsl-mandir.patch</Patch>
         </Patches>
     </Source>
 
@@ -43,7 +42,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-21</Date>
-            <Version>1.78.1</Version>
+            <Version>1.79.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

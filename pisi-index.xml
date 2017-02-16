@@ -4368,6 +4368,55 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>python-Jinja2</Name>
+            <Homepage>http://jinja.pocoo.org/2/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:console</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">A small but fast and easy to use stand-alone template engine written in pure python</Summary>
+            <Summary xml:lang="tr">Küçük, hızlı ve kullanımı kolay, sadece python ile yazılmış bir bağımsız şablon üreteci</Summary>
+            <Description xml:lang="en">Jinja2 is the rewritten version of Jinja, sandboxed template engine written in pure Python. It provides a Django like non-XML syntax and compiles templates into executable python code. It&apos;s basically a combination of Django templates and python code.</Description>
+            <Description xml:lang="tr">Jinja2, sadece python ile yazılmış bir şablon üreteci olan Jinja&apos;nın yeniden yazılmış bir versiyonudur. Django benzeri XML-olmayan bir sözdizimi sağlar ve şablonları derleyip çalıştırılabilir python programları haline getirir. Temel olarak Django şablonları ve python kodunun birleşimi bir programdır.</Description>
+            <Archive type="targz" sha1sum="1ce4c8bc722444ec3e77ef9db76faebbd17a40d8">https://pypi.python.org/packages/source/J/Jinja2/Jinja2-2.7.2.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python-setuptools</Dependency>
+                <Dependency>python-MarkupSafe</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">drop_next_import_from_docs-jinjaext.patch</Patch>
+            </Patches>
+            <SourceURI>programming/language/python/python-Jinja2/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python-Jinja2</Name>
+            <Files>
+                <Path fileType="library">/usr/lib/python*</Path>
+                <Path fileType="doc">/usr/share/doc/python-Jinja2/LICENSE</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>python-Jinja2-docs</Name>
+            <Summary xml:lang="tr">python-Jinja2 için belgelendirme dosyaları</Summary>
+            <Files>
+                <Path fileType="doc">/usr/share/doc/python-Jinja2</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.7.2</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>pyopenssl</Name>
             <Homepage>http://launchpad.net/pyopenssl</Homepage>
             <Packager>
@@ -4456,6 +4505,53 @@
                 <Date>2016-12-21</Date>
                 <Version>2.10.0</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>python-Pygments</Name>
+            <Homepage>http://pygments.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">A syntax highlighting package written in Python</Summary>
+            <Summary xml:lang="tr">Python dilinde yazılmış bir sözdizimi belirtme aracı</Summary>
+            <Description xml:lang="en">python-Pygments is a generic syntax highlighter for general use in all kinds of software such as forum systems, wikis or other applications that need to prettify source code.</Description>
+            <Description xml:lang="tr">python-Pygments, kaynak kodunu güzelleştirmek ihtiyacı duyulan forum sistemleri, wikiler ve diğer uygulamalar gibi her çeşit yazılımda kullanılmak için yazılmış olan genel bir sözdizimi belirtme aracıdır.</Description>
+            <Archive type="targz" sha1sum="53d831b83b1e4d4f16fec604057e70519f9f02fb">https://pypi.python.org/packages/source/P/Pygments/Pygments-1.6.tar.gz</Archive>
+            <SourceURI>programming/language/python/python-Pygments/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python-Pygments</Name>
+            <RuntimeDependencies>
+                <Dependency>python-setuptools</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib/python*</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>python-Pygments-docs</Name>
+            <Summary xml:lang="en">Documentation files for python-Pygments</Summary>
+            <Summary xml:lang="tr">python-Pygments için belgelendirme dosyaları</Summary>
+            <Files>
+                <Path fileType="doc">/usr/share/doc/python-Pygments</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>1.6</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -4643,6 +4739,64 @@
                 <Date>2016-01-21</Date>
                 <Version>4.18</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>python-sphinx</Name>
+            <Homepage>http://sphinx.pocoo.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:console</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">Python documentation generator. It can generate HTML or Latex outputs</Summary>
+            <Summary xml:lang="tr">Python için döküman üreticisi. HTML, Latex gibi çıktılar üretebiliyor</Summary>
+            <Description xml:lang="en">It&apos;s a very common documentation generator especially using for python based documentation.It can generate HTML or PDF, Ps outputs with Latex output support.</Description>
+            <Description xml:lang="tr">Özellikle python için hazırlanan dökümanları yorumlamak için kullanılan yaygın bir döoküman üreticisi. Başta HTML olmak üzere Latex ile birlikte PDF, Ps gibi doküman çıktıları üretebiliyor.</Description>
+            <Archive type="targz" sha1sum="448cdb89d96c85993e01fe793ce7786494cbcda7">http://pypi.python.org/packages/source/S/Sphinx/Sphinx-1.2.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>docutils</Dependency>
+                <Dependency>python-Pygments</Dependency>
+                <Dependency>python-Jinja2</Dependency>
+                <Dependency>python-MarkupSafe</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">remove_docutils.patch</Patch>
+            </Patches>
+            <SourceURI>programming/language/python/python-sphinx/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python-sphinx</Name>
+            <RuntimeDependencies>
+                <Dependency>docutils</Dependency>
+                <Dependency>python-Pygments</Dependency>
+                <Dependency>python-Jinja2</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib/python*</Path>
+                <Path fileType="doc">/usr/share/doc/python-sphinx/LICENSE</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>python-sphinx-docs</Name>
+            <Summary xml:lang="en">Documentation files for python-sphinx</Summary>
+            <Summary xml:lang="tr">python-sphinx için belgelendirme dosyaları</Summary>
+            <Files>
+                <Path fileType="doc">/usr/share/doc/python-sphinx</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>1.3.1</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -5144,6 +5298,44 @@
             <Update release="1">
                 <Date>2016-07-26</Date>
                 <Version>0.5.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>python-imagesize</Name>
+            <Homepage>https://pypi.python.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:console</IsA>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">A python jpg2000</Summary>
+            <Description xml:lang="en">python-mako is a super-fast templating language that borrows the best ideas from the existing templating languages.</Description>
+            <Archive type="targz" sha1sum="cfef5d52e8822cca4adecf6a894ca41ddf162de4">https://pypi.python.org/packages/53/72/6c6f1e787d9cab2cc733cf042f125abec07209a58308831c9f292504e826/imagesize-0.7.1.tar.gz</Archive>
+            <SourceURI>programming/language/python/python-imagesize/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python-imagesize</Name>
+            <RuntimeDependencies>
+                <Dependency>python</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-21</Date>
+                <Version>0.7.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -24425,7 +24617,7 @@
             <Summary xml:lang="tr">Docbook XSL biçemyaprakları</Summary>
             <Description xml:lang="en">These XSL stylesheets allow you to transform any DocBook XML document to other formats such as HTML, FO and XHTML.</Description>
             <Description xml:lang="tr">Docbook XSL biçemyapraklarını (stylesheets) içerir.</Description>
-            <Archive type="tarbz2" sha1sum="1d668c845bb43c65115d1a1d9542f623801cfb6f">http://sourceforge.net/projects/docbook/files/docbook-xsl/1.78.1/docbook-xsl-1.78.1.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="7487b2acc7106253bb77fcddc7e1a9788601ad23">http://downloads.sourceforge.net/docbook/docbook-xsl-1.79.1.tar.bz2</Archive>
             <AdditionalFiles>
                 <AdditionalFile target="Makefile">Makefile</AdditionalFile>
             </AdditionalFiles>
@@ -24434,7 +24626,6 @@
                 <Patch level="1">docbook-xsl-newmethods.patch</Patch>
                 <Patch level="1">docbook-xsl-non-constant-expressions.patch</Patch>
                 <Patch level="1">docbook-xsl-list-item-body.patch</Patch>
-                <Patch level="1">docbook-xsl-mandir.patch</Patch>
             </Patches>
             <SourceURI>office/docbook/docbook-xsl/pspec.xml</SourceURI>
         </Source>
@@ -24454,7 +24645,7 @@
         <History>
             <Update release="1">
                 <Date>2016-12-21</Date>
-                <Version>1.78.1</Version>
+                <Version>1.79.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -45587,7 +45778,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="tr">Bu paket VirtualBox sunucu makinesi ile misafir sistemler arası fare entegrasyonu ve paylaşımlı dizin desteği için gerekli çekirdek modüllerini içerir.</Description>
             <Archive type="tarxz" sha1sum="87b355193a306ed5516e8d348f7eb83854e08ac1">https://sourceforge.net/projects/pisilinux/files/source/module-virtualbox-guest-5.1.14.tar.xz</Archive>
             <BuildDependencies>
-                <Dependency version="4.9.7">kernel-module-headers</Dependency>
+                <Dependency version="4.6.4">kernel-module-headers</Dependency>
             </BuildDependencies>
             <SourceURI>kernel/drivers/module-virtualbox-guest/pspec.xml</SourceURI>
         </Source>
@@ -45597,7 +45788,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Flag>noDelta</Flag>
             </BuildFlags>
             <RuntimeDependencies>
-                <Dependency version="4.9.7">kernel</Dependency>
+                <Dependency version="4.6.4">kernel</Dependency>
                 <Dependency>baselayout</Dependency>
                 <Dependency version="5.1.14">module-virtualbox-guest-userspace</Dependency>
             </RuntimeDependencies>
@@ -45650,14 +45841,14 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="tr">Eski ve yeni optimus teknolojisine sahip dizüstü bilgisyarlarda çalışabilmektedir.</Description>
             <Archive type="targz" sha1sum="e282ee682d794e3962baa4dead01917c42571e78">https://github.com/Bumblebee-Project/bbswitch/archive/v0.8.tar.gz</Archive>
             <BuildDependencies>
-                <Dependency version="4.9.7">kernel-module-headers</Dependency>
+                <Dependency version="4.6.4">kernel-module-headers</Dependency>
             </BuildDependencies>
             <SourceURI>kernel/drivers/module-bbswitch/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>module-bbswitch</Name>
             <RuntimeDependencies>
-                <Dependency version="4.9.7">kernel</Dependency>
+                <Dependency version="4.6.4">kernel</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library" permanent="true">/lib/modules</Path>
@@ -55034,6 +55225,45 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>libuv</Name>
+            <Homepage>http://libuv.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>custom</License>
+            <IsA>library</IsA>
+            <PartOf>system.devel</PartOf>
+            <Summary xml:lang="en">Multi-platform support library with a focus on asynchronous I/O</Summary>
+            <Description xml:lang="en">libuv is a multi-platform support library with a focus on asynchronous I/O. It was primarily developed for use by Node.js, but it&apos;s also used by Luvit, Julia, pyuv, and others.</Description>
+            <Archive type="targz" sha1sum="994d0f8ea2eda5c31530811680940b12025643ae">https://github.com/libuv/libuv/archive/v1.10.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>glibc</Dependency>
+                <Dependency>python-sphinx</Dependency>
+            </BuildDependencies>
+            <SourceURI>system/devel/libuv/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libuv</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc/libuv/</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-12-02</Date>
+                <Version>1.10.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>scons</Name>
             <Homepage>http://www.scons.org</Homepage>
             <Packager>
@@ -55428,7 +55658,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="fr">CMake, système make open-source et multi-plateforme. CMake est utilisé pour contrôler le processus de compilation de logiciel en utilisant une plate-forme de fichiers de configuration simple et indépendante de compilateur. CMake génère des makefiles et un environnement de travail natifs pouvant être utilisés dans l&apos;environnement du compilateur de votre choix.</Description>
             <Description xml:lang="en">CMake, the cross-platform, open-source make system. CMake is used to control the software compilation process using simple platform and compiler independent configuration files. CMake generates native makefiles and workspaces that can be used in the compiler environment of your choice.</Description>
             <Description xml:lang="tr">Cmake, açık kaynak kodlu ve birden fazla platformda çalışan bir &apos;make&apos; sistemidir. Yazılım derleme sürecini kontrol etmek için kullanılan CMake, derleyici bağımsız yapılandırma dosyalarının oluşturulmasını sağlar.</Description>
-            <Archive type="targz" sha1sum="4fe15bc983aacca8ae4811f6d8ad8f91b6faa973">http://www.cmake.org/files/v3.6/cmake-3.6.3.tar.gz</Archive>
+            <Archive type="targz" sha1sum="ea73af0c3c832e586bf2f82a13a708ea509d5a88">https://cmake.org/files/v3.7/cmake-3.7.2.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>curl</Dependency>
                 <Dependency>expat</Dependency>
@@ -55436,6 +55666,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Dependency>ncurses</Dependency>
                 <Dependency>zlib</Dependency>
                 <Dependency>xz</Dependency>
+                <Dependency>libvu</Dependency>
             </BuildDependencies>
             <SourceURI>system/devel/cmake/pspec.xml</SourceURI>
         </Source>
@@ -55457,6 +55688,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>3.7.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>3.6.3</Version>
@@ -56252,7 +56490,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="en">libvncserver provides a C library to create VNC servers.</Description>
             <Description xml:lang="tr">VNC sunucu benzeri kendi VNC (Virtual Network Computing) sunucunuzu oluşturmak isterseniz gerekli kütüphane</Description>
             <Description xml:lang="pl">Wieloplatformowa biblioteka C, pozwalającą na łatwą implementację trybu serwera lub klienta VNC (Virtual Network Computing) we własnym programie.</Description>
-            <Archive type="targz" sha1sum="2004c6ae493baeff3da40b61e0a0f73c83182dad">mirrors://sourceforge/libvncserver/LibVNCServer-0.9.9.tar.gz</Archive>
+            <Archive type="targz" sha1sum="d844a2c9e69465d104a8468dce515a49e4db9585">https://github.com/LibVNC/libvncserver/archive/LibVNCServer-0.9.11.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>gnutls</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
@@ -56279,8 +56517,8 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>0.9.9</Version>
+                <Date>2017-02-16</Date>
+                <Version>0.9.11</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>

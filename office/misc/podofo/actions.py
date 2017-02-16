@@ -12,14 +12,17 @@ from pisi.actionsapi import get
 def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")
-    cmaketools.configure("-DFREETYPE_INCLUDE_DIR=/usr/include/freetype2 \
+    cmaketools.configure('-DFREETYPE_INCLUDE_DIR=/usr/include/freetype2 \
                           -DPODOFO_BUILD_SHARED=1 \
                           -DPODOFO_BUILD_STATIC=0 \
                           -DPODOFO_HAVE_JPEG_LIB=1 \
                           -DPODOFO_HAVE_PNG_LIB=1 \
                           -DPODOFO_HAVE_TIFF_LIB=1 \
                           -DWANT_FONTCONFIG=1 \
-                          -DWANT_BOOST=1", sourceDir="..")
+                          -DUSE_STLPORT=0 \
+		                  -DWANT_BOOST="$(usex boost ON OFF)" \
+		                  -DHAVE_LIBIDN="$(usex idn ON OFF)" \
+		                  -DHAVE_CPPUNIT="$(usex test ON OFF)"', sourceDir="..")
     #-DUSE_STLPORT=1"
 
 def build():

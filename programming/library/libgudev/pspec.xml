@@ -1,4 +1,6 @@
 
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>libgudev</Name>

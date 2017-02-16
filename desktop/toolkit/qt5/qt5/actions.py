@@ -78,6 +78,7 @@ def install():
     shelltools.export("LD_LIBRARY_PATH", "%s/lib:%s" % (get.curDIR(), get.ENV("LD_LIBRARY_PATH")))
     autotools.rawInstall("INSTALL_ROOT=%s" % get.installDIR())
     
-    
-    
-    
+
+
+
+

@@ -15,7 +15,7 @@ def setup():
     autotools.configure(' --prefix=/usr --sysconfdir=/etc --enable-static \
                             --disable-silent-rules --enable-zlib --enable-x11 \
                             --enable-sdl --disable-vnc --disable-osx \
-                            --enable-video4linux2 --enable-fbdev --disable-mesa --with-gfxdrivers="omap,pvr2d"')
+                            --enable-video4linux2 --enable-fbdev --with-gfxdrivers="omap,pvr2d"')
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
