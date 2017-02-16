@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Touchscreen Access Library</Summary>
         <Description>Touchscreen Access Library.</Description>
-        <Archive sha1sum="a247788987c679f1951bd77cec3666b569bfcc11" type="targz">https://github.com/kergoth/tslib/releases/download/1.4/tslib-1.4.tar.gz</Archive>
+        <Archive sha1sum="db039d5e190bfe49f4cbdf86fd2ccc319ed9437e" type="targz">https://github.com/kergoth/tslib/archive/1.5.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -31,7 +31,7 @@
     <History>
         <Update release="1">
             <Date>2017-07-26</Date>
-            <Version>1.4</Version>
+            <Version>1.5</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

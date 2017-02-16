@@ -1,0 +1,39 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>umockdev</Name>
+        <Homepage>https://github.com/martinpitt/umockdev/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>Libry</IsA>
+        <Summary>Recording and replay of usbdevfs (for PtP/MTP devices) and evdev (touch pads, Wacom tablets, etc.) ioctls.</Summary>
+        <Description>You can use this from the command line, and a wide range of programming languages (C, Vala, and everything which supports gobject-introspection, such as JavaScript or Python).</Description>
+        <Archive sha1sum="95c535c60ddc412b91ab17bbc568deedf605ee9b" type="targz">https://github.com/martinpitt/umockdev/archive/0.8.13.tar.gz</Archive>
+        <BuildDependencies>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>umockdev</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="data">/usr/include/*</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/</Path>
+            <Path fileType="doc">/usr/share/*</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-01-21</Date>
+            <Version>0.8.13</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
