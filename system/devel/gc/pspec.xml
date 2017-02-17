@@ -19,7 +19,6 @@
           <Dependency>libatomic_ops</Dependency>
         </BuildDependencies>
         <Patches>
-          <Patch level="1">noelision.patch</Patch>
         </Patches>
     </Source>
 
