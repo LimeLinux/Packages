@@ -33,7 +33,7 @@
             <Dependency>gc</Dependency>
             <Dependency>gmp</Dependency>
             <Dependency>libffi</Dependency>
-            <Dependency>libtool-ltdl</Dependency>
+            <Dependency>libtool</Dependency>
             <Dependency>libunistring</Dependency>
             <Dependency>readline</Dependency>
         </RuntimeDependencies>
