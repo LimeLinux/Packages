@@ -21,7 +21,7 @@ def setup():
                          "-DSQLITE_ENABLE_FTS4",
                          "-DSQLITE_ENABLE_FTS3_PARENTHESIS",
                          "-DSQLITE_ENABLE_STMT_SCANSTATUS",
-			                "-DSQLITE_ENABLE_DBSTAT_VTAB=1",
+			             "-DSQLITE_ENABLE_DBSTAT_VTAB=1",
                          "-DSQLITE_SOUNDEX",
                          "-DSQLITE_ENABLE_RTREE",
                          "-DSQLITE_ENABLE_API_ARMOR")
@@ -43,9 +43,9 @@ def install():
 
     pisitools.dodoc("README*")
 
-    shelltools.cd("%s/sqlite-doc-3160200" % get.workDIR())
+    shelltools.cd("%s/sqlite-doc-3170000" % get.workDIR())
     shelltools.system("pwd")
 
-    pisitools.insinto("/usr/share/doc/sqlite", "../sqlite-doc-3160200/*")
+    pisitools.insinto("/usr/share/doc/sqlite", "../sqlite-doc-3170000/*")
    
 
