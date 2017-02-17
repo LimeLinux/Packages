@@ -17,8 +17,8 @@
         <Archive sha1sum="56c3e4cf3be90e11dfdd877b449adedc26cd8ec9" type="tarxz">http://bugseng.com/external/ppl/download/ftp/releases/1.2/ppl-1.2.tar.xz</Archive>
         <BuildDependencies>
             <!-- gmp with cxx support is needed -->
-            <Dependency>gmp-devel</Dependency>
-            <Dependency>glpk-devel</Dependency>
+            <Dependency>gmp</Dependency>
+            <Dependency>glpk</Dependency>
         </BuildDependencies>
     </Source>
 
