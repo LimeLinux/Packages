@@ -11,7 +11,8 @@ from pisi.actionsapi import shelltools
 
 def setup():
     autotools.configure(" --prefix=/usr \
-                          --enable-{dbus,perl,python='python2.7',textfe,fishlim,doat,sysinfo,minimal-flags}")
+                          --enable-python='python3' \
+                          --enable-textfe")
 
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
 

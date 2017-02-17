@@ -18,14 +18,6 @@
             <Dependency>ncurses</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>readline63-001.patch</Patch>
-            <Patch>readline63-002.patch</Patch>
-            <Patch>readline63-003.patch</Patch>
-            <Patch>readline63-004.patch</Patch>
-            <Patch>readline63-005</Patch>
-            <Patch>readline63-006</Patch>
-            <Patch>readline63-007</Patch>
-            <Patch>readline63-008</Patch>
         </Patches>
     </Source>
 
