@@ -47140,7 +47140,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="en">Standard (de)compression library</Summary>
             <Summary xml:lang="tr">Standart sıkıştırma/açma kütüphanesi</Summary>
             <Description xml:lang="en">Zlib is a general-purpose, patent-free, lossless data compression library which is used by many different programs.</Description>
-            <Archive type="tarxz" sha1sum="b598beb7acc96347cbd1020b71aef7871d374677">mirrors://sourceforge/libpng/zlib-1.2.8.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d99454aeae0ef35c653537eac7b0013750c2b83f">mirrors://sourceforge/libpng/zlib-1.2.10.tar.xz</Archive>
             <Patches>
                 <Patch level="1">dont-call-ldconfig.patch</Patch>
             </Patches>
@@ -47157,6 +47157,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>1.2.10</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.2.8</Version>
@@ -48218,7 +48225,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="fr">La librairie GNU Readline fourni un ensemble de fonctions utilisables par des applications permettant aux utilisateurs d&apos;éditer les lignes de commandes en cours de frappe. Les modes d&apos;éditions Emacs et vi sont disponibles. La librairie Readline inclus des fonctions supplémentaires de mémorisation de la liste de commandes entrées précédemment, afin de le rappeler et éventuellement les rééditer, ainsi que l&apos;expansion d&apos;historiques de commandes précédentes à la mode csh.</Description>
             <Description xml:lang="en">The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in. Both Emacs and vi editing modes are available. The Readline library includes additional functions to maintain a list of previously-entered command lines, to recall and perhaps reedit those lines, and perform csh-like history expansion on previous commands.</Description>
             <Description xml:lang="tr">GNU Readline kütüphanesi uygulamalara sanki kullanıcılar kendileri yazıyormuş gibi komut satırı girişlerini düzenleme imkanı veren işlev setini sunar. Readline kütüphanesi daha önce girilmiş bir komut satırları listesini düzenleme, tekrar çağırma ve belki de bu satırları tekrar düzenleme ve csh tipi geçmiş bilgisi genişletmelerindeki önceki komutları yürütme imkanı sağlayan ek işlevler sağlar.</Description>
-            <Archive type="targz" sha1sum="017b92dc7fd4e636a2b5c9265a77ccc05798c9e1">mirrors://gnu/readline/readline-6.3.tar.gz</Archive>
+            <Archive type="targz" sha1sum="d9095fa14a812495052357e1d678b3f2ac635463">mirrors://gnu/readline/readline-7.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>ncurses</Dependency>
             </BuildDependencies>
@@ -48248,6 +48255,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>6.3</Version>
@@ -49235,6 +49249,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>1.06.95</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.06.95</Version>
@@ -49931,7 +49952,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">XZ sıkıştırma araçları</Summary>
             <Description xml:lang="en">XZ Utils provide a general purpose data compression library and command line tools. The .xz format supports multiple compression algorithms, which are called &quot;filters&quot; in context of XZ Utils. The primary filter is currently LZMA2.</Description>
             <Description xml:lang="tr">xz, genel amaçlı bir veri sıkıştırma kütüphanesi ve konut satırı araçları içerir. xz dosya biçimi filtre adı verilen sıkıştırma algoritmalarını destekler, öntanımlı filtre ise LZMA2 algoritmasıdır.</Description>
-            <Archive type="tarxz" sha1sum="72c567d3263345844191a7e618779b179d1f49e0">http://tukaani.org/xz/xz-5.2.2.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="a2975d12e0905daec48ec87c0098602e0669d195">http://tukaani.org/xz/xz-5.2.3.tar.xz</Archive>
             <SourceURI>system/base/xz/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -49946,6 +49967,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>5.2.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>5.2.2</Version>
@@ -50155,7 +50183,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="de">Ein einbettbares Datenbank Engine, dass die Entwickler mit schnellen, zuverlässigen und lokalen Persistenz unterstützt und null Administration erfordert.</Summary>
             <Description xml:lang="en">The Berkeley Database (Berkeley DB) is a programmatic toolkit that provides embedded database support for both traditional and client/server applications. The Berkeley DB includes B+tree, Extended Linear Hashing, Fixed and Variable-length record access methods, transactions, locking, logging, shared memory caching, and database recovery. The Berkeley DB supports C, C++, Java, and Perl APIs. It is used by many applications, including Python and Perl, so this should be installed on all systems.</Description>
             <Description xml:lang="tr">Berkeley DB geliştiricilere yerel süreklilik sağlayan ve herhangi bir ayar gerektirmeden (zero administration) kullanılan, hızlı ve gömülebilir bir veritabanı motorudur.</Description>
-            <Archive type="targz" sha1sum="fa3f8a41ad5101f43d08bc0efb6241c9b6fc1ae9">http://download.oracle.com/berkeley-db/db-5.3.28.tar.gz</Archive>
+            <Archive type="targz" sha1sum="646c57b99799dc300207976e2270cdaca1a2f198">http://download.oracle.com/berkeley-db/db-6.2.23.tar.gz</Archive>
             <SourceURI>system/base/db/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -50172,7 +50200,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="en">Documentation for db</Summary>
             <PartOf>system.doc</PartOf>
             <RuntimeDependencies>
-                <Dependency release="1">db</Dependency>
+                <Dependency release="2">db</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="doc">/usr/share/doc</Path>
@@ -50182,6 +50210,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Replaces>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>5.2.23</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>5.3.28</Version>
@@ -50493,7 +50528,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="fr">Bash est le Bourne Again SHell du projet GNU, une implémentation complête du POSIX IEEE et des spécifications d&apos;interprétation de commande (shell) de l&apos;Open Group, avec édition interactive de ligne de commande et des fonctionnalités à la csh tels que la substitution dans l&apos;historique de commande.</Description>
             <Description xml:lang="en">Bash is the GNU Project&apos;s Bourne Again SHell, a complete implementation of the IEEE POSIX and Open Group shell specification with interactive command line editing, csh-like features such as history substitution.</Description>
             <Description xml:lang="tr">Bash, IEEE POSIX ve Open Group&apos;un interaktif komut satırı düzenleme,  geçmiş komutları tamamlama  gibi csh tipi özellikler gibi kabuk uygulamaları tariflerinin tam olarak uygulayan GNU Projesinin Bourne Again SHell kabuk programıdır.</Description>
-            <Archive type="targz" sha1sum="33b1bcc5dca1b72f28b2baeca6efa0d422097964">mirrors://gnu/bash/bash-4.3.30.tar.gz</Archive>
+            <Archive type="targz" sha1sum="33b1bcc5dca1b72f28b2baeca6efa0d422097964">mirrors://gnu/bash/bash-4.4.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>ncurses</Dependency>
             </BuildDependencies>
@@ -50561,6 +50596,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>4.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>4.3_p46</Version>
@@ -51003,52 +51045,6 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>8.39</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>limelinux-python</Name>
-            <Homepage>http://www.limelinux.com</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>system.base</PartOf>
-            <Summary xml:lang="en">Python modules for Pisi Linux</Summary>
-            <Summary xml:lang="tr">PiSi Linux için Python modülleri</Summary>
-            <Description xml:lang="en">Python modules for Pisi Linux provides functions for common task, with the aim of easing development.</Description>
-            <Description xml:lang="tr">PiSi Linux için Python modülleri genel işler için fonksiyonlar sunarak geliştirme işini kolaylaştırmayı amaçlamaktadır.</Description>
-            <Description xml:lang="es">Módulos Python para PiSi Linux facilitan funciones para tareas comunes, para simplificar el desarrollo.</Description>
-            <Archive type="targz" sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40">http://source.limelinux.com/1.0/limelinux-python-0.4.8.tar.gz</Archive>
-            <BuildDependencies>
-                <Dependency>python</Dependency>
-                <Dependency>libX11</Dependency>
-            </BuildDependencies>
-            <SourceURI>system/base/pisilinux-python/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>limelinux-python</Name>
-            <RuntimeDependencies>
-                <Dependency>python</Dependency>
-                <Dependency>libX11</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/python2.7/site-packages/pardus/xorg</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>0.4.8</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -52570,7 +52566,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="en">GMP is a free library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating point numbers. There is no practical limit to the precision except the ones implied by the available memory in the machine GMP runs on. GMP has a rich set of functions, and the functions have a regular interface.</Description>
             <Description xml:lang="tr">GMP işaretli tamsayılar, rasyonel ve ondalık sayılar üzerinde istenilen kadar duyarlı aritmetik işlemler yapan bir kitaplıktır. Yüklü olduğu makinenin hafıza sınırı dışında herhangi bir duyarlılık limiti yoktur. Zengin fonksiyonları ve düzenli bir arabirimi vardır.</Description>
             <Description xml:lang="es">GMP es una librería libre para aritmética con precisión arbitraria, operando con signed integers, números racionales, y punto flotante. Practicamente no hay límite de precisión excepto los de la memoria disponible en el equipo donde se está ejecutando GMP. GMP tiene un amplio conjunto de funciones y las funciones tienen una interfaz regular.</Description>
-            <Archive type="tarxz" sha1sum="4da491d63ef850a7662f41da27ad1ba99c2dbaa1">mirrors://gnu/gmp/gmp-6.1.1.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="9dc6981197a7d92f339192eea974f5eca48fcffe">mirrors://gnu/gmp/gmp-6.1.2.tar.xz</Archive>
             <SourceURI>system/base/gmp/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -52583,6 +52579,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>6.1.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>6.1.1</Version>
@@ -53090,6 +53093,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>2.4.47</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.4.47</Version>
@@ -53743,6 +53753,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>2.2.52</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.2.52</Version>
@@ -54077,7 +54094,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="fr">L&apos;utilitaire m4 est processeur de macro permettant de lire un ou plusieurs fichiers, les traiter en fonction leurs directives macro puis écrire le résultat dans la sortie standard.</Description>
             <Description xml:lang="en">The m4 utility is a macro processor that shall read one or more text files, process them according to their included macro statements, and write the results to standard output</Description>
             <Description xml:lang="tr">m4, bir ya da daha fazla metin dosyasını okuyan; içerdikleri makro kurallarına göre bu dosyaları işleyen ve sonuçlarını standart çıktıya ileten bir makro işlemcisidir.</Description>
-            <Archive type="targz" sha1sum="4f80aed6d8ae3dacf97a0cb6e989845269e342f0">mirrors://gnu/m4/m4-1.4.17.tar.gz</Archive>
+            <Archive type="tarxz" sha1sum="228604686ca23f42e48b98930babeb5d217f1899">mirrors://gnu/m4/m4-1.4.18.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gettext</Dependency>
                 <Dependency>libsigsegv</Dependency>
@@ -54097,6 +54114,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>1.4.18</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.4.17</Version>
@@ -54286,7 +54310,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <PartOf>system.devel</PartOf>
             <Summary xml:lang="en">Integer Set Library</Summary>
             <Description xml:lang="en">isl is a library for manipulating sets and relations of integer points bounded by linear constraints.</Description>
-            <Archive type="tarbz2" sha1sum="3904274c84fb3068e4f59b6a6b0fe29e7a2b7010">http://isl.gforge.inria.fr/isl-0.13.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="bbffc5a2b05e4f0c97e882f96c448504491dc4ed">http://isl.gforge.inria.fr/isl-0.18.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>gmp</Dependency>
             </BuildDependencies>
@@ -54304,6 +54328,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>0.18</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>0.13</Version>
@@ -54608,6 +54639,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>3.2.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>3.2.1</Version>
@@ -54655,6 +54693,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>1.1.29</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.1.29</Version>
@@ -54969,6 +55014,72 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>guile</Name>
+            <Homepage>http://www.gnu.org/software/guile/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>app:console</IsA>
+            <IsA>library</IsA>
+            <PartOf>system.devel</PartOf>
+            <Summary xml:lang="fr">Interpréteur et librairie GNU Scheme.</Summary>
+            <Summary xml:lang="en">GNU Scheme interpreter and library</Summary>
+            <Summary xml:lang="tr">GNU Scheme yorumlayıcısı ve kitaplığı</Summary>
+            <Summary xml:lang="pl">Język GNU Extension language.</Summary>
+            <Description xml:lang="en">GUILE (GNU&apos;s Ubiquitous Intelligent Language for Extension) is a library implementation of the Scheme programming language, written in C. GUILE provides a machine-independent execution platform that can be linked in as a library during the building of extensible programs.</Description>
+            <Archive type="tarxz" sha1sum="627f7b5004f01b7e2c074e03fff3eda235c0d9ab">mirrors://gnu/guile/guile-2.0.13.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gc</Dependency>
+                <Dependency>gettext</Dependency>
+                <Dependency>gmp</Dependency>
+                <Dependency>libunistring</Dependency>
+                <Dependency>libffi</Dependency>
+            </BuildDependencies>
+            <SourceURI>system/devel/guile/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>guile</Name>
+            <RuntimeDependencies>
+                <Dependency>gc</Dependency>
+                <Dependency>gmp</Dependency>
+                <Dependency>libffi</Dependency>
+                <Dependency>libtool-ltdl</Dependency>
+                <Dependency>libunistring</Dependency>
+                <Dependency>readline</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="info">/usr/share/info</Path>
+                <Path fileType="library">/usr/lib/lib*</Path>
+                <Path fileType="data">/usr/share/guile</Path>
+                <Path fileType="data">/usr/share/emacs</Path>
+                <Path fileType="data">/usr/share/gdb/auto-load</Path>
+                <Path fileType="library">/usr/lib/guile/2.0</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/share/aclocal</Path>
+                <Path fileType="executable">/usr/bin/guile-snarf</Path>
+                <Path fileType="executable">/usr/bin/guile-config</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-04-27</Date>
+                <Version>2.0.13</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>catbox</Name>
             <Homepage>http://limelinux.com</Homepage>
             <Packager>
@@ -55202,7 +55313,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">Atomik bellek işlemleri kütüphanesi</Summary>
             <Description xml:lang="en">libatomic_ops provides implementations for atomic memory update operations on a number of architectures. This allows direct use of these in reasonably portable code.</Description>
             <Description xml:lang="tr">libatomic_ops, çeşitli mimarilerde atomik bellek işlemleri yapılmasını sağlayarak taşınabilir kod yazma olanağı veren bir kütüphanedir.</Description>
-            <Archive type="targz" sha1sum="9ffb32cbcfc6bb455a5b6ed8f0e1f2a0618db192">https://github.com/ivmai/libatomic_ops/archive/libatomic_ops-7_4_2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="426af02f1bb8b91979fa8794e9e0b29e2be1e47e">http://www.ivmaisoft.com/_bin/atomic_ops/libatomic_ops-7.4.4.tar.gz</Archive>
             <SourceURI>system/devel/libatomic_ops/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -55214,6 +55325,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>7.4.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>7.4.2</Version>
@@ -55278,7 +55396,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="fr">Utilitaire extensible écrit en python. On peut considérer SCons comme un substitut amélioré multi-plateforme de Make intégrant des fonctionnalités similaires à celles d&apos;autoconf/automake et un gestionnaire de cache de compilateur tel ccache.</Description>
             <Description xml:lang="en">Think of SCons as an improved, cross-platform substitute for the classic Make utility with integrated functionality similar to autoconf/automake and compiler caches such as ccache.</Description>
             <Description xml:lang="tr">Python temelli, esnek, geliştirilebilir inşa aracı. SCons, klasik &quot;make&quot; aracına &quot;autconf/automake&quot; özellikleri ve &quot;ccache&quot; gibi derleyici önbelleği eklenmiş, gelişmiş bir araç olarak düşünülebilir.</Description>
-            <Archive type="targz" sha1sum="f0bfbe81aa1c1571e8de74e30a0ae1015516a9e8">mirrors://sourceforge/scons/scons-2.4.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="f742350251734df75355e51c70f291e119ef927a">mirrors://sourceforge/scons/scons-2.5.1.tar.gz</Archive>
             <SourceURI>system/devel/scons/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -55291,6 +55409,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>2.5.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.4.1</Version>
@@ -55407,7 +55532,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">GNU Doğrusal Programlama Kiti</Summary>
             <Description xml:lang="fr">Le paquet GLPK (GNU Linear Programming Kit - Kit de Programmation Linéaire) a pour objectif de résoudre le problème de programmation linéaire (LP) de grande envergure, la programmation d&apos;entiers mixés (MIP), et autres problèmes de la sorte. Il s&apos;agit d&apos;un ensemble de routines écrites en C ANSI et organisées de manière à former une librairie que l&apos;on peut appeler.</Description>
             <Description xml:lang="en">The GLPK (GNU Linear Programming Kit) package is intended for solving large-scale linear programming (LP), mixed integer programming (MIP), and other related problems. It is a set of routines written in ANSI C and organized in the form of a callable library.</Description>
-            <Archive type="targz" sha1sum="4e55a3d2aa38b19c5bdd8a195738dbaf44e91e90">mirrors://gnu/glpk/glpk-4.60.tar.gz</Archive>
+            <Archive type="targz" sha1sum="5d260d2dd3143f7b8446fb007c6ce8c4272cafa2">mirrors://gnu/glpk/glpk-4.61.tar.gz</Archive>
             <SourceURI>system/devel/glpk/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -55420,6 +55545,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>4.61</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>4.60</Version>
@@ -55525,7 +55657,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="en">The Boehm-Demers-Weiser conservative garbage collector can be used as a garbage collecting replacement for C malloc or C++ new.</Description>
             <Description xml:lang="tr">gc, C malloc veya C++ new yerine kullanılabilecek, Boehm-Demers-Weiser çöp toplayıcısı kitaplığıdır.</Description>
             <Description xml:lang="pl">Boehm&apos;s GC jest odśmiecającym alokatorem pamięci, który został zaprojektowany z zamiarem używania jako zastępcza wtyczka dla funkcji C malloc.</Description>
-            <Archive type="targz" sha1sum="cd4a54620c38a2c361b3ee99dd134dbffb57c313">http://www.hboehm.info/gc/gc_source/gc-7.4.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="bae6b3754ff8d3845b5171346bf924e13be6c693">http://hboehm.info/gc/gc_source/gc-7.6.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libatomic_ops</Dependency>
             </BuildDependencies>
@@ -55543,10 +55675,83 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>7.6.0</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>7.4.2</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ppl</Name>
+            <Homepage>http://www.cs.unipr.it/ppl/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:console</IsA>
+            <IsA>library</IsA>
+            <PartOf>system.devel</PartOf>
+            <Summary xml:lang="en">Pharma Polyhedra library</Summary>
+            <Summary xml:lang="tr">Pharma Polyhedra kitaplığı</Summary>
+            <Description xml:lang="en">ppl is the Parma Polyhedra Library that provides numerical abstractions for analysis of complex systems.</Description>
+            <Description xml:lang="tr">ppl, kompleks sistemlerin analizi için sayısal ayrım sağlayan Pharma Polyhedra kitaplığıdır.</Description>
+            <Archive type="tarxz" sha1sum="56c3e4cf3be90e11dfdd877b449adedc26cd8ec9">http://bugseng.com/external/ppl/download/ftp/releases/1.2/ppl-1.2.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gmp-devel</Dependency>
+                <Dependency>glpk-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>system/devel/ppl/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ppl</Name>
+            <RuntimeDependencies>
+                <Dependency>gmp</Dependency>
+                <Dependency>glpk</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc/COPYING</Path>
+                <Path fileType="doc">/usr/share/doc/CREDITS</Path>
+                <Path fileType="doc">/usr/share/doc/README</Path>
+                <Path fileType="doc">/usr/share/doc/NEWS</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin/ppl-config</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share/aclocal</Path>
+                <Path fileType="man">/usr/share/man/man3</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>ppl-docs</Name>
+            <Summary xml:lang="en">Documentation for ppl</Summary>
+            <Summary xml:lang="tr">ppl kitaplığı belgeleri</Summary>
+            <PartOf>system.doc</PartOf>
+            <RuntimeDependencies>
+                <Dependency>ppl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc/ppl</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-27</Date>
+                <Version>1.2</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -55666,7 +55871,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Dependency>ncurses</Dependency>
                 <Dependency>zlib</Dependency>
                 <Dependency>xz</Dependency>
-                <Dependency>libvu</Dependency>
+                <Dependency>libuv</Dependency>
             </BuildDependencies>
             <SourceURI>system/devel/cmake/pspec.xml</SourceURI>
         </Source>

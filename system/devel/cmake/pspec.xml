@@ -21,7 +21,7 @@
             <Dependency>ncurses</Dependency>
             <Dependency>zlib</Dependency>
             <Dependency>xz</Dependency>
-            <Dependency>libvu</Dependency>
+            <Dependency>libuv</Dependency>
         </BuildDependencies>
     </Source>
 

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Integer Set Library</Summary>
         <Description>isl is a library for manipulating sets and relations of integer points bounded by linear constraints.</Description>
-        <Archive sha1sum="3904274c84fb3068e4f59b6a6b0fe29e7a2b7010" type="tarbz2">http://isl.gforge.inria.fr/isl-0.13.tar.bz2</Archive>
+        <Archive sha1sum="bbffc5a2b05e4f0c97e882f96c448504491dc4ed" type="tarbz2">http://isl.gforge.inria.fr/isl-0.18.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gmp</Dependency>
         </BuildDependencies>
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2016-12-21</Date>
+            <Version>0.18</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>0.13</Version>
