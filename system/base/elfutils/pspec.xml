@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Libraries/utilities to handle ELF objects</Summary>
         <Description>elfutils contains libraries and utilities to handle ELF objects and is a replacement for libelf.</Description>
-        <Archive sha1sum="00b678e1182c331ea75af982d666bbc38ef8b055" type="tarbz2">https://fedorahosted.org/releases/e/l/elfutils/0.166/elfutils-0.166.tar.bz2</Archive>
+        <Archive sha1sum="53e486ddba572cf872d32e9aad4d7d7aa6e767ff" type="tarbz2">https://fedorahosted.org/releases/e/l/elfutils/0.168/elfutils-0.168.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>bzip2</Dependency>
             <Dependency>xz</Dependency>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2017-12-21</Date>
+            <Version>0.168</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>0.166</Version>

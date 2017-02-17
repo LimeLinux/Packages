@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Library for error values used by GnuPG components</Summary>
         <Description>libgpg-error is a library that defines common error values for all GnuPG components.</Description>
-        <Archive sha1sum="777133caab1411fbc1f8cb29e953850597278d0f" type="targz">ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.24.tar.gz</Archive>
+        <Archive sha1sum="11c33a660f73d2965dcf48fb2f4d48d553688fe5" type="targz">ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.26.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="doc">/usr/share/info</Path>
+            <Path fileType="doc">/usr/share/libgpg-error/</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/aclocal</Path>
@@ -33,6 +34,13 @@
 
 
     <History>
+        <Update release="2">
+            <Date>2017-02-21</Date>
+            <Version>1.26</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>1.24</Version>
