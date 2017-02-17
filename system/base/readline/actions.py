@@ -28,5 +28,8 @@ def install():
 
     pisitools.removeDir("/usr/bin")
 
+    pisitools.dosym("/usr/lib/libreadline.so.7.0","/usr/lib/libreadline.so.6")
+    pisitools.dosym("/usr/lib/libhistory.so.7.0","/usr/lib/libhistory.so.6")
+
     pisitools.dohtml("doc/")
     pisitools.dodoc("CHANGELOG", "CHANGES", "README", "USAGE", "NEWS")
