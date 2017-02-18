@@ -9,7 +9,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("GOROOT", "%s/go-go1.7.1" % get.workDIR())
+shelltools.export("GOROOT", "%s/go-go1.8" % get.workDIR())
 shelltools.export("GOBIN", "$GOROOT/bin")
 shelltools.export("GOPATH", "%s" % get.workDIR())
 shelltools.export("GOROOT_FINAL", "/usr/lib/go")
@@ -22,17 +22,17 @@ NoStrip=["/"]
 
 def build():
     shelltools.cd("src")
-    shelltools.export("GOROOT", "%s/go-go1.7.1" % get.workDIR())
+    shelltools.export("GOROOT", "%s/go-go1.8" % get.workDIR())
     shelltools.export("GOBIN", "$GOROOT/bin")
     shelltools.export("GOPATH", "%s" % get.workDIR())
     shelltools.export("GOROOT_FINAL", "/usr/lib/go")
-    shelltools.export("GOROOT_BOOTSTRAP", "%s/go-go1.7.1/go-linux-amd64-bootstrap" % get.workDIR())
+    shelltools.export("GOROOT_BOOTSTRAP", "%s/go-go1.8/go-linux-amd64-bootstrap" % get.workDIR())
 
     shelltools.export("GOOS","linux")
     shelltools.export("GOARCH","amd64")
     shelltools.system("bash make.bash")
 
-    shelltools.cd("%s/go-go1.7.1" % get.workDIR())
+    shelltools.cd("%s/go-go1.8" % get.workDIR())
 
 
 
@@ -47,7 +47,7 @@ def build():
 
 
 def install():  
-    shelltools.cd("%s/go-go1.7.1" % get.workDIR())
+    shelltools.cd("%s/go-go1.8" % get.workDIR())
     
     pisitools.dobin("bin/*")
     pisitools.dodir("/usr/lib/go")
