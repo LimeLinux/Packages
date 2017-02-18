@@ -20,7 +20,7 @@
             <Dependency>libwacom</Dependency>
         </BuildDependencies>
         <Patches>
-          <Patch level="1">libwacom.patch</Patch>
+          <!--Patch level="1">libwacom.patch</Patch-->
         </Patches>
     </Source>
 
