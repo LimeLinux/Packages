@@ -8,7 +8,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "%s-4.3-0.91" % get.srcNAME()
+WorkDir = "%s-4.4-0.92" % get.srcNAME()
 
 def setup():
     autotools.configure()
