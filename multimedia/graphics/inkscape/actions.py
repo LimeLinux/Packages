@@ -6,10 +6,12 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
     pisitools.cxxflags.add(" -std=c++11")
+    shelltools.system("./autogen.sh")
     autotools.configure(" \
                          --enable-lcms \
                          --disable-static \
