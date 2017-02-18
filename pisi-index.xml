@@ -3018,308 +3018,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>java7-openjdk</Name>
-            <Homepage>http://icedtea.classpath.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>programming.language.java</PartOf>
-            <Summary xml:lang="en">Open Java Development Kit</Summary>
-            <Description xml:lang="en">OpenJDK (Open Java Development Kit) is a free and open source implementation of the Java Platform, Standard Edition (Java SE).</Description>
-            <Archive type="targz" sha1sum="564d8abe079a04f71eee90daa79f08c67c22ba49">http://icedtea.wildebeest.org/download/source/icedtea-2.6.8.tar.gz</Archive>
-            <AdditionalFiles>
-                <AdditionalFile target="patches/giflib_5.1.diff">giflib_5.1.diff</AdditionalFile>
-                <AdditionalFile target="patches/fontconfig-paths.diff">fontconfig-paths.diff</AdditionalFile>
-                <AdditionalFile target="patches/openjdk7_nonreparenting-wm.diff">openjdk7_nonreparenting-wm.diff</AdditionalFile>
-            </AdditionalFiles>
-            <BuildDependencies>
-                <Dependency>ant</Dependency>
-                <Dependency>wget</Dependency>
-                <Dependency>rhino</Dependency>
-                <Dependency>fastjar</Dependency>
-                <Dependency>nss</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>attr</Dependency>
-                <Dependency>xorg-proto</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>cups</Dependency>
-                <Dependency>eclipse-ecj</Dependency>
-                <Dependency>libXt</Dependency>
-                <Dependency>libSM</Dependency>
-                <Dependency>lcms2</Dependency>
-                <Dependency>jdk7-openjdk</Dependency>
-                <Dependency>libICE</Dependency>
-                <Dependency>libpng</Dependency>
-                <Dependency>giflib</Dependency>
-                <Dependency>libxslt</Dependency>
-                <Dependency>libXtst</Dependency>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>libXinerama</Dependency>
-                <Dependency>libjpeg-turbo</Dependency>
-            </BuildDependencies>
-            <SourceURI>programming/language/java/jre7-openjdk/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>jre7-openjdk-headless</Name>
-            <Summary xml:lang="en">Free Java environment based on OpenJDK 7.0 with IcedTea7 replacing binary plugs - Minimal Java runtime - needed for executing non GUI Java programs</Summary>
-            <RuntimeDependencies>
-                <Dependency>atk</Dependency>
-                <Dependency>cups</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>lcms2</Dependency>
-                <Dependency>libXi</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libXext</Dependency>
-                <Dependency>libXtst</Dependency>
-                <Dependency>freetype</Dependency>
-                <Dependency>fontconfig</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-                <Dependency>libXrender</Dependency>
-                <Dependency>libjpeg-turbo</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin/orbd</Path>
-                <Path fileType="executable">/usr/bin/rmid</Path>
-                <Path fileType="executable">/usr/bin/java</Path>
-                <Path fileType="data">/etc/env.d/20java_jre.csh</Path>
-                <Path fileType="data">/etc/env.d/20java_jre</Path>
-                <Path fileType="config">/etc/java-7-openjdk/</Path>
-                <Path fileType="executable">/usr/bin/pack200</Path>
-                <Path fileType="executable">/usr/bin/keytool</Path>
-                <Path fileType="executable">/usr/bin/tnameserv</Path>
-                <Path fileType="executable">/usr/bin/unpack200</Path>
-                <Path fileType="man">/usr/share/man/man1/rmid.1</Path>
-                <Path fileType="man">/usr/share/man/man1/orbd.1</Path>
-                <Path fileType="man">/usr/share/man/man1/java.1</Path>
-                <Path fileType="executable">/usr/bin/servertool</Path>
-                <Path fileType="executable">/usr/bin/rmiregistry</Path>
-                <Path fileType="doc">/usr/share/doc/java7-openjdk/</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/rmid.1</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/java.1</Path>
-                <Path fileType="man">/usr/share/man/man1/pack200.1</Path>
-                <Path fileType="man">/usr/share/man/man1/keytool.1</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/orbd.1</Path>
-                <Path fileType="man">/usr/share/man/man1/tnameserv.1</Path>
-                <Path fileType="man">/usr/share/man/man1/unpack200.1</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/pack200.1</Path>
-                <Path fileType="man">/usr/share/man/man1/servertool.1</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/keytool.1</Path>
-                <Path fileType="man">/usr/share/man/man1/rmiregistry.1</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/tnameserv.1</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/unpack200.1</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/servertool.1</Path>
-                <Path fileType="doc">/usr/share/doc/jre7-openjdk-headless</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/rmiregistry.1</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/jre/lib</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/java</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/orbd</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/rmid</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/keytool</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/pack200</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/orbd</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/java</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/rmid</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/tnameserv</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/unpack200</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/servertool</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/policytool</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/rmiregistry</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/keytool</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/pack200</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/lib/*/jli/libjli.so</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/tnameserv</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/unpack200</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/servertool</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/rmiregistry</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/jre/lib/amd64/xawt/libmawt.so</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/jre/lib/amd64/headless/libmawt.so</Path>
-            </Files>
-            <AdditionalFiles>
-                <AdditionalFile target="/etc/env.d/20java_jre" permission="0644" owner="root">20java_jre</AdditionalFile>
-                <AdditionalFile target="/etc/env.d/20java_jre.csh" permission="0644" owner="root">20java_jre.csh</AdditionalFile>
-            </AdditionalFiles>
-        </Package>
-        <Package>
-            <Name>jre7-openjdk</Name>
-            <Summary xml:lang="en">Free Java environment based on OpenJDK 7.0 with IcedTea7 replacing binary plugs - Full Java runtime environment - needed for executing Java GUI and Webstart programs</Summary>
-            <RuntimeDependencies>
-                <Dependency>zlib</Dependency>
-                <Dependency>giflib</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libpng</Dependency>
-                <Dependency>libXext</Dependency>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>libjpeg-turbo</Dependency>
-                <Dependency>jre7-openjdk-headless</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="doc">/usr/share/doc/openjdk</Path>
-                <Path fileType="executable">/usr/bin/policytool</Path>
-                <Path fileType="data">/usr/share/icons/hicolor/</Path>
-                <Path fileType="man">/usr/share/man/man1/policytool.1</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/policytool.1</Path>
-                <Path fileType="data">/usr/share/applications/policytool.desktop</Path>
-                <Path fileType="executable">/usr/lib/jvm/java-7-openjdk/jre/bin/policytool</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/jre/lib/*/libjsoundalsa.so</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/jre/lib/*/libpulse-java.so</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/jre/lib/*/libsplashscreen.so</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/jre/lib/amd64/libjsoundalsa.so</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/jre/lib/amd64/libpulse-java.so</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/jre/lib/amd64/libsplashscreen.so</Path>
-            </Files>
-            <Conflicts>
-                <Package>sun-jre</Package>
-            </Conflicts>
-            <Replaces>
-                <Package>sun-jre</Package>
-            </Replaces>
-        </Package>
-        <Package>
-            <Name>jdk7-openjdk</Name>
-            <Summary xml:lang="en">Free Java environment based on OpenJDK 7.0 with IcedTea7 replacing binary plugs - SDK</Summary>
-            <RuntimeDependencies>
-                <Dependency>zlib</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>jre7-openjdk-headless</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/etc/env.d/21java_jdk.csh</Path>
-                <Path fileType="data">/etc/env.d/21java_jdk</Path>
-                <Path fileType="man">/usr/share/man/man1/</Path>
-                <Path fileType="man">/usr/share/man/ja/man1/</Path>
-                <Path fileType="executable">/usr/bin/jar</Path>
-                <Path fileType="executable">/usr/bin/xjc</Path>
-                <Path fileType="executable">/usr/bin/apt</Path>
-                <Path fileType="executable">/usr/bin/jdb</Path>
-                <Path fileType="executable">/usr/bin/jps</Path>
-                <Path fileType="executable">/usr/bin/jmap</Path>
-                <Path fileType="executable">/usr/bin/idlj</Path>
-                <Path fileType="executable">/usr/bin/jcmd</Path>
-                <Path fileType="executable">/usr/bin/jhat</Path>
-                <Path fileType="executable">/usr/bin/rmic</Path>
-                <Path fileType="executable">/usr/bin/javac</Path>
-                <Path fileType="executable">/usr/bin/javah</Path>
-                <Path fileType="executable">/usr/bin/javap</Path>
-                <Path fileType="executable">/usr/bin/jinfo</Path>
-                <Path fileType="executable">/usr/bin/wsgen</Path>
-                <Path fileType="executable">/usr/bin/jstat</Path>
-                <Path fileType="executable">/usr/bin/jstack</Path>
-                <Path fileType="executable">/usr/bin/jstatd</Path>
-                <Path fileType="executable">/usr/bin/javadoc</Path>
-                <Path fileType="executable">/usr/bin/extcheck</Path>
-                <Path fileType="executable">/usr/bin/jconsole</Path>
-                <Path fileType="executable">/usr/bin/wsimport</Path>
-                <Path fileType="executable">/usr/bin/jarsigner</Path>
-                <Path fileType="executable">/usr/bin/jsadebugd</Path>
-                <Path fileType="executable">/usr/bin/schemagen</Path>
-                <Path fileType="executable">/usr/bin/serialver</Path>
-                <Path fileType="executable">/usr/bin/jrunscript</Path>
-                <Path fileType="executable">/usr/bin/appletviewer</Path>
-                <Path fileType="executable">/usr/bin/native2ascii</Path>
-                <Path fileType="data">/usr/share/applications/jconsole.desktop</Path>
-                <Path fileType="header">/usr/lib/jvm/java-7-openjdk/include</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/apt</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jar</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jdb</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jps</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/xjc</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/rmic</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/rmid</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/idlj</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/orbd</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/java</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jhat</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jmap</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jcmd</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/javac</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/javah</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/javap</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jinfo</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jstat</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/wsgen</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jstatd</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jstack</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/pack200</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/javadoc</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/keytool</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/wsimport</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/extcheck</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jconsole</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/tnameserv</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/unpack200</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/schemagen</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/serialver</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jarsigner</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jsadebugd</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/jrunscript</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/policytool</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/servertool</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/rmiregistry</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/java-rmi.cgi</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/native2ascii</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/bin/appletviewer</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/lib/jexec</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/lib/ct.sym</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/lib/dt.jar</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/lib/ir.idl</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/lib/orb.idl</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/lib/tools.jar</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/lib/sa-jdi.jar</Path>
-                <Path fileType="library">/usr/lib/jvm/java-7-openjdk/lib/jconsole.jar</Path>
-            </Files>
-            <Conflicts>
-                <Package>sun-jdk</Package>
-            </Conflicts>
-            <Replaces>
-                <Package>sun-jdk</Package>
-            </Replaces>
-            <AdditionalFiles>
-                <AdditionalFile target="/etc/env.d/21java_jdk.csh" permission="0644" owner="root">21java_jdk.csh</AdditionalFile>
-                <AdditionalFile target="/etc/env.d/21java_jdk" permission="0644" owner="root">21java_jdk</AdditionalFile>
-            </AdditionalFiles>
-        </Package>
-        <Package>
-            <Name>openjdk7-src</Name>
-            <Summary xml:lang="en">Free Java environment based on OpenJDK 7.0 with IcedTea7 replacing binary plugs - sources</Summary>
-            <RuntimeDependencies>
-                <Dependency>jdk7-openjdk</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/lib/jvm/java-7-openjdk/src.zip</Path>
-            </Files>
-        </Package>
-        <Package>
-            <Name>openjdk7-doc</Name>
-            <Summary xml:lang="en">Free Java environment based on OpenJDK 7.0 with IcedTea7 replacing binary plugs - documentation</Summary>
-            <RuntimeDependencies>
-                <Dependency>jdk7-openjdk</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="doc">/usr/share/doc/openjdk7-doc/</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>7u_121.2.6.8</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>npapi-sdk</Name>
             <Homepage>http://code.google.com/p/npapi-sdk/</Homepage>
             <Packager>
@@ -3370,7 +3068,7 @@
             <Description xml:lang="en">Vala is a new programming language that aims to bring modern programming language features to GNOME developers without imposing any additional runtime requirements and without using a different ABI compared to applications and libraries written in C.</Description>
             <Description xml:lang="tr">Vala, ek bir çalışma zamanı bağımlılığı olmayan ve C kitaplıklarının olduğu gibi kullanılabilmesini sağlayan modern bir programlama dilidir.</Description>
             <Description xml:lang="pl">Vala to nowy język programowania, którego celem jest udostępnienie cech nowoczesnych języków programowania programistom GNOME bez wymuszania dodatkowych wymagań co do środowiska uruchomieniowego i używania API innego niż w aplikacjach i bibliotekach napisanych w C.</Description>
-            <Archive type="tarxz" sha1sum="5f46fafaa51bb1f6945a84d81285af0506c1bbf4">mirrors://gnome/vala/0.32/vala-0.32.1.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c0d7e742e60d601e42acabda9d8b722d1a244802">mirrors://gnome/vala/0.34/vala-0.34.4.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>glib2</Dependency>
                 <Dependency>gobject-introspection</Dependency>
@@ -3395,6 +3093,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>0.34.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>0.32.1</Version>
@@ -5404,8 +5109,8 @@
             <Summary xml:lang="tr">Google&apos;dan Go programlama dili için araçlar ve derleyici</Summary>
             <Description xml:lang="en">Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.</Description>
             <Description xml:lang="tr">Go basit, güvenilir ve verimli yazılım inşa etmek için onu kolay yapan açık kaynaklı bir programlama dilidir.</Description>
-            <Archive type="targz" sha1sum="24943cf0370c3a14093d00b0d8702639ab4cc2a8">https://github.com/golang/go/archive/go1.7.1.tar.gz</Archive>
-            <Archive type="tarbz2" sha1sum="97058ade5ad63119f78aa5d1717b1ac26c9f5f7b" target="go-go1.7.1">https://dev.gentoo.org/~williamh/dist/go-linux-amd64-bootstrap.tbz</Archive>
+            <Archive type="targz" sha1sum="756540e61955f1912e4785c81cf380d1ede9fb07">https://github.com/golang/go/archive/go1.8.tar.gz</Archive>
+            <Archive type="tarbz2" sha1sum="97058ade5ad63119f78aa5d1717b1ac26c9f5f7b" target="go-go1.8">https://dev.gentoo.org/~williamh/dist/go-linux-amd64-bootstrap.tbz</Archive>
             <BuildDependencies>
                 <Dependency>perl</Dependency>
                 <Dependency>gawk</Dependency>
@@ -5430,6 +5135,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>1.8</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.7.1</Version>
@@ -19368,6 +19080,9 @@
                 <Path fileType="data">/usr/share/pixmaps</Path>
                 <Path fileType="data">/usr/share/applications</Path>
             </Files>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
         </Package>
         <History>
             <Update release="1">
@@ -26854,7 +26569,7 @@
             <Summary xml:lang="tr">Bash Kabuğu için bir hata ayıklayıcısı</Summary>
             <Description xml:lang="en">bashdb is a comprehensive source-code debugger for bash.</Description>
             <Description xml:lang="tr">bashdb, bash için kapsamlı bir kaynak kodu hata ayıklayıcısıdır.</Description>
-            <Archive type="targz" sha1sum="ef8360fa97832a88c44f020e7bc20fa0e5ba7443">mirrors://sourceforge/bashdb/bashdb-4.3-0.91.tar.gz</Archive>
+            <Archive type="targz" sha1sum="91587646266c2282053077b9c705ca0b6543c434">https://sourceforge.net/projects/bashdb/files/bashdb/4.4-0.92/bashdb-4.4-0.92.tar.gz</Archive>
             <SourceURI>util/shell/bashdb/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -26869,8 +26584,8 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>0.91</Version>
+                <Date>2017-02-21</Date>
+                <Version>0.92</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -28953,9 +28668,6 @@
                 <Dependency>libmtdev</Dependency>
                 <Dependency>libwacom</Dependency>
             </BuildDependencies>
-            <Patches>
-                <Patch level="1">libwacom.patch</Patch>
-            </Patches>
             <SourceURI>x11/driver/libinput/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -47994,7 +47706,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">Mantıksal Hacim Yönetimi aracı</Summary>
             <Description xml:lang="en">LVM2 includes all of the support for handling read/write operations physical and logical volumes.</Description>
             <Description xml:lang="tr">LVM fiziksel ve mantıksal hacimler üzerinde gerçekleştirilen bütün okuma/yazma işlemlerini destekleyen araçları içerir.</Description>
-            <Archive type="targz" sha1sum="7281dba2a295d13efe854ad06c0baf06c2ae476b">https://www.mirrorservice.org/sites/sourceware.org/pub/lvm2/releases/LVM2.2.02.160.tgz</Archive>
+            <Archive type="targz" sha1sum="c650cad608e12d23995da9fa5e4a5485a8eeaae0">https://www.mirrorservice.org/sites/sourceware.org/pub/lvm2/releases/LVM2.2.02.168.tgz</Archive>
             <BuildDependencies>
                 <Dependency>util-linux</Dependency>
             </BuildDependencies>
@@ -48024,6 +47736,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>2.02.168</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>2.02.160</Version>
@@ -48646,7 +48365,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">GNU info (bilgi) programı ve araçları</Summary>
             <Summary xml:lang="de">GNU Info Prgramm und Werkzeuge</Summary>
             <Description xml:lang="en">Texinfo is a documentation system that can produce both online information and printed output from a single source file. The GNU Project uses the Texinfo file format for most of its documentation.</Description>
-            <Archive type="targz" sha1sum="b6ed8b4af3fe9a4aa7c72081dc61f095f73d895c">mirrors://gnu/texinfo/texinfo-6.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="29b16c646c7bc9cd351b2f1d8dafdce70e5377f6">mirrors://gnu/texinfo/texinfo-6.3.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>ncurses</Dependency>
             </BuildDependencies>
@@ -48674,6 +48393,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Provides>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>6.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>6.1</Version>
@@ -48796,7 +48522,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">GnuPG bileşenlerinin kullandığı hata değerleri için kitaplık</Summary>
             <Description xml:lang="en">libgpg-error is a library that defines common error values for all GnuPG components.</Description>
             <Description xml:lang="tr">libgpg-error, tüm GnuPG bileşenleri için ortak olan hata değerlerini tanımlayan bir kitaplıktır.</Description>
-            <Archive type="targz" sha1sum="777133caab1411fbc1f8cb29e953850597278d0f">ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.24.tar.gz</Archive>
+            <Archive type="targz" sha1sum="11c33a660f73d2965dcf48fb2f4d48d553688fe5">ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.26.tar.gz</Archive>
             <SourceURI>system/base/libgpg-error/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -48806,6 +48532,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Path fileType="library">/usr/lib</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="doc">/usr/share/info</Path>
+                <Path fileType="doc">/usr/share/libgpg-error/</Path>
                 <Path fileType="man">/usr/share/man</Path>
                 <Path fileType="localedata">/usr/share/locale</Path>
                 <Path fileType="data">/usr/share/aclocal</Path>
@@ -48813,6 +48540,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>1.26</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.24</Version>
@@ -48957,7 +48691,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="fr">D-Bus fourni à la fois un daemon système (pour les événements els que l&apos;&quot;ajout d&apos;un nouveau périphérique&quot; ou &quot;file d&apos;impression changée&quot;) et un daemon propre à chaque session utilisateur (pour les besoins généraux de communication entre processus utilisateurs). De plus, le bus de message est construit en se basant sur un framework (cadre de développement) de passage de message de un-vers-un pouvant être utilisé par n&apos;importe quelles applications pour communiquer directement (sans passer par le daemon de bus de message). Pour l&apos;instant les applications pouvant communiquer doivent être situées sur le même ordinateur, mais l&apos;option TCP/IP est disponible et le support de processus distant est prévu.</Description>
             <Description xml:lang="en">D-Bus supplies both a system daemon (for events such as &quot;new hardware device added&quot; or &quot;printer queue changed&quot;) and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two apps to communicate directly (without going through the message bus daemon). Currently the communicating applications are on one computer, but TCP/IP option is available and remote support planned.</Description>
             <Description xml:lang="tr">D-Bus, sistem ve kullanıcılar için olmak üzere iki tane artalan süreci (daemon) sunar. Mesaj yolu, bire bir mesaj geçiş araçları üzerine inşa edilmiştir. Bu sayede iki program birbiriyle bir mesaj yolu artalan süreci kullanmadan, direkt olarak haberleşebilir. Şu an için haberleşme araçları aynı bilgisayar üzerinde çalışabilmektedir, fakat TCP/IP ile uzaktan haberleşme de planlanmaktadır.</Description>
-            <Archive type="targz" sha1sum="86f87cf42f6b9f976ddd9eef8de925ff3d3c0191">http://dbus.freedesktop.org/releases/dbus/dbus-1.10.8.tar.gz</Archive>
+            <Archive type="targz" sha1sum="8749b63ad911436f116182a321fa06c68070c19d">http://dbus.freedesktop.org/releases/dbus/dbus-1.10.16.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>expat</Dependency>
                 <Dependency>libX11</Dependency>
@@ -48998,6 +48732,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>1.10.16</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.10.8</Version>
@@ -49116,7 +48857,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="en">Perl is a high-level programming language with roots in C, sed, awk and shell scripting. Perl is good at handling processes and files, and is especially good at handling text. Perl&apos;s hallmarks are practicality and efficiency. While it is used to do a lot of different things, Perl&apos;s most common applications are system administration utilities and web programming. A large proportion of the CGI scripts on the web are written in Perl. You need the perl package installed on your system so that your system can handle Perl scripts.</Description>
             <Description xml:lang="tr">Perl kararlı, platform bağımsız programlama dilidir.</Description>
             <Description xml:lang="de">Perl ist eine stabile, plattformunabhängige Programmiersprache</Description>
-            <Archive type="tarbz2" sha1sum="298fa605138c1a00dab95643130ae0edab369b4d">http://www.cpan.org/src/5.0/perl-5.24.0.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="d43ac3d39686462f86eed35b3c298ace74f1ffa0">http://www.cpan.org/src/5.0/perl-5.24.1.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>db</Dependency>
                 <Dependency>gdbm</Dependency>
@@ -49140,10 +48881,17 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Path fileType="man">/usr/share/man/</Path>
             </Files>
             <AdditionalFiles>
-                <AdditionalFile target="/usr/lib/perl5/vendor_perl/5.24.0/Turkish.pm" permission="0644" owner="root">Turkish.pm</AdditionalFile>
+                <AdditionalFile target="/usr/lib/perl5/vendor_perl/5.24.1/Turkish.pm" permission="0644" owner="root">Turkish.pm</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-12-21</Date>
+                <Version>5.24.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>5.24.0</Version>
@@ -50209,7 +49957,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
         <History>
             <Update release="2">
                 <Date>2016-12-21</Date>
-                <Version>5.2.23</Version>
+                <Version>6.2.23</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -50525,27 +50273,22 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="fr">Bash est le Bourne Again SHell du projet GNU, une implémentation complête du POSIX IEEE et des spécifications d&apos;interprétation de commande (shell) de l&apos;Open Group, avec édition interactive de ligne de commande et des fonctionnalités à la csh tels que la substitution dans l&apos;historique de commande.</Description>
             <Description xml:lang="en">Bash is the GNU Project&apos;s Bourne Again SHell, a complete implementation of the IEEE POSIX and Open Group shell specification with interactive command line editing, csh-like features such as history substitution.</Description>
             <Description xml:lang="tr">Bash, IEEE POSIX ve Open Group&apos;un interaktif komut satırı düzenleme,  geçmiş komutları tamamlama  gibi csh tipi özellikler gibi kabuk uygulamaları tariflerinin tam olarak uygulayan GNU Projesinin Bourne Again SHell kabuk programıdır.</Description>
-            <Archive type="targz" sha1sum="33b1bcc5dca1b72f28b2baeca6efa0d422097964">mirrors://gnu/bash/bash-4.4.tar.gz</Archive>
+            <Archive type="targz" sha1sum="8de012df1e4f3e91f571c3eb8ec45b43d7c747eb">mirrors://gnu/bash/bash-4.4.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>ncurses</Dependency>
             </BuildDependencies>
             <Patches>
-                <Patch compressionType="gzip" level="0">official/bash43-031.tar.gz</Patch>
-                <Patch compressionType="gzip" level="0">official/bash43-032.tar.gz</Patch>
-                <Patch compressionType="gzip" level="0">official/bash43-033.tar.gz</Patch>
-                <Patch compressionType="gzip" level="0">official/bash43-034.tar.gz</Patch>
-                <Patch compressionType="gzip" level="0">official/bash43-035.tar.gz</Patch>
-                <Patch compressionType="gzip" level="0">official/bash43-036.tar.gz</Patch>
-                <Patch compressionType="gzip" level="0">official/bash43-037.tar.gz</Patch>
-                <Patch compressionType="gzip" level="0">official/bash43-038.tar.gz</Patch>
-                <Patch compressionType="gzip" level="0">official/bash43-039.tar.gz</Patch>
-                <Patch level="0">official/bash43-040</Patch>
-                <Patch level="0">official/bash43-041</Patch>
-                <Patch level="0">official/bash43-042</Patch>
-                <Patch level="0">official/bash43-043</Patch>
-                <Patch level="0">official/bash43-044</Patch>
-                <Patch level="0">official/bash43-045</Patch>
-                <Patch level="0">official/bash43-046</Patch>
+                <Patch level="1">official/bash-4.4-patch-1.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-2.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-3.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-4.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-5.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-6.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-7.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-8.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-9.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-10.patch</Patch>
+                <Patch level="1">official/bash-4.4-patch-11.patch</Patch>
                 <Patch level="1">fedora/bash-2.02-security.patch</Patch>
                 <Patch level="1">fedora/bash-2.03-paths.patch</Patch>
                 <Patch level="1">fedora/bash-2.03-profile.patch</Patch>
@@ -50553,23 +50296,23 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Patch level="1">fedora/bash-2.05b-debuginfo.patch</Patch>
                 <Patch level="1">fedora/bash-2.05b-manso.patch</Patch>
                 <Patch level="1">fedora/bash-2.05b-pgrp_sync.patch</Patch>
-                <Patch level="1">fedora/bash-2.05b-readline-oom.patch</Patch>
                 <Patch level="1">fedora/bash-2.05b-xcc.patch</Patch>
                 <Patch level="1">fedora/bash-3.2-audit.patch</Patch>
                 <Patch level="1">fedora/bash-3.2-ssh_source_bash.patch</Patch>
-                <Patch level="1">fedora/bash-4.0-nobits.patch</Patch>
-                <Patch level="1">fedora/bash-4.1-broken_pipe.patch</Patch>
-                <Patch level="1">fedora/bash-4.1-defer-sigchld-trap.patch</Patch>
-                <Patch level="1">fedora/bash-4.1-examples.patch</Patch>
-                <Patch level="1">fedora/bash-4.2-coverity.patch</Patch>
-                <Patch level="1">fedora/bash-4.2-manpage_trap.patch</Patch>
-                <Patch level="1">fedora/bash-4.2-rc2-logout.patch</Patch>
-                <Patch level="1">fedora/bash-4.2-size_type.patch</Patch>
-                <Patch level="1">fedora/bash-bashbug.patch</Patch>
-                <Patch level="1">fedora/bash-infotags.patch</Patch>
-                <Patch level="1">fedora/bash-requires.patch</Patch>
                 <Patch level="1">fedora/bash-setlocale.patch</Patch>
                 <Patch level="1">fedora/bash-tty-tests.patch</Patch>
+                <Patch level="1">fedora/bash-4.0-nobits.patch</Patch>
+                <Patch level="1">fedora/bash-4.1-examples.patch</Patch>
+                <Patch level="1">fedora/bash-4.1-broken_pipe.patch</Patch>
+                <Patch level="1">fedora/bash-4.2-rc2-logout.patch</Patch>
+                <Patch level="1">fedora/bash-4.2-coverity.patch</Patch>
+                <Patch level="1">fedora/bash-4.1-defer-sigchld-trap.patch</Patch>
+                <Patch level="1">fedora/bash-4.2-manpage_trap.patch</Patch>
+                <Patch level="1">fedora/bash-4.2-size_type.patch</Patch>
+                <Patch level="1">fedora/bash-4.3-man-ulimit.patch</Patch>
+                <Patch level="1">fedora/bash-4.3-noecho.patch</Patch>
+                <Patch level="1">fedora/bash-4.3-memleak-lc_all.patch</Patch>
+                <Patch level="1">fedora/bash-4.4-no-loadable-builtins.patch</Patch>
             </Patches>
             <SourceURI>system/base/bash/pspec.xml</SourceURI>
         </Source>
@@ -51190,8 +50933,8 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="fr">SQLite est une petite librairie C implémentant un moteur de base de données SQL auto-configurée, auto-suffisante, pouvant être embarquée. Gère des bases de données de tailles allant jusqu&apos;à 2 téraOctets.</Description>
             <Description xml:lang="en">SQLite is a small C library that implements a self-contained, embeddable, zero-configuration SQL database engine. Supports databases up to 2 terabytes in size.</Description>
             <Description xml:lang="tr">SQLite hiçbir ayar gerektirmeyen, başka programların içine gömülebilir bir SQL veritabanı motorudur. 2 terabayta kadar büyüklükteki veritabanlarını tutabilir.</Description>
-            <Archive type="targz" sha1sum="64ca578ad44a94115b1db0406740e14288f74bb8">http://sqlite.org/2017/sqlite-autoconf-3160200.tar.gz</Archive>
-            <Archive type="zip" sha1sum="c3424040e2368dd78cf9aac801de8d8988549439">http://sqlite.org/2017/sqlite-doc-3160200.zip</Archive>
+            <Archive type="targz" sha1sum="7bcff1c158ed9e2c0e159c1b4b6c36d4d65dff8c">https://www.sqlite.org/2017/sqlite-autoconf-3170000.tar.gz</Archive>
+            <Archive type="zip" sha1sum="bf3b479067d6eb36c8230b668a45994c9212d6cc">https://www.sqlite.org/2017/sqlite-doc-3170000.zip</Archive>
             <BuildDependencies>
                 <Dependency>readline</Dependency>
             </BuildDependencies>
@@ -51222,6 +50965,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2017-02-21</Date>
+                <Version>3.17.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>3.16.0</Version>
@@ -51254,7 +51004,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">X.Org X11 kitaplığı</Summary>
             <Summary xml:lang="de">X.Org X11 Bibliothek</Summary>
             <Description xml:lang="en">Core X11 protocol client library.</Description>
-            <Archive type="tarbz2" sha1sum="6f2aadf8346ee00b7419bd338461c6986e274733">mirrors://xorg/individual/lib/libX11-1.6.3.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="94f375f28e592a599594d3d6ce982516afdc212c">mirrors://xorg/individual/lib/libX11-1.6.4.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>libxcb</Dependency>
                 <Dependency>xorg-proto</Dependency>
@@ -51277,6 +51027,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>1.6.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>1.6.3</Version>
@@ -51467,12 +51224,12 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="fr">La librairie MPFR est une librairie C pour les calculs à virgules flottantes à précisions multiples à arrondi exact (également appelé arrondi correct). Elle est basée sur la librairie à précision multiple GMP.</Description>
             <Description xml:lang="en">The MPFR library is a C library for multiple-precision floating-point computations with exact rounding (also called correct rounding). It is based on the GMP multiple-precision library.</Description>
             <Description xml:lang="es">MPFR es una librería en C para computaciones de punto flotante de múltiple precisión con redondeo exacto (también llamado redondeo correcto). Está basada en la librería de múltiple precisión GMP.</Description>
-            <Archive type="tarxz" sha1sum="cedc0055d55b6ee4cd17e1e6119ed412520ff81a">http://ftp.gnu.org/gnu/mpfr/mpfr-3.1.4.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c0fab77c6da4cb710c81cc04092fb9bea11a9403">http://ftp.gnu.org/gnu/mpfr/mpfr-3.1.5.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gmp</Dependency>
             </BuildDependencies>
             <Patches>
-                <Patch level="1">mpfr-3.1.4-p1.patch</Patch>
+                <Patch level="1">mpfr-3.1.5-p1.patch</Patch>
             </Patches>
             <SourceURI>system/base/mpfr/pspec.xml</SourceURI>
         </Source>
@@ -51489,6 +51246,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>3.1.5_p1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>3.1.4_p1</Version>
@@ -52269,7 +52033,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">Derlenmiş objeleri işlemek için gereken aletler koleksiyonu</Summary>
             <Description xml:lang="en">elfutils contains libraries and utilities to handle ELF objects and is a replacement for libelf.</Description>
             <Description xml:lang="tr">elfutils derlenmiş objeleri işlemek için gereken çeşitli araçlar içerir.</Description>
-            <Archive type="tarbz2" sha1sum="00b678e1182c331ea75af982d666bbc38ef8b055">https://fedorahosted.org/releases/e/l/elfutils/0.166/elfutils-0.166.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="53e486ddba572cf872d32e9aad4d7d7aa6e767ff">https://fedorahosted.org/releases/e/l/elfutils/0.168/elfutils-0.168.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>bzip2</Dependency>
                 <Dependency>xz</Dependency>
@@ -52292,6 +52056,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-12-21</Date>
+                <Version>0.168</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>0.166</Version>
@@ -53121,7 +52892,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">Linux kernel modülleri yönetim araçları</Summary>
             <Description xml:lang="en">Linux kernel module management utilities</Description>
             <Description xml:lang="tr">Linux kernel modülleri yönetim araçları</Description>
-            <Archive type="tarxz" sha1sum="23e9b933887e9405f368a5c429c30414e14148ff">https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-22.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="ca9647241d174aa3334950fce2a4ad7d0596b2e1">https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-23.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>chrpath</Dependency>
                 <Dependency>libxslt</Dependency>
@@ -53165,6 +52936,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>23</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>22</Version>
@@ -53286,7 +53064,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">D-Bus için GLib bağlayıcıları</Summary>
             <Description xml:lang="en">dbus-glib is an add-on library to integrate the standard D-Bus library with the GLib thread abstraction and main loop.</Description>
             <Description xml:lang="tr">dbus-glib, standart D-Bus kitaplığını GLib ana döngüsüyle bütünleştirmek için kullanılan bir kitaplıktır.</Description>
-            <Archive type="targz" sha1sum="660f1c1d511eb72384c10df37118bdc0f65dd927">http://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.106.tar.gz</Archive>
+            <Archive type="targz" sha1sum="5c851f3d457b46d5fa7f1e647d1141592d38cc53">http://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.108.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>dbus</Dependency>
                 <Dependency>glib2</Dependency>
@@ -53319,6 +53097,13 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-02-21</Date>
+                <Version>0.108</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>0.106</Version>
@@ -54307,7 +54092,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <PartOf>system.devel</PartOf>
             <Summary xml:lang="en">Integer Set Library</Summary>
             <Description xml:lang="en">isl is a library for manipulating sets and relations of integer points bounded by linear constraints.</Description>
-            <Archive type="tarbz2" sha1sum="bbffc5a2b05e4f0c97e882f96c448504491dc4ed">http://isl.gforge.inria.fr/isl-0.18.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="3904274c84fb3068e4f59b6a6b0fe29e7a2b7010">http://isl.gforge.inria.fr/isl-0.13.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>gmp</Dependency>
             </BuildDependencies>
@@ -54325,13 +54110,6 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Files>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2016-12-21</Date>
-                <Version>0.18</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
             <Update release="1">
                 <Date>2016-12-21</Date>
                 <Version>0.13</Version>
@@ -55043,7 +54821,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Dependency>gc</Dependency>
                 <Dependency>gmp</Dependency>
                 <Dependency>libffi</Dependency>
-                <Dependency>libtool-ltdl</Dependency>
+                <Dependency>libtool</Dependency>
                 <Dependency>libunistring</Dependency>
                 <Dependency>readline</Dependency>
             </RuntimeDependencies>
@@ -55658,9 +55436,6 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <BuildDependencies>
                 <Dependency>libatomic_ops</Dependency>
             </BuildDependencies>
-            <Patches>
-                <Patch level="1">noelision.patch</Patch>
-            </Patches>
             <SourceURI>system/devel/gc/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -55706,8 +55481,8 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Description xml:lang="tr">ppl, kompleks sistemlerin analizi için sayısal ayrım sağlayan Pharma Polyhedra kitaplığıdır.</Description>
             <Archive type="tarxz" sha1sum="56c3e4cf3be90e11dfdd877b449adedc26cd8ec9">http://bugseng.com/external/ppl/download/ftp/releases/1.2/ppl-1.2.tar.xz</Archive>
             <BuildDependencies>
-                <Dependency>gmp-devel</Dependency>
-                <Dependency>glpk-devel</Dependency>
+                <Dependency>gmp</Dependency>
+                <Dependency>glpk</Dependency>
             </BuildDependencies>
             <SourceURI>system/devel/ppl/pspec.xml</SourceURI>
         </Source>
@@ -57413,6 +57188,54 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Update>
         </History>
     </SpecFile>
+    <Package>
+        <Name>bash</Name>
+        <Summary xml:lang="en">The standard GNU Bourne again shell</Summary>
+        <Summary xml:lang="tr">GNU Bource again kabuğu</Summary>
+        <Description xml:lang="fr">Bash est le Bourne Again SHell du projet GNU, une implémentation complête du POSIX IEEE et des spécifications d&apos;interprétation de commande (shell) de l&apos;Open Group, avec édition interactive de ligne de commande et des fonctionnalités à la csh tels que la substitution dans l&apos;historique de commande.</Description>
+        <Description xml:lang="en">Bash is the GNU Project&apos;s Bourne Again SHell, a complete implementation of the IEEE POSIX and Open Group shell specification with interactive command line editing, csh-like features such as history substitution.</Description>
+        <Description xml:lang="tr">Bash, IEEE POSIX ve Open Group&apos;un interaktif komut satırı düzenleme,  geçmiş komutları tamamlama  gibi csh tipi özellikler gibi kabuk uygulamaları tariflerinin tam olarak uygulayan GNU Projesinin Bourne Again SHell kabuk programıdır.</Description>
+        <IsA>app:console</IsA>
+        <PartOf>system.base</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>ncurses</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="2">
+                <Date>2017-02-21</Date>
+                <Version>4.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2016-12-21</Date>
+                <Version>4.3_p46</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+        <BuildHost>buildfarm</BuildHost>
+        <Distribution>LimeLinux</Distribution>
+        <DistributionRelease>1.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>7831567</InstalledSize>
+        <PackageSize>1322405</PackageSize>
+        <PackageHash>18c325781d6429aa5038537cf122c350b6b5180b</PackageHash>
+        <InstallTarHash>d17cef2c49c2281bb21de3d2a04ff3125e6d7ccd</InstallTarHash>
+        <PackageURI>system/base/bash/bash-4.4-2-lm-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>bash</Name>
+            <Homepage>http://cnswww.cns.cwru.edu/~chet/bash/bashtop.html</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+        </Source>
+    </Package>
     <Component>
         <Name>system</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
