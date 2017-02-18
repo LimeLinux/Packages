@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>SVG vector graphics application</Summary>
         <Description>Inkscape is an application to create, edit, and convert SVG vector graphics images that can also import from and export to bitmap image files.</Description>
-        <Archive sha1sum="9941ee467af570ac71a70f965cd9c48d4993b8f3" type="tarbz2">https://inkscape.global.ssl.fastly.net/media/resources/file/inkscape-0.91.tar.bz2</Archive>
+        <Archive sha1sum="bede1252b344dc08abb6736084364d8125a6dffc" type="tarbz2">https://inkscape.global.ssl.fastly.net/media/resources/file/inkscape-0.92.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>gtkmm</Dependency>
@@ -137,8 +137,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.91</Version>
+            <Date>2017-12-21</Date>
+            <Version>0.92.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
