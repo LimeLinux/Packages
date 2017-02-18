@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A commercial-quality network traffic analyzer</Summary>
         <Description>Wireshark is a commercial-quality network traffic analyzer useful to investigate packets on the network.</Description>
-        <Archive sha1sum="fe07ab3582f39111ce5c78f5de6f44a8667000ac" type="tarbz2">https://www.wireshark.org/download/src/all-versions/wireshark-2.2.1.tar.bz2</Archive>
+        <Archive sha1sum="2913835d17a93af2a85ad5d9b580c47b359619a4" type="tarbz2">https://www.wireshark.org/download/src/all-versions/wireshark-2.2.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gnutls</Dependency>
             <Dependency>c-ares</Dependency>
@@ -30,7 +30,7 @@
             <Dependency>libnl</Dependency>
         </BuildDependencies>
         <Patches>
-	      <Patch level="1">wireshark-2.2.1-lua_5_3_1-1.patch</Patch>
+	      <!--Patch level="1">wireshark-2.2.1-lua_5_3_1-1.patch</Patch-->
         </Patches>
     </Source>
 
@@ -60,10 +60,7 @@
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
-            <Path fileType="data">/usr/share/wireshark</Path>
-            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/*</Path>
 	    <Path fileType="header">/usr/include/wireshark</Path>
         </Files>
         <Provides>
@@ -74,8 +71,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.12.12</Version>
+            <Date>2017-02-21</Date>
+            <Version>2.2.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

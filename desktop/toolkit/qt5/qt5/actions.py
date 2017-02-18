@@ -29,7 +29,7 @@ def setup():
     shelltools.export("CFLAGS", filteredCFLAGS)
     shelltools.export("CXXFLAGS", filteredCXXFLAGS)
     shelltools.system("unset QMAKESPEC")
-    shelltools.system('parameters="QMAKE_CFLAGS_ISYSTEM="')
+    shelltools.system('parameters="QMAKE_CFLAGS_ISYSTEM= "')
     shelltools.export("QT5DIR", get.curDIR())
     shelltools.export("PATH", "%s/bin:%s" % (get.curDIR(), get.ENV("PATH")))
     
@@ -45,7 +45,6 @@ def setup():
 		    -translationdir /usr/share/qt5/translations \
 		    -sysconfdir /etc \
 		    -examplesdir /usr/share/doc/qt5/examples \
-		    -plugin-sql-{sqlite,odbc} \
 		    -system-sqlite \
 		    -system-zlib \
 		    -system-libpng \

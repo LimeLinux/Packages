@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A collection of tools and libraries for many image file formats</Summary>
         <Description>ImageMagick is a software suite to create, edit, and compose bitmap images. It can read, convert and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. You can use ImageMagick to translate, flip, mirror, rotate, scale, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.</Description>
-        <Archive sha1sum="896a31574a06d2f2a9c1558fe05afe0c65012124" type="tarxz">https://distfiles.macports.org/ImageMagick/ImageMagick-6.8.9-7.tar.xz</Archive>
+        <Archive sha1sum="4eb3ce50cd491f17a490a5288db175b59682017e" type="tarxz">http://distfiles.macports.org/ImageMagick/ImageMagick-6.9.7-7.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>ghostscript</Dependency>
             <Dependency>fontconfig</Dependency>
@@ -74,8 +74,8 @@
 
     <History>
         <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>6.8.9.7</Version>
+            <Date>2017-02-21</Date>
+            <Version>6.9.7.7</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

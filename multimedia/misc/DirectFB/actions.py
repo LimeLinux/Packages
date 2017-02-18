@@ -11,7 +11,6 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("sh ./autogen.sh")
     autotools.configure(' --prefix=/usr --sysconfdir=/etc --enable-static \
                             --disable-silent-rules --enable-zlib --enable-x11 \
                             --enable-sdl --disable-vnc --disable-osx \

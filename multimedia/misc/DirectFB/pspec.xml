@@ -36,14 +36,12 @@
             <Dependency>libvorbis</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">tslib.patch</Patch>
+            <!--Patch level="1">tslib.patch</Patch>
             <Patch level="1">headers.patch</Patch>
             <Patch level="1">cflags.patch</Patch>
             <Patch level="1">pkgconfig.patch</Patch>
-            <!-- Do not use ld directly
-                 find -name Makefile.in -exec sed -i '/[$](LD)/s:$(LD) -o $@ -r:$(CC) $(CFLAGS) -Wl,-r -nostdlib -o $@:' {} +  -->
             <Patch level="1">no_direct_ld.patch</Patch>
-            <Patch level="1">1.7.6-cle266.patch</Patch>
+            <Patch level="1">1.7.6-cle266.patch</Patch-->
         </Patches>
     </Source>
 

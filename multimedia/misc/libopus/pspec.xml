@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Opus is a totally open, royalty-free, highly versatile audio codec</Summary>
         <Description>Opus is unmatched for interactive speech and music transmission over the Internet, but is also intended for storage and streaming applications. It is standardized by the Internet Engineering Task Force (IETF) as RFC 6716 which incorporated technology from Skype's SILK codec and Xiph.Org's CELT codec.</Description>
-        <Archive sha1sum="35005f5549e2583f5770590135984dcfce6f3d58" type="targz">http://downloads.xiph.org/releases/opus/opus-1.1.tar.gz</Archive>
+        <Archive sha1sum="c7ecd67321c0e72c928ffc1013d725fc537e633f" type="targz">http://downloads.xiph.org/releases/opus/opus-1.1.4.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="1">
+            <Date>2017-02-21</Date>
+            <Version>1.1.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>1.1</Version>

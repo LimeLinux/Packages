@@ -17,32 +17,27 @@ def setup():
     autotools.autoreconf("-fi")
 
     pisitools.dosed("configure", "DOCUMENTATION_RELATIVE_PATH=.*", "DOCUMENTATION_RELATIVE_PATH=%s/html" % get.srcNAME())
-    autotools.configure("--with-gs-font-dir=/usr/share/fonts/default/ghostscript \
-                         --docdir=/usr/share/doc/imagemagick \
+    autotools.configure('--with-modules \
                          --enable-hdri \
-                         --enable-shared \
-                         --disable-static \
-                         --with-modules \
-                         --with-perl \
-                         --with-perl-options='INSTALLDIRS=vendor' \
-                         --with-x \
-                         --with-threads \
-                         --with-magick_plus_plus \
-                         --with-gslib \
                          --with-wmf \
-                         --with-lcms2 \
-                         --with-rsvg \
+                         --with-openexr \
                          --with-xml \
-                         --with-djvu \
-                         --with-bzlib \
-                         --with-zlib \
-                         --with-fpx \
-                         --with-tiff \
-                         --with-jp2 \
-                         --with-jpeg \
+                         --with-webp \
+                         --with-gslib \
+                         --with-gs-font-dir=/usr/share/fonts/Type1 \
+                         --with-perl \
+                         --with-perl-options="INSTALLDIRS=vendor" \
+                         --with-lqr \
+                         --with-rsvg \
+                         --enable-opencl \
+                         --with-openjp2 \
+                         --without-gvc \
+                         --without-djvu \
+                         --without-autotrace \
                          --without-jbig \
                          --without-fpx \
-                         --without-dps")
+                         --without-dps \
+                         --without-fftw')
 
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
