@@ -56,6 +56,8 @@ def setup():
                --enable-shared \
                --disable-static \
                --disable-slp \
+               --disable-bdb \
+               --disable-hdb \
                --localstatedir=/var/lib"
 
     if get.buildTYPE() == "emul32":
