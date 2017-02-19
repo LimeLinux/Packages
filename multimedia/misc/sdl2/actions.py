@@ -22,6 +22,7 @@ def setup():
                --disable-nas \
                --enable-alsa \
                --enable-pulseaudio-shared \
+               --enable-video-directfb \
                --enable-video-wayland \
                --enable-ibus \
                --enable-fcitx \

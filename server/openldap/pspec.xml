@@ -12,7 +12,7 @@
         <License>OPENLDAP</License>
         <Summary>Open-source suite of LDAP applications and development tools</Summary>
         <Description>OpenLDAP is an open-source suite of LDAP (Lightweight Directory Access Protocol) applications and development tools</Description>
-        <Archive sha1sum="3b52924df2f45e81f25ecbe37551bc837d090cfa" type="targz">ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-2.4.43.tgz</Archive>
+        <Archive sha1sum="016a738d050a68d388602a74b5e991035cdba149" type="targz">ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-2.4.44.tgz</Archive>
         <BuildDependencies>
             <Dependency>cyrus-sasl</Dependency>
             <Dependency>nss</Dependency>
@@ -50,6 +50,13 @@
 
 
     <History>
+        <Update release="2">
+            <Date>2017-02-21</Date>
+            <Version>2.4.44</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>2.4.43</Version>

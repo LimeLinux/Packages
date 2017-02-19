@@ -20,14 +20,7 @@
             <Dependency>aalib</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch level="1">sdl-1.2.14-disable-mmx.patch</Patch>
-            <Patch level="0">sdl_x11sym.patch</Patch>
-            <Patch level="1">SDL-1.2.14-dont-propagate-lpthread.patch</Patch>
-            <Patch level="1">SDL-1.2.14-noproc.patch</Patch>
-            <Patch level="1">SDL-1.2.13-rh484362.patch</Patch>
-            <Patch level="0">libsdl-1.2.15-sdl-config.patch</Patch>
-            <Patch level="0">libsdl-1.2.15-resizing.patch</Patch>
-            <Patch level="0">libsdl-1.2.15-joystick.patch</Patch-->
+            <Patch level="1">Fixed bug 3490.patch</Patch>
         </Patches>
     </Source>
 
