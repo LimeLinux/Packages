@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Network connection manager powered by D-Bus and UDEV</Summary>
         <Description>NetworkManager attempts to keep an active network connection available at all times.</Description>
-        <Archive sha1sum="64f3fde8388b3b49219df7df497134ef88de552f" type="tarxz">https://download.gnome.org/sources/NetworkManager/1.4/NetworkManager-1.4.2.tar.xz</Archive>
+        <Archive sha1sum="fee830aee4b8d719046add91efa13ac08648b017" type="tarxz">http://ftp.gnome.org/mirror/gnome.org/sources/NetworkManager/1.6/NetworkManager-1.6.2.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
@@ -77,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2017-02-21</Date>
+            <Version>1.6.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>1.4.2</Version>
