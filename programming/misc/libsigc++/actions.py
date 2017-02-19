@@ -26,7 +26,7 @@ def install():
 
     #move html docs to html doc dir
     pisitools.dodir("/usr/share/doc/%s/html" % get.srcNAME())
-    pisitools.domove("/usr/share/doc/%s-2.0/*" % get.srcNAME(), "/usr/share/doc/%s/html" % get.srcNAME())
-    pisitools.removeDir("/usr/share/doc/%s-2.0" % get.srcNAME())
+    pisitools.domove("/usr/share/doc/%s-3.0/*" % get.srcNAME(), "/usr/share/doc/%s/html" % get.srcNAME())
+    pisitools.removeDir("/usr/share/doc/%s-3.0" % get.srcNAME())
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "README", "NEWS", "TODO")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "README", "NEWS", "COPYING")
