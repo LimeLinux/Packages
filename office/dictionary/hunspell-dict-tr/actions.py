@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
+# Lime GNU/Linux 2017
+#
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/licenses/gpl.txt
 
@@ -13,10 +15,10 @@ import glob
 WorkDir="."
 
 def install():
-    hunspell_tr = "/usr/lib/libreoffice/share/extensions/hunspell_tr"
-    pisitools.dodir(hunspell_tr)
-    hunspellfile = glob.glob("*.oxt")[0]
-    shelltools.system("unzip %s -d %s/%s" % (hunspellfile, get.installDIR(), hunspell_tr))
+    pisitools.insinto("/usr/share/hunspell/tr-TR.aff", "tr.aff")
+    pisitools.insinto("/usr/share/hunspell/tr-TR.dic", "tr.dic")
     #for other applications
-    pisitools.dosym("/usr/lib/libreoffice/share/extensions/hunspell_tr/dictionaries/tr-TR.aff","/usr/share/hunspell/tr-TR.aff")
-    pisitools.dosym("/usr/lib/libreoffice/share/extensions/hunspell_tr/dictionaries/tr-TR.dic", "/usr/share/hunspell/tr-TR.dic")
+    pisitools.dosym("/usr/share/hunspell/tr-TR.aff", "/usr/lib/libreoffice/share/extensions/hunspell_tr/dictionaries/tr-TR.aff")
+    pisitools.dosym("/usr/share/hunspell/tr-TR.dic", "/usr/lib/libreoffice/share/extensions/hunspell_tr/dictionaries/tr-TR.dic")
+
+    pisitools.dodoc("README")

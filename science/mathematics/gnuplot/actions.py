@@ -12,9 +12,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.autoreconf("-vfi")
     autotools.configure("--with-gihdir=/usr/share/gnuplot \
-				--without-qt \
-				--without-qt5 \
-                        --with-readline=gnu ")
+                         --with-readline=gnu ")
 
 def build():
     autotools.make()
