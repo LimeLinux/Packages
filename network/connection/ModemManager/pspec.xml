@@ -1,0 +1,79 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ModemManager</Name>
+        <Homepage>http://projects.gnome.org/NetworkManager</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>app:console</IsA>
+        <IsA>service</IsA>
+        <Summary>A manager framework for mobile broadband modems</Summary>
+        <Description>ModemManager provides a unified high level API for communicating with mobile broadband modems.</Description>
+        <Archive sha1sum="d7b42295cb76eaf603b1ea3e10d3d97def005736" type="tarxz">http://www.freedesktop.org/software/ModemManager/ModemManager-1.6.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libgudev</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>ppp</Dependency>
+            <Dependency>libqmi</Dependency>
+            <Dependency>libmbim</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>vala</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ModemManager</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libqmi</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>libmbim</Dependency>
+            <Dependency>libgudev</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/gir-1.0/ModemManager-1.0.gir</Path>
+            <Path fileType="data">/lib/udev/rules.d/</Path>
+            <Path fileType="data">/etc/dbus-1/system.d/</Path>
+            <Path fileType="library">/usr/lib/ModemManager</Path>
+            <Path fileType="library">/usr/lib/girepository-1.0/ModemManager-1.0.typelib</Path>
+            <Path fileType="man">/usr/share/man/man8/ModemManager.8</Path>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/bash-completion</Path>
+            <Path fileType="header">/usr/include/libmm-glib/</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/mm-glib.pc</Path>
+            <Path fileType="header">/usr/include/ModemManager/</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/ModemManager.pc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/vala/vapi/libmm-glib.vapi </Path>
+            <Path fileType="data">/usr/share/vala/vapi/libmm-glib.deps </Path>
+            <Path fileType="data">/usr/lib/libmm-glib.so*</Path>
+            <Path fileType="man">/usr/share/man/man8/mmcli.8</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-02-12</Date>
+            <Version>1.6.4</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

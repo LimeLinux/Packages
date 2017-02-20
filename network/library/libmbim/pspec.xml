@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmbim</Name>
+        <Homepage>http://www.freedesktop.org/wiki/Software/libmbim/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>MBIM modem protocol helper library.</Summary>
+        <Description>libmbim is a glib-based library for talking to WWAN modems and devices which speak the Mobile Interface Broadband Model (MBIM) protocol.</Description>
+        <Archive sha1sum="61357ad1678480dacbc799c072e49e355c7a2b1d" type="tarxz">http://www.freedesktop.org/software/libmbim/libmbim-1.14.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libgudev</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libmbim</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libgudev</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/</Path>
+            <Path fileType="data">/usr/share/bash-completion</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="header">/usr/include/libmbim-glib/</Path>
+            <Path fileType="doc">/usr/share/doc/libmbim</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-11-12</Date>
+            <Version>1.14.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

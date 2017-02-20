@@ -7790,7 +7790,7 @@
             <Description xml:lang="en">Pisi Linux Welcome Application</Description>
             <Description xml:lang="tr">Hoşgeldin uygulaması, bilgisayarınız ilk defa açıldığında sizi karşılar.</Description>
             <Icon>limelinux-welcome</Icon>
-            <Archive type="targz" sha1sum="cde9530f2ba60be79f4cd89e4cfc62d59d6d4d6a">https://github.com/PisiLinuxNew/pisilinux-welcome/archive/1.0Beta4.tar.gz</Archive>
+            <Archive type="targz" sha1sum="3752e7dba8c7804bac1755b79966316a7bc1a91b">https://github.com/LimeLinux/lime-welcome/archive/1.0Beta4.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3</Dependency>
                 <Dependency>python3-qt5</Dependency>
@@ -7806,7 +7806,7 @@
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/share/welcome</Path>
-                <Path fileType="data">/usr/lib/python3.4/site-packages</Path>
+                <Path fileType="data">/usr/lib/python3.6/site-packages</Path>
                 <Path fileType="data">/usr/share/applications</Path>
                 <Path fileType="data">/usr/share/icons</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
@@ -18260,6 +18260,84 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>ModemManager</Name>
+            <Homepage>http://projects.gnome.org/NetworkManager</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>app:console</IsA>
+            <IsA>service</IsA>
+            <PartOf>network.connection</PartOf>
+            <Summary xml:lang="en">A manager framework for mobile broadband modems</Summary>
+            <Summary xml:lang="tr">Mobil modemler için yönetim katmanı</Summary>
+            <Description xml:lang="en">ModemManager provides a unified high level API for communicating with mobile broadband modems.</Description>
+            <Description xml:lang="tr">ModemManager, 3G ve GSM gibi mobil genişbant modemlerle D-Bus üzerinden iletişimi sağlayan bir sistem hizmetidir.</Description>
+            <Archive type="tarxz" sha1sum="d7b42295cb76eaf603b1ea3e10d3d97def005736">http://www.freedesktop.org/software/ModemManager/ModemManager-1.6.4.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libgudev</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>polkit</Dependency>
+                <Dependency>ppp</Dependency>
+                <Dependency>libqmi</Dependency>
+                <Dependency>libmbim</Dependency>
+                <Dependency>intltool</Dependency>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>docbook-xsl</Dependency>
+                <Dependency>vala</Dependency>
+            </BuildDependencies>
+            <SourceURI>network/connection/ModemManager/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ModemManager</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libqmi</Dependency>
+                <Dependency>polkit</Dependency>
+                <Dependency>libmbim</Dependency>
+                <Dependency>libgudev</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/gir-1.0/ModemManager-1.0.gir</Path>
+                <Path fileType="data">/lib/udev/rules.d/</Path>
+                <Path fileType="data">/etc/dbus-1/system.d/</Path>
+                <Path fileType="library">/usr/lib/ModemManager</Path>
+                <Path fileType="library">/usr/lib/girepository-1.0/ModemManager-1.0.typelib</Path>
+                <Path fileType="man">/usr/share/man/man8/ModemManager.8</Path>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="data">/usr/share/bash-completion</Path>
+                <Path fileType="header">/usr/include/libmm-glib/</Path>
+                <Path fileType="data">/usr/lib/pkgconfig/mm-glib.pc</Path>
+                <Path fileType="header">/usr/include/ModemManager/</Path>
+                <Path fileType="data">/usr/lib/pkgconfig/ModemManager.pc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/vala/vapi/libmm-glib.vapi</Path>
+                <Path fileType="data">/usr/share/vala/vapi/libmm-glib.deps</Path>
+                <Path fileType="data">/usr/lib/libmm-glib.so*</Path>
+                <Path fileType="man">/usr/share/man/man8/mmcli.8</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-02-12</Date>
+                <Version>1.6.4</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>NetworkManager</Name>
             <Homepage>http://projects.gnome.org/NetworkManager</Homepage>
             <Packager>
@@ -18433,6 +18511,96 @@
                 <Date>2016-12-21</Date>
                 <Version>1.4.2</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ppp</Name>
+            <Homepage>http://samba.org/ppp</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>BSD</License>
+            <License>GPLv2</License>
+            <IsA>service</IsA>
+            <PartOf>network.connection</PartOf>
+            <Summary xml:lang="en">Point-to-point protocol - patched for PPPOE</Summary>
+            <Summary xml:lang="tr">Modem ile internet erişimi için PPP (point to point protocol) noktadan noktaya erişim protokolü</Summary>
+            <Description xml:lang="en">The Point-to-Point Protocol (PPP) provides a standard way to transmit datagrams over a serial link.</Description>
+            <Description xml:lang="tr">PPP protokolü veriyi seri bir bağlantı üzerinden transfer etmek için standart bir yol sağlar.</Description>
+            <Archive type="targz" sha1sum="0fd188b28cb8fdc81d2eaa15b78d3ad9c93344f4">http://samba.org/ftp/ppp/ppp-2.4.6.tar.gz</Archive>
+            <Archive type="targz" sha1sum="1a0b02788d522f2137d0b66c749ffe6c96cceb94">ftp://ftp.ru.debian.org/gentoo-distfiles/distfiles/ppp-dhcpc.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>libpcap</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>pam</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">gentoo/02_all_make-vars.patch</Patch>
+                <Patch level="1">gentoo/04_all_mpls.patch</Patch>
+                <Patch level="1">gentoo/06_all_killaddr-smarter.patch</Patch>
+                <Patch level="1">gentoo/08_all_wait-children.patch</Patch>
+                <Patch level="1">gentoo/10_all_defaultgateway.patch</Patch>
+                <Patch level="1">gentoo/12_all_linkpidfile.patch</Patch>
+                <Patch level="1">gentoo/16_all_auth-fail.patch</Patch>
+                <Patch level="1">gentoo/18_all_defaultmetric.patch</Patch>
+                <Patch level="1">gentoo/20_all_dev-ppp.patch</Patch>
+                <Patch level="1">gentoo/24_all_passwordfd-read-early.patch</Patch>
+                <Patch level="1">gentoo/26_all_pppd-usepeerwins.patch</Patch>
+                <Patch level="1">gentoo/28_all_connect-errors.patch</Patch>
+                <Patch level="1">gentoo/30_all_Makefile.patch</Patch>
+                <Patch level="1">gentoo/32_all_pado-timeout.patch</Patch>
+                <Patch level="1">gentoo/34_all_lcp-echo-adaptive.patch</Patch>
+                <Patch level="1">ppp-2.3.6-sample.patch</Patch>
+                <Patch level="1">ppp-2.4.3-fix64.patch</Patch>
+                <Patch level="1">ppp-2.4.2-change_resolv_conf.patch</Patch>
+                <Patch level="1">nostrip.patch</Patch>
+                <Patch level="1">ppp-2.4.3-local.patch</Patch>
+                <Patch level="1">ppp-2.4.3-ipv6-accept-remote.patch</Patch>
+                <Patch level="1">ppp-2.4.5-ppp_resolv.patch</Patch>
+                <Patch level="1">ppp-2.4.5-var_run_ppp.patch</Patch>
+                <Patch level="1">ppp-2.4.6-eaptls-mppe-0.99.patch</Patch>
+            </Patches>
+            <SourceURI>network/connection/ppp/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ppp</Name>
+            <RuntimeDependencies>
+                <Dependency>libpcap</Dependency>
+                <Dependency>pam</Dependency>
+                <Dependency>openssl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="config">/usr/lib/tmpfiles.d/ppp.conf</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/run/ppp</Path>
+                <Path fileType="data">/usr/include/pppd/</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/lib/tmpfiles.d/ppp.conf" permission="0644" owner="root">tmpfiles.conf</AdditionalFile>
+                <AdditionalFile target="/etc/ppp/options-pptp" permission="0644" owner="root">options-pptp</AdditionalFile>
+                <AdditionalFile target="/etc/ppp/options-pppoe" permission="0644" owner="root">options-pppoe</AdditionalFile>
+                <AdditionalFile target="/etc/ppp/chat-default" permission="0644" owner="root">chat-default</AdditionalFile>
+                <AdditionalFile target="/etc/ppp/ip-up" permission="0755" owner="root">ip-up</AdditionalFile>
+                <AdditionalFile target="/etc/ppp/ip-down" permission="0755" owner="root">ip-down</AdditionalFile>
+                <AdditionalFile target="/etc/conf.d/net.ppp0" permission="0600" owner="root">confd.ppp0</AdditionalFile>
+                <AdditionalFile target="/etc/pam.d/ppp" permission="0644" owner="root">ppp.pamd</AdditionalFile>
+                <AdditionalFile target="/etc/logrotate.d/ppp" permission="0644" owner="root">ppp.logrotate</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-09</Date>
+                <Version>2.4.6</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -22291,6 +22459,53 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>libqmi</Name>
+            <Homepage>http://www.freedesktop.org/wiki/Software/libqmi/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>network.library</PartOf>
+            <Summary xml:lang="en">QMI modem protocol helper library</Summary>
+            <Description xml:lang="en">libqmi is a glib-based library for talking to WWAN modems and devices which speak the Qualcomm MSM Interface (QMI) protocol.</Description>
+            <Archive type="tarxz" sha1sum="e68892bc6bdb46b56571d47bc8983ad9aeadcc52">http://www.freedesktop.org/software/libqmi/libqmi-1.16.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </BuildDependencies>
+            <SourceURI>network/library/libqmi/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libqmi</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="doc">/usr/share/doc/libqmi/</Path>
+                <Path fileType="data">/usr/share/bash-completion</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig/qmi-glib.pc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-11-12</Date>
+                <Version>1.16.0</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>daq</Name>
             <Homepage>http://www.snort.org</Homepage>
             <Packager>
@@ -22339,6 +22554,55 @@
                 <Date>2016-12-21</Date>
                 <Version>2.0.6</Version>
                 <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libmbim</Name>
+            <Homepage>http://www.freedesktop.org/wiki/Software/libmbim/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>network.library</PartOf>
+            <Summary xml:lang="en">MBIM modem protocol helper library.</Summary>
+            <Description xml:lang="en">libmbim is a glib-based library for talking to WWAN modems and devices which speak the Mobile Interface Broadband Model (MBIM) protocol.</Description>
+            <Archive type="tarxz" sha1sum="61357ad1678480dacbc799c072e49e355c7a2b1d">http://www.freedesktop.org/software/libmbim/libmbim-1.14.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libgudev</Dependency>
+            </BuildDependencies>
+            <SourceURI>network/library/libmbim/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libmbim</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libgudev</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="doc">/usr/share/gtk-doc/</Path>
+                <Path fileType="data">/usr/share/bash-completion</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/libmbim-glib/</Path>
+                <Path fileType="doc">/usr/share/doc/libmbim</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-11-12</Date>
+                <Version>1.14.0</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -26558,46 +26822,6 @@
                 <Version>0.92</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>dash</Name>
-            <Packager>
-                <Name>LimeLinuz Developers</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPLv3+</License>
-            <PartOf>util.shell</PartOf>
-            <Summary xml:lang="en">POSIX compliant shell</Summary>
-            <Summary xml:lang="tr">Ufak ve hızlı POSIX uyumlu kabuk</Summary>
-            <Description xml:lang="en">Dash is a POSIX compliant shell. It can be installed as /bin/sh or as the default shell for either root or a second user with a userid of 0. It depends on fewer libraries than the Bash shell and is therefore less likely to be affected by an upgrade problem or disk failure. Dash is also useful for checking that a script is completely compatible with POSIX syntax.</Description>
-            <Description xml:lang="tr">DASH, POSIX uyumlu bir /bin/sh gerçeklemesi olup, olabildiğince ufak olmayı hedefleyen bir kabuktur.</Description>
-            <Archive type="targz" sha1sum="b9e9fbf21d95b5317f6e876fe7086a8fe69b3806">http://source.limelinux.com/1.0/dash-0.5.9.tar.gz</Archive>
-            <SourceURI>util/shell/dash/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>dash</Name>
-            <Files>
-                <Path fileType="executable">/bin</Path>
-                <Path fileType="man">/usr/share/man</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="2">
-                <Date>2017-02.05</Date>
-                <Version>0.5.7</Version>
-                <Comment>Add dash to repositories</Comment>
-                <Name>LimeLinux Developers</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2017-02.05</Date>
-                <Version>0.5.7</Version>
-                <Comment>Add dash to repositories</Comment>
-                <Name>LimeLinux Developers</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -57227,6 +57451,49 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             </Update>
         </History>
     </SpecFile>
+    <Package>
+        <Name>python3-qt5</Name>
+        <Summary xml:lang="en">A set of Python 3.x bindings for the Qt 5.x Toolkit</Summary>
+        <Description xml:lang="en">Qt is a set of C++ libraries and development tools that includes platform independent abstractions for graphical user interfaces, networking, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, and user and application settings. PyQt implements 440 of these classes as a set of Python modules.</Description>
+        <IsA>library</IsA>
+        <PartOf>programming.language.python3</PartOf>
+        <License>GPLv2</License>
+        <License>GPLv3</License>
+        <RuntimeDependencies>
+            <Dependency>gcc</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>python3-sip</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2017-01-29</Date>
+                <Version>5.7.1</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+        <BuildHost>buildfarm</BuildHost>
+        <Distribution>LimeLinux</Distribution>
+        <DistributionRelease>1.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>32023368</InstalledSize>
+        <PackageSize>3911447</PackageSize>
+        <PackageHash>ae045bfff9d67afe6c9b9c37b0a88936fd181740</PackageHash>
+        <InstallTarHash>59e852c87dd4df7b98945a1932ff1c90e4cf2115</InstallTarHash>
+        <PackageURI>programming/language/python3/python3-qt5/python3-qt5-5.7.1-1-lm-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>python3-qt5</Name>
+            <Homepage>http://www.riverbankcomputing.co.uk/software/pyqt</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+        </Source>
+    </Package>
     <Component>
         <Name>system</Name>
         <LocalName xml:lang="en">FIXME</LocalName>

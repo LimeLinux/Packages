@@ -29,6 +29,9 @@
             <Dependency>atk</Dependency>
             <Dependency>intltool</Dependency>
         </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">applet-device-broadband.patch</Patch-->
+        </Patches>
     </Source>
 
     <Package>

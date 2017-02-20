@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
+# Lime GNU/Linux 2017
+#
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -11,11 +13,9 @@ from pisi.actionsapi import shelltools
 
 
 def setup():
-    # /var/run => /run
-  #  for f in ["configure.ac", "src/Makefile.am", "src/Makefile.in"]:
-   #     pisitools.dosed(f, "\$\(?localstatedir\)?(\/run\/(\$PACKAGE|NetworkManager))", "\\1")
-    #pisitools.dosed("configure.ac", "\/var(\/run\/ConsoleKit)", "\\1")
-    #pisitools.dosed("configure.ac", "^initscript", deleteLine=True)
+    #shelltools.system("sed -e '/Qt[CDN]/s/Qt/Qt5/g'")
+    #shelltools.system("sed -e 's/moc_location/host_bins/'")
+    shelltools.export("CXXFLAGS", "%s -fPIC -O2" % get.CXXFLAGS())
     autotools.autoreconf("-fi")
     shelltools.system("intltoolize --force --copy --automake")
 
