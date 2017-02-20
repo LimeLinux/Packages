@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>C++ interface for glib2</Summary>
         <Description>Glibmm is the official C++ interface for the popular GUI library GTK+. Highlights include typesafe callbacks and a comprehensive set of widgets that are easily extensible via inheritance.</Description>
-        <Archive sha1sum="6010519b54b1f7cc7b9d9a74a00ce5e12c867cde" type="tarxz">http://ftp.gnome.org/mirror/gnome.org/sources/glibmm/2.51/glibmm-2.51.1.tar.xz</Archive>
+         <Archive sha1sum="aa152d6f19bde44cd528b88f089c53913d0cd0ea" type="tarxz">mirrors://gnome/glibmm/2.44/glibmm-2.44.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libsigc++</Dependency>
         </BuildDependencies>
@@ -33,13 +33,6 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-02-21</Date>
-            <Version>2.51.1</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>2.44.0</Version>
