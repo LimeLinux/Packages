@@ -27,6 +27,7 @@
             <Path fileType="exectuable">/usr/bin/</Path>
             <Path fileType="library">/usr/lib/</Path>
             <Path fileType="data">/usr/share/*</Path>
+            <Path fileType="executable">/usr/libexec</Path>
         </Files>
     </Package>
 
