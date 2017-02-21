@@ -40,10 +40,3 @@ def install():
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "HACKING", "NEWS", "README", "doc/TODO", "doc/*.txt")
     pisitools.dohtml("doc/")
-
-
-
-
-
-
-
