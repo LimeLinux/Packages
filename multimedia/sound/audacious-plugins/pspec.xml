@@ -30,6 +30,8 @@
             <Dependency>libXrender</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>mesa</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>ffmpeg</Dependency>
             <Dependency>audacious</Dependency>
             <Dependency>neon</Dependency>
             <Dependency>libcue</Dependency>
@@ -43,6 +45,8 @@
             <Dependency>gtk2</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>flac</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>ffmpeg</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>lame</Dependency>
             <Dependency>libsamplerate</Dependency>
@@ -78,6 +82,13 @@
     </Package>
     
     <History>
+        <Update release="3">
+            <Date>2017-02-21</Date>
+            <Version>3.8.1</Version>
+            <Comment>fix dep.</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="2">
             <Date>2017-02-21</Date>
             <Version>3.8.1</Version>

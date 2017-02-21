@@ -23,6 +23,7 @@
             <Dependency>gtk2</Dependency>
             <Dependency>xdg-utils</Dependency>
             <Dependency>wxGTK</Dependency>
+            <Dependency>libfilezilla</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="0">i18n-filezilla.desktop.patch</Patch>
@@ -39,6 +40,7 @@
             <Dependency>glib2</Dependency>
             <Dependency>gnutls</Dependency>
             <Dependency>xdg-utils</Dependency>
+            <Dependency>libfilezilla</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
