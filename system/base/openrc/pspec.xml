@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Dependency based init system that works with sysvinit.</Summary>
         <Description>Dependency based init system that works with sysvinit.</Description>
-        <Archive sha1sum="2c8fb7ad588ef9e21de9f32b1c6bf81740b018e9" type="targz">https://github.com/OpenRC/openrc/archive/0.23.1.tar.gz</Archive>
+        <Archive sha1sum="68b888f4df29519621c419165a1fa53e661a8923" type="targz">https://github.com/OpenRC/openrc/archive/0.23.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>pam</Dependency>
@@ -49,6 +49,13 @@
 
 
     <History>
+        <Update release="3">
+            <Date>2017-02-21</Date>
+            <Version>0.23.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="2">
             <Date>2016-12-21</Date>
             <Version>0.23.1</Version>
