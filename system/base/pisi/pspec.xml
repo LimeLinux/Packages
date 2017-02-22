@@ -77,6 +77,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/limelinux/pisi/actionsapi/pkgconfig.py">pkgconfig.py</AdditionalFile>
             <AdditionalFile target="/usr/lib/tmpfiles.d/pisi.conf" permission="0644" owner="root">tmpfiles.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/limelinux/pisi/actionsapi/qt5.py">qt5.py</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/limelinux/pisi/actionsapi/git.py">git.py</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/limelinux/pisi/actionsapi/kde5.py">kde5.py</AdditionalFile>
         </AdditionalFiles>
         <Provides>
