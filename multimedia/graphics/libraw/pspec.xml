@@ -1,0 +1,50 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libraw</Name>
+        <Homepage>http://www.libraw.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <License>CDDL</License>
+        <IsA>library</IsA>
+        <Summary>Raw image decoder</Summary>
+        <Description>LibRaw is a library for reading RAW files obtained from digital photo cameras (CRW/CR2, NEF, RAF, DNG, and others).</Description>
+        <Archive sha1sum="a6a69c4790061b77234ee707dccb200c90aadd8a" type="targz">http://www.libraw.org/data/LibRaw-0.18.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>lcms2</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+         </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>libraw</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-02-22</Date>
+            <Version>0.18.1</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

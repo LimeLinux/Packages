@@ -15,7 +15,7 @@
         <BuildDependencies>
             <Dependency>djvu</Dependency>
             <Dependency>cups</Dependency>
-            <Dependency>poppler-qt5</Dependency>
+            <Dependency>poppler</Dependency>
             <Dependency>qt5</Dependency>
             <Dependency>libspectre</Dependency>
             <Dependency>zlib</Dependency>
@@ -32,7 +32,7 @@
             <Dependency>libgcc</Dependency>
             <Dependency>zlib</Dependency>
             <Dependency>libspectre</Dependency>
-            <Dependency>poppler-qt5</Dependency>
+            <Dependency>poppler</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

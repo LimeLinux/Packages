@@ -1,0 +1,77 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openimageio</Name>
+        <Homepage>https://sites.google.com/site/openimageio/home</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>library</IsA>
+        <Summary>Library for reading and writing images</Summary>
+        <Description>OpenImageIO is a library for reading and writing images, and a bunch of related classes, utilities, and applications.</Description>
+        <Archive sha1sum="ce6ee930cb289e19092dab7971609fb5a384a37f" type="targz">https://github.com/OpenImageIO/oiio/archive/Release-1.7.11.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>txt2man</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>opencv</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>libraw</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>openimageio</Name>
+        <RuntimeDependencies>
+            <Dependency>tiff</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>opencv</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libraw</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-02-20</Date>
+            <Version>1.7.11</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

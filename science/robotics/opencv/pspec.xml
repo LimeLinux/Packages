@@ -1,0 +1,80 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>opencv</Name>
+        <Homepage>http://opencv.willowgarage.com/wiki</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>Computer vision library</Summary>
+        <Description>opencv is a programming library mainly aimed at the real time computer vision. Example applications are human-computer interaction, object identification, face recognition, motion tracking, mobile robotics.</Description>
+        <Archive sha1sum="1d148e6543f0f666a98e99b31a69cf74be4c4790" type="targz">https://github.com/opencv/opencv/archive/3.2.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>lapack</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>lapack</Dependency>
+            <Dependency>libdc1394</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>opencv</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>openexr-libs</Dependency>
+            <Dependency>xine-lib</Dependency>
+            <Dependency>libdc1394</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/OpenCV</Path>
+            <Path fileType="data">/usr/share/opencv</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>opencv-docs</Name>
+        <Summary>Computer vision library documents and examples</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/doc/opencv</Path>
+            <Path fileType="doc">/usr/share/doc/opencv/samples</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-02-22</Date>
+            <Version>3.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

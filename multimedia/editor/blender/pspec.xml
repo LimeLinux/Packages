@@ -1,0 +1,112 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>blender</Name>
+        <Homepage>http://www.blender.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>blender</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>3D modeling, animation, rendering and post-production application</Summary>
+        <Description>blender is the essential software solution you need for 3D, from modeling, animation, rendering and post-production to interactive creation and playback.</Description>
+        <Archive sha1sum="3abd64094d904ea2eba8b6519c48926b80423276" type="targz">http://download.blender.org/source/blender-2.78b.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
+            <Dependency>libdc1394</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <!--Dependency>libspnav</Dependency-->
+            <Dependency>libX11</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>openimageio</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>python3-requests</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--<Patch level="1">blender-2.67b-rna.patch</Patch>-->
+            <Patch level="1">06-blender-2.68-fix-install-rules.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>blender</Name>
+        <RuntimeDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libdc1394</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>openimageio</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/lib/python3.3/</Path>
+            <Path fileType="data">/usr/share/blender/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+            <Path fileType="data">/usr/share/man/man1</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/blender.xml">blender.xml</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/blender">blender-wrapper</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/share/applications/blender.desktop">blender.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-02-22</Date>
+            <Version>2.78b</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

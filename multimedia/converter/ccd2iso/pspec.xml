@@ -1,0 +1,37 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+
+<PISI>
+    <Source>
+        <Name>ccd2iso</Name>
+        <Homepage>http://sourceforge.net/projects/ccd2iso</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>CloneCD image files to ISO converter</Summary>
+        <Description>ccd2iso converts CloneCD image files to ISO image files.</Description>
+        <Archive sha1sum="cbefdc086adf45138d921a4a7c0ff012dd7c9ca7" type="targz">mirrors://sourceforge/ccd2iso/ccd2iso-0.3.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>ccd2iso</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc/ccd2iso</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>0.3</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
