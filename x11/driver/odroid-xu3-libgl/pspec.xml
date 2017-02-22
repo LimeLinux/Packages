@@ -9,11 +9,10 @@
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Packager>
-	<ExcludeArch>x86_64</ExcludeArch>
         <License>custom</License>
         <Summary>ODROID-XU3/XU4 Mali driver</Summary>
         <Description>ODROID-XU3/XU4 Mali driver</Description>
-        <Archive sha1sum="097004a204586386c622431b5ca91117b244b36f" type="binary">https://raw.githubusercontent.com/bferturk/temel/master/README.md</Archive>
+        <Archive sha1sum="6e0fbac0093c96c90b5fb802dfb527fa51484155" type="binary">https://sourceforge.net/projects/limeteam/files/source-limelinux/limelinux.git</Archive>
         <BuildDependencies>
             <Dependency>mesa</Dependency>
         </BuildDependencies>

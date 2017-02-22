@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>library that handles input devices for display servers and other applications that need to directly deal with input devices.</Summary>
         <Description>It provides device detection, device handling, input device event processing and abstraction so minimize the amount of custom input code the user of libinput need to provide the common set of functionality that users expect.</Description>
-        <Archive sha1sum="aa245b84e10eb895cb38d549a9f6fb7202c99d27" type="tarxz">https://www.freedesktop.org/software/libinput/libinput-1.6.1.tar.xz</Archive>
+        <Archive sha1sum="216af7c478209ad4390916db299f1ad588d615e3" type="tarxz">https://www.freedesktop.org/software/libinput/libinput-1.6.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libevdev</Dependency>
             <Dependency>libmtdev</Dependency>
@@ -42,6 +42,13 @@
 
 
     <History>
+        <Update release="2">
+            <Date>2017-02-21</Date>
+            <Version>1.6.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2017-12-21</Date>
             <Version>1.6.1</Version>
