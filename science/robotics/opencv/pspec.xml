@@ -42,8 +42,7 @@
             <Dependency>libpng</Dependency>
             <Dependency>libv4l</Dependency>
             <Dependency>ilmbase</Dependency>
-            <Dependency>openexr-libs</Dependency>
-            <Dependency>xine-lib</Dependency>
+            <Dependency>openexr</Dependency>
             <Dependency>libdc1394</Dependency>
             <Dependency>gstreamer</Dependency>
             <Dependency>gst-plugins-base</Dependency>
