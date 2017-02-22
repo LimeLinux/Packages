@@ -15,6 +15,7 @@
         <Summary>Open-source X.org graphics driver for ARM graphics</Summary>
         <Description>Open-source X.org graphics driver for ARM graphics</Description>
 	<Archive sha1sum="097004a204586386c622431b5ca91117b244b36f" type="binary">https://raw.githubusercontent.com/bferturk/temel/master/README.md</Archive>
+        <BuildDependencies>
             <Dependency>git</Dependency>
         </BuildDependencies>
     </Source>
