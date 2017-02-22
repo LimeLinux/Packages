@@ -36,6 +36,8 @@ def build():
 
 def install():
     autotools.install('libdir="%s/usr/lib"' % get.installDIR())
+    pisitools.dosym("/usr/lib/libdb-6.2.so", "/usr/lib/libdb-5.3.so")
+    
 
     # Move docs
     pisitools.domove("/usr/docs/", "/usr/share/doc/%s/html/" % get.srcNAME())
