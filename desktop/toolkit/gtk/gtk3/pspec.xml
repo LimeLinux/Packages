@@ -61,6 +61,7 @@
             <Dependency>libXcomposite</Dependency>
             <Dependency>dejavu-fonts</Dependency>
             <Dependency>harfbuzz</Dependency>
+            <Dependency>colord</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
