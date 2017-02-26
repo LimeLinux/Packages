@@ -14,15 +14,15 @@
         <IsA>library</IsA>
         <Summary>A set of Python bindings for the Qt 5.x Toolkit</Summary>
         <Description>Qt is a set of C++ libraries and development tools that includes platform independent abstractions for graphical user interfaces, networking, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, and user and application settings. PyQt implements 440 of these classes as a set of Python modules.</Description>
-        <Archive sha1sum="46aae31f8196d4beed878bc70ed9ed2938f3c73f" type="targz">https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.7.1/PyQt5_gpl-5.7.1.tar.gz</Archive>
+        <Archive sha1sum="104c4bfc451b2ed26e34e646ddf69cfc8c437226" type="targz">https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.8/PyQt5_gpl-5.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>dbus</Dependency>
             <Dependency>python3</Dependency>
             <Dependency>qt5</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>pyqt-qt5.8.patch</Patch>
-            <Patch>pyqt5-fix-check-license.patch</Patch>
+            <!--Patch>pyqt-qt5.8.patch</Patch>
+            <Patch>pyqt5-fix-check-license.patch</Patch-->
         </Patches>
     </Source>
     
@@ -51,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2017-02-29</Date>
+            <Version>5.8</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2017-01-29</Date>
             <Version>5.7.1</Version>

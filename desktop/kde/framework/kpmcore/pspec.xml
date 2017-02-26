@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Library for managing partitions.</Summary>
         <Description>Library for managing partitions.</Description>
-        <Archive sha1sum="a35942c03a7d750d6a709ab5f045dac273292ed3" type="targz">https://sourceforge.net/projects/pisi-source/files/kpmcore-2.9.91.tar.gz</Archive>
+        <Archive sha1sum="f7a88d35ab1b07bc84fe5868b38cc9e99a86ec37" type="tarxz">mirrors://kde/stable/kpmcore/3.0.2/src/kpmcore-3.0.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libatasmart</Dependency>
@@ -65,7 +65,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-13</Date>
-            <Version>2.9.91</Version>
+            <Version>3.0.2</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

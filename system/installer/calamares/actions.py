@@ -10,20 +10,9 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.makedirs("build")
-    shelltools.cd("build")
+    cmaketools.configure()
     
-    cmaketools.configure("-DCMAKE_BUILD_TYPE=Debug \
-                          -DCMAKE_INSTALL_PREFIX=/usr \
-                          -DWITH_PARTITIONMANAGER=1 \
-                          -DCMAKE_INSTALL_LIBDIR=lib \
-                          -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo", \
-                           sourceDir=".." )
-    
-def build():
-    shelltools.makedirs("build")
-    shelltools.cd("build")
-    
+def build():   
     cmaketools.make()
 
 def install():

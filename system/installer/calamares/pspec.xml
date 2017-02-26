@@ -12,7 +12,7 @@
         <License>LGPLv2</License>
         <Summary>A distribution independent installer framework</Summary>
         <Description>Calamares is a distribution-independent system installer, with an advanced partitioning feature for both manual and automated partitioning operations.</Description>
-        <Archive sha1sum="237805b3a73ce7e19942e9fae1c546b4a3e9dd57" type="targz">https://sourceforge.net/projects/pisi-source/files/limelinux/calamares-2.4.7.tar.gz</Archive>
+        <Archive sha1sum="36e5e4b0a84167655f1bfe75b8352298e944c0a1" type="targz">https://github.com/calamares/calamares/archive/v3.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gettext</Dependency>
             <Dependency>yaml-cpp</Dependency>
@@ -102,7 +102,7 @@
     <History>
         <Update release="1">
             <Date>2016-12-13</Date>
-            <Version>2.4.7</Version>
+            <Version>3.1</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
