@@ -12,12 +12,15 @@
         <License>GPLv2</License>
         <Summary>eudev is a fork of system-udev</Summary>
         <Description>eudev is a fork of system-udev with the goal of obtaining better compatibility with existing software such as OpenRC and Upstart, older kernels, various toolchains and anything else required by users and various distributions.</Description>
-        <Archive sha1sum="ab47db1cd5e6c16bc7ace7f5017068bc8073fe6d" type="targz">https://github.com/gentoo/eudev/archive/v3.2.1.tar.gz</Archive>
+        <Archive sha1sum="978c4b828cdb053d08ccd7f282aa2c2ebe27eabf" type="targz">https://dev.gentoo.org/~blueness/eudev/eudev-3.2.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>util-linux</Dependency>
             <Dependency>libpcre</Dependency>
             <Dependency>libxslt</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">eudev-fix-new-gperf.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -61,13 +64,6 @@
     
 
     <History>
-        <Update release="3">
-            <Date>2017-12-21</Date>
-            <Version>3.2.1</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
         <Update release="2">
             <Date>2017-12-21</Date>
             <Version>3.2.1</Version>

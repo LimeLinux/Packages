@@ -55,6 +55,6 @@ def install():
 
     pisitools.doman("man/*.5", "man/*.7", "man/*.8")
     # Install docs
-    pisitools.dodoc("COPYING", "NOTES", "README.md")
+    pisitools.dodoc("COPYING")
 
 
