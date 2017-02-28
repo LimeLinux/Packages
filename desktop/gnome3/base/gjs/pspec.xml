@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gjs</Name>
+        <Homepage>http://live.gnome.org/Gjs</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>JavaScript bindings based on gobject-introspection and Mozilla</Summary>
+        <Description>Gjs contains JavaScript bindings based on gobject-introspection and the Mozilla SpiderMonkey JavaScript engine.</Description>
+        <Archive sha1sum="7fcc71979563b5a587ab61f23f19ce258a9cf0eb" type="tarxz">mirrors://gnome/gjs/1.46/gjs-1.46.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>mozjs24</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gjs</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>mozjs24</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec/gjs</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>1.46.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

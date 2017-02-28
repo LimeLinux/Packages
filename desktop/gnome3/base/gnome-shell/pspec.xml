@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-shell</Name>
+        <Homepage>http://live.gnome.org/GnomeShell</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>GNOME Shell is the defining technology of the GNOME 3 user experience</Summary>
+        <Description>GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
+        <Archive sha1sum="1361c498ae45278688fc2cb9d4c81b1978942a3f" type="tarxz">mirrors://gnome/gnome-shell/3.22/gnome-shell-3.22.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gjs</Dependency>
+            <Dependency>gcr</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>p11-kit</Dependency>
+            <Dependency>libical</Dependency>
+            <Dependency>libcroco</Dependency>
+            <Dependency>json-glib</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gnome-menus</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>mozjs24</Dependency>
+            <Dependency>cogl</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>gnome-bluetooth</Dependency>
+
+            <!--Dependency>evolution-data-server</Dependency-->
+        <!--Dependency>gnome-bluetooth</Dependency>
+        <Dependency>mutter</Dependency>
+
+        <Dependency>caribou</Dependency>
+
+        <Dependency>telepathy-glib</Dependency-->
+            <!--Dependency>telepathy-logger</Dependency-->
+            <Dependency>libgnome-keyring</Dependency>
+            <Dependency>startup-notification</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>network-manager-applet</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">gnome-shell-favourite-apps-firefox.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gnome-shell</Name>
+        <RuntimeDependencies>
+            <Dependency>gjs</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gcr</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cogl</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>mozjs24</Dependency>
+            <Dependency>mutter</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libical</Dependency>
+            <Dependency>libcroco</Dependency>
+            <Dependency>json-glib</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gnome-menus</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+            <Dependency>telepathy-glib</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>gnome-bluetooth</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>telepathy-logger</Dependency>
+            <Dependency>startup-notification</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>evolution-data-server</Dependency>
+            <Dependency>network-manager-applet</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/gnome</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="data">/usr/share/GConf/</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/gnome-about</Path>
+            <Path fileType="data">/usr/share/gnome-shell</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/libgnome-desktop-3.0</Path>
+            <Path fileType="data">/usr/share/gnome-control-center/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>3.22.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

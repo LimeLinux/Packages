@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libpeas</Name>
+        <Homepage>https://live.gnome.org/Libpeas</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A gobject-based plugins engine</Summary>
+        <Description>libpeas is a gobject-based plugins engine, and is targetted at giving every application the chance to assume its own extensibility.</Description>
+        <Archive sha1sum="3844f00f0ab3ded28c6a8c6c1c3186856bccdc30" type="tarxz">mirrors://gnome/libpeas/1.20/libpeas-1.20.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gjs</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>pygobject</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libpeas</Name>
+        <RuntimeDependencies>
+            <Dependency>gjs</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>1.20.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

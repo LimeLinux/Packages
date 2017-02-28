@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gedit</Name>
+        <Homepage>http://projects.gnome.org/gedit/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <PartOf>desktop.gnome.addons</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Default text editor for GNOME</Summary>
+        <Description>gedit is a small and lightweight text editor for the GNOME environment.</Description>
+        <Archive sha1sum="2c2de5b4e20af09b1be3b86f00b3ec1a6c847e53" type="tarxz">mirrors://gnome/gedit/3.22/gedit-3.22.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>itstool</Dependency>
+            <Dependency>iso-codes</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libpeas</Dependency>
+            <Dependency>enchant</Dependency>
+            <Dependency>gnome-doc-utils</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gtksourceview3</Dependency>
+            <Dependency>pygobject</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gedit</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libpeas</Dependency>
+            <Dependency>enchant</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gtksourceview3</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="d0c">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/help</Path>
+            <Path fileType="data">/usr/share/gedit</Path>
+            <Path fileType="data">/usr/share/GConf</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/appdata</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/vala/vapi/</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>3.22.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

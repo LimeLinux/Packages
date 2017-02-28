@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-menus</Name>
+        <Homepage>http://www.gnome.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Gnome Menus</Summary>
+        <Description>gnome-menus has got desktop-directories, GNOME menus library and its python bindings.</Description>
+        <Archive sha1sum="667e451d2a12395bf59606ecd4165df8143a76c6" type="tarxz">mirrors://gnome/gnome-menus/3.13/gnome-menus-3.13.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gnome-common</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">gnome-menus-3.8.0-ignore_kde_standalone.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gnome-menus</Name>
+        <RuntimeDependencies>
+            <Dependency>gnome-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="config">/etc/xdg/menus</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/desktop-directories</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>3.13.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

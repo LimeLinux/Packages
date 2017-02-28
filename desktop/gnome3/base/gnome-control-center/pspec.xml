@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-control-center</Name>
+        <Homepage>https://live.gnome.org/ControlCenter</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>GNOME configuration tools</Summary>
+        <Description>gnome-control-center is GNOME's main interface for configuration of various aspects of your GNOME desktop.</Description>
+        <Archive sha1sum="05988dae3f7cddd3b6ed678dddc5cae6d66c7654" type="tarxz">mirrors://gnome/gnome-control-center/3.20/gnome-control-center-3.20.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>ibus</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>clutter-gtk</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>libgtop</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libwacom</Dependency>
+            <Dependency>gnome-doc-utils</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>accountsservice</Dependency>
+            <Dependency>network-manager-applet</Dependency>
+            <Dependency>gnome-settings-daemon</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>libpwquality</Dependency>
+            <Dependency>gnome-menus</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
+            <Dependency>gnome-bluetooth</Dependency>
+        <!--Dependency>gnome-bluetooth</Dependency>
+        <Dependency>colord</Dependency>
+
+        <Dependency>gnome-online-accounts</Dependency-->
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">gnome-control-center-3.20.0-optional.patch</Patch>
+            <Patch level="1">gnome-control-center-3.18.0-keep-panels-optional.patch</Patch>
+
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gnome-control-center</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libgtop</Dependency>
+            <Dependency>libwacom</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>clutter-gtk</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>clutter-gtk</Dependency>
+            <Dependency>accountsservice</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>network-manager-applet</Dependency>
+            <Dependency>gnome-settings-daemon</Dependency>
+            <Dependency>libpwquality</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
+            <Dependency>gnome-bluetooth</Dependency>
+        <!--Dependency>gnome-bluetooth</Dependency>
+        <Dependency>colord-gtk</Dependency>
+
+        <Dependency>gnome-online-accounts</Dependency-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/sounds</Path>
+            <Path fileType="data">/usr/share/dbus-1/</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/gnome-shell/</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/bash-completion/</Path>
+            <Path fileType="data">/usr/share/desktop-directories</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>3.20.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

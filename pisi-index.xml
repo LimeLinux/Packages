@@ -29921,6 +29921,2464 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>gedit</Name>
+            <Homepage>http://projects.gnome.org/gedit/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome.addons</PartOf>
+            <Summary xml:lang="en">Default text editor for GNOME</Summary>
+            <Summary xml:lang="tr">GNOME için öntanımlı metin editörü</Summary>
+            <Description xml:lang="en">gedit is a small and lightweight text editor for the GNOME environment.</Description>
+            <Description xml:lang="tr">gedit, GNOME ortamı için küçük ve hafif bir metin editörüdür.</Description>
+            <Archive type="tarxz" sha1sum="2c2de5b4e20af09b1be3b86f00b3ec1a6c847e53">mirrors://gnome/gedit/3.22/gedit-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>itstool</Dependency>
+                <Dependency>iso-codes</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libpeas</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>gnome-doc-utils</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtksourceview3</Dependency>
+                <Dependency>pygobject</Dependency>
+                <Dependency>gsettings-desktop-schemas</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gedit/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gedit</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libpeas</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtksourceview3</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>gsettings-desktop-schemas</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="d0c">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/gedit</Path>
+                <Path fileType="data">/usr/share/GConf</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/appdata</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/vala/vapi/</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-shell</Name>
+            <Homepage>http://live.gnome.org/GnomeShell</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">GNOME Shell is the defining technology of the GNOME 3 user experience</Summary>
+            <Summary xml:lang="tr">Gnome 3 kullanıcı tecrübesinin belirleyici teknolojisi</Summary>
+            <Description xml:lang="en">GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
+            <Description xml:lang="tr">gnome-shell, Gnome 3 kullanıcı tecrübesinin belirleyici teknolojisidir. Pencereler arası geçiş ve uygulama çalıştırma gibi temel işlevleri sağlar.</Description>
+            <Archive type="tarxz" sha1sum="1361c498ae45278688fc2cb9d4c81b1978942a3f">mirrors://gnome/gnome-shell/3.22/gnome-shell-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gjs</Dependency>
+                <Dependency>gcr</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gnome-common</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>p11-kit</Dependency>
+                <Dependency>libical</Dependency>
+                <Dependency>libcroco</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>at-spi2-atk</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>NetworkManager</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>mozjs24</Dependency>
+                <Dependency>cogl</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>python3</Dependency>
+                <Dependency>gnome-bluetooth</Dependency>
+                <Dependency>libgnome-keyring</Dependency>
+                <Dependency>startup-notification</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>network-manager-applet</Dependency>
+                <Dependency>gsettings-desktop-schemas</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-shell/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-shell</Name>
+            <RuntimeDependencies>
+                <Dependency>gjs</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>gcr</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cogl</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>mozjs24</Dependency>
+                <Dependency>mutter</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libical</Dependency>
+                <Dependency>libcroco</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>at-spi2-atk</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>telepathy-glib</Dependency>
+                <Dependency>NetworkManager</Dependency>
+                <Dependency>gnome-bluetooth</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>telepathy-logger</Dependency>
+                <Dependency>startup-notification</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>evolution-data-server</Dependency>
+                <Dependency>network-manager-applet</Dependency>
+                <Dependency>gsettings-desktop-schemas</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/gnome</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="data">/usr/share/GConf/</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/gnome-about</Path>
+                <Path fileType="data">/usr/share/gnome-shell</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/libgnome-desktop-3.0</Path>
+                <Path fileType="data">/usr/share/gnome-control-center/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-online-accounts</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">Provide online accounts information</Summary>
+            <Description xml:lang="en">The GNOME Online Accounts package contains a framework used to access the user&apos;s online accounts.</Description>
+            <Archive type="tarxz" sha1sum="35c93b1844234798842a0e21932f82befe1403e5">mirrors://gnome/gnome-online-accounts/3.22/gnome-online-accounts-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>librest</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>telepathy-glib</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-online-accounts/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-online-accounts</Name>
+            <RuntimeDependencies>
+                <Dependency>gcr</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>p11-kit</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>librest</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>telepathy-glib</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/gnome-online-accounts</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/goa-1.0</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.10.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-flashback</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">GNOME panel</Summary>
+            <Description xml:lang="en">GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
+            <Archive type="tarxz" sha1sum="1941db21e36be6734f86a6d95b0ddcf268ca9a89">mirrors://gnome/gnome-flashback/3.20/gnome-flashback-3.20.2.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libical</Dependency>
+                <Dependency>libwnck3</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>libgweather</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-flashback/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-flashback</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>ibus</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libical</Dependency>
+                <Dependency>libwnck3</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>libgweather</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>gnome-bluetooth</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>pulseaudio</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/etc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/gnome-session/</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.20.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mutter</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">A window manager which is replacing Metacity</Summary>
+            <Summary xml:lang="tr">Metacity&apos;nin yerine geçen bir pencere yöneticisi</Summary>
+            <Description xml:lang="en">Mutter is the window manager for which GNOME Shell is a plugin in GNOME 3, replacing Metacity.</Description>
+            <Description xml:lang="tr">Mutter, Gnome 3&apos;de Metacity&apos;nin yerine geçen bir pencere yöneticisidir.</Description>
+            <Archive type="tarxz" sha1sum="1c91e0276655b3a727b3345fbfa1ac0875a8f919">mirrors://gnome/mutter/3.22/mutter-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libdrm</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libgudev</Dependency>
+                <Dependency>libinput</Dependency>
+                <Dependency>libwacom</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libxkbfile</Dependency>
+                <Dependency>libxkbcommon</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>wayland-protocols</Dependency>
+                <Dependency>startup-notification</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/mutter/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mutter</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cogl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libdrm</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libgudev</Dependency>
+                <Dependency>libinput</Dependency>
+                <Dependency>libwacom</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libxkbfile</Dependency>
+                <Dependency>libxkbcommon</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>startup-notification</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="config">/etc/gconf</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="config">/etc/xdg/menus</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-session</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">GNOME session manager</Summary>
+            <Summary xml:lang="tr">GNOME oturum yöneticisi</Summary>
+            <Description xml:lang="en">gnome-session manages X11-compliant sessions with ConsoleKit daemon and starts GNOME core services</Description>
+            <Description xml:lang="tr">gnome-session, ConsoleKit ile birlikte X11-uyumlu oturumları yönetir ve temel GNOME servislerini başlatır.</Description>
+            <Archive type="tarxz" sha1sum="01a00011451415e1f55e2cc3124e7cc5ab3ef7a1">mirrors://gnome/gnome-session/3.22/gnome-session-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-session/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-session</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/etc/xdg</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="config">/etc/gconf</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/GConf</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/gnome</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="doc">/usr/share/glib-2.0</Path>
+                <Path fileType="doc">/usr/share/xsessions</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/gnome-session</Path>
+                <Path fileType="data">/usr/share/wayland-sessions/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-keyring</Name>
+            <Homepage>https://live.gnome.org/GnomeKeyring</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">Password and keyring managing daemon</Summary>
+            <Summary xml:lang="tr">Parola ve Anahtar yönetim servisi</Summary>
+            <Description xml:lang="en">The gnome-keyring session daemon manages passwords and other types of secrets for the user, storing them encrypted with a main password. Applications can use the gnome-keyring library to integrate with the keyring.</Description>
+            <Archive type="tarxz" sha1sum="9c2a1fa6e52ae03a819dcb3be25048cd8e38c8c4">mirrors://gnome/gnome-keyring/3.20/gnome-keyring-3.20.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gcr</Dependency>
+                <Dependency>gtk3</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-keyring/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-keyring</Name>
+            <RuntimeDependencies>
+                <Dependency>gcr</Dependency>
+                <Dependency>gtk3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/GConf</Path>
+                <Path fileType="library">/lib/security</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="man">/usr/share/man/man1</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="config">/etc/xdg/autostart/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/p11-kit/modules</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.20.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gdm</Name>
+            <Homepage>https://live.gnome.org/GDM</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">GNOME display manager</Summary>
+            <Description xml:lang="en">GDM provides log into different sessions on local or remote machines.</Description>
+            <Archive type="tarxz" sha1sum="c7ee26edceaf5225de4839ecfbe82ff4049d5030">mirrors://gnome/gdm/3.22/gdm-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>itstool</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>gnome-shell</Dependency>
+                <Dependency>gnome-session</Dependency>
+                <Dependency>accountsservice</Dependency>
+                <Dependency>gnome-settings-daemon</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gdm/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gdm</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>gnome-shell</Dependency>
+                <Dependency>gnome-session</Dependency>
+                <Dependency>accountsservice</Dependency>
+                <Dependency>gnome-settings-daemon</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/display-managers/gdm.desktop" permission="0644" owner="root">gdm.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>caribou</Name>
+            <Homepage>http://live.gnome.org/Caribou/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">Caribou is a text entry and UI navigation application being developed as an alternative to the Gnome On-screen Keyboard.</Summary>
+            <Description xml:lang="en">Caribou is a text entry and UI navigation application being developed as an alternative to the Gnome On-screen Keyboard. The overarching goal for Caribou is to create a usable solution for people whose primary way of accessing a computer is a switch device. </Description>
+            <Archive type="tarxz" sha1sum="ba10a7a2d7608008ffe4461826252792facf90c4">mirrors://gnome/caribou/0.4/caribou-0.4.21.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>intltool</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>libgee</Dependency>
+                <Dependency>gnome-doc-utils</Dependency>
+                <Dependency>libxklavier</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>at-spi2-core</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/caribou/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>caribou</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>libgee</Dependency>
+                <Dependency>libxklavier</Dependency>
+                <Dependency>at-spi2-core</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/antler/</Path>
+                <Path fileType="data">/usr/share/caribou</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="config">/etc/xdg/autostart</Path>
+                <Path fileType="data">/usr/share/vala/vapi/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-30</Date>
+                <Version>0.4.21</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libgnome-keyring</Name>
+            <Homepage>http://live.gnome.org/GnomeKeyring</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">Compatibility library for accessing gnome-keyring3</Summary>
+            <Summary xml:lang="tr">gnome-keyring&apos;e ulaşmak için uyumluluk kütüphanesidir.</Summary>
+            <Description xml:lang="en">libgnome-keyring is a library that used by applications to integrate with the gnome-keyring system.</Description>
+            <Description xml:lang="tr">libgnome-keyring, gnome-keyring sistemine uyumlu olmak için programlar tarafından kullanılan bir kütüphanedir.</Description>
+            <Archive type="tarxz" sha1sum="69b21d77e0946911b2e71346d219bb19b74d05f8">http://ftp.gnome.org/mirror/gnome.org/sources/libgnome-keyring/3.12/libgnome-keyring-3.12.0.tar.xz</Archive>
+            <SourceURI>desktop/gnome3/base/libgnome-keyring/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libgnome-keyring</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/vala/vapi/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.12.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libgweather</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">GNOME weather library</Summary>
+            <Summary xml:lang="tr">GNOME hava durumu kitaplığı</Summary>
+            <Description xml:lang="en">libgweather is a library to access weather information from online services for numerous locations.</Description>
+            <Archive type="tarxz" sha1sum="44a0ce7e79307c8ad8e3fed8475f2df3c72f1593">mirrors://gnome/libgweather/3.20/libgweather-3.20.3.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libproxy</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>geocode-glib</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/libgweather/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libgweather</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>geocode-glib</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/gconf</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/glib-2.0/</Path>
+                <Path fileType="data">/usr/share/vala/vapi/</Path>
+                <Path fileType="data">/usr/share/libgweather</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/glade/catalogs/</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.20.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-terminal</Name>
+            <Homepage>http://www.gnome.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">Terminal emulation application for the GNOME desktop.</Summary>
+            <Summary xml:lang="tr">GNOME masaüstü için terminal emülasyon uygulaması</Summary>
+            <Description xml:lang="en">GNOME terminal is a emulation application that designed to run xterm, VT102 and VT220</Description>
+            <Description xml:lang="tr">GNOME terminal; xterm, VT102 xterm ile çalışacak şekilde tasarlanan bir terminal emülasyon uygulamasıdır.</Description>
+            <Archive type="tarxz" sha1sum="fee7ed0c3c485617bec1089a100621bbd097c5c1">mirrors://gnome/gnome-terminal/3.22/gnome-terminal-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>vte3</Dependency>
+                <Dependency>nautilus</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-terminal/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-terminal</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>vte3</Dependency>
+                <Dependency>nautilus</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/gnome-terminal</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/glib-2.0/schemas</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libpeas</Name>
+            <Homepage>https://live.gnome.org/Libpeas</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">A gobject-based plugins engine</Summary>
+            <Summary xml:lang="tr">Gobject tabanlı eklenti motoru</Summary>
+            <Description xml:lang="en">libpeas is a gobject-based plugins engine, and is targetted at giving every application the chance to assume its own extensibility.</Description>
+            <Archive type="tarxz" sha1sum="3844f00f0ab3ded28c6a8c6c1c3186856bccdc30">mirrors://gnome/libpeas/1.20/libpeas-1.20.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gjs</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>pygobject</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/libpeas/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libpeas</Name>
+            <RuntimeDependencies>
+                <Dependency>gjs</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>1.20.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>librest</Name>
+            <Homepage>http://www.gtk.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">A helper library for RESTful services.</Summary>
+            <Description xml:lang="en">This library was designed to make it easier to access web services that claim to be &quot;RESTful&quot;.</Description>
+            <Archive type="tarxz" sha1sum="87d4cbed92c5702ea085ebe157b271b4023d0b04">mirrors://gnome/rest/0.8/rest-0.8.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>libsoup</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/librest/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>librest</Name>
+            <RuntimeDependencies>
+                <Dependency>libsoup</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>0.8.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-backgrounds</Name>
+            <Homepage>http://live.gnome.org/GnomeApplets</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">The GNOME Backgrounds package contains</Summary>
+            <Description xml:lang="en">The GNOME Backgrounds package contains a collection of graphics files which can be used as backgrounds in the GNOME Desktop environment. Additionally, the package creates the proper framework and directory structure so that you can add your own files to the collection.</Description>
+            <Archive type="tarxz" sha1sum="678067d0776869d3a9ff78a3b4b76bd6a8e98670">mirrors://gnome/gnome-backgrounds/3.22/gnome-backgrounds-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gnome-common</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-backgrounds/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-backgrounds</Name>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/backgrounds</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/gnome-background-properties</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>zenity</Name>
+            <Homepage>https://live.gnome.org/Zenity</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">A rewrite of gdialog</Summary>
+            <Summary xml:lang="tr">Gdialog&apos;un yeniden yazılmış hali</Summary>
+            <Description xml:lang="en">Zenity is the GNOME port of dialog which allows you to display dialog boxes from the commandline and shell scripts.</Description>
+            <Description xml:lang="tr">Zenity, komut satırından ve betiklerle iletişim kutuları oluşturmanıza imkan verir. Dialog&apos;un Gnome 3 için yeniden yazılmış halidir.</Description>
+            <Archive type="tarxz" sha1sum="b0dfb31c8445547de968fb71c4303515cdf0da83">http://source.pisilinux.org/1.0/zenity.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gnome-common</Dependency>
+                <Dependency>gnome-doc-utils</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>yelp-tools</Dependency>
+                <Dependency>yelp-xsl</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/zenity/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>zenity</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>yelp-tools</Dependency>
+                <Dependency>yelp-xsl</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="config">/etc/xdg/menus</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-01-07</Date>
+                <Version>3.10.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-settings-daemon</Name>
+            <Homepage>http://www.gnome.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>service</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">System settings daemon for GNOME desktop</Summary>
+            <Description xml:lang="en">gnome-settings-daemon shares GNOME specific settings with other applications via DBus connection.</Description>
+            <Archive type="tarxz" sha1sum="3881391457ac955b4b820902884b3190d0260275">mirrors://gnome/gnome-settings-daemon/3.22/gnome-settings-daemon-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cups</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>lcms2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libgweather</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>geocode-glib</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>geoclue2</Dependency>
+                <Dependency>libwacom</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libxkbfile</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>xorg-input-wacom</Dependency>
+                <Dependency>gsettings-desktop-schemas</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>geoclue2</Dependency>
+                <Dependency>geoclue2</Dependency>
+                <Dependency>libgudev</Dependency>
+                <Dependency>NetworkManager</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>gnome-settings-daemon-3.16.0-optional.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/gnome3/base/gnome-settings-daemon/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-settings-daemon</Name>
+            <RuntimeDependencies>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>lcms2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libwacom</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libxkbfile</Dependency>
+                <Dependency>geocode-glib</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>geocode-glib</Dependency>
+                <Dependency>libgweather</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>geoclue2</Dependency>
+                <Dependency>geoclue2</Dependency>
+                <Dependency>libgudev</Dependency>
+                <Dependency>NetworkManager</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-panel</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">GNOME panel</Summary>
+            <Summary xml:lang="tr">GNOME paneli</Summary>
+            <Description xml:lang="en">GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
+            <Description xml:lang="tr">GNOME paneli ekranın kenarlarında bulunur ve  programcıkları (işlemci yükü, program başlatıcısı, çalışma alanı değiştiricisi gibi) barındırmayı sağlar.</Description>
+            <Archive type="tarxz" sha1sum="ef938d9a9090f2223adcfcb354f29c766853b9c5">mirrors://gnome/gnome-panel/3.20/gnome-panel-3.20.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libical</Dependency>
+                <Dependency>libwnck3</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>libgweather</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-panel/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-panel</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libical</Dependency>
+                <Dependency>libwnck3</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>libgweather</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/gnome-session/</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.20.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-control-center</Name>
+            <Homepage>https://live.gnome.org/ControlCenter</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">GNOME configuration tools</Summary>
+            <Summary xml:lang="tr">GNOME yapılandırma araçları</Summary>
+            <Description xml:lang="en">gnome-control-center is GNOME&apos;s main interface for configuration of various aspects of your GNOME desktop.</Description>
+            <Description xml:lang="tr">gnome-control-center GNOME masaüstünüzün çeşitli ayarlarını değiştiren, GNOME&apos;un ana arayüzüdür.</Description>
+            <Archive type="tarxz" sha1sum="05988dae3f7cddd3b6ed678dddc5cae6d66c7654">mirrors://gnome/gnome-control-center/3.20/gnome-control-center-3.20.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>ibus</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>samba</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>clutter-gtk</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>docbook-xsl</Dependency>
+                <Dependency>libgtop</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libwacom</Dependency>
+                <Dependency>gnome-doc-utils</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>NetworkManager</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>accountsservice</Dependency>
+                <Dependency>network-manager-applet</Dependency>
+                <Dependency>gnome-settings-daemon</Dependency>
+                <Dependency>gnome-common</Dependency>
+                <Dependency>libpwquality</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>gnome-bluetooth</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">gnome-control-center-3.20.0-optional.patch</Patch>
+                <Patch level="1">gnome-control-center-3.18.0-keep-panels-optional.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/gnome3/base/gnome-control-center/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-control-center</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>samba</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libgtop</Dependency>
+                <Dependency>libwacom</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>clutter-gtk</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>NetworkManager</Dependency>
+                <Dependency>clutter-gtk</Dependency>
+                <Dependency>accountsservice</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>network-manager-applet</Dependency>
+                <Dependency>gnome-settings-daemon</Dependency>
+                <Dependency>libpwquality</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>gnome-bluetooth</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/sounds</Path>
+                <Path fileType="data">/usr/share/dbus-1/</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="data">/usr/share/gnome-shell/</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/bash-completion/</Path>
+                <Path fileType="data">/usr/share/desktop-directories</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.20.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome3-desktop</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">Basic GNOME libraries and dialogs</Summary>
+            <Summary xml:lang="tr">GNOME masaüstü</Summary>
+            <Description xml:lang="en">gnome-desktop contains basic GNOME libraries and information applications.</Description>
+            <Description xml:lang="tr">gnome-desktop, GNOME kullanıcı ortamının paylaşımlı bileşenlerini içeren temel pakettir.</Description>
+            <Archive type="tarxz" sha1sum="2fd7e9f18bfbef871113399a3d22a4a9abad10e3">mirrors://gnome/gnome-desktop/3.22/gnome-desktop-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>itstool</Dependency>
+                <Dependency>iso-codes</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gnome-common</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libxkbfile</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>xkeyboard-config</Dependency>
+                <Dependency>gsettings-desktop-schemas</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome3-desktop/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome3-desktop</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libxkbfile</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gsettings-desktop-schemas</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/gnome</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/libgnome-desktop-3.0</Path>
+                <Path fileType="executable">/usr/libexec/gnome-rr-debug</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>accountsservice</Name>
+            <Homepage>http://www.freedesktop.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">D-Bus Service to Manipulate User Account Information</Summary>
+            <Description xml:lang="en">accountsservice server provides a set of D-Bus interfaces for querying and manipulating user account information.</Description>
+            <Archive type="tarxz" sha1sum="4461347acf3878e100afcc2e3f960fb2c9fd87f4">http://www.freedesktop.org/software/accountsservice/accountsservice-0.6.42.tar.xz</Archive>
+            <SourceURI>desktop/gnome3/base/accountsservice/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>accountsservice</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="data">/usr/share/vala/vapi</Path>
+                <Path fileType="config">/etc/dbus-1/system.d</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/var/lib/AccountsService/</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>0.6.42</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-menus</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">Gnome Menus</Summary>
+            <Summary xml:lang="tr">Gnome menüleri</Summary>
+            <Description xml:lang="en">gnome-menus has got desktop-directories, GNOME menus library and its python bindings.</Description>
+            <Description xml:lang="tr">gnome-menus, Gnome masaüstü dizinlerini, kitaplıklarını ve python bağlayıcılarını içerir.</Description>
+            <Archive type="tarxz" sha1sum="667e451d2a12395bf59606ecd4165df8143a76c6">mirrors://gnome/gnome-menus/3.13/gnome-menus-3.13.3.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gnome-common</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-menus/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-menus</Name>
+            <RuntimeDependencies>
+                <Dependency>gnome-common</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="config">/etc/xdg/menus</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/desktop-directories</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.13.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>nautilus</Name>
+            <Homepage>http://projects.gnome.org/nautilus/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">Default file manager for the GNOME desktop</Summary>
+            <Summary xml:lang="tr">GNOME masasütü için öntanımlı dosya yöneticisi</Summary>
+            <Description xml:lang="en">Nautilus is a file manager that allows to browse directories, preview files and launch applications.</Description>
+            <Description xml:lang="tr">Nautilus; dizinlerde gezinmeyi, dosyaları gözatmayı ve uygulamalar başlatmayı sağlayan bir dosya yöneticisidir.</Description>
+            <Icon>nautilus</Icon>
+            <Archive type="tarxz" sha1sum="c3db62ace167aa107d4833edb96249c6295ec46b">mirrors://gnome/nautilus/3.22/nautilus-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>exempi</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>gnome-autoar</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/nautilus/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>nautilus</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>exempi</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>gnome-autoar</Dependency>
+                <Dependency>libarchive</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/GConf</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="man">/usr/share/gir-1.0</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/nautilus</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/gnome-shell/</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gjs</Name>
+            <Homepage>http://live.gnome.org/Gjs</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">JavaScript bindings based on gobject-introspection and Mozilla</Summary>
+            <Summary xml:lang="tr">gobject-introspection ve Mozilla&apos;ya dayalı JavaScript bağlayıcıları</Summary>
+            <Description xml:lang="en">Gjs contains JavaScript bindings based on gobject-introspection and the Mozilla SpiderMonkey JavaScript engine.</Description>
+            <Description xml:lang="tr">Bu modül gobject-introspection ve Mozilla SpiderMonkey JavaScript motoruna dayalı JavaScript bağlayıcıları içermektedir.</Description>
+            <Archive type="tarxz" sha1sum="7fcc71979563b5a587ab61f23f19ce258a9cf0eb">mirrors://gnome/gjs/1.46/gjs-1.46.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>gnome-common</Dependency>
+                <Dependency>mozjs24</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gjs/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gjs</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>mozjs24</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/libexec/gjs</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>1.46.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-power-manager</Name>
+            <Homepage>http://projects.gnome.org/gnome-power-manager</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">GNOME power manager</Summary>
+            <Summary xml:lang="tr">GNOME güç yöneticisi</Summary>
+            <Description xml:lang="en">GNOME Power Manager is a session daemon that acts as a policy agent on top of UPower.</Description>
+            <Description xml:lang="tr">GNOME güç yöneticisi, UPower kuralları üzerinden hareket eden bir ayar yöneticisidir.</Description>
+            <Icon>gnome-power-manager</Icon>
+            <Archive type="tarxz" sha1sum="98b5ba1e337770b12144c07e53c0105c3fc490ab">mirrors://gnome/gnome-power-manager/3.22/gnome-power-manager-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>docbook-xml</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libwnck3</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gnome-doc-utils</Dependency>
+                <Dependency>libunique</Dependency>
+                <Dependency>libgnome-keyring</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-power-manager/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-power-manager</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>upower</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="man">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/appdata/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-bluetooth</Name>
+            <Homepage>https://live.gnome.org/GnomeBluetooth</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">Fork of bluez-gnome</Summary>
+            <Summary xml:lang="tr">Bir bluez-gnome çatallaması</Summary>
+            <Description xml:lang="en">gnome-bluetooth is a fork of bluez-gnome focused on integration with GNOME.</Description>
+            <Description xml:lang="tr">gnome-bluetooth, bluez-gnome&apos;un Gnome masaüstüne entegre edilmesine odaklanmış bir çatallamasıdır.</Description>
+            <Archive type="tarxz" sha1sum="b1d2fd4b740dd8b9a0791dd57e85eb65a3eab97d">mirrors://gnome/gnome-bluetooth/3.20/gnome-bluetooth-3.20.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-bluetooth/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-bluetooth</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>bluez</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/gnome-bluetooth</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.20.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-themes-standard</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.gnome3.base</PartOf>
+            <Summary xml:lang="en">GNOME Standart Themes</Summary>
+            <Summary xml:lang="tr">GNOME için standart temalar</Summary>
+            <Description xml:lang="en">gnome-themes-standard provides GNOME Standart Themes.</Description>
+            <Description xml:lang="tr">gnome-themes-standard, GNOME3&apos;ün standart temalarını içerir.</Description>
+            <Archive type="tarxz" sha1sum="bd97bd58e53e810c65b8843613bbd08ce64fe202">mirrors://gnome/gnome-themes-standard/3.20/gnome-themes-standard-3.20.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>librsvg</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/base/gnome-themes-standard/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-themes-standard</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.20</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>evolution-data-server</Name>
+            <Homepage>http://www.gnome.org/projects/evolution</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <License>BSD</License>
+            <License>DB</License>
+            <PartOf>desktop.gnome3.library</PartOf>
+            <Summary xml:lang="en">Evolution groupware backend</Summary>
+            <Summary xml:lang="tr">Adres defteri, yapılacak işler ve takvim gibi uygulamalar için merkezi bir sunucu</Summary>
+            <Description xml:lang="en">evolution-data-server is a library backend for Evolution-related applications.</Description>
+            <Description xml:lang="tr">evolution-data-server, takvim, yapılacak işler, adres defteri gibi bilgilerle uğraşan programlar için oluşturulmuş ortak bir pakettir. İlk olarak Evolution e-posta istemcisi için geliştirilmiştir fakat günümüzde farklı paketler de kullanmaktadır.</Description>
+            <Archive type="tarxz" sha1sum="188a85275b9ebc776d1547e9687eb45731544e3c">mirrors://gnome/evolution-data-server/3.20/evolution-data-server-3.20.5.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>vala</Dependency>
+                <Dependency>gnome-common</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>p11-kit</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>gcr</Dependency>
+                <Dependency>orbit2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>libglade</Dependency>
+                <Dependency>libgweather</Dependency>
+                <Dependency>libical</Dependency>
+                <Dependency>libgnome-keyring</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>openldap</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libsecret</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/library/evolution-data-server/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>evolution-data-server</Name>
+            <RuntimeDependencies>
+                <Dependency>gcr</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libical</Dependency>
+                <Dependency>libgdata</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libgweather</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/accounts/service*</Path>
+                <Path fileType="data">/usr/share/accounts/applications/</Path>
+                <Path fileType="data">/usr/share/evolution-data-server*</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/GConf</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/vala</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.20.5</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>geocode-glib</Name>
+            <Homepage>http://www.gnome.org/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2+</License>
+            <PartOf>desktop.gnome3.library</PartOf>
+            <Summary xml:lang="en">GLib geocoding library that uses the Yahoo! Place Finder service</Summary>
+            <Description xml:lang="en">geocode-glib is a convenience library for the geocoding (finding longitude, and latitude from an address) and reverse geocoding (finding an address from coordinates). It uses Nominatim service to achieve that.</Description>
+            <Archive type="tarxz" sha1sum="ca6579c182270eea64e6d2c38768ff476eb89c75">mirrors://gnome/geocode-glib/3.20/geocode-glib-3.20.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>libsoup</Dependency>
+                <Dependency>json-glib</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/library/geocode-glib/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>geocode-glib</Name>
+            <RuntimeDependencies>
+                <Dependency>libsoup</Dependency>
+                <Dependency>json-glib</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.20.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libsignon-glib</Name>
+            <Homepage>https://code.google.com/p/accounts-sso</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <PartOf>desktop.gnome3.library</PartOf>
+            <Summary xml:lang="en">Authorization and authentication management for glib</Summary>
+            <Description xml:lang="en">libsignon-glib provides authorization and authentication management for GLib applications.</Description>
+            <Archive type="targz" sha1sum="09e0b8da14f4ea9450e33eb5f6808afeefdbbe03">http://accounts-sso.googlecode.com/files/libsignon-glib-1.9.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python-pygobject</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>signon</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">clean-missing-signon-enum-types-c.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/gnome3/library/libsignon-glib/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libsignon-glib</Name>
+            <RuntimeDependencies>
+                <Dependency>python-pygobject</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>signon</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>1.9</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-autoar</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.library</PartOf>
+            <Summary xml:lang="en">Automatic archives creating and extracting library</Summary>
+            <Description xml:lang="en">Automatic archives creating and extracting library</Description>
+            <Archive type="tarxz" sha1sum="d9e099f843b714f030d3fa4b62547ac5b5c7bb9a">mirrors://gnome/gnome-autoar/0.1/gnome-autoar-0.1.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gcr</Dependency>
+                <Dependency>gnome-common</Dependency>
+                <Dependency>p11-kit</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>liboauth</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/library/gnome-autoar/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-autoar</Name>
+            <RuntimeDependencies>
+                <Dependency>gcr</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>libarchive</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>0.1.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libaccounts-glib</Name>
+            <Homepage>https://code.google.com/p/accounts-sso</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <PartOf>desktop.gnome3.library</PartOf>
+            <Summary xml:lang="en">Accounts and SSO (Single Sign-On) framework</Summary>
+            <Description xml:lang="en">Accounts and SSO (Single Sign-On) framework for Linux and POSIX based platforms.</Description>
+            <Archive type="targz" sha1sum="0b681e624af0bec3866d8ad662d40df9aa8b3d7a">https://accounts-sso.googlecode.com/files/libaccounts-glib-1.15.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libxslt</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/library/libaccounts-glib/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libaccounts-glib</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="conf">/usr/share/backup-framework/applications/accounts.conf</Path>
+                <Path fileType="data">/usr/share/xml</Path>
+                <Path fileType="data">/usr/share/libaccounts-glib/testdata</Path>
+                <Path fileType="man">/usr/share/man/man1</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/share/gir-1.0/Accounts-1.0.gir</Path>
+                <Path fileType="data">/usr/share/vala</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>1.15</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>webkit2gtk</Name>
+            <Homepage>http://webkitgtk.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <License>LGPLv2.1</License>
+            <License>BSD</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.library</PartOf>
+            <Summary xml:lang="en">An opensource web browser engine for GTK+ 3.x applications</Summary>
+            <Description xml:lang="en">The GTK+ 3.x port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ 3.x UI toolkit on platforms like Linux.</Description>
+            <Archive type="tarxz" sha1sum="cc3419a369a3a41edd57a395373f71bbdfcfcaaf">http://www.webkitgtk.org/releases/webkitgtk-2.14.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>geoclue2</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+                <Dependency>at-spi2-core</Dependency>
+                <Dependency>bison</Dependency>
+                <Dependency>chrpath</Dependency>
+                <Dependency>flex</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>geoclue2</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>libpcre</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>ruby</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libXdmcp</Dependency>
+                <Dependency>libffi</Dependency>
+                <Dependency>libgudev</Dependency>
+                <Dependency>libgcrypt</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>libtool</Dependency>
+                <Dependency>hyphen</Dependency>
+                <Dependency>icon-theme-hicolor</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/library/webkit2gtk/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>webkit2gtk</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>libgudev1</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk/Web*</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk3/html</Path>
+                <Path fileType="doc">/usr/share/doc/webkit-gtk/JavaScriptCore</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>2.14.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libgnomekbd</Name>
+            <Homepage>http://www.gnome.org</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.gnome3.library</PartOf>
+            <Summary xml:lang="en">GNOME keybord configration library</Summary>
+            <Description xml:lang="en">libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
+            <Archive type="tarxz" sha1sum="836b6553c8192ffc3f27ca930e19374b7279e5d4">mirrors://gnome/libgnomekbd/3.22/libgnomekbd-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>libxklavier</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/library/libgnomekbd/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libgnomekbd</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libxklavier</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="config">/etc/gconf</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/libgnomekbd</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-screenshot</Name>
+            <Homepage>https://live.gnome.org/GnomeScreensaver</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.addon</PartOf>
+            <Summary xml:lang="en">A screenshot utility for GNOME</Summary>
+            <Description xml:lang="en">gnome-screenshot lets you take pictures of your screen.</Description>
+            <Archive type="tarxz" sha1sum="210194845842c9273d8ba6bc60403beaaf27f75f">mirrors://gnome/gnome-screenshot/3.22/gnome-screenshot-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/addon/gnome-screenshot/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-screenshot</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="doc">/usr/share/GConf</Path>
+                <Path fileType="doc">/usr/share/glib-2.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-shell-extensions</Name>
+            <Homepage>http://live.gnome.org/GnomeShell/Extensions</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.gnome3.addon</PartOf>
+            <Summary xml:lang="en">A collection of extensions providing additional and optional functionality to GNOME Shell</Summary>
+            <Summary xml:lang="tr">Gnome-shell&apos;e seçimlik yeni işlevsellikler katan eklentiler seçkisi</Summary>
+            <Description xml:lang="en">gnome-shell-extensions is a collection of extensions providing additional and optional functionality to GNOME Shell.</Description>
+            <Description xml:lang="tr">gnome-shell-extensions, Gnome-shell&apos;e seçimlik yeni işlevsellikler katan eklentilerin bir seçkisini sunar.</Description>
+            <Archive type="tarxz" sha1sum="9da4b7379ec022b6f53c5fa12c06da0d26fa9015">mirrors://gnome/gnome-shell-extensions/3.22/gnome-shell-extensions-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/addon/gnome-shell-extensions/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-shell-extensions</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>gnome-shell</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/xsessions</Path>
+                <Path fileType="data">/usr/share/gnome-shell</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/gnome-session</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gnome-calculator</Name>
+            <Homepage>https://wiki.gnome.org/Calculator</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome3.addon</PartOf>
+            <Summary xml:lang="en">A desktop calculator for GNOME</Summary>
+            <Description xml:lang="en">gnome-calculator is an application that solves mathematical equations.</Description>
+            <Archive type="tarxz" sha1sum="7c12a649cde91dd02ce7d58d73b8d4a3c6537174">mirrors://gnome/gnome-calculator/3.22/gnome-calculator-3.22.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>itstool</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>gettext</Dependency>
+                <Dependency>gtksourceview3</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome3/addon/gnome-calculator/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-calculator</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gtksourceview3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/appdata</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-26</Date>
+                <Version>3.22.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>kaptan</Name>
             <Homepage>http://limelinux.com</Homepage>
             <Packager>
@@ -46495,6 +48953,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Dependency>libndp</Dependency>
                 <Dependency>polkit</Dependency>
                 <Dependency>jansson</Dependency>
+                <Dependency>python-pygobject3</Dependency>
             </BuildDependencies>
             <Patches>
                 <Patch>disable_set_hostname.patch</Patch>
@@ -46516,6 +48975,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
                 <Dependency>jansson</Dependency>
                 <Dependency>libndp</Dependency>
                 <Dependency>libgudev</Dependency>
+                <Dependency>python-pygobject3</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="config">/etc</Path>

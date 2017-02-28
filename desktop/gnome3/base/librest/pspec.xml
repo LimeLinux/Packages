@@ -1,0 +1,45 @@
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>librest</Name>
+        <Homepage>http://www.gtk.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A helper library for RESTful services.</Summary>
+        <Description>This library was designed to make it easier to access web services that claim to be "RESTful".</Description>
+        <Archive sha1sum="87d4cbed92c5702ea085ebe157b271b4023d0b04" type="tarxz">mirrors://gnome/rest/0.8/rest-0.8.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>libsoup</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>librest</Name>
+        <RuntimeDependencies>
+            <Dependency>libsoup</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>0.8.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

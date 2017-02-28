@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>geocode-glib</Name>
+        <Homepage>http://www.gnome.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2+</License>
+        <Isa>library</Isa>
+        <Summary>GLib geocoding library that uses the Yahoo! Place Finder service</Summary>
+        <Description>geocode-glib is a convenience library for the geocoding (finding longitude, and latitude from an address) and reverse geocoding (finding an address from coordinates). It uses Nominatim service to achieve that.</Description>
+        <Archive sha1sum="ca6579c182270eea64e6d2c38768ff476eb89c75" type="tarxz">mirrors://gnome/geocode-glib/3.20/geocode-glib-3.20.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libsoup</Dependency>
+            <Dependency>json-glib</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>geocode-glib</Name>
+        <RuntimeDependencies>
+            <Dependency>libsoup</Dependency>
+            <Dependency>json-glib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>3.20.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

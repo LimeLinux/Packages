@@ -1,0 +1,69 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-terminal</Name>
+        <Homepage>http://www.gnome.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Terminal emulation application for the GNOME desktop.</Summary>
+        <Description>GNOME terminal is a emulation application that designed to run xterm, VT102 and VT220</Description>
+        <Archive sha1sum="fee7ed0c3c485617bec1089a100621bbd097c5c1" type="tarxz">mirrors://gnome/gnome-terminal/3.22/gnome-terminal-3.22.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>dconf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>vte3</Dependency>
+            <Dependency>nautilus</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="0">gnome-terminal-3.10.0-customize.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gnome-terminal</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>dconf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>vte3</Dependency>
+            <Dependency>nautilus</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/gnome-terminal</Path>
+            <Path fileType="data">/usr/share/help</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>3.22.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

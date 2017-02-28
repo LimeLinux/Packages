@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mutter</Name>
+        <Homepage>http://www.gnome.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A window manager which is replacing Metacity</Summary>
+        <Description>Mutter is the window manager for which GNOME Shell is a plugin in GNOME 3, replacing Metacity.</Description>
+        <Archive sha1sum="1c91e0276655b3a727b3345fbfa1ac0875a8f919" type="tarxz">mirrors://gnome/mutter/3.22/mutter-3.22.0.tar.xz</Archive>
+        <BuildDependencies>
+            <!--Dependency>zenity</Dependency-->
+            <Dependency>atk</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libgudev</Dependency>
+            <Dependency>libinput</Dependency>
+            <Dependency>libwacom</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
+            <Dependency>wayland-protocols</Dependency>
+            <Dependency>startup-notification</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">cogl_ABI.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>mutter</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cogl</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>json-glib</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libgudev</Dependency>
+            <Dependency>libinput</Dependency>
+            <Dependency>libwacom</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>startup-notification</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc/gconf</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="config">/etc/xdg/menus</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>3.22.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
