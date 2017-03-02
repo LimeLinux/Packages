@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>A window manager which is replacing Metacity</Summary>
         <Description>Mutter is the window manager for which GNOME Shell is a plugin in GNOME 3, replacing Metacity.</Description>
-        <Archive sha1sum="1c91e0276655b3a727b3345fbfa1ac0875a8f919" type="tarxz">mirrors://gnome/mutter/3.22/mutter-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="87ac47bebdbcf583db4d097faa50f13bd83e0560" type="tarxz">https://git.gnome.org/browse/mutter/snapshot/mutter-3.20.3.tar.xz</Archive>
         <BuildDependencies>
             <!--Dependency>zenity</Dependency-->
             <Dependency>atk</Dependency>
@@ -49,7 +49,7 @@
             <Dependency>startup-notification</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch level="1">cogl_ABI.patch</Patch-->
+            <!--Patch level="1">startup-notification.patch</Patch-->
         </Patches>
     </Source>
 
@@ -108,8 +108,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-07-26</Date>
-            <Version>3.22.0</Version>
+            <Date>2017-03-01</Date>
+            <Version>3.20.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

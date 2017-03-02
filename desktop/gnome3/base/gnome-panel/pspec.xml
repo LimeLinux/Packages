@@ -27,6 +27,7 @@
             <Dependency>libwnck3</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gdm</Dependency>
             <Dependency>gnome-menus</Dependency>
             <Dependency>libgweather</Dependency>
             <Dependency>gnome3-desktop</Dependency>
@@ -48,6 +49,7 @@
             <Dependency>gconf</Dependency>
             <Dependency>dconf</Dependency>
             <Dependency>pango</Dependency>
+            <Dependency>gdm</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>librsvg</Dependency>

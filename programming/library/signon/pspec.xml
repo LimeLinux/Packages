@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>signon</Name>
+        <Homepage>https://code.google.com/p/accounts-sso</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admins@limelinux</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <Summary>A framework for centrally storing authentication credentials</Summary>
+        <Description>Single Sign-On is a framework for centrally storing authentication credentials and handling authentication on behalf of applications as requested by applicationsIt consists of
+        a secure storage of login credentials (for example usernames and passwords), plugins for different authentication systems and a client library for applications to communicate with this system.</Description>
+        <Archive sha1sum="989adade4c4f45c6057a5d3b3bb919ef2c5a6572" type="targz">https://gitlab.com/accounts-sso/signond/repository/archive.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>doxygen</Dependency>
+        </BuildDependencies>
+        <Patches>
+          <Patch level="1">use_keyring.patch</Patch>
+          <Patch level="1">signon-8.56-missing-moc-include.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>signon</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>doxygen</Dependency>
+            <Dependency>libproxy</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/qt5/mkspecs/features</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-01</Date>
+            <Version>8.59</Version>
+            <Comment>First release</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

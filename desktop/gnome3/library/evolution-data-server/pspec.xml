@@ -13,7 +13,7 @@
         <License>DB</License>
         <Summary>Evolution groupware backend</Summary>
         <Description>evolution-data-server is a library backend for Evolution-related applications.</Description>
-        <Archive sha1sum="188a85275b9ebc776d1547e9687eb45731544e3c" type="tarxz">mirrors://gnome/evolution-data-server/3.20/evolution-data-server-3.20.5.tar.xz</Archive>
+        <Archive sha1sum="d7c535b45400ccdf4f7b4794abf4cf591848c293" type="tarxz">https://git.gnome.org/browse/evolution-data-server/snapshot/EVOLUTION_DATA_SERVER_3_23_91.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>vala</Dependency>
             <Dependency>gnome-common</Dependency>
@@ -86,7 +86,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.20.5</Version>
+            <Version>3.23.91</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

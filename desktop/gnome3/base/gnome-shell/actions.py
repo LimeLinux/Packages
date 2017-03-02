@@ -10,9 +10,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
 def setup():
-    autotools.configure("--disable-static \
-                         --disable-compile-warnings \
-                        ")
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
+    autotools.configure("--disable-networkmanager --disable-static --enable-gtk-doc")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 

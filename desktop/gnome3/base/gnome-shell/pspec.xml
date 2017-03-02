@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME Shell is the defining technology of the GNOME 3 user experience</Summary>
         <Description>GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
-        <Archive sha1sum="1361c498ae45278688fc2cb9d4c81b1978942a3f" type="tarxz">mirrors://gnome/gnome-shell/3.22/gnome-shell-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="f4a4c47ad508edec2929dba58d9db449852a5c64" type="tarxz">https://git.gnome.org/browse/gnome-shell/snapshot/gnome-shell-3.22.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gjs</Dependency>
             <Dependency>gcr</Dependency>
@@ -62,7 +62,7 @@
             <Dependency>gsettings-desktop-schemas</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch level="1">gnome-shell-favourite-apps-firefox.patch</Patch-->
+            <Patch level="1">gnome-shell-favourite-apps-firefox.patch</Patch>
         </Patches>
     </Source>
 
@@ -78,7 +78,7 @@
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>mozjs24</Dependency>
-            <Dependency>mutter</Dependency>
+            <!--Dependency>mutter</Dependency-->
             <Dependency>clutter</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>libical</Dependency>
@@ -129,7 +129,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.22.0</Version>
+            <Version>3.22.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

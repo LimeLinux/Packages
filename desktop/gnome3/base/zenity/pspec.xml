@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A rewrite of gdialog</Summary>
         <Description>Zenity is the GNOME port of dialog which allows you to display dialog boxes from the commandline and shell scripts.</Description>
-        <Archive sha1sum="b0dfb31c8445547de968fb71c4303515cdf0da83" type="tarxz">http://source.pisilinux.org/1.0/zenity.tar.xz</Archive>
+        <Archive sha1sum="f2e81689e7d28c1ff8a3f8947a3c45409c30c518" type="tarxz">https://git.gnome.org/browse/zenity/snapshot/zenity-3.22.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>pango</Dependency>
@@ -21,8 +21,8 @@
             <Dependency>gnome-doc-utils</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-	    <Dependency>yelp-tools</Dependency>
-	    <Dependency>yelp-xsl</Dependency>
+	        <Dependency>yelp-tools</Dependency>
+	        <Dependency>yelp-xsl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,8 +33,8 @@
             <Dependency>pango</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-	    <Dependency>yelp-tools</Dependency>
-	    <Dependency>yelp-xsl</Dependency>
+	        <Dependency>yelp-tools</Dependency>
+	        <Dependency>yelp-xsl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/</Path>
@@ -48,8 +48,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-01-07</Date>
-            <Version>3.10.2</Version>
+            <Date>2017-03-01</Date>
+            <Version>3.22.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

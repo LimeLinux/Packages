@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>libsignon-glib</Name>
-        <Homepage>https://code.google.com/p/accounts-sso</Homepage>
+        <Homepage>https://gitlab.com/accounts-sso/libsignon-glib</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -11,15 +11,15 @@
         <License>LGPLv2</License>
         <Summary>Authorization and authentication management for glib</Summary>
         <Description>libsignon-glib provides authorization and authentication management for GLib applications.</Description>
-        <Archive sha1sum="09e0b8da14f4ea9450e33eb5f6808afeefdbbe03" type="targz">http://accounts-sso.googlecode.com/files/libsignon-glib-1.9.tar.gz</Archive>
+        <Archive sha1sum="c804f88a2ca5042209bd0c117e7ceabda142d932" type="targz">https://gitlab.com/accounts-sso/libsignon-glib/repository/archive.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-pygobject</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>gobject-introspection</Dependency>
-            <Dependency>signon</Dependency>
+            <!--Dependency>signon</Dependency-->
         </BuildDependencies>
         <Patches>
-            <Patch level="1">clean-missing-signon-enum-types-c.patch</Patch>
+            <!--Patch level="1">clean-missing-signon-enum-types-c.patch</Patch-->
         </Patches>
     </Source>
 
@@ -42,7 +42,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>1.9</Version>
+            <Version>1.14</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
