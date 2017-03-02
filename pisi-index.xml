@@ -30566,7 +30566,7 @@
             <Name>unixODBC</Name>
             <Homepage>http://www.unixodbc.org/</Homepage>
             <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Packager>
             <License>GPLv2</License>
@@ -30591,18 +30591,19 @@
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="library">/usr/lib</Path>
                 <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="doc">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc/unixODBC/AUTHORS</Path>
                 <Path fileType="doc">/usr/share/doc/unixODBC/README</Path>
                 <Path fileType="executable">/usr/bin/odbc_config</Path>
+                <Path fileType="doc">/usr/share/doc/unixODBC</Path>
                 <Path fileType="header">/usr/include</Path>
             </Files>
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
+                <Date>2017-03-07</Date>
                 <Version>2.3.4</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -32462,7 +32463,7 @@
             <Description xml:lang="es">Apache Ant es una herramienta de compilación (build) basado en Java. Teróricamente se puede comparar con Make, pero sin las vueltas que tiene aquel.</Description>
             <Archive type="tarbz2" sha1sum="8eee8f30fecbf16c5bc430969d119d8081521b4d">http://archive.apache.org/dist/ant/source/apache-ant-1.9.6-src.tar.bz2</Archive>
             <BuildDependencies>
-                <Dependency>jre7-openjdk</Dependency>
+                <Dependency>java7-openjdk</Dependency>
             </BuildDependencies>
             <SourceURI>programming/build/ant/pspec.xml</SourceURI>
         </Source>
@@ -33747,6 +33748,169 @@
                 <Version>0.47.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libreoffice</Name>
+            <Homepage>http://www.documentfoundation.org</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>office.libreoffice</PartOf>
+            <Summary xml:lang="en">LibreOffice office suite</Summary>
+            <Summary xml:lang="tr">LibreOffice Türkçe ofis yazılımı</Summary>
+            <Description xml:lang="en">LibreOffice is an open source, multi-platform office productivity suite. It includes key desktop applications such as a word processor, a spreadsheet application, a presentation creator-viewer, a formula editor and a drawing program, with a user interface and feature set similar to other office suites. Sophisticated and flexible, LibreOffice also works transparently with a variety of file formats, including those of Microsoft Office.</Description>
+            <Description xml:lang="tr">LibreOffice, pek çok farklı işletim sisteminde çalışabilen açık kaynak kodlu bir yazılım projesidir. LibreOffice, kelime işlemci, hesap tablosu, sunum ve çizim programları, formül düzenleyici gibi temel masaüstü ofis uygulamalarını içerir ve alışılmış ofis programlarının özelliklerini sunar. Microsoft Office dosyaları da dahil olmak üzere bilinen ofis dosya formatlarıyla uyumlu çalışır.</Description>
+            <Icon>libreoffice-startcenter</Icon>
+            <Archive type="tarxz" sha1sum="d3bfb63477a9fee6d98b31264d5cbce2d20450c4">http://download.documentfoundation.org/libreoffice/src/5.3.0/libreoffice-5.3.0.3.tar.xz</Archive>
+            <Archive type="binary" sha1sum="fb5019676834ccc1a5dea93b7b04895c159de06d" target="libreoffice-5.3.0.3/external/tarballs/">http://download.documentfoundation.org/libreoffice/src/5.3.0/libreoffice-help-5.3.0.3.tar.xz</Archive>
+            <Archive type="binary" sha1sum="dea91493d6abe60e302f89150b3c184daf9e26f0" target="libreoffice-5.3.0.3/external/tarballs/">http://download.documentfoundation.org/libreoffice/src/5.3.0/libreoffice-dictionaries-5.3.0.3.tar.xz</Archive>
+            <Archive type="binary" sha1sum="1eaa20f207ec236e4d6ba83bae170b45f150ee1e" target="libreoffice-5.3.0.3/external/tarballs/">http://download.documentfoundation.org/libreoffice/src/5.3.0/libreoffice-translations-5.3.0.3.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>ant</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>lcms2</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>java7-openjdk</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>poppler</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>python3</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>dbus-glib</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>perl-XML-Parser</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>perl-Archive-Zip</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libatomic_ops</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>unixODBC</Dependency>
+                <Dependency>serf</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>graphite2</Dependency>
+                <Dependency>librevenge</Dependency>
+                <Dependency>mesa</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>You_make_ME_sandwich.patch</Patch>
+            </Patches>
+            <SourceURI>office/libreoffice/libreoffice/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libreoffice</Name>
+            <Icon>libreoffice-startcenter</Icon>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>bzip2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>lcms2</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>python3</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>poppler</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>dbus-glib</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>java7-openjdk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/mimelnk</Path>
+                <Path fileType="data">/usr/share/appdata</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/mime-info</Path>
+                <Path fileType="data">/usr/lib/libreoffice/</Path>
+                <Path fileType="data">/usr/share/applications/</Path>
+                <Path fileType="data">/usr/share/application-registry</Path>
+                <Path fileType="library">/usr/lib/libreoffice/program/</Path>
+                <Path fileType="data">/usr/share/gir-1.0/LOKDocView-0.1.gir</Path>
+                <Path fileType="data">/usr/lib/girepository-1.0/LOKDocView-0.1.typelib</Path>
+                <Path fileType="data">/usr/share/bash-completion</Path>
+                <Path fileType="data">/usr/lib/libreoffice/share/extensions</Path>
+                <Path fileType="executable">/usr/bin/lobase</Path>
+                <Path fileType="man">/usr/share/man/man1/lobase.1.gz</Path>
+                <Path fileType="data">/usr/lib/libreoffice/program/sbase</Path>
+                <Path fileType="data">/usr/share/applications/libreoffice-base.desktop</Path>
+                <Path fileType="executable">/usr/bin/localc</Path>
+                <Path fileType="data">/usr/share/man/man1/localc.1.gz</Path>
+                <Path fileType="library">/usr/lib/libreoffice/program/scalc</Path>
+                <Path fileType="data">/usr/share/applications/libreoffice-calc.desktop</Path>
+                <Path fileType="executable">/usr/bin/lodraw</Path>
+                <Path fileType="data">/usr/share/man/man1/lodraw.1.gz</Path>
+                <Path fileType="data">/usr/lib/libreoffice/program/*</Path>
+                <Path fileType="executable">/usr/bin/loimpress</Path>
+                <Path fileType="data">/usr/share/*</Path>
+                <Path fileType="data">/usr/lib/libreoffice/program/simpress</Path>
+                <Path fileType="executable">/usr/bin/lomath</Path>
+                <Path fileType="data">/usr/share/man/man1/lomath.1.gz</Path>
+                <Path fileType="data">/usr/lib/libreoffice/program/smath</Path>
+                <Path fileType="data">/usr/share/applications/libreoffice-impress.desktop</Path>
+                <Path fileType="data">/usr/share/applications/libreoffice-draw.desktop</Path>
+                <Path fileType="data">/usr/share/applications/libreoffice-math.desktop</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-02</Date>
+                <Version>5.3.0.3</Version>
+                <Comment>Frist Release</Comment>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -53355,7 +53519,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="en">GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off projects to complete application suites.</Description>
             <Description xml:lang="tr">GTK+, grafik kullanıcı arayüzü oluşturma amaçlı araçlardan oluşur. GTK+ hem küçük, hem de büyük uygulamalar için ideal olan, eksiksiz bir araçtır.</Description>
             <Description xml:lang="pl">Wersja 3 bibliotek przeznaczonych do tworzenia interfejsów graficznych programów — GTK+. Interfejs GTK+ znany jest z takich programów, jak GIMP i Inkscape, oraz środowisk graficznych GNOME i Xfce.</Description>
-            <Archive type="tarxz" sha1sum="7c8949f786d6c77c04d4789a4f611573e8584de1">ftp://ftp.gnome.org/pub/gnome/sources/gtk+/3.22/gtk+-3.22.7.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="7895255a8e65a2590553ad28b8911dc815d74a1d">ftp://ftp.gnome.org/pub/gnome/sources/gtk+/3.22/gtk+-3.22.8.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk</Dependency>
                 <Dependency>cups</Dependency>
@@ -53428,7 +53592,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">GTK demo uyulaması</Summary>
             <IsA>app:gui</IsA>
             <RuntimeDependencies>
-                <Dependency release="2">gtk3</Dependency>
+                <Dependency release="3">gtk3</Dependency>
                 <Dependency>glib2</Dependency>
                 <Dependency>libepoxy</Dependency>
                 <Dependency>cairo</Dependency>
@@ -53442,6 +53606,13 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2017-03-09</Date>
+                <Version>3.22.8</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="2">
                 <Date>2017-02-19</Date>
                 <Version>3.22.7</Version>

@@ -1,12 +1,11 @@
-
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>unixODBC</Name>
         <Homepage>http://www.unixodbc.org/</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
+            <Name>LimeLinux Community</Name>
             <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv2</License>
@@ -30,19 +29,20 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc/unixODBC/AUTHORS</Path>
             <Path fileType="doc">/usr/share/doc/unixODBC/README</Path>
-	    <Path fileType="executable">/usr/bin/odbc_config</Path>
+            <Path fileType="executable">/usr/bin/odbc_config</Path>
+            <Path fileType="doc">/usr/share/doc/unixODBC</Path>
             <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
+            <Date>2017-03-07</Date>
             <Version>2.3.4</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
             <Email>admin@limelinux.com</Email>
         </Update>
     </History>

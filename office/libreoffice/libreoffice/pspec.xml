@@ -1,0 +1,166 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libreoffice</Name>
+        <Homepage>http://www.documentfoundation.org</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv3</License>
+        <Icon>libreoffice-startcenter</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>LibreOffice office suite</Summary>
+        <Description>LibreOffice is an open source, multi-platform office productivity suite. It includes key desktop applications such as a word processor, a spreadsheet application, a presentation creator-viewer, a formula editor and a drawing program, with a user interface and feature set similar to other office suites. Sophisticated and flexible, LibreOffice also works transparently with a variety of file formats, including those of Microsoft Office.</Description>
+        <Archive sha1sum="d3bfb63477a9fee6d98b31264d5cbce2d20450c4" type="tarxz">http://download.documentfoundation.org/libreoffice/src/5.3.0/libreoffice-5.3.0.3.tar.xz</Archive>
+        <Archive sha1sum="fb5019676834ccc1a5dea93b7b04895c159de06d" type="binary" target="libreoffice-5.3.0.3/external/tarballs/">http://download.documentfoundation.org/libreoffice/src/5.3.0/libreoffice-help-5.3.0.3.tar.xz</Archive>
+        <Archive sha1sum="dea91493d6abe60e302f89150b3c184daf9e26f0" type="binary" target="libreoffice-5.3.0.3/external/tarballs/">http://download.documentfoundation.org/libreoffice/src/5.3.0/libreoffice-dictionaries-5.3.0.3.tar.xz</Archive>
+        <Archive sha1sum="1eaa20f207ec236e4d6ba83bae170b45f150ee1e" type="binary" target="libreoffice-5.3.0.3/external/tarballs/">http://download.documentfoundation.org/libreoffice/src/5.3.0/libreoffice-translations-5.3.0.3.tar.xz</Archive>
+        <Patches>
+            <Patch>You_make_ME_sandwich.patch</Patch>
+        </Patches>
+        <BuildDependencies>
+            <Dependency>ant</Dependency>
+            <Dependency>gperf</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>java7-openjdk</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>poppler</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>harfbuzz</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>perl-XML-Parser</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>perl-Archive-Zip</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libatomic_ops</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>unixODBC</Dependency>
+            <Dependency>serf</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>graphite2</Dependency>
+            <Dependency>librevenge</Dependency>
+            <Dependency>mesa</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libreoffice</Name>
+        <Icon>libreoffice-startcenter</Icon>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>poppler</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>harfbuzz</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+            <Dependency>java7-openjdk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/mimelnk</Path>
+            <Path fileType="data">/usr/share/appdata</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/mime-info</Path>
+            <Path fileType="data">/usr/lib/libreoffice/</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/application-registry</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/</Path>
+            <Path fileType="data">/usr/share/gir-1.0/LOKDocView-0.1.gir</Path>
+            <Path fileType="data">/usr/lib/girepository-1.0/LOKDocView-0.1.typelib</Path>
+            <Path fileType="data">/usr/share/bash-completion</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/extensions</Path>
+            <Path fileType="executable">/usr/bin/lobase</Path>
+            <Path fileType="man">/usr/share/man/man1/lobase.1.gz</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/sbase</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-base.desktop</Path>
+            <Path fileType="executable">/usr/bin/localc</Path>
+            <Path fileType="data">/usr/share/man/man1/localc.1.gz</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/scalc</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-calc.desktop</Path>
+            <Path fileType="executable">/usr/bin/lodraw</Path>
+            <Path fileType="data">/usr/share/man/man1/lodraw.1.gz</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/*</Path>
+            <Path fileType="executable">/usr/bin/loimpress</Path>
+            <Path fileType="data">/usr/share/*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/simpress</Path>
+            <Path fileType="executable">/usr/bin/lomath</Path>
+            <Path fileType="data">/usr/share/man/man1/lomath.1.gz</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/smath</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-impress.desktop</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-draw.desktop</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-math.desktop</Path>
+        </Files>
+        <AdditionalFiles>
+            <!--AdditionalFile owner="root" permission="0644" target="/usr/lib/libreoffice/program/intro.png">libreoffice-splash.png</AdditionalFile-->
+        </AdditionalFiles>
+    </Package>
+
+      <History>
+        <Update release="1">
+            <Date>2017-03-02</Date>
+            <Version>5.3.0.3</Version>
+            <Comment>Frist Release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
