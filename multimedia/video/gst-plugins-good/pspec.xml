@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gst-plugins-good</Name>
+        <Homepage>http://gstreamer.net/</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A set of good-quality plugins for GStreamer</Summary>
+        <Description>gst-plugins-good contains a set of mature plugins and elements for GStreamer.</Description>
+        <Archive sha1sum="b45fc01b133fc23617fa501dd9307a90f467b396" type="tarbz2">http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.31.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>orc</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>libdv</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>aalib</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>libcaca</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>wavpack</Dependency>
+            <Dependency>libshout</Dependency>
+            <Dependency>libavc1394</Dependency>
+            <Dependency>libraw1394</Dependency>
+            <Dependency>libiec61883</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">0001-fix-v4l2_munmap.patch</Patch>
+            <Patch level="1">0002-clear_DISCONT_flag.patch</Patch>
+            <Patch level="1">0003-v4l2src-fix.patch</Patch>
+            <Patch level="1">0004-v4l2object-Don-t-probe-UVC-devices-for-being-interla.patch</Patch>
+            <Patch level="1">0001-sys-v4l2-Some-blind-compilation-fixes.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gst-plugins-good</Name>
+        <RuntimeDependencies>
+            <Dependency>orc</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>aalib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libdv</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libcaca</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>wavpack</Dependency>
+            <Dependency>libshout</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libavc1394</Dependency>
+            <Dependency>libraw1394</Dependency>
+            <Dependency>libiec61883</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/gconf</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/gstreamer-0.10/presets</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-02-17</Date>
+            <Version>0.10.31</Version>
+            <Comment>Rebuild and edit.</Comment>
+            <Name>Pisi Linux Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

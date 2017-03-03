@@ -86,10 +86,10 @@
             <Dependency>usbutils</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch level="1">chromium-glib-2.24.patch</Patch-->
             <Patch level="1">chromium-widevine.patch</Patch>
+            <!--Patch level="1">chromium-glib-2.24.patch</Patch>
             <Patch level="1">chromium-system-ffmpeg-r4.patch</Patch>
-            <!--Patch level="1">limelinux/gfx_jpeg_codec.patch</Patch>
+            <Patch level="1">limelinux/gfx_jpeg_codec.patch</Patch>
             <Patch level="1">limelinux/fix_build_with_newer_gcc.patch</Patch>
             <Patch level="1">limelinux/last_commit_position.patch</Patch-->
         </Patches>
@@ -156,7 +156,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-02-12</Date>
             <Version>57.0.2987.21</Version>
             <Comment>First release</Comment>
