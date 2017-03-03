@@ -968,13 +968,6 @@
                 <Name>Ergün Salman</Name>
                 <Email>poyraz76@limelinux.com</Email>
             </Update>
-            <Update release="1">
-                <Date>2017-01-11</Date>
-                <Version>2.0.4</Version>
-                <Comment>First release</Comment>
-                <Name>Ergün Salman</Name>
-                <Email>poyraz76@limelinux.com</Email>
-            </Update>
         </History>
     </SpecFile>
     <SpecFile>
@@ -8921,13 +8914,6 @@
                 <Comment>Release Bump</Comment>
                 <Name>Pisi Linux Community</Name>
                 <Email>admin@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-04-01</Date>
-                <Version>1.0.25</Version>
-                <Comment>First release</Comment>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
@@ -27598,6 +27584,63 @@
                 <Version>5.6</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>wxPython</Name>
+            <Homepage>http://www.wxpython.org/</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>wxWinLL-3</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python</PartOf>
+            <Summary xml:lang="en">Python bindings for wxGTK</Summary>
+            <Summary xml:lang="tr">wxGTK için Python bağlayıcıları.</Summary>
+            <Description xml:lang="en">wxPython is a GUI toolkit for the Python programming language. It allows Python programmers to create programs with a robust, highly functional graphical user interface, simply and easily. It is implemented as a Python extension module (native code) that wraps the popular wxWindows cross platform GUI library, which is written in C++.</Description>
+            <Archive type="tarbz2" sha1sum="5053f3fa04f4eb3a9d4bfd762d963deb7fa46866">mirrors://sourceforge/wxpython/wxPython-src-3.0.2.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>wxGTK</Dependency>
+                <Dependency>wxGTK2.8</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>python</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python/wxPython/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>wxPython</Name>
+            <RuntimeDependencies>
+                <Dependency>wxGTK</Dependency>
+                <Dependency>wxGTK2.8</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-02</Date>
+                <Version>3.0.2.0</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -53023,6 +53066,89 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>wxGTK2.8</Name>
+            <Homepage>http://www.wxwidgets.org/</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>wxWinLL-3</License>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <License>wxWinFDL-3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.toolkit</PartOf>
+            <Summary xml:lang="en">GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit</Summary>
+            <Description xml:lang="en">wxWidgets/GTK2 is the GTK2 port of the C++ cross-platform wxWidgets GUI library, offering classes for all common GUI controls as well as a comprehensive set of helper classes for most common application tasks, ranging from networking to HTML display and image manipulation.</Description>
+            <Archive type="tarbz2" sha1sum="a8d31ef924ae49e97690646b13d5a2a7be7dda10">mirrors://sourceforge/wxwindows/wxGTK-2.8.12.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>gst-plugins-base</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>tiff</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">make-abicheck-non-fatal.patch</Patch>
+                <Patch level="1">wxGTK-collision.patch</Patch>
+                <Patch>wxGTK-2.8.10-CVE-2009-XXXX.diff</Patch>
+            </Patches>
+            <SourceURI>desktop/toolkit/wxGTK2.8/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>wxGTK2.8</Name>
+            <RuntimeDependencies>
+                <Dependency>gst-plugins-base</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libsdl</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin/wx-config-2.8</Path>
+                <Path fileType="executable">/usr/bin/wxconfig</Path>
+                <Path fileType="library">/usr/lib/libwx_gtk*</Path>
+                <Path fileType="library">/usr/lib/wx/config/gtk2-unicode-release-2.8</Path>
+                <Path fileType="header">/usr/lib/wx/include</Path>
+                <Path fileType="executable">/usr/bin/wxrc</Path>
+                <Path fileType="executable">/usr/bin/wxrc-2.8</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/bakefile</Path>
+                <Path fileType="locale">/usr/share/locale</Path>
+                <Path fileType="library">/usr/lib/libwx_base*</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-05</Date>
+                <Version>2.8.12</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>glibmm</Name>
             <Homepage>http://gtkmm.sourceforge.net/</Homepage>
             <Packager>
@@ -60753,47 +60879,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Update>
         </History>
     </SpecFile>
-    <Package>
-        <Name>gnome-shell-extensions</Name>
-        <Summary xml:lang="en">A collection of extensions providing additional and optional functionality to GNOME Shell</Summary>
-        <Summary xml:lang="tr">Gnome-shell&apos;e seçimlik yeni işlevsellikler katan eklentiler seçkisi</Summary>
-        <Description xml:lang="en">gnome-shell-extensions is a collection of extensions providing additional and optional functionality to GNOME Shell.</Description>
-        <Description xml:lang="tr">gnome-shell-extensions, Gnome-shell&apos;e seçimlik yeni işlevsellikler katan eklentilerin bir seçkisini sunar.</Description>
-        <IsA>data</IsA>
-        <PartOf>desktop.gnome3.addon</PartOf>
-        <License>GPLv2</License>
-        <RuntimeDependencies>
-            <Dependency>gtk3</Dependency>
-            <Dependency>gnome-shell</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2016-07-26</Date>
-                <Version>3.22.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>LimeLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>1006371</InstalledSize>
-        <PackageSize>162330</PackageSize>
-        <PackageHash>b4199c94bca52cdbeca9c00fc4478e041cd67b6c</PackageHash>
-        <InstallTarHash>eb66fc5bc3da46628f25400fd0a359730db2c750</InstallTarHash>
-        <PackageURI>desktop/gnome3/addon/gnome-shell-extensions/gnome-shell-extensions-3.22.0-1-lm-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>gnome-shell-extensions</Name>
-            <Homepage>http://live.gnome.org/GnomeShell/Extensions</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-        </Source>
-    </Package>
     <Component>
         <Name>system</Name>
         <LocalName xml:lang="en">FIXME</LocalName>
