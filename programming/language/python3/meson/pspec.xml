@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>meson</Name>
+        <Homepage>http://pypi.python.org/pypi/six/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <IsA>app:console</IsA>
+        <Summary>A high performance build system</Summary>
+        <Description>A high performance build system</Description>
+        <Archive sha1sum="7a88cc85f34d5462b116dc6acb3f18359bbf5bfd" type="targz">https://github.com/mesonbuild/meson/releases/download/0.39.0/meson-0.39.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>meson</Name>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-06</Date>
+            <Version>0.39.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

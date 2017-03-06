@@ -7885,13 +7885,6 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2017-06-18</Date>
-                <Version>2.15.2</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
             <Update release="1">
                 <Date>2016-06-18</Date>
                 <Version>2.15.2</Version>
@@ -30098,6 +30091,47 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>meson</Name>
+            <Homepage>http://pypi.python.org/pypi/six/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>Apache-2.0</License>
+            <IsA>app:console</IsA>
+            <PartOf>programming.language.python3</PartOf>
+            <Summary xml:lang="en">A high performance build system</Summary>
+            <Description xml:lang="en">A high performance build system</Description>
+            <Archive type="targz" sha1sum="7a88cc85f34d5462b116dc6acb3f18359bbf5bfd">https://github.com/mesonbuild/meson/releases/download/0.39.0/meson-0.39.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python3</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python3/meson/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>meson</Name>
+            <RuntimeDependencies>
+                <Dependency>python3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-06</Date>
+                <Version>0.39.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>python3</Name>
             <Homepage>http://www.python.org/</Homepage>
             <Packager>
@@ -31529,6 +31563,41 @@
                 <Version>0.14</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ragel</Name>
+            <Homepage>http://www.complang.org/ragel/</Homepage>
+            <Packager>
+                <Name>Lime GNU/Linux</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>programming.misc</PartOf>
+            <Summary xml:lang="en">Ragel compiles executable finite state machines from regular languages.</Summary>
+            <Description xml:lang="en">Ragel compiles executable finite state machines from regular languages. Ragel targets C, C++, Obj-C, C#, D, Java, Go and Ruby.</Description>
+            <Archive type="targz" sha1sum="70a7fe77aee8423be610fa14c3fa1f96b3119e1d">http://fossies.org/linux/misc/ragel-6.9.tar.gz</Archive>
+            <SourceURI>programming/misc/ragel/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ragel</Name>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/vim/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-19</Date>
+                <Version>6.9</Version>
+                <Comment>First release</Comment>
+                <Name>Lime GNU/Linux</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -41395,8 +41464,8 @@
             <Name>timidity</Name>
             <Homepage>http://timidity.sourceforge.net/</Homepage>
             <Packager>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
             </Packager>
             <License>GPLv2</License>
             <IsA>service</IsA>
@@ -41467,8 +41536,8 @@
                 <Date>2017-02-21</Date>
                 <Version>2.14.0</Version>
                 <Comment>First release</Comment>
-                <Name>Kamil Atlı</Name>
-                <Email>suvarice@gmail.com</Email>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -46382,7 +46451,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
             <Summary xml:lang="tr">Açık kaynak bir grafik çizim programıdır</Summary>
             <Description xml:lang="en">Graphviz is open source graph visualization software which has web and interactive graphical interfaces, and auxiliary tools and libraries. Graphviz has many useful features for diagrams, such as options for colors, fonts, tabular node layouts, line styles, and custom shapes.</Description>
             <Description xml:lang="tr">Graphviz web ve etkileşimli grafik arayüzüne, yardımcı araç ve kütüphanelere sahip açık kaynak bir grafik canlandırma yazılımıdır. Graphviz renk, font, çizelge planı, çizgi stili ayarları ve özel şekiller gibi diyagramlara yönelik bir çok kullanışlı özelliğe sahiptir.</Description>
-            <Archive type="targz" sha1sum="a41e9f1cbcc9a24651e14dd15a4cda3d912d7d19">http://www.graphviz.org/pub/graphviz/stable/SOURCES/graphviz-2.36.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="8a44d19bcdb50df1bd8e649de472ebf868468888">http://www.graphviz.org/pub/graphviz/stable/SOURCES/graphviz-2.40.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>ruby</Dependency>
                 <Dependency>gd</Dependency>
@@ -46450,14 +46519,7 @@ Bu Skype SILK codec ve Xiph.Org &apos;s Celt codec teknolojisi dahil RFC 6716 ol
         <History>
             <Update release="2">
                 <Date>2017-12-21</Date>
-                <Version>2.36.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>2.36.0</Version>
+                <Version>2.40.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -59835,7 +59897,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="tr">Gnome 3 kullanıcı tecrübesinin belirleyici teknolojisi</Summary>
             <Description xml:lang="en">GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
             <Description xml:lang="tr">gnome-shell, Gnome 3 kullanıcı tecrübesinin belirleyici teknolojisidir. Pencereler arası geçiş ve uygulama çalıştırma gibi temel işlevleri sağlar.</Description>
-            <Archive type="tarxz" sha1sum="f4a4c47ad508edec2929dba58d9db449852a5c64">https://git.gnome.org/browse/gnome-shell/snapshot/gnome-shell-3.22.1.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="0fa501f544b06b59e8e6d0bcb0bcff0e1c552981">https://git.gnome.org/browse/gnome-shell/snapshot/gnome-shell-3.23.91.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gjs</Dependency>
                 <Dependency>gcr</Dependency>
@@ -59941,7 +60003,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         <History>
             <Update release="1">
                 <Date>2016-07-26</Date>
-                <Version>3.22.1</Version>
+                <Version>3.23.91</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -60733,123 +60795,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Update release="1">
                 <Date>2016-07-26</Date>
                 <Version>1.14</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>webkit2gtk</Name>
-            <Homepage>http://webkitgtk.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <License>LGPLv2.1</License>
-            <License>BSD</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.gnome3.library</PartOf>
-            <Summary xml:lang="en">An opensource web browser engine for GTK+ 3.x applications</Summary>
-            <Description xml:lang="en">The GTK+ 3.x port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ 3.x UI toolkit on platforms like Linux.</Description>
-            <Archive type="tarxz" sha1sum="cc3419a369a3a41edd57a395373f71bbdfcfcaaf">http://www.webkitgtk.org/releases/webkitgtk-2.14.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>mesa</Dependency>
-                <Dependency>gtk-doc</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>gtk3</Dependency>
-                <Dependency>webp</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>icu4c</Dependency>
-                <Dependency>libXt</Dependency>
-                <Dependency>enchant</Dependency>
-                <Dependency>geoclue2</Dependency>
-                <Dependency>libsoup</Dependency>
-                <Dependency>fontconfig</Dependency>
-                <Dependency>libxslt</Dependency>
-                <Dependency>harfbuzz</Dependency>
-                <Dependency>libsecret</Dependency>
-                <Dependency>libjpeg-turbo</Dependency>
-                <Dependency>gstreamer-next</Dependency>
-                <Dependency>gst-plugins-base-next</Dependency>
-                <Dependency>at-spi2-core</Dependency>
-                <Dependency>bison</Dependency>
-                <Dependency>chrpath</Dependency>
-                <Dependency>flex</Dependency>
-                <Dependency>freetype</Dependency>
-                <Dependency>geoclue2</Dependency>
-                <Dependency>libsecret</Dependency>
-                <Dependency>libpcre</Dependency>
-                <Dependency>sqlite</Dependency>
-                <Dependency>ruby</Dependency>
-                <Dependency>libxml2</Dependency>
-                <Dependency>expat</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libXdmcp</Dependency>
-                <Dependency>libffi</Dependency>
-                <Dependency>libgudev</Dependency>
-                <Dependency>libgcrypt</Dependency>
-                <Dependency>gperf</Dependency>
-                <Dependency>libtool</Dependency>
-                <Dependency>hyphen</Dependency>
-                <Dependency>icon-theme-hicolor</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/gnome3/library/webkit2gtk/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>webkit2gtk</Name>
-            <RuntimeDependencies>
-                <Dependency>atk</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>gtk3</Dependency>
-                <Dependency>mesa</Dependency>
-                <Dependency>webp</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>icu4c</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>libXt</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libpng</Dependency>
-                <Dependency>sqlite</Dependency>
-                <Dependency>enchant</Dependency>
-                <Dependency>libsoup</Dependency>
-                <Dependency>libxml2</Dependency>
-                <Dependency>libxslt</Dependency>
-                <Dependency>freetype</Dependency>
-                <Dependency>harfbuzz</Dependency>
-                <Dependency>libgudev1</Dependency>
-                <Dependency>libsecret</Dependency>
-                <Dependency>fontconfig</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-                <Dependency>libXdamage</Dependency>
-                <Dependency>libXrender</Dependency>
-                <Dependency>libXcomposite</Dependency>
-                <Dependency>libjpeg-turbo</Dependency>
-                <Dependency>gstreamer-next</Dependency>
-                <Dependency>gst-plugins-base-next</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/libexec</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/pkgconfig</Path>
-                <Path fileType="doc">/usr/share/doc/webkit-gtk/Web*</Path>
-                <Path fileType="doc">/usr/share/doc/webkit-gtk3/html</Path>
-                <Path fileType="doc">/usr/share/doc/webkit-gtk/JavaScriptCore</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-07-26</Date>
-                <Version>2.14.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>

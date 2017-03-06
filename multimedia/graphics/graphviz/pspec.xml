@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Open source graph drawing software</Summary>
         <Description>Graphviz is open source graph visualization software which has web and interactive graphical interfaces, and auxiliary tools and libraries. Graphviz has many useful features for diagrams, such as options for colors, fonts, tabular node layouts, line styles, and custom shapes.</Description>
-        <Archive sha1sum="a41e9f1cbcc9a24651e14dd15a4cda3d912d7d19" type="targz">http://www.graphviz.org/pub/graphviz/stable/SOURCES/graphviz-2.36.0.tar.gz</Archive>
+        <Archive sha1sum="8a44d19bcdb50df1bd8e649de472ebf868468888" type="targz">http://www.graphviz.org/pub/graphviz/stable/SOURCES/graphviz-2.40.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ruby</Dependency>
             <Dependency>gd</Dependency>
@@ -86,14 +86,7 @@
     <History>
 		<Update release="2">
             <Date>2017-12-21</Date>
-            <Version>2.36.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.36.0</Version>
+            <Version>2.40.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
