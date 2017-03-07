@@ -11,6 +11,54 @@
     </Distribution>
     <SpecFile>
         <Source>
+            <Name>liblangtag</Name>
+            <Homepage>http://tagoh.bitbucket.org/liblangtag</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv3.0</License>
+            <License>MPLv2.0</License>
+            <IsA>app:console</IsA>
+            <PartOf>editor</PartOf>
+            <Summary xml:lang="en">An interface library to access tags for identifying languages</Summary>
+            <Description xml:lang="en">liblangtag is an interface library to access/deal with tags for identifying languages, which is described in RFC.</Description>
+            <Archive type="tarbz2" sha1sum="8f2c0d7f0c2ae9510a58f570aa4bc894c31e22c1">https://bitbucket.org/tagoh/liblangtag/downloads/liblangtag-0.6.2.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libxml2</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </BuildDependencies>
+            <SourceURI>editor/liblangtag/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>liblangtag</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libxml2</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/liblangtag</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+                <Path fileType="header">/usr/include/liblangtag</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2011-02-07</Date>
+                <Version>0.6.2</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>notepadqq</Name>
             <Homepage>http://www.kde.org</Homepage>
             <Packager>
@@ -3881,6 +3929,7 @@
                 <Dependency>pango</Dependency>
                 <Dependency>vala</Dependency>
                 <Dependency>webkit-gtk2</Dependency>
+                <Dependency>webkit2gtk</Dependency>
                 <Dependency>libzeitgeist</Dependency>
             </BuildDependencies>
             <SourceURI>network/web/midori/pspec.xml</SourceURI>
@@ -3900,6 +3949,7 @@
                 <Dependency>libXScrnSaver</Dependency>
                 <Dependency>glib-networking</Dependency>
                 <Dependency>gst-libav-next</Dependency>
+                <Dependency>webkit2gtk</Dependency>
                 <Dependency>gst-plugins-base-next</Dependency>
                 <Dependency>gst-plugins-good-next</Dependency>
             </RuntimeDependencies>
@@ -25527,7 +25577,7 @@
             <Archive type="zip" sha1sum="903e8c2cb521cc91636eccae66b8594435516ff5">http://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/R-4.4.2-201502041700/ecjsrc-4.4.2.jar</Archive>
             <BuildDependencies>
                 <Dependency>ant</Dependency>
-                <Dependency>java7-openjdk</Dependency>
+                <Dependency>jdk7-openjdk</Dependency>
             </BuildDependencies>
             <Patches>
                 <Patch level="0">01-ecj-include-props.patch</Patch>
@@ -25538,7 +25588,7 @@
         <Package>
             <Name>eclipse-ecj</Name>
             <RuntimeDependencies>
-                <Dependency>java7-openjdk</Dependency>
+                <Dependency>jdk7-openjdk</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="man">/usr/share/man</Path>
@@ -25583,14 +25633,14 @@
             </AdditionalFiles>
             <BuildDependencies>
                 <Dependency>ant</Dependency>
-                <Dependency>java7-openjdk</Dependency>
+                <Dependency>jdk7-openjdk</Dependency>
             </BuildDependencies>
             <SourceURI>programming/language/java/rhino/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>rhino</Name>
             <RuntimeDependencies>
-                <Dependency>java7-openjdk</Dependency>
+                <Dependency>jdk7-openjdk</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="man">/usr/share/man</Path>
@@ -31077,6 +31127,62 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>clucene</Name>
+            <Homepage>http://clucene.sourceforge.net</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <License>Apache-2.0</License>
+            <IsA>library</IsA>
+            <PartOf>programming.misc</PartOf>
+            <Summary xml:lang="en">A high-performance indexing and searching API</Summary>
+            <Summary xml:lang="tr">Yüksek performanslı bir indeksleme ve arama API&apos;si</Summary>
+            <Description xml:lang="en">CLucene is a high-performance, scalable, cross platform, full-featured, open-source indexing and searching API. It is written in C++.</Description>
+            <Description xml:lang="tr">CLucene yüksek performanslı, ölçeklenebilir, platform bağımsız, çok özellikli, açık kaynak arama ve indeksleme programlama arayüzüdür. C++ ile yazılmıştır.</Description>
+            <Description xml:lang="es">CLucene es una API para indexación y búsqueda de alta performance, escalable, cross plataforma, full-featured, código abierto. Está escrito en C++.</Description>
+            <Archive type="targz" sha1sum="76d6788e747e78abb5abf8eaad78d3342da5f2a4">http://downloads.sourceforge.net/clucene/clucene-core-2.3.3.4.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>boost</Dependency>
+                <Dependency>cmake</Dependency>
+                <Dependency>zlib</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>clucene-2.3.3.4-gcc6.patch</Patch>
+                <Patch>clucene-core-2.3.3.4-pkgconfig.patch</Patch>
+                <Patch>clucene-2.3.3.4-contribs_lib-1.patch</Patch>
+                <Patch>fix_zlib_detections.diff</Patch>
+                <Patch>clucene-core-2.3.3.4-usleep.patch</Patch>
+                <Patch>clucene-warnings.patch</Patch>
+                <Patch>clucene-gcc-atomics.patch</Patch>
+                <Patch>clucene-debug.patch</Patch>
+                <Patch>clucene-narrowing-conversions.patch</Patch>
+                <Patch>clucene-multimap-put.patch</Patch>
+            </Patches>
+            <SourceURI>programming/misc/clucene/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>clucene</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-02</Date>
+                <Version>2.3.3.4</Version>
+                <Comment>First Release.</Comment>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>libsoup</Name>
             <Homepage>http://live.gnome.org/LibSoup</Homepage>
             <Packager>
@@ -32731,9 +32837,9 @@
             <Description xml:lang="en">Apache Ant is a Java-based build tool. In theory, it is kind of like Make, but without Make&apos;s wrinkles.</Description>
             <Description xml:lang="tr">Apache ant Java tabanlı bir inşa aracıdır. Teorik olarak make&apos;e benzemektedir ancak make&apos;in kırışıksız halidir</Description>
             <Description xml:lang="es">Apache Ant es una herramienta de compilación (build) basado en Java. Teróricamente se puede comparar con Make, pero sin las vueltas que tiene aquel.</Description>
-            <Archive type="tarbz2" sha1sum="8eee8f30fecbf16c5bc430969d119d8081521b4d">http://archive.apache.org/dist/ant/source/apache-ant-1.9.6-src.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="870186a0931bde17272370747ee4ec138267d9bb">http://archive.apache.org/dist/ant/source/apache-ant-1.9.8-src.tar.bz2</Archive>
             <BuildDependencies>
-                <Dependency>java7-openjdk</Dependency>
+                <Dependency>jdk7-openjdk</Dependency>
             </BuildDependencies>
             <SourceURI>programming/build/ant/pspec.xml</SourceURI>
         </Source>
@@ -32753,8 +32859,8 @@
         </Package>
         <History>
             <Update release="2">
-                <Date>2016-12-21</Date>
-                <Version>1.9.6</Version>
+                <Date>2017-03-06</Date>
+                <Version>1.9.8</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -32945,6 +33051,50 @@
                 <Version>3.9.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>glm</Name>
+            <Homepage>http://glm.g-truc.net/</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>library</IsA>
+            <PartOf>programming.library</PartOf>
+            <Summary xml:lang="en">C++ mathematics library</Summary>
+            <Summary xml:lang="tr">C++ matematik kitaplığı</Summary>
+            <Description xml:lang="en">C++ mathematics library for 3D software based on the OpenGL Shading Language (GLSL) specification</Description>
+            <Description xml:lang="tr">GLM, OpenGL Shading Language (GLSL) spesifikasyonuna dayanan 3D yazılımlar için bir C + + matematik kitaplığıdır.</Description>
+            <Archive type="targz" sha1sum="f75a221f84a8ee53aa5962c8189f4519d07d4182">https://github.com/g-truc/glm/archive/0.9.8.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/library/glm/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>glm</Name>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>glm-doc</Name>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-01-01</Date>
+                <Version>0.9.8.3</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -34053,7 +34203,7 @@
                 <Dependency>lcms2</Dependency>
                 <Dependency>boost</Dependency>
                 <Dependency>libSM</Dependency>
-                <Dependency>java7-openjdk</Dependency>
+                <Dependency>jdk7-openjdk</Dependency>
                 <Dependency>libX11</Dependency>
                 <Dependency>libICE</Dependency>
                 <Dependency>libxslt</Dependency>
@@ -34380,6 +34530,67 @@
                 <Version>0.9.5</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libetonyek</Name>
+            <Homepage>http://www.freedesktop.org/wiki/Software/libetonyek/</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MPL-1.0</License>
+            <IsA>app:console</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">A library for import of Apple Keynote presentations</Summary>
+            <Summary xml:lang="tr">Apple keynote sunumları için bir kütüphane</Summary>
+            <Description xml:lang="en">Libetonyek is library providing ability to interpret and import Apple Keynote presentations into various applications. You can find it being used in libreoffice.</Description>
+            <Description xml:lang="tr">Libetonyek çeşitli uygulamalar içine Apple Keynote sunumları yorumlamak ve eklemek için bir kütüphane . Bunu LibreOffice içerisinde zaten kullanılıyor olabilirsiniz.</Description>
+            <Archive type="tarxz" sha1sum="c2f8420f1e77141097a10a33d3b83d41c38b65f1">http://dev-www.libreoffice.org/src/libetonyek/libetonyek-0.1.6.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>doxygen</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>cppunit</Dependency>
+                <Dependency>librevenge</Dependency>
+                <Dependency>glm</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>liblangtag</Dependency>
+                <Dependency>mdds</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>mdds-1.2-configure-error.patch</Patch>
+            </Patches>
+            <SourceURI>office/misc/libetonyek/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libetonyek</Name>
+            <RuntimeDependencies>
+                <Dependency>zlib</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>liblangtag</Dependency>
+                <Dependency>librevenge</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-01</Date>
+                <Version>0.1.6</Version>
+                <Comment>First Release</Comment>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -35435,6 +35646,47 @@
                 <Version>0.0.4</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mdds</Name>
+            <Homepage>http://sourceforge.net/projects/hunspell</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:gui</IsA>
+            <PartOf>office.misc</PartOf>
+            <Summary xml:lang="en">Multi-dimensional data index algorithm</Summary>
+            <Description xml:lang="en">A collection of multi-dimensional data structure and indexing algorithm.</Description>
+            <Icon>mdds</Icon>
+            <Archive type="tarbz2" sha1sum="3d2e5fc0e00650cdd3c385ebacacb15bd364ea4f">http://kohei.us/files/mdds/src/mdds-1.2.2.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>boost</Dependency>
+            </BuildDependencies>
+            <SourceURI>office/misc/mdds/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mdds</Name>
+            <RuntimeDependencies>
+                <Dependency>boost</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/pkgconfig</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-02</Date>
+                <Version>1.2.2</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>

@@ -24,14 +24,14 @@
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency>ant</Dependency>
-            <Dependency>java7-openjdk</Dependency>
+            <Dependency>jdk7-openjdk</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>rhino</Name>
         <RuntimeDependencies>
-            <Dependency>java7-openjdk</Dependency>
+            <Dependency>jdk7-openjdk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="man">/usr/share/man</Path>

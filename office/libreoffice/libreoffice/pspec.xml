@@ -31,7 +31,7 @@
             <Dependency>lcms2</Dependency>
             <Dependency>boost</Dependency>
             <Dependency>libSM</Dependency>
-            <Dependency>java7-openjdk</Dependency>
+            <Dependency>jdk7-openjdk</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libxslt</Dependency>

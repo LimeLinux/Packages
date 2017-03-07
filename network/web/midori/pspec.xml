@@ -27,6 +27,7 @@
             <Dependency>pango</Dependency>
             <Dependency>vala</Dependency>
             <Dependency>webkit-gtk2</Dependency>
+            <Dependency>webkit2gtk</Dependency>
             <Dependency>libzeitgeist</Dependency>
         </BuildDependencies>
         <!--Patches>
@@ -49,6 +50,7 @@
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>glib-networking</Dependency>
             <Dependency>gst-libav-next</Dependency>
+            <Dependency>webkit2gtk</Dependency>
             <Dependency>gst-plugins-base-next</Dependency>
             <Dependency>gst-plugins-good-next</Dependency>
         </RuntimeDependencies>

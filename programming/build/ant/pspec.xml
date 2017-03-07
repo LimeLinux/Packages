@@ -13,9 +13,9 @@
         <IsA>app:console</IsA>
         <Summary>Java-based build tool</Summary>
         <Description>Apache Ant is a Java-based build tool. In theory, it is kind of like Make, but without Make's wrinkles.</Description>
-        <Archive sha1sum="8eee8f30fecbf16c5bc430969d119d8081521b4d" type="tarbz2">http://archive.apache.org/dist/ant/source/apache-ant-1.9.6-src.tar.bz2</Archive>
+        <Archive sha1sum="870186a0931bde17272370747ee4ec138267d9bb" type="tarbz2">http://archive.apache.org/dist/ant/source/apache-ant-1.9.8-src.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>java7-openjdk</Dependency>
+            <Dependency>jdk7-openjdk</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -36,8 +36,8 @@
 
     <History>
         <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>1.9.6</Version>
+            <Date>2017-03-06</Date>
+            <Version>1.9.8</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
