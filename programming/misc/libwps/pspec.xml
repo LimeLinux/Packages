@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libwps</Name>
+        <Homepage>http://sourceforge.net/projects/libwps</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Microsoft Works format import library</Summary>
+        <Description>libwps is a Microsoft Works file format import filter based on top of the libwpd (which is already used in three word processors).</Description>
+        <Archive sha1sum="0dbcd5e55ab8e14318f4c4754211908ad879044f" type="tarxz">https://sourceforge.net/projects/libwps/files/libwps/libwps-0.4.4/libwps-0.4.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>libwpd</Dependency>
+            <Dependency>librevenge</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libwps</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>librevenge</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-07</Date>
+            <Version>0.4.4</Version>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libcdr</Name>
+        <Homepage>http://www.freedesktop.org/wiki/Software/libcdr</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <License>GPLv2</License>
+        <License>MPLv1.1</License>
+        <IsA>library</IsA>
+        <Summary>Library parsing the Corel cdr documents</Summary>
+        <Description>Libcdr is library providing ability to interpret and import Corel Draw drawings into various applications.</Description>
+        <Archive sha1sum="af1cad13b431f31a27fb2a1b0599a9c479a732cf" type="tarxz">http://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>doxygen</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>libwpd</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>librevenge</Dependency>
+            <Dependency>cppunit</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libcdr</Name>
+        <RuntimeDependencies>
+            <Dependency>lcms2</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>librevenge</Dependency>
+            <Dependency>cppunit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc/libcdr</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-02-15</Date>
+            <Version>0.1.3</Version>
+            <Comment>Frist Relase</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

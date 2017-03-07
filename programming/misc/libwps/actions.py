@@ -10,17 +10,21 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    pisitools.cxxflags.add(" -std=gnu++98")
-    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
-    autotools.configure()
-    
-    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
+    for f in ("AUTHORS", "NEWS", "ChangeLog"):
+        shelltools.touch(f)
 
+    #autotools.autoreconf("-fi")
+    autotools.configure("--without-docs --disable-static \
+                         --disable-werror")
+
+    # for fix unused dependency
+    pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
 
 def build():
     autotools.make()
 
+
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "README.*", "ABOUT-NLS", "COPYING", "ChangeLog", "NEWS", "README")
+    pisitools.dodoc("CREDITS", "README")

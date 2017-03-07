@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libwpg</Name>
+        <Homepage>http://libwpg.sourceforge.net</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>A C++ library designed to help process WordPerfect Graphics documents</Summary>
+        <Description>Libwpg project is a library and to work with graphics in WPG (WordPerfect Graphics) format. WPG is the format used among others in Corel sofware, such as WordPerfect and Presentations.</Description>
+        <Archive sha1sum="c8422f9a01e98ff3cb5d64d518e61f6a0bb77551" type="tarbz2">http://dev-www.libreoffice.org/src/libwpg-0.3.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>doxygen</Dependency>
+            <Dependency>libwpd</Dependency>
+            <Dependency>libtool</Dependency>
+            <Dependency>grep</Dependency>
+            <Dependency>pkgconfig</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libwpg</Name>
+        <RuntimeDependencies>
+            <Dependency>libwpd</Dependency>
+            <Dependency>librevenge</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libwpg-docs</Name>
+        <Summary>Documentation for libwpg</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/doc/libwpg/html</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-09</Date>
+            <Version>0.3.0</Version>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

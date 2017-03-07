@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libodfgen</Name>
+        <Homepage>http://sf.net/p/libwpd/libodfgen/</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Library for generating documents</Summary>
+        <Description>Library for generating documents in Open Document Format</Description>
+        <Archive sha1sum="49da7cc0dc4adfe0452e951d2dea3c225358fd63" type="tarxz">https://sourceforge.net/projects/libwpd/files/libodfgen/libodfgen-0.1.6/libodfgen-0.1.6.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>libwpd</Dependency>
+            <Dependency>libwpg</Dependency>
+            <Dependency>libetonyek</Dependency>
+            <Dependency>librevenge</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>gperf</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>libodfgen</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>librevenge</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-04</Date>
+            <Version>0.1.6</Version>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

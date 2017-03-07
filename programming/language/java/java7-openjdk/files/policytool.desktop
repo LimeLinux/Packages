@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=OpenJDK 1.7.0 Policy Tool
+Comment=Manage OpenJDK policy files
+Exec=policytool
+Icon=java
+Terminal=false
+Type=Application
+StartupWMClass=sun-security-tools-PolicyTool
+Categories=Development;Java;
+Version=1.0

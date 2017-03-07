@@ -2,20 +2,17 @@
 # -*- coding: utf-8 -*-
 #
 # Licensed under the GNU General Public License, version 3.
-# See the file http://www.gnu.org/licenses/gpl.txt
+# See the file http://www.gnu.org/copyleft/gpl.txt.
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    pisitools.cxxflags.add(" -std=gnu++98")
-    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
-    autotools.configure()
+    autotools.configure("--disable-static \
+                         --without-docs")
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
-
 
 def build():
     autotools.make()
@@ -23,4 +20,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "README.*", "ABOUT-NLS", "COPYING", "ChangeLog", "NEWS", "README")
+    pisitools.dodoc("AUTHORS", "COPYING*", "ChangeLog", "README")

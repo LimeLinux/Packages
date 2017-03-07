@@ -130,6 +130,7 @@
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="data">/usr/share/inkscape</Path>
             <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/appdata/inkscape.appdata.xml</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
