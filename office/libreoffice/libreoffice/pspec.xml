@@ -173,6 +173,32 @@
             <Dependency>libgcc</Dependency>
             <Dependency>libpng</Dependency>
             <Dependency>gst-plugins-base-next</Dependency>
+            <Dependency>neon</Dependency>
+            <Dependency>clucene</Dependency>
+            <Dependency>apr</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>postgresql</Dependency>
+            <Dependency>libetonyek</Dependency>
+            <Dependency>libvisio</Dependency>
+            <Dependency>doxygen</Dependency>
+            <Dependency>liblangtag</Dependency>
+            <Dependency>mdds</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>glm</Dependency>
+            <Dependency>cppunit</Dependency>
+            <Dependency>hunspell</Dependency>
+            <Dependency>libcdr</Dependency>
+            <Dependency>libmspub</Dependency>
+            <Dependency>libodfgen</Dependency>
+            <Dependency>libpagemaker</Dependency>
+            <Dependency>libwpd</Dependency>
+            <Dependency>libwpg</Dependency>
+            <Dependency>libwps</Dependency>
+            <Dependency>raptor2</Dependency>
+            <Dependency>rasqal</Dependency>
+            <Dependency>redland</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
