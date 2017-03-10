@@ -1,0 +1,161 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>virtualbox</Name>
+        <Homepage>http://www.virtualbox.org/</Homepage>
+        <Packager>
+            <Name>Lime Linux</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A powerful virtualization program</Summary>
+        <Description>VirtualBox is a family of powerful x86 virtualization products for enterprise as well as home use. This is the Open Source Edition which lacks USB support and some other things.</Description>
+        <Archive sha1sum="d593b2983c4803ce37156a8513b4f97b3c0bbbdf" type="tarbz2">http://download.virtualbox.org/virtualbox/5.1.16/VirtualBox-5.1.16.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>dev86</Dependency>
+            <Dependency>cdrkit</Dependency>
+            <Dependency>acpica</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>lvm2</Dependency>
+            <Dependency>libcap</Dependency>
+            <Dependency>gsoap</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libIDL</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>xorg-server</Dependency>
+            <Dependency>libvncserver</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>kernel-module-headers</Dependency>
+            <Dependency>jdk7-openjdk</Dependency>
+            <Dependency>jre7-openjdk</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>docbook-xml</Dependency>
+        </BuildDependencies>
+        <AdditionalFiles>
+            <AdditionalFile target="LocalConfig.kmk">LocalConfig.kmk</AdditionalFile>
+        </AdditionalFiles>
+        <Patches>
+            <Patch level="1">wrapper.patch</Patch>
+            <Patch level="1">002-dri-driver-path.patch</Patch>
+            <Patch level="1">003-ogl-include-path.patch</Patch>
+            <Patch level="1">008-root-window.patch</Patch>
+            <Patch level="1">004-xorg.patch</Patch>
+            <Patch level="1">new-xorg-1.19.patch</Patch>
+            <!--Patch level="1">VirtualBox-5.1.16-linux-4.9.11-buildfix.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>virtualbox</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>gsoap</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>virt-wrapper</Dependency>
+            <Dependency>libvncserver</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>lvm2</Dependency>
+            <Dependency version="current">module-virtualbox</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/etc/vbox</Path>
+            <Path fileType="data">/etc/conf.d</Path>
+             <Path fileType="data">/etc/init.d</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/virtualbox</Path>
+            <Path fileType="library">/usr/lib/python*</Path>
+            <Path fileType="data">/usr/share/virtualbox</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/icons/hicolor</Path>
+            <Path fileType="data">/usr/share/mime/packages</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+            <!--COMAR script="service.py">System.Service</COMAR-->
+        </Provides>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/bin/vboxreload">vboxreload</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/60-vboxdrv.rules">60-vboxdrv.rules</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/60-vboxguest.rules">60-vboxguest.rules</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/vboxwebsrv">openrc/vboxwebsrv-confd</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/init.d/vboxwebsrv">openrc/vboxwebsrv-initd</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <Package>
+        <Name>virtualbox-guest-utils</Name>
+        <PartOf>x11.driver</PartOf>
+        <Summary>VirtualBox guest utilities and drivers</Summary>
+        <RuntimeDependencies>
+            <Dependency>libXt</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>xorg-server</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency version="current">module-virtualbox-guest</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/etc/X11/Xsession.d</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="library">/lib/security</Path>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="executable">/usr/bin/VBoxClient*</Path>
+            <Path fileType="executable">/usr/bin/VBoxControl</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/kde/*/share/autostart</Path>
+            <Path fileType="data">/usr/share/X11</Path>
+            <Path fileType="library">/usr/lib/xorg/modules</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/X11/Xsession.d/98-vboxclient.sh">vboxclient.sh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-10</Date>
+            <Version>5.1.16</Version>
+            <Comment>First release</Comment>
+            <Name>Lime Linux</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

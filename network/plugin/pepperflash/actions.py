@@ -10,7 +10,5 @@ from pisi.actionsapi import get
 WorkDir = "."
 
 def install():
-    pisitools.insinto("usr/lib/chromium/PepperFlash/", "./PepperFlash/manifest.json")
-    pisitools.insinto("usr/lib/chromium/PepperFlash/", "./PepperFlash/libpepflashplayer.so")
-    pisitools.insinto("usr/lib/chromium/", "./chromium-browser/libwidevinecdmadapter.so")
-    pisitools.insinto("usr/lib/chromium/", "./chromium-browser/libwidevinecdm.so")
+    pisitools.insinto("usr/lib/chromium/PepperFlash/", "./pepperflash-24.0.0.221/PepperFlash/*")
+    pisitools.insinto("usr/lib/chromium/", "./pepperflash-24.0.0.221/chromium/*")

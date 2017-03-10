@@ -12,7 +12,7 @@
         <License>GPL</License>
         <Summary>Modular initramfs image creation utility</Summary>
         <Description>mkinitcpio is a generic, modular, cross-distribution initramfs generation tool.</Description>
-        <Archive sha1sum="678efaad52901aeb66f84e99f2ea86b24d2eea22" type="targz">https://github.com/bferturk/mkinitcpio/archive/19.1.tar.gz</Archive>     
+        <Archive sha1sum="167a6864b27d37fd5daa7eab3aee959352e3d667" type="targz">https://github.com/LimeLinux/mkinitcpio/archive/19.1a.tar.gz</Archive>       
         <BuildDependencies>
             <Dependency>kmod</Dependency>
             <Dependency>asciidoc</Dependency>
@@ -47,6 +47,13 @@
     </Package>
     
     <History>
+        <Update release="2">
+            <Date>2017-02-21</Date>
+            <Version>19.1a</Version>
+            <Comment>Version bump</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="1">
             <Date>2016-12-21</Date>
             <Version>19.1</Version>

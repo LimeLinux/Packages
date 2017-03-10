@@ -13,16 +13,16 @@
         <IsA>driver</IsA>
         <Summary>Kernel modules for VirtualBox</Summary>
         <Description>This package provides the kernel support for VirtualBox.</Description>
-        <Archive sha1sum="7489ae3b501407d5ca2826e6ef1d5b2000e06154" type="tarxz">https://sourceforge.net/projects/pisilinux/files/source/module-virtualbox-5.1.14.tar.xz</Archive>
+        <Archive sha1sum="85d8e51f8746beb937bb9305f3c10070fe84fb65" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/virtualbox-driver/module-virtualbox-5.1.16.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency version="4.6.4">kernel-module-headers</Dependency>
+            <Dependency version="4.9.11">kernel-module-headers</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>module-virtualbox</Name>
         <RuntimeDependencies>
-            <Dependency version="4.6.4">kernel</Dependency>
+            <Dependency version="4.9.11">kernel</Dependency>
             <Dependency version="current">module-virtualbox-userspace</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -48,9 +48,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-02-09</Date>
-            <Version>5.1.14</Version>
+            <Version>5.1.16</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

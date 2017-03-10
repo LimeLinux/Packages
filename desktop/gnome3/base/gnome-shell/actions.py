@@ -11,7 +11,7 @@ from pisi.actionsapi import shelltools
 
 def setup():
     shelltools.system("NOCONFIGURE=1 ./autogen.sh")
-    autotools.configure("--disable-networkmanager --disable-gvc --disable-static --enable-gtk-doc")
+    autotools.configure("--disable-networkmanager --without-gvc --disable-static --enable-gtk-doc")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
