@@ -11,4 +11,5 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
         f = "/usr/lib/virtualbox/%s" % _file
         os.system("/bin/chown :%s %s" % (vboxgroup, f))
         os.chmod(f, 04755)
+        os.system("rc-update add vboxwebsrv default")
 

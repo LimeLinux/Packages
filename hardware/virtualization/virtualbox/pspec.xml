@@ -112,7 +112,6 @@
             <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/60-vboxdrv.rules">60-vboxdrv.rules</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/60-vboxguest.rules">60-vboxguest.rules</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/vboxwebsrv">openrc/vboxwebsrv-confd</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/etc/init.d/vboxwebsrv">openrc/vboxwebsrv-initd</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
