@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>libdbusmenu-qt</Name>
+        <Homepage>https://launchpad.net/libdbusmenu-qt</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admins@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Qt implementation of the DBusMenu spec</Summary>
+        <Description>libdbusmenu-qt library provides a Qt implementation of the DBusMenu spec.</Description>
+        <Archive sha1sum="b24d7a063de3344d4f2dfc3560c840d3fc0051b4" type="targz">http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbusmenu-qt/libdbusmenu-qt_0.9.3+15.10.20150604.orig.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libqjson</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>doxygen</Dependency>
+            <Dependency>cmake</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libdbusmenu-qt</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-01</Date>
+            <Version>0.9.3_20150604</Version>
+            <Comment>First Release</Comment>
+             <Comment>First Release</Comment>
+            <Name>alimurat algul</Name>
+            <Email>alimuratalgul@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

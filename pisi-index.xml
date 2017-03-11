@@ -3812,7 +3812,6 @@
                 <AdditionalFile target="/lib/udev/rules.d/60-vboxdrv.rules" permission="0644" owner="root">60-vboxdrv.rules</AdditionalFile>
                 <AdditionalFile target="/lib/udev/rules.d/60-vboxguest.rules" permission="0644" owner="root">60-vboxguest.rules</AdditionalFile>
                 <AdditionalFile target="/etc/conf.d/vboxwebsrv" permission="0644" owner="root">openrc/vboxwebsrv-confd</AdditionalFile>
-                <AdditionalFile target="/etc/init.d/vboxwebsrv" permission="0644" owner="root">openrc/vboxwebsrv-initd</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <Package>
@@ -20993,9 +20992,9 @@
             <License>GPLv2</License>
             <IsA>console</IsA>
             <PartOf>system.base</PartOf>
-            <Summary xml:lang="en">Pisi GNU/ Linux service scripts for openrc</Summary>
+            <Summary xml:lang="en">Lime GNU/ Linux service scripts for openrc</Summary>
             <Description xml:lang="en">Pisi GNU/ Linux service scripts for openrc</Description>
-            <Archive type="targz" sha1sum="0cc0f672ca236d73005ad22c33837cf341bb8de3">https://github.com/LimeLinux/openrc-services/archive/v1.1.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="89e2148bd7b982544cb706afbe1b1ffca98478b7">https://github.com/LimeLinux/openrc-services/archive/1.1.2.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>openrc</Dependency>
             </BuildDependencies>
@@ -21019,6 +21018,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="4">
+                <Date>2017-01-08</Date>
+                <Version>1.1.1</Version>
+                <Comment>Virtualbox star and auto run add</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
             <Update release="3">
                 <Date>2017-01-08</Date>
                 <Version>1.1.1</Version>
@@ -32803,6 +32809,53 @@
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libdbusmenu-qt</Name>
+            <Homepage>https://launchpad.net/libdbusmenu-qt</Homepage>
+            <Packager>
+                <Name>lime Gnu/Linux Community</Name>
+                <Email>admins@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>programming.misc</PartOf>
+            <Summary xml:lang="en">Qt implementation of the DBusMenu spec</Summary>
+            <Summary xml:lang="tr">DBusMenu spesifikasyonunun Qt gerçeklemesi</Summary>
+            <Description xml:lang="en">libdbusmenu-qt library provides a Qt implementation of the DBusMenu spec.</Description>
+            <Description xml:lang="tr">libdbusmenu-qt kitaplığı DBusMenu spesifikasyonunun Qt gerçeklemesini sağlar.</Description>
+            <Archive type="targz" sha1sum="b24d7a063de3344d4f2dfc3560c840d3fc0051b4">http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbusmenu-qt/libdbusmenu-qt_0.9.3+15.10.20150604.orig.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libqjson</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>doxygen</Dependency>
+                <Dependency>cmake</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/misc/libdbusmenu-qt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libdbusmenu-qt</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-01</Date>
+                <Version>0.9.3_20150604</Version>
+                <Comment>First Release</Comment>
+                <Name>alimurat algul</Name>
+                <Email>alimuratalgul@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -50493,1801 +50546,530 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>extra-cmake-modules</Name>
-            <Homepage>http://www.kde.org</Homepage>
+            <Name>qt5-phonon-backend-gstreamer</Name>
+            <Homepage>http://phonon.kde.org</Homepage>
             <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Packager>
-            <License>LGPLv2</License>
+            <License>LGPLv2+</License>
             <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Extra cmake modules for KDE5</Summary>
-            <Description xml:lang="en">Extra cmake modules KDE5</Description>
-            <Archive type="tarxz" sha1sum="6827eb313d6c3cdeedcc7e147ba53c1c8b02bf2e">mirrors://kde/stable/frameworks/5.29/extra-cmake-modules-5.29.0.tar.xz</Archive>
+            <PartOf>desktop.kde.phonon</PartOf>
+            <Summary xml:lang="en">GStreamer qt5-phonon backend</Summary>
+            <Description xml:lang="en">Phonon is the Qt multimedia API, which provides a task-oriented abstraction layer for capturing, mixing, processing, and playing audio and video content. phonon-backend-gstreamer contains the GStreamer backend for Phonon.</Description>
+            <Archive type="tarxz" sha1sum="81f16c98e35a6377fefd8ce8e66e1e2ec609c94d">http://download.kde.org/stable/phonon/phonon-backend-gstreamer/4.9.0/phonon-backend-gstreamer-4.9.0.tar.xz</Archive>
             <BuildDependencies>
-                <Dependency>cmake</Dependency>
-                <Dependency>flex</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/extra-cmake-modules/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>extra-cmake-modules</Name>
-            <PartOf>programming.build</PartOf>
-            <RuntimeDependencies>
-                <Dependency>cmake</Dependency>
-                <Dependency>flex</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="man">/usr/share/man/man7</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kcompletion</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Addon with auto completion widgets and classes</Summary>
-            <Description xml:lang="en">KCompletion provides widgets with advanced completion support as well as a lower-level completion class which can be used with your own widgets.</Description>
-            <Archive type="tarxz" sha1sum="b85d92ba1a895109772c5eaec055ef75006ba9c5">mirrors://kde/stable/frameworks/5.29/kcompletion-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kcompletion/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kcompletion</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kiconthemes</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE5 icon utilities</Summary>
-            <Description xml:lang="en">This library contains classes to improve the handling of icons in applications using the KDE Frameworks.</Description>
-            <Archive type="tarxz" sha1sum="92e558187127ffad54d6947b401fa0b45075dccc">mirrors://kde/stable/frameworks/5.29/kiconthemes-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kauth</Dependency>
-                <Dependency versionFrom="5.29.0">karchive</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kitemviews</Dependency>
-                <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kiconthemes/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kiconthemes</Name>
-            <RuntimeDependencies>
-                <Dependency>libgcc</Dependency>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">karchive</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">karchive</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kitemviews</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Set of item models extending the Qt model-view framework</Summary>
-            <Description xml:lang="en">KItemViews includes a set of views, which can be used with item models. It includes views for categorizing lists and to add search filters to flat and hierarchical lists.</Description>
-            <Archive type="tarxz" sha1sum="9dd4e0cc0dd22077e27bd77b7afc124d8593f539">mirrors://kde/stable/frameworks/5.29/kitemviews-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kitemviews/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kitemviews</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kglobalaccel</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Global desktop keyboard shortcuts</Summary>
-            <Description xml:lang="en">KGlobalAccel allows you to have global accelerators that are independent of the focused window.</Description>
-            <Archive type="tarxz" sha1sum="93c545cb1d251940aa1616bfacacce8fa3b47cea">mirrors://kde/stable/frameworks/5.29/kglobalaccel-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libxcb</Dependency>
-                <Dependency>xcb-util-keysyms</Dependency>
-                <Dependency versionFrom="5.29.0">kcrash</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kdbusaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-                <Dependency versionFrom="5.29.0">kservice</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kglobalaccel/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kglobalaccel</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libxcb</Dependency>
-                <Dependency versionFrom="5.29.0">kcrash</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kdbusaddons</Dependency>
-                <Dependency>xcb-util-keysyms</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-                <Dependency versionFrom="5.29.0">kservice</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>karchive</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Qt 5 addon providing access to numerous types of archives</Summary>
-            <Description xml:lang="en">KArchive provides classes for easy reading, creation and manipulation of &quot;archive&quot; formats like ZIP and TAR.</Description>
-            <Archive type="tarxz" sha1sum="64a07fd4fa8c2153315e85d0333af061c6fb7828">mirrors://kde/stable/frameworks/5.29/karchive-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>xz</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>bzip2</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/karchive/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>karchive</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>xz</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>bzip2</Dependency>
-                <Dependency>libgcc</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kwindowsystem</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE5 window manager access framework</Summary>
-            <Description xml:lang="en">KWindowSystem provides information about the state of the window manager and allows asking the window manager to change the using a more high-level interface than the NETWinInfo/NETRootInfo low-level classes.</Description>
-            <Archive type="tarxz" sha1sum="f11a249ad713de21878f692519e1396f4cebeffb">mirrors://kde/stable/frameworks/5.29/kwindowsystem-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libxcb</Dependency>
-                <Dependency>libXrender</Dependency>
-                <Dependency>libXfixes</Dependency>
-                <Dependency>xcb-util</Dependency>
-                <Dependency>xcb-util-keysyms</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kwindowsystem/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kwindowsystem</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libxcb</Dependency>
-                <Dependency>libXfixes</Dependency>
-                <Dependency>xcb-util-keysyms</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>ktextwidgets</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE5 text editing widgets</Summary>
-            <Description xml:lang="en">KTextWidgets provides widgets for displaying and editing text. It supports rich text as well as plain text.</Description>
-            <Archive type="tarxz" sha1sum="1f9db0687635d090834d45324b78b126574891d1">mirrors://kde/stable/frameworks/5.29/ktextwidgets-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcompletion</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">kauth</Dependency>
-                <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">sonnet</Dependency>
-                <Dependency versionFrom="5.29.0">kservice</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/ktextwidgets/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>ktextwidgets</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcompletion</Dependency>
-                <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">sonnet</Dependency>
-                <Dependency versionFrom="5.29.0">kservice</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>sonnet</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE spell schecking library</Summary>
-            <Description xml:lang="en">This framework contains two main components: Interface to KWallet, the safe desktop-wide storage for passwords on KDE workspaces. The kwalletd used to safely store the passwords on KDE work spaces.</Description>
-            <Archive type="tarxz" sha1sum="768cf074d2d6ec8c89040e1d0f18ecfaf79d1f03">mirrors://kde/stable/frameworks/5.29/sonnet-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>hunspell</Dependency>
-                <Dependency>aspell</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/sonnet/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>sonnet</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>aspell</Dependency>
-                <Dependency>hunspell</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kdbusaddons</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Extra modules for Qt-DBus</Summary>
-            <Description xml:lang="en">KDE5-KDBusAddons provides convenience classes on top of QtDBus, as well as an API to create KDED modules.</Description>
-            <Archive type="tarxz" sha1sum="e6995a1626d8415fe353671029adc27a5ad3b7b6">mirrors://kde/stable/frameworks/5.29/kdbusaddons-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kdbusaddons/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kdbusaddons</Name>
-            <RuntimeDependencies>
-                <Dependency>libgcc</Dependency>
-                <Dependency>qt5</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kcodecs</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Plugins allowing Qt applications to access further types of images</Summary>
-            <Description xml:lang="en">KDE5 KCodecs provide a collection of methods to manipulate strings using various encodings.</Description>
-            <Archive type="tarxz" sha1sum="92605c0fb0a8697546c3b6774e4e19bd52eb06a0">mirrors://kde/stable/frameworks/5.29/kcodecs-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kcodecs/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kcodecs</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kbookmarks</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Access and manipulate bookmarks stored using XBEL format</Summary>
-            <Description xml:lang="en">Framework which lets you access and manipulate bookmarks stored using XBEL format</Description>
-            <Archive type="tarxz" sha1sum="883edde2bea526ef1f860f0df696613d76aeaf70">mirrors://kde/stable/frameworks/5.29/kbookmarks-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kauth</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kxmlgui</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kbookmarks/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kbookmarks</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kxmlgui</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localesdata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kpmcore</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Library for managing partitions.</Summary>
-            <Description xml:lang="en">Library for managing partitions.</Description>
-            <Archive type="tarxz" sha1sum="f7a88d35ab1b07bc84fe5868b38cc9e99a86ec37">mirrors://kde/stable/kpmcore/3.0.2/src/kpmcore-3.0.2.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libatasmart</Dependency>
                 <Dependency>extra-cmake-modules</Dependency>
-                <Dependency>parted</Dependency>
-                <Dependency>util-linux</Dependency>
-                <Dependency>ki18n</Dependency>
-                <Dependency>kio</Dependency>
-                <Dependency>kconfig</Dependency>
-                <Dependency>kxmlgui</Dependency>
-                <Dependency>kservice</Dependency>
-                <Dependency>kcoreaddons</Dependency>
-                <Dependency>kiconthemes</Dependency>
-                <Dependency>kjobwidgets</Dependency>
-                <Dependency>kconfigwidgets</Dependency>
-                <Dependency>kwidgetsaddons</Dependency>
-                <Dependency>kdoctools</Dependency>
-                <Dependency>kwidgetsaddons</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kpmcore/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kpmcore</Name>
-            <RuntimeDependencies>
-                <Dependency>kio</Dependency>
-                <Dependency>ki18n</Dependency>
-                <Dependency>kwidgetsaddons</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>parted</Dependency>
-                <Dependency>kservice</Dependency>
+                <Dependency>qt5-x11extras</Dependency>
                 <Dependency>qt5</Dependency>
-                <Dependency>kcoreaddons</Dependency>
-                <Dependency>kiconthemes</Dependency>
-                <Dependency>libatasmart</Dependency>
-                <Dependency>util-linux</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/pkgconfig</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-13</Date>
-                <Version>3.0.2</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>ki18n</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE Gettext-based UI text internationalization.</Summary>
-            <Summary xml:lang="tr">KDE grafik arabirim yerelleştirme kitaplığı</Summary>
-            <Description xml:lang="en">KI18n provides functionality for internationalizing user interface text in applications, based on the GNU Gettext translation system.</Description>
-            <Description xml:lang="tr">ki18n, KDE Frameworks 5 için, Gettext tabanlı bir grafik arabirim yerelleştirme kitaplığıdır</Description>
-            <Archive type="tarxz" sha1sum="cd76943c8d3f6a2e012b0ea80676a0082f71312c">mirrors://kde/stable/frameworks/5.29/ki18n-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/ki18n/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>ki18n</Name>
-            <RuntimeDependencies>
-                <Dependency>libgcc</Dependency>
-                <Dependency>qt5</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kguiaddons</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Utilities for graphical user interfaces</Summary>
-            <Description xml:lang="en">The KDE GUI addons provide utilities for graphical user interfaces in the areas of colors, fonts, text, images, keyboard input. Development files.</Description>
-            <Archive type="tarxz" sha1sum="f04ed44ca5be0d87c9dcb173ffab2a7ca0cb6ca1">mirrors://kde/stable/frameworks/5.29/kguiaddons-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>libX11</Dependency>
-                <Dependency>libxcb</Dependency>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kguiaddons/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kguiaddons</Name>
-            <RuntimeDependencies>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>qt5</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>partitionmanager</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE Partition Manager is a utility program to help you manage the disk devices, partitions and file systems on your computer</Summary>
-            <Summary xml:lang="tr">KDE Disk Bölümü Yöneticisi</Summary>
-            <Description xml:lang="en">It allows you to easily create, copy, move, delete, resize without losing data, backup and restore partitions..</Description>
-            <Description xml:lang="tr">KDE Disk Bölümü Yöneticisi, disklerinizi, bölümlerinizi ve dosya sistemlerinizi yönetmenize izin verir. Birçok dosya sistemini (ext2/3/4, reiserfs, NTFS, FAT32 ve daha fazlası) desteklemenin yanı sıra, yeni bölüm oluşturabilir ya da var olan bir bölüm üzerinde boyutlandırma, kopyalama, taşıma, yedekleme ve geri yükleme işlemlerini yapabilir.</Description>
-            <Archive type="tarxz" sha1sum="152eddcb7be7b9f6271019fdfdc18ada9547628f">mirrors://kde/stable/partitionmanager/3.0.0/src/partitionmanager-3.0.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>util-linux</Dependency>
-                <Dependency>kio</Dependency>
-                <Dependency>ki18n</Dependency>
-                <Dependency>kconfig</Dependency>
-                <Dependency>kxmlgui</Dependency>
-                <Dependency>kservice</Dependency>
-                <Dependency>kcoreaddons</Dependency>
-                <Dependency>kiconthemes</Dependency>
-                <Dependency>kjobwidgets</Dependency>
-                <Dependency>kconfigwidgets</Dependency>
-                <Dependency>kwidgetsaddons</Dependency>
-                <Dependency>kpmcore</Dependency>
-                <Dependency>kcrash</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/partitionmanager/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>partitionmanager</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>util-linux</Dependency>
-                <Dependency>kio</Dependency>
-                <Dependency>ki18n</Dependency>
-                <Dependency>kconfig</Dependency>
-                <Dependency>kxmlgui</Dependency>
-                <Dependency>kservice</Dependency>
-                <Dependency>kcoreaddons</Dependency>
-                <Dependency>kiconthemes</Dependency>
-                <Dependency>kjobwidgets</Dependency>
-                <Dependency>kconfigwidgets</Dependency>
-                <Dependency>kwidgetsaddons</Dependency>
-                <Dependency>kpmcore</Dependency>
-                <Dependency>kcrash</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>3.0.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kjobwidgets</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Widgets for showing progress of asynchronous jobs</Summary>
-            <Description xml:lang="en">KJobWIdgets provides widgets for showing progress of asynchronous jobs.</Description>
-            <Archive type="tarxz" sha1sum="6f7d152857352cdfe231eafbbbf17072de159e7c">mirrors://kde/stable/frameworks/5.29/kjobwidgets-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>libX11</Dependency>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kjobwidgets/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kjobwidgets</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>attica</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Open Collaboration Service client library, based on Qt 5</Summary>
-            <Description xml:lang="en">Attica is a library to access Open Collaboration Service servers, based on Qt 5.</Description>
-            <Archive type="tarxz" sha1sum="c894b693700c8ada5453ff6aa842542de59856e7">mirrors://kde/stable/frameworks/5.29/attica-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/attica/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>attica</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>solid</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE5 hardware integration framework</Summary>
-            <Description xml:lang="en">Solid is a device integration framework.It provides a way of querying and interacting with hardware independently of the underlying operating system.</Description>
-            <Archive type="tarxz" sha1sum="2e73c05fb925e2d37ecdf1c128d9420e09befc8e">mirrors://kde/stable/frameworks/5.29/solid-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>udisks2</Dependency>
-                <Dependency>upower</Dependency>
-                <Dependency>media-player-info</Dependency>
-                <Dependency>extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/solid/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>solid</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>media-player-info</Dependency>
-                <Dependency>libgcc</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kwidgetsaddons</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE5 desktop widgets</Summary>
-            <Description xml:lang="en">KdeWidgetsAddons is a framework contains addon widgets and shared libraries for applications using Qt5-Widgets.</Description>
-            <Archive type="tarxz" sha1sum="aa0208e645ef0c299474eea1481ad35d11252e57">mirrors://kde/stable/frameworks/5.29/kwidgetsaddons-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kwidgetsaddons/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kwidgetsaddons</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kauth</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Abstraction to system policy and authentication features</Summary>
-            <Description xml:lang="en">Framework which lets applications perform actions as a privileged user</Description>
-            <Archive type="tarxz" sha1sum="58636047a952d2c0a2c2f4f9ea2d21da21a4d2f2">mirrors://kde/stable/frameworks/5.29/kauth-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>polkit-qt</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kauth/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kauth</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>polkit-qt</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>kcoreaddons</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kxmlgui</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Framework for managing menu and toolbar actions</Summary>
-            <Description xml:lang="en">Kxmlgui provides a framework for managing menu and toolbar actions in an abstract way.</Description>
-            <Archive type="tarxz" sha1sum="13c74bd7ae3b553273e21de07656e72f5225c807">mirrors://kde/stable/frameworks/5.29/kxmlgui-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kauth</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kitemviews</Dependency>
-                <Dependency versionFrom="5.29.0">ktextwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kglobalaccel</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kxmlgui/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kxmlgui</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency versionFrom="5.29.0">attica</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kglobalaccel</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kitemviews</Dependency>
-                <Dependency versionFrom="5.29.0">ktextwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kservice</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE5 Desktop Services</Summary>
-            <Description xml:lang="en">Kservice Provides a plugin framework for handling desktop services. Services can be applications or libraries. They can be bound to MIME types or handled by application specific code.</Description>
-            <Archive type="tarxz" sha1sum="1b4fd5dd07d163b576f755a9c2217ec23a114498">mirrors://kde/stable/frameworks/5.29/kservice-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">kdbusaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kcrash</Dependency>
-                <Dependency>docbook-xml</Dependency>
-                <Dependency>docbook-xsl</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kservice/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kservice</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kcrash</Dependency>
-                <Dependency versionFrom="5.29.0">kdbusaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kconfigwidgets</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <IsA>app:gui</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Kconfig widgets</Summary>
-            <Description xml:lang="en">KConfigWidgets provides easy-to-use classes to create configuration dialogs, as well as a set of widgets which uses KConfig to store their settings.</Description>
-            <Archive type="tarxz" sha1sum="195de3d0e2c22fc95fb3be5b640f86303446374e">mirrors://kde/stable/frameworks/5.29/kconfigwidgets-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kauth</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kguiaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kconfigwidgets/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kconfigwidgets</Name>
-            <RuntimeDependencies>
-                <Dependency>libgcc</Dependency>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">kauth</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kguiaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kcoreaddons</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Utilities for core application functionality and accessing the OS</Summary>
-            <Description xml:lang="en">KCoreAddons provides classes built on top of QtCore to perform various tasks such as manipulating mime types, autosaving files, creating backup files, generating random sequences, performing text manipulations such as macro replacement, accessing user information and many more.</Description>
-            <Archive type="tarxz" sha1sum="cbbe3edd720dcebcb81dd77e98caa4460002a0c5">http://download.kde.org/stable/frameworks/5.29/kcoreaddons-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>shared-mime-info</Dependency>
-                <Dependency>extra-cmake-modules</Dependency>
+                <Dependency>qt5-phonon</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
                 <Dependency>mesa</Dependency>
+                <Dependency>libxml2</Dependency>
             </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kcoreaddons/pspec.xml</SourceURI>
+            <SourceURI>desktop/kde/phonon/qt5-phonon-backend-gstreamer/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>kcoreaddons</Name>
+            <Name>qt5-phonon-backend-gstreamer</Name>
             <RuntimeDependencies>
                 <Dependency>qt5</Dependency>
+                <Dependency>qt5-phonon</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>glib2</Dependency>
                 <Dependency>libgcc</Dependency>
-                <Dependency>shared-mime-info</Dependency>
-                <Dependency>docbook-xsl</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
             </RuntimeDependencies>
             <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
                 <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
+                <Path fileType="library">/usr/lib/qt5</Path>
+                <Path fileType="data">/usr/share</Path>
             </Files>
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
+                <Date>2017-02-27</Date>
+                <Version>4.9.0</Version>
                 <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>kconfig</Name>
-            <Homepage>http://www.kde.org</Homepage>
+            <Name>qt5-phonon-backend-vlc</Name>
+            <Homepage>http://gitorious.org/phonon/phonon-vlc</Homepage>
             <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Packager>
-            <License>LGPLv2</License>
+            <License>LGPLv2.1</License>
             <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <IsA>app:gui</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Advanced configuration system for KDE Frameworks 5</Summary>
-            <Description xml:lang="en">Kconfig provides advanced libraries and tools for accessing configuration files.</Description>
-            <Archive type="tarxz" sha1sum="208da5a4433360955c7eb113e380f6881b027376">mirrors://kde/stable/frameworks/5.29/kconfig-5.29.0.tar.xz</Archive>
+            <PartOf>desktop.kde.phonon</PartOf>
+            <Summary xml:lang="en">VLC Backend for qt5-phonon</Summary>
+            <Description xml:lang="en">phonon-backend-vlc allows Phonon (the KDE media library) to use VLC for audio and video playback.</Description>
+            <Archive type="tarxz" sha1sum="15e021b2904e656a02a53bcec56e8a407b192774">mirrors://kde/stable/phonon/phonon-backend-vlc/0.9.1/phonon-backend-vlc-0.9.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>qt5</Dependency>
+                <Dependency>qt5-phonon</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>vlc</Dependency>
                 <Dependency>extra-cmake-modules</Dependency>
             </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kconfig/pspec.xml</SourceURI>
+            <SourceURI>desktop/kde/phonon/qt5-phonon-backend-vlc/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>kconfig</Name>
+            <Name>qt5-phonon-backend-vlc</Name>
             <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
                 <Dependency>libgcc</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>qt5-phonon</Dependency>
+                <Dependency>vlc-libs</Dependency>
             </RuntimeDependencies>
             <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
                 <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/lib/qt5</Path>
+                <Path fileType="data">/usr/share/kde4/services</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
             </Files>
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-20</Date>
-                <Version>5.29.0</Version>
+                <Date>2017-02-27</Date>
+                <Version>0.9.1</Version>
                 <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>kdoctools</Name>
+            <Name>qt5-phonon</Name>
+            <Homepage>http://phonon.kde.org</Homepage>
+            <Packager>
+                <Name>lime Gnu/Linux Community</Name>
+                <Email>admins@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.kde.phonon</PartOf>
+            <Summary xml:lang="en">Cross platform multimedia API for KDE4 using QT5</Summary>
+            <Description xml:lang="en">Phonon was created as a solution to several problems with multimedia commonly faced by Unix desktops, especially KDE 3&apos;s outdated multimedia framework aRts. Phonon itself is not a multimedia framework, but interfaces with existing frameworks such as GStreamer or Xine via backends.</Description>
+            <Archive type="tarxz" sha1sum="aa58818675a2b3486da3a43f136ee11f88672eea">http://download.kde.org/stable/phonon/4.9.1/phonon-4.9.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>kde5-framework</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>qt5-webkit</Dependency>
+                <Dependency>qt5-webengine</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>linux-api-headers</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/kde/phonon/qt5-phonon/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qt5-phonon</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-01</Date>
+                <Version>4.9.1</Version>
+                <Comment>First Release</Comment>
+                <Name>alimurat algul</Name>
+                <Email>alimuratalgul@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>kde5-plasma</Name>
             <Homepage>http://www.kde.org</Homepage>
             <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
+                <Name>lime Gnu/Linux Community</Name>
+                <Email>admins@limelinux.com</Email>
             </Packager>
             <License>LGPLv2</License>
             <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">KDE5 document generator</Summary>
-            <Description xml:lang="en">kdoctools is an application aims to generate documents from DocBook.</Description>
-            <Archive type="tarxz" sha1sum="1d5e8fca51bc7d2f17b94ce13d5008e1ea9bf589">mirrors://kde/stable/frameworks/5.29/kdoctools-5.29.0.tar.xz</Archive>
+            <PartOf>desktop.kde</PartOf>
+            <Summary xml:lang="en">KDE Frameworks 5</Summary>
+            <Description xml:lang="en">KDE Frameworks 5 is a collection of libraries based on top of Qt5 and QML derived from the monolithic KDE 4 libraries</Description>
+            <Archive type="tarxz" sha1sum="e223f53855bffe8e5f062d775c0114973ef59722">http://download.kde.org/stable/plasma/5.9.3/bluedevil-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="a6463438f6bc73996d92fa6a40fab0932b95c675">http://download.kde.org/stable/plasma/5.9.3/breeze-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="bb85b930bf8f0a52d67663052737c5a8e1ff6448">http://download.kde.org/stable/plasma/5.9.3/breeze-grub-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c39e27fefc5c02c171d17657324ead7807b32da9">http://download.kde.org/stable/plasma/5.9.3/breeze-gtk-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d8b260614409829b3ed61fd027d84825a537d40c">http://download.kde.org/stable/plasma/5.9.3/breeze-plymouth-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="2e5af059a15265dd06655238c8f22ca8d6afdcb8">http://download.kde.org/stable/plasma/5.9.3/kactivitymanagerd-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="397cf811ef973dc6ba992925948757258d7a3fce">http://download.kde.org/stable/plasma/5.9.3/kde-cli-tools-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8d26a82134460bb6c4a73ccafa736a2188032ce3">http://download.kde.org/stable/plasma/5.9.3/kde-gtk-config-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d486c2ded689099395813b1087218ab445239403">http://download.kde.org/stable/plasma/5.9.3/kdecoration-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="eb68c43b2074038111094491e8498c3866da3e3a">http://download.kde.org/stable/plasma/5.9.3/kdeplasma-addons-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="2fc78dbf7f81eedf212e1ae9ddf0708810ca730e">http://download.kde.org/stable/plasma/5.9.3/kgamma5-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c4b01e1e6123acc231aef4bd2e861deb90dc9e7f">http://download.kde.org/stable/plasma/5.9.3/khotkeys-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="0248b4bf9a99fbb44b1b35794f581b3d34345d53">http://download.kde.org/stable/plasma/5.9.3/kinfocenter-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="2633f9bd63abc45f46a07ae03bdad0b512cb9c17">http://download.kde.org/stable/plasma/5.9.3/kmenuedit-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="0727fbd9d758d7e4393e298d30ffecc16743cf80">http://download.kde.org/stable/plasma/5.9.3/kscreen-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="cd208f8dc51fa114ab45daec7139fb7744b2afef">http://download.kde.org/stable/plasma/5.9.3/kscreenlocker-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8bfe213c1e3fcb6a9063082f98cc62de05fb706f">http://download.kde.org/stable/plasma/5.9.3/ksshaskpass-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="a7d70217cd3d5c3a446c97c9484b2bf8ca2ad39c">http://download.kde.org/stable/plasma/5.9.3/ksysguard-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="0aef288286c2c603b3d5e07337ea8be158b5e21f">http://download.kde.org/stable/plasma/5.9.3/kwallet-pam-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="3ef8a4e98787cec566944bb6d13db52547259e91">http://download.kde.org/stable/plasma/5.9.3/kwayland-integration-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="24f8927c2f4cf17508e7c8877d10051eb3b33248">http://download.kde.org/stable/plasma/5.9.3/kwin-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d6d1e0e1ede653aee79f776c839ec42674ec3333">http://download.kde.org/stable/plasma/5.9.3/kwrited-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="53687ccf4bd1d18674ce36280dc3fdff9bb62a74">http://download.kde.org/stable/plasma/5.9.3/libkscreen-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d56e8cfe1f30f6a0e7e7b0b979d537f2543d8402">http://download.kde.org/stable/plasma/5.9.3/libksysguard-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b6a8f2cfbf2b8ac7468f8af41dbe12af813d93d8">http://download.kde.org/stable/plasma/5.9.3/oxygen-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="0f34da16bdb48a48f848de3f50939242350925cb">http://download.kde.org/stable/plasma/5.9.3/plasma-desktop-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="fe426b054d077d36dd4f00e41e3db6c2a3968460">http://download.kde.org/stable/plasma/5.9.3/plasma-integration-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="9159a14a00052c74f49d80db9fb0957db5b2d865">http://download.kde.org/stable/plasma/5.9.3/plasma-nm-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d5b222f9f128c9abc03c9cf7640d0913465a9711">http://download.kde.org/stable/plasma/5.9.3/plasma-pa-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="a65d301c87b549c3fcaf95a2d85df7311a53b7ce">http://download.kde.org/stable/plasma/5.9.3/plasma-tests-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="9308d11b9bf3434b2b8dca369a62546d484f161f">http://download.kde.org/stable/plasma/5.9.3/plasma-workspace-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="9657200f79602e781536df4cb6069c5d9c8d0f3a">http://download.kde.org/stable/plasma/5.9.3/plasma-workspace-wallpapers-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="f74e3ad8f74b99b211caaae93ae5f0faa085fdd9">http://download.kde.org/stable/plasma/5.9.3/polkit-kde-agent-1-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b82d8a1903f1c0e1eeb2cbf40adaa6b3dae143cd">http://download.kde.org/stable/plasma/5.9.3/powerdevil-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="477841a4a565e6a1f356c41d68ad14432eff3abf">http://download.kde.org/stable/plasma/5.9.3/user-manager-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="6a8816d9de5d7afc9f5ba70f91a1a4cc713b634b">http://download.kde.org/stable/plasma/5.9.3/systemsettings-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="471668b879dfabe8ed8cc629049c7d1a2ab3f9d2">https://download.kde.org/stable/plasma/5.9.3/plasma-sdk-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="bb85b930bf8f0a52d67663052737c5a8e1ff6448">http://download.kde.org/stable/plasma/5.9.3/breeze-grub-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d8b260614409829b3ed61fd027d84825a537d40c">http://download.kde.org/stable/plasma/5.9.3/breeze-plymouth-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c5f3798b18f24015290560be7cb66959e9b20137">http://download.kde.org/stable/plasma/5.9.3/milou-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="2e5af059a15265dd06655238c8f22ca8d6afdcb8">http://download.kde.org/stable/plasma/5.9.3/kactivitymanagerd-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="20c700c30c374b4004d130ac7ea1494a33ff463f">http://download.kde.org/stable/plasma/5.9.3/discover-5.9.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c0cb309e74c7e656c3dd90ad0e147cc8c2104248">http://download.kde.org/stable/plasma/5.9.3/sddm-kcm-5.9.3.tar.xz</Archive>
+            <AdditionalFiles>
+                <AdditionalFile target="kwin-5.9.3/disable_qpa.patch">disable_qpa.patch</AdditionalFile>
+            </AdditionalFiles>
             <BuildDependencies>
                 <Dependency>qt5</Dependency>
+                <Dependency versionFrom="5.31.0">kde5-framework</Dependency>
+                <Dependency>avahi</Dependency>
                 <Dependency>perl-URI</Dependency>
-                <Dependency>python</Dependency>
-                <Dependency>libxml2</Dependency>
-                <Dependency>libxslt</Dependency>
-                <Dependency>docbook-xml</Dependency>
-                <Dependency>docbook-xsl</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">karchive</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kdoctools/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kdoctools</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libxml2</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libxslt</Dependency>
-                <Dependency versionFrom="5.29.0">karchive</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>polkit-qt</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>GPL2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Summary>
-            <Description xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Description>
-            <Archive type="tarbz2" sha1sum="042b8a42e88bd578c27600e9b70c4e142a39da91">http://download.kde.org/stable/apps/KDE4.x/admin/polkit-qt-1-0.112.0.tar.bz2</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>polkit</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>qt5-phonon</Dependency>
+                <Dependency>taglib</Dependency>
+                <Dependency>lmdb</Dependency>
+                <Dependency>qca2-qt5</Dependency>
+                <Dependency>plymouth</Dependency>
                 <Dependency>mesa</Dependency>
-                <Dependency>cmake</Dependency>
-            </BuildDependencies>
-            <Patches>
-                <Patch>systembus-usage.patch</Patch>
-            </Patches>
-            <SourceURI>desktop/kde/framework/polkit-qt/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>polkit-qt</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>polkit</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>libepoxy</Dependency>
                 <Dependency>libgcc</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="library">/usr/lib/pkgconfig</Path>
-                <Path fileType="header">/usr/include/polkit-qt5-1</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-10-21</Date>
-                <Version>0.112</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kcrash</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Kcrash crash handling application</Summary>
-            <Description xml:lang="en">KCrash provides support for intercepting and handling application crashes.</Description>
-            <Archive type="tarxz" sha1sum="056a6e90286ad74c2d16acc580d02df034e4452c">mirrors://kde/stable/frameworks/5.29/kcrash-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libSM</Dependency>
                 <Dependency>libX11</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libxkbcommon</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>xcb-util-keysyms</Dependency>
+                <Dependency>eudev</Dependency>
+                <Dependency>libdrm</Dependency>
+                <Dependency>libinput</Dependency>
+                <Dependency>xcb-util-cursor</Dependency>
             </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kcrash/pspec.xml</SourceURI>
+            <SourceURI>desktop/kde/kde5-plasma/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>kcrash</Name>
+            <Name>kde5-plasma</Name>
             <RuntimeDependencies>
                 <Dependency>qt5</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kparts</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Plugin framework for user interface components</Summary>
-            <Description xml:lang="en">This library implements the framework for KDE parts, which are elaborate widgets with a user-interface defined in terms of actions (menu items, toolbar icons).</Description>
-            <Archive type="tarxz" sha1sum="2ee956a3d24db3d93f56d7e6a4fb07480cb728c0">mirrors://kde/stable/frameworks/5.29/kparts-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency versionFrom="5.29.0">kauth</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ktextwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kcompletion</Dependency>
-                <Dependency versionFrom="5.29.0">kitemviews</Dependency>
-                <Dependency versionFrom="5.29.0">karchive</Dependency>
-                <Dependency versionFrom="5.29.0">attica</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kio</Dependency>
-                <Dependency versionFrom="5.29.0">kglobalaccel</Dependency>
-                <Dependency versionFrom="5.29.0">kservice</Dependency>
-                <Dependency versionFrom="5.29.0">kxmlgui</Dependency>
-                <Dependency versionFrom="5.29.0">kbookmarks</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-                <Dependency versionFrom="5.29.0">sonnet</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">solid</Dependency>
-                <Dependency versionFrom="5.29.0">kjobwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kparts/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kparts</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency versionFrom="5.29.0">kjobwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kservice</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kxmlgui</Dependency>
-                <Dependency versionFrom="5.29.0">kio</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>kio</Name>
-            <Homepage>http://www.kde.org</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>LGPLv2</License>
-            <IsA>library</IsA>
-            <IsA>app:console</IsA>
-            <PartOf>desktop.kde.framework</PartOf>
-            <Summary xml:lang="en">Resource and network access abstraction</Summary>
-            <Description xml:lang="en">Network transparent access to files and data</Description>
-            <Archive type="tarxz" sha1sum="f7a0669894f16deffd95fd279acab3d8b180d7f0">mirrors://kde/stable/frameworks/5.29/kio-5.29.0.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>acl</Dependency>
-                <Dependency>attr</Dependency>
-                <Dependency>mit-kerberos</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">karchive</Dependency>
-                <Dependency versionFrom="5.29.0">kauth</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kdbusaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kservice</Dependency>
-                <Dependency versionFrom="5.29.0">solid</Dependency>
-                <Dependency versionFrom="5.29.0">sonnet</Dependency>
-                <Dependency versionFrom="5.29.0">kbookmarks</Dependency>
-                <Dependency versionFrom="5.29.0">kcompletion</Dependency>
-                <Dependency versionFrom="5.29.0">kitemviews</Dependency>
-                <Dependency versionFrom="5.29.0">kjobwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-                <Dependency versionFrom="5.29.0">kxmlgui</Dependency>
-                <Dependency versionFrom="5.29.0">ktextwidgets</Dependency>
-                <Dependency>libxslt</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>ibus</Dependency>
+                <Dependency>mesa</Dependency>
                 <Dependency>zlib</Dependency>
-                <Dependency>docbook-xml</Dependency>
-                <Dependency>docbook-xsl</Dependency>
-                <Dependency versionFrom="5.29.0">extra-cmake-modules</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/kde/framework/kio/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>kio</Name>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency>acl</Dependency>
-                <Dependency>attr</Dependency>
-                <Dependency>libxml2</Dependency>
-                <Dependency>libxslt</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libXau</Dependency>
+                <Dependency>libXft</Dependency>
+                <Dependency>libdrm</Dependency>
                 <Dependency>libgcc</Dependency>
-                <Dependency>mit-kerberos</Dependency>
-                <Dependency versionFrom="5.29.0">karchive</Dependency>
-                <Dependency versionFrom="5.29.0">kconfig</Dependency>
-                <Dependency versionFrom="5.29.0">kcodecs</Dependency>
-                <Dependency versionFrom="5.29.0">kbookmarks</Dependency>
-                <Dependency versionFrom="5.29.0">kcompletion</Dependency>
-                <Dependency versionFrom="5.29.0">kconfigwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kcoreaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kdbusaddons</Dependency>
-                <Dependency versionFrom="5.29.0">ki18n</Dependency>
-                <Dependency versionFrom="5.29.0">kiconthemes</Dependency>
-                <Dependency versionFrom="5.29.0">kitemviews</Dependency>
-                <Dependency versionFrom="5.29.0">kjobwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kservice</Dependency>
-                <Dependency versionFrom="5.29.0">ktextwidgets</Dependency>
-                <Dependency versionFrom="5.29.0">kwidgetsaddons</Dependency>
-                <Dependency versionFrom="5.29.0">kwindowsystem</Dependency>
-                <Dependency versionFrom="5.29.0">kxmlgui</Dependency>
-                <Dependency versionFrom="5.29.0">solid</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libXres</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libepoxy</Dependency>
+                <Dependency>libinput</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>pciutils</Dependency>
+                <Dependency>qca2-qt5</Dependency>
+                <Dependency>xcb-util</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libgcrypt</Dependency>
+                <Dependency>polkit-qt</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libraw1394</Dependency>
+                <Dependency>libxkbfile</Dependency>
+                <Dependency>lm_sensors</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>qt5-phonon</Dependency>
+                <Dependency>qt5-webkit</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libpwquality</Dependency>
+                <Dependency>libxkbcommon</Dependency>
+                <Dependency>kde5-framework</Dependency>
+                <Dependency>xcb-util-image</Dependency>
+                <Dependency>xcb-util-cursor</Dependency>
+                <Dependency>xcb-util-keysyms</Dependency>
             </RuntimeDependencies>
             <Files>
-                <Path fileType="config">/etc/</Path>
+                <Path fileType="data">/etc</Path>
                 <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="library">/usr/lib/qt5</Path>
+                <Path fileType="data">/usr</Path>
                 <Path fileType="library">/usr/lib</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="man">/usr/share/man</Path>
                 <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/lib/cmake</Path>
-                <Path fileType="config">/usr/lib/pkgconfig</Path>
             </Files>
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.29.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
+                <Date>2017-03-8</Date>
+                <Version>5.9.3</Version>
+                <Comment>First Release</Comment>
+                <Name>alimurat algul</Name>
+                <Email>alimuratalgul@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>kde5-framework</Name>
+            <Homepage>http://www.kde.org</Homepage>
+            <Packager>
+                <Name>lime Gnu/Linux Community</Name>
+                <Email>admins@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.kde</PartOf>
+            <Summary xml:lang="en">KDE Frameworks 5</Summary>
+            <Description xml:lang="en">KDE Frameworks 5 is a collection of libraries based on top of Qt5 and QML derived from the monolithic KDE 4 libraries</Description>
+            <Archive type="tarxz" sha1sum="ff23abde0782ff8c5919ab59689f1a9b4e394cb7">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/attica-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c29120043b0d1f162c0d19551a3dfd57063bd81d">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/baloo-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8848be5d6be95e2135d62ecbf717b7b63b80e7f0">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/bluez-qt-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="31df3d07cc3bed5a1dfa6249f2feaa2968c6f28b">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/breeze-icons-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="328f792617e92a122b4760228f8b8a33e379a06c">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/frameworkintegration-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="0f24396e8ac69420192277c3a96a3a8f2804b5e1">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kactivities-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="2920535efee12b9b98ac692114c507216a52a8c7">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kactivities-stats-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="acf96f328a8b6fbc0419dbd9583864f9648541df">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kapidox-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="e686333ba6859a2dd35be9413c29c5ac61bcb70b">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/karchive-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="70be181c78a8e127cd3f7808ab558a8cb9e170b8">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kauth-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="43b33d19e7e53e68844d1cabe82075936312ad61">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kbookmarks-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="9b43c14d96d4f4705a50f2fa7040bd37962cbebb">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcmutils-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="081de77b3cb02467ce0d669377a0ec8ba5f105ee">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcodecs-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="4cc1d422d9827d2398c0062e8b9d8824dda97748">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcompletion-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c64a8f390b11af3aed348a33e567ddd5ba2fc686">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kconfig-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="1da70b39c4cdb52b0ed7a2dedb343e0d8a152102">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kconfigwidgets-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="1e73343833a88ed7bff1589efca85d1a945bccd3">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcoreaddons-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8a8d61df85de4f8d585d7e74d998f5e1361d717f">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcrash-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="01bfd7613fb9121df17cd7569fc503b0e8e0f970">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdbusaddons-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="525f84615fb29a793d028ddb848562909227e847">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdeclarative-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b0e55e8d115ae6a087517064a64b9ad86ad894d6">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kded-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8901c183b88a74988f5449e19e84ba8880bc6477">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdesignerplugin-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="63d58fdcd26004fa34cec41aaac4b7929f8f8eb8">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdesu-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="79940b2d59bd4c1e174e5f59e620d5db8c99cec4">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdewebkit-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="e30faf9b9a26b1f06121f14a9b52f4f20505251d">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdnssd-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b9e049981592e87372c14fd280aa59f73692eca8">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdoctools-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="ae29b8abb1e8689ca052ec400dd73b9a22c1c9c6">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kemoticons-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d871af7ae697ee56b40f1ea0afccbcff9a1d7458">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kfilemetadata-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="812a19c86b31a3afda73a7f7beab1ec0909fb9c1">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kglobalaccel-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8782d1ab7c21a207686196e8e8f76c83c8d0c750">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kguiaddons-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="a2b88f05e863244b0ee9f82960afaf60ac825a4b">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/ki18n-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="4c15188fb8035907252e53fde96eb89837bdb02e">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kiconthemes-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="29c3e14dfa0335e46528a2f025858809450737a0">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kidletime-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d2cad07015940fed02833c5f0864fcd7bbf0f78c">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kimageformats-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="04235748d267ff43ad0246e9413a22d1c4a32bf8">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kinit-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="a3ca46bb7612790c0483fb51374795cd7fc0ab42">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kio-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="629b5f5599f5ea69edd1fd72b1060c7dc91667ea">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kitemmodels-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="1598ee4004a89c599b03da999db8f510204a65f8">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kitemviews-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d035e36aa972545e8d6994f8bfd392b62e086f21">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kjobwidgets-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="f9e8cfd3519d0774d9a0d7f6153001ded960b506">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/knewstuff-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="bdb19d3f75dcf51aee85abf0d38bed367b2890d5">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/knotifications-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="68c2b58c154138a90320fba80b9a5685d7502908">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/knotifyconfig-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="9a661293389218e9a9e1da99df403ea08c5212be">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kpackage-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b82558b06012747618f160cfa163f73e640f222c">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kparts-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="739604d5833f05c38c315cf3d58d6c221986205a">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kpeople-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="6a267d97025ce5871b5b5fc2a5be043403c31c23">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kplotting-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8a0d248b73284edd608cdcff9d9f5363d9f0e146">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kpty-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="20bf0340719008294f7f3417758f59e003bba7f3">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/krunner-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="9f177d552dd29b50e6304e082af9179fd404cfa9">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kservice-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="e762c9f52021f075ed83399d99bf9d2d9dbc5cf6">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/ktexteditor-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="de50fee279df4db5f943c5d60929fb708603eeee">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/ktextwidgets-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="0444cf8693478df921f8c19329c507995d0df2b1">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kunitconversion-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="82d876f56a286887845b7501b89ca15248b66db7">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kwallet-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="caacf242cfe563f4b86dca9b498d890f4972198a">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kwayland-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d0623594cf5a37a180c599953a9d58e4bf4c6b88">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kwidgetsaddons-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="aae521a12c5099b38f8e68c773109d0680878a51">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kwindowsystem-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="2ad9b43744ebad02ef27e7ff4f9f75194dc5d96d">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kxmlgui-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d3a53bcc87be997c64ead688e37d7ab2f158d3cc">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kxmlrpcclient-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="fec7318207b0798a675287c455f57a9568cb49e4">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/modemmanager-qt-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="295e5624e819eb241a62b9932048d4199625a25b">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/networkmanager-qt-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8691f7e513b48c0aabec03bc97611e39e84803f8">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/oxygen-icons5-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="70a9fe997a0874ab8f6c18f300ca86e0f187fdd9">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/plasma-framework-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="3bddd3a3c0931637925652a0d91c1270280afd13">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/solid-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="a76edfd9829466ab5f82dff59cce8697aa33f922">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/sonnet-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="18311a1baae6d123c2834dedd5de93bced0adf37">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/threadweaver-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="469335fc49df8e7e9443cac687ee5c1fb47ea596">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kdelibs4support-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="6d10e33aecf63e0a5db55948be2174a2a13e8ede">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/khtml-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="78c204011b1ac6fbbf9f24d7a0532b2f35dff294">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kjs-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="0815986744222926254598ee76d7c82fa7864442">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kjsembed-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="14e0330d90048d7c398787df974782611f4dddf1">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kmediaplayer-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="2513ce5f983331ac222de663dbc242094245253b">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kross-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="85ad1a23634a5198d3e56cf8bea458e7bdb5e01b">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/syntax-highlighting-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c9ba6897e517b81a92a76f7049d7177b07e6e838">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/prison-5.31.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="764866a98dd2471a8768c584c7d16d0cd6214b21">mirrors://kde/stable/frameworks/5.31/extra-cmake-modules-5.31.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>ebook-tools</Dependency>
+                <Dependency>boost</Dependency>
+                <Dependency>docbook-xml</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>qt5</Dependency>
+                <Dependency>gamin</Dependency>
+                <Dependency>aspell</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>hunspell</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>polkit-qt</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>xcb-util-keysyms</Dependency>
+                <Dependency>avahi</Dependency>
+                <Dependency>perl-URI</Dependency>
+                <Dependency>NetworkManager</Dependency>
+                <Dependency>qt5-phonon</Dependency>
+                <Dependency>lmdb</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>exiv2</Dependency>
+                <Dependency>ffmpeg</Dependency>
+                <Dependency>giflib</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>taglib</Dependency>
+                <Dependency>ilmbase</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>openexr</Dependency>
+                <Dependency>libepoxy</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>libdbusmenu-qt</Dependency>
+                <Dependency>xz</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libcap</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libdmtx</Dependency>
+                <Dependency>libpcre</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>qrencode</Dependency>
+                <Dependency>libgcrypt</Dependency>
+                <Dependency>qt5-webkit</Dependency>
+                <Dependency>libxslt</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/kde/kde5-framework/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>kde5-framework</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5</Dependency>
+                <Dependency>gamin</Dependency>
+                <Dependency>aspell</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>hunspell</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>polkit-qt</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>xcb-util-keysyms</Dependency>
+                <Dependency>avahi</Dependency>
+                <Dependency>perl-URI</Dependency>
+                <Dependency>NetworkManager</Dependency>
+                <Dependency>qt5-phonon</Dependency>
+                <Dependency>lmdb</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>exiv2</Dependency>
+                <Dependency>ffmpeg</Dependency>
+                <Dependency>giflib</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>taglib</Dependency>
+                <Dependency>ilmbase</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>openexr</Dependency>
+                <Dependency>libepoxy</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>libdbusmenu-qt</Dependency>
+                <Dependency>xz</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libcap</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libdmtx</Dependency>
+                <Dependency>libpcre</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>qrencode</Dependency>
+                <Dependency>libgcrypt</Dependency>
+                <Dependency>qt5-webkit</Dependency>
+                <Dependency>ebook-tools</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/etc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/lib/udev/rules.d/61-kde-bluetooth-rfkill.rules</Path>
+            </Files>
+            <Conflicts>
+                <Package>kde5-framework1</Package>
+                <Package>kde5-framework2</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>kde5-framework1</Package>
+                <Package>kde5-framework2</Package>
+            </Replaces>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-01</Date>
+                <Version>5.31.0</Version>
+                <Comment>First Release</Comment>
+                <Name>alimurat algul</Name>
+                <Email>alimuratalgul@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -54860,6 +53642,50 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>polkit-qt</Name>
+            <Homepage>http://www.kde.org</Homepage>
+            <Packager>
+                <Name>lime Gnu/Linux Community</Name>
+                <Email>admins@limelinux.com</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.toolkit.qt5</PartOf>
+            <Summary xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Summary>
+            <Description xml:lang="en">A library that allows developers to access PolicyKit API with a nice Qt-style API</Description>
+            <Archive type="tarbz2" sha1sum="042b8a42e88bd578c27600e9b70c4e142a39da91">http://download.kde.org/stable/apps/KDE4.x/admin/polkit-qt-1-0.112.0.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt5</Dependency>
+                <Dependency>polkit</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cmake</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/toolkit/qt5/polkit-qt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>polkit-qt</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/polkit-qt5-1</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-01</Date>
+                <Version>0.112</Version>
+                <Comment>First Release</Comment>
+                <Name>alimurat algul</Name>
+                <Email>alimuratalgul@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>

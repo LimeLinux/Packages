@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qt5-phonon-backend-vlc</Name>
+        <Homepage>http://gitorious.org/phonon/phonon-vlc</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>VLC Backend for qt5-phonon</Summary>
+        <Description>phonon-backend-vlc allows Phonon (the KDE media library) to use VLC for audio and video playback.</Description>
+        <Archive sha1sum="15e021b2904e656a02a53bcec56e8a407b192774" type="tarxz">mirrors://kde/stable/phonon/phonon-backend-vlc/0.9.1/phonon-backend-vlc-0.9.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>vlc</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>qt5-phonon-backend-vlc</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>vlc-libs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share/kde4/services</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-02-27</Date>
+            <Version>0.9.1</Version>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qt5-phonon</Name>
+        <Homepage>http://phonon.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admins@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Cross platform multimedia API for KDE4 using QT5</Summary>
+        <Description>Phonon was created as a solution to several problems with multimedia commonly faced by Unix desktops, especially KDE 3's outdated multimedia framework aRts. Phonon itself is not a multimedia framework, but interfaces with existing frameworks such as GStreamer or Xine via backends.</Description>
+        <Archive sha1sum="aa58818675a2b3486da3a43f136ee11f88672eea" type="tarxz">http://download.kde.org/stable/phonon/4.9.1/phonon-4.9.1.tar.xz</Archive>
+         <BuildDependencies>
+            <Dependency>kde5-framework</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>linux-api-headers</Dependency>
+         </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>qt5-phonon</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-01</Date>
+            <Version>4.9.1</Version>
+            <Comment>First Release</Comment>
+            <Name>alimurat algul</Name>
+            <Email>alimuratalgul@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
