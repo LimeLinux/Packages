@@ -1,0 +1,225 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kde5-framework</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admins@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>KDE Frameworks 5</Summary>
+        <Description>KDE Frameworks 5 is a collection of libraries based on top of Qt5 and QML derived from the monolithic KDE 4 libraries</Description>
+        <Archive sha1sum="ff23abde0782ff8c5919ab59689f1a9b4e394cb7" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/attica-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="c29120043b0d1f162c0d19551a3dfd57063bd81d" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/baloo-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="8848be5d6be95e2135d62ecbf717b7b63b80e7f0" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/bluez-qt-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="31df3d07cc3bed5a1dfa6249f2feaa2968c6f28b" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/breeze-icons-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="328f792617e92a122b4760228f8b8a33e379a06c" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/frameworkintegration-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="0f24396e8ac69420192277c3a96a3a8f2804b5e1" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kactivities-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="2920535efee12b9b98ac692114c507216a52a8c7" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kactivities-stats-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="acf96f328a8b6fbc0419dbd9583864f9648541df" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kapidox-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="e686333ba6859a2dd35be9413c29c5ac61bcb70b" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/karchive-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="70be181c78a8e127cd3f7808ab558a8cb9e170b8" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kauth-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="43b33d19e7e53e68844d1cabe82075936312ad61" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kbookmarks-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="9b43c14d96d4f4705a50f2fa7040bd37962cbebb" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcmutils-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="081de77b3cb02467ce0d669377a0ec8ba5f105ee" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcodecs-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="4cc1d422d9827d2398c0062e8b9d8824dda97748" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcompletion-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="c64a8f390b11af3aed348a33e567ddd5ba2fc686" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kconfig-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="1da70b39c4cdb52b0ed7a2dedb343e0d8a152102" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kconfigwidgets-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="1e73343833a88ed7bff1589efca85d1a945bccd3" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcoreaddons-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="8a8d61df85de4f8d585d7e74d998f5e1361d717f" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kcrash-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="01bfd7613fb9121df17cd7569fc503b0e8e0f970" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdbusaddons-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="525f84615fb29a793d028ddb848562909227e847" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdeclarative-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="b0e55e8d115ae6a087517064a64b9ad86ad894d6" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kded-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="8901c183b88a74988f5449e19e84ba8880bc6477" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdesignerplugin-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="63d58fdcd26004fa34cec41aaac4b7929f8f8eb8" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdesu-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="79940b2d59bd4c1e174e5f59e620d5db8c99cec4" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdewebkit-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="e30faf9b9a26b1f06121f14a9b52f4f20505251d" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdnssd-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="b9e049981592e87372c14fd280aa59f73692eca8" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kdoctools-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="ae29b8abb1e8689ca052ec400dd73b9a22c1c9c6" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kemoticons-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="d871af7ae697ee56b40f1ea0afccbcff9a1d7458" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kfilemetadata-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="812a19c86b31a3afda73a7f7beab1ec0909fb9c1" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kglobalaccel-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="8782d1ab7c21a207686196e8e8f76c83c8d0c750" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kguiaddons-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="a2b88f05e863244b0ee9f82960afaf60ac825a4b" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/ki18n-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="4c15188fb8035907252e53fde96eb89837bdb02e" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kiconthemes-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="29c3e14dfa0335e46528a2f025858809450737a0" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kidletime-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="d2cad07015940fed02833c5f0864fcd7bbf0f78c" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kimageformats-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="04235748d267ff43ad0246e9413a22d1c4a32bf8" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kinit-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="a3ca46bb7612790c0483fb51374795cd7fc0ab42" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kio-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="629b5f5599f5ea69edd1fd72b1060c7dc91667ea" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kitemmodels-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="1598ee4004a89c599b03da999db8f510204a65f8" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kitemviews-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="d035e36aa972545e8d6994f8bfd392b62e086f21" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kjobwidgets-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="f9e8cfd3519d0774d9a0d7f6153001ded960b506" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/knewstuff-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="bdb19d3f75dcf51aee85abf0d38bed367b2890d5" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/knotifications-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="68c2b58c154138a90320fba80b9a5685d7502908" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/knotifyconfig-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="9a661293389218e9a9e1da99df403ea08c5212be" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kpackage-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="b82558b06012747618f160cfa163f73e640f222c" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kparts-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="739604d5833f05c38c315cf3d58d6c221986205a" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kpeople-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="6a267d97025ce5871b5b5fc2a5be043403c31c23" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kplotting-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="8a0d248b73284edd608cdcff9d9f5363d9f0e146" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kpty-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="20bf0340719008294f7f3417758f59e003bba7f3" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/krunner-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="9f177d552dd29b50e6304e082af9179fd404cfa9" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kservice-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="e762c9f52021f075ed83399d99bf9d2d9dbc5cf6" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/ktexteditor-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="de50fee279df4db5f943c5d60929fb708603eeee" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/ktextwidgets-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="0444cf8693478df921f8c19329c507995d0df2b1" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kunitconversion-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="82d876f56a286887845b7501b89ca15248b66db7" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kwallet-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="caacf242cfe563f4b86dca9b498d890f4972198a" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kwayland-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="d0623594cf5a37a180c599953a9d58e4bf4c6b88" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kwidgetsaddons-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="aae521a12c5099b38f8e68c773109d0680878a51" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kwindowsystem-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="2ad9b43744ebad02ef27e7ff4f9f75194dc5d96d" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kxmlgui-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="d3a53bcc87be997c64ead688e37d7ab2f158d3cc" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/kxmlrpcclient-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="fec7318207b0798a675287c455f57a9568cb49e4" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/modemmanager-qt-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="295e5624e819eb241a62b9932048d4199625a25b" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/networkmanager-qt-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="8691f7e513b48c0aabec03bc97611e39e84803f8" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/oxygen-icons5-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="70a9fe997a0874ab8f6c18f300ca86e0f187fdd9" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/plasma-framework-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="3bddd3a3c0931637925652a0d91c1270280afd13" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/solid-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="a76edfd9829466ab5f82dff59cce8697aa33f922" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/sonnet-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="18311a1baae6d123c2834dedd5de93bced0adf37" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/threadweaver-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="469335fc49df8e7e9443cac687ee5c1fb47ea596" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kdelibs4support-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="6d10e33aecf63e0a5db55948be2174a2a13e8ede" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/khtml-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="78c204011b1ac6fbbf9f24d7a0532b2f35dff294" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kjs-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="0815986744222926254598ee76d7c82fa7864442" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kjsembed-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="14e0330d90048d7c398787df974782611f4dddf1" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kmediaplayer-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="2513ce5f983331ac222de663dbc242094245253b" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kross-5.31.0.tar.xz</Archive>
+<Archive type="tarxz" sha1sum="85ad1a23634a5198d3e56cf8bea458e7bdb5e01b">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/syntax-highlighting-5.31.0.tar.xz</Archive>
+<Archive sha1sum="c9ba6897e517b81a92a76f7049d7177b07e6e838" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/prison-5.31.0.tar.xz</Archive>
+<Archive sha1sum="764866a98dd2471a8768c584c7d16d0cd6214b21" type="tarxz">mirrors://kde/stable/frameworks/5.31/extra-cmake-modules-5.31.0.tar.xz</Archive>
+
+        <BuildDependencies>
+            <Dependency>ebook-tools</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>docbook-xml</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>gamin</Dependency>
+            <Dependency>aspell</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>hunspell</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>polkit-qt</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>perl-URI</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>lmdb</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>exiv2</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>libepoxy</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libdbusmenu-qt</Dependency>
+            <Dependency>xz</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libcap</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libdmtx</Dependency>
+            <Dependency>libpcre</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>qrencode</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>libxslt </Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kde5-framework</Name>
+        <Replaces>
+            <Package>kde5-framework1</Package>
+        </Replaces>
+        <Conflicts>
+            <Package>kde5-framework1</Package>
+        </Conflicts>
+        <Replaces>
+            <Package>kde5-framework2</Package>
+        </Replaces>
+        <Conflicts>
+            <Package>kde5-framework2</Package>
+        </Conflicts>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>gamin</Dependency>
+            <Dependency>aspell</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>hunspell</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>polkit-qt</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>avahi</Dependency>
+            <Dependency>perl-URI</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>lmdb</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>exiv2</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>libepoxy</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libdbusmenu-qt</Dependency>
+            <Dependency>xz</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libcap</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libdmtx</Dependency>
+            <Dependency>libpcre</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>qrencode</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>ebook-tools</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/lib/udev/rules.d/61-kde-bluetooth-rfkill.rules</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-01</Date>
+            <Version>5.31.0</Version>
+            <Comment>First Release</Comment>
+            <Name>alimurat algul</Name>
+            <Email>alimuratalgul@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
