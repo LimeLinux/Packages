@@ -26706,14 +26706,11 @@
             <Summary xml:lang="tr">Küçük, hızlı ve kullanımı kolay, sadece python ile yazılmış bir bağımsız şablon üreteci</Summary>
             <Description xml:lang="en">Jinja2 is the rewritten version of Jinja, sandboxed template engine written in pure Python. It provides a Django like non-XML syntax and compiles templates into executable python code. It&apos;s basically a combination of Django templates and python code.</Description>
             <Description xml:lang="tr">Jinja2, sadece python ile yazılmış bir şablon üreteci olan Jinja&apos;nın yeniden yazılmış bir versiyonudur. Django benzeri XML-olmayan bir sözdizimi sağlar ve şablonları derleyip çalıştırılabilir python programları haline getirir. Temel olarak Django şablonları ve python kodunun birleşimi bir programdır.</Description>
-            <Archive type="targz" sha1sum="1ce4c8bc722444ec3e77ef9db76faebbd17a40d8">https://pypi.python.org/packages/source/J/Jinja2/Jinja2-2.7.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="a3129c140d34ae565a556e48db40772df3536b23">https://pypi.python.org/packages/71/59/d7423bd5e7ddaf3a1ce299ab4490e9044e8dfd195420fc83a24de9e60726/Jinja2-2.9.5.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python-setuptools</Dependency>
                 <Dependency>python-MarkupSafe</Dependency>
             </BuildDependencies>
-            <Patches>
-                <Patch level="1">drop_next_import_from_docs-jinjaext.patch</Patch>
-            </Patches>
             <SourceURI>programming/language/python/python-Jinja2/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -26731,9 +26728,9 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
-                <Date>2016-06-09</Date>
-                <Version>2.7.2</Version>
+            <Update release="2">
+                <Date>2017-03-11</Date>
+                <Version>2.9.5</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -27094,16 +27091,13 @@
             <Summary xml:lang="tr">Python için döküman üreticisi. HTML, Latex gibi çıktılar üretebiliyor</Summary>
             <Description xml:lang="en">It&apos;s a very common documentation generator especially using for python based documentation.It can generate HTML or PDF, Ps outputs with Latex output support.</Description>
             <Description xml:lang="tr">Özellikle python için hazırlanan dökümanları yorumlamak için kullanılan yaygın bir döoküman üreticisi. Başta HTML olmak üzere Latex ile birlikte PDF, Ps gibi doküman çıktıları üretebiliyor.</Description>
-            <Archive type="targz" sha1sum="448cdb89d96c85993e01fe793ce7786494cbcda7">http://pypi.python.org/packages/source/S/Sphinx/Sphinx-1.2.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="e296be1f697ba5eda7941570d718544df8182648">https://pypi.python.org/packages/a7/df/4487783152b14f2b7cd0b0c9afb119b262c584bf972b90ab544b61b74c62/Sphinx-1.5.3.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>docutils</Dependency>
                 <Dependency>python-Pygments</Dependency>
                 <Dependency>python-Jinja2</Dependency>
                 <Dependency>python-MarkupSafe</Dependency>
             </BuildDependencies>
-            <Patches>
-                <Patch level="1">remove_docutils.patch</Patch>
-            </Patches>
             <SourceURI>programming/language/python/python-sphinx/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -27128,9 +27122,9 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
-                <Date>2016-06-09</Date>
-                <Version>1.3.1</Version>
+            <Update release="2">
+                <Date>2017-03-11</Date>
+                <Version>1.5.3</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -32084,6 +32078,53 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>libqjson</Name>
+            <Homepage>http://qjson.sourceforge.net</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>programming.misc</PartOf>
+            <Summary xml:lang="en">Qt-based library that maps JSON data to QVariant objects</Summary>
+            <Summary xml:lang="tr">Qt tabanlı bu kitaplığı JSON data haritalarını QVariant nesnelere dönüştürür</Summary>
+            <Summary xml:lang="pl">Implementacja Qt formatu JSON</Summary>
+            <Description xml:lang="en">libqjson, (JavaScript Object Notation) is a lightweight data-interchange format. It can represents integer, real number, string, an ordered sequence of value, and a collection of name/value pairs.</Description>
+            <Description xml:lang="tr">libqjson, (JavaScript Object Notation) bir veri değişim biçimidir. JSON haritalarını QVariant nesnelere dönüştürür..</Description>
+            <Archive type="targz" sha1sum="1b77f393a7bcf2c245498a85b9daaa550a2b9366">https://github.com/flavio/qjson/archive/0.9.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency versionFrom="5.8.0">qt5</Dependency>
+                <Dependency>cmake</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/misc/libqjson/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libqjson</Name>
+            <RuntimeDependencies>
+                <Dependency versionFrom="5.8.0">qt5</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include/qjson</Path>
+                <Path fileType="data">/usr/*</Path>
+                <Path fileType="data">/usr/lib/cmake/qjson</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-11</Date>
+                <Version>0.9.0</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>liburcu</Name>
             <Homepage>http://lttng.org/urcu</Homepage>
             <Packager>
@@ -33907,10 +33948,10 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
+            <Update release="3">
                 <Date>2017-02-21</Date>
                 <Version>1.7.2</Version>
-                <Comment>First Release</Comment>
+                <Comment>Relase</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -50695,6 +50736,95 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Comment>First Release</Comment>
                 <Name>alimurat algul</Name>
                 <Email>alimuratalgul@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>qrencode</Name>
+            <Homepage>http://fukuchi.org/works/qrencode/index.en.html</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.kde.addon</PartOf>
+            <Summary xml:lang="en">A C library for encoding data in a QR code symbol</Summary>
+            <Summary xml:lang="tr">QR kod sembolüne veri gömmek için bir kitaplık</Summary>
+            <Description xml:lang="en">qrencode is a C library for encoding data in a QR Code symbol, a kind of 2D symbology that can be scanned by handy terminals such as a mobile phone with CCD. The capacity of QR Code is up to 7000 digits or 4000 characters, and is highly robust.</Description>
+            <Description xml:lang="tr">qrencode, cep telefonları gibi mobil cihazlar tarafından kolaylıkla taranabilen, 2 boyutlu bir sembol olan QR kod içerisinde veri gömmek için kullanılan bir kitaplıktır.</Description>
+            <Archive type="targz" sha1sum="644054a76c8b593acb66a8c8b7dcf1b987c3d0b2">http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl</Dependency>
+                <Dependency>m4</Dependency>
+                <Dependency>gettext</Dependency>
+                <Dependency>libpng</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/kde/addon/qrencode/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qrencode</Name>
+            <Summary xml:lang="tr">qrencode için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>libpng</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/bin/qrencode</Path>
+                <Path fileType="man">/usr/share/man/man1</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-02-22</Date>
+                <Version>3.4.4</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libdmtx</Name>
+            <Homepage>http://www.libdmtx.org</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2+</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.kde.addon</PartOf>
+            <Summary xml:lang="en">A Library for working with Data Matrix 2D bar-codes</Summary>
+            <Summary xml:lang="tr">Data Matrix 2D barkodlarıyla çalışmak için kitaplık</Summary>
+            <Description xml:lang="en">libdmtx is an open source software for reading and writing Data Matrix 2D bar-codes on Linux, Unix, OS X, Windows and mobile devices.</Description>
+            <Description xml:lang="tr">libdmtx, Linux, Unix, OS X, Windows ve mobil işletim sistemlerinde Data Matrix 2D barkodlarını okumak ve yazmak için kullanılan açık kaynaklı bir kitaplıktır.</Description>
+            <Archive type="targz" sha1sum="7a353da736cf37e8730e2c22aca4629035aeadcd">mirrors://sourceforge/libdmtx/libdmtx/0.7.4/libdmtx-0.7.4.tar.gz</Archive>
+            <SourceURI>desktop/kde/addon/libdmtx/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libdmtx</Name>
+            <Summary xml:lang="en">Development files for libdmtx</Summary>
+            <Summary xml:lang="tr">libdmtx için geliştirme dosyaları</Summary>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="man">/usr/share/man/man3</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-11</Date>
+                <Version>0.7.4</Version>
+                <Comment>First release</Comment>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
             </Update>
         </History>
     </SpecFile>
