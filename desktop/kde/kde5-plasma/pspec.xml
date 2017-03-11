@@ -71,7 +71,7 @@
             <Dependency>plymouth</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>boost</Dependency>
-           <Dependency>libepoxy</Dependency>
+            <Dependency>libepoxy</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>libICE</Dependency>
@@ -79,12 +79,13 @@
             <Dependency>libX11</Dependency>
             <Dependency>libxcb</Dependency>
             <Dependency>libxkbcommon</Dependency>
-           <Dependency>wayland</Dependency>
+            <Dependency>wayland</Dependency>
             <Dependency>xcb-util-keysyms</Dependency>
             <Dependency>eudev</Dependency>
             <Dependency>libdrm</Dependency>
             <Dependency>libinput</Dependency>
             <Dependency>xcb-util-cursor</Dependency>
+            <Dependency>libpwquality</Dependency>
         </BuildDependencies>
     </Source>
 
