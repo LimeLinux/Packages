@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>qrencode</Name>
+        <Homepage>http://fukuchi.org/works/qrencode/index.en.html</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>A C library for encoding data in a QR code symbol</Summary>
+        <Description>qrencode is a C library for encoding data in a QR Code symbol, a kind of 2D symbology that can be scanned by handy terminals such as a mobile phone with CCD. The capacity of QR Code is up to 7000 digits or 4000 characters, and is highly robust.</Description>
+        <Archive sha1sum="644054a76c8b593acb66a8c8b7dcf1b987c3d0b2" type="targz">http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl</Dependency> <!-- This is for a specific test -->
+            <Dependency>m4</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>libpng</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>qrencode</Name>
+        <RuntimeDependencies>
+            <Dependency>libpng</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/bin/qrencode</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-02-22</Date>
+            <Version>3.4.4</Version>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

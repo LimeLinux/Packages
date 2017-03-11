@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Python documentation generator. It can generate HTML or Latex outputs</Summary>
         <Description>It's a very common documentation generator especially using for python based documentation.It can generate HTML or PDF, Ps outputs with Latex output support.</Description>
-        <Archive sha1sum="448cdb89d96c85993e01fe793ce7786494cbcda7" type="targz">http://pypi.python.org/packages/source/S/Sphinx/Sphinx-1.2.1.tar.gz</Archive>
+        <Archive sha1sum="e296be1f697ba5eda7941570d718544df8182648" type="targz">https://pypi.python.org/packages/a7/df/4487783152b14f2b7cd0b0c9afb119b262c584bf972b90ab544b61b74c62/Sphinx-1.5.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>docutils</Dependency>
             <Dependency>python-Pygments</Dependency>
@@ -21,7 +21,7 @@
             <Dependency>python-MarkupSafe</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">remove_docutils.patch</Patch>
+            <!--Patch level="1">remove_docutils.patch</Patch-->
         </Patches>
     </Source>
 
@@ -48,9 +48,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-06-09</Date>
-            <Version>1.3.1</Version>
+        <Update release="2">
+            <Date>2017-03-11</Date>
+            <Version>1.5.3</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
