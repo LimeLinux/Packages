@@ -15,11 +15,13 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
         os.system("/bin/touch %s" % logfile)
         os.system("/bin/chown root:docker %s" % logfile)
         os.system("chmod 0644 %s" % logfile)
+        os.system("rc-update add docker default")
     except:
         pass
 
 def preRemove():
     try:
         os.system ("groupdel %s" % OUR_NAME)
+        os.system("rc-update delet docker default")
     except:
         pass
