@@ -83,9 +83,9 @@
         <Archive sha1sum="0815986744222926254598ee76d7c82fa7864442" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kjsembed-5.31.0.tar.xz</Archive>
         <Archive sha1sum="14e0330d90048d7c398787df974782611f4dddf1" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kmediaplayer-5.31.0.tar.xz</Archive>
         <Archive sha1sum="2513ce5f983331ac222de663dbc242094245253b" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/portingAids/kross-5.31.0.tar.xz</Archive>
-<Archive type="tarxz" sha1sum="85ad1a23634a5198d3e56cf8bea458e7bdb5e01b">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/syntax-highlighting-5.31.0.tar.xz</Archive>
-<Archive sha1sum="c9ba6897e517b81a92a76f7049d7177b07e6e838" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/prison-5.31.0.tar.xz</Archive>
-<Archive sha1sum="764866a98dd2471a8768c584c7d16d0cd6214b21" type="tarxz">mirrors://kde/stable/frameworks/5.31/extra-cmake-modules-5.31.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="85ad1a23634a5198d3e56cf8bea458e7bdb5e01b">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/syntax-highlighting-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="c9ba6897e517b81a92a76f7049d7177b07e6e838" type="tarxz">http://ftp.iij.ad.jp/pub/X11/KDE/stable/frameworks/5.31/prison-5.31.0.tar.xz</Archive>
+        <Archive sha1sum="764866a98dd2471a8768c584c7d16d0cd6214b21" type="tarxz">mirrors://kde/stable/frameworks/5.31/extra-cmake-modules-5.31.0.tar.xz</Archive>
 
         <BuildDependencies>
             <Dependency>ebook-tools</Dependency>
