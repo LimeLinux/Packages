@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Damadamas Fatih Kaya'nın hazırlamış olduğu güzel bir tema</Summary>
         <Description>Damadamas Fatih Kaya'nın hazırlamış olduğu güzel bir tema</Description>
-        <Archive sha1sum="82e9ad9034282010e8d6ff01bf91f9920a1c9b69" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/DamaDamas-icon-theme-0.1.tar.xz</Archive>
+        <Archive sha1sum="342ee273fd92d09ee61137fc889baab94c247b1e" type="targz">https://github.com/LimeLinux/DamaDamas/archive/v.1.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cmake</Dependency>
         </BuildDependencies>
@@ -27,7 +27,7 @@
     <History>
         <Update release="1">
             <Date>2017-03-13</Date>
-            <Version>0.1</Version>
+            <Version>1.0</Version>
             <Comment>First release</Comment>
             <Name>Lime Linux</Name>
             <Email>admin@limelinux.com</Email>

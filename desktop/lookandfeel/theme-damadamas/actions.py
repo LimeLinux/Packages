@@ -14,5 +14,3 @@ def build():
 
 def install():
     cmaketools.install()
-
-    pisitools.dodoc("README*")
