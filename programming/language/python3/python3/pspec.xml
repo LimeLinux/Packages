@@ -31,6 +31,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">dont-make-libpython-readonly.patch</Patch>
+            <Patch level="1">test_socket_aead_kernel49.patch</Patch>
         </Patches>
     </Source>
 

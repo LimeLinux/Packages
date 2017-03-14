@@ -12,7 +12,7 @@
         <Summary>Requests is an Apache2 Licensed HTTP library, written in Python, for human beings.</Summary>
         <Description>Python’s standard urllib2 module provides most of the HTTP capabilities you need</Description>
         <License>MIT</License>
-        <Archive sha1sum="17f01c47a0d7c676f6291608ef2f43db3fa74095" type="targz">https://pypi.python.org/packages/source/r/requests/requests-2.9.1.tar.gz</Archive>
+        <Archive sha1sum="0a5fbc2816573fc8e8a9bb171d004e06d37178be" type="targz">https://github.com/kennethreitz/requests/archive/v2.13.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
         </BuildDependencies>
@@ -30,9 +30,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.9.1</Version>
+        <Update release="2">
+            <Date>2017-03-14</Date>
+            <Version>2.13.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

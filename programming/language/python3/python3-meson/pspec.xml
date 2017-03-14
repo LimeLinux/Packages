@@ -3,8 +3,8 @@
 <!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>meson</Name>
-        <Homepage>http://pypi.python.org/pypi/six/</Homepage>
+        <Name>python3-meson</Name>
+        <Homepage>http://pypi.python.org/pypi/meson/</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -20,7 +20,7 @@
     </Source>
     
     <Package>
-        <Name>meson</Name>
+        <Name>python3-meson</Name>
         <RuntimeDependencies>
             <Dependency>python3</Dependency>
         </RuntimeDependencies>

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A cross-platform process utilities module for Python</Summary>
         <Description>python3-psutil is a module providing an interface for retrieving information on all running processes and system utilization (CPU, memory) in a portable way by using Python, implementing many functionalities offered by command line tools like ps, top, kill, lsof and netstat.</Description>
-        <Archive sha1sum="a00dd7259a104d47659075a862afdef84b826296" type="targz">https://github.com/giampaolo/psutil/archive/release-4.0.0.tar.gz</Archive>
+        <Archive sha1sum="a00dd7259a104d47659075a862afdef84b826296" type="targz">https://github.com/giampaolo/psutil/archive/release-5.2.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
         </BuildDependencies>
@@ -31,9 +31,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>4.0.0</Version>
+        <Update release="2">
+            <Date>2017-03-14</Date>
+            <Version>5.2.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
