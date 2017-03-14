@@ -1,4 +1,5 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>qtermwidget5</Name>
@@ -17,7 +18,7 @@
             <Dependency>libgcc</Dependency>
             <Dependency>qt5</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="fc3afd69fcc449d7f3f225ae2f36e529cbce411d" type="tarxz">https://github.com/qterminal/qtermwidget/releases/download/0.6.0/qtermwidget-0.6.0.tar.xz</Archive>
+        <Archive sha1sum="96ad7f2250aaac0ca84a10e47c3e0644d1d84a72" type="targz">https://github.com/lxde/qtermwidget/archive/0.7.1.tar.gz</Archive>
     </Source>
     <Package>
         <Name>qtermwidget5</Name>
@@ -38,9 +39,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.6.0</Version>
+        <Update release="2">
+            <Date>2017-03-14</Date>
+            <Version>0.7.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
