@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>plasma-framework</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Plasma library and runtime components based upon KDE Frameworks 5 and Qt5</Summary>
+        <Description>Plasma library and runtime components based upon KF5 and Qt5</Description>
+        <Archive sha1sum="20f170c4bc9108b3c1e596f7413104e6a431281c" type="tarxz">mirrors://kde/stable/frameworks/5.32/plasma-framework-5.32.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>mesa</Dependency>
+			<Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.6.0">qt5</Dependency>
+            <Dependency versionFrom="5.32.0">kactivities</Dependency>
+            <Dependency versionFrom="5.32.0">karchive</Dependency>
+            <Dependency versionFrom="5.32.0">kconfig</Dependency>
+            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kdeclarative</Dependency>
+            <Dependency versionFrom="5.32.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.32.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.32.0">kguiaddons</Dependency>
+            <Dependency versionFrom="5.32.0">ki18n</Dependency>
+            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.32.0">kio</Dependency>
+            <Dependency versionFrom="5.32.0">knotifications</Dependency>
+            <Dependency versionFrom="5.32.0">kpackage</Dependency>
+            <Dependency versionFrom="5.32.0">kservice</Dependency>
+            <Dependency versionFrom="5.32.0">kwayland</Dependency>
+            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.32.0">kxmlgui</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>plasma-framework</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="13.0.4">mesa</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency versionFrom="5.32.0">kactivities</Dependency>
+            <Dependency versionFrom="5.32.0">knotifications</Dependency>
+            <Dependency versionFrom="5.32.0">kpackage</Dependency>
+            <Dependency versionFrom="5.32.0">karchive</Dependency>
+            <Dependency versionFrom="5.32.0">kconfig</Dependency>
+            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kdeclarative</Dependency>
+            <Dependency versionFrom="5.32.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.32.0">kguiaddons</Dependency>
+            <Dependency versionFrom="5.32.0">ki18n</Dependency>
+            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.32.0">kio</Dependency>
+            <Dependency versionFrom="5.32.0">kservice</Dependency>
+            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.32.0">kxmlgui</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-12</Date>
+            <Version>5.32.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

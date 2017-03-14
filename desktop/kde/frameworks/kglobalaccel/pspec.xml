@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kglobalaccel</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Global desktop keyboard shortcuts</Summary>
+        <Description>KGlobalAccel allows you to have global accelerators that are independent of the focused window.</Description>
+        <Archive sha1sum="a29b9729e6cbebd386692866f850188c00d8cd10" type="tarxz">mirrors://kde/stable/frameworks/5.32/kglobalaccel-5.32.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency versionFrom="5.32.0">kcrash</Dependency>
+            <Dependency versionFrom="5.32.0">kconfig</Dependency>
+            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.32.0">kservice</Dependency>
+            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kglobalaccel</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency versionFrom="5.32.0">kcrash</Dependency>
+            <Dependency versionFrom="5.32.0">kconfig</Dependency>
+            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kdbusaddons</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.32.0">kservice</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-12</Date>
+            <Version>5.32.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

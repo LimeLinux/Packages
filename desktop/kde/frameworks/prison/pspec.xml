@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>prison</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>A barcode API to produce QRCode barcodes and DataMatrix barcode</Summary>
+        <Description>A barcode API to produce QRCode barcodes and DataMatrix barcode.</Description>
+        <Archive sha1sum="72eac9b9424c01ea0064531b0a410f59ff4736a4" type="tarxz">mirrors://kde/stable/frameworks/5.32/prison-5.32.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libdmtx</Dependency>
+            <Dependency>qrencode</Dependency>
+            <Dependency>extra-cmake-modules</Dependency> 
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>prison</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>            
+            <Dependency>libdmtx</Dependency>
+            <Dependency>qrencode</Dependency>
+        </RuntimeDependencies>        
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>             
+            <Path fileType="data">/usr/lib/cmake</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-12</Date>
+            <Version>5.32.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

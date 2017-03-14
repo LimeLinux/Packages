@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kimageformats</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Image formats addons for QT 5</Summary>
+        <Description>This framework provides additional image format plugins for QtGui. </Description>
+        <Archive sha1sum="1f79820f83aaad641a7d2f2b69c21d96259169cf" type="tarxz">mirrors://kde/stable/frameworks/5.32/kimageformats-5.32.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="2.2.0">openexr</Dependency>
+            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>karchive</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kimageformats</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="2.2.0">openexr</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>ilmbase</Dependency>
+            <Dependency>karchive</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-12</Date>
+            <Version>5.32.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

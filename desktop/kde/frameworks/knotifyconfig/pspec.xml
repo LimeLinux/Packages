@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>knotifyconfig</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Configuration dialog for desktop notifications</Summary>
+        <Description>KNotifyConfig provides a configuration dialog for desktop notifications which can be embedded in your application..</Description>
+        <Archive sha1sum="2926ab9001776f6304f35bd455468c03226b0d41" type="tarxz">mirrors://kde/stable/frameworks/5.32/knotifyconfig-5.32.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="4.6.60">qt5-phonon</Dependency>
+            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.32.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.32.0">kconfig</Dependency>
+            <Dependency versionFrom="5.32.0">ki18n</Dependency>
+            <Dependency versionFrom="5.32.0">kio</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>knotifyconfig</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency versionFrom="5.32.0">kconfig</Dependency>
+            <Dependency versionFrom="5.32.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.32.0">ki18n</Dependency>
+            <Dependency versionFrom="5.32.0">kio</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-12</Date>
+            <Version>5.32.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

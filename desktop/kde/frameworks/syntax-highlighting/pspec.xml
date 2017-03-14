@@ -1,0 +1,47 @@
+<PISI>
+    <Source>
+        <Name>syntax-highlighting</Name>
+        <Homepage>https://community.kde.org/Frameworks</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <Summary>Syntax highlighting engine for structured text and code</Summary>
+        <Description>Syntax highlighting engine for structured text and code</Description>
+        <BuildDependencies>
+            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>perl</Dependency>
+            <Dependency>glibc</Dependency>
+        </BuildDependencies>
+        <Archive type="tarxz" sha1sum="f7f98eaeccb90106b10a63490eecb539127a9bdd">mirrors://kde/stable/frameworks/5.32/syntax-highlighting-5.32.0.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>syntax-highlighting</Name>
+        <Summary>Syntax highlighting engine for structured text and code</Summary>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+			<Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-12</Date>
+            <Version>5.32.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

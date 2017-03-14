@@ -1,0 +1,35 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-pylint</Name>
+        <Homepage>https://pypi.python.org/pypi/pylint</Homepage>
+        <Packager>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Packager>
+        <Summary>python code static checker</Summary>
+        <Description>Pylint is a Python source code analyzer which looks for programming errors, helps enforcing a coding standard and sniffs for some code smells (as defined in Martin Fowler's Refactoring book).</Description>
+        <License>GPLv2+</License>
+        <Archive sha1sum="a84a0432d01010de6a5b3538d89637e6ad05fac7" type="targz">https://pypi.python.org/packages/6b/03/840420e0e5d01d532646e1e6144c30a57360a396e0821e1bb9d209dde563/pylint-1.6.5.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>python-pylint</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/python*</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-14</Date>
+            <Version>1.6.5</Version>
+            <Comment>Add python-pylint to repositories</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
+    </History>	
+</PISI>

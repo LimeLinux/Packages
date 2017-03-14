@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>khtml</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+	<IsA>app:console</IsA>
+        <Summary>HTML rendering engine for KDE</Summary>
+        <Description>KHTML is a web rendering engine, based on the KParts technology and using KJS for JavaScript support.</Description>
+        <Archive sha1sum="9f09c0887f008b0510dcdadd68b00030e528eccb" type="tarxz">mirrors://kde/stable/frameworks/5.32/portingAids/khtml-5.32.0.tar.xz</Archive>
+        <BuildDependencies>
+             <Dependency versionFrom="5.7.1">qt5</Dependency>
+             <Dependency>libjpeg-turbo</Dependency>
+             <Dependency>giflib</Dependency>
+             <Dependency>libpng</Dependency>
+             <Dependency>qt5-phonon</Dependency>
+             <Dependency>libX11</Dependency>
+             <Dependency>zlib</Dependency>
+             <Dependency versionFrom="5.32.0">kio</Dependency>
+             <Dependency versionFrom="5.32.0">kjs</Dependency>
+             <Dependency versionFrom="5.32.0">kglobalaccel</Dependency>
+             <Dependency versionFrom="5.32.0">kauth</Dependency>
+             <Dependency versionFrom="5.32.0">kparts</Dependency>
+             <Dependency versionFrom="5.32.0">ktextwidgets</Dependency>
+             <Dependency versionFrom="5.32.0">sonnet</Dependency>
+             <Dependency>openssl</Dependency>
+             <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>khtml</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency versionFrom="5.32.0">sonnet</Dependency>
+            <Dependency versionFrom="5.32.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.32.0">kconfig</Dependency>
+            <Dependency versionFrom="5.32.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.32.0">karchive</Dependency>
+            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kglobalaccel</Dependency>	   
+            <Dependency versionFrom="5.32.0">ki18n</Dependency>
+            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.32.0">kio</Dependency>
+            <Dependency versionFrom="5.32.0">kjs</Dependency>
+            <Dependency versionFrom="5.32.0">knotifications</Dependency>
+            <Dependency versionFrom="5.32.0">kparts</Dependency>
+            <Dependency versionFrom="5.32.0">kservice</Dependency>
+            <Dependency versionFrom="5.32.0">ktextwidgets</Dependency>
+            <Dependency versionFrom="5.32.0">kwallet</Dependency>
+            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.32.0">kxmlgui</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2017-03-12</Date>
+            <Version>5.32.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

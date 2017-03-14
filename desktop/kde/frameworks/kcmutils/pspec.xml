@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kcmutils</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Utilities for interacting with KCModules</Summary>
+        <Description>KCMUtils provides various classes to work with KCModules. KCModules can be created with the KConfigWidgets framework.</Description>
+        <Archive sha1sum="c726c66a682ef143cd0afa15a28bd9358aaf3a0a" type="tarxz">mirrors://kde/stable/frameworks/5.32/kcmutils-5.32.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="13.0.4">mesa</Dependency>
+            <Dependency versionFrom="5.32.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.32.0">kpackage</Dependency>
+            <Dependency versionFrom="5.32.0">kdeclarative</Dependency>
+            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kconfig</Dependency>
+            <Dependency versionFrom="5.32.0">kauth</Dependency>
+            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.32.0">ki18n</Dependency>
+            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.32.0">kitemviews</Dependency>
+            <Dependency versionFrom="5.32.0">kservice</Dependency>
+            <Dependency versionFrom="5.32.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kcmutils</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency versionFrom="5.32.0">kdeclarative</Dependency>
+            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.32.0">kconfig</Dependency>
+            <Dependency versionFrom="5.32.0">kauth</Dependency>
+            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.32.0">ki18n</Dependency>
+            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.32.0">kitemviews</Dependency>
+            <Dependency versionFrom="5.32.0">kservice</Dependency>
+            <Dependency versionFrom="5.32.0">kxmlgui</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-12</Date>
+            <Version>5.32.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
