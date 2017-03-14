@@ -5,12 +5,12 @@
 # See the file http://www.gnu.org/licenses/gpl.txt
 
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import get
-from pisi.actionsapi import autotools
 
 
 def build():
-    autotools.make()
+    pythonmodules.compile(pyVer="3")
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pythonmodules.install(pyVer="3")

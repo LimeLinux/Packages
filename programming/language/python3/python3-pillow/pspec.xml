@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python3-pillow</Name>
+        <Homepage>http://python-pillow.org/</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>library</IsA>
+        <Summary>PIL is the Python Imaging Library.</Summary>
+        <Description>The Python Imaging Library (PIL) adds image processing capabilities to your Python interpreter. This library supports many file formats, and provides powerful image processing and graphics capabilities.</Description>
+        <Archive sha1sum="bfa275aef5aab12db7fa6b275499600f34f6ffab" type="targz">https://github.com/python-pillow/Pillow/archive/4.0.0a.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>lcms</Dependency>
+            <Dependency>python-setuptools</Dependency>
+            <Dependency>python3-setuptools</Dependency>
+            <Dependency>python3-qt5</Dependency>
+            <Dependency>python-qt5</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>tcltk</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>sane-backends</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </BuildDependencies>        
+    </Source>
+
+    <Package>
+        <Name>python3-pillow</Name>
+        <RuntimeDependencies>
+            <Dependency>python3-tk</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>lcms</Dependency>
+            <Dependency>python-setuptools</Dependency>
+            <Dependency>python3-setuptools</Dependency>
+            <Dependency>python3-qt5</Dependency>
+            <Dependency>python-qt5</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>tcltk</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>sane-backends</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>xdg-utils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-15</Date>
+            <Version>4.0.0</Version>
+            <Comment>Frist Relase</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>    
+    </History>
+</PISI>

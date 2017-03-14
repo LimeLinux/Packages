@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python3-parted</Name>
+        <Homepage>http://people.redhat.com/dcantrel/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>library</IsA>
+        <Summary>Python bindings for parted</Summary>
+        <Description>pyparted is the python module which enables to use GNU Parted package from python. Using python with this module, programmers can create, destroy, resize, check and copy partitions, and the file systems on them.</Description>
+        <Archive sha1sum="3b8d3dcb3ce2c15ed4305748eff251d5c90a1548" type="targz">https://github.com/rhinstaller/pyparted/archive/v3.10.5.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3</Dependency>
+            <Dependency>parted</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python3-parted</Name>
+        <RuntimeDependencies>
+            <Dependency>parted</Dependency>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2017-03-15</Date>
+            <Version>3.10.5</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

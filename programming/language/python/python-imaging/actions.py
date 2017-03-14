@@ -11,8 +11,11 @@ from pisi.actionsapi import get
 
 WorkDir="Imaging-%s" % get.srcVERSION()
 
+
+
 def install():
     pythonmodules.install()
+
 
     shelltools.cd("Sane")
     pythonmodules.install()
@@ -20,6 +23,12 @@ def install():
 
     for header in ["Imaging.h","ImPlatform.h"]:
         pisitools.insinto("/usr/include/%s" % get.curPYTHON(), "libImaging/%s" % header)
+    
+    pisitools.rename("/usr/bin/pilfont.py", "pilfont2.py")
+    pisitools.rename("/usr/bin/pilprint.py", "pilprint2.py")    
+    pisitools.rename("/usr/bin/pildriver.py", "pildriver2.py")
+    pisitools.rename("/usr/bin/pilconvert.py", "pilconvert2.py")
+    pisitools.rename("/usr/bin/pilfile.py", "pilfile2.py")
 
     pisitools.dodoc("README")
 

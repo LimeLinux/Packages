@@ -38,27 +38,14 @@
             <Dependency>tiff</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>poppler-data</Dependency>
-	    <Dependency>cairo</Dependency>
-	    <Dependency>freetype</Dependency>
+	        <Dependency>cairo</Dependency>
+	        <Dependency>freetype</Dependency>
+            <Dependency>qt5</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="all">/</Path>
         </Files>
     </Package>
-    
-    <Package>
-        <Name>poppler-qt5</Name>
-        <Summary>Qt wrapper for poppler</Summary>
-        <RuntimeDependencies>
-            <Dependency>qt5</Dependency>
-            <Dependency release="current">poppler</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/libpoppler-qt5.so*</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/poppler-qt5.pc</Path>
-        </Files>
-    </Package>
-
 
     <History>
         <Update release="1">

@@ -3905,20 +3905,10 @@
             <Provides>
                 <COMAR script="package.py">System.Package</COMAR>
             </Provides>
-            <AdditionalFiles>
-                <AdditionalFile target="/etc/conf.d/docker" permission="0644" owner="root">docker.confd</AdditionalFile>
-            </AdditionalFiles>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2017-01-18</Date>
-                <Version>1.12.1</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-12-21</Date>
+            <Update release="3">
+                <Date>2017-03-11</Date>
                 <Version>1.12.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
@@ -20994,7 +20984,7 @@
             <PartOf>system.base</PartOf>
             <Summary xml:lang="en">Lime GNU/ Linux service scripts for openrc</Summary>
             <Description xml:lang="en">Lime GNU/ Linux service scripts for openrc</Description>
-            <Archive type="targz" sha1sum="3f8bb755f1d7516cf644846c877c7dfd2de9d12d">https://github.com/LimeLinux/openrc-services/archive/v1.1.3.tar.gz</Archive>
+            <Archive type="targz" sha1sum="e7019cac6f25f6ed4080b2976cd7dcd593f18e1a">https://github.com/LimeLinux/openrc-services/archive/v1.1.3c.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>openrc</Dependency>
             </BuildDependencies>
@@ -21020,7 +21010,7 @@
         <History>
             <Update release="5">
                 <Date>2017-03-11</Date>
-                <Version>1.1.3</Version>
+                <Version>1.1.3c</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -26436,7 +26426,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.4</Version>
                 <Comment>First Release</Comment>
@@ -26471,7 +26461,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.23</Version>
                 <Comment>First Release</Comment>
@@ -26515,7 +26505,7 @@
             <Name>python-mako-docs</Name>
             <Summary xml:lang="tr">python-mako için belgelendirme dosyaları</Summary>
             <RuntimeDependencies>
-                <Dependency release="1">python-mako</Dependency>
+                <Dependency release="2">python-mako</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="doc">/usr/share/doc/*/html</Path>
@@ -26524,7 +26514,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.9.1</Version>
                 <Comment>First Release</Comment>
@@ -26568,7 +26558,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>2.2.0</Version>
                 <Comment>First Release</Comment>
@@ -26603,7 +26593,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.8</Version>
                 <Comment>First Release</Comment>
@@ -26661,7 +26651,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>2.10.0</Version>
                 <Comment>First Release</Comment>
@@ -26758,7 +26748,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-06-09</Date>
                 <Version>0.10.22</Version>
                 <Comment>First release</Comment>
@@ -26793,7 +26783,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.6.4</Version>
                 <Comment>First Release</Comment>
@@ -26828,7 +26818,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-07-26</Date>
                 <Version>1.0</Version>
                 <Comment>First Release</Comment>
@@ -26871,7 +26861,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.10.0</Version>
                 <Comment>First Release</Comment>
@@ -26911,14 +26901,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2017-02-21</Date>
-                <Version>2.20.3</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
+            <Update release="3">
                 <Date>2017-02-21</Date>
                 <Version>2.20.3</Version>
                 <Comment>First Release</Comment>
@@ -26961,7 +26944,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2017-01-25</Date>
                 <Version>1.36.2</Version>
                 <Comment>Version bump.</Comment>
@@ -27008,7 +26991,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-06-09</Date>
                 <Version>1.6</Version>
                 <Comment>First release</Comment>
@@ -27046,7 +27029,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.3.3</Version>
                 <Comment>First Release</Comment>
@@ -27101,7 +27084,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
+            <Update release="3">
                 <Date>2017-03-11</Date>
                 <Version>1.5.3</Version>
                 <Comment>First release</Comment>
@@ -27151,7 +27134,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.8.1</Version>
                 <Comment>First Release</Comment>
@@ -27177,7 +27160,7 @@
             <Description xml:lang="en">Python Cryptography Toolkit is a collection of cryptographic algorithms and protocols, implemented for use from Python.</Description>
             <Description xml:lang="tr">Python kriptoloji araç seti, kriptoloji algoritma ve protokollerini içerir.</Description>
             <Description xml:lang="es">Python Cryptography Toolkit es una colección de algoritmos y protocolos para criptografía, para uso con Python.</Description>
-            <Archive type="targz" sha1sum="c17e41a80b3fbf2ee4e8f2d8bb9e28c5d08bbb84">http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-2.6.tar.gz</Archive>
+            <Archive type="targz" sha1sum="aeda3ed41caf1766409d4efc689b9ca30ad6aeb2">https://pypi.python.org/packages/60/db/645aa9af249f059cc3a368b118de33889219e0362141e75d4eaf6f80f163/pycrypto-2.6.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>gmp</Dependency>
             </BuildDependencies>
@@ -27194,9 +27177,9 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
-                <Version>2.6</Version>
+                <Version>2.6.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -27231,7 +27214,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>4.0.1</Version>
                 <Comment>First Release</Comment>
@@ -27292,7 +27275,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>2.28.6</Version>
                 <Comment>First Release</Comment>
@@ -27329,7 +27312,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.14</Version>
                 <Comment>First Release</Comment>
@@ -27369,7 +27352,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>8.1.2</Version>
                 <Comment>First Release</Comment>
@@ -27409,7 +27392,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>3.4</Version>
                 <Comment>First Release</Comment>
@@ -27450,7 +27433,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.7.0</Version>
                 <Comment>First Release</Comment>
@@ -27506,7 +27489,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2017-01-25</Date>
                 <Version>1.1.7</Version>
                 <Comment>Frist Relase</Comment>
@@ -27579,7 +27562,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-05-08</Date>
                 <Version>3.18.2</Version>
                 <Comment>First release</Comment>
@@ -27620,7 +27603,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.10.0</Version>
                 <Comment>First Release</Comment>
@@ -27664,7 +27647,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-06-09</Date>
                 <Version>3.10.5</Version>
                 <Comment>First release</Comment>
@@ -27702,7 +27685,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.7.1</Version>
                 <Comment>First Release</Comment>
@@ -27737,7 +27720,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>4.7.2</Version>
                 <Comment>First Release</Comment>
@@ -27772,7 +27755,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>2.1.1</Version>
                 <Comment>First Release</Comment>
@@ -27817,7 +27800,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>12.2.0</Version>
                 <Comment>First Release</Comment>
@@ -27859,24 +27842,10 @@
             </Files>
         </Package>
         <History>
-            <Update release="3">
+            <Update release="4">
                 <Date>2017-02-28</Date>
                 <Version>4.19.1</Version>
                 <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="2">
-                <Date>2017-01-21</Date>
-                <Version>4.19</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-01-21</Date>
-                <Version>4.18</Version>
-                <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -27912,7 +27881,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>3.11</Version>
                 <Comment>First Release</Comment>
@@ -27957,7 +27926,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.8</Version>
                 <Comment>First Release</Comment>
@@ -27998,7 +27967,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>2.10</Version>
                 <Comment>First Release</Comment>
@@ -28032,7 +28001,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.4.0</Version>
                 <Comment>First Release</Comment>
@@ -28067,7 +28036,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-07-26</Date>
                 <Version>0.5.4</Version>
                 <Comment>First Release</Comment>
@@ -28102,7 +28071,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.1.6</Version>
                 <Comment>First Release</Comment>
@@ -28154,14 +28123,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2016-12-21</Date>
-                <Version>0.1</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
+            <Update release="3">
                 <Date>2016-12-21</Date>
                 <Version>0.1</Version>
                 <Comment>First Release</Comment>
@@ -28208,7 +28170,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-06-09</Date>
                 <Version>3.3.5</Version>
                 <Comment>First release</Comment>
@@ -28254,7 +28216,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-01-12</Date>
                 <Version>4.2.1</Version>
                 <Comment>First Release</Comment>
@@ -28315,7 +28277,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2017-01-09</Date>
                 <Version>0.1.1</Version>
                 <Comment>First release</Comment>
@@ -28368,24 +28330,10 @@
             </Files>
         </Package>
         <History>
-            <Update release="3">
+            <Update release="4">
                 <Date>2017-02-28</Date>
                 <Version>5.8</Version>
                 <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="2">
-                <Date>2017-01-21</Date>
-                <Version>5.7.1</Version>
-                <Comment>Version Bump</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>5.6</Version>
-                <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -28439,7 +28387,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-07-02</Date>
                 <Version>3.0.2.0</Version>
                 <Comment>First release</Comment>
@@ -28502,7 +28450,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>2.24.0</Version>
                 <Comment>First Release</Comment>
@@ -28537,7 +28485,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.24</Version>
                 <Comment>First Release</Comment>
@@ -30053,7 +30001,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.4.0</Version>
                 <Comment>First Release</Comment>
@@ -30093,16 +30041,51 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
+            <Update release="3">
                 <Date>2016-12-21</Date>
                 <Version>3.12</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>python3-tzlocal</Name>
+            <Homepage>http://somethingaboutorange.com/mrl/projects/nose/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>programming.language.python3</PartOf>
+            <Summary xml:lang="en">A unittest extension offering automatic test suite discovery and easy test authoring</Summary>
+            <Description xml:lang="en">python-nose provides an alternate test discovery and running process for unittest, one that is intended to mimic the behavior of py.test as much as is reasonably possible without resorting to too much magic.</Description>
+            <Archive type="targz" sha1sum="730e9d7112335865a1dcfabec69c8c3086be424f">https://pypi.python.org/packages/d3/64/e4b18738496213f82b88b31c431a0e4ece143801fb6771dddd1c2bf0101b/tzlocal-1.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python3</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python3/python3-tzlocal/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python3-tzlocal</Name>
+            <RuntimeDependencies>
+                <Dependency>python3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
             <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>3.12</Version>
+                <Date>2017-03-14</Date>
+                <Version>1.3</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -30141,7 +30124,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.9.0</Version>
                 <Comment>First Release</Comment>
@@ -30177,7 +30160,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>19.6.1</Version>
                 <Comment>First Release</Comment>
@@ -30215,7 +30198,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="3">
                 <Date>2016-12-21</Date>
                 <Version>2.3.0</Version>
                 <Comment>First Release</Comment>
@@ -30236,7 +30219,7 @@
             <PartOf>programming.language.python3</PartOf>
             <Summary xml:lang="en">The PyPA recommended tool for installing Python packages</Summary>
             <Description xml:lang="en">The PyPA recommended tool for installing Python packages</Description>
-            <Archive type="targz" sha1sum="910e2dd5c533d351a7dc84bc9091893659afcbb0">https://github.com/pypa/pip/archive/8.1.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="39b5840f6a9e6888d56a78beb447a064aeaf1592">https://github.com/pypa/pip/archive/9.0.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3-setuptools</Dependency>
                 <Dependency>python3</Dependency>
@@ -30257,9 +30240,9 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>8.1.2</Version>
+            <Update release="2">
+                <Date>2017-03-14</Date>
+                <Version>9.0.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -30299,9 +30282,50 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.37.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>python3-meson</Name>
+            <Homepage>http://pypi.python.org/pypi/meson/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>Apache-2.0</License>
+            <IsA>app:console</IsA>
+            <PartOf>programming.language.python3</PartOf>
+            <Summary xml:lang="en">A high performance build system</Summary>
+            <Description xml:lang="en">A high performance build system</Description>
+            <Archive type="targz" sha1sum="7a88cc85f34d5462b116dc6acb3f18359bbf5bfd">https://github.com/mesonbuild/meson/releases/download/0.39.0/meson-0.39.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python3</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python3/python3-meson/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python3-meson</Name>
+            <RuntimeDependencies>
+                <Dependency>python3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-06</Date>
+                <Version>0.39.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -30348,17 +30372,51 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
+            <Update release="3">
                 <Date>2016-12-21</Date>
                 <Version>1.10.0</Version>
                 <Comment>Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>1.10.0</Version>
-                <Comment>First Release</Comment>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>python3-parted</Name>
+            <Homepage>http://people.redhat.com/dcantrel/</Homepage>
+            <Packager>
+                <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python3</PartOf>
+            <Summary xml:lang="en">Python bindings for parted</Summary>
+            <Description xml:lang="en">pyparted is the python module which enables to use GNU Parted package from python. Using python with this module, programmers can create, destroy, resize, check and copy partitions, and the file systems on them.</Description>
+            <Archive type="targz" sha1sum="3b8d3dcb3ce2c15ed4305748eff251d5c90a1548">https://github.com/rhinstaller/pyparted/archive/v3.10.5.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python3</Dependency>
+                <Dependency>parted</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python3/python3-parted/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python3-parted</Name>
+            <RuntimeDependencies>
+                <Dependency>parted</Dependency>
+                <Dependency>python3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2017-03-15</Date>
+                <Version>3.10.5</Version>
+                <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -30452,28 +30510,20 @@
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin/pyuic5</Path>
-                <Path fileType="library">/usr/lib/python3.*/site-packages/*</Path>
-                <Path fileType="library">/usr/lib/python2.7/site-packages/*</Path>
+                <Path fileType="library">/usr/lib/python3.6/site-packages</Path>
                 <Path fileType="library">/usr/lib/qt5/plugins/PyQt5/libpyqt5qmlplugin.so</Path>
-                <Path fileType="library">/usr/lib/qt5/plugins/designer/libpyqt5.so.0</Path>
+                <Path fileType="library">/usr/lib/qt5/plugins/designer/libpyqt5.so</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="data">/usr/share/qt5/qsci/api/python/PyQt5.api</Path>
                 <Path fileType="executable">/usr/bin/pyrcc5</Path>
                 <Path fileType="executable">/usr/bin/pylupdate5</Path>
-                <Path fileType="data">/usr/share/sip/*</Path>
+                <Path fileType="data">/usr/share/sip/PyQt5</Path>
             </Files>
         </Package>
         <History>
-            <Update release="2">
+            <Update release="3">
                 <Date>2017-02-29</Date>
                 <Version>5.8</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2017-01-29</Date>
-                <Version>5.7.1</Version>
                 <Comment>First release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -30493,7 +30543,7 @@
             <PartOf>programming.language.python3</PartOf>
             <Summary xml:lang="en">The ssl.match_hostname() function from Python 3.4</Summary>
             <Description xml:lang="en">The ssl.match_hostname() function from Python 3.4</Description>
-            <Archive type="targz" sha1sum="da4e41f3b110279d2382df47ac1e4f10c63cf954">https://pypi.python.org/packages/3a/15/f9e48bfd2b971ade10ad0c03babab057791c260b05322cbd3f47e27be108/backports.ssl_match_hostname-3.4.0.2.tar.gz</Archive>
+            <Archive type="targz" sha1sum="0567c136707a5f53b95aa793b79cc8d5c61d8e22">https://pypi.python.org/packages/76/21/2dc61178a2038a5cb35d14b61467c6ac632791ed05131dda72c20e7b9e23/backports.ssl_match_hostname-3.5.0.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3</Dependency>
                 <Dependency>python3-setuptools</Dependency>
@@ -30512,9 +30562,9 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>3.4.0.2</Version>
+            <Update release="2">
+                <Date>2017-03-14</Date>
+                <Version>3.5.0.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -30556,7 +30606,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>1.3.7</Version>
                 <Comment>First Release</Comment>
@@ -30578,7 +30628,7 @@
             <PartOf>programming.language.python3</PartOf>
             <Summary xml:lang="en">Python client for Docker.</Summary>
             <Description xml:lang="en">A Python library for the Docker Remote API. It does everything the docker command does, but from within Python – run containers, manage them, pull/push images, etc.</Description>
-            <Archive type="targz" sha1sum="f20e51eae6f39762d6c1d8f3349785507d140f28">https://github.com/docker/docker-py/archive/1.8.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="75e8989f3572103ec13343e91bc5b60407c1eb7e">https://github.com/docker/docker-py/archive/2.1.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3</Dependency>
                 <Dependency>python3-setuptools</Dependency>
@@ -30603,9 +30653,9 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
-                <Version>1.8.1</Version>
+                <Version>2.1.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -30643,7 +30693,7 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.3.7</Version>
                 <Comment>First Release</Comment>
@@ -30664,7 +30714,7 @@
             <PartOf>programming.language.python3</PartOf>
             <Summary xml:lang="en">Requests is an Apache2 Licensed HTTP library, written in Python, for human beings.</Summary>
             <Description xml:lang="en">Python’s standard urllib2 module provides most of the HTTP capabilities you need</Description>
-            <Archive type="targz" sha1sum="17f01c47a0d7c676f6291608ef2f43db3fa74095">https://pypi.python.org/packages/source/r/requests/requests-2.9.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="0a5fbc2816573fc8e8a9bb171d004e06d37178be">https://github.com/kennethreitz/requests/archive/v2.13.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3</Dependency>
             </BuildDependencies>
@@ -30681,11 +30731,77 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>2.9.1</Version>
+            <Update release="2">
+                <Date>2017-03-14</Date>
+                <Version>2.13.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>python3-pillow</Name>
+            <Homepage>http://python-pillow.org/</Homepage>
+            <Packager>
+                <Name>LimeLinux Community</Name>
+                <Email>admin@limelinux.com</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>library</IsA>
+            <PartOf>programming.language.python3</PartOf>
+            <Summary xml:lang="en">PIL is the Python Imaging Library.</Summary>
+            <Description xml:lang="en">The Python Imaging Library (PIL) adds image processing capabilities to your Python interpreter. This library supports many file formats, and provides powerful image processing and graphics capabilities.</Description>
+            <Archive type="targz" sha1sum="bfa275aef5aab12db7fa6b275499600f34f6ffab">https://github.com/python-pillow/Pillow/archive/4.0.0a.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>python3</Dependency>
+                <Dependency>python</Dependency>
+                <Dependency>lcms</Dependency>
+                <Dependency>python-setuptools</Dependency>
+                <Dependency>python3-setuptools</Dependency>
+                <Dependency>python3-qt5</Dependency>
+                <Dependency>python-qt5</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>tcltk</Dependency>
+                <Dependency>tcl</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>sane-backends</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </BuildDependencies>
+            <SourceURI>programming/language/python3/python3-pillow/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python3-pillow</Name>
+            <RuntimeDependencies>
+                <Dependency>python3-tk</Dependency>
+                <Dependency>python</Dependency>
+                <Dependency>lcms</Dependency>
+                <Dependency>python-setuptools</Dependency>
+                <Dependency>python3-setuptools</Dependency>
+                <Dependency>python3-qt5</Dependency>
+                <Dependency>python-qt5</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>tcltk</Dependency>
+                <Dependency>tcl</Dependency>
+                <Dependency>sane-backends</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>xdg-utils</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2017-03-15</Date>
+                <Version>4.0.0</Version>
+                <Comment>Frist Relase</Comment>
+                <Name>LimeLinux Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
         </History>
@@ -30729,58 +30845,10 @@
             </Files>
         </Package>
         <History>
-            <Update release="2">
+            <Update release="3">
                 <Date>2017-02-28</Date>
                 <Version>4.19.1</Version>
                 <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-06-18</Date>
-                <Version>4.19</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>meson</Name>
-            <Homepage>http://pypi.python.org/pypi/six/</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-            <License>Apache-2.0</License>
-            <IsA>app:console</IsA>
-            <PartOf>programming.language.python3</PartOf>
-            <Summary xml:lang="en">A high performance build system</Summary>
-            <Description xml:lang="en">A high performance build system</Description>
-            <Archive type="targz" sha1sum="7a88cc85f34d5462b116dc6acb3f18359bbf5bfd">https://github.com/mesonbuild/meson/releases/download/0.39.0/meson-0.39.0.tar.gz</Archive>
-            <BuildDependencies>
-                <Dependency>python3</Dependency>
-            </BuildDependencies>
-            <SourceURI>programming/language/python3/meson/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>meson</Name>
-            <RuntimeDependencies>
-                <Dependency>python3</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="man">/usr/share/man</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2017-03-06</Date>
-                <Version>0.39.0</Version>
-                <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
             </Update>
@@ -30816,6 +30884,7 @@
             </BuildDependencies>
             <Patches>
                 <Patch level="1">dont-make-libpython-readonly.patch</Patch>
+                <Patch level="1">test_socket_aead_kernel49.patch</Patch>
             </Patches>
             <SourceURI>programming/language/python3/python3/pspec.xml</SourceURI>
         </Source>
@@ -30912,7 +30981,7 @@
             <Summary xml:lang="tr">Platform bağımsız, süreçler hakkında bilgi sağlayan bir Python modülü</Summary>
             <Description xml:lang="en">python3-psutil is a module providing an interface for retrieving information on all running processes and system utilization (CPU, memory) in a portable way by using Python, implementing many functionalities offered by command line tools like ps, top, kill, lsof and netstat.</Description>
             <Description xml:lang="tr">python3-psutil, bütün çalışan süreçler ve sistem kullanımı (MİB - Merkezi İşlem Birim(CPU) ve hafıza gibi) hakkında bilgilere erişimek için arayüz sunan bir Python modülüdür. ps, top, kill, lsof, netstat gibi bir çok komut satırı araçlarının sunduğu işlevselliği sağlamaktadır.</Description>
-            <Archive type="targz" sha1sum="a00dd7259a104d47659075a862afdef84b826296">https://github.com/giampaolo/psutil/archive/release-4.0.0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="a00dd7259a104d47659075a862afdef84b826296">https://github.com/giampaolo/psutil/archive/release-5.2.0.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>python3</Dependency>
             </BuildDependencies>
@@ -30929,9 +30998,9 @@
             </Files>
         </Package>
         <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>4.0.0</Version>
+            <Update release="2">
+                <Date>2017-03-14</Date>
+                <Version>5.2.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -35167,21 +35236,10 @@
                 <Dependency>poppler-data</Dependency>
                 <Dependency>cairo</Dependency>
                 <Dependency>freetype</Dependency>
+                <Dependency>qt5</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="all">/</Path>
-            </Files>
-        </Package>
-        <Package>
-            <Name>poppler-qt5</Name>
-            <Summary xml:lang="en">Qt wrapper for poppler</Summary>
-            <RuntimeDependencies>
-                <Dependency>qt5</Dependency>
-                <Dependency release="1">poppler</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="library">/usr/lib/libpoppler-qt5.so*</Path>
-                <Path fileType="data">/usr/lib/pkgconfig/poppler-qt5.pc</Path>
             </Files>
         </Package>
         <History>
@@ -41748,21 +41806,13 @@
                 <AdditionalFile target="/etc/pam.d/samba" permission="0644" owner="root">samba.pam</AdditionalFile>
                 <AdditionalFile target="/etc/samba/smbusers" permission="0644" owner="root">smbusers</AdditionalFile>
                 <AdditionalFile target="/etc/samba/smb.conf" permission="0644" owner="root">smb.conf</AdditionalFile>
-                <AdditionalFile target="/etc/conf.d/samba" permission="0644" owner="root">samba.confd</AdditionalFile>
                 <AdditionalFile target="/usr/lib/tmpfiles.d/samba.conf" permission="0644" owner="root">tmpfiles.conf</AdditionalFile>
                 <AdditionalFile target="/etc/samba/system-auth-winbind" permission="0644" owner="root">system-auth-winbind</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2016-12-21</Date>
-                <Version>4.5.5</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-12-21</Date>
+            <Update release="3">
+                <Date>2017-03-14</Date>
                 <Version>4.5.5</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
@@ -53594,33 +53644,50 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
         <Package>
             <Name>qt5-webengine</Name>
             <RuntimeDependencies>
-                <Dependency>nss</Dependency>
-                <Dependency>dbus</Dependency>
-                <Dependency>nspr</Dependency>
-                <Dependency>webp</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libpng</Dependency>
-                <Dependency>snappy</Dependency>
-                <Dependency>freetype</Dependency>
-                <Dependency>libXi</Dependency>
-                <Dependency>libXext</Dependency>
-                <Dependency>libXtst</Dependency>
-                <Dependency>libxslt</Dependency>
-                <Dependency>libopus</Dependency>
-                <Dependency>libxml2</Dependency>
                 <Dependency>qt5</Dependency>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>harfbuzz</Dependency>
-                <Dependency>libevent</Dependency>
-                <Dependency>libXfixes</Dependency>
+                <Dependency>bison</Dependency>
+                <Dependency>ninja</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>snappy</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
                 <Dependency>fontconfig</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>json-c</Dependency>
+                <Dependency>libdrm</Dependency>
+                <Dependency>libopus</Dependency>
+                <Dependency>libevent</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libXi</Dependency>
                 <Dependency>libXcursor</Dependency>
-                <Dependency>libXdamage</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXfixes</Dependency>
                 <Dependency>libXrender</Dependency>
+                <Dependency>libXdamage</Dependency>
                 <Dependency>libXcomposite</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libcap</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>pciutils</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>perl</Dependency>
+                <Dependency>python</Dependency>
+                <Dependency>libvpx</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>x264</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>git</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library">/usr/lib</Path>
@@ -53636,15 +53703,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Files>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2016-07-26</Date>
-                <Version>5.8.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-07-26</Date>
+            <Update release="3">
+                <Date>2017-03-14</Date>
                 <Version>5.8.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
@@ -53667,7 +53727,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Summary xml:lang="en">Terminal widget for Qt5</Summary>
             <Summary xml:lang="tr">Qt tabanlı uygulamalar için basit bir terminal modulü</Summary>
             <Description xml:lang="en">A simple terminal widget for using with Qt5 based applications</Description>
-            <Archive type="tarxz" sha1sum="fc3afd69fcc449d7f3f225ae2f36e529cbce411d">https://github.com/qterminal/qtermwidget/releases/download/0.6.0/qtermwidget-0.6.0.tar.xz</Archive>
+            <Archive type="targz" sha1sum="96ad7f2250aaac0ca84a10e47c3e0644d1d84a72">https://github.com/lxde/qtermwidget/archive/0.7.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>cmake</Dependency>
                 <Dependency>libgcc</Dependency>
@@ -53693,9 +53753,9 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Files>
         </Package>
         <History>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>0.6.0</Version>
+            <Update release="2">
+                <Date>2017-03-14</Date>
+                <Version>0.7.1</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
                 <Email>admin@limelinux.com</Email>
@@ -53722,24 +53782,50 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Description xml:lang="es">Qt es un toolkit para GUI multiplataforma.</Description>
             <Archive type="tarxz" sha1sum="1a056ca4f731798e4142a691d0448c2c853228ca">http://download.qt.io/archive/qt/5.8/5.8.0/single/qt-everywhere-opensource-src-5.8.0.tar.xz</Archive>
             <BuildDependencies>
-                <Dependency>mariadb</Dependency>
+                <Dependency>atk</Dependency>
                 <Dependency>cups</Dependency>
-                <Dependency>mesa</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>tiff</Dependency>
-                <Dependency>libSM</Dependency>
-                <Dependency>libICE</Dependency>
-                <Dependency>libmng</Dependency>
-                <Dependency>libXext</Dependency>
-                <Dependency>alsa-lib</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>sdl2</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>jasper</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libdrm</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>libpcre</Dependency>
+                <Dependency>mariadb</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>hunspell</Dependency>
+                <Dependency>libinput</Dependency>
+                <Dependency>libmtdev</Dependency>
                 <Dependency>unixODBC</Dependency>
-                <Dependency>libXrandr</Dependency>
-                <Dependency>gstreamer</Dependency>
-                <Dependency>fontconfig</Dependency>
-                <Dependency>libXrender</Dependency>
+                <Dependency>bluez-libs</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
                 <Dependency>postgresql</Dependency>
-                <Dependency>libjpeg-turbo</Dependency>
-                <Dependency>gst-plugins-base</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>xcb-util-wm</Dependency>
+                <Dependency>libxkbcommon</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>xcb-util-image</Dependency>
+                <Dependency>xcb-util-keysyms</Dependency>
+                <Dependency>speech-dispatcher</Dependency>
+                <Dependency>xcb-util-renderutil</Dependency>
+                <Dependency>gst-plugins-bad-next</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/toolkit/qt5/qt5/pspec.xml</SourceURI>
         </Source>
@@ -53757,6 +53843,50 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Dependency>fontconfig</Dependency>
                 <Dependency>libXrender</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>sdl2</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>jasper</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libdrm</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>openal</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>libpcre</Dependency>
+                <Dependency>mariadb</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>wayland</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>harfbuzz</Dependency>
+                <Dependency>hunspell</Dependency>
+                <Dependency>libinput</Dependency>
+                <Dependency>libmtdev</Dependency>
+                <Dependency>unixODBC</Dependency>
+                <Dependency>bluez-libs</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>postgresql</Dependency>
+                <Dependency>pulseaudio</Dependency>
+                <Dependency>xcb-util-wm</Dependency>
+                <Dependency>libxkbcommon</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>xcb-util-image</Dependency>
+                <Dependency>xcb-util-keysyms</Dependency>
+                <Dependency>speech-dispatcher</Dependency>
+                <Dependency>xcb-util-renderutil</Dependency>
+                <Dependency>gst-plugins-bad-next</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="config">/etc</Path>
@@ -53783,15 +53913,8 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </AdditionalFiles>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2017-02-21</Date>
-                <Version>5.8.0</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2017-02-21</Date>
+            <Update release="3">
+                <Date>2017-03-14</Date>
                 <Version>5.8.0</Version>
                 <Comment>First Release</Comment>
                 <Name>Lime GNU/LINUX Community</Name>
@@ -53908,6 +54031,20 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
                 <Dependency>libXrender</Dependency>
                 <Dependency>libXcomposite</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>libpcre</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>perl-Digest-MD5</Dependency>
+                <Dependency>gperf</Dependency>
+                <Dependency>bison</Dependency>
+                <Dependency>flex</Dependency>
                 <Dependency>gstreamer</Dependency>
                 <Dependency>gstreamer-next</Dependency>
                 <Dependency>gst-plugins-base-next</Dependency>
@@ -53921,7 +54058,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-07-26</Date>
                 <Version>5.8.0</Version>
                 <Comment>First Release</Comment>
@@ -55523,7 +55660,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2016-12-21</Date>
                 <Version>0.52.17</Version>
                 <Comment>First Release</Comment>
@@ -55586,14 +55723,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </AdditionalFiles>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2016-06-09</Date>
-                <Version>4.0.0</Version>
-                <Comment>First release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
+            <Update release="3">
                 <Date>2016-06-09</Date>
                 <Version>4.0.0</Version>
                 <Comment>First release</Comment>
@@ -58856,7 +58986,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <PartOf>desktop.lookandfeel</PartOf>
             <Summary xml:lang="en">Damadamas Fatih Kaya&apos;nın hazırlamış olduğu güzel bir tema</Summary>
             <Description xml:lang="en">Damadamas Fatih Kaya&apos;nın hazırlamış olduğu güzel bir tema</Description>
-            <Archive type="tarxz" sha1sum="82e9ad9034282010e8d6ff01bf91f9920a1c9b69">https://sourceforge.net/projects/limeteam/files/source-limelinux/DamaDamas-icon-theme-0.1.tar.xz</Archive>
+            <Archive type="targz" sha1sum="16694e37858a5976225b8441b534b79ae147af19">https://github.com/LimeLinux/DamaDamas/archive/v.1.0a.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>cmake</Dependency>
             </BuildDependencies>
@@ -58866,13 +58996,12 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Name>theme-damadamas</Name>
             <Files>
                 <Path fileType="data">/usr/share/*</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
             </Files>
         </Package>
         <History>
-            <Update release="1">
+            <Update release="2">
                 <Date>2017-03-13</Date>
-                <Version>0.1</Version>
+                <Version>1.0</Version>
                 <Comment>First release</Comment>
                 <Name>Lime Linux</Name>
                 <Email>admin@limelinux.com</Email>
@@ -61810,59 +61939,6 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             </Update>
         </History>
     </SpecFile>
-    <Package>
-        <Name>mkinitcpio</Name>
-        <Summary xml:lang="en">Modular initramfs image creation utility</Summary>
-        <Summary xml:lang="tr">İnitramfs oluşturmak için araç</Summary>
-        <Description xml:lang="en">mkinitcpio is a generic, modular, cross-distribution initramfs generation tool.</Description>
-        <Description xml:lang="tr">Mkinitcpio çapraz platform initramfs oluşturmak için kullanılan bir araçtır.</Description>
-        <PartOf>system.boot</PartOf>
-        <License>GPL</License>
-        <RuntimeDependencies>
-            <Dependency>xz</Dependency>
-            <Dependency>bzip2</Dependency>
-            <Dependency>libarchive</Dependency>
-            <Dependency>kmod</Dependency>
-            <Dependency>busybox-mkinitcpio</Dependency>
-        </RuntimeDependencies>
-        <Provides>
-            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
-        </Provides>
-        <History>
-            <Update release="2">
-                <Date>2017-02-21</Date>
-                <Version>19.1a</Version>
-                <Comment>Version bump</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-12-21</Date>
-                <Version>19.1</Version>
-                <Comment>First Release</Comment>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Update>
-        </History>
-        <BuildHost>buildfarm</BuildHost>
-        <Distribution>LimeLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>131603</InstalledSize>
-        <PackageSize>41112</PackageSize>
-        <PackageHash>9fbbfb1f1cfc2569a7c105d94a108711d4d9968a</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>system/boot/mkinitcpio/mkinitcpio-19.1a-2-lm-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>mkinitcpio</Name>
-            <Homepage>https://projects.archlinux.org/mkinitcpio.git/</Homepage>
-            <Packager>
-                <Name>Lime GNU/LINUX Community</Name>
-                <Email>admin@limelinux.com</Email>
-            </Packager>
-        </Source>
-    </Package>
     <Component>
         <Name>system</Name>
         <LocalName xml:lang="en">FIXME</LocalName>

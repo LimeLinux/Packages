@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM 'www.limelinux.com/standard/pisi-spec.dtd'>
+<PISI>
+    <Source>
+        <Name>python3-tzlocal</Name>
+        <Homepage>http://somethingaboutorange.com/mrl/projects/nose/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>A unittest extension offering automatic test suite discovery and easy test authoring</Summary>
+        <Description>python-nose provides an alternate test discovery and running process for unittest, one that is intended to mimic the behavior of py.test as much as is reasonably possible without resorting to too much magic.</Description>
+        <Archive sha1sum="730e9d7112335865a1dcfabec69c8c3086be424f" type="targz">https://pypi.python.org/packages/d3/64/e4b18738496213f82b88b31c431a0e4ece143801fb6771dddd1c2bf0101b/tzlocal-1.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python3-tzlocal</Name>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2017-03-14</Date>
+            <Version>1.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
