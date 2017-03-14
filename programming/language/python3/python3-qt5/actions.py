@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
@@ -16,9 +17,10 @@ def setup():
     pythonmodules.run("configure.py --confirm-license \
                                     --qsci-api \
                                     --sip /usr/bin/sip \
+                                    --qmake='/usr/bin/qmake' \
                                     --destdir='/usr/lib/python3.6/site-packages' \
                                     --sip-incdir='/usr/include/python3.6m' \
-                                    ")
+                                    CFLAGS='%s' CXXFLAGS='%s'" % (get.CFLAGS(), get.CXXFLAGS()), pyVer = "3")
     shelltools.system("find -name 'Makefile' | xargs sed -i 's|-Wl,-rpath,/usr/lib||g;s|-Wl,-rpath,.* ||g'")
 
 def build():
@@ -29,8 +31,6 @@ def install():
     autotools.rawInstall("-C pyrcc DESTDIR=%(DESTDIR)s INSTALL_ROOT=%(DESTDIR)s" % {'DESTDIR':get.installDIR()})
     autotools.rawInstall("-C pylupdate DESTDIR=%(DESTDIR)s INSTALL_ROOT=%(DESTDIR)s" % {'DESTDIR':get.installDIR()})
     autotools.rawInstall("DESTDIR=%(DESTDIR)s INSTALL_ROOT=%(DESTDIR)s" % {'DESTDIR':get.installDIR()})
-    pisitools.insinto("/usr/lib/python3.6/site-packages/dbus/mainloop/pyqt5.so", "/usr/lib/python2.7/site-packages/dbus/mainloop/pyqt5.so")
-    pisitools.removeDir("/usr/lib/python2.7")   
 
     
     pisitools.dohtml("doc/html/*")
