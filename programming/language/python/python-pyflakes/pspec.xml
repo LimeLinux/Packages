@@ -1,0 +1,35 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-pyflakes</Name>
+        <Homepage>https://pypi.python.org/pypi/pyflakes</Homepage>
+        <Packager>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Packager>
+        <Summary>passive checker of Python programs</Summary>
+        <Description>Pyflakes analyzes programs and detects various errors. It works by parsing the source file, not importing it, so it is safe to use on modules with side effects. It's also much faster.</Description>
+        <License>GPLv2+</License>
+        <Archive sha1sum="ff77b05dc782a1a5e2b662ff93e8b0646a0d8316" type="targz">https://pypi.python.org/packages/5b/b7/dcd6ebc826065ca4ccd2406aac4378e1df6eb91124625d45d520219932a1/pyflakes-1.5.0.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>python-pyflakes</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/python*</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-14</Date>
+            <Version>0.7.3</Version>
+            <Comment>Add python-pyflakes to repositories</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
+    </History>	
+</PISI>
