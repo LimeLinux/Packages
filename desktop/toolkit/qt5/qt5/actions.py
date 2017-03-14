@@ -29,12 +29,12 @@ def setup():
     shelltools.export("CFLAGS", filteredCFLAGS)
     shelltools.export("CXXFLAGS", filteredCXXFLAGS)
     shelltools.system("unset QMAKESPEC")
-    shelltools.system('parameters="QMAKE_CFLAGS_ISYSTEM= "')
     shelltools.export("QT5DIR", get.curDIR())
     shelltools.export("PATH", "%s/bin:%s" % (get.curDIR(), get.ENV("PATH")))
     
     
     shelltools.export("LD_LIBRARY_PATH", "%s/lib:%s" % (get.curDIR(), get.ENV("LD_LIBRARY_PATH")))
+    shelltools.system('parameters="QMAKE_CFLAGS_ISYSTEM= "')
 
     options = "-confirm-license -opensource \
 		    -prefix /usr \
@@ -50,6 +50,7 @@ def setup():
 		    -system-libpng \
 		    -system-libjpeg \
 		    -nomake examples \
+            -no-sql-mysql \
 		    -no-rpath \
 		    -openssl-linked \
 		    -silent \

@@ -1,0 +1,50 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-dbus</Name>
+        <Packager>
+            <Name>LimeLinux Developers</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <Summary>D-Bus module for Python</Summary>
+        <Description>Easy access to dbus from Python</Description>
+        <License>GPLv2+</License>
+        <Archive sha1sum="078a76d760ba649991b0ac0ae2eaeda41c00ca5b" type="targz">https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.2.4.tar.gz</Archive>
+        
+        <BuildDependencies>
+            <Dependency>dbus</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>python3</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>python-dbus</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/python*</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>dbus</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+    </Package>
+    
+    <History>	
+        <Update release="1">
+            <Date>2017-03-14</Date>
+            <Version>1.2.4</Version>
+            <Comment>Add python-dbus to repositories</Comment>
+            <Name>LimeLinux Developers</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+    
+</PISI>
+
