@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--disable-static \
                          --enable-python \
-                        --with-gtk=2.0 \
+                        --with-gtk3 \
                          --enable-introspection=yes")
         
 

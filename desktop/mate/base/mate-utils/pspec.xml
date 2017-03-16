@@ -6,18 +6,18 @@
         <Name>mate-utils</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
         <Icon>system-search</Icon>
         <IsA>app:gui</IsA>
         <Summary>MATE utility programs</Summary>
         <Description>The mate-utils package contains a set of small "desk accessory" utility applications for MATE, such as a dictionary, a disk usage analyzer, a screenshot tool and others.</Description>
-        <Archive sha1sum="cc531fc0e2118a97da6e2fe2c24bb0805a6fa1f2" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-utils-1.17.0.tar.xz</Archive>
+        <Archive sha1sum="3149438d15a297e7f4581793ef7b8d1344cdc64e" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-utils-1.18.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libSM</Dependency>
@@ -35,7 +35,7 @@
         <Name>mate-utils</Name>
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libSM</Dependency>
@@ -46,6 +46,9 @@
             <Dependency>mate-panel</Dependency>
             <Dependency>libcanberra</Dependency>
             <Dependency>libcanberra</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -58,17 +61,10 @@
 
 
     <History>
-	    <Update release="2">
-            <Date>2017-01-12</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2017-01-12</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
+	   <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
         </Update>

@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 
 def setup():
-    autotools.configure("--disable-static --with-gtk=2.0 --disable-update-mimedb")
+    autotools.configure("--disable-static --with-gtk3 --disable-update-mimedb")
     
     # fix unused-direct-shlib-dependency
     pisitools.dosed("libtool", "( -shared )", " -Wl,-O1,--as-needed\\1")

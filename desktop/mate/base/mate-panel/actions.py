@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--disable-static                       \
-                        --with-gtk=2.0 \
+                        --with-gtk3 \
                          --enable-introspection")
         
     # for fix unused dependency

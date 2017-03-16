@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--prefix=/usr \
-                         --with-gtk=2.0 \
+                         --with-gtk3 \
                          --enable-mpaste \
                          --disable-static \
                          --disable-gtk-doc")

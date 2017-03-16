@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 def setup():
     #package name change
     autotools.configure("--disable-static \
-			 --with-gtk=2.0")
+			 --with-gtk3")
 
 def build():
     autotools.make()

@@ -14,7 +14,7 @@ def setup():
     #autotools.autoreconf("-fi")
     autotools.configure("--disable-static \
 			 --enable-applets \
-                         --with-gtk=2.0 \
+                         --with-gtk3 \
                          --enable-unique")
 
 def build():

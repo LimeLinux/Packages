@@ -5,14 +5,14 @@
         <Name>mate-backgrounds</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv2+</License>
         <IsA>data</IsA>
         <Summary>Default wallpapers for the Mate desktop</Summary>
         <Description>gnome-backgrounds contains default wallpapers for the Mate desktop.</Description>
-	<Archive sha1sum="6fd1f772b80da65105abe2267ea9f6fd7851434b" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-backgrounds-1.17.0.tar.xz</Archive>
+	<Archive sha1sum="b282bd6495175d96c561e8bd468cd0129759978d" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-backgrounds-1.18.0.tar.xz</Archive>
 	    <BuildDependencies>
              <Dependency>mate-common</Dependency>
              <Dependency>intltool</Dependency>
@@ -49,17 +49,10 @@
     </Package>
 
     <History>
-         <Update release="2">
-            <Date>2017-01-12</Date>
-            <Version>1.17.0</Version>
-            <Comment>First release</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2017-01-12</Date>
-            <Version>1.17.0</Version>
-            <Comment>First release</Comment>
+         <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
         </Update>

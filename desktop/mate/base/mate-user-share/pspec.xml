@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>User level public file sharing via WebDAV or ObexFTP</Summary>
         <Description>mate-user-share is a small package that binds together various free software projects to bring easy to use user-level file sharing to the masses.</Description>
-        <Archive sha1sum="65daa62e5387cde1eee721784e6fa1ea7799c599" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-user-share-1.17.0.tar.xz</Archive>
+        <Archive sha1sum="1ae23e4e74fc1fffd8207fd15751092763c46ca4" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-user-share-1.18.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>caja</Dependency>
@@ -31,9 +31,8 @@
             <Dependency>gtk3</Dependency>
             <Dependency>caja</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency>libunique</Dependency>
-            <Dependency>libnotify</Dependency>
-            <Dependency>libcanberra</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -45,17 +44,10 @@
     </Package>
 
     <History>
-	    <Update release="2">
-            <Date>2017-01-12</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2017-01-12</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
+	   <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
         </Update>

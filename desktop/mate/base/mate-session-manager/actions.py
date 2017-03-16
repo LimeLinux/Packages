@@ -10,7 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-static --with-gtk=2.0")
+    autotools.configure("--disable-static --with-gtk3")
 
 def build():
     autotools.make()

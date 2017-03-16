@@ -6,24 +6,23 @@
         <Name>mate-power-manager</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
         <Icon>mate-power-manager</Icon>
         <IsA>app:gui</IsA>
         <Summary>Mate için güç yöneticisi</Summary>
         <Description>Power management tool for the MATE desktop.</Description>
-        <Archive sha1sum="dbd991820c7e332bd2d01ee519466a3c65f1d662" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-power-manager-1.17.0.tar.xz</Archive>
+        <Archive sha1sum="1eafa1c74e15f9347b2d9d354de8e14a35c1edcd" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-power-manager-1.18.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>upower</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency>libunique</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
@@ -48,6 +47,10 @@
             <Dependency>mate-panel</Dependency>
             <Dependency>libcanberra</Dependency>
             <Dependency>libgnome-keyring</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>dbus-glib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -69,17 +72,10 @@
     </Package>
 
     <History>
-	    <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
+	    <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
         </Update>

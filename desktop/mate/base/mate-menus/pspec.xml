@@ -6,14 +6,14 @@
         <Name>mate-menus</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>Mate Menus</Summary>
         <Description>mate-menus has got desktop-directories, Mate menus library and its python bindings.</Description>
-        <Archive sha1sum="8ba1a8b18b65b0746946531f25588b14e4794cd3" type="tarxz">http://pub.mate-desktop.org/releases/1.17/mate-menus-1.17.0.tar.xz</Archive>
+        <Archive sha1sum="c21b23b8cb2899de1a50d9bf50ca17a2148ba3fb" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-menus-1.18.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>intltool</Dependency>
             <Dependency>mate-common</Dependency>
@@ -22,6 +22,10 @@
 
     <Package>
         <Name>mate-menus</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>python</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -36,17 +40,10 @@
     </Package>
 
     <History>
-	    <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
+	     <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
         </Update>
