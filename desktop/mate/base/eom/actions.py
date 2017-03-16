@@ -13,7 +13,7 @@ def setup():
     pisitools.ldflags.add("-ldl -lutil")
     autotools.configure("--prefix=/usr \
                          --sysconfdir=/etc \
-                         --with-gtk=2.0 \
+                         --with-gtk3 \
                          --localstatedir=/var")
     
     # for fix unused dependency

@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--disable-static       \
                          --with-gnu-ld          \
-                            --with-gtk=2.0 \
+                            --with-gtk3 \
 			                --enable-locations-compression \
                          --enable-gtk-doc-html")
     

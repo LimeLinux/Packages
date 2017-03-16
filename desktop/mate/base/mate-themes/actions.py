@@ -13,7 +13,7 @@ def setup():
     autotools.configure("--enable-all-themes   \
                          --enable-test-themes  \
                          --enable-icon-mapping \
-                        --with-gtk=2.0 \
+                        --with-gtk3 \
                          --enable-test-themes")
 
 def build():

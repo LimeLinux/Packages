@@ -6,15 +6,15 @@
         <Name>eom</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
         <Icon>eom</Icon>
         <IsA>app:gui</IsA>
         <Summary>Eye of MATE, an image viewer for MATE</Summary>
         <Description>This is the Eye of MATE, an image viewer program.  It is meant to be a fast and functional image viewer.</Description>
-        <Archive sha1sum="0ade89543565e052163dfd7203e2a1e0e13a3555" type="tarxz">http://pub.mate-desktop.org/releases/1.17/eom-1.17.2.tar.xz</Archive>
+        <Archive sha1sum="5dbc90dc8a695d2ee8d8595171145fd23b001927" type="tarxz">http://pub.mate-desktop.org/releases/1.18/eom-1.18.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -47,6 +47,12 @@
             <Dependency>mate-desktop</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gobject-introspection</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libpeas</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>zlib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/</Path>
@@ -64,17 +70,10 @@
 
 
     <History>
-	    <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>1.17.2</Version>
-            <Comment>First Release</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.17.2</Version>
-            <Comment>First Release</Comment>
+	    <Update release="3">
+            <Date>2017-03-15</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
         </Update>

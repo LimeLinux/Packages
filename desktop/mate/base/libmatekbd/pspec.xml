@@ -6,15 +6,15 @@
         <Name>libmatekbd</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv2+</License>
         <License>LGPLv2+</License>
         <IsA>library</IsA>
         <Summary>GNOME keybord configration library</Summary>
         <Description>libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
-        <Archive sha1sum="dadda672fdb78ab1b85cf8d55c91755b3be320ad" type="tarxz">http://pub.mate-desktop.org/releases/1.17/libmatekbd-1.17.0.tar.xz</Archive>
+        <Archive sha1sum="81de4ffca10f0a2dfb01449cc89037f7d1760f87" type="tarxz">http://pub.mate-desktop.org/releases/1.18/libmatekbd-1.18.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
@@ -28,11 +28,13 @@
     <Package>
         <Name>libmatekbd</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libxklavier</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -49,17 +51,10 @@
 
 
     <History>
-	    <Update release="2">
-             <Date>2016-12-21</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-             <Date>2016-12-21</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
+	    <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
         </Update>

@@ -6,19 +6,18 @@
         <Name>atril</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
         <Icon>atril</Icon>
         <IsA>app:gui</IsA>
         <Summary>Atril is a document viewer for the MATE desktop</Summary>
         <Description>Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript.</Description>
-        <Archive sha1sum="8c36867a654056b9cf122988f8fe859e76d0648f" type="tarxz">http://pub.mate-desktop.org/releases/1.17/atril-1.17.0.tar.xz</Archive>
+        <Archive sha1sum="5cbcd69733bd5ba23c10a60b2a2350171d95ddf6" type="tarxz">http://pub.mate-desktop.org/releases/1.18/atril-1.18.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>tiff</Dependency>
-            <Dependency>gtk2</Dependency>
             <Dependency>djvu</Dependency>
             <Dependency>caja</Dependency>
             <Dependency>cairo</Dependency>
@@ -44,7 +43,6 @@
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
             <Dependency>tiff</Dependency>
-            <Dependency>gtk2</Dependency>
             <Dependency>caja</Dependency>
             <Dependency>djvu</Dependency>
             <Dependency>cairo</Dependency>
@@ -81,17 +79,10 @@
 
 
     <History>
-	    <Update release="2">
-            <Date>2017-01-12</Date>
-            <Version>1.17.0</Version>
-            <Comment>First release</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2017-01-12</Date>
-            <Version>1.17.0</Version>
-            <Comment>First release</Comment>
+	    <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
         </Update>

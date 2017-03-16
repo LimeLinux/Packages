@@ -15,7 +15,7 @@ def setup():
                          --disable-static            \
                          --enable-gdict-applet       \
                          --enable-gtk-doc-html       \
-                         --with-gtk=2.0 \
+                         --with-gtk3                 \
                          --enable-ipv6=yes ")
     
     # for fix unused dependency

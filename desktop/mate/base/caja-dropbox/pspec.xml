@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate file manager eklentileri</Summary>
         <Description>caja-extensions, Mate file manager eklentileri.</Description>
-        <Archive sha1sum="1c38aed94cd0ffc8118ef287ff558cc3055e6d05" type="tarxz">http://pub.mate-desktop.org/releases/1.17/caja-dropbox-1.17.0.tar.xz</Archive>
+        <Archive sha1sum="f8c58e08ee66255ad6b40d957bc5b7ef9dae9270" type="tarxz">http://pub.mate-desktop.org/releases/1.18/caja-dropbox-1.18.0.tar.xz</Archive>
         <BuildDependencies>
              <Dependency>caja</Dependency>
             <Dependency>gtk2</Dependency>
@@ -28,11 +28,8 @@
         <Name>caja-dropbox</Name>
         <RuntimeDependencies>
              <Dependency>caja</Dependency> 
-            <Dependency>gtk2</Dependency>
-            <Dependency>gupnp</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>mate-desktop</Dependency>
-            <Dependency>gksu</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>glib2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -51,12 +48,12 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.17.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/Linux</Name>
-            <Email>admin@limelinux.com</Email>
+        <Update release="2">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

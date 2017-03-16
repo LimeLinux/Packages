@@ -13,7 +13,7 @@ def setup():
     autotools.configure("\
                          --disable-static \
 			             --enable-pulse \
-                        --with-gtk=2.0 \
+                        --with-gtk3 \
                          --enable-polkit")
     
     # for fix unused dependency

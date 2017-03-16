@@ -26,7 +26,7 @@ def setup():
                          --enable-comics \
                          --enable-pixbuf \
                          --enable-impress \
-                         --with-gtk=2.0 ")
+                         --with-gtk=3.0 ")
     
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")

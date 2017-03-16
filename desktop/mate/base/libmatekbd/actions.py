@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--disable-static          \
-                         --with-gtk=2.0")
+                         --with-gtk3")
     
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
