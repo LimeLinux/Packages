@@ -24,7 +24,7 @@
         <Name>python3-sip</Name>
         <Summary>Python 3.x SIP bindings for C and C++ libraries</Summary>
         <RuntimeDependencies>
-            <Dependency>gcc</Dependency>
+            <Dependency>libgcc</Dependency>
             <Dependency>python3</Dependency>
         </RuntimeDependencies>
         <Files>            
