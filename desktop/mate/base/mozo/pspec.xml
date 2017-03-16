@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mozo</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>mozo</Icon>
+        <IsA>library</IsA>
+        <Summary>Mozo menu editor for MATE</Summary>
+        <Description>Easy MATE menu editing tool.</Description>
+        <Archive sha1sum="b490e8be26e0ec49ff4f89aa0113c8a80c80c080" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mozo-1.18.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>mate-panel</Dependency>
+            <Dependency>python-pygobject3</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mozo</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>mate-panel</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>mate-menu-editor</Package>
+        </Replaces>
+        <Conflicts>
+            <Package>mate-menu-editor</Package>
+        </Conflicts>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man/</Path>
+            <Path fileType="data">/usr/share/mozo</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+    </Package>
+
+    <History>
+       <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
