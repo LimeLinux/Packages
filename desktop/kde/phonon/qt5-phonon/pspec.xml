@@ -14,7 +14,6 @@
         <Description>Phonon was created as a solution to several problems with multimedia commonly faced by Unix desktops, especially KDE 3's outdated multimedia framework aRts. Phonon itself is not a multimedia framework, but interfaces with existing frameworks such as GStreamer or Xine via backends.</Description>
         <Archive sha1sum="aa58818675a2b3486da3a43f136ee11f88672eea" type="tarxz">http://download.kde.org/stable/phonon/4.9.1/phonon-4.9.1.tar.xz</Archive>
          <BuildDependencies>
-            <Dependency>kde5-framework</Dependency>
             <Dependency>qt5</Dependency>
             <Dependency>qt5-webkit</Dependency>
             <Dependency>qt5-webengine</Dependency>

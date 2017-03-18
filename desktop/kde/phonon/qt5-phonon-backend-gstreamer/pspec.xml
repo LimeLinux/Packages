@@ -15,7 +15,6 @@
         <Archive sha1sum="81f16c98e35a6377fefd8ce8e66e1e2ec609c94d" type="tarxz">http://download.kde.org/stable/phonon/phonon-backend-gstreamer/4.9.0/phonon-backend-gstreamer-4.9.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>qt5-x11extras</Dependency>
             <Dependency>qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
             <Dependency>gstreamer</Dependency>
