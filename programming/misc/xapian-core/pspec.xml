@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xapian-core</Name>
+        <Homepage>http://www.oligarchy.co.uk/xapian</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Probabilistic Information Retrieval library</Summary>
+        <Description>Xapian is an Open Source Probabilistic Information Retrieval Library. It offers a highly adaptable toolkit that allows developers to easily add advanced indexing and search facilities to applications.</Description>
+        <Archive sha1sum="77d8af79cf77fc700298e6e542844c69aed33cf9" type="tarxz">http://oligarchy.co.uk/xapian/1.4.3/xapian-core-1.4.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>zlib</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xapian-core</Name>
+        <RuntimeDependencies>
+            <Dependency>zlib</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-20</Date>
+            <Version>1.4.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

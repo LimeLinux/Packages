@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>xapian-core</Name>
+        <Summary xml:lang="tr">İstatistiksel Bilgi Çıkarma kitaplığı</Summary>
+        <Description xml:lang="tr">Xapian, Açık Kaynak Kodlu bir İstatistiksel Bilgi Çıkarma kitaplığıdır. Geliştiricilerin uygulamalara kolaylıkla gelişmiş kataloglama ve arama becerileri eklemelerini sağlayan hayli uyumlu bir araç takımına sahiptir.</Description>
+    </Source>
+</PISI>
