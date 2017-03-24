@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>plasma-desktop</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Pisi Linux Admins</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>KDE5 plasma workspace</Summary>
+        <Description>This package contains the basic packages for a Plasma workspace.</Description>
+        <Archive sha1sum="21a38cee3eecdb1ba94231fe398a6b98e50c3c05" type="tarxz">mirrors://kde/stable/plasma/5.9.4/plasma-desktop-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kactivities-stats</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kpeople</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kwin</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>kded</Dependency>
+            <Dependency>plasma-nm</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libusb-compat</Dependency>
+            <Dependency>xorg-server</Dependency>
+            <Dependency>xorg-input-evdev</Dependency>
+            <Dependency>xorg-input-synaptics</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>plasma-workspace</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>system-settings</Dependency>
+            <Dependency>xorg-app</Dependency>
+            <Dependency>xkeyboard-config</Dependency>
+            <Dependency>baloo</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>ibus</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>plasma-desktop</Name>
+        <RuntimeDependencies>
+            <Dependency>baloo</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>kactivities</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>plasma-nm</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kpeople</Dependency>
+            <Dependency>krunner</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libusb-compat</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>plasma-workspace</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>xkeyboard-config</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>system-settings</Dependency>
+            <Dependency>ibus</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>scim-libs</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+            <Dependency>oxygen-icons</Dependency>
+            <Dependency>kactivities-stats</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/cmake</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

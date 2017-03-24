@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>plasma-pa</Name>
+        <Homepage>https://projects.kde.org/plasma-pa</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Plasma applet for audio volume management using PulseAudio.</Summary>
+        <Description>Plasma applet for audio volume management using PulseAudio.</Description>
+        <Archive sha1sum="306d9d9155831e8d3588ff77a6bd6e6bd3f258ac" type="tarxz">mirrors://kde/stable/plasma/5.9.4/plasma-pa-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="0.0.14">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.0.0">pulseaudio</Dependency>
+            <Dependency versionFrom="5.4.0">qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>plasma-framework</Dependency>
+		    <Dependency>glib2</Dependency>          
+            <Dependency>libcanberra</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>plasma-pa</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>pulseaudio</Dependency> 
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/cmake</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kscreenlocker</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Library and components for secure lock screen architecture.</Summary>
+        <Description>Library and components for secure lock screen architecture.</Description>
+        <Archive sha1sum="c0dfdc01fb9c06847ac622251058ccb8a5e18d2d" type="tarxz">mirrors://kde/stable/plasma/5.9.4/kscreenlocker-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kwayland</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kscreenlocker</Name>
+        <RuntimeDependencies>
+            <Dependency>pam</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>kwayland</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

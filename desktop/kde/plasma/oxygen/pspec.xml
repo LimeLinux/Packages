@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>oxygen</Name>
+        <Homepage>https://projects.kde.org/projects/kde/workspace/oxygen</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPL</License>
+        <Summary>KDE Oxygen style</Summary>
+        <Description>KDE Oxygen style</Description>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>frameworkintegration</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>kwayland</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kdecoration</Dependency>
+            <Dependency>plasma-workspace</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="2d8fc82744701c431f69f74aa38ae6e4e05b5ce5" type="tarxz">mirrors://kde/stable/plasma/5.9.4/oxygen-5.9.4.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>oxygen</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdecoration</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwayland</Dependency>
+            <Dependency>frameworkintegration</Dependency>
+            <Dependency>kcmutils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/sounds</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/plasma</Path>
+            <Path fileType="data">/usr/share/kstyle</Path>
+            <Path fileType="data">/usr/share/kservices5</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

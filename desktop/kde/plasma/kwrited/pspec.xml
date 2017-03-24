@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kwrited</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Pisi Linux Admins</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>KDE5 daemon listening for wall and write messages</Summary>
+        <Description>KDE5 daemon listening for wall and write messages</Description>
+        <Archive sha1sum="03b2ac128c8285459ba2f44dd842345561d50f4b" type="tarxz">mirrors://kde/stable/plasma/5.9.4/kwrited-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kwrited</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

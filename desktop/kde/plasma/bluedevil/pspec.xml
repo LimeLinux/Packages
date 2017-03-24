@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>bluedevil</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>KDE 5 Bluetooth Stack</Summary>
+        <Description>Integrate the Bluetooth technology within KDE workspace and applications</Description>
+        <Archive sha1sum="d9b0863c1ad07ba4d2032454e1ed18951c7e1771" type="tarxz">mirrors://kde/stable/plasma/5.9.4/bluedevil-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.4.0">qt5</Dependency>
+            <Dependency>bluez-qt</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kded</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>shared-mime-info</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>bluedevil</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>bluez-qt</Dependency>
+            <Dependency>kded</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/cmake</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

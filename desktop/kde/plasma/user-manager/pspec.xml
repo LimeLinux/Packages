@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>user-manager</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Pisi Linux Admins</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:gui</IsA>
+        <Summary>KDE 5 User Manager</Summary>
+        <Description>User Manager within KDE workspace and applications</Description>
+        <Archive sha1sum="57d201ee7042014e7c23570684b0c3c10d147600" type="tarxz">mirrors://kde/stable/plasma/5.9.4/user-manager-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>accountsservice</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>libpwquality</Dependency>
+            <Dependency versionFrom="13.0.4">mesa</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>user-manager</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>accountsservice</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>libpwquality</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/cmake</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

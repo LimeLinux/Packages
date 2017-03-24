@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ksysguard</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>KDE system monitor</Summary>
+        <Description>KDE5 system monitor daemon and service.</Description>
+        <Archive sha1sum="db76d952e833f5982542248ebe99613451fcf1d3" type="tarxz">mirrors://kde/stable/plasma/5.9.4/ksysguard-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libksysguard</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>lm_sensors</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.7.1">qt5-webkit</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ksysguard</Name>
+        <RuntimeDependencies>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency >libksysguard</Dependency>
+            <Dependency>lm_sensors</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>xdg-utils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kwayland-integration</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv3</License>
+        <IsA>library</IsA>
+        <Summary>Provides integration plugins for various KDE frameworks for the wayland windowing system</Summary>
+        <Description>Provides integration plugins for various KDE frameworks for the wayland windowing system</Description>
+        <Archive sha1sum="2f15b18c41d25b2a8702971ff65102dcecfbeaf0" type="tarxz">mirrors://kde/stable/plasma/5.9.4/kwayland-integration-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>kwayland</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kwayland-integration</Name>
+        <RuntimeDependencies>
+            <Dependency>kwayland</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

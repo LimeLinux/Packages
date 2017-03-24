@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kmenuedit</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+	    <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+	<IsA>app:console</IsA>
+        <Summary>Provides the interface and basic tools for the KDE workspace</Summary>
+        <Description>Provides the interface and basic tools for the KDE workspace</Description>
+        <Archive sha1sum="49ceeb8dededdaa7a705f1a48ac3ac00a3005848" type="tarxz">mirrors://kde/stable/plasma/5.9.4/kmenuedit-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kconfig</Dependency>	
+            <Dependency>kservice</Dependency>	
+            <Dependency>kcompletion</Dependency>	
+            <Dependency>kcoreaddons</Dependency>	
+            <Dependency>kconfigwidgets</Dependency>	
+            <Dependency>kwidgetsaddons</Dependency>	
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kmenuedit</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>	
+            <Dependency>kservice</Dependency>	
+            <Dependency>kcompletion</Dependency>	
+            <Dependency>kcoreaddons</Dependency>	
+            <Dependency>kconfigwidgets</Dependency>	
+            <Dependency>kwidgetsaddons</Dependency>	
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>sonnet</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/cmake</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

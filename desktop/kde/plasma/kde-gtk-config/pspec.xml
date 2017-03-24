@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kde-gtk-config</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>GTK2 and GTK3 Configurator for KDE</Summary>
+        <Description>Configuration dialog to adapt GTK+ applications appearance to your taste under KDE.</Description>
+        <Archive sha1sum="dc0f53119b077e225c0989674814560294810a80" type="tarxz">mirrors://kde/stable/plasma/5.9.4/kde-gtk-config-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>at-spi2-core</Dependency><!--is runtime dep gtk3-->
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kde-gtk-config</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/etc/xdg/cgc*</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/cmake</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+         </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

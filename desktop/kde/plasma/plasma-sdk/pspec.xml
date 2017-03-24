@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>plasma-sdk</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <IsA>app:gui</IsA>
+        <Summary>Applications useful for Plasma development</Summary>
+        <Description>Applications useful for Plasma development</Description>
+        <Archive sha1sum="71032261976d00b6b472ba97677617281b021376" type="tarxz">mirrors://kde/stable/plasma/5.9.4/plasma-sdk-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>plasma-sdk</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

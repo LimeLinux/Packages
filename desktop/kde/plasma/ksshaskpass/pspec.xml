@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ksshaskpass</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>ssh-add helper that uses kwallet and kpassworddialog</Summary>
+        <Description>ssh-add helper that uses kwallet and kpassworddialog</Description>
+        <Archive sha1sum="2cefdc13afc0aa8604368c0e6453abfe78fcc210" type="tarxz">mirrors://kde/stable/plasma/5.9.4/ksshaskpass-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ksshaskpass</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>    
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kwallet</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+          <AdditionalFile owner="root" permission="755" target="/etc/profile.d/ksshaskpass.sh">ksshaskpass.sh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

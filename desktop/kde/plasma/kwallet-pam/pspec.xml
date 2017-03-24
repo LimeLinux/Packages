@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kwallet-pam</Name>
+        <Homepage>https://projects.kde.org/kwallet-pam</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>KWallet PAM integration.</Summary>
+        <Description>KWallet PAM integration.</Description>
+        <Archive sha1sum="36134091b72cef26994f99a39a352833835f05b8" type="tarxz">mirrors://kde/stable/plasma/5.9.4/kwallet-pam-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kwallet-pam</Name>
+        <RuntimeDependencies>
+            <Dependency>pam</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcrypt</Dependency> 
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg/autostart</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

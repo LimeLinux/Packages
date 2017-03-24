@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>plasma-nm</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Plasma applet written in QML for managing network connections</Summary>
+        <Description>Plasma applet written in QML for managing network connections</Description>
+        <Archive sha1sum="ecadc712e8a8a88b3055d2da9f1f9beb6209320e" type="tarxz">mirrors://kde/stable/plasma/5.9.4/plasma-nm-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>networkmanager-qt</Dependency>
+            <Dependency>modemmanager-qt</Dependency>
+            <Dependency>ModemManager</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>mobile-broadband-provider-info</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>qca2-qt5</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>plasma-nm</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>qca2-qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>networkmanager-qt</Dependency>
+            <Dependency>modemmanager-qt</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+      </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

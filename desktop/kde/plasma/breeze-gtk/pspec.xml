@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>breeze-gtk</Name>
+        <Homepage>https://quickgit.kde.org/?p=breeze-gtk.git</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>app:gui</IsA>
+        <Summary>Breeze widget theme for GTK 2 and 3</Summary>
+        <Description>Breeze widget theme for GTK 2 and 3</Description>
+        <Archive type="tarxz" sha1sum="8d48994c3ab077398b082d048b74da8c8095bef5">mirrors://kde/stable/plasma/5.9.4/breeze-gtk-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>breeze-gtk</Name>
+        <Summary>Breeze widget theme for GTK 2 and 3</Summary>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

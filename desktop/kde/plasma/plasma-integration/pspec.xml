@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>plasma-integration</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Pisi Linux Admins</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>KDE5 Plasma artwork</Summary>
+        <Description>Artwork, styles and assets for the Breeze visual style for the Plasma Desktop</Description>
+        <Archive sha1sum="977766f2db69b3b56ae1e4529146048cb1853333" type="tarxz">mirrors://kde/stable/plasma/5.9.4/plasma-integration-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>breeze</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kwayland</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>            
+            <Dependency>libX11</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>plasma-integration</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kwayland</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>breeze</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/kconf_update</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path> 
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

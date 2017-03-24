@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>breeze-plymouth</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Breeze theme for Plymouth.</Summary>
+        <Description>Breeze theme for Plymouth.</Description>
+        <Archive type="tarxz" sha1sum="40ad8a7e0b6039c56f4e3fcd8bd7278f938da794">mirrors://kde/stable/plasma/5.9.4/breeze-plymouth-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>plymouth</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>breeze-plymouth</Name>
+        <Summary>Breeze theme for Plymouth.</Summary>
+        <RuntimeDependencies>
+            <Dependency>plymouth</Dependency>
+            <Dependency>grub2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/plymouth/themes/breeze/images/pisi.logo.png">pisi.logo.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/plymouth/themes/breeze/images/16bit/pisi.logo.png">pisi.16bit.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

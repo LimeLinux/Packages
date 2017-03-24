@@ -1,0 +1,142 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kwin</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>Pisi Linux Admins</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>KDE5 window manager</Summary>
+        <Description>KWin is the window manager of the K desktop environment.</Description>
+        <Archive sha1sum="ada131a6f06a2fb43c829cbb0174a0795d77d4b1" type="tarxz">mirrors://kde/stable/plasma/5.9.4/kwin-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>kactivities</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kdecoration</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwayland</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>kscreenlocker</Dependency>
+            <Dependency>libepoxy</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency versionFrom="13.0.4">mesa</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>xcb-util-wm</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>eudev</Dependency>
+            <Dependency>libinput</Dependency>
+            <Dependency>xcb-util-cursor</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">disable_qpa.patch</Patch>
+        </Patches>		
+    </Source>
+
+    <Package>
+        <Name>kwin</Name>
+        <RuntimeDependencies>
+            <Dependency>kactivities</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kdecoration</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwayland</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kscreenlocker</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>libepoxy</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency versionFrom="13.0.4">mesa</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>eudev</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libinput</Dependency>
+            <Dependency>xcb-util-cursor</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

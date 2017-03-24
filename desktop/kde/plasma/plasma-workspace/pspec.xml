@@ -1,0 +1,157 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>plasma-workspace</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+			<Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <IsA>app:gui</IsA>
+        <Summary>The KDE5 Plasma Workspace Components</Summary>
+        <Description>The KDE5 Plasma Workspace Components</Description>
+        <Archive sha1sum="82440b3558258c1ecc4e38ef0b7241fb2cfe38ba" type="tarxz">mirrors://kde/stable/plasma/5.9.4/plasma-workspace-5.9.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="1.8.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="4.6.60">qt5-phonon</Dependency>
+            <Dependency versionFrom="5.29.0">kactivities</Dependency>
+            <Dependency versionFrom="5.29.0">kcmutils</Dependency>
+            <Dependency versionFrom="5.29.0">kcrash</Dependency>
+            <Dependency versionFrom="5.29.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.29.0">kdeclarative</Dependency>
+            <Dependency versionFrom="5.29.0">kdelibs4-support</Dependency>
+            <Dependency versionFrom="5.29.0">kdesu</Dependency>
+            <Dependency versionFrom="5.29.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.29.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.29.0">kidletime</Dependency>
+            <Dependency versionFrom="5.29.0">kjsembed</Dependency>
+            <Dependency versionFrom="5.29.0">knewstuff</Dependency>
+            <Dependency versionFrom="5.29.0">knotifyconfig</Dependency>
+            <Dependency versionFrom="5.29.0">kpackage</Dependency>
+            <Dependency versionFrom="5.29.0">krunner</Dependency>
+            <Dependency versionFrom="5.29.0">ktextwidgets</Dependency>
+            <Dependency versionFrom="5.29.0">kwallet</Dependency>
+            <Dependency versionFrom="5.29.0">kwayland</Dependency>
+            <Dependency versionFrom="5.9.4">libksysguard</Dependency>
+            <Dependency versionFrom="5.29.0">networkmanager-qt</Dependency>
+            <Dependency versionFrom="5.29.0">plasma-framework</Dependency>
+            <Dependency versionFrom="5.6.1">qt5</Dependency>
+            <Dependency>baloo</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kscreenlocker</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kwin</Dependency>
+            <Dependency>kxmlrpcclient</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>zlib</Dependency>			
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>plasma-workspace</Name>
+        <RuntimeDependencies>
+            <Dependency>baloo</Dependency>
+            <Dependency>kactivitymanagerd</Dependency>
+            <Dependency>kactivities</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kde-cli-tools</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesu</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kjs</Dependency>
+            <Dependency>kjsembed</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>krunner</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kwayland</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kxmlrpcclient</Dependency>
+            <Dependency>libdbusmenu-qt</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libkscreen</Dependency>
+            <Dependency>libksysguard</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXau</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>networkmanager-qt</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>prison</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency versionFrom="5.6.2">qt5</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>kscreenlocker</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+            <Dependency>xorg-app</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/pam.d</Path>
+            <Path fileType="config">/etc/env.d</Path>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="applications">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path> 
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/qt5/plugins</Path>
+            <Path fileType="library">/usr/lib/qt5/qml</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+            <Path fileType="executable">/usr/lib/libexec</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/etc/pam.d/kde" permission="0644" owner="root">kde.pam</AdditionalFile>
+            <AdditionalFile target="/etc/pam.d/kde-np" permission="0644" owner="root">kde-np.pam</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>5.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
