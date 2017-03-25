@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>telepathy-qt</Name>
+        <Homepage>http://telepathy.freedesktop.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Qt based classes for Telepathy communication framework</Summary>
+        <Description>The Telepathy project is about building a unified framework for many different kinds of real-time communications. telepathy-qt contains Qt-based base and proxy classes for use in connection managers and clients.</Description>
+        <Archive sha1sum="a593e0d107c36ed4d79cb84e7eab81a7d9d85019" type="targz">http://telepathy.freedesktop.org/releases/telepathy-qt/telepathy-qt-0.9.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>libxml2</Dependency>
+<!--             <Dependency>farstream</Dependency> -->
+<!--             <Dependency>telepathy-farstream</Dependency> -->
+            <Dependency>doxygen</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">gstreamer-1.6.patch</Patch>
+            <Patch level="1">glibc-2.20.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>telepathy-qt</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>telepathy-glib</Dependency>
+<!--             <Dependency>telepathy-farstream</Dependency> -->
+            <Dependency>doxygen</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-09</Date>
+            <Version>0.9.6</Version>
+            <Comment>Release Bump</Comment>
+            <Name>Pisi Linux Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
