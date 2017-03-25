@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libaccounts-qt</Name>
+        <Homepage>https://gitlab.com/accounts-sso/libaccounts-qt</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>Qt5-based client library for accessing the online accounts database</Summary>
+        <Description>Qt5-based client library for accessing the online accounts database</Description>
+        <Archive sha1sum="eaed098ecb8241fb094e8b43fde769fdf059031f" type="tarbz2">https://gitlab.com/accounts-sso/libaccounts-qt/repository/archive.tar.bz2?ref=VERSION_1.15</Archive>
+        <BuildDependencies>
+            <Dependency>doxygen</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libaccounts-glib</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libaccounts-qt</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libaccounts-glib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="include">/usr/include/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-25</Date>
+            <Version>1.15</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
