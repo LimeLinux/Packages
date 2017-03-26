@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>lilii</Name>
+        <Summary xml:lang="tr">Lime Linux için Sistem Yükleyici</Summary>
+        <Description xml:lang="tr">Sisteminize Lime Linux kurmanız için bir sistem yükleyici.</Description>
+    </Source>
+</PISI>

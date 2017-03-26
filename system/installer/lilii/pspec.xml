@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lilii</Name>
+        <Homepage>http://limelinux.com</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>metehan@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>lilii</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>System Installer for Lime Linux</Summary>
+        <Description>System Installer for Lime Linux.</Description>
+        <Archive sha1sum="2d883e830cc79eaf22bbe8adfcfbac2d52ae1c07" type="targz">https://github.com/mthnzbk/lilii/archive/alpha1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3-qt5</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>python3-setuptools</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>lilii</Name>
+        <RuntimeDependencies>
+            <Dependency>python3-qt5</Dependency>
+			<Dependency>python3-pillow</Dependency>
+			<Dependency>python3-parted</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/lilii</Path>
+            <Path fileType="data">/usr/lib/python3.6/site-packages</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localdata">/usr/share/lilii/languages</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-20</Date>
+            <Version>1.0a</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>metehan@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
