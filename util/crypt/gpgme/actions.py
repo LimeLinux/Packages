@@ -6,9 +6,11 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
+     shelltools.system("sed 's#@libsuffix@#.so#' -i lang/cpp/src/GpgmeppConfig.cmake.in.in")
      autotools.configure("--disable-fd-passing \
                           --disable-static \
                           --disable-gpgsm-test")
