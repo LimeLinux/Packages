@@ -11,6 +11,9 @@ from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 def setup():
+    shelltools.export("QT5LINK", "/usr/lib/qt5/bin")
+    shelltools.export("QT5DIR", "/usr/lib/qt5")
+    shelltools.export("QMLDIR", "/usr/lib/qt5/qml")
     qt5.configure(parameters="QMAKE_CFLAGS_ISYSTEM=")
 
 def build():

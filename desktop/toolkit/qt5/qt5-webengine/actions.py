@@ -14,8 +14,9 @@ def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")
     
-    #shelltools.export("QT5LINK", "/usr/lib/qt5/bin")
-    #shelltools.export("QT5DIR", "/usr/lib/qt5")
+    shelltools.export("QT5LINK", "/usr/lib/qt5/bin")
+    shelltools.export("QT5DIR", "/usr/lib/qt5")
+    shelltools.export("QMLDIR", "/usr/lib/qt5/qml")
    # shelltools.export("CFLAGS", "%s -I/usr/lib/sqlite3.11.0.0" % get.CFLAGS())
     shelltools.system("qmake WEBENGINE_CONFIG+=use_proprietary_codecs ../qtwebengine.pro")
     

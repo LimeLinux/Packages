@@ -35,6 +35,7 @@
             <Dependency>gtk3</Dependency>
             <Dependency>libxml2</Dependency>
             <Dependency>itstool</Dependency>
+            <Dependency>webkit2gtk</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -54,12 +55,13 @@
             <Dependency>libsecret</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libspectre</Dependency>
-            <Dependency>poppler</Dependency>3
+            <Dependency>poppler</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>zlib</Dependency>
             <Dependency>glib2</Dependency>
             <Dependency>libxml2</Dependency>
             <Dependency>libX11</Dependency>
+            <Dependency>webkit2gtk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -79,7 +81,7 @@
 
 
     <History>
-	    <Update release="3">
+	    <Update release="4">
             <Date>2017-03-16</Date>
             <Version>1.18.0</Version>
             <Comment>version bump</Comment>
