@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>audiofile</Name>
+        <Homepage>http://www.68k.org/~michael/audiofile/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>An elegant API for accessing audio files</Summary>
+        <Description>audiofile provides a uniform and elegant API for accessing a variety of audio file formats, such as AIFF/AIFF-C, WAVE, NeXT/Sun .snd/.au, Berkeley/IRCAM/CARL Sound File, Audio Visual Research, Amiga IFF/8SVX, and NIST SPHERE.</Description>
+        <Archive sha1sum="3aba3ef724b1b5f88cfc20ab9f8ce098e6c35a0e" type="targz">http://audiofile.68k.org/audiofile-0.3.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>flac</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>unsigned-gcc6.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>audiofile</Name>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2017-02-16</Date>
+            <Version>0.3.6</Version>
+            <Comment>Version fix</Comment>
+            <Name>Pisi Linux Community</Name>
+            <Email>admin@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
