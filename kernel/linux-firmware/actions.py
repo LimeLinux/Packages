@@ -26,15 +26,11 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.insinto("/lib/firmware", "mix/*")
 
     # Remove installed and LIC* files from /lib/firmware
     pisitools.remove("/lib/firmware/GPL-3")
-    pisitools.remove("/lib/firmware/LICENCE*")
-    pisitools.remove("/lib/firmware/LICENSE*")
     pisitools.remove("/lib/firmware/configure")
     pisitools.remove("/lib/firmware/Makefile")
-    pisitools.removeDir("/lib/firmware/mix")
     #conflict on alsa-firmware
     #pisitools.remove("/lib/firmware/ctefx.bin")
     pisitools.remove("/lib/firmware/ctspeq.bin")

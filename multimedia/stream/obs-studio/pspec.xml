@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>obs-studio</Name>
+        <Homepage>https://obsproject.com/</Homepage>
+        <Packager>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>obs-studio</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>OBS-Studio is a rewrite of what was formerly known as Open Broadcaster Software</Summary>
+        <Description>OBS-Studio software was originally designed for recording and streaming live video content, efficiently</Description>
+        <Archive sha1sum="c7d3b4fc48ca4b7ec2c4e5a6918b1eefbd68f63c" type="targz">https://github.com/jp9000/obs-studio/archive/17.0.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>x264</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>jansson</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
+        </BuildDependencies>        
+    </Source>
+
+    <Package>
+        <Name>obs-studio</Name>        
+        <RuntimeDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>x264</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>jansson</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>            
+        </RuntimeDependencies>
+        <Files>            
+            <Path fileType="executable">/usr/bin</Path>            
+            <Path fileType="library">/usr/lib</Path>            
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>            
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>        
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/obs-studio.desktop">obs-studio.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/obs-logo.png">obs-logo.png</AdditionalFile>
+        </AdditionalFiles>       
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-10</Date>
+            <Version>17.0.2</Version>
+            <Comment>First release</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

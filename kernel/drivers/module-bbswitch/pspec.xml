@@ -21,7 +21,7 @@
     <Package>
         <Name>module-bbswitch</Name>
         <RuntimeDependencies>
-            <Dependency version="4.6.4">kernel</Dependency>
+            <Dependency version="4.9.18">kernel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library" permanent="true">/lib/modules</Path>
@@ -35,8 +35,8 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-02-10</Date>
+        <Update release="2">
+            <Date>2017-03-28</Date>
             <Version>0.8</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>

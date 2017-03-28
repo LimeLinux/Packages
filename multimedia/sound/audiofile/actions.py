@@ -6,19 +6,24 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-     shelltools.system("sed 's#@libsuffix@#.so#' -i lang/cpp/src/GpgmeppConfig.cmake.in.in")
-     autotools.configure("--disable-fd-passing \
-                          --disable-static \
-                          --disable-gpgsm-test")
+    # Don't build examples
+    pisitools.dosed("Makefile.am", "^(SRC_SUBDIRS.*?) examples", r"\1")
+
+    autotools.autoreconf("-vfi")
+    autotools.configure("--disable-static \
+                         --disable-werror \
+                         --enable-largefile")
 
 def build():
+    autotools.make()
+
+def check():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README", "THANKS", "TODO")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "README", "TODO", "NEWS")
