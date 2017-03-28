@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mlt</Name>
+        <Summary xml:lang="tr">Televizyon yayını için tasarlanmış bir çoklu ortam altyapısı</Summary>
+        <Description xml:lang="tr">MLT televizyon yayını için tasarlanmış, açık kaynak kodlu bir çoklu ortam alyapısıdır.</Description>
+    </Source>
+</PISI>
