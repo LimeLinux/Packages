@@ -11,10 +11,10 @@
         <IsA>app:gui</IsA>
         <Summary>Kernel module allowing to switch dedicated graphics card on Optimus laptops</Summary>
         <Description>kernel module allowing to switch dedicated graphics card on Optimus laptops</Description>
-        <BuildDependencies>
-            <Dependency version="4.6.4">kernel-module-headers</Dependency>
-        </BuildDependencies>
         <Archive sha1sum="e282ee682d794e3962baa4dead01917c42571e78" type="targz">https://github.com/Bumblebee-Project/bbswitch/archive/v0.8.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency version="4.9.18">kernel-module-headers</Dependency>
+        </BuildDependencies>
         <Patches>
         </Patches>
     </Source>
