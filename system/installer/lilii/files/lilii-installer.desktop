@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Lime GNU/Linux Installer
+Name[tr]=Lime GNU/Linux Yükleyicisi
+GenericName=Lime GNU/Linux Installer
+GenericName[tr]=Lime GNU/Linux Yükleyicisi
+Exec=sudo lilii
+Icon=/usr/share/pixmaps/lilii.png
+Terminal=false
+Categories=Application;System;
+StartupNotify=true

@@ -5,7 +5,9 @@
 # See the file http://www.gnu.org/licenses/gpl.txt
 #
 
-from pisi.actionsapi import pythonmodules
+from pisi.actionsapi import pythonmodules , pisitools
 
 def install():
     pythonmodules.install()
+
+    pisitools.dodoc("ChangeLog","README")

@@ -6,7 +6,7 @@
         <Name>lilii</Name>
         <Homepage>http://limelinux.com</Homepage>
         <Packager>
-            <Name>Lime GNU/LINUX Community</Name>
+            <Name>Metehan Özbek</Name>
             <Email>metehan@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>System Installer for Lime Linux</Summary>
         <Description>System Installer for Lime Linux.</Description>
-        <Archive sha1sum="2d883e830cc79eaf22bbe8adfcfbac2d52ae1c07" type="targz">https://github.com/mthnzbk/lilii/archive/alpha1.tar.gz</Archive>
+        <Archive sha1sum="ab465474121499a20bf97099d7694940d0c03c73" type="targz">https://github.com/LimeLinux/lilii/archive/1.0-rc1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3-qt5</Dependency>
             <Dependency>python3</Dependency>
@@ -34,18 +34,22 @@
             <Path fileType="data">/usr/share/lilii</Path>
             <Path fileType="data">/usr/lib/python3.6/site-packages</Path>
             <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="localdata">/usr/share/lilii/languages</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/lilii-installer.desktop" permission="0644" owner="root">lilii-installer.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/lilii.png" permission="0644" owner="root">lilii.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
         <Update release="1">
-            <Date>2017-03-20</Date>
+            <Date>2017-03-29</Date>
             <Version>1.0a</Version>
             <Comment>First release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
+            <Name>Metehan Özbek</Name>
             <Email>metehan@limelinux.com</Email>
         </Update>
     </History>

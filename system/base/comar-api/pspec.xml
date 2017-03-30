@@ -13,11 +13,11 @@
         <IsA>library</IsA>
         <Summary>Utility functions for Comar scripts</Summary>
         <Description>Generic utility library for common Comar script operations.</Description>
-        <Archive sha1sum="80afa9f07cd15b9042cce9c1b8f1c4dcd457c552" type="targz">http://source.limelinux.com/1.0/comar-api-2.4.9.tar.gz</Archive>
+        <Archive sha1sum="b98a889cb7abd589c50d9d6dcfc8a3c466a26864" type="tarxz">http://source.limelinux.com/1.0/comar-api-2.4.9.tar.xz</Archive>
         <Patches>
-            <Patch level="1">run_dir.patch</Patch>
+            <!--Patch level="1">run_dir.patch</Patch>
             <Patch level="1">limelinux.patch</Patch>
-            <Patch level="1">add-stopdependencies.patch</Patch>
+            <Patch level="1">add-stopdependencies.patch</Patch-->
         </Patches>
     </Source>
 
@@ -26,19 +26,13 @@
         <Files>
             <Path fileType="library">/usr/lib/limelinux</Path>
             <Path fileType="library">/usr/lib/python2.7</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>2.4.9</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-12-21</Date>
+        <Update release="3">
+            <Date>2017-03-21</Date>
             <Version>2.4.9</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
