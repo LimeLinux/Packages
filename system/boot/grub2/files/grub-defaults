@@ -41,12 +41,12 @@ GRUB_COLOR_HIGHLIGHT="black/white"
 
 #GRUB_BACKGROUND="/usr/share/grub/pisi-grub-bg.png"
 
-#GRUB_FONT="/usr/share/grub/unicode.pf2"
+GRUB_FONT="/boot/grub2/unicode.pf2"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
 #GRUB_THEME="/path/to/gfxtheme"
 #Possible locations
-#GRUB_THEME="/usr/share/grub/themes/limelinux/theme.txt"
+GRUB_THEME="/usr/share/grub/themes/limelinux/theme.txt"
 # Uncomment to get a beep at GRUB start
 #GRUB_INIT_TUNE="480 440 1"
 
