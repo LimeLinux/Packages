@@ -35,6 +35,7 @@
         <RuntimeDependencies>
             <Dependency>gettext</Dependency>
             <Dependency>timezone</Dependency>
+            <Dependency>gd</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
