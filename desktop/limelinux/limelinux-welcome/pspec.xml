@@ -12,9 +12,9 @@
         <License>GPLv3</License>
         <Icon>limelinux-welcome</Icon>
         <IsA>app:gui</IsA>
-        <Summary>Pisi Linux Welcome Application</Summary>
-        <Description>Pisi Linux Welcome Application</Description>
-        <Archive sha1sum="3752e7dba8c7804bac1755b79966316a7bc1a91b" type="targz">https://github.com/LimeLinux/lime-welcome/archive/1.0Beta4.tar.gz</Archive>
+        <Summary>Lime Linux Welcome Application</Summary>
+        <Description>Lime Linux Welcome Application</Description>
+        <Archive sha1sum="e38825340802c48d18b98c97800973d9968ddbb3" type="targz">https://github.com/LimeLinux/lime-welcome/archive/1.0Beta3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
             <Dependency>python3-qt5</Dependency>
@@ -34,7 +34,7 @@
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="localdata">/usr/share/welcome/languages</Path>
+            <Path fileType="localdata">/usr/share/limelinux-welcome/languages</Path>
             <Path fileType="config">/etc</Path>
         </Files>
     </Package>
