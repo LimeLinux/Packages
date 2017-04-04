@@ -28,7 +28,7 @@
             <Dependency>libgcc</Dependency>
             <Dependency>qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
-            <Dependency>vlc-libs</Dependency>
+            <Dependency>vlc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
