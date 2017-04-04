@@ -12,7 +12,7 @@
         <License>MIT</License>
         <Summary>X.Org X Server</Summary>
         <Description>X server is the main application that allows a graphical interface.</Description>
-        <Archive sha1sum="13c81e0ebb6ac1359a611d0503805c6dc0315477" type="tarbz2">mirrors://xorg/individual/xserver/xorg-server-1.19.1.tar.bz2</Archive>
+        <Archive sha1sum="77f580ffa22a8bbcc3536e74e19114e446417a9c" type="tarbz2">mirrors://xorg/individual/xserver/xorg-server-1.19.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>font-util</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
@@ -55,8 +55,8 @@
             <Dependency>libXfont2</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">xorg-server-1.19.1-add_prime_support-1.patch</Patch>
-            <!--Patch level="1">xorg-server-1.19.0.patch</Patch-->
+            <Patch level="1">xserver-autobind-hotplug.patch</Patch>
+            <Patch level="1">nvidia-add-modulepath-support.patch</Patch>
         </Patches>
     </Source>
 
@@ -248,23 +248,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-02-08</Date>
-            <Version>1.19.1</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2017-02-08</Date>
-            <Version>1.19.1</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2017-02-08</Date>
-            <Version>1.19.1</Version>
+        <Update release="4">
+            <Date>2017-04-04</Date>
+            <Version>1.19.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
