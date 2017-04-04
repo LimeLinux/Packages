@@ -1,10 +1,11 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Encoding=UTF-8
 Name=Firefox
 GenericName=Web Browser
 Comment=Browse the Web
 Exec=firefox
-Icon=/usr/share/pixmaps/firefox.png
+Icon=/usr/share/icons/hicolor/scalable/apps/firefox.svg
 Terminal=false
 Type=Application
 StartupNotify=true

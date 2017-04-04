@@ -108,6 +108,7 @@
         <AdditionalFiles>
             <!-- Desktop file -->
             <AdditionalFile target="/usr/share/applications/mozillafirefox.desktop" permission="0644" owner="root">limelinux/mozillafirefox.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/hicolor/scalable/apps/firefox.svg" permission="0644" owner="root">limelinux/firefox.svg</AdditionalFile>
 
             <!-- Default options -->
             <AdditionalFile target="/usr/lib/firefox/browser/defaults/preferences/firefox-l10n.js" permission="0644" owner="root">limelinux/firefox-l10n.js</AdditionalFile>
