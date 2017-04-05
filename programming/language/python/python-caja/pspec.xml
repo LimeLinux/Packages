@@ -18,6 +18,7 @@
             <Dependency>gtk3</Dependency>
             <Dependency>caja</Dependency>
             <Dependency>gtk-doc</Dependency>
+            <Dependency>python-pygobject3</Dependency>
         </BuildDependencies>
     </Source>
 
