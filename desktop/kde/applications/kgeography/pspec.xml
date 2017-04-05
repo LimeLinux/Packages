@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kgeography</Name>
+        <Homepage>http://edu.kde.org/applications/all/kgeography</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>kgeography</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>KGeography is a geography learning tool</Summary>
+        <Description>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</Description>
+        <Archive sha1sum="ace42c2a9ab8d1e4b0ce7f4fd2e940e758bdd3d3" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kgeography-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kgeography</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

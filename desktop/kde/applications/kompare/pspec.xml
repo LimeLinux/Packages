@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kompare</Name>
+        <Homepage>http://www.kde.org/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.sdk</PartOf>
+        <Summary>File difference viewer</Summary>
+        <Description>Diff/Patch Frontend. </Description>
+        <Archive sha1sum="fe0c6314b2c825343150acd2e7435cd24b016b38" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kompare-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>libkomparediff2</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kompare</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libkomparediff2</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kfind</Name>
+        <Homepage>https://www.kde.org/applications/utilities/kfind/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPL</License>
+        <Summary>Search and Replace Tool</Summary>
+        <Description>KFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.</Description>
+        <Archive sha1sum="2ec5667a1353ffbb64d6013fcfb4918af5756cb2" type="tarxz">http://download.kde.org/stable/applications/16.12.3/src/kfind-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kfind</Name>
+        <Summary>Find Files/Folders</Summary>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

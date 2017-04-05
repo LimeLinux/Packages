@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>marble</Name>
+        <Homepage>http://edu.kde.org/applications/all/marble</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>marble</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Virtual globe and eorld atlas</Summary>
+        <Description>Marble is a virtual globe and world atlas that you can use to learn more about the Earth.</Description>
+        <Archive sha1sum="2da0af34acb95c2674f27843b1b3dd2a27fbc345" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/marble-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.7.1">qt5-webkit</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>quazip</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>krunner</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>shared-mime-info</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>marble</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>krunner</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency versionFrom="5.7.1">qt5-webkit</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/mkspecs</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

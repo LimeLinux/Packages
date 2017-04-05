@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kmplot</Name>
+        <Homepage>http://kde.org/applications/education/kmplot/</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>FDL</License>
+        <License>GPL</License>
+        <License>LGPL</License>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>Mathematical Function Plotter</Summary>
+        <Description>KmPlot is a program to draw graphs, their integrals or derivatives. It supports different systems of coordinates like the Cartesian or the polar coordinate system. The graphs can be colorized and the view is scalable, so that you are able to zoom to the level you need.</Description>
+        <Archive type="tarxz" sha1sum="d267c8e28af4bcba529e789bca21333b31312109">mirrors://kde/stable/applications/16.12.3/src/kmplot-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>qt5</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kmplot</Name>
+        <Summary>Mathematical Function Plotter</Summary>
+        <RuntimeDependencies>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

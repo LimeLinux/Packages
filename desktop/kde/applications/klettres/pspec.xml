@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>klettres</Name>
+        <Homepage>http://edu.kde.org/applications/all/klettres</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>klettres</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>An alphabet learning application</Summary>
+        <Description>KLettres is an application specially designed to help the user to learn alphabet in a new language and then to learn to read simple syllables. The user can be a young child aged from two and a half or an adult that wants to learn the basics of a foreign language.</Description>
+        <Archive sha1sum="aec3f8fe92150c2b12ed2a0b6a6471f7715e0425" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/klettres-16.12.3.tar.xz</Archive>
+        <BuildDependencies>  
+            <Dependency>qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>klettres</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc/xdg</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>akonadi-calendar</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Akonadi calendar integration</Summary>
+        <Description>Calendar integration for Akonadi.</Description>
+        <Archive sha1sum="72751fc122e1689ea9d80878c3436213a4f1ecbb" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/akonadi-calendar-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>prison</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>akonadi-calendar</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>prison</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

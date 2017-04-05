@@ -1,0 +1,71 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kig</Name>
+        <Homepage>http://edu.kde.org/applications/all/kig</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>kig</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>An interactive geometry application</Summary>
+        <Description>Kig is an application for interactive geometry.</Description>
+        <Archive sha1sum="89f2d8b88927a5785799d54a3957248dd50e8ced" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kig-16.12.3.tar.xz</Archive>
+        <BuildDependencies> 
+            <Dependency>qt5</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>pkgconfig</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kig</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

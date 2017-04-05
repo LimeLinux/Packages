@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libksane</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.kde.graphics</PartOf>
+        <Summary>SANE library interface for KDE</Summary>
+        <Description>libksane is a SANE library interface for KDE.</Description>
+        <Archive sha1sum="b8a6f7f424aec436e038602a48c5e252aeacb078" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/libksane-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>sane-backends</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libksane</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>sane-backends</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

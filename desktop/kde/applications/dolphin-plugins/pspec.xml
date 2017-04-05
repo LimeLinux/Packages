@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dolphin-plugins</Name>
+        <Homepage>http://www.kde.org/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.kde.sdk</PartOf>
+        <Summary>Extra dolphin plugins</Summary>
+        <Description>This package contains plugins that offer integration in Dolphin with the following version control systems:</Description>
+        <Archive sha1sum="829cf59ab9d900e19d034a3a4b33e9ae7549dbae" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/dolphin-plugins-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>dolphin</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>dolphin-plugins</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>dolphin</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

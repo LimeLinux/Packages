@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kdepim-runtime</Name>
+        <Homepage>http://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <Icon>kontact</Icon>
+        <IsA>library</IsA>
+        <IsA>app:gui</IsA>
+        <Summary>KDE5 PIM Runtime Environment</Summary>
+        <Description>kdepim-runtime contains KDE5 PIM (Personal Information Management) runtime environment like akonadi agents.</Description>
+        <Archive sha1sum="64d2e83322cc580bbbe4aaf82c7720b614de41de" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kdepim-runtime-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.29.0">kdoctools</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libqjson</Dependency>
+            <Dependency>shared-mime-info</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>akonadi-search</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kross</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>kalarmcal</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>kmbox</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>libkgapi</Dependency>
+            <Dependency>kholidays</Dependency>
+            <Dependency>ksyndication</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>akonadi-notes</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency versionFrom="5.29.0">prison</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kdepim-runtime</Name>
+        <RuntimeDependencies>
+            <Dependency>akonadi</Dependency>
+            <Dependency>libkgapi</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>kmbox</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kalarmcal</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>akonadi-notes</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

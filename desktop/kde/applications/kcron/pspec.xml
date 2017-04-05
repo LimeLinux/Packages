@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kcron</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>kcron</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Graphical task scheduler</Summary>
+        <Description>Kcron is a graphical frontend to the cron system, used to schedule regular tasks on a Unix system.</Description>
+        <Archive sha1sum="0b37feb256d2232759d84e1486ce3bf5b02eff4c" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kcron-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kiconthemes</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kcron</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

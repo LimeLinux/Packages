@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kmail-account-wizard</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>Kmail Account Wizard</Summary>
+        <Description>Kmail Account Wizard</Description>
+        <Archive sha1sum="1a9e35462a8797912e4bdbf772a726c878fdf5f7" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kmail-account-wizard-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gpgme</Dependency>
+             <Dependency>extra-cmake-modules</Dependency>
+             <Dependency>kcmutils</Dependency>
+             <Dependency>kcrash</Dependency>
+             <Dependency>kdbusaddons</Dependency>
+             <Dependency>kdoctools</Dependency>
+             <Dependency>prison</Dependency>
+             <Dependency>akonadi</Dependency>
+             <Dependency>akonadi-search</Dependency>
+             <Dependency>grantleetheme</Dependency>
+             <Dependency>kdepim-apps-libs</Dependency>
+             <Dependency>kpimtextedit</Dependency>
+             <Dependency>libkdepim</Dependency>
+             <Dependency>libkleo</Dependency>
+             <Dependency>pimcommon</Dependency>
+             <Dependency>qt5</Dependency>
+             <Dependency>knotifyconfig</Dependency>
+             <Dependency>ktexteditor</Dependency>
+             <Dependency>kitemmodels</Dependency>
+             <Dependency>akonadi-contacts</Dependency>
+             <Dependency>kidentitymanagement</Dependency>
+             <Dependency>kldap</Dependency>
+             <Dependency>cyrus-sasl</Dependency>
+             <Dependency>kmailtransport</Dependency>
+             <Dependency>akonadi-mime</Dependency>
+             <Dependency>mailcommon</Dependency>
+             <Dependency>messagelib</Dependency>
+             <Dependency>kimap</Dependency>
+             <Dependency>kross</Dependency>
+             <Dependency>knewstuff</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kmail-account-wizard</Name>
+        <Summary>Kmail Account Wizard</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kldap</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kross</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kaddressbook</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>KDE contact manager</Summary>
+        <Description>KAddressBook reborn to make your data available to all your applications</Description>
+        <Archive sha1sum="bdfacecb22b64603077dcc0eb86e0db73cce569a" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kaddressbook-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gpgme</Dependency>
+             <Dependency>extra-cmake-modules</Dependency>
+             <Dependency>kcmutils</Dependency>
+             <Dependency>kcrash</Dependency>
+             <Dependency>kdbusaddons</Dependency>
+             <Dependency>kdoctools</Dependency>
+             <Dependency>prison</Dependency>
+             <Dependency>akonadi</Dependency>
+             <Dependency>akonadi-search</Dependency>
+             <Dependency>grantleetheme</Dependency>
+             <Dependency>kdepim-apps-libs</Dependency>
+             <Dependency>kpimtextedit</Dependency>
+             <Dependency>libkdepim</Dependency>
+             <Dependency>libkleo</Dependency>
+             <Dependency>pimcommon</Dependency>
+             <Dependency>qt5</Dependency>
+             <Dependency>kitemmodels</Dependency>
+             <Dependency>kontactinterface</Dependency>
+             <Dependency>mailcommon</Dependency>
+             <Dependency>akonadi-mime</Dependency>
+             <Dependency>messagelib</Dependency>
+             <Dependency>akonadi-contacts</Dependency>
+             <Dependency>kimap</Dependency>
+             <Dependency>cyrus-sasl</Dependency>
+             <Dependency>kidentitymanagement</Dependency>
+             <Dependency>grantlee</Dependency>
+             <Dependency>kemoticons</Dependency>
+             <Dependency>kinit</Dependency>
+             <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kaddressbook</Name>
+        <Summary>KDE contact manager</Summary>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>akonadi-search</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kde-dev-scripts</Name>
+        <Homepage>https://projects.kde.org/projects/kde/kdesdk/kde-dev-scripts</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <PartOf>desktop.kde.sdk</PartOf>
+        <Summary>Scripts and setting files useful during development of KDE software</Summary>
+        <Description>Scripts and setting files useful during development of KDE software</Description>
+        <Archive type="tarxz" sha1sum="64d89b7698ee312a1ec20a45eb5a111011cca801">mirrors://kde/stable/applications/16.12.3/src/kde-dev-scripts-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kde-dev-scripts</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+        </RuntimeDependencies>
+        <Summary>Scripts and setting files useful during development of KDE software</Summary>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

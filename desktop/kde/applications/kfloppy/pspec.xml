@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kfloppy</Name>
+        <Homepage>http://kde.org/applications/utilities/kfloppy</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>kfloppy</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.utils</PartOf>
+        <Summary>A floppy formatter</Summary>
+        <Description>KFloppy is a utility that provides a straightforward graphical means to format 3.5" and 5.25" floppy disks.</Description>
+        <Archive sha1sum="1c76846235f8c322fb8af42d8e918ef6ffb20ef9" type="tarxz">http://download.kde.org/stable/applications/16.12.3/src/kfloppy-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kfloppy</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

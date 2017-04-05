@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kbounce</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>kbounce</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.games</PartOf>
+        <Summary>Ball bouncing game</Summary>
+        <Description>KBounce is a single player arcade game with the elements of puzzle. It is played on a field, surrounded by walls, with two or more balls that move about in the field bouncing off of walls. The player can build new walls, decreasing the size of the active field. The goal of the game is to fill at least 75% of the field and advance to the next level.</Description>
+        <Archive sha1sum="e908cc4e0d887d4de519b3db53b8639cf049da38" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kbounce-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kbounce</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>step</Name>
+        <Homepage>http://kde.org/applications/education/step/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>Interactive Physical Simulator</Summary>
+        <Description>Step is an interactive physical simulator. It allows you to explore the physical world through simulations.</Description>
+        <Archive sha1sum="8277707c3402da763fe00cbc7e2d3748827e3c2f" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/step-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>  
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kplotting</Dependency>
+            <Dependency>eigen3</Dependency>
+            <Dependency>pkgconfig</Dependency>
+            <Dependency>cln</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>step</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>cln</Dependency>
+            <Dependency>gsl</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kplotting</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kservice</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

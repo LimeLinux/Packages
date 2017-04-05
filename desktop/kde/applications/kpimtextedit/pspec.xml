@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kpimtextedit</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:gui</IsA>
+        <Summary>A textedit with PIM-specific features.</Summary>
+        <Description>Text Edit with KDE-PIM specific features.</Description>
+        <Archive sha1sum="9f283a436fc5d0afb3e6679c626936a1208d12c3" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kpimtextedit-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>grantlee</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kpimtextedit</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

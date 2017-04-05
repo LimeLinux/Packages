@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pim-sieve-editor</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>Mail sieve editor</Summary>
+        <Description>Mail sieve editor</Description>
+        <Archive sha1sum="408f761f0caff5c582141cea2ff146a9e81b27bc" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/pim-sieve-editor-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+             <Dependency>kbookmarks</Dependency>
+             <Dependency>kcrash</Dependency>
+             <Dependency>kdbusaddons</Dependency>
+             <Dependency>kdoctools</Dependency>
+             <Dependency>kiconthemes</Dependency>
+             <Dependency>kio</Dependency>
+             <Dependency>kmailtransport</Dependency>
+             <Dependency>kpimtextedit</Dependency>
+             <Dependency>messagelib</Dependency>
+             <Dependency>pimcommon</Dependency>
+             <Dependency>qt5</Dependency>
+             <Dependency>akonadi-mime</Dependency>
+             <Dependency>akonadi</Dependency>
+             <Dependency>kitemmodels</Dependency>
+             <Dependency>kmime</Dependency>
+             <Dependency>cyrus-sasl</Dependency>
+             <Dependency>kcontacts</Dependency>
+             <Dependency>akonadi-contacts</Dependency>
+             <Dependency>kimap</Dependency>
+             <Dependency>libksieve</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>pim-sieve-editor</Name>
+        <Summary>Mail sieve editor</Summary>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libksieve</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

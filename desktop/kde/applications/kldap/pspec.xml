@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kldap</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>LDAP access API for KDE</Summary>
+        <Description>Allows LDAP accessing with a convenient Qt style C++ API.</Description>
+        <Archive sha1sum="6956a1994fbfad168e74662ec997d52454c5a73f" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kldap-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>xapian-core</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kmbox</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kmbox</Dependency>
+            <Dependency>openldap</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kldap</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>openldap</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

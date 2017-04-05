@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>parley</Name>
+        <Homepage>http://edu.kde.org/applications/all/parley</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>parley</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>Parley is a program to help you memorize things.</Summary>
+        <Description>Parley is a program to help you memorize things. Parley supports many language specific features but can be used for other learning tasks just as well. It uses the spaced repetition learning method, also known as flash cards. Creating new vocabulary collections with Parley is easy, but of course it is even better if you can use some of our premade files. Have a look at the KDE-Files.org page or use the "Download New Collections" feature directly in Parley.</Description>
+        <Archive sha1sum="40226676b2ef02cda733f46d2b32df10f4267192" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/parley-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libkeduvocdocument</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kross</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>parley</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libkeduvocdocument</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kross</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc/xdg</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>messagelib</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:library</IsA>
+        <Summary>KDE PIM library providing support for mail applications</Summary>
+        <Description>KDE PIM library providing support for mail applications</Description>
+        <Archive sha1sum="7d6a342ff178d815661d48ee4e4dcf3b28c4bcd1" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/messagelib-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>mailimporter</Dependency>
+            <Dependency>libgravatar</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>kmbox</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>akonadi-search</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>kldap</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>akonadi-notes</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>syntax-highlighting</Dependency>
+            <Dependency versionFrom="2.4.41">openldap</Dependency>
+            <Dependency versionFrom="2.1.26">cyrus-sasl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>messagelib</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>akonadi-notes</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>mailimporter</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kmbox</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>akonadi-mime</Dependency> 
+            <Dependency>kitemviews</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>libgravatar</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>akonadi-search</Dependency>
+            <Dependency>kconfigwidgets</Dependency> 
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+            <Dependency>syntax-highlighting</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

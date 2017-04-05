@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kdegraphics-mobipocket</Name>
+        <Homepage>https://www.kde.org/applications/graphics/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>FDL</License>
+        <License>GPL</License>
+        <License>LGPL</License>
+        <Summary>A collection of plugins to handle mobipocket files</Summary>
+        <Description>A collection of plugins to handle mobipocket files</Description>
+        <Archive sha1sum="88c4035ef901bf8c26a65d8e54cc62e664bfe47d" type="tarxz">http://download.kde.org/stable/applications/16.12.3/src/kdegraphics-mobipocket-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>qt5</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>kdegraphics-mobipocket</Name>
+        <Summary>A collection of plugins to handle mobipocket files</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>qt5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

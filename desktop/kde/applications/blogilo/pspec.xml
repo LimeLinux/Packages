@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>blogilo</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>A KDE blogging client</Summary>
+        <Description>Blogilo is an fully-featured blogging client. It allows local creation and editing of blog posts. Various blogging APIs are supported for publishing.</Description>
+        <Archive sha1sum="e3f9dde4a2a6065a54e853a053cda7a1e3ea04c9" type="tarxz">http://download.kde.org/stable/applications/16.12.3/src/blogilo-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kblog</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency> 
+            <Dependency>kunitconversion</Dependency> 
+            <Dependency>ksyndication</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>syntax-highlighting</Dependency>
+            <Dependency>libkgapi</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>blogilo</Name>
+        <Summary>A KDE blogging client</Summary>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kblog</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>libkgapi</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kleopatra</Name>
+        <Homepage>https://www.kde.org/applications/utilities/kleopatra/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>FDL-1.1</License>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Certificate Manager and Unified Crypto GUI</Summary>
+        <Description>Kleopatra is a certificate manager and a universal crypto GUI. It supports managing X.509 and OpenPGP certificates in the GpgSM keybox and retrieving certificates from LDAP servers.</Description>
+        <Archive type="tarxz" sha1sum="6fb2c0c8f06d833fb3c369529fed6c9aa719d303">mirrors://kde/stable/applications/16.12.3/src/kleopatra-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>libassuan</Dependency>
+            <Dependency>gpgme</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kleopatra</Name>
+        <Summary>Certificate Manager and Unified Crypto GUI</Summary>
+        <RuntimeDependencies>
+            <Dependency>gpgme</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libassuan</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kcodecs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

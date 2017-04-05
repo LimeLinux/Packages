@@ -1,0 +1,48 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kqtquickcharts</Name>
+        <Homepage>https://edu.kde.org/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>FDL</License>
+        <License>LGPL</License>
+        <License>GPL</License>
+        <Summary>A QtQuick plugin to render beautiful and interactive charts</Summary>
+        <Description>A QtQuick plugin to render beautiful and interactive charts</Description>
+        <Archive sha1sum="c8a2a74b3ac71061f22294da718e42bdd6f64401" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kqtquickcharts-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kqtquickcharts</Name>
+        <Summary>A QtQuick plugin to render beautiful and interactive charts</Summary>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

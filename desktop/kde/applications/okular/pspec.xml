@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>okular</Name>
+        <Homepage>http://okular.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>okular</Icon>
+        <IsA>library</IsA>
+        <PartOf>desktop.kde.graphics</PartOf>
+        <Summary>A document viewer</Summary>
+        <Description>Okular is a document viewer.</Description>
+        <Archive sha1sum="6b13c09ccd85674cda965729b84c73585b0fca3d" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/okular-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kjs</Dependency>
+            <Dependency>kdegraphics-mobipocket</Dependency>
+            <Dependency versionFrom="2.1.1">qca2-qt5</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>poppler</Dependency>
+            <Dependency>ebook-tools</Dependency>
+            <Dependency>libkexiv2</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>threadweaver</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kactivities</Dependency>
+            <Dependency>libkscreen</Dependency>
+            <Dependency>chmlib</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>libspectre</Dependency>
+            <Dependency>djvu</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>okular</Name>
+        <IsA>app:gui</IsA>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency versionFrom="2.1.1">qca2-qt5</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>libkexiv2</Dependency>
+            <Dependency>poppler</Dependency>
+            <Dependency>ebook-tools</Dependency>
+            <Dependency>kactivities</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kjs</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>threadweaver</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>djvu</Dependency>
+            <Dependency>libspectre</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>chmlib</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kdegraphics-mobipocket</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ktp-desktop-applets</Name>
+        <Homepage>http://community.kde.org/Real-Time_Communication_and_Collaboration</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <PartOf>desktop.kde.network</PartOf>
+        <Summary>The KDE-Telepathy Plasma desktop applets</Summary>
+        <Description>The KDE-Telepathy Plasma desktop applets</Description>
+        <Archive sha1sum="3cb970f93d0123956f3884765f872b989eb72057" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/ktp-desktop-applets-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>            
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>plasma-framework</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ktp-desktop-applets</Name>
+        <Summary>The KDE-Telepathy Plasma desktop applets</Summary>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files> 
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

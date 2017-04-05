@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>baloo-widgets</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Framework for searching and managing metadata</Summary>
+        <Description>Baloo is a framework for searching and managing metada</Description>
+        <Archive type="tarxz" sha1sum="421940ec9fea35f940c5fd9e7e0d8bff6eab8e83">mirrors://kde/stable/applications/16.12.3/src/baloo-widgets-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>baloo</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kfilemetadata</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>qt5</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>baloo-widgets</Name>
+        <Summary>Development files for baloo-widgets</Summary>
+        <RuntimeDependencies>
+            <Dependency>baloo</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kfilemetadata</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

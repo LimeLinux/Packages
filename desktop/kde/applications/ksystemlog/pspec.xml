@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ksystemlog</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>ksystemlog</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>System log viewer.</Summary>
+        <Description>KSystemLog show all logs of your system, grouped by General (Default system log, Authentication, Kernel, X.org...), and optional Services (Apache, Cups, etc, ...).</Description>
+        <Archive sha1sum="c15eeedb8eba3fb36f71f45bef9a4b7fcec28d1a" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/ksystemlog-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ksystemlog</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kpat</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.games</PartOf>
+        <Summary>Patience card game</Summary>
+        <Description>To play KPatience you need, as the name suggests, patience. For simple games, where the way the game goes depends only upon how the cards fall, your patience might be the only thing you need.</Description>
+        <Archive sha1sum="d5611081bea2729fa3e2ab3481479ca1ca896fbc" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kpat-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>shared-mime-info</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kpat</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/etc/xdg</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

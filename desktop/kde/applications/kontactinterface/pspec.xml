@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kontactinterface</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:library</IsA>
+        <Summary>Kontact Plugin Interface Library</Summary>
+        <Description>This library provides the glue necessary for application "Parts" to be embedded as a Kontact component (or plugin).</Description>
+        <Archive sha1sum="89036c0c5b17c0592eacccb73947291c33996429" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kontactinterface-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kiconthemes</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kontactinterface</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

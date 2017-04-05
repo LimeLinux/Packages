@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ktnef</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>API for handling TNEF data</Summary>
+        <Description>The API permits access to the actual attachments, the message properties (TNEF/MAPI), and allows one to view/extract message formatted text in Rich Text Format format.</Description>
+        <Archive sha1sum="177286bdb851e94b0930e340f51e4908a56bda58" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/ktnef-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency versionFrom="5.28.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.28.0">kdelibs4-support</Dependency>
+            <Dependency versionFrom="5.4.3">kcalcore</Dependency>
+            <Dependency versionFrom="5.4.3">kcontacts</Dependency>
+            <Dependency versionFrom="5.4.3">kcalutils</Dependency>
+            <Dependency>opencv</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ktnef</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

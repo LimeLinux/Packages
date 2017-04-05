@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>akonadi-import-wizard</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>CLI tools to manage akonadi calendars</Summary>
+        <Description>Import data from other mail clients to KMail</Description>
+        <Archive sha1sum="fc3668aaecfdd866cc42d340bbe40589ffe9387f" type="tarxz">http://download.kde.org/stable/applications/16.12.3/src/akonadi-import-wizard-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>calendarsupport</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>mailcommon</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>mailimporter</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>akonadi-import-wizard</Name>
+        <Summary>Import data from other mail clients to KMail</Summary>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>mailcommon</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>mailimporter</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

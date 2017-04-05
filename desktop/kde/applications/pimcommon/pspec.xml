@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pimcommon</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Common libraries for KDE PIM</Summary>
+        <Description>Common libraries for KDE PIM</Description>
+        <Archive sha1sum="387cb21cf902fbae60afa0e6b49712a38cb1c360" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/pimcommon-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency versionFrom="5.29.0">prison</Dependency>
+            <Dependency>kmbox</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>libical</Dependency>
+            <Dependency>libqjson</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency versionFrom="2.4.41">openldap</Dependency>
+            <Dependency versionFrom="2.1.26">cyrus-sasl</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kldap</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>akonadi-search</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>kimap</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>pimcommon</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kldap</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency versionFrom="5.29.0">prison</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency versionFrom="2.1.26">cyrus-sasl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/mkspecs/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

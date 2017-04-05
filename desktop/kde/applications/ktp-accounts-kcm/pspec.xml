@@ -1,0 +1,74 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ktp-accounts-kcm</Name>
+        <Homepage>https://projects.kde.org/projects/extragear/network/telepathy/ktp-accounts-kcm</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <Summary>KCM Module for configuring Telepathy Instant Messaging Accounts</Summary>
+        <Description>KCM Module for configuring Telepathy Instant Messaging Accounts</Description>
+        <Archive sha1sum="2ae753fbc485457c273bde9e7a2135b6ca55beef" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/ktp-accounts-kcm-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kaccounts-integration</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>kaccounts-providers</Dependency>
+            <Dependency>signon</Dependency>
+            <Dependency>ktp-common-internals</Dependency>
+            <Dependency>gettext</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ktp-accounts-kcm</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>signon</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kaccounts-integration</Dependency>
+        </RuntimeDependencies>
+
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

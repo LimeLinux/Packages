@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ksquares</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>ksquares</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.games</PartOf>
+        <Summary>Connect the dots to create squares</Summary>
+        <Description>KSquares is a fun and exciting game that modeled after the well known pen and paper based game of Dots and Boxes.</Description>
+        <Archive sha1sum="621e8e109d77a47c3f800a815e96453d727d22c7" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/ksquares-16.12.3.tar.xz</Archive>
+        <BuildDependencies> 
+            <Dependency>extra-cmake-modules</Dependency> 
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ksquares</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

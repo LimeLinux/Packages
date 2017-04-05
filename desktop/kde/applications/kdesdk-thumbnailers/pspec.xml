@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kdesdk-thumbnailers</Name>
+        <Homepage>http://www.kde.org/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.kde.sdk</PartOf>
+        <Summary>Translation file thumbnail generators</Summary>
+        <Description>Translation file thumbnail generators</Description>
+        <Archive sha1sum="44f05acbbee65299b8821602c78c2352dbff5854" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kdesdk-thumbnailers-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>gettext</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kdesdk-thumbnailers</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency> 
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/kservices5</Path>
+            <Path fileType="data">/usr/share/config.kcfg</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

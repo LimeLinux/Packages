@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kalgebra</Name>
+        <Homepage>http://edu.kde.org/applications/mathematics/kalgebra</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <Icon>kalgebra</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>A graph calculator</Summary>
+        <Description>KAlgebra is a fully featured calculator that lets you plot different types of 2D and 3D functions and to calculate easy and not so easy calculations, such as addition, trigonometric functions or derivatives.</Description>
+        <Archive sha1sum="4e11b12fc75f2955747fda90def6eb225e34475a" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kalgebra-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>analitza</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kalgebra</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>analitza</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>readline</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kio</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

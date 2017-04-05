@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kollision</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>kollision</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.games</PartOf>
+        <Summary>A simple ball dodging game</Summary>
+        <Description>Kollision is ball dodging game. Click on the empty field to start a game: a blue ball immediately replaces your mouse cursor, and a number of red balls start to fade into the field.</Description>
+        <Archive sha1sum="c1912f1c60b62de785b50d822a09c7aad48085c4" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kollision-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kollision</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kdialog</Name>
+        <Homepage>https://github.com/KDE/kdialog</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>kdialog allows you to display dialog boxes from shell scripts</Summary>
+        <Description>The syntax is very much inspired from the "dialog" command (which shows text mode dialogs).</Description>
+        <Archive sha1sum="8e420d7399e3eb4bb64719a552ebcba0b4a3fd39" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kdialog-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>qt5</Dependency>
+        </BuildDependencies> 
+    </Source>
+
+    <Package>
+        <Name>kdialog</Name>
+        <Summary>kdialog allows you to display dialog boxes from shell scripts</Summary>
+        <RuntimeDependencies>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

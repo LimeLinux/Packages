@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ktp-filetransfer-handler</Name>
+        <Homepage>http://community.kde.org/Real-Time_Communication_and_Collaboration</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <PartOf>desktop.kde.network</PartOf>
+        <Summary>KDE Telepathy file transfer handler</Summary>
+        <Description>KDE Telepathy file transfer handler</Description>
+        <Archive sha1sum="b749c1c3d707826223c90a70b6f9dfd9a7ef4213" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/ktp-filetransfer-handler-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>ktp-common-internals</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ktp-filetransfer-handler</Name>
+        <Summary>KDE Telepathy file transfer handler</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ktp-common-internals</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>knavalbattle</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>knavalbattle</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.games</PartOf>
+        <Summary>Naval Battle game</Summary>
+        <Description>knavalbattle is a Battle Ship game for KDE. Ships are placed on a board which represents the sea. Players try to hit each others ships in turns without knowing where they are placed. The first player to destroy all ships wins the game.</Description>
+        <Archive sha1sum="d36df61121b7931bc6498167928d2a1a4f1f93f3" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/knavalbattle-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdnssd</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>knavalbattle</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kdnssd</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>libkdegames</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

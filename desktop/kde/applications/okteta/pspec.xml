@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>okteta</Name>
+        <Homepage>http://www.kde.org/</Homepage>
+        <Packager>
+            <Name>Mathias Freire</Name>
+            <Email>mathiasfreire45@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.sdk</PartOf>
+        <Summary>Hexadecimal editor for binary files</Summary>
+        <Description>Okteta is a simple editor for the raw data of files. This type of program is also called hexadecimal editor or binary editor.</Description>
+        <Archive sha1sum="d2baaabc558e3930127f197bd94d1e68481c05fc" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/okteta-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qca2-qt5</Dependency>
+            <Dependency>attica</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>okteta</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>qca2-qt5</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

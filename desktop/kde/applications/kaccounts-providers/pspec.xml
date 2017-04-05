@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kaccounts-providers</Name>
+        <Homepage>https://projects.kde.org/projects/playground/base/kde-accounts/kaccounts-providers</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <PartOf>desktop.kde.network</PartOf>
+        <Summary>Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others</Summary>
+        <Description>Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others</Description>
+        <Archive sha1sum="c45741f3a4e2c6cd3ced46213c52e574e3d5f28c" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kaccounts-providers-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>kaccounts-integration</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>signon</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kaccounts-providers</Name>
+        <RuntimeDependencies>
+            <Dependency>kaccounts-integration</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>qt5</Dependency>
+        </RuntimeDependencies>
+        <Summary>Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others</Summary>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

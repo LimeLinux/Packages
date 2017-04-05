@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lokalize</Name>
+        <Homepage>http://www.kde.org/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.sdk</PartOf>
+        <Summary>Lokalize is the localization tool for KDE and other open source software</Summary>
+        <Description>Lokalize is also a general computer-aided translation system (CAT) with which you can translate OpenDocument files (*.odt). </Description>
+        <Archive sha1sum="c0f6cc545a9015730360573eec29282c26b50b3c" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/lokalize-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency> 
+            <Dependency>hunspell</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kross</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>lokalize</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kross</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>hunspell</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

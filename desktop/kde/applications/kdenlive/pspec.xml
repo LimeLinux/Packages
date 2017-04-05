@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kdenlive</Name>
+        <Homepage>http://www.kdenlive.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.multimedia</PartOf>
+        <Summary>A video editing GUI for KDE4 using the MLT video framework</Summary>
+        <Description>kdenlive provides dual video monitors, a multi-track timeline and clip list. Other features include customizable layout support, basic effects and transitions.</Description>
+        <Archive sha1sum="fd5245c7ff8c314be1fcaed486ef4c908bc562eb" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kdenlive-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ladspa-sdk</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kfilemetadata</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kplotting</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kdoctools</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kdenlive</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>cdrkit</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kplotting</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>ladspa-sdk</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kfilemetadata</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

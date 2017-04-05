@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>akonadi-search</Name>
+        <Homepage>http://pim.kde.org/akonadi</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <Icon>akonadi</Icon>
+        <IsA>library</IsA>
+        <Summary>Libraries and daemons to implement searching in Akonadi</Summary>
+        <Description>Libraries and daemons to implement searching in Akonadi</Description>
+        <Archive sha1sum="52d44878e4f396ed88893b138420924d4b79c08e" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/akonadi-search-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>libical</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>krunner</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+        </BuildDependencies>
+     </Source>
+
+    <Package>
+        <Name>akonadi-search</Name>
+        <IsA>app:console</IsA>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>krunner</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

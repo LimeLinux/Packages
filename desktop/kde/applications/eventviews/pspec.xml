@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>eventviews</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Library for creating events.</Summary>
+        <Description>Library for creating events.</Description>
+        <Archive type="tarxz" sha1sum="35d505668374f1a4726ac9b6dfae9c19c95ee08f">mirrors://kde/stable/applications/16.12.3/src/eventviews-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kdiagram</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>calendarsupport</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>eventviews</Name>
+        <Summary>Library for creating events.</Summary>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kdiagram</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>calendarsupport</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share/kservicetypes5</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/cmake</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

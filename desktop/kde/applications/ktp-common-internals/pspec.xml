@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ktp-common-internals</Name>
+        <Homepage>http://community.kde.org/Real-Time_Communication_and_Collaboration</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <PartOf>desktop.kde.network</PartOf>
+        <Summary>Common components for KDE-Telepathy</Summary>
+        <Description>Common components for KDE-Telepathy</Description>
+        <Archive type="tarxz" sha1sum="f890ae406fd6eb159c58a981d0f0d5aa2c973e00">mirrors://kde/stable/applications/16.12.3/src/ktp-common-internals-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kpeople</Dependency>
+            <Dependency>signon</Dependency>
+            <Dependency>kaccounts-integration</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libotr</Dependency>
+            <Dependency>telepathy-qt</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ktp-common-internals</Name>
+        <Summary>Common components for KDE-Telepathy</Summary>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libotr</Dependency>
+            <Dependency>signon</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kpeople</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kaccounts-integration</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

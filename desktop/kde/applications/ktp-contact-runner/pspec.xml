@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ktp-contact-runner</Name>
+        <Homepage>http://community.kde.org/Real-Time_Communication_and_Collaboration</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <PartOf>desktop.kde.network</PartOf>
+        <Summary> 	KRunner plugin for KDE Telepathy</Summary>
+        <Description>KRunner plugin for KDE Telepathy</Description>
+        <Archive type="tarxz" sha1sum="29ad65e7f01d0926927c827fe5cbd2e47531df19">mirrors://kde/stable/applications/16.12.3/src/ktp-contact-runner-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>krunner</Dependency>
+            <Dependency>ktp-common-internals</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ktp-contact-runner</Name>
+        <Summary>KRunner plugin for KDE Telepathy</Summary>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>krunner</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ktp-common-internals</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/kservices5</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files> 
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

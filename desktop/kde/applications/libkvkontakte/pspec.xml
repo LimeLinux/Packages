@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libkvkontakte</Name>
+        <Homepage>https://www.digikam.org/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL</License>
+        <IsA>library</IsA>
+        <Summary>C++ library for asynchronous interaction with VK social network via its web API</Summary>
+        <Description>C++ library for asynchronous interaction with VK social network via its web API</Description>
+        <Archive sha1sum="43d1f92c4094dfac4f7400318d950c9f961b7893" type="targz">https://sourceforge.net/projects/pisilinux/files/source/libkvkontakte-5.0.0_20161106.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>libkvkontakte</Name>
+        <Summary>C++ library for asynchronous interaction with VK social network via its web API</Summary>
+        <RuntimeDependencies>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-11-09</Date>
+            <Version>5.0.0_20161106</Version>
+            <Comment>First release</Comment>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

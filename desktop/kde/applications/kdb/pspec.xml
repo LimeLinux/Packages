@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kdb</Name>
+        <Homepage>http://www.kexi-project.org/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>app:gui</IsA>
+        <Summary>A database connectivity and creation framework for various database vendors.</Summary>
+        <Description>A database connectivity and creation framework for various database vendors</Description>
+        <Archive sha1sum="90265f8436fc19136a9ed709fae4e6413f0cfa3b" type="tarxz">http://download.kde.org/stable/kdb/src/kdb-3.0.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>mariadb</Dependency>
+            <Dependency>mariadb</Dependency>
+            <Dependency>postgresql</Dependency>
+            <Dependency>icu4c</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kdb</Name>
+        <Summary>A database connectivity and creation framework for various database vendors.</Summary>
+        <RuntimeDependencies>
+            <Dependency>icu4c</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>mariadb</Dependency>
+            <Dependency>postgresql</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-01-06</Date>
+            <Version>3.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

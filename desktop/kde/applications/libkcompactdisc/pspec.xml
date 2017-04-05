@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libkcompactdisc</Name>
+        <Homepage>https://www.kde.org/applications/multimedia/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL</License>
+        <License>LGPL</License>
+        <License>FDL</License>
+        <IsA>library</IsA>
+        <Summary>A library for interfacing with CDs</Summary>
+        <Description>A library for interfacing with CDs</Description>
+        <Archive sha1sum="db6327cf94c6333ff0cd5b17bc0be3eea9f26b2b" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/libkcompactdisc-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libkcompactdisc</Name>
+        <Summary>A library for interfacing with CDs</Summary>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>solid</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

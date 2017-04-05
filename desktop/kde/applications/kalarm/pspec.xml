@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kalarm</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>Personal alarm scheduler</Summary>
+        <Description>KAlarm is a personal alarm message, audio, command and email scheduler</Description>
+        <Archive type="tarxz" sha1sum="fec1eec1be4c6e1ebf4a68a74afc0438191ef653">http://download.kde.org/stable/applications/16.12.3/src/kalarm-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kalarmcal</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kholidays</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>mailcommon</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>libxslt</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kalarm</Name>
+        <Summary>Personal alarm scheduler</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kalarmcal</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kholidays</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>qt5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libgravatar</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>KDE PIM library providing Gravatar support</Summary>
+        <Description>KDE PIM library providing Gravatar support</Description>
+        <Archive sha1sum="9380c95d2c7994b4649e82b9aa29e2c0abf62869" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/libgravatar-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="2.4.41">openldap</Dependency>
+            <Dependency versionFrom="2.1.26">cyrus-sasl</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kldap</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>akonadi-search</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>boost</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libgravatar</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

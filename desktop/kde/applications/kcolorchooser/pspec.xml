@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kcolorchooser</Name>
+        <Homepage>http://www.kde.org/applications/graphics/kcolorchooser</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>kcolorchooser</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.graphics</PartOf>
+        <Summary>A simple color chooser application</Summary>
+        <Description>KColorChooser is a simple color chooser application.</Description>
+        <Archive sha1sum="ec32dafcf304917c7515c6ced87d85066bce7b39" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kcolorchooser-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kiconthemes</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kcolorchooser</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

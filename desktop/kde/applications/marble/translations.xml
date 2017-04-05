@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>marble</Name>
+        <Summary xml:lang="tr">Sanal küre ve Dünya atlası</Summary>
+        <Description xml:lang="tr">Marble, sanal küre ve Dünya atlası uygulamasıdır.</Description>
+    </Source>
+</PISI>

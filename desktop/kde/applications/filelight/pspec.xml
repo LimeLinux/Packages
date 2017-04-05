@@ -1,0 +1,69 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>filelight</Name>
+        <Homepage>http://utils.kde.org/projects/filelight</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>filelight</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.utils</PartOf>
+        <Summary>View disk usage information</Summary>
+        <Description>Filelight allows you to quickly understand exactly where your diskspace is being used by graphically representing your file system as a set of concentric segmented-rings.</Description>
+        <Archive sha1sum="24258b6493813603fb2df68824ab42533f1e172a" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/filelight-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency versionFrom="13.0.4">mesa</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>filelight</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc/xdg</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

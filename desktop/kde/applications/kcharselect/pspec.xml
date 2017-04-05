@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kcharselect</Name>
+        <Homepage>http://utils.kde.org/projects/kcharselect</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>kcharselect</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.utils</PartOf>
+        <Summary>A character selector</Summary>
+        <Description>KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.</Description>
+        <Archive sha1sum="1818cce9ec3fe67a229e829a2d5a9c5f37828587" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kcharselect-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency versionFrom="13.0.4">mesa</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kcharselect</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

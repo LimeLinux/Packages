@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kwordquiz</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>Kwordquiz is a Flash Card Trainer</Summary>
+        <Description>KWordQuiz is a tool that gives you a powerful way to master new vocabularies. It may be a language or any other kind of terminology..</Description>
+        <Archive sha1sum="a5f4b24d1cb2cc848566caf6d6429562fe77777d" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kwordquiz-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kio</Dependency> 
+            <Dependency>knewstuff</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>libkeduvocdocument</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kwordquiz</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>libkeduvocdocument</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

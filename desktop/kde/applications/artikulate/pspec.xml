@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>artikulate</Name>
+        <Homepage>https://projects.kde.org/projects/kde/kdeedu/artikulate</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv3</License>
+        <License>FDLv1.2</License>
+        <Icon>artikulate</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>Improve your pronunciation by listening to native speakers</Summary>
+        <Description>Artikulate, Improve your pronunciation by listening to native speakers.</Description>
+        <Archive sha1sum="377ef5ef71a7219c4f70ee3d4decf3e3abdc0151" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/artikulate-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>artikulate</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package> 
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>krdc</Name>
+        <Homepage>http://www.kde.org/applications/internet/krdc/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Remote Desktop Client</Summary>
+        <Description>KRDC is a client application that allows you to view or even control the desktop session on another machine that is running a compatible server. VNC and RDP is supported.</Description>
+        <Archive sha1sum="f800fd4fbcdf3002ca43877b2d9b420c2d89537a" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/krdc-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kdnssd</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libvncserver</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>krdc</Name>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kdnssd</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>libvncserver</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ktp-auth-handler</Name>
+        <Homepage>http://community.kde.org/Real-Time_Communication_and_Collaboration</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <PartOf>desktop.kde.network</PartOf>
+        <Summary>Provide UI/KWallet Integration For Passwords and SSL Errors on Account Connect</Summary>
+        <Description>Provide UI/KWallet Integration For Passwords and SSL Errors on Account Connect</Description>
+        <Archive type="tarxz" sha1sum="102c0e7dcff4deaba566987a46a3c38087c4cba2">mirrors://kde/stable/applications/16.12.3/src/ktp-auth-handler-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>ktp-common-internals</Dependency>
+            <Dependency>qca2-qt5</Dependency>
+            <Dependency>kaccounts-integration</Dependency>
+            <Dependency>signon</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ktp-auth-handler</Name>
+        <Summary>Provide UI/KWallet Integration For Passwords and SSL Errors on Account Connect</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>signon</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>qca2-qt5</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>ktp-common-internals</Dependency>
+            <Dependency>kaccounts-integration</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

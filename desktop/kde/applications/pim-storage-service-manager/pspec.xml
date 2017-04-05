@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pim-storage-service-manager</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>KDE PIM storage services configuration UI</Summary>
+        <Description>KDE PIM storage services configuration UI</Description>
+        <Archive sha1sum="19b9286b71a5602d39c0407286d148d75e8a31d3" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/pim-storage-service-manager-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+           <Dependency>extra-cmake-modules</Dependency>
+             <Dependency>kcrash</Dependency>
+             <Dependency>kdbusaddons</Dependency>
+             <Dependency>kdoctools</Dependency>
+             <Dependency>akonadi-contacts</Dependency>
+             <Dependency>akonadi</Dependency>
+             <Dependency>akonadi-mime</Dependency>
+             <Dependency>calendarsupport</Dependency>
+             <Dependency>kalarmcal</Dependency>
+             <Dependency>kcalcore</Dependency>
+             <Dependency>kcontacts</Dependency>
+             <Dependency>kmailtransport</Dependency>
+             <Dependency>kpimtextedit</Dependency>
+             <Dependency>libkdepim</Dependency>
+             <Dependency>qt5</Dependency>
+             <Dependency>ktextwidgets</Dependency>
+             <Dependency>kxmlgui</Dependency>
+             <Dependency>kitemmodels</Dependency>
+             <Dependency>boost</Dependency>
+             <Dependency>kdelibs4-support</Dependency>
+             <Dependency>kemoticons</Dependency>
+             <Dependency>kinit</Dependency>
+             <Dependency>kunitconversion</Dependency>
+             <Dependency>kmime</Dependency>
+             <Dependency>kidentitymanagement</Dependency>
+             <Dependency>akonadi-calendar</Dependency>
+             <Dependency>kholidays</Dependency>
+             <Dependency>mailcommon</Dependency>
+             <Dependency>messagelib</Dependency>
+             <Dependency>pimcommon</Dependency>
+             <Dependency>kimap</Dependency>
+             <Dependency>cyrus-sasl</Dependency>
+             <Dependency>libkleo</Dependency>
+             <Dependency>gpgme</Dependency>
+             <Dependency>libkdepim</Dependency>
+             <Dependency>knotifyconfig</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>pim-storage-service-manager</Name>
+        <Summary>KDE PIM storage services configuration UI</Summary>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

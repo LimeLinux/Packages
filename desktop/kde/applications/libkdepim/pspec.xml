@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libkdepim</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Libraries for KDE PIM applications</Summary>
+        <Description>Libraries for KDE PIM applications</Description>
+        <Archive sha1sum="98cceac475d5d2061772b1d5ddc30a4c9f57947e" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/libkdepim-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kldap</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>akonadi-search</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>kldap</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libkdepim</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kldap</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>akonadi-search</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

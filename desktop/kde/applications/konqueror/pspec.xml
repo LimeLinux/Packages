@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>konqueror</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>KDE File Manager and Web Browser</Summary>
+        <Description>KDE File Manager and Web Browser.</Description>
+        <Archive sha1sum="326231e03c71372e14fb3131a92300c1363a1c20" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/konqueror-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>kparts</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>kactivities</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kded</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kinit</Dependency> 
+            <Dependency>tidy</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>kdesu</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kunitconversion</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>konqueror</Name>
+        <Summary>KDE File Manager and Web Browser</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>kdesu</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>tidy</Dependency>
+        </RuntimeDependencies>
+        <Conflicts>
+          <Package>kde-baseapps</Package>
+        </Conflicts>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

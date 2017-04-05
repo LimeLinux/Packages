@@ -1,0 +1,62 @@
+
+<PISI>
+    <Source>
+        <Name>minuet</Name>
+        <Homepage>https://minuet.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A KDE Software for Music Education</Summary>
+        <Description>Music education Free Software, thoughtfully designed to push your musical skills to the next level. Enhance your ability to recognize intervals, chords, rhythm, and scales while enjoying all the power of Free Software.</Description>
+        <Archive sha1sum="fab835920ca721d5133a793e641383cc75062e7d" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/minuet-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>fluidsynth</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>alsa-lib</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>minuet</Name>
+        <Summary>A KDE Software for Music Education</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

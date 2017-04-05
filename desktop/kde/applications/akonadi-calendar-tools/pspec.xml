@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>akonadi-calendar-tools</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>CLI tools to manage akonadi calendars</Summary>
+        <Description>CLI tools to manage akonadi calendars</Description>
+        <Archive sha1sum="28af0a0d75c3aa3f82942b3d154311725dc5508e" type="tarxz">http://download.kde.org/stable/applications/16.12.3/src/akonadi-calendar-tools-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>calendarsupport</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>akonadi-calendar-tools</Name>
+        <Summary>CLI tools to manage akonadi calendars</Summary>
+        <RuntimeDependencies>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>calendarsupport</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

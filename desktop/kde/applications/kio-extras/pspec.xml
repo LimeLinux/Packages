@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kio-extras</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <PartOf>desktop.kde.network</PartOf>
+        <Summary>Additional KIO-slaves for KDE5 applications</Summary>
+        <Description>Additional KIO-slaves for KDE5 applications</Description>
+        <Archive sha1sum="2f9abfc48b9cbad5d4f0011b10195b55662b5b1c" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kio-extras-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="0.24">exiv2</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdnssd</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libmtp</Dependency>
+            <Dependency>libssh</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>shared-mime-info</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency versionFrom="2.2.0">openexr</Dependency>
+            <Dependency>openslp</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kactivities</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kio-extras</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="0.24">exiv2</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdnssd</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kactivities</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libmtp</Dependency>
+            <Dependency>libssh</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>samba</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>openslp</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

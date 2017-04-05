@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rocs</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.edu</PartOf>
+        <Summary>Rocs Graph Theory</Summary>
+        <Description>Rocs aims to be a Graph Theory IDE for helping professors to show the results of a graph algorithm and also helping students to do the algorithms. Rocs has a scripting module, done in Qt Script, that interacts with the drawn graph and every change in the graph with the script is reflected on the drawn one..</Description>
+        <Archive sha1sum="a0d6ee2849578b14174e2b6753414ddb46bb75ef" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/rocs-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>   
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>boost</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>rocs</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kitemviews</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

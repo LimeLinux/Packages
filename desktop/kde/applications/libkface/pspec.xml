@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libkface</Name>
+        <Homepage>https://projects.kde.org/projects/kde/kdegraphics/libs/libkface</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.kde.graphics</PartOf>
+        <Summary>A Qt/C++ wrapper around LibFace library to perform face recognition and detection over pictures</Summary>
+        <Description>Libkface is a Qt/C++ library to perform face recognition and detection over pictures.This library is used by kipi-plugins, digiKam and others Kipi host programs.</Description>
+        <Archive type="tarxz" sha1sum="fae649ed2f1ca5f420a0e00e635083cb79dd50ed">mirrors://kde/stable/applications/16.12.3/src/libkface-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>opencv</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libkface</Name>
+        <Summary>A Qt/C++ wrapper around LibFace library to perform face recognition and detection over pictures</Summary>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>opencv</Dependency>
+            <Dependency>qt5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

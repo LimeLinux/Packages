@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kontact</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL2</License>
+        <Summary>KDE Personal Information Manager</Summary>
+        <Description>Kontact is the integrated Personal Information Manager of KDE, but can be used with other systems as well. It supports email, address books, calendars, tasks, news feeds and much more.</Description>
+        <Archive sha1sum="47212ea52d0ad332a274aead48baef7dd4625da1" type="tarxz">http://download.kde.org/stable/applications/16.12.3/src/kontact-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kontactinterface</Dependency>
+            <Dependency>mailcommon</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+            <Dependency>libkdepim</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kontact</Name>
+        <Summary>KDE Personal Information Manager</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+            <Dependency>kontactinterface</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

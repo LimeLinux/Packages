@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>konversation</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A user friendly IRC client for KDE</Summary>
+        <Description>Konversation is a user-friendly Internet Relay Chat (IRC) client built on the KDE Platform.</Description>
+        <Archive sha1sum="7a0143fa195d8fd3f646997e8eeff468f1ec5fdb" type="tarxz">mirrors://kde/stable/konversation/1.6.2/src/konversation-1.6.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>qca2-qt5</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>konversation</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>qca2-qt5</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-25</Date>
+            <Version>1.6.2</Version>
+            <Comment>First release</Comment>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

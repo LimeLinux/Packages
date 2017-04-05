@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kdepim-addons</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>FDL</License>
+        <License>GPL</License>
+        <License>LGPL</License>
+        <Summary>Addons for the KDE PIM apllications</Summary>
+        <Description>Addons for the KDE PIM apllications</Description>
+        <Archive sha1sum="36be377a2d6e5629a94b21f4a46eb813b955e552" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kdepim-addons-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-notes</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>calendarsupport</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>eventviews</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>incidenceeditor</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>ktnef</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libgravatar</Dependency>
+            <Dependency>libical</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>libkgapi</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>mailcommon</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>kdiagram</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kdepim-addons</Name>
+        <Summary>Addons for the KDE PIM apllications</Summary>
+        <RuntimeDependencies>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>akonadi-notes</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>calendarsupport</Dependency>
+            <Dependency>eventviews</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>incidenceeditor</Dependency>
+            <Dependency>kcalutils</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>ktnef</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libgravatar</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>mailcommon</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>grantlee</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

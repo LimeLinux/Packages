@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>spectacle</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+        <Name>lime Gnu/Linux Community</Name>
+        <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.graphics</PartOf>
+        <Summary>KDE screenshot capture utility</Summary>
+        <Description>Spectacle, a new screenshot application that aims to replace KSnapshot..</Description>
+        <Archive sha1sum="e5c08c4b730da6ccecbb9d908e23ab1727302dc1" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/spectacle-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>libkipi</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libkscreen</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+            <Dependency>xcb-util-cursor</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>knotifications</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>spectacle</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>libkscreen</Dependency>
+            <Dependency>xcb-util-cursor</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>libkipi</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdbusaddons </Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>xcb-util</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

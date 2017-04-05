@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kmailtransport</Name>
+        <Homepage>http://pim.kde.org/akonadi</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <Icon>akonadi</Icon>
+        <IsA>library</IsA>
+        <Summary>Mail Transport Service</Summary>
+        <Description>Mail Transport Service</Description>
+        <Archive sha1sum="3791eb2e9c5d409bd123e4f10e30fd9f8f39868d" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kmailtransport-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>boost</Dependency>
+        </BuildDependencies>
+     </Source>
+
+    <Package>
+        <Name>kmailtransport</Name>
+        <IsA>app:console</IsA>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

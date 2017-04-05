@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ktp-text-ui</Name>
+        <Homepage>http://community.kde.org/Real-Time_Communication_and_Collaboration</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app</IsA>
+        <PartOf>desktop.kde.network</PartOf>
+        <Summary>Telepathy handler for Text Chats</Summary>
+        <Description>Telepathy handler for Text Chats</Description>
+        <Archive sha1sum="9b19755e56d7b242c8e99729dcfc5907e839eaaa" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/ktp-text-ui-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ktp-common-internals</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ktp-text-ui</Name>
+        <Summary>Telepathy handler for Text Chats</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>ktp-common-internals</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

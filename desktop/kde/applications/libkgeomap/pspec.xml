@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libkgeomap</Name>
+        <Homepage>https://www.kde.org/applications/graphics/</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>FDL-1.1</License>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.kde.graphics</PartOf>
+        <Summary>A wrapper around world map components for browsing and arranging photos on a map.</Summary>
+        <Description>A wrapper around world map components for browsing and arranging photos on a map.</Description>
+        <Archive type="tarxz" sha1sum="aea7c56db41f85ccce37fd760f39445cd56afd49">mirrors://kde/stable/applications/16.12.3/src/libkgeomap-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>marble</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libkgeomap</Name>
+        <Summary>A wrapper around world map components for browsing and arranging photos on a map.</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>marble</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/libkgeomap</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

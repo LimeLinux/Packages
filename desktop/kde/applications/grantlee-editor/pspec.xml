@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>grantlee-editor</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>Editor for Grantlee themes</Summary>
+        <Description>Editor for Grantlee themes</Description>
+        <Archive sha1sum="02a98540df3f5757179527026c8cc553fac8de65" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/grantlee-editor-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>syntax-highlighting</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>grantlee</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>grantlee-editor</Name>
+        <Summary>Editor for Grantlee themes</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>kdepim-apps-libs</Dependency>
+            <Dependency>syntax-highlighting</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

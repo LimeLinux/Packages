@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>akregator</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>A KDE blogging client</Summary>
+        <Description>Akregator helps you to keep informed about new stories on websites like KDE Dot News and Planet KDE blogs. The technology used is RSS and many sites support it.</Description>
+        <Archive sha1sum="a9e01fce2e07ccbb81b140dc20fb130a1e75e101" type="tarxz">http://download.kde.org/stable/applications/16.12.3/src/akregator-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kblog</Dependency>
+            <Dependency>kdesignerplugin</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ktexteditor</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>grantlee</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kontactinterface</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>gpgme</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>ksyndication</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>akregator</Name>
+        <Summary>A Feed Reader by KDE</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>ksyndication</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>grantleetheme</Dependency>
+            <Dependency>knotifyconfig</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kontactinterface</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>akonadiconsole</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>Akonadi management and debugging console</Summary>
+        <Description>Akonadi management and debugging console</Description>
+        <Archive type="tarxz" sha1sum="a0ffbe009f1f908c127ed15a32f18a9a4c4fa219">http://download.kde.org/stable/applications/16.12.3/src/akonadiconsole-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-calendar</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>calendarsupport</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency versionFrom="16.12.3">libkdepim</Dependency>
+            <Dependency>libkleo</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>gpgme</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>akonadiconsole</Name>
+        <Summary>Akonadi management and debugging console</Summary>
+        <RuntimeDependencies>
+            <Dependency>akonadi</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+            <Dependency>calendarsupport</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency versionFrom="16.12.3">libkdepim</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>messagelib</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kdelibs4-support</Dependency> 
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kdegraphics-thumbnailers</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.kde.graphics</PartOf>
+        <Summary>KDE4 thumbnailer library</Summary>
+        <Description>kdegraphics-thumbnailers contains thumbnail-related libraries.</Description>
+        <Archive sha1sum="767744c50bf394ff8bd7b84a596838275ca44f3a" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kdegraphics-thumbnailers-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>libkdcraw</Dependency>
+            <Dependency>libkexiv2</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kdegraphics-thumbnailers</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>libkdcraw</Dependency>
+            <Dependency>libkexiv2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

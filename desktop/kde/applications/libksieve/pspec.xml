@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libksieve</Name>
+        <Homepage>https://community.kde.org/KDE_PIM</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>KDE PIM library for managing sieves.</Summary>
+        <Description>KDE PIM library for managing sieves.</Description>
+        <Archive sha1sum="3a2f751e3023284d8c10bf2f7be14368d3a34413" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/libksieve-16.12.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kitemmodels</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kemoticons</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kunitconversion</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>kcontacts</Dependency>
+            <Dependency>kcalcore</Dependency>
+            <Dependency>kimap</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>kmailtransport</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>akonadi-contacts</Dependency>
+            <Dependency>akonadi-mime</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libksieve</Name>
+        <Summary>KDE PIM library for managing sieves.</Summary>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kmime</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>libkdepim</Dependency>
+            <Dependency>pimcommon</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kpimtextedit</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kidentitymanagement</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc/HTML</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-03-17</Date>
+            <Version>16.12.3</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
