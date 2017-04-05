@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lightdm-gtk-greeter-settings</Name>
+        <Homepage>http://www.sharpley.org.uk</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Settings editor for LightDM GTK+ Greeter</Summary>
+        <Description>Settings editor for LightDM GTK+ Greeter</Description>
+        <Archive sha1sum="7b3a402285e639dae7a9c3fede212731de85fdf8" type="targz">https://launchpad.net/lightdm-gtk-greeter-settings/1.2/1.2.1/+download/lightdm-gtk-greeter-settings-1.2.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>lightdm</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libxklavier</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>lightdm-gtk-greeter-settings</Name>
+        <RuntimeDependencies>
+            <Dependency>lightdm</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libxklavier</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.2.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
