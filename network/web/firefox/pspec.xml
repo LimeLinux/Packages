@@ -104,6 +104,7 @@
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="executable">/usr/lib/firefox</Path>
             <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/</Path>
         </Files>
         <AdditionalFiles>
             <!-- Desktop file -->

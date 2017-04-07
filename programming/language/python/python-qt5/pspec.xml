@@ -17,7 +17,7 @@
         <Archive sha1sum="104c4bfc451b2ed26e34e646ddf69cfc8c437226" type="targz">https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.8/PyQt5_gpl-5.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>dbus</Dependency>
-            <Dependency>python3</Dependency>
+            <Dependency>python</Dependency>
             <Dependency>qt5</Dependency>
         </BuildDependencies>
         <Patches>
@@ -31,9 +31,9 @@
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
             <Dependency>dbus</Dependency>
-            <Dependency>python3</Dependency>
+            <Dependency>python</Dependency>
             <Dependency>qt5</Dependency>
-            <Dependency>python3-sip</Dependency>
+            <Dependency>sip</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/py2uic5</Path>

@@ -14,7 +14,7 @@
         <IsA>data</IsA>
         <Summary>Helper application and MIME type associations for file types</Summary>
         <Description>mailcap file is used by the metamail program. Metamail reads the mailcap file to determine how it should display non-text or multimedia material.</Description>
-        <Archive sha1sum="f08d46a96e11abbbcf94da8754bd9ecec46089d1" type="tarxz">https://fedorahosted.org/released/mailcap/mailcap-2.1.46.tar.xz</Archive>
+        <Archive sha1sum="c699403f0b0c66e358ee37cb79cfbe15e62245ff" type="tarxz">https://releases.pagure.org/mailcap/mailcap-2.1.47.tar.xz</Archive>
         <Patches>
             <Patch level="1">extend-mailcap.patch</Patch>
         </Patches>
@@ -31,8 +31,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.1.46</Version>
+            <Date>2017-04-07</Date>
+            <Version>2.1.47</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
