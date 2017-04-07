@@ -103,12 +103,22 @@
             <Dependency>libvo-aacenc</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>ilmbase</Dependency>
-             <Dependency>orc</Dependency>
-             <Dependency>webp</Dependency>
-             <Dependency>libopus</Dependency>
-             <Dependency>librsvg</Dependency>
-             <Dependency>libgudev</Dependency>
-             <Dependency>openexr</Dependency>
+            <Dependency>orc</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>libopus</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libgudev</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>gtk3</Dependency>                          
+            <Dependency>libdrm</Dependency>                          
+            <Dependency>libmms</Dependency>                          
+            <Dependency>cairo</Dependency>                         
+            <Dependency>libpng</Dependency>                    
+            <Dependency>libkate</Dependency>                    
+            <Dependency>openjpeg</Dependency>                
+            <Dependency>fluidsynth</Dependency>
+            <Dependency>soundtouch</Dependency>
+            <Dependency>libchromaprint</Dependency> 
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

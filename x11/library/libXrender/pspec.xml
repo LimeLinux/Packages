@@ -25,6 +25,7 @@
         <Name>libXrender</Name>
         <RuntimeDependencies>
             <Dependency>libX11</Dependency>
+            <Dependency>xorg-proto</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

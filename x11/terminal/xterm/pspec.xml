@@ -42,6 +42,8 @@
         <Name>xterm</Name>
         <RuntimeDependencies>
             <Dependency>fontconfig</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>utempter</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libXaw</Dependency>
             <Dependency>libXft</Dependency>

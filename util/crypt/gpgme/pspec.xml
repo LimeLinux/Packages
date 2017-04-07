@@ -18,6 +18,8 @@
             <Dependency>gnupg</Dependency>
             <Dependency>libgpg-error</Dependency>
             <Dependency>libassuan</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>qt5</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,8 +27,8 @@
         <Name>gpgme</Name>
         <RuntimeDependencies>
             <Dependency>gnupg</Dependency>
-            <Dependency>libgpg-error</Dependency>
-            <Dependency>libassuan</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>qt5</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -34,7 +34,6 @@
             <Patch level="1">gentoo/24_all_passwordfd-read-early.patch</Patch>
             <Patch level="1">gentoo/26_all_pppd-usepeerwins.patch</Patch>
             <Patch level="1">gentoo/28_all_connect-errors.patch</Patch>
-            <Patch level="1">gentoo/30_all_Makefile.patch</Patch>
             <Patch level="1">gentoo/32_all_pado-timeout.patch</Patch>
             <Patch level="1">gentoo/34_all_lcp-echo-adaptive.patch</Patch>
             <Patch level="1">ppp-2.3.6-sample.patch</Patch>

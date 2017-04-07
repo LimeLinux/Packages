@@ -47,6 +47,15 @@
             <Dependency>gstreamer</Dependency>
             <Dependency>gst-plugins-base</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gtk3</Dependency>                          
+            <Dependency>tiff</Dependency>                          
+            <Dependency>webp</Dependency>                          
+            <Dependency>cairo</Dependency>                         
+            <Dependency>gdk-pixbuf</Dependency>                    
+            <Dependency>libgphoto2</Dependency>                    
+            <Dependency>gstreamer-next</Dependency>                
+            <Dependency>openexr</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
