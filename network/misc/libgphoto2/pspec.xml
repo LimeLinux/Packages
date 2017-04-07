@@ -37,8 +37,6 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/lib/udev</Path>
-            <Path fileType="doc">/usr/share/doc/libgphoto2/README</Path>
-            <Path fileType="doc">/usr/share/doc/libgphoto2/COPYING</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/libgphoto2</Path>
             <Path fileType="data">/usr/share/hal/fdi</Path>
@@ -60,6 +58,7 @@
         <Name>libgphoto2-docs</Name>
         <Summary>Documentation for libgphoto2</Summary>
         <Files>
+            <Path fileType="doc"> /usr/share/libgphoto2_port/0.12.0/vcamera/</Path>
             <Path fileType="doc">/usr/share/doc/libgphoto2</Path>
             <Path fileType="doc">/usr/share/doc/libgphoto2/camlibs</Path>
             <Path fileType="doc">/usr/share/doc/libgphoto2/apidocs.html</Path>

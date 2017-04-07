@@ -63,5 +63,5 @@ def install():
     # Remove circular symlink
     pisitools.remove("/usr/include/gphoto2/gphoto2")
 
-    pisitools.dodoc("ChangeLog", "NEWS*", "README", "AUTHORS", "TESTERS", "MAINTAINERS", "HACKING")
+    pisitools.dodoc("ChangeLog", "NEWS*", "README*", "AUTHORS", "TESTERS", "MAINTAINERS", "HACKING")
 
