@@ -11,8 +11,6 @@ from pisi.actionsapi import qt5
 from pisi.actionsapi import get
 
 def setup():
-    #shelltools.export("QT5LINK", "/usr/lib/qt5/bin")
-    #shelltools.export("QT5DIR", "/usr/lib/qt5")
     shelltools.export("QMLDIR", "/usr/lib/qt5/qml")
     qt5.configure(parameters="QMAKE_CFLAGS_ISYSTEM=")
 
@@ -21,7 +19,7 @@ def build():
     qt5.make("docs")
 
 def install():
-    autotools.install("INSTALL_ROOT=%s install_docs" % get.installDIR())
+    qt5.install()
 
     #I hope qtchooser will manage this issue
     #for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
