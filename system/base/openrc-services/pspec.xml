@@ -13,7 +13,7 @@
         <IsA>console</IsA>
         <Summary>Lime GNU/ Linux service scripts for openrc</Summary>
         <Description>Lime GNU/ Linux service scripts for openrc</Description>
-        <Archive sha1sum="e7019cac6f25f6ed4080b2976cd7dcd593f18e1a" type="targz">https://github.com/LimeLinux/openrc-services/archive/v1.1.3c.tar.gz</Archive>
+        <Archive sha1sum="54c2ca81d19d99365f09a5b7dfa2857dffbbfee3" type="targz">https://github.com/LimeLinux/openrc-services/archive/v1.1.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>openrc</Dependency>
         </BuildDependencies>
@@ -38,9 +38,9 @@
     </Package>
     
     <History>
-        <Update release="5">
-            <Date>2017-03-11</Date>
-            <Version>1.1.3c</Version>
+        <Update release="6">
+            <Date>2017-04-11</Date>
+            <Version>1.1.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
