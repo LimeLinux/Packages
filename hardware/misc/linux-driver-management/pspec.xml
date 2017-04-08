@@ -1,0 +1,39 @@
+<PISI>
+    <Source>
+        <Name>linux-driver-management</Name>
+        <Homepage>https://github.com/solus-project/linux-driver-management</Homepage>
+        <Packager>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Packager>
+        <License>LGPL-2.1</License>
+        <PartOf>system.utils</PartOf>
+        <Summary xml:lang="en">Linux Driver Management</Summary>
+        <Description xml:lang="en">Linux Driver Management (LDM) provides the core functionality required for integration of drivers into modern Linux distributions. It provides centralised tooling for detection and configuration for drivers, with a specific focus currently on display drivers.
+</Description>
+        <Archive type="targz" sha1sum="1733fa836a0718bbce2219275ab498be2b69d133">https://github.com/solus-project/linux-driver-management/archive/v0.0.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>linux-driver-management</Name>
+        <Summary xml:lang="en">Linux Driver Management</Summary>
+        <Description xml:lang="en">Linux Driver Management (LDM) provides the core functionality required for integration of drivers into modern Linux distributions. It provides centralised tooling for detection and configuration for drivers, with a specific focus currently on display drivers.
+</Description>
+        <PartOf>system.utils</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+        <Replaces>
+            <Package>gl-driver-switch</Package>
+        </Replaces>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-03-06</Date>
+            <Version>0.0.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
+

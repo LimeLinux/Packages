@@ -14,4 +14,4 @@ def install():
     pythonmodules.install(pyVer="3")
 
 
-    pisitools.dodoc("COPYING", "README.md", "PKG-INFO")
+    pisitools.dodoc("COPYING", "README.md")
