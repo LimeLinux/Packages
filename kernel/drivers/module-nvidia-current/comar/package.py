@@ -20,7 +20,7 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
         os.system("/sbin/ldconfig -X")
         os.system("rc-update add nvidia-persistenced default")
         os.system("rc-update add nvidia-smi default")
-        os.system("/opt/bin/nvidia-smi > /dev/null")
+        os.system("/usr/bin/nvidia-smi > /dev/null")
         
 
 def preRemove():

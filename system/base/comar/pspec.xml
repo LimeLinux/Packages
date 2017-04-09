@@ -35,6 +35,9 @@
             <Path fileType="doc">/usr/share/doc/</Path>
             <Path fileType="data">/var/db</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/mudur/locale">locale</AdditionalFile>
+        </AdditionalFiles>
         <Provides>
             <!--COMAR script="service.py">System.Service</COMAR-->
         </Provides>
