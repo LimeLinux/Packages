@@ -75,6 +75,13 @@ def install():
     pisitools.insinto("/usr/lib/mesa/", "/usr/lib/libGL.so.1.2.0")
     pisitools.dosym("/usr/lib/libGL.so.1.2.0", "/usr/lib/libGL.so.1.2")
 
+    pisitools.remove("/usr/lib/libGLESv1_CM.so")
+    pisitools.remove("/usr/lib/libGLESv2.so.2.0.0")
+    pisitools.remove("/usr/lib/libGLESv1_CM.so.1")
+    pisitools.remove("/usr/lib/libGLESv2.so")
+    pisitools.remove("/usr/lib/libGLESv2.so.2")
+
+
 
     if get.buildTYPE() == "emul32":
         return

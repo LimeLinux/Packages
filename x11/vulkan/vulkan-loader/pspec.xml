@@ -8,7 +8,7 @@
             <Name>Ergün Salman</Name>
             <Email>poyraz76@limelinux.com</Email>
         </Packager>
-        <License>custom</License>
+        <License>Apache-2.0</License>
         <IsA>library</IsA>
         <Summary>This project provides Khronos official ICD loader and validation layers for Vulkan developers on Windows and Linux.</Summary>
         <Description>This project provides Khronos official ICD loader and validation layers for Vulkan developers on Windows and Linux.</Description>
