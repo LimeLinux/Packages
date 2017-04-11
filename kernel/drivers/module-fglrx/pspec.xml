@@ -1,0 +1,104 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>module-fglrx</Name>
+        <Homepage>http://ati.amd.com/support/driver.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>ATI</License>
+        <Summary>ATI display drivers.</Summary>
+        <Description>Fglrx is a driver written by AMD(ATI) for ATI graphics cards.Radeons HD 2 3 4 X series are not supported</Description>
+        <Archive sha1sum="bcf684e8f7545473bc724bad0e72d9b06de84a9f" type="binary">https://sourceforge.net/projects/limeteam/files/source-limelinux/amd-driver-installer-15.302-x86.x86_64.run</Archive>
+        <AdditionalFiles>
+            <AdditionalFile target="LICENSE.TXT">LICENSE.TXT</AdditionalFile>
+            <AdditionalFile target="fglrx_kernel_4.9.patch">fglrx_kernel_4.9.patch</AdditionalFile><!--support kernel 4.x-->
+        </AdditionalFiles>
+        <BuildDependencies>
+            <Dependency version="4.9.18">kernel-module-headers</Dependency>
+            <Dependency vesion="4.9.18">kernel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>module-fglrx</Name>
+        <Conflicts>
+            <Package>module-fglrx-legacy</Package>
+        </Conflicts>
+        <IsA>driver</IsA>
+        <Summary>Kernel module for ATI display drivers</Summary>
+        <RuntimeDependencies>
+            <Dependency version="4.9.18">kernel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library" permanent="true">/lib/modules</Path>
+            <Path fileType="config">/etc/conf.d</Path>
+            <Path fileType="config">/etc/modprobe.d</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/blacklist-fglrx.conf">blacklist-fglrx.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/fglrx.conf">modprobe.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/atieventsd">atieventsd</AdditionalFile>
+        </AdditionalFiles>
+        <BuildFlags>
+            <Flag>noDelta</Flag>
+        </BuildFlags>
+    </Package>
+
+    <Package>
+        <Name>xorg-video-fglrx</Name>
+        <Conflicts>
+            <Package>xorg-video-fglrx-legacy</Package>
+        </Conflicts>
+        <IsA>driver</IsA>
+        <PartOf>x11.driver</PartOf>
+        <RuntimeDependencies>
+            <AnyDependency>
+                <Dependency version="current">module-fglrx</Dependency>
+            </AnyDependency>
+            <Dependency>qt</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>uClibc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>xorg-server</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/usr/X11R6</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+        <BuildFlags>
+            <Flag>noDelta</Flag>
+        </BuildFlags>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-04-11</Date>
+            <Version>15.302</Version>
+            <Comment>First release</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
