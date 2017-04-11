@@ -83,23 +83,3 @@ def install():
     pisitools.dohtml("docs/*")
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
