@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>vulkan-loader</Name>
+        <Homepage>https://www.khronos.org/vulkan</Homepage>
+        <Packager>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Packager>
+        <License>custom</License>
+        <IsA>library</IsA>
+        <Summary>This project provides Khronos official ICD loader and validation layers for Vulkan developers on Windows and Linux.</Summary>
+        <Description>This project provides Khronos official ICD loader and validation layers for Vulkan developers on Windows and Linux.</Description>
+        <Archive sha1sum="82f87d5ee8a0d73542eb74bcf1a095c9cf97a5fb" type="targz">https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers/archive/sdk-1.0.42.2.tar.gz</Archive>
+         <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>python-lxml</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>wayland</Dependency>
+         </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>vulkan-loader</Name>
+        <RuntimeDependencies>
+            <Dependency>python-lxml</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>wayland</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/usr/etc/vulkan/explicit_layer.d/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-04-11</Date>
+            <Version>1.0.42.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
