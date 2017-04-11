@@ -17,6 +17,7 @@ def setup():
     options ="\
               --with-dri-driverdir=/usr/lib/xorg/modules/dri \
               --with-egl-platforms=x11,drm,wayland \
+              --with-vulkan-drivers=intel,radeon \
               --enable-xa \
               --enable-dri \
               --enable-egl \
@@ -33,6 +34,7 @@ def setup():
               --enable-gallium-llvm \
               --enable-shared-glapi \
               --enable-texture-float \
+              --enable-libglvnd \
              "
 	     
     if get.buildTYPE() == "emul32":
@@ -46,11 +48,14 @@ def setup():
     elif get.ARCH() == "x86_64":
 
         options += " --with-clang-libdir=/usr/lib \
-	             --with-gallium-drivers=r300,r600,radeonsi,nouveau,svga,swrast,virgl \
-	             --with-dri-drivers=i915,i965,r200,radeon,nouveau,swrast \
-		     --enable-nine \
-		     --enable-llvm-shared-libs \
+	                 --with-gallium-drivers=r300,r600,radeonsi,nouveau,svga,swrast,virgl \
+	                 --with-dri-drivers=i915,i965,r200,radeon,nouveau,swrast \
+		             --enable-nine \
+		             --enable-llvm-shared-libs \
                      --enable-opencl-icd \
+                     --enable-xa \
+                     --enable-vdpau \
+                     --enable-omx \
                    "
     elif get.ARCH() == 'armv7h':
 
@@ -70,8 +75,31 @@ def install():
     pisitools.insinto("/usr/lib/mesa/", "/usr/lib/libGL.so.1.2.0")
     pisitools.dosym("/usr/lib/libGL.so.1.2.0", "/usr/lib/libGL.so.1.2")
 
+
     if get.buildTYPE() == "emul32":
         return
 
    # pisitools.dodoc("docs/COPYING")
     pisitools.dohtml("docs/*")
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

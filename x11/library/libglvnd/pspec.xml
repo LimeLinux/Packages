@@ -1,0 +1,42 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libglvnd</Name>
+        <Homepage>https://github.com/NVIDIA/libglvnd</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>BSD-like</License>
+        <IsA>Libry</IsA>
+        <Summary>the GL Vendor-Neutral Dispatch library</Summary>
+        <Description>This is a work-in-progress implementation of the vendor-neutral dispatch layer for arbitrating OpenGL API calls between multiple vendors on a per-screen basis, as described by Andy Ritger's OpenGL ABI proposal</Description>
+        <Archive sha1sum="d2d27bedf80f2a2de7c4ce9a9ceb46c1cb7cfd14" type="targz">https://sourceforge.net/projects/limeteam/files/source-limelinux/libglvnd-0.2.999.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>libXext</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>libglvnd</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="data">/usr/include/*</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/</Path>
+            <Path fileType="doc">/usr/share/*</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-01-21</Date>
+            <Version>0.2.999</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
