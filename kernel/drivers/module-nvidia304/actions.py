@@ -31,8 +31,8 @@ def setup():
                       % (arch, get.srcVERSION()))
     shelltools.move("tmp/*", ".")
 
-    #shelltools.system("patch -p1 < linux-4.6.patch")
-    #shelltools.system("patch -p0 < nv-drm.patch")
+    shelltools.system("patch -p1 < linux49.patch")
+    shelltools.system("patch -p0 < nv-drm.patch")
 
     # Our libc is TLS enabled so use TLS library
     shelltools.unlink("*-tls.so*")

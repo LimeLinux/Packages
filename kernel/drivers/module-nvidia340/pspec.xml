@@ -13,7 +13,7 @@
         <Description>NVIDIA graphics drivers provide optimized 2D/3D performance.</Description>
         <Archive sha1sum="dcae50bd61f7f83402e0e75e62cec132c7030342" type="binary">http://http.download.nvidia.com/XFree86/Linux-x86_64/340.102/NVIDIA-Linux-x86_64-340.102.run</Archive>
         <AdditionalFiles>
-<!--             <AdditionalFile target="linux-4.6.patch">linux-4.6.patch</AdditionalFile> -->
+            <AdditionalFile target="linux49.patch">linux49.patch</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency version="4.9.18">kernel-module-headers</Dependency>

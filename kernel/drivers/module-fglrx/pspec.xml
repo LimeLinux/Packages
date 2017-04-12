@@ -59,7 +59,7 @@
             <AnyDependency>
                 <Dependency version="current">module-fglrx</Dependency>
             </AnyDependency>
-            <Dependency>qt</Dependency>
+            <Dependency>qt5</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>

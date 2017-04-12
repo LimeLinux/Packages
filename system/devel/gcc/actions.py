@@ -36,6 +36,7 @@ def exportFlags():
     shelltools.export("CFLAGS", cflags)
     shelltools.export("CXXFLAGS", cflags)
     shelltools.export("LDFLAGS", "")
+    shelltools.export("LC_ALL", "C")
 
     # FIXME: this may not be necessary for biarch
     shelltools.export("CC", "gcc")
