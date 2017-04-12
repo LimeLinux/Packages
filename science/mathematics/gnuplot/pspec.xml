@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Portable command-line driven interactive data and function plotting utility</Summary>
         <Description>Gnuplot is a protable command-line driven interactive data and function plotting utility. It supports many types of plots in either 2D and 3D. It can draw using lines, points, boxes, contours, vector fields, surfaces, and various associated text. It also supports various specialized plot types.</Description>
-        <Archive sha1sum="3a616a1beca8e86662afcc9d368aad6847ed4e0f" type="targz">mirrors://sourceforge/gnuplot/gnuplot-5.0.4.tar.gz</Archive>
+        <Archive sha1sum="f7b8948166b22e5bd658d5cf7579716f4821dba0" type="targz">https://sourceforge.net/projects/gnuplot/files/gnuplot/5.0.6/gnuplot-5.0.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>lua</Dependency>
             <Dependency>cairo</Dependency>
@@ -59,8 +59,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>5.0.4</Version>
+            <Date>2017-04-12</Date>
+            <Version>5.0.6</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

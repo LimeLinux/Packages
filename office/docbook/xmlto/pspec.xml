@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A frontend to an XSL toolchain</Summary>
         <Description>The purpose of xmlto is to convert an XML file to the desired format using whatever means necessary.</Description>
-        <Archive sha1sum="4b1daa7a15fc64176446332d55e8befa9a6d90bf" type="targz">https://fedorahosted.org/releases/x/m/xmlto/xmlto-0.0.26.tar.gz</Archive>
+        <Archive sha1sum="aa63af9a86ab6ed0c92ea8b177dc808c18902c73" type="tarbz2">http://ftp.lfs-matrix.net/pub/blfs/7.9/x/xmlto-0.0.28.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libxslt</Dependency>
             <Dependency>util-linux</Dependency>
@@ -41,8 +41,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.0.26</Version>
+            <Date>2017-04-12</Date>
+            <Version>0.0.28</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

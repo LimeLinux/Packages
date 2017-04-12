@@ -19,6 +19,7 @@
             <Dependency>cairo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libxklavier</Dependency>
+            <Dependency>python3-distutils-extra</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,6 +31,7 @@
             <Dependency>cairo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libxklavier</Dependency>
+            <Dependency>python3-distutils-extra</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

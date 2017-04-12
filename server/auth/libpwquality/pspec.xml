@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Password quality checking</Summary>
         <Description>The libpwquality package contains a library used for password quality checking and generation of random passwords that pass the checks</Description>
-        <Archive sha1sum="ba5d03319ab3e227d7f236d0ecbd0ec09f4be1d6" type="tarbz2">https://fedorahosted.org/releases/l/i/libpwquality/libpwquality-1.2.4.tar.bz2</Archive>
+        <Archive sha1sum="a9f2eec48b9a04a836785e18c8b1f5a69d5920f7" type="tarbz2">https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.3.0/libpwquality-1.3.0.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man/man1</Path>
             <Path fileType="man">/usr/share/man/man5</Path>
+            <Path fileType="man">/usr/share/man/man3</Path>
             <Path fileType="man">/usr/share/man/man8</Path>
             <Path fileType="doc">/usr/share/doc/libpwquality</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -35,8 +36,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.2.4</Version>
+            <Date>2017-04-12</Date>
+            <Version>1.3.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -13,12 +13,12 @@
         <IsA>app:console</IsA>
         <Summary>Statically linked binary providing simplified versions of system commands</Summary>
         <Description>busybox is a single binary which includes versions of a large number of system commands, including a shell.</Description>
-        <Archive sha1sum="157d14d24748b4505b1a418535688706a2b81680" type="tarbz2">http://busybox.net/downloads/busybox-1.24.1.tar.bz2</Archive>
+        <Archive sha1sum="0b3e3cd49d6d9e30f66e364bf842663348b23dc9" type="tarbz2">https://busybox.net/downloads/busybox-1.26.2.tar.bz2</Archive>
         <AdditionalFiles>
             <AdditionalFile target=".config">config</AdditionalFile>
         </AdditionalFiles>
         <Patches>
-            <Patch level="1">fix-include.patch</Patch>
+            <!--Patch level="1">fix-include.patch</Patch-->
         </Patches>
     </Source>
 
@@ -30,9 +30,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.24.1</Version>
+        <Update release="2">
+            <Date>2017-04-11</Date>
+            <Version>1.26.2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
