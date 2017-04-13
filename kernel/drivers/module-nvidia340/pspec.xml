@@ -26,30 +26,12 @@
         <Summary>Kernel module for NVIDIA driver 340.xx releases</Summary>
         <RuntimeDependencies>
             <Dependency version="4.9.18">kernel</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>xorg-server</Dependency>
+            <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library" permanent="true">/lib/modules</Path>
-        </Files>
-        <BuildFlags>
-            <Flag>noDelta</Flag>
-        </BuildFlags>
-    </Package>
-
-    <Package>
-        <Name>xorg-video-nvidia340</Name>
-        <IsA>driver</IsA>
-        <PartOf>x11.driver</PartOf>
-        <RuntimeDependencies>
-            <Dependency>libXext</Dependency>
-            <Dependency>xorg-server</Dependency>
-            <Dependency version="current">module-nvidia340</Dependency>
-            <Dependency>libX11</Dependency>
-        </RuntimeDependencies>
-        <Conflicts>
-            <Package>xorg-video-nvidia-current</Package>
-            <Package>xorg-video-nvidia304</Package>
-        </Conflicts>
-        <Files>
             <Path fileType="data">/etc/OpenCL</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -64,7 +46,6 @@
             <Flag>noDelta</Flag>
         </BuildFlags>
     </Package>
-
 
     <History>
         <Update release="1">

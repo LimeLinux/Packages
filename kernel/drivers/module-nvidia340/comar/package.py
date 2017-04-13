@@ -1,9 +1,7 @@
 #!/usr/bin/python
 
 import os
-import os.path
 
-kver = "4.9.18"
 
 driver_dir_name = "nvidia340"
 libdir = "/usr/lib/%s" % driver_dir_name
@@ -20,10 +18,15 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
     if os.readlink("/etc/alternatives/libGL") == "%s/libGL.so.1.2.0" % libdir:
         os.system("/usr/sbin/alternatives --set libGL %s/libGL.so.1.2.0" % libdir)
         os.system("/sbin/ldconfig -X")
-        os.system("rc-update add nvidia-persistenced default")
-        os.system("rc-update add nvidia-smi default")
-        os.system("/usr/bin/nvidia-smi > /dev/null")
+
         
+def postInstall(fromVersion, fromRelease, toVersion, toRelease):
+    os.system("rc-update add nvidia-persistenced default")
+    os.system("rc-update add nvidia-smi default")
+    os.system("/usr/bin/nvidia-smi > /dev/null")
+    os.system("Xorg :1 -configure")
+    os.system("cp /root/xorg.conf.new /etc/X11/xorg.conf")
+
 
 
 def preRemove():

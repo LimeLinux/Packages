@@ -35,6 +35,9 @@
             <Path fileType="data">/usr/share</Path>
            <Path fileType="header">/usr/include/</Path>
         </Files>
+        <Provides>
+            <COMAR script="postInstall.py">System.Package</COMAR>
+        </Provides>
     </Package>
     
     <History>

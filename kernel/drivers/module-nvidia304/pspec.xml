@@ -27,30 +27,14 @@
         <Summary>Kernel module for NVIDIA driver 304.xx releases</Summary>
         <RuntimeDependencies>
             <Dependency version="4.9.18">kernel</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library" permanent="true">/lib/modules</Path>
-        </Files>
-        <BuildFlags>
-            <Flag>noDelta</Flag>
-        </BuildFlags>
-    </Package>
-
-    <Package>
-        <Name>xorg-video-nvidia304</Name>
-        <PartOf>x11.driver</PartOf>
-        <RuntimeDependencies>
-            <Dependency version="current">module-nvidia304</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>xorg-server</Dependency>
             <Dependency>zlib</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package>xorg-video-nvidia-current</Package>
-        </Conflicts>
         <Files>
+            <Path fileType="library" permanent="true">/lib/modules</Path>
             <Path fileType="data">/etc/OpenCL</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>

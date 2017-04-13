@@ -26,26 +26,6 @@
         <Summary>Kernel module for current NVIDIA graphics driver releases</Summary>
         <RuntimeDependencies>
             <Dependency version="4.9.18">kernel</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library" permanent="true">/lib/modules</Path>
-            <Path fileType="data">/etc/modprobe.d</Path>
-        </Files>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/blacklist-nouveau.conf">modprobe.conf</AdditionalFile>
-        </AdditionalFiles>
-        <BuildFlags>
-            <Flag>noDelta</Flag>
-        </BuildFlags>
-    </Package>
-
-
-    <Package>
-        <Name>nvidia-settings</Name>
-        <IsA>app:gui</IsA>
-        <PartOf>hardware.graphics</PartOf>
-        <Summary>Settings for nvidia-current kernel driver</Summary>
-        <RuntimeDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gtk3</Dependency>
@@ -55,47 +35,20 @@
             <Dependency>libX11</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency version="current">module-nvidia-current</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="library" permanent="true">/lib/modules</Path>
+            <Path fileType="data">/etc/modprobe.d</Path>
             <Path fileType="executable">/usr/bin/nvidia-settings</Path>
             <Path fileType="man">/usr/share/man/man1/nvidia-settings.1</Path>
             <Path fileType="library">/usr/lib/libnvidia-gtk*</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/nvidia</Path>
-        </Files>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/nvidia-settings.desktop">nvidia-settings.desktop</AdditionalFile>
-        </AdditionalFiles>
-    </Package>
-
-    <Package>
-        <Name>nvidia-xconfig</Name>
-        <IsA>app:console</IsA>
-        <PartOf>hardware.graphics</PartOf>
-        <Summary>Xconfig file for nvidia-current kernel driver</Summary>
-        <RuntimeDependencies>
-            <Dependency version="current">module-nvidia-current</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/nvidia-xconfig</Path>
-            <Path fileType="man">/usr/share/man/man1/nvidia-xconfig.1</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>xorg-video-nvidia-current</Name>
-        <IsA>driver</IsA>
-        <PartOf>x11.driver</PartOf>
-        <RuntimeDependencies>
-            <Dependency>libXext</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>mesa</Dependency>
-            <Dependency>xorg-server</Dependency>
-            <Dependency version="current">module-nvidia-current</Dependency>
-        </RuntimeDependencies>
-        <Files>
             <Path fileType="data">/etc/OpenCL</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -103,7 +56,13 @@
             <Path fileType="data">/usr/share/nvidia-current</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin/nvidia-xconfig</Path>
+            <Path fileType="man">/usr/share/man/man1/nvidia-xconfig.1</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/blacklist-nouveau.conf">modprobe.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/nvidia-settings.desktop">nvidia-settings.desktop</AdditionalFile>
+        </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
         </Provides>
@@ -111,7 +70,6 @@
             <Flag>noDelta</Flag>
         </BuildFlags>
     </Package>
-
 
     <History>
         <Update release="1">

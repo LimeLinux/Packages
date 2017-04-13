@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Copyright 2015 TUBITAK/UEKAE
+# Copyright 2017 Lime GNU/Linux
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/copyleft/gpl.txt.
 
@@ -11,13 +11,13 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def build():
-    autotools.make("SBINDIR=/sbin RUNSCRIPT=openrc-run")
+    autotools.make("BINDIR=/bin")
     
 
 def install():
    
-    autotools.make("DESTDIR=%s SYSCONFDIR=/etc install" % get.installDIR())
+    autotools.install("DESTDIR=%s install" % get.installDIR())
     
-    #pisitools.dodoc("LICENSE.*")
+    pisitools.dodoc("README.md")
 
 
