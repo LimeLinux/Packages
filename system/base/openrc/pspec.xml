@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Dependency based init system that works with sysvinit.</Summary>
         <Description>Dependency based init system that works with sysvinit.</Description>
-        <Archive sha1sum="68b888f4df29519621c419165a1fa53e661a8923" type="targz">https://github.com/OpenRC/openrc/archive/0.23.2.tar.gz</Archive>
+        <Archive sha1sum="dfc5e16a1f32d320f6056f774997e5f6dfbfcba9" type="targz">https://github.com/OpenRC/openrc/archive/0.24.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>pam</Dependency>
@@ -38,6 +38,7 @@
             <Path fileType="executable">/sbin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/openrc</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
@@ -49,24 +50,10 @@
 
 
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2017-02-21</Date>
-            <Version>0.23.2</Version>
+            <Version>0.24.2</Version>
             <Comment>Version Bump</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>0.23.1</Version>
-            <Comment>Set distrib. name</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.22.2</Version>
-            <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Update>
