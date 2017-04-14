@@ -248,7 +248,7 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="5">
             <Date>2017-04-04</Date>
             <Version>1.19.3</Version>
             <Comment>First Release</Comment>

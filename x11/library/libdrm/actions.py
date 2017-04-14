@@ -9,18 +9,17 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
 def setup():
-    pisitools.dosed("configure.ac", "pthread-stubs", deleteLine=True)
+    
     autotools.autoreconf("-fi")
     
     
     options = " --prefix=/usr \
                 --enable-udev"
 		
-    if get.ARCH() == 'armv7h':
-
-	options += " --enable-omap-experimental-api --enable-exynos-experimental-api --enable-tegra-experimental-api"
 	
     autotools.configure(options)
+
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
     autotools.make()

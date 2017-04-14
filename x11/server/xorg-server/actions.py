@@ -73,3 +73,4 @@ def install():
     pisitools.removeDir("/var/log")
 
     pisitools.dodoc("COPYING", "README")
+

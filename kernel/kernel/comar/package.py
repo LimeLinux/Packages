@@ -2,7 +2,7 @@
 import os
 
 
-KernelVersion = "4.9.10"
+KernelVersion = "4.9.18"
 
 def postInstall(fromVersion, fromRelease, toVersion, toRelease):
     gcf = "/boot/grub2/grub.cfg"
