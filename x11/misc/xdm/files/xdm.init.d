@@ -101,7 +101,7 @@ setup_dm() {
 			START_STOP_ARGS="--background"
 			;;
 		lightdm)
-			EXE=/usr/sbin/lightdm
+			EXE=/usr/bin/lightdm
 			PIDFILE=/run/lightdm.pid
 			START_STOP_ARGS="--background"
 			;;
