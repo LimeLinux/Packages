@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Unicode string library</Summary>
         <Description>This library provides functions for manipulating Unicode strings and for manipulating C strings according to the Unicode standard.</Description>
-        <Archive sha1sum="87cb4c18fbb1e0f1d8eb38311093835a924b4b12" type="targz">mirrors://gnu/libunistring/libunistring-0.9.6.tar.gz</Archive>
+        <Archive sha1sum="7d92687a50fea7702e8052486dfa25ffc361c9f3" type="targz">http://ftp.gnu.org/gnu/libunistring/libunistring-0.9.7.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -29,9 +29,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.9.6</Version>
+        <Update release="2">
+            <Date>2017-04-15</Date>
+            <Version>0.9.7</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

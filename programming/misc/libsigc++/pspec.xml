@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Typesafe signal framework for C++</Summary>
         <Description>libsigc++ is a library which implements a full callback system for use in widget libraries, abstract interfaces, and general programming.</Description>
-         <Archive sha1sum="33e0b0f162eababc310d927246627d62bb25cb63" type="tarxz">mirrors://gnome/libsigc++/2.4/libsigc++-2.4.1.tar.xz</Archive>
+         <Archive sha1sum="7807a12a1e90a98bd8c9440e5b312d3cb1121bf7" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/libsigc++/2.10/libsigc++-2.10.0.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -27,9 +27,9 @@
 
 
     <History>
-        <Update release="3">
-            <Date>2016-12-21</Date>
-            <Version>2.4.1</Version>
+        <Update release="2">
+            <Date>2017-04-15</Date>
+            <Version>2.10</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

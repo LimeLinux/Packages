@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>The Nettle package contains the low-level cryptographic library</Summary>
         <Description>The Nettle package contains the low-level cryptographic library that is designed to fit easily in many contexts.</Description>
-        <Archive sha1sum="b2eb5b36e65a8d3ed60ff81ec897044dead6dae0" type="targz">ftp://ftp.gnu.org/gnu/nettle/nettle-3.2.tar.gz</Archive>
+        <Archive sha1sum="bf2b4d3a41192ff6177936d7bc3bee4cebeb86c4" type="targz">https://ftp.gnu.org/gnu/nettle/nettle-3.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gmp</Dependency>
         </BuildDependencies>
@@ -35,9 +35,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>3.2</Version>
+        <Update release="2">
+            <Date>2017-04-15</Date>
+            <Version>3.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

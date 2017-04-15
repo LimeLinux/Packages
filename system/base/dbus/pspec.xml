@@ -14,7 +14,7 @@
         <IsA>service</IsA>
         <Summary>A message bus system, a simple way for applications to talk to each other</Summary>
         <Description>D-Bus supplies both a system daemon (for events such as "new hardware device added" or "printer queue changed") and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two apps to communicate directly (without going through the message bus daemon). Currently the communicating applications are on one computer, but TCP/IP option is available and remote support planned.</Description>
-        <Archive sha1sum="8749b63ad911436f116182a321fa06c68070c19d" type="targz">http://dbus.freedesktop.org/releases/dbus/dbus-1.10.16.tar.gz</Archive>
+        <Archive sha1sum="f3407dc00075c7a81cce502316aaf536f02ebfea" type="targz">http://dbus.freedesktop.org/releases/dbus/dbus-1.10.18.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>expat</Dependency>
             <Dependency>libX11</Dependency>
@@ -57,23 +57,9 @@
 
 
     <History>
-        <Update release="3">
-            <Date>2017-02-21</Date>
-            <Version>1.10.16</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2017-02-21</Date>
-            <Version>1.10.16</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.10.8</Version>
+        <Update release="4">
+            <Date>2017-04-16</Date>
+            <Version>1.10.18</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

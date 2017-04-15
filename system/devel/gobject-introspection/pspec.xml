@@ -15,7 +15,7 @@
         <IsA>app:console</IsA>
         <Summary>Introspection system for GObject-based libraries</Summary>
         <Description>gobject-introspection can scan C header and source files in order to generate introspection typelib files. It also provides an API to examine typelib files, useful for creating language bindings among other things.</Description>
-        <Archive sha1sum="5907f70bd275dceb4d3cb825ddce82cb1fdb4242" type="tarxz">mirrors://gnome/gobject-introspection/1.50/gobject-introspection-1.50.0.tar.xz</Archive>
+        <Archive sha1sum="2a0c86bd23d27df0588b79404cfc5619ed6171e8" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/gobject-introspection/1.52/gobject-introspection-1.52.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libffi</Dependency>
             <Dependency>python</Dependency>
@@ -39,9 +39,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.50.0</Version>
+        <Update release="2">
+            <Date>2017-04-15</Date>
+            <Version>1.52.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

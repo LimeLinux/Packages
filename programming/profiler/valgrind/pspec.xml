@@ -13,9 +13,9 @@
         <IsA>app:console</IsA>
         <Summary>Memory access debugger for X86 and PPC Linux platforms</Summary>
         <Description>Valgrind is an award-winning suite of tools for debugging and profiling Linux programs. With the tools that come with Valgrind, you can automatically detect many memory management and threading bugs, avoiding hours of frustrating bug-hunting, making your programs more stable. You can also perform detailed profiling, to speed up and reduce memory use of your programs.</Description>
-        <Archive sha1sum="340757e91d9e83591158fe8bb985c6b11bc53de5" type="tarbz2">http://www.valgrind.org/downloads/valgrind-3.11.0.tar.bz2</Archive>
+        <Archive sha1sum="7a6878bf998c60d1e377a4f22ebece8d9305bda4" type="tarbz2">http://valgrind.org/downloads/valgrind-3.12.0.tar.bz2</Archive>
         <Patches>
-            <Patch level="0">fix_rlimit.patch</Patch>
+            <!--Patch level="0">fix_rlimit.patch</Patch-->
         </Patches>
     </Source>
 
@@ -31,9 +31,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>3.11.0</Version>
+        <Update release="2">
+            <Date>2017-04-15</Date>
+            <Version>3.12.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
