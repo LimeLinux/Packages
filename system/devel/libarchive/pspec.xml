@@ -24,6 +24,7 @@
             <Dependency>xz</Dependency>
             <Dependency>lzo</Dependency>
             <Dependency>zlib</Dependency>
+            <Dependency>cpio</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -38,6 +39,7 @@
             <Dependency>attr</Dependency>
             <Dependency>bzip2</Dependency>
             <Dependency>libxml2</Dependency>
+            <Dependency>cpio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
