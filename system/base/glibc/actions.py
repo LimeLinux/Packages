@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "glibc-2.23"
+WorkDir = "glibc-2.25"
 
 
 

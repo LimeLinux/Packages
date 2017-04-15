@@ -15,7 +15,7 @@
         <IsA>library</IsA>
         <Summary>A utility for getting files from remote servers</Summary>
         <Description>curl is a command line tool for transferring data with URL syntax, supporting various protocols.</Description>
-        <Archive sha1sum="f02a14bbe580d2a8cf3bf45a79d39eb595220ac7" type="tarbz2">http://curl.haxx.se/download/curl-7.51.0.tar.bz2</Archive>
+        <Archive sha1sum="ae4a14778ef9ac3aaeaa022243d6e26c0bf1362b" type="tarbz2">https://curl.haxx.se/download/curl-7.53.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>glibc</Dependency>
             <Dependency>zlib</Dependency>
@@ -47,9 +47,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>7.51.0</Version>
+        <Update release="2">
+            <Date>2017-04-15</Date>
+            <Version>7.53.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
