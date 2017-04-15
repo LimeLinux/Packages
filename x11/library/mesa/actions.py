@@ -34,7 +34,6 @@ def setup():
               --enable-gallium-llvm \
               --enable-shared-glapi \
               --enable-texture-float \
-              --enable-libglvnd \
              "
 	     
     if get.buildTYPE() == "emul32":
@@ -72,11 +71,8 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
-    pisitools.insinto("/usr/lib/mesa/", "/usr/lib/libGL.so.1.2.0")
-    pisitools.dosym("/usr/lib/libGL.so.1.2.0", "/usr/lib/libGL.so.1.2")
-
-
-
+    pisitools.insinto("/usr/lib/mesa/", "%s/usr/lib/libGL.so.1.2.0"% get.installDIR())
+    pisitools.dosym("/usr/lib/mesa/libGL.so.1.2.0", "/usr/lib/libGL.so.1.2")
 
 
     if get.buildTYPE() == "emul32":

@@ -1,6 +1,6 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=10
-GRUB_DISTRIBUTOR="LimeLinux"
+GRUB_DISTRIBUTOR="Lime"
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash net.ifnames=0"
 #GRUB_CMDLINE_LINUX=""
 
@@ -40,7 +40,7 @@ GRUB_COLOR_HIGHLIGHT="black/white"
 
 #GRUB_BACKGROUND="/usr/share/grub/limelinux-grub-bg.png"
 
-GRUB_FONT="/boot/grub2/themes/starfield/dejavu_bold_14.pf2"
+#GRUB_FONT="/boot/grub2/unicode.pf2"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
 #GRUB_THEME="/path/to/gfxtheme"

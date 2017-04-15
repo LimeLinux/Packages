@@ -13,8 +13,6 @@ WorkDir="grub-%s" % (get.srcVERSION().replace("_", "~"))
 
 
 def setup():
-    
-    #shelltools.copy("../unifont*.bdf", "./unifont.bdf")
     shelltools.export("GRUB_CONTRIB", "%s/grub-%s/grub-extras" % (get.workDIR(), get.srcVERSION()))
 
     pisitools.cflags.remove("-fstack-protector", "-fasynchronous-unwind-tables", "-fexceptions", "-fPIC")
@@ -55,17 +53,15 @@ def build():
     shelltools.cd("..")
 
 def install():
-    # Install unicode.pf2 using downloaded font source. 
-    shelltools.system("./grub-mkfont -o unicode.pf2 unifont.bdf")
-
     # Create directory for grub.cfg file
     pisitools.dodir("/boot/grub2")
     
-    pisitools.insinto("/boot/grub2", "unicode.pf2")
+    #shelltools.system("grub2-mkfont -s 14 -o /%s/unicode.pf2 /usr/share/fonts/dejavu/DejaVuSansMono.ttf" % get.workDIR())
+    
+    pisitools.insinto("/boot/grub2/", "dejavu_16.pf2", "unicode.pf2")
 
     # Insall our theme
-    pisitools.insinto("/usr/share/grub/themes/","themes/grub-2.02~beta3/themes/limelinux")
-    #shelltools.copy("ascii.pf2","%s/usr/share/grub/themes/limelinux" % get.installDIR())
+    pisitools.insinto("/usr/share/grub/themes/","themes/limelinux")
 
 
 
@@ -80,3 +76,5 @@ def install():
     
     shelltools.copytree("/%s/efi/usr/lib/grub/x86_64-efi" % get.installDIR(), "%s/usr/lib/grub/x86_64-efi" % get.installDIR())
     pisitools.removeDir("/efi")
+
+

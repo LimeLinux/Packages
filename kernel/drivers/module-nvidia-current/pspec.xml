@@ -60,7 +60,7 @@
             <Path fileType="man">/usr/share/man/man1/nvidia-xconfig.1</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/blacklist-nouveau.conf">modprobe.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/modprobe.d/nvidia-blacklist.conf">modprobe.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/nvidia-settings.desktop">nvidia-settings.desktop</AdditionalFile>
         </AdditionalFiles>
         <Provides>

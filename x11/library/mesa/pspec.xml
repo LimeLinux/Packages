@@ -34,8 +34,8 @@
             <Dependency>vulkan-loader</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">0001-EGL-Implement-the-libglvnd-interface-for-EGL-v2.patch</Patch>
-            <Patch level="1">0002-fixup-EGL-Implement-the-libglvnd-interface-for-EGL-v.patch</Patch>
+            <!--Patch level="1">0001-EGL-Implement-the-libglvnd-interface-for-EGL-v2.patch</Patch>
+            <Patch level="1">0002-fixup-EGL-Implement-the-libglvnd-interface-for-EGL-v.patch</Patch-->
         </Patches>
     </Source>
 

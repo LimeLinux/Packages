@@ -9,6 +9,8 @@
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools , shelltools , get
 
+
+
 def setup():
     shelltools.system("./autogen.sh")
     autotools.configure()
@@ -19,10 +21,11 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
-    pisitools.remove("/usr/lib/libGLESv1_CM.so")
-    pisitools.remove("/usr/lib/libGLESv2.so.2.0.0")
-    pisitools.remove("/usr/lib/libGLESv1_CM.so.1")
-    pisitools.remove("/usr/lib/libGLESv2.so")
-    pisitools.remove("/usr/lib/libGLESv2.so.2")
+
+    pisitools.domove("/usr/lib/libGLESv*", "/usr/lib/libglvnd")
+    pisitools.domove("/usr/lib/libEGL*", "/usr/lib/libglvnd")
+    pisitools.domove("/usr/lib/libGL.*", "/usr/lib/libglvnd")
+
+
     
     pisitools.dodoc("README.md", "LICENSE")
