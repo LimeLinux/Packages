@@ -62,7 +62,7 @@ setup_dm() {
 
 	# Load our root path from profile.env
 	# Needed for kdm
-	PATH=${PATH}:$(. /etc/profile.env; echo "${ROOTPATH}")
+	#PATH=${PATH}:$(. /etc/profile.env; echo "${ROOTPATH}")
 
 	NAME=
 	case "${MY_XDM}" in
