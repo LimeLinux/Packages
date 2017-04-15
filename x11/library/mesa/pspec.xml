@@ -57,6 +57,7 @@
             <Dependency>libxshmfence</Dependency>
             <Dependency>libglvnd</Dependency>
             <Dependency>vulkan-loader</Dependency>
+            <Dependency>libomxil-bellagio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

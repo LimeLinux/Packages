@@ -1,7 +1,6 @@
 #!/sbin/openrc-run
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License, v2
-# $Id$
 
 # This is here to serve as a note to myself, and future developers.
 #
@@ -63,7 +62,7 @@ setup_dm() {
 
 	# Load our root path from profile.env
 	# Needed for kdm
-	#PATH=${PATH}:$(. /etc/profile; echo "${PATH}")
+	PATH=${PATH}:$(. /etc/profile.env; echo "${ROOTPATH}")
 
 	NAME=
 	case "${MY_XDM}" in
@@ -102,7 +101,7 @@ setup_dm() {
 			START_STOP_ARGS="--background"
 			;;
 		lightdm)
-			EXE=/usr/bin/lightdm
+			EXE=/usr/sbin/lightdm
 			PIDFILE=/run/lightdm.pid
 			START_STOP_ARGS="--background"
 			;;
@@ -229,4 +228,3 @@ stop() {
 }
 
 # vim: set ts=4 :
-
