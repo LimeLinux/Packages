@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Mesa graphics libraries and utilities</Summary>
         <Description>Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.</Description>
-        <Archive sha1sum="a3b4f51e8749bab142cbec4591b2136e652b354e" type="tarxz">https://mesa.freedesktop.org/archive/17.0.0/mesa-17.0.0.tar.xz</Archive>
+        <Archive sha1sum="1b9081614b1ec9a6f60849ced8637917ad0e8593" type="tarxz">https://mesa.freedesktop.org/archive/mesa-17.0.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>xorg-proto</Dependency>
             <Dependency>libdrm</Dependency>
@@ -34,8 +34,6 @@
             <Dependency>vulkan-loader</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch level="1">0001-EGL-Implement-the-libglvnd-interface-for-EGL-v2.patch</Patch>
-            <Patch level="1">0002-fixup-EGL-Implement-the-libglvnd-interface-for-EGL-v.patch</Patch-->
         </Patches>
     </Source>
 
@@ -78,9 +76,9 @@
 
 
     <History>
-        <Update release="4">
-            <Date>2017-04-21</Date>
-            <Version>17.0.0</Version>
+        <Update release="5">
+            <Date>2017-04-17</Date>
+            <Version>17.0.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -14,7 +14,7 @@
         <Summary>GNU GRUB is a Multiboot boot loader.</Summary>
         <Description>GNU GRUB (short for GNU GRand Unified Bootloader) is a boot loader package from the GNU Project.</Description>
         <Archive sha1sum="14a1f9239a9c974957e835dc706fc6a1e4819c83" type="tarxz">ftp://alpha.gnu.org/gnu/grub/grub-2.02~beta3.tar.xz</Archive>
-        <Archive sha1sum="daa272870e39942536bd55e87b5af384faa72af7" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/grub2-theme-limelinux-0.1.tar.xz</Archive>
+        <Archive sha1sum="ab7de42011c1156d46d0b96c3753f323042f2daf" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/grub2-theme-limelinux-0.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
             <Dependency>bison</Dependency>

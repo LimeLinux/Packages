@@ -15,7 +15,7 @@
         <Summary>Graphical Boot Animation and Logger</Summary>
         <Description>plymouth provides an attractive graphical boot animation in place of the text messages that normally get shown. Text messages are instead redirected to a log file for viewing after boot.</Description>
         <Archive sha1sum="d0b70929bc47899e03019c3fcd681dd043d7fb8c" type="targz">http://source.pisilinux.org/1.0/plymouth-0.8.8.tar.gz</Archive>
-        <Archive sha1sum="4eb45a38491a31ed47fcf3f3ffc2f577ca66f370" type="targz" target="plymouth-0.8.8/themes">http://source.limelinux.com/1.0/limelinux_plymounth_theme-0.1.tar.gz</Archive>
+        <Archive sha1sum="8878bf600dae6b5a8539f416a187f7e7eb56dec7" type="tarxz" target="plymouth-0.8.8/themes">http://source.limelinux.com/1.0/limelinux_plymounth_theme-0.2.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile permission="0755" target="generate-flist">limelinux/generate-flist.py</AdditionalFile>
         </AdditionalFiles>
@@ -105,7 +105,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="4">
             <Date>2017-02-25</Date>
             <Version>0.8.8</Version>
             <Comment>First release</Comment>
@@ -114,3 +114,4 @@
         </Update>
     </History>
 </PISI>
+
