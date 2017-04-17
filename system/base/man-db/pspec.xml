@@ -15,7 +15,7 @@
         <IsA>data:doc</IsA>
         <Summary>Application to read Linux man pages</Summary>
         <Description>Man package consists of programs which is used to read most of the documentation available in linux system. For example, you can write "man nameoftheprogram" into the konsole or "man:nameoftheprogram" into the konqueror to get a detailed usage information for many programs.</Description>
-        <Archive sha1sum="fd1314f616e055ddde0c02db219f5c9426a0ee5f" type="tarxz">http://download.savannah.gnu.org/releases/man-db/man-db-2.7.5.tar.xz</Archive>
+        <Archive sha1sum="919dcb34d604faac9b18a38ead07f457d0dab501" type="tarxz">http://download.savannah.gnu.org/releases/man-db/man-db-2.7.6.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>less</Dependency>
             <Dependency>gzip</Dependency>
@@ -52,9 +52,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.7.5</Version>
+        <Update release="2">
+            <Date>2017-04-17</Date>
+            <Version>2.7.6.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
