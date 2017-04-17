@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Library for error values used by GnuPG components</Summary>
         <Description>libgpg-error is a library that defines common error values for all GnuPG components.</Description>
-        <Archive sha1sum="a428758999ff573e62d06892e3d2c0b0f335787c" type="targz">ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.27.tar.bz2</Archive>
+        <Archive sha1sum="a428758999ff573e62d06892e3d2c0b0f335787c" type="tarbz2">ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.27.tar.bz2</Archive>
     </Source>
 
     <Package>
