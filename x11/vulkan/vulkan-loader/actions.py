@@ -14,7 +14,8 @@ from pisi.actionsapi import cmaketools
 def setup():
     shelltools.system("./update_external_sources.sh")
  
-    cmaketools.configure("-DCMAKE_INSTALL_LIBDIR=/usr/lib \
+    cmaketools.configure("-DCMAKE_INSTALL_SYSCONFDIR=/etc \
+                          -DCMAKE_INSTALL_LIBDIR=/usr/lib \
                           -DCMAKE_SKIP_RPATH=True \
                           -DBUILD_TESTS=Off \
                           -DBUILD_WSI_XCB_SUPPORT=On \
