@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Unicode string library</Summary>
         <Description>This library provides functions for manipulating Unicode strings and for manipulating C strings according to the Unicode standard.</Description>
-        <Archive sha1sum="7d92687a50fea7702e8052486dfa25ffc361c9f3" type="targz">http://ftp.gnu.org/gnu/libunistring/libunistring-0.9.7.tar.xz</Archive>
+        <Archive sha1sum="7d92687a50fea7702e8052486dfa25ffc361c9f3" type="tarxz">http://ftp.gnu.org/gnu/libunistring/libunistring-0.9.7.tar.xz</Archive>
     </Source>
 
     <Package>

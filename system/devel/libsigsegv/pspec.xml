@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A library for handling page faults in user mode</Summary>
         <Description>This is a library for handling page faults in user mode. A page fault occurs when a program tries to access to a region of memory that is currently not available.</Description>
-        <Archive sha1sum="b75a647a9ebda70e7a3b33583efdd550e0eac094" type="targz">mirrors://gnu/libsigsegv/libsigsegv-2.10.tar.gz</Archive>
+        <Archive sha1sum="186dea8ae788395476bd7cbaf38c17ebe82e1777" type="targz">mirrors://gnu/libsigsegv/libsigsegv-2.11.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -26,9 +26,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.10</Version>
+        <Update release="2">
+            <Date>2017-04-17</Date>
+            <Version>2.11</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
