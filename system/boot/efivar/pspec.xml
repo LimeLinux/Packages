@@ -13,13 +13,12 @@
         <IsA>app:console</IsA>
         <Summary>Tools and library to manipulate EFI variables</Summary>
         <Description>Tools and library to manipulate EFI variables.</Description>
-        <Archive sha1sum="680a648e5e36a2b4b012fb7705b3e6610bcd42a2" type="tarbz2">https://github.com/rhinstaller/efivar/releases/download/0.23/efivar-0.23.tar.bz2</Archive>
+        <Archive sha1sum="2fc8e62b4eaaff47b98b803998576a84873c719a" type="targz">https://github.com/rhinstaller/efivar/archive/31.tar.gz</Archive>
         <BuildDependencies>
            <Dependency>popt</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">0001-Workaround-rename-of-linux-nvme.h.patch</Patch>
-            <Patch level="1">efivar-no-static.patch</Patch>
+            <!--Patch level="1">efivar-no-static.patch</Patch-->
         </Patches>
     </Source>
 
@@ -39,9 +38,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.23</Version>
+        <Update release="2">
+            <Date>2017-04-17</Date>
+            <Version>0.31</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
