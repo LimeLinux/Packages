@@ -79,6 +79,7 @@ def install():
     shelltools.export("PATH", "%s/bin:%s" % (get.curDIR(), get.ENV("PATH")))
     shelltools.export("LD_LIBRARY_PATH", "%s/lib:%s" % (get.curDIR(), get.ENV("LD_LIBRARY_PATH")))
     autotools.rawInstall("INSTALL_ROOT=%s" % get.installDIR())
+    pisitools.dosym("/usr/bin/lrelease", "/usr/bin/lrelease-qt5")
     
 
 

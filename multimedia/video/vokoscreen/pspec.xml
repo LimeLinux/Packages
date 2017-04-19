@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>New desktop recording program</Summary>
         <Description>Vokoscreen is a new application you to record your desktop. It’s very simple and it uses a minimalistic GUI</Description>
-        <Archive sha1sum="fcc817cd96c2abfbfa548b63deb9cc7fb91e59fe" type="targz">https://github.com/vkohaupt/vokoscreen/archive/2.5.3-beta.tar.gz</Archive>
+        <Archive sha1sum="1cb7468441d184495d2fce350fae517770e0ad9c" type="targz">https://github.com/vkohaupt/vokoscreen/archive/2.5.4-beta.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libv4l</Dependency>
@@ -48,8 +48,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.5.3</Version>
+            <Date>2017-04-19</Date>
+            <Version>2.5.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

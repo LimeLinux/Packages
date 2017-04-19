@@ -15,6 +15,7 @@ def setup():
     autotools.configure("--prefix=/usr/lib/jvm/java-7-openjdk\
                          --datarootdir=/usr/share \
                          --with-jdk-home=/usr/lib/jvm/java-7-openjdk \
+                         --with-jre-home=/usr/lib/jvm/java-7-openjdk \
                          --with-browser-tests \
                          --disable-docs \
                          --with-firefox=/usr/bin/firefox")
