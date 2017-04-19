@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
@@ -10,8 +11,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
 def setup():
-    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
-    autotools.configure("--disable-networkmanager --without-gvc --disable-static --enable-gtk-doc")
+    autotools.configure("--disable-static \
+                         --disable-compile-warnings \
+                        ")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 

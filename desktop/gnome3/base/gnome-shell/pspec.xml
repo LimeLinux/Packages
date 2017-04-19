@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME Shell is the defining technology of the GNOME 3 user experience</Summary>
         <Description>GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
-        <Archive sha1sum="0fa501f544b06b59e8e6d0bcb0bcff0e1c552981" type="tarxz">https://git.gnome.org/browse/gnome-shell/snapshot/gnome-shell-3.23.91.tar.xz</Archive>
+        <Archive sha1sum="45149832b7230c53ffbbd6247c2b21781b66d697" type="tarxz">mirrors://gnome/gnome-shell/3.10/gnome-shell-3.10.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gjs</Dependency>
             <Dependency>gcr</Dependency>

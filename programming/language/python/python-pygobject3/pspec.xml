@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Glib bindings for Python</Summary>
         <Description>pygobject is GLib's GObject library bindings for Python.</Description>
-        <Archive sha1sum="a8eb98b56defa47fa0644a7a1c5578973e02137b" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/pygobject/3.22/pygobject-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="acdb1958e7f9785d92888a423afffd7164502f87" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/pygobject/3.24/pygobject-3.24.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libffi</Dependency>
             <Dependency>python</Dependency>
@@ -62,8 +62,8 @@
 
        <History>
         <Update release="3">
-            <Date>2016-05-08</Date>
-            <Version>3.18.2</Version>
+            <Date>2017-05-08</Date>
+            <Version>3.24.1</Version>
             <Comment>First release</Comment>
             <Name>Ergün Salman</Name>
             <Email>poyraz76@limelinux.com</Email>
