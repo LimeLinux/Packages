@@ -12,7 +12,7 @@ def setup():
                          --disable-esd \
                          --disable-rpath \
                          --with-package-name='LimeLinux gstreamer-plugins-good package' \
-                         --with-package-origin='http://www.pisilinux.org' \
+                         --with-package-origin='http://www.limelinux.com' \
                          --disable-schemas-install")
 
 
