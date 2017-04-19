@@ -17,7 +17,9 @@ def configure(pvers, flags):
     shelltools.system("PYTHON=%s ../configure %s" % (pvers, flags))
 
 def setup():
+    autotools.autoreconf("-fi")
     confFlags = "--prefix=/usr \
+                 --localstatedir=/var \
                  --docdir=/usr/share/doc/python-dbus"
     shelltools.makedirs(py2dir)
     shelltools.cd(py2dir)
