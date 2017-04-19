@@ -13,9 +13,10 @@
         <License>AFL-2.1</License>
         <IsA>library</IsA>
         <Summary>D-Bus Python bindings</Summary>
-        <Description>dbus-python provides a Python module which wraps the D-Bus programming API.</Description>
+        <Description>dbus-python provides a Python3 module which wraps the D-Bus programming API.</Description>
         <Archive sha1sum="078a76d760ba649991b0ac0ae2eaeda41c00ca5b" type="targz">http://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.2.4.tar.gz</Archive>
         <BuildDependencies>
+            <Dependency>python3</Dependency>
             <Dependency>python</Dependency>
             <Dependency>dbus</Dependency>
             <Dependency>dbus-glib</Dependency>
@@ -28,6 +29,22 @@
     </Source>
 
     <Package>
+        <Name>dbus-python3</Name>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>libpcre</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python3*</Path>
+        </Files>
+    </Package>
+
+ <Package>
         <Name>dbus-python</Name>
         <RuntimeDependencies>
             <Dependency>python</Dependency>
@@ -37,6 +54,7 @@
             <Dependency>zlib</Dependency>
             <Dependency>libffi</Dependency>
             <Dependency>libpcre</Dependency>
+            <Dependency>dbus-python3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/python2*</Path>
@@ -47,8 +65,8 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
+        <Update release="2">
+            <Date>2017-04-19</Date>
             <Version>1.2.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>

@@ -8,25 +8,34 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
+  
+
+py2dir = "py2build"
+py3dir = "py3build"
+
+def configure(pvers, flags):
+    shelltools.system("PYTHON=%s ../configure %s" % (pvers, flags))
 
 def setup():
-    shelltools.makedirs("build-python2")
-    autotools.autoreconf("-fi")
-
-    shelltools.cd("build-python2")
-    shelltools.system("../configure --prefix=/usr \
-                       --localstatedir=/var \
-                       --disable-api-docs \
-                       --disable-html-docs \
-                       --disable-static")
+    confFlags = "--prefix=/usr \
+                 --docdir=/usr/share/doc/python-dbus"
+    shelltools.makedirs(py2dir)
+    shelltools.cd(py2dir)
+    configure ("/usr/bin/python", confFlags)
+    shelltools.cd("..")
+    shelltools.makedirs(py3dir)
+    shelltools.cd(py3dir)
+    configure("/usr/bin/python3", confFlags)
 
 def build():
-    shelltools.cd("build-python2")
-    autotools.make()
-
-
+    shelltools.cd(py2dir)
+    autotools.make ()
+    shelltools.cd("..")
+    shelltools.cd(py3dir)
+	
 def install():
-    pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README")
-
-    shelltools.cd("build-python2")
+    shelltools.cd(py2dir)
+    autotools.rawInstall ("DESTDIR=%s" % get.installDIR())
+    shelltools.cd("..")
+    shelltools.cd(py3dir)
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
