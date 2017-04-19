@@ -26,7 +26,7 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.insinto("/lib/firmware/", "/lib/firmware/aic94xx-seq/*")
+    pisitools.insinto("/lib/firmware/", "aic94xx-seq/aic94xx-seq.fw")
 
     # Remove installed and LIC* files from /lib/firmware
     pisitools.remove("/lib/firmware/GPL-3")
