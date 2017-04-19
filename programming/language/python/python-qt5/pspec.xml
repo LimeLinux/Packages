@@ -33,7 +33,7 @@
             <Dependency>dbus</Dependency>
             <Dependency>python</Dependency>
             <Dependency>qt5</Dependency>
-            <Dependency>sip</Dependency>
+            <Dependency>python-sip</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/py2uic5</Path>
