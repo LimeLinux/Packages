@@ -11,15 +11,12 @@ from pisi.actionsapi import get
 
 def build():
     shelltools.export("CFLAGS", "-Os")
-    autotools.make("all")
+    autotools.make('EFIDIR="/boot/EFI"')
+
 
 def install():
-    pisitools.dosed("Makefile","BINDIR := /usr/sbin","BINDIR := %s/usr/sbin" % get.installDIR())
-    shelltools.makedirs("%s/usr/sbin" % get.installDIR())
-    shelltools.makedirs("%s/usr/lib" % get.installDIR())
-    shelltools.makedirs("%s/usr/share/man" % get.installDIR())
-    shelltools.makedirs("%s/usr/include" % get.installDIR())
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.insinto("/usr/lib", "src/lib/*.o")
-    pisitools.insinto("/usr/share/man", "src/man/*")
+    pisitools.insinto("/usr/lib", "src/*.o")
+    pisitools.insinto("/usr/sbin", "src/efibootdump")
+    pisitools.insinto("/usr/sbin", "src/efibootmgr")
+    pisitools.insinto("/usr/share/man", "src/*.8")
     pisitools.insinto("/usr/include", "src/include/*.h")

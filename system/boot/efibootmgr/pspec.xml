@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Tool to modify UEFI Firmware Boot Manager Variables</Summary>
         <Description>a Linux user-space application to modify the Intel Extensible Firmware Interface (EFI) Boot Manager.</Description>
-        <Archive sha1sum="e4d96361e7d71117027ccf02a63545270e1eac5e" type="targz">https://github.com/rhinstaller/efibootmgr/archive/efibootmgr-0.12.tar.gz</Archive>
+        <Archive sha1sum="5c7c60edfc7ff3589b711d1deaa10472f919ede9" type="targz">https://github.com/rhinstaller/efibootmgr/archive/15.tar.gz</Archive>
         <BuildDependencies>
            <Dependency>pciutils</Dependency>
            <Dependency>zlib</Dependency>
@@ -36,8 +36,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.12</Version>
+            <Date>2017-04-19</Date>
+            <Version>15</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
