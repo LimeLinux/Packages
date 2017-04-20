@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>C++ binding for Cairo</Summary>
         <Description>cairomm package is the C++ binding for Cairo (it makes possible using Cairo in C++).</Description>
-        <Archive sha1sum="f08bf8a331067f0d1e876523f07238fba6b26b99" type="targz">http://cairographics.org/releases/cairomm-1.10.0.tar.gz</Archive>
+        <Archive sha1sum="621546f32221a2ddc079167a13ce5b5409bed704" type="targz">https://www.cairographics.org/releases/cairomm-1.12.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>doxygen</Dependency>
             <Dependency>cairo</Dependency>
@@ -44,9 +44,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.10.0</Version>
+        <Update release="2">
+            <Date>2017-04-21</Date>
+            <Version>1.12.2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
