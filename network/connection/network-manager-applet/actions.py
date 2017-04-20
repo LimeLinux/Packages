@@ -17,9 +17,8 @@ def setup():
                          --disable-migration \
                          --disable-maintainer-mode \
                          --with-bluetooth \
-                         --without-gnome \
-                         --without-wwan \
-                         --without-team \
+                         --with-team \
+                         --with-wwan \
                          --sysconfdir=/etc \
                          --localstatedir=/var \
                          --prefix=/usr \

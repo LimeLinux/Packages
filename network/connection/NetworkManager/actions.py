@@ -20,6 +20,7 @@ def setup():
     shelltools.system("intltoolize --force --copy --automake")
 
     autotools.configure("--disable-static \
+                         --enable-wifi \
                          --disable-silent-rules \
                          --disable-wimax \
                          --disable-lto \
@@ -42,10 +43,15 @@ def setup():
                          --with-iptables=/usr/sbin/iptables \
                          --with-dnsmasq=/usr/sbin/dnsmasq \
                          --with-nmtui \
-                         --disable-ppp \
                          --localstatedir=/var \
+                         --with-libnm-glib \
                          --sysconfdir=/etc \
                          --libexecdir=/usr/lib/NetworkManager \
+                         --with-kernel-firmware-dir=/usr/lib/firmware \
+                         --with-dist-version='17.91-3, Lime Linux' \
+                         --with-udev-dir=/usr/lib/udev \
+                         --with-pppd=/usr/sbin/pppd \
+                         --with-iptables=/sbin/iptables \
                         ")
 
 
