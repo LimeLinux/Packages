@@ -20,12 +20,13 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    
+ 
 
-    pisitools.domove("/usr/lib/libGLESv*", "/usr/lib/libglvnd")
-    pisitools.domove("/usr/lib/libEGL*", "/usr/lib/libglvnd")
-    pisitools.domove("/usr/lib/libGL.*", "/usr/lib/libglvnd")
-
+    pisitools.domove("/usr/lib/libGLESv1_CM.so", "/usr/lib/libglvnd/")
+    pisitools.domove("/usr/lib/libGLESv2.so.2.0.0", "/usr/lib/libglvnd/")
+    pisitools.domove("/usr/lib/libGLESv1_CM.so.1", "/usr/lib/libglvnd/")
+    pisitools.domove("/usr/lib/libGLESv2.so", "/usr/lib/libglvnd/")
+    pisitools.domove("/usr/lib/libGLESv2.so.2", "/usr/lib/libglvnd/")
 
     
     pisitools.dodoc("README.md", "LICENSE")
