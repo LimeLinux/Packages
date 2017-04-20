@@ -14,7 +14,7 @@
         <IsA>service</IsA>
         <Summary>IEEE 802.1X/WPA supplicant for secure wireless transfers</Summary>
         <Description>wpa_supplicant is a WPA supplicant with support for WPA and WPA2.</Description>
-        <Archive sha1sum="f82281c719d2536ec4783d9442c42ff956aa39ed" type="targz">http://w1.fi/releases/wpa_supplicant-2.5.tar.gz</Archive>
+        <Archive sha1sum="8189704e257c3e9f8300c49dc6e49a381b1d6299" type="targz">http://w1.fi/releases/wpa_supplicant-2.6.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="wpa_supplicant/.config">wpa_supplicant.config</AdditionalFile>
         </AdditionalFiles>
@@ -48,9 +48,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.5</Version>
+        <Update release="2">
+            <Date>2017-04-21</Date>
+            <Version>2.6</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
