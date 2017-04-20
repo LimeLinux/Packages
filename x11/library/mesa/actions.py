@@ -55,6 +55,8 @@ def setup():
                      --enable-xa \
                      --enable-vdpau \
                      --enable-omx \
+                     --enable-opencl \
+                     --enable-opencl-icd \
                    "
     elif get.ARCH() == 'armv7h':
 

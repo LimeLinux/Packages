@@ -9,22 +9,27 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "linux-firmware"
+WorkDir = "./"
+
 
 def setup():
+    shelltools.system("git clone https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git")
+    shelltools.system("tar xvf %s/linux-firmware-limelinux.tar.xz" %get.workDIR())
     # Remove source files
-    shelltools.unlink("usbdux/*dux")
-    shelltools.unlink("*/*.asm")
+    shelltools.unlink("linux-firmware/usbdux/*dux")
+    shelltools.unlink("linux-firmware/*/*.asm")
 
     # These + a lot of other firmware are shipped within alsa-firmware
-    for fw in ("ess", "korg", "sb16", "yamaha"):
+    for fw in ("linux-firmware/ess", "linux-firmware/korg", "linux-firmware/sb16", "linux-firmware/yamaha"):
         shelltools.unlinkDir(fw)
 
 def build():
+    shelltools.cd("linux-firmware")
     autotools.make()
 
 
 def install():
+    shelltools.cd("linux-firmware")
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     pisitools.insinto("/lib/firmware/", "aic94xx-seq/aic94xx-seq.fw")
 

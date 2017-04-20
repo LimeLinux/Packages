@@ -18,14 +18,8 @@
         <IsA>data</IsA>
         <Summary>Firmware files used by the Linux kernel</Summary>
         <Description>linux-firmware contains different firmware files required for some devices to operate correctly.</Description>
-        <Archive sha1sum="06c03884d5e2540d0bb4918c1f348a7c46f6a496" type="tarbz2">https://sourceforge.net/projects/pisilinux/files/source/linux-firmware-20170113.tar.bz2</Archive>
-        <Archive sha1sum="c4f87824347ea48c76080123fcf437e97ccd2163" type="tarxz" target="linux-firmware">https://sourceforge.net/projects/limeteam/files/source-limelinux/Firmware-nonfree/firmware-nonfree.tar.xz</Archive>
-        <AdditionalFiles>
-            <!--AdditionalFile target="intel/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq">fw/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq</AdditionalFile-->
-            <AdditionalFile target="iwlwifi-7260-14.ucode">iwlwifi-7260-14.ucode</AdditionalFile>
-            <AdditionalFile target="iwlwifi-7260-15.ucode">iwlwifi-7260-15.ucode</AdditionalFile>
-            <AdditionalFile target="iwlwifi-7260-17.ucode">iwlwifi-7260-17.ucode</AdditionalFile>
-        </AdditionalFiles>
+        <Archive sha1sum="6e0fbac0093c96c90b5fb802dfb527fa51484155" type="binary">https://sourceforge.net/projects/limeteam/files/source-limelinux/limelinux.git</Archive>
+        <Archive sha1sum="537b453a2b22466412651640177e422cc21fa965" type="binary">https://sourceforge.net/projects/limeteam/files/source-limelinux/Firmware-nonfree/linux-firmware-limelinux.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -41,8 +35,8 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-28</Date>
-            <Version>20170113</Version>
+            <Date>2017-04-20</Date>
+            <Version>20170420</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
