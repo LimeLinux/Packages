@@ -88,7 +88,7 @@
         </Files>
        <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/xdg/kcm-about-distrorc">kcm-about-distrorc</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/about-distro/pisilinux.svg">pisilinux.svg</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/about-distro/limelinux.png">limelinux.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
