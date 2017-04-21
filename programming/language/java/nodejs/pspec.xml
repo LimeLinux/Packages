@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>nodejs</Name>
+        <Homepage>https://nodejs.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</Summary>
+        <Description>Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. The Node.js package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</Description>
+        <Archive sha1sum="fc9854228209fada5387681546f604efd25f12ff" type="targz">https://github.com/nodejs/node/archive/v7.9.0.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>nodejs</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+	        <Path fileType="header">/usr/include</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-04-21</Date>
+            <Version>7.9.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
