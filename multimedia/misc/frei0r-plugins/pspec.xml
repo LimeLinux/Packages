@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A plugin API for video sources and filters</Summary>
         <Description>frei0r-plugins is a minimalistic plugin API for video sources and filters. The behaviour of the effects can be controlled from the host by simple parameters. The intent is to solve the recurring reimplementation or adaptation issue of standard effects.</Description>
-        <Archive sha1sum="7995d06c5412b14fa3b05647084ca9d7a0c84faa" type="targz">http://distfiles.macports.org/frei0r-plugins/frei0r-plugins-1.4.tar.gz</Archive>
+        <Archive sha1sum="2a85352157e3cf786d4a838d7f0feffa1f831e1d" type="targz">https://files.dyne.org/frei0r/frei0r-plugins-1.6.0.tar.gz</Archive>
         <Patches>
             <Patch level="1">explicitly-link-with-lm.patch</Patch>
         </Patches>
@@ -33,9 +33,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.4</Version>
+        <Update release="2">
+            <Date>2017-04-21</Date>
+            <Version>1.6.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

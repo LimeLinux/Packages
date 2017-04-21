@@ -69,7 +69,7 @@ def install():
     shelltools.cd("out/Release")
 
     #should be checked should for the missing folder "out/Release"
-    for vla in ["*.pak", "*.json", "chrome", "locales", "resources", "icudtl.dat", "mksnapshot", "chromedriver", "natives_blob.bin", "snapshot_blob.bin", "character_data_generator"]:
+    for vla in ["*.pak", "xdg-*", "*.json", "chrome", "locales", "resources", "icudtl.dat", "mksnapshot", "chromedriver", "natives_blob.bin", "snapshot_blob.bin", "character_data_generator"]:
         pisitools.insinto("/usr/lib/chromium", "%s" % vla)
 
     pisitools.insinto("/usr/lib/chromium", "chrome_sandbox", "chrome-sandbox")
