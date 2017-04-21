@@ -19,10 +19,10 @@ def build():
     qt5.make("docs")
 
 def install():
-    qt5.install()
+    qt5.install("DESTDIR=%s install_docs" % get.installDIR())
 
     #I hope qtchooser will manage this issue
-    #for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
-     #   pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
+    for bin in shelltools.ls("%s/usr/lib/qt5/bin" % get.installDIR()):
+        pisitools.dosym("/usr/lib/qt5/bin/%s" % bin, "/usr/bin/%s-qt5" % bin)
 
     pisitools.dodoc("LICENSE.GPLv2", "LICENSE.LGPLv3", "LICENSE.LGPLv21", "ChangeLog-2012-05-22")

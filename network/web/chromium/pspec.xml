@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A WebKit powered web browser</Summary>
         <Description>Chromium-browser is an open-source web browser, powered by WebKit.</Description>
-        <Archive sha1sum="ffb5069dc0abc8e388b3fb5bf74c0050797d8a7e" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-57.0.2987.21.tar.xz</Archive>
+        <Archive sha1sum="76a3c7ef3a90c0eebe22be3ba5af69366af60f48" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-58.0.3029.81.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>at-spi2-atk</Dependency>
@@ -83,15 +83,13 @@
             <Dependency>ninja</Dependency>
             <Dependency>libffi</Dependency>
             <Dependency>yasm</Dependency>
+            <Dependency>nodejs</Dependency>
             <Dependency>usbutils</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">chromium-widevine.patch</Patch>
-            <!--Patch level="1">chromium-glib-2.24.patch</Patch>
+            <Patch level="1">chromium-gn-bootstrap-r2.patch</Patch>
             <Patch level="1">chromium-system-ffmpeg-r4.patch</Patch>
-            <Patch level="1">limelinux/gfx_jpeg_codec.patch</Patch>
-            <Patch level="1">limelinux/fix_build_with_newer_gcc.patch</Patch>
-            <Patch level="1">limelinux/last_commit_position.patch</Patch-->
         </Patches>
     </Source>
     <Package>
@@ -156,9 +154,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-02-12</Date>
-            <Version>57.0.2987.21</Version>
+        <Update release="3">
+            <Date>2017-04-21</Date>
+            <Version>58.0.3029.81</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

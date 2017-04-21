@@ -1,13 +1,17 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
+# Lime GNU/Linux 2017
+#
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/licenses/gpl.txt
 
-from pisi.actionsapi import autotools
-from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
-from pisi.actionsapi import get
+
+
+from pisi.actionsapi import autotools, pisitools, shelltools, get
+
+
+
 
 WorkDir = "chromium-%s" % get.srcVERSION()
 
@@ -17,38 +21,35 @@ ARCH = "x64"
 
 def setup():
     shelltools.export("LC_ALL", "C")
+    shelltools.system("mkdir -p third_party/node/linux/node-linux-x64/bin")
+    shelltools.system("ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/")
 
     for LIB in ["flac", "harfbuzz-ng" "libwebp" ,"libxslt", "yasm"]:
-        shelltools.system('find -type f -path "*third_party/$LIB/*" \! -path "*third_party/$LIB/chromium/*" \! -path "*third_party/$LIB/google/*" \! -regex ".*\.\(gn\|gni\|isolate\|py\)" -delete')
+        shelltools.system('find -type f -path "*third_party/$LIB/*" \! -path "*third_party/$LIB/chromium/*" \! -path "*third_party/$LIB/google/*" \! -path "*base/third_party/icu/*" \! -regex ".*\.\(gn\|gni\|isolate\|py\)" -delete')
 
     shelltools.system("build/linux/unbundle/replace_gn_files.py --system-libraries flac harfbuzz-ng libwebp libxslt yasm")
 
-    opt = 'use_sysroot=false \
-           is_clang=false enable_nacl=false \
-           enable_nacl_nonsfi=false \
-           fieldtrial_testing_like_official_build=true \
+    opt = 'is_clang=false \
            clang_use_chrome_plugins=false \
-           symbol_level=0 \
-           fatal_linker_warnings=false \
-           treat_warnings_as_errors=false \
-           use_cups=true \
-           use_gnome_keyring=false\
-           use_gold=false \
-           use_kerberos=true \
-           enable_hangout_services_extension=true \
-           use_gconf=false \
-           enable_widevine=true \
-           linux_use_bundled_binutils=false \
            is_debug=false \
-           ffmpeg_branding="Chrome" \
-           google_default_client_secret="0ZChLK6AxeA3Isu96MkwqDR4" \
-           google_api_key="AIzaSyDwr302FpOSkGRpLlUpPThNTDPbXcIn_FM" \
-           google_default_client_id="413772536636.apps.googleusercontent.com" \
+           fatal_linker_warnings=false \
+           treat_warnings_as_errors=false\
+           fieldtrial_testing_like_official_build=true \
            remove_webcore_debug_symbols=true \
+           ffmpeg_branding="Chrome" \
            proprietary_codecs=true \
            link_pulseaudio=true \
-           use_pulseaudio=true \
-           use_gtk3=false'
+           linux_use_bundled_binutils=false \
+           use_gconf=false \
+           use_gnome_keyring=false \
+           use_gold=false \
+           use_sysroot=false \
+           enable_hangout_services_extension=true \
+           enable_widevine=true \
+           enable_nacl=false \
+           google_default_client_secret="0ZChLK6AxeA3Isu96MkwqDR4" \
+           google_api_key="AIzaSyDwr302FpOSkGRpLlUpPThNTDPbXcIn_FM" \
+           google_default_client_id="413772536636.apps.googleusercontent.com"'
 
     shelltools.system("tools/gn/bootstrap/bootstrap.py --gn-gen-args '%s'"% opt)
     shelltools.system("out/Release/gn gen out/Release --args='%s'"% opt)
