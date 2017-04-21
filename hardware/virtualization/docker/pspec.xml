@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Pack, ship and run any application as a lightweight container</Summary>
         <Description>An open platform for distributed applications for developers and sysadmins</Description>
-        <Archive sha1sum="7a1b128004d96f6fced3d340568d7cf0cfd64fb3" type="targz">https://github.com/docker/docker/archive/v1.12.1.tar.gz</Archive>
+        <Archive sha1sum="f5505e6ed7555204c580b0058337e1fe5715440c" type="targz">https://github.com/moby/moby/archive/v17.05.0-ce-rc1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>git</Dependency>
             <Dependency>golang</Dependency>
@@ -36,6 +36,7 @@
             <Dependency>iptables</Dependency>
             <Dependency>libseccomp</Dependency>
             <Dependency>containerd</Dependency>
+            <Dependency>runc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -54,8 +55,8 @@
 
     <History>
         <Update release="3">
-            <Date>2017-03-11</Date>
-            <Version>1.12.1</Version>
+            <Date>2017-04-21</Date>
+            <Version>1.17.05</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -26,8 +26,8 @@ def build():
     shelltools.system("hack/make.sh dynbinary")
     
 def install():
-    pisitools.dobin("bundles/1.12.1/dynbinary-client/docker")
-    pisitools.dobin("bundles/1.12.1/dynbinary-daemon/dockerd")
+    pisitools.dobin("bundles/17.0*/dynbinary-client/docker")
+    pisitools.dobin("bundles/17.0*/dynbinary-daemon/dockerd")
     
     
     # insert udev rules
