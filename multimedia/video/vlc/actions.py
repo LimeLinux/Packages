@@ -73,7 +73,7 @@ def setup():
                             --enable-twolame \
                             --enable-upnp \
                             --enable-v4l2 \
-			    --disable-atmo \
+			                --disable-atmo \
                             --enable-vlc \
                             --enable-mtp \
                             --enable-vlm \
