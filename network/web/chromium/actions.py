@@ -74,6 +74,7 @@ def install():
 
     pisitools.insinto("/usr/lib/chromium", "chrome_sandbox", "chrome-sandbox")
     pisitools.dosym("/usr/lib/chromium/chrome", "/usr/bin/chromium")
+    pisitools.dosym("/usr/lib/chromium/chromedriver", "/usr/bin/chromedriver")
  
     shelltools.system("chmod -v 4755 %s/usr/lib/chromium/chrome-sandbox" %get.installDIR())
 
