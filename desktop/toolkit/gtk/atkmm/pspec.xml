@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>C++ interface for the ATK library</Summary>
         <Description>atkmm provides a C++ interface for the ATK library.</Description>
-        <Archive sha1sum="184cc586f00684bb6a0044983564e40841bd86c3" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/atkmm/2.25/atkmm-2.25.2.tar.xz</Archive>
+        <Archive sha1sum="c3273aa7b84fb163b0ad5bd3ee26b9d1cd4976bb" type="tarxz">mirrors://gnome/atkmm/2.22/atkmm-2.22.7.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>glibmm</Dependency>
@@ -42,9 +42,9 @@
 
 
     <History>
-        <Update release="2">
-            <Date>2017-04-21</Date>
-            <Version>2.25.2</Version>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>2.22.7</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
