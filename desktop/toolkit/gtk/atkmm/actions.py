@@ -18,8 +18,8 @@ def build():
 def install():
     autotools.install()
 
-    pisitools.domove("/usr/share/doc/%s-1.6/*" % get.srcNAME(), "/usr/share/gtk-doc/html/atkmm")
-    pisitools.removeDir("/usr/share/doc/%s-1.6" % get.srcNAME())
+    pisitools.domove("/usr/share/doc/%s-2.26/*" % get.srcNAME(), "/usr/share/gtk-doc/html/atkmm")
+    pisitools.removeDir("/usr/share/doc/%s-2.26" % get.srcNAME())
     pisitools.removeDir("/usr/share/devhelp")
 
     pisitools.dodoc("ChangeLog", "COPYING", "NEWS", "README")

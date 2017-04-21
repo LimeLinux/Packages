@@ -49,7 +49,10 @@ def setup():
            enable_nacl=false \
            google_default_client_secret="0ZChLK6AxeA3Isu96MkwqDR4" \
            google_api_key="AIzaSyDwr302FpOSkGRpLlUpPThNTDPbXcIn_FM" \
-           google_default_client_id="413772536636.apps.googleusercontent.com"'
+           google_default_client_id="413772536636.apps.googleusercontent.com" \
+           link_pulseaudio=true \
+           use_pulseaudio=true \
+           use_gtk3=false'
 
     shelltools.system("tools/gn/bootstrap/bootstrap.py --gn-gen-args '%s'"% opt)
     shelltools.system("out/Release/gn gen out/Release --args='%s'"% opt)
