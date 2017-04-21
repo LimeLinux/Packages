@@ -10,7 +10,6 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.export("CXXFLAGS","-std=c++0x")
     shelltools.system("./autogen.sh")
     autotools.configure()
 

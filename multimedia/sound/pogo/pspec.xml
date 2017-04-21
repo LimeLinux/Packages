@@ -22,7 +22,7 @@
             <Dependency>python-gtk</Dependency>
             <Dependency>python-mutagen</Dependency>
             <Dependency>python-imaging</Dependency>
-            <Dependency>python-dbus</Dependency>
+            <Dependency>dbus-python</Dependency>
             <Dependency>gst-python</Dependency>            
             <Dependency>notify-python</Dependency>
             <Dependency>gst-plugins-base</Dependency>
