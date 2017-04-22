@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Lime Linux Welcome Application</Summary>
         <Description>Lime Linux Welcome Application</Description>
-        <Archive sha1sum="e38825340802c48d18b98c97800973d9968ddbb3" type="targz">https://github.com/LimeLinux/lime-welcome/archive/1.0Beta3.tar.gz</Archive>
+        <Archive sha1sum="649df7b4dbc81c793345461e94d933c9f5d2b005" type="targz">https://github.com/LimeLinux/limelinux-welcome/archive/1.0Beta4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
             <Dependency>python3-qt5</Dependency>

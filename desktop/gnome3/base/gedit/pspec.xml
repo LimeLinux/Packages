@@ -29,7 +29,7 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>gtksourceview3</Dependency>
-            <Dependency>pygobject</Dependency>
+            <Dependency>python-pygobject</Dependency>
             <Dependency>gsettings-desktop-schemas</Dependency>
         </BuildDependencies>
     </Source>

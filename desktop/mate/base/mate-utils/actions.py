@@ -11,6 +11,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
+    shelltools.export("CXXFLAGS","-std=c++11")
     autotools.configure("--prefix=/usr               \
                          --disable-static            \
                          --enable-gdict-applet       \
