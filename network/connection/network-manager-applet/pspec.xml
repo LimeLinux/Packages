@@ -28,6 +28,7 @@
             <Dependency>dbus-glib</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>intltool</Dependency>
+            <Dependency>ModemManager</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Patch level="1">applet-device-broadband.patch</Patch-->
@@ -50,6 +51,7 @@
             <Dependency>glib2</Dependency>
             <Dependency>dbus-glib</Dependency>
             <Dependency>libgudev</Dependency>
+            <Dependency>ModemManager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

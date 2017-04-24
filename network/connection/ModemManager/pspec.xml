@@ -21,6 +21,7 @@
             <Dependency>libxslt</Dependency>
             <Dependency>gobject-introspection</Dependency>
             <Dependency>polkit</Dependency>
+            <Dependency>vim</Dependency>
             <Dependency>ppp</Dependency>
             <Dependency>libqmi</Dependency>
             <Dependency>libmbim</Dependency>

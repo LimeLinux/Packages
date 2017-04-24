@@ -11,10 +11,11 @@ from pisi.actionsapi import get
 
 
 def setup():
-   # autotools.autoreconf("-vfi")
-    autotools.configure("--disable-dependency-tracking \
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
+    autotools.configure("--enable-gtk-doc \
+                         --enable-introspection \
+                         --enable-ld-gc \
                          --disable-static \
-                         --disable-migration \
                          --disable-maintainer-mode \
                          --with-bluetooth \
                          --with-team \
@@ -28,6 +29,9 @@ def setup():
 
 def build():
     autotools.make()
+
+def check():
+    autotools.make("-k check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
