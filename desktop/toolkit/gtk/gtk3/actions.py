@@ -13,13 +13,10 @@ from pisi.actionsapi import shelltools
 def setup():
     options = "--enable-x11-backend \
                --enable-xinerama \
-	       --enable-wayland-backend \
+	           --enable-wayland-backend \
                --enable-xkb \
-               --disable-silent-rules \
-               --disable-schemas-compile \
                --enable-introspection \
-               --disable-papi \
-               --disable-wayland-backend \
+               --enable-broadway-backend \
               "
 
     shelltools.export("CFLAGS", get.CFLAGS().replace("-fomit-frame-pointer",""))

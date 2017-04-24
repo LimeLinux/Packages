@@ -13,13 +13,13 @@
         <IsA>library</IsA>
         <Summary>System monitoring library</Summary>
         <Description>libgtop is a library to get system specific data such as CPU and Memory Usage and information about running processes.</Description>
-        <Archive sha1sum="ad63d489a6530df5da2559f602c839fd5701a188" type="tarxz">mirrors://gnome/libgtop/2.30/libgtop-2.30.0.tar.xz</Archive>
+        <Archive sha1sum="c926d683e21006a724ed742fb215886b8ce85c9d" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/libgtop/2.36/libgtop-2.36.0.tar.xz</Archive>
     </Source>
 
     <Package>
         <Name>libgtop</Name>
         <Files>
-            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/gir-1.0</Path>
@@ -40,9 +40,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.30.0</Version>
+        <Update release="2">
+            <Date>2017-04-24</Date>
+            <Version>2.36.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

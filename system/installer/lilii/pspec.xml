@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>System Installer for Lime Linux</Summary>
         <Description>System Installer for Lime Linux.</Description>
-        <Archive sha1sum="5e9fe2646c0289bc4705a24b3e60e6864cffc84d" type="targz">https://github.com/LimeLinux/lilii/archive/1.0-beta1a.tar.gz</Archive>
+        <Archive sha1sum="f8f33835bcb3b99496bebac92b899410b01e3d70" type="targz">https://github.com/LimeLinux/lilii/archive/04.24.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3-qt5</Dependency>
             <Dependency>python3</Dependency>
@@ -45,9 +45,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-29</Date>
-            <Version>1.0.1</Version>
+        <Update release="2">
+            <Date>2017-04-24</Date>
+            <Version>04.24</Version>
             <Comment>First release</Comment>
             <Name>Metehan Özbek</Name>
             <Email>metehan@limelinux.com</Email>

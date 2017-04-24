@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>A powerful virtualization program</Summary>
         <Description>VirtualBox is a family of powerful x86 virtualization products for enterprise as well as home use. This is the Open Source Edition which lacks USB support and some other things.</Description>
-        <Archive sha1sum="672939da34addc06a71b20df0a0e47d8c8940f71" type="tarbz2">http://download.virtualbox.org/virtualbox/5.1.18/VirtualBox-5.1.18.tar.bz2</Archive>
+        <Archive sha1sum="514ac9a44d455a8766b96455fbe60aa3f0959f67" type="tarbz2">http://download.virtualbox.org/virtualbox/5.1.20/VirtualBox-5.1.20a.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>dev86</Dependency>
             <Dependency>cdrkit</Dependency>
@@ -53,13 +53,11 @@
             <AdditionalFile target="LocalConfig.kmk">LocalConfig.kmk</AdditionalFile>
         </AdditionalFiles>
         <Patches>
-            <Patch level="1">wrapper.patch</Patch>
-            <Patch level="1">002-dri-driver-path.patch</Patch>
-            <Patch level="1">003-ogl-include-path.patch</Patch>
-            <Patch level="1">008-root-window.patch</Patch>
-            <Patch level="1">004-xorg.patch</Patch>
-            <Patch level="1">new-xorg-1.19.patch</Patch>
-            <!--Patch level="1">VirtualBox-5.1.16-linux-4.9.11-buildfix.patch</Patch-->
+            <Patch level="1">patch/002-dri-driver-path.patch</Patch>
+            <Patch level="1">patch/	003-ogl-include-path.patch</Patch>
+            <Patch level="1">patch/005-gsoap-build.patch</Patch>
+            <Patch level="1">patch/006-rdesktop-vrdp-keymap-path.patch</Patch>
+            <Patch level="1">patch/008-no-vboxvideo.patch</Patch>
         </Patches>
     </Source>
 
@@ -149,9 +147,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-03-28</Date>
-            <Version>5.1.18</Version>
+        <Update release="3">
+            <Date>2017-04-24</Date>
+            <Version>5.1.20a</Version>
             <Comment>Version Bump</Comment>
             <Name>Lime Linux</Name>
             <Email>admin@limelinux.com</Email>

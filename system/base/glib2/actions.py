@@ -12,13 +12,10 @@ from pisi.actionsapi import shelltools
 
 def setup():
     options = "--with-pcre=system \
-               --disable-fam \
-               --disable-libelf \
-               --enable-gtk-doc=no \
-               --disable-static \
+               --enable-gtk-doc \
                --enable-shared \
-               --disable-man \
-               --enable-systemtap"
+               --enable-systemtap \
+               --enable-debug=yes"
 
 
 
@@ -29,6 +26,7 @@ def setup():
 
 def build():
     autotools.make()
+
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
