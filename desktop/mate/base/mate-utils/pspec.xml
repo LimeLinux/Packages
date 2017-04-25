@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>MATE utility programs</Summary>
         <Description>The mate-utils package contains a set of small "desk accessory" utility applications for MATE, such as a dictionary, a disk usage analyzer, a screenshot tool and others.</Description>
-        <Archive sha1sum="3149438d15a297e7f4581793ef7b8d1344cdc64e" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-utils-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="f20e06a5950452af41ce18e6aa5041f68ef90e4e" type="targz">https://github.com/mate-desktop/mate-utils/archive/v1.18.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -28,6 +28,8 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-panel</Dependency>
             <Dependency>libcanberra</Dependency>
+            <Dependency>itstool</Dependency>
+            <Dependency>yelp-tools</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -61,9 +63,9 @@
 
 
     <History>
-	   <Update release="3">
+	   <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.18.1</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
