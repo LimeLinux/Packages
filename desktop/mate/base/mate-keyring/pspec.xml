@@ -1,0 +1,55 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-keyring</Name>
+        <Homepage>https://mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Password and keyring managing daemon</Summary>
+        <Description>The mate-keyring session daemon manages passwords and other types of secrets for the user, storing them encrypted with a main password. Applications can use the mate-keyring library to integrate with the keyring.</Description>
+        <Archive sha1sum="71e9df178f5a067183bd6a2822db0be1ff52598e" type="targz">https://github.com/mate-desktop-legacy-archive/mate-keyring/archive/mate-keyring-1.6.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gcr</Dependency>
+            <Dependency>gtk3</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-keyring</Name>
+        <RuntimeDependencies>
+            <Dependency>gcr</Dependency>
+            <Dependency>gtk3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="library">/lib/security</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="config">/etc/xdg/autostart/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/p11-kit/modules</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-12-21</Date>
+            <Version>1.6.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
