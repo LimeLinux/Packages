@@ -50,12 +50,15 @@ def setup():
                --libexecdir=/usr/lib/misc \
                --enable-add-ons \
                --enable-bind-now \
-               --enable-kernel=2.6.32 \
+               --enable-kernel=3.14.32 \
                --enable-stackguard-randomization \
                --disable-profile \
                 --disable-werror  \
                --enable-obsolete-rpc \
                --enable-lock-elision \
+               --enable-stack-protector=strong \
+               --with-pkgversion='Lime' \
+               --enable-tunables \
                %s \
                --with-tls"% multilib
                
