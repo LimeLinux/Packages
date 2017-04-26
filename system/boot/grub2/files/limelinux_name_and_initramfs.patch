@@ -1,20 +1,5 @@
---- grub-2.02~beta2.orig/util/grub.d/10_linux.in	2013-12-24 18:45:34.000000000 +0200
-+++ grub-2.02~beta2/util/grub.d/10_linux.in	2016-04-28 19:10:54.268739535 +0300
-@@ -29,7 +29,13 @@
- CLASS="--class gnu-linux --class gnu --class os"
- 
- if [ "x${GRUB_DISTRIBUTOR}" = "x" ] ; then
--  OS=GNU/Linux
-+  if [ -f "/etc/limelinux-release" ] ; then
-+    OS="$(sed 's, release .*$,,g' /etc/limelinux-release)"
-+  elif [ -e "/etc/system-release" ] ; then
-+    OS="$(sed 's, release .*$,,g' /etc/system-release)"
-+  else
-+    OS=GNU/Linux
-+  fi
- else
-   OS="${GRUB_DISTRIBUTOR} GNU/Linux"
-   CLASS="--class $(echo ${GRUB_DISTRIBUTOR} | tr 'A-Z' 'a-z' | cut -d' ' -f1|LC_ALL=C sed 's,[^[:alnum:]_],_,g') ${CLASS}"
+--- grub-2.02~beta3.orig/util/grub.d/10_linux.in	2013-12-24 18:45:34.000000000 +0200
++++ grub-2.02~beta3/util/grub.d/10_linux.in	2016-04-28 19:10:54.268739535 +0300
 @@ -186,7 +192,8 @@
  
    initrd=
