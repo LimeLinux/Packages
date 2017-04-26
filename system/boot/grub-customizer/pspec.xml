@@ -1,0 +1,68 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>grub-customizer</Name>
+        <Homepage>https://launchpad.net/grub-customizer</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>system.utils</PartOf>
+        <Summary xml:lang="en">Grub Customizer</Summary>
+        <Description xml:lang="en">Grub Customizer is a graphical interface to configure the GRUB2/BURG settings and menuentries
+Features:
+* move, remove or rename menuentries (they stey updatable by update-grub)
+* edit the contents of menuentries or create new ones (internally it edits the 40_custom)
+* support for GRUB2 and BURG
+* reinstallation of the bootloader to MBR
+* settings like default operating system, kernel params, background image and text colors etc.
+* changing the installed operating system by running on a live cd
+</Description>
+        <Archive sha1sum="0ff7049b0db434a3dbc440161f0f8d21eed0af2e" type="targz">https://launchpad.net/grub-customizer/5.0/5.0.6/+download/grub-customizer_5.0.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gtkmm</Dependency>
+            <Dependency>atkmm</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>grub-customizer</Name>
+        <Summary xml:lang="en">Grub Customizer</Summary>
+        <Description xml:lang="en">Grub Customizer is a graphical interface to configure the GRUB2/BURG settings and menuentries
+Features:
+* move, remove or rename menuentries (they stey updatable by update-grub)
+* edit the contents of menuentries or create new ones (internally it edits the 40_custom)
+* support for GRUB2 and BURG
+* reinstallation of the bootloader to MBR
+* settings like default operating system, kernel params, background image and text colors etc.
+* changing the installed operating system by running on a live cd
+</Description>
+        <PartOf>system.utils</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/grub-customizer/grubcfg-proxy</Path>
+            <Path fileType="data">/usr/share/applications/grub-customizer.desktop</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/grub-customizer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/grub-customizer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/grub-customizer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/grub-customizer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/grub-customizer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/grub-customizer.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/grub-customizer.png</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/net.launchpad.danielrichter2007.pkexec.grub-customizer.policy</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-01-21</Date>
+            <Version>0.5.6</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

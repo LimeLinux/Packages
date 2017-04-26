@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>limelinux-store</Name>
+        <Homepage>http://limelinux.com</Homepage>
+        <Packager>
+            <Name>Fatih Kaya</Name>
+            <Email>fatihkaya41@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>lilii</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>app store for Lime Linux</Summary>
+        <Description>app store for Lime Linux.</Description>
+        <Archive sha1sum="cba07e8c1b1682b6a3bd6d1c3b7feef916b25fc9" type="targz">https://github.com/LimeLinux/LimeLinux-Store/archive/LimeLinux-Store-1.0a.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python-qt5</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>python-setuptools</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>limelinux-store</Name>
+        <RuntimeDependencies>
+            <Dependency>python-qt5</Dependency>
+			<Dependency>python-sip</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/limelinux-store</Path>
+            <Path fileType="data">/usr/lib/python2.7/site-packages</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/etc/skel/.config/autostart/lime-upmanager.desktop</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localdata">/usr/share/limelinux-store/languages</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-04-24</Date>
+            <Version>01.0a</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Kaya</Name>
+            <Email>fatihkaya41@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
