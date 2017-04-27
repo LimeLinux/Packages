@@ -9,8 +9,8 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
-WorkDir="grub-%s" % (get.srcVERSION().replace("_", "~"))
-
+#WorkDir="grub-%s" % (get.srcVERSION().replace("_", "~"))
+WorkDir="grub-%s" % (get.srcVERSION())
 
 def setup():
     shelltools.export("GRUB_CONTRIB", "%s/grub-%s/grub-extras" % (get.workDIR(), get.srcVERSION()))
@@ -29,7 +29,8 @@ def setup():
                          --htmldir='/usr/share/doc/grub2/html' ")
     
     
-    shelltools.copytree("../grub-%s" % (get.srcVERSION().replace("_", "~")), "../grub-%s-efi" % get.srcVERSION())
+    #shelltools.copytree("../grub-%s" % (get.srcVERSION().replace("_", "~")), "../grub-%s-efi" % get.srcVERSION())
+    shelltools.copytree("../grub-%s" % (get.srcVERSION()), "../grub-%s-efi" % get.srcVERSION())
     shelltools.cd("../grub-%s-efi" % get.srcVERSION())
     shelltools.system("./autogen.sh")
     autotools.configure("--disable-werror \
@@ -57,11 +58,9 @@ def install():
     pisitools.dodir("/boot/grub2")
     
     #shelltools.system("grub2-mkfont -s 14 -o /%s/unicode.pf2 /usr/share/fonts/dejavu/DejaVuSansMono.ttf" % get.workDIR())
-    
-    pisitools.insinto("/boot/grub2/", "dejavu_16.pf2", "unicode.pf2")
 
     # Insall our theme
-    pisitools.insinto("/usr/share/grub/themes/","themes/limelinux")
+    pisitools.insinto("/usr/share/grub/themes/","%s/grub-2.02~beta3/themes/limelinux" % get.workDIR())
 
 
 

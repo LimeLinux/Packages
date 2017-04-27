@@ -1,0 +1,16 @@
+From 3861e78c3e50a521cbdb9699c67f0d678bd2fee2 2017-04-27 20:30:24.920970220 +0300
+From: Ergün Salman <poyraz76@limelinux.com>
+Date: 2017-04-24 14:30:15.000000000 +0300
+
+diff -up /grub-2.02/configure.ac.orig /grub-2.02/configure.ac
+--- /grub-2.02/configure.ac.orig	2017-04-24 14:30:15.000000000 +0300
++++ /grub-2.02/configure.ac	2017-04-27 20:30:24.920970220 +0300
+@@ -31,7 +31,7 @@ dnl (such as BUILD_CC, BUILD_CFLAGS, etc
+ dnl with the prefix "TARGET_" (such as TARGET_CC, TARGET_CFLAGS, etc.) are
+ dnl used for the target type. See INSTALL for full list of variables.
+ 
+-AC_INIT([GRUB],[2.02],[bug-grub@gnu.org])
++AC_INIT([GRUB],[2.02-LimeLinux],[bug-grub@gnu.org])
+ 
+ AC_CONFIG_AUX_DIR([build-aux])
+

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNU GRUB is a Multiboot boot loader.</Summary>
         <Description>GNU GRUB (short for GNU GRand Unified Bootloader) is a boot loader package from the GNU Project.</Description>
-        <Archive sha1sum="14a1f9239a9c974957e835dc706fc6a1e4819c83" type="tarxz">ftp://alpha.gnu.org/gnu/grub/grub-2.02~beta3.tar.xz</Archive>
+        <Archive sha1sum="3d7eb6eaab28b88cb969ba9ab24af959f4d1b178" type="tarxz">ftp://ftp.gnu.org/gnu/grub/grub-2.02.tar.xz</Archive>
         <Archive sha1sum="ab7de42011c1156d46d0b96c3753f323042f2daf" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/grub2-theme-limelinux-0.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
@@ -31,6 +31,7 @@
             <Dependency>gettext</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch>LimeLinux-grub-tab.patch</Patch>
             <Patch level="1">limelinux_name_and_initramfs.patch</Patch>
             <Patch level="1">mkconfig-fix.patch</Patch>
             <Patch level="1">limelinux-10_linux.patch</Patch>
@@ -64,7 +65,7 @@
             <Path fileType="config">/etc/default</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/grub/unicode.pf2">unicode.pf2</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/boot/grub2/fonts/unicode.pf2">unicode.pf2</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/grub/limelinux-grub-bg.png">limelinux-grub-bg.png</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/default/grub">grub-defaults</AdditionalFile>
             <AdditionalFile owner="root" permission="0755" target="/usr/bin/update-grub">update-grub</AdditionalFile>
@@ -72,9 +73,9 @@
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2016-12-21</Date>
-            <Version>2.02_beta3</Version>
+        <Update release="5">
+            <Date>2017-04-27</Date>
+            <Version>2.02</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
