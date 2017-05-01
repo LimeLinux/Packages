@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libgdiplus</Name>
+        <Homepage>http://www.mono-project.com</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Library for using System.Drawing with Mono</Summary>
+        <Description>Libgdiplus is an open source implementation of the GDI+ API. This is part of the Mono project.</Description>
+        <Archive sha1sum="af2fc5c5425286ec55b5f18726d6a0c6aaf633e6" type="targz">http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>fontconfig</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">libgdiplus0-giflib5.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libgdiplus</Name>
+        <RuntimeDependencies>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>tiff</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>fontconfig</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-05-01</Date>
+            <Version>4.2</Version>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

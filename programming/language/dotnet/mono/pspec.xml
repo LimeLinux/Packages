@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mono</Name>
+        <Homepage>http://www.mono-project.com</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <License>X11</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>Mono runtime and class libraries, a C# compiler/interpreter</Summary>
+        <Description>Mono is a C# compiler and interpreter. It also includes mono runtime and class libraries.</Description>
+        <Archive sha1sum="32ef88396fcc9732536f263d4c7ceb3a5fcd0351" type="tarbz2">https://download.mono-project.com/sources/mono/mono-4.8.0.524.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libgdiplus</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">build_fix.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>mono</Name>
+        <RuntimeDependencies>
+            <Dependency>libgdiplus</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/mono</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/usr/lib/binfmt.d</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/binfmt.d/mono.conf">mono.binfmt.d</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2017-05-01</Date>
+            <Version>4.8.0.524</Version>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
