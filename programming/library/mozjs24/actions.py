@@ -19,7 +19,7 @@ def setup():
     autotools.configure("--with-system-nspr \
                          --enable-system-ffi \
                          --enable-readline \
-			 --enable-intl-api \
+			             --enable-intl-api \
                          --enable-threadsafe")
 
 def build():
@@ -32,10 +32,10 @@ def install():
     pisitools.rename("/usr/bin/js", "js-24")
     pisitools.domove("/usr/include/mozjs-/*" , "/usr/include/mozjs-24")
     pisitools.rename("/usr/lib/pkgconfig/mozjs-.pc", "mozjs-24.pc")
-    #pisitools.rename("/usr/lib/libmozjs-.so", "libmozjs-24.so")
+    pisitools.rename("/usr/lib/libmozjs-.so", "libmozjs-24.so")
     pisitools.remove("usr/lib/libmozjs-.a")
     
-    pisitools.dosym("libmozjs-.so", "/usr/lib/libmozjs-24.so")
+    #pisitools.dosym("libmozjs-.so", "/usr/lib/libmozjs-24.so")
     pisitools.removeDir("/usr/include/mozjs-")
     
     shelltools.system("sed -i 's/mozjs-/mozjs-24/g' %s/usr/lib/pkgconfig/mozjs-24.pc"% get.installDIR())

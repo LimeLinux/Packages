@@ -12,7 +12,10 @@ from pisi.actionsapi import shelltools, cmaketools
 
 
 def setup():
-    cmaketools.configure()
+    cmaketools.configure("--disable-static \
+                         --libexecdir=/usr/lib/evolutiondataserver \
+                         --enable-vala-bindings \
+                         --disable-uoa")
     
    
 

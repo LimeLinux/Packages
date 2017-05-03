@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME configuration tools</Summary>
         <Description>gnome-control-center is GNOME's main interface for configuration of various aspects of your GNOME desktop.</Description>
-        <Archive sha1sum="05988dae3f7cddd3b6ed678dddc5cae6d66c7654" type="tarxz">mirrors://gnome/gnome-control-center/3.20/gnome-control-center-3.20.0.tar.xz</Archive>
+        <Archive sha1sum="e2afd850a3a91c830d76501007d49f0bd0730cf5" type="tarxz">mirrors://gnome/gnome-control-center/3.24/gnome-control-center-3.24.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>ibus</Dependency>
             <Dependency>atk</Dependency>
@@ -45,15 +45,13 @@
             <Dependency>gnome-menus</Dependency>
             <Dependency>gnome3-desktop</Dependency>
             <Dependency>gnome-bluetooth</Dependency>
-        <!--Dependency>gnome-bluetooth</Dependency>
-        <Dependency>colord</Dependency>
-
-        <Dependency>gnome-online-accounts</Dependency-->
-        </BuildDependencies>
+            <Dependency>gnome-bluetooth</Dependency>
+            <Dependency>colord</Dependency>
+            <Dependency>gnome-online-accounts</Dependency>
+            </BuildDependencies>
         <Patches>
-            <Patch level="1">gnome-control-center-3.20.0-optional.patch</Patch>
-            <Patch level="1">gnome-control-center-3.18.0-keep-panels-optional.patch</Patch>
-
+            <!--Patch level="1">gnome-control-center-3.20.0-optional.patch</Patch>
+            <Patch level="1">gnome-control-center-3.18.0-keep-panels-optional.patch</Patch-->
         </Patches>
     </Source>
 
@@ -115,9 +113,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2016-07-26</Date>
-            <Version>3.20.0</Version>
+            <Version>3.24.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

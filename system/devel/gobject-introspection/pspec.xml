@@ -21,6 +21,9 @@
             <Dependency>python</Dependency>
             <Dependency>glib2</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">0001-giscanner-fix-EOF-check-with-flex-2.6.1.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -39,7 +42,7 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2017-04-15</Date>
             <Version>1.52.1</Version>
             <Comment>First Release</Comment>

@@ -23,6 +23,7 @@
             <Dependency>gnome-session</Dependency>
             <Dependency>accountsservice</Dependency>
             <Dependency>gnome-settings-daemon</Dependency>
+            <Dependency>systemd</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -44,6 +45,7 @@
             <Dependency>gnome-session</Dependency>
             <Dependency>accountsservice</Dependency>
             <Dependency>gnome-settings-daemon</Dependency>
+            <Dependency>systemd</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

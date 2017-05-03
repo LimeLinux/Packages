@@ -1,0 +1,63 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-power-manager</Name>
+        <Homepage>http://projects.gnome.org/gnome-power-manager</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>gnome-power-manager</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>GNOME power manager</Summary>
+        <Description>GNOME Power Manager is a session daemon that acts as a policy agent on top of UPower.</Description>
+        <Archive sha1sum="98b5ba1e337770b12144c07e53c0105c3fc490ab" type="tarxz">mirrors://gnome/gnome-power-manager/3.22/gnome-power-manager-3.22.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>docbook-xml</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libwnck3</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gnome-doc-utils</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gnome-power-manager</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>upower</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="man">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/appdata/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>3.22.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

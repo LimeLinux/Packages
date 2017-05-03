@@ -12,21 +12,25 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME Shell is the defining technology of the GNOME 3 user experience</Summary>
         <Description>GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
-        <Archive sha1sum="45149832b7230c53ffbbd6247c2b21781b66d697" type="tarxz">mirrors://gnome/gnome-shell/3.10/gnome-shell-3.10.2.tar.xz</Archive>
+        <Archive sha1sum="1640e7e5a5a0213c378e30e9e464e817d6a6e85a" type="tarxz">mirrors://gnome/gnome-shell/3.24/gnome-shell-3.24.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gjs</Dependency>
             <Dependency>gcr</Dependency>
             <Dependency>atk</Dependency>
+            <Dependency>cogl</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>pango</Dependency>
+            <Dependency>mutter</Dependency>
             <Dependency>gnome-common</Dependency>
+            <Dependency>clutter</Dependency>
             <Dependency>libsoup</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>p11-kit</Dependency>
             <Dependency>libical</Dependency>
+            <Dependency>caribou</Dependency>
             <Dependency>libcroco</Dependency>
             <Dependency>json-glib</Dependency>
             <Dependency>libXfixes</Dependency>
@@ -39,30 +43,20 @@
             <Dependency>libcanberra</Dependency>
             <Dependency>at-spi2-atk</Dependency>
             <Dependency>libXcomposite</Dependency>
+            <Dependency>telepathy-glib</Dependency>
             <Dependency>NetworkManager</Dependency>
             <Dependency>pulseaudio</Dependency>
-            <Dependency>mozjs24</Dependency>
-            <Dependency>cogl</Dependency>
-            <Dependency>clutter</Dependency>
-            <Dependency>python3</Dependency>
             <Dependency>gnome-bluetooth</Dependency>
-
-            <!--Dependency>evolution-data-server</Dependency-->
-        <!--Dependency>gnome-bluetooth</Dependency>
-        <Dependency>mutter</Dependency>
-
-        <Dependency>caribou</Dependency>
-
-        <Dependency>telepathy-glib</Dependency-->
-            <!--Dependency>telepathy-logger</Dependency-->
+            <Dependency>telepathy-logger</Dependency>
             <Dependency>libgnome-keyring</Dependency>
             <Dependency>startup-notification</Dependency>
             <Dependency>gobject-introspection</Dependency>
+            <Dependency>evolution-data-server</Dependency>
             <Dependency>network-manager-applet</Dependency>
             <Dependency>gsettings-desktop-schemas</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">gnome-shell-favourite-apps-firefox.patch</Patch>
+            <!--Patch level="1">gnome-shell-favourite-apps-firefox.patch</Patch-->
         </Patches>
     </Source>
 
@@ -70,33 +64,40 @@
         <Name>gnome-shell</Name>
         <RuntimeDependencies>
             <Dependency>gjs</Dependency>
-            <Dependency>atk</Dependency>
             <Dependency>gcr</Dependency>
-            <Dependency>gtk3</Dependency>
+            <Dependency>atk</Dependency>
             <Dependency>cogl</Dependency>
-            <Dependency>libXi</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
+            <Dependency>libXi</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency>mozjs24</Dependency>
-            <!--Dependency>mutter</Dependency-->
+            <Dependency>mutter</Dependency>
+            <Dependency>gnome-common</Dependency>
             <Dependency>clutter</Dependency>
-            <Dependency>libXtst</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>p11-kit</Dependency>
             <Dependency>libical</Dependency>
+            <Dependency>caribou</Dependency>
             <Dependency>libcroco</Dependency>
             <Dependency>json-glib</Dependency>
-            <Dependency>libsecret</Dependency>
             <Dependency>libXfixes</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libcanberra</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>gnome-menus</Dependency>
             <Dependency>libcanberra</Dependency>
             <Dependency>at-spi2-atk</Dependency>
-            <Dependency>gstreamer-next</Dependency>
+            <Dependency>libXcomposite</Dependency>
             <Dependency>telepathy-glib</Dependency>
             <Dependency>NetworkManager</Dependency>
-            <Dependency>gnome-bluetooth</Dependency>
             <Dependency>pulseaudio</Dependency>
-            <Dependency>libcanberra</Dependency>
+            <Dependency>gnome-bluetooth</Dependency>
             <Dependency>telepathy-logger</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
             <Dependency>startup-notification</Dependency>
             <Dependency>gobject-introspection</Dependency>
             <Dependency>evolution-data-server</Dependency>
@@ -114,7 +115,7 @@
             <Path fileType="doc">/usr/share/gtk-doc</Path>
             <Path fileType="data">/usr/share/GConf/</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="data">/usr/share/glib-2.0</Path>
             <Path fileType="data">/usr/share/gnome-about</Path>
@@ -122,15 +123,15 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/libgnome-desktop-3.0</Path>
-            <Path fileType="data">/usr/share/gnome-control-center/</Path>
+            <Path fileType="data">/usr/share/</Path>
         </Files>
     </Package>
 
     <History>
         <Update release="1">
-            <Date>2016-07-26</Date>
-            <Version>3.23.91</Version>
-            <Comment>First Release</Comment>
+            <Date>2017-05-03</Date>
+            <Version>3.24.1</Version>
+            <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Update>

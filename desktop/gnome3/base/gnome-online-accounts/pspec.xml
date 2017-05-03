@@ -12,8 +12,9 @@
         <IsA>app:gui</IsA>
         <Summary>Provide online accounts information</Summary>
         <Description>The GNOME Online Accounts package contains a framework used to access the user's online accounts.</Description>
-        <Archive sha1sum="35c93b1844234798842a0e21932f82befe1403e5" type="tarxz">mirrors://gnome/gnome-online-accounts/3.22/gnome-online-accounts-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="17b854b80493f1066e65f8dc53741d0466214457" type="tarxz">mirrors://gnome/gnome-online-accounts/3.24/gnome-online-accounts-3.24.0.tar.xz</Archive>
         <BuildDependencies>
+            <Dependency>vim</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
@@ -24,6 +25,8 @@
             <Dependency>json-glib</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>telepathy-glib</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>webkit-gtk3</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -53,7 +56,7 @@
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="data">/usr/share/gnome-online-accounts</Path>
+            <Path fileType="data">/usr/share/</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="header">/usr/include/goa-1.0</Path>
         </Files>

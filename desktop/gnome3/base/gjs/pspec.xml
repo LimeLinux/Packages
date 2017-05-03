@@ -12,12 +12,12 @@
         <IsA>library</IsA>
         <Summary>JavaScript bindings based on gobject-introspection and Mozilla</Summary>
         <Description>Gjs contains JavaScript bindings based on gobject-introspection and the Mozilla SpiderMonkey JavaScript engine.</Description>
-        <Archive sha1sum="7fcc71979563b5a587ab61f23f19ce258a9cf0eb" type="tarxz">mirrors://gnome/gjs/1.46/gjs-1.46.0.tar.xz</Archive>
+        <Archive sha1sum="c5a9ee2e333d99a4328b49bb22647b8b25be29b4" type="tarxz">https://download.gnome.org/sources/gjs/1.49/gjs-1.49.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>gnome-common</Dependency>
-            <Dependency>mozjs24</Dependency>
+            <Dependency>mozjs38</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -42,7 +42,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>1.46.0</Version>
+            <Version>1.49.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

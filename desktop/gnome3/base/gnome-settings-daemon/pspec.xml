@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>System settings daemon for GNOME desktop</Summary>
         <Description>gnome-settings-daemon shares GNOME specific settings with other applications via DBus connection.</Description>
-        <Archive sha1sum="3881391457ac955b4b820902884b3190d0260275" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.22/gnome-settings-daemon-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="068febc99d4b98b9b2d1a38fc863f1e606aeafed" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.24/gnome-settings-daemon-3.24.1.tar.xz</Archive>
         <BuildDependencies>
         <!--Dependency>ibus</Dependency>
 
@@ -50,7 +50,7 @@
             <Dependency>NetworkManager</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>gnome-settings-daemon-3.16.0-optional.patch</Patch>
+            <!--Patch>gnome-settings-daemon-3.16.0-optional.patch</Patch-->
         </Patches>
     </Source>
 
@@ -106,7 +106,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.22.0</Version>
+            <Version>3.24.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

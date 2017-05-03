@@ -13,7 +13,7 @@
         <Isa>data</Isa>
         <Summary>Collection of GSettings schemas for GNOME desktop</Summary>
         <Description>Gsettings-desktop-schemas contains a collection of GSettings schemas for settings shared by various components of a desktop.</Description>
-        <Archive sha1sum="924bd3fe84eaf6658e6b37d52554e55e2a1c86d1" type="tarxz">mirrors://gnome/gsettings-desktop-schemas/3.22/gsettings-desktop-schemas-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="1d3fc5e91f731b4260b2ecb80b7a956ba352d5e5" type="tarxz">mirrors://gnome/gsettings-desktop-schemas/3.24/gsettings-desktop-schemas-3.24.0.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -31,8 +31,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>3.22.0</Version>
+            <Date>2017-05-04</Date>
+            <Version>3.24.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
