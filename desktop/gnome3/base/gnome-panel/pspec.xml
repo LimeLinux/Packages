@@ -27,7 +27,6 @@
             <Dependency>libwnck3</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>gdm</Dependency>
             <Dependency>gnome-menus</Dependency>
             <Dependency>libgweather</Dependency>
             <Dependency>gnome3-desktop</Dependency>
@@ -60,8 +59,8 @@
             <Dependency>gnome-menus</Dependency>
             <Dependency>libgweather</Dependency>
             <Dependency>gnome3-desktop</Dependency>
-        <!--Dependency>telepathy-glib</Dependency>
-        <Dependency>evolution-data-server</Dependency-->
+            <Dependency>telepathy-glib</Dependency>
+            <Dependency>evolution-data-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

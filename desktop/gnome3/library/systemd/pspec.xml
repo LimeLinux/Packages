@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>systemd</Name>
+        <Homepage>http://www.freedesktop.org/wiki/Software/systemd</Homepage>
+        <Packager>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>app:console</IsA>
+        <IsA>service</IsA>
+        <Summary>A System and Session Manager</Summary>
+        <Description>systemd is a system and session manager for Linux, compatible with SysV and LSB init scripts.</Description>
+        <Archive sha1sum="e179aac02a4b084e0b03ecdc2289e9b4be1fc09b" type="tarxz">http://www.freedesktop.org/software/systemd/systemd-218.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>pam</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>libcap</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>eudev</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>tcp-wrappers</Dependency>
+            <Dependency>cryptsetup</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">0001-login-Match-multiple-sessions-reboot-policy-with-pow.patch</Patch>
+            <Patch level="1">no-nsswitch.patch</Patch>
+            <Patch level="1">bootchart-segfault.patch</Patch>
+            <Patch level="1">0001-mtd_probe-Include-stdint.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>systemd</Name>
+        <RuntimeDependencies>
+            <Dependency>pam</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>libcap</Dependency>
+            <Dependency>eudev</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>tcp-wrappers</Dependency>
+            <Dependency>cryptsetup</Dependency>
+            <Dependency>gawk</Dependency>
+            <Dependency>coreutils</Dependency>
+        </RuntimeDependencies>
+        <!--Replaces>
+            <Package>sysvinit</Package>
+        </Replaces-->
+        <Files>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="executable">/bin/systemd</Path>
+            <Path fileType="executable">/bin/systemd-notify</Path>
+            <Path fileType="executable">/bin/systemd-loginctl</Path>
+            <Path fileType="executable">/bin/systemd-ask-password</Path>
+            <Path fileType="executable">/bin/systemd-tty-ask-password-agent</Path>
+            <Path fileType="executable">/bin/systemd-machine-id-setup</Path>
+            <Path fileType="executable">/usr/bin/systemd-cgls</Path>
+            <Path fileType="executable">/usr/bin/*</Path>
+            <Path fileType="executable">/usr/bin/systemd-nspawn</Path>
+            <Path fileType="executable">/usr/bin/systemd-stdio-bridge</Path>
+            <Path fileType="executable">/usr/bin/systemd-analyze</Path>
+            <Path fileType="executable">/lib/systemd</Path>
+            <Path fileType="executable">/lib/systemd/system-generators/systemd-cryptsetup-generator</Path>
+            <Path fileType="executable">/lib/systemd/system-generators/systemd-getty-generator</Path>
+            <Path fileType="executable">/usr/libexec/systemd</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/lib/security/pam_systemd.so</Path>
+            <Path fileType="library">/lib/*</Path>
+            <Path fileType="library">/usr/lib/libsystemd*</Path>
+            <Path fileType="config">/etc/dbus-1/system.d</Path>
+            <Path fileType="config">/etc/*</Path>
+            <Path fileType="config">/etc/systemd/system.conf</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/lib/*</Path>
+            <Path fileType="data">/usr/lib/systemd/user</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="data">/usr/share/dbus-1/services</Path>
+            <Path fileType="data">/usr/share/*</Path>
+            <Path fileType="data">/usr/share/dbus-1/system-services</Path>
+            <Path fileType="data">/usr/share/dbus-1/interfaces</Path>
+            <Path fileType="data">/usr/share/systemd</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/systemd</Path>
+            <Path fileType="executable">/var/lib/systemd</Path>
+            <Path fileType="doc">/var/log/*</Path>
+            <Path fileType="executable">/bin/systemctl</Path>
+            <Path fileType="executable">/bin/systemd-tmpfiles</Path>
+            <Path fileType="config">/etc/systemd</Path>
+            <Path fileType="data">/etc/bash_completion.d</Path>
+            <Path fileType="config">/etc/xdg/systemd</Path>
+            <Path fileType="data">/lib/systemd/system</Path>
+            <Path fileType="data">/usr/lib/tmpfiles.d</Path>
+            <Path fileType="data">/usr/lib/sysctl.d</Path>
+            <Path fileType="data">/usr/lib/binfmt.d</Path>
+            <Path fileType="data">/usr/lib/modules-load.d</Path>
+            <Path fileType="data">/etc/tmpfiles.d</Path>
+            <Path fileType="data">/etc/sysctl.d</Path>
+            <Path fileType="data">/etc/binfmt.d</Path>
+            <Path fileType="data">/etc/modules-load.d</Path>
+            <Path fileType="data">/usr/share/pkgconfig/systemd.pc</Path>
+            <Path fileType="man">/usr/share/man/man1/systemctl.*</Path>
+        </Files>
+        <Provides>
+            <COMAR script="packageHandler.py">System.PackageHandler</COMAR>
+            <COMAR script="system-package-units.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-08-25</Date>
+            <Version>218</Version>
+            <Comment>New Packages</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
