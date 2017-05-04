@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Terminal emulation application for the GNOME desktop.</Summary>
         <Description>GNOME terminal is a emulation application that designed to run xterm, VT102 and VT220</Description>
-        <Archive sha1sum="fee7ed0c3c485617bec1089a100621bbd097c5c1" type="tarxz">mirrors://gnome/gnome-terminal/3.22/gnome-terminal-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="07917894e9caa006590b58a6ce5cc39a3df2b66f" type="tarxz">mirrors://gnome/gnome-terminal/3.24/gnome-terminal-3.24.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -58,9 +58,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2016-07-26</Date>
-            <Version>3.22.0</Version>
+            <Version>3.24.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
