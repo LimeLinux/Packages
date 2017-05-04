@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME session manager</Summary>
         <Description>gnome-session manages X11-compliant sessions with ConsoleKit daemon and starts GNOME core services</Description>
-        <Archive sha1sum="01a00011451415e1f55e2cc3124e7cc5ab3ef7a1" type="tarxz">mirrors://gnome/gnome-session/3.22/gnome-session-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="d6381be9f3e92eca3999128757f7c1fe065e0675" type="tarxz">mirrors://gnome/gnome-session/3.24/gnome-session-3.24.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>mesa</Dependency>
@@ -69,7 +69,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.22.0</Version>
+            <Version>3.24.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

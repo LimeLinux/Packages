@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>GDK pixbuf library</Summary>
         <Description>gdk-pixbuf is a library that provides image loading and scaling support for gtk+ applications</Description>
-        <Archive sha1sum="240018b35da047500e43caac7e32a4482edd3852" type="tarxz">mirrors://gnome/gdk-pixbuf/2.34/gdk-pixbuf-2.34.0.tar.xz</Archive>
+        <Archive sha1sum="8caa99dbbb143cddbb896bf35e01da717bb1479f" type="tarxz">mirrors://gnome/gdk-pixbuf/2.36/gdk-pixbuf-2.36.6.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>tiff</Dependency>
@@ -56,8 +56,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.34.0</Version>
+            <Date>2017-05-04</Date>
+            <Version>2.36.6</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

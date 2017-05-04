@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME power manager</Summary>
         <Description>GNOME Power Manager is a session daemon that acts as a policy agent on top of UPower.</Description>
-        <Archive sha1sum="98b5ba1e337770b12144c07e53c0105c3fc490ab" type="tarxz">mirrors://gnome/gnome-power-manager/3.22/gnome-power-manager-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="ec48438e2d216224c4ac109063448dab26b70a02" type="tarxz">mirrors://gnome/gnome-power-manager/3.24/gnome-power-manager-3.24.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>docbook-xml</Dependency>
             <Dependency>cairo</Dependency>
@@ -54,7 +54,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.22.0</Version>
+            <Version>3.24.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

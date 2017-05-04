@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Basic GNOME libraries and dialogs</Summary>
         <Description>gnome-desktop contains basic GNOME libraries and information applications.</Description>
-        <Archive sha1sum="2fd7e9f18bfbef871113399a3d22a4a9abad10e3" type="tarxz">mirrors://gnome/gnome-desktop/3.22/gnome-desktop-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="ffd77196b79fa04c5fd9fe09d1632fedeacf9cd6" type="tarxz">mirrors://gnome/gnome-desktop/3.24/gnome-desktop-3.24.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>itstool</Dependency>
             <Dependency>iso-codes</Dependency>
@@ -58,7 +58,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.22.0</Version>
+            <Version>3.24.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

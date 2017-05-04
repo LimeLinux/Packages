@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Automatic archives creating and extracting library</Summary>
         <Description>Automatic archives creating and extracting library</Description>
-        <Archive sha1sum="d9e099f843b714f030d3fa4b62547ac5b5c7bb9a" type="tarxz">mirrors://gnome/gnome-autoar/0.1/gnome-autoar-0.1.1.tar.xz</Archive>
+        <Archive sha1sum="82f92e16a7c8b4fdd22abd169e5e4699b3a17ce4" type="tarxz">mirrors://gnome/gnome-autoar/0.2/gnome-autoar-0.2.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gcr</Dependency>
             <Dependency>gnome-common</Dependency>
@@ -44,8 +44,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-07-26</Date>
-            <Version>0.1.1</Version>
+            <Date>2017-07-26</Date>
+            <Version>0.2.2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

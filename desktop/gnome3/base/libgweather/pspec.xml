@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>GNOME weather library</Summary>
         <Description>libgweather is a library to access weather information from online services for numerous locations.</Description>
-        <Archive sha1sum="44a0ce7e79307c8ad8e3fed8475f2df3c72f1593" type="tarxz">mirrors://gnome/libgweather/3.20/libgweather-3.20.3.tar.xz</Archive>
+        <Archive sha1sum="0ab266a659554b79e39a674e8364757ae1a6339b" type="tarxz">mirrors://gnome/libgweather/3.24/libgweather-3.24.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -57,8 +57,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-07-26</Date>
-            <Version>3.20.3</Version>
+            <Date>2017-07-26</Date>
+            <Version>3.24.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

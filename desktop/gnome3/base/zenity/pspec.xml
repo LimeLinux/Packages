@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A rewrite of gdialog</Summary>
         <Description>Zenity is the GNOME port of dialog which allows you to display dialog boxes from the commandline and shell scripts.</Description>
-        <Archive sha1sum="f2e81689e7d28c1ff8a3f8947a3c45409c30c518" type="tarxz">https://git.gnome.org/browse/zenity/snapshot/zenity-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="52a167e8d0b10d351c71dbb3483b3cf11305c155" type="tarxz">https://git.gnome.org/browse/zenity/snapshot/zenity-3.24.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>pango</Dependency>
@@ -49,7 +49,7 @@
     <History>
         <Update release="1">
             <Date>2017-03-01</Date>
-            <Version>3.22.0</Version>
+            <Version>3.24.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

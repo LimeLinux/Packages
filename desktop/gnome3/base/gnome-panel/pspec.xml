@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME panel</Summary>
         <Description>GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
-        <Archive sha1sum="ef938d9a9090f2223adcfcb354f29c766853b9c5" type="tarxz">mirrors://gnome/gnome-panel/3.20/gnome-panel-3.20.1.tar.xz</Archive>
+        <Archive sha1sum="c134fe03f5d23c69b6b0c0326bcbc038e824361f" type="tarxz">mirrors://gnome/gnome-panel/3.24/gnome-panel-3.24.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -31,8 +31,8 @@
             <Dependency>gnome-menus</Dependency>
             <Dependency>libgweather</Dependency>
             <Dependency>gnome3-desktop</Dependency>
-        <!--Dependency>telepathy-glib</Dependency>
-        <Dependency>evolution-data-server</Dependency-->
+            <Dependency>telepathy-glib</Dependency>
+            <Dependency>evolution-data-server</Dependency>
         </BuildDependencies>
         <Patches>
         <!--Patch level="1">libgweather-3.10.patch</Patch>
@@ -78,8 +78,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-07-26</Date>
-            <Version>3.20.1</Version>
+            <Date>2017-07-26</Date>
+            <Version>3.24.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

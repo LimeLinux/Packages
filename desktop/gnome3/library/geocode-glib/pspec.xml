@@ -12,7 +12,7 @@
         <Isa>library</Isa>
         <Summary>GLib geocoding library that uses the Yahoo! Place Finder service</Summary>
         <Description>geocode-glib is a convenience library for the geocoding (finding longitude, and latitude from an address) and reverse geocoding (finding an address from coordinates). It uses Nominatim service to achieve that.</Description>
-        <Archive sha1sum="ca6579c182270eea64e6d2c38768ff476eb89c75" type="tarxz">mirrors://gnome/geocode-glib/3.20/geocode-glib-3.20.1.tar.xz</Archive>
+        <Archive sha1sum="d5de2ad18f78a4fa8e94824451027bfaa33996b0" type="tarxz">mirrors://gnome/geocode-glib/3.23/geocode-glib-3.23.90.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libsoup</Dependency>
             <Dependency>json-glib</Dependency>
@@ -37,7 +37,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.20.1</Version>
+            <Version>3.23.90</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

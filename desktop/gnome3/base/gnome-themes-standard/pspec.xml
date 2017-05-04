@@ -13,7 +13,7 @@
         <IsA>data</IsA>
         <Summary>GNOME Standart Themes</Summary>
         <Description>gnome-themes-standard provides GNOME Standart Themes.</Description>
-        <Archive sha1sum="bd97bd58e53e810c65b8843613bbd08ce64fe202" type="tarxz">mirrors://gnome/gnome-themes-standard/3.20/gnome-themes-standard-3.20.tar.xz</Archive>
+        <Archive sha1sum="597044bab55a54e5ea5c5b3eae2f834e5b86412c" type="tarxz">mirrors://gnome/gnome-themes-standard/3.22/gnome-themes-standard-3.22.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
@@ -38,8 +38,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-07-26</Date>
-            <Version>3.20</Version>
+            <Date>2017-07-26</Date>
+            <Version>3.22.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

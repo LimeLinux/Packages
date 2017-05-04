@@ -12,7 +12,7 @@
         <License>LGPLv2</License>
         <Summary>Xft powered terminal widget</Summary>
         <Description>The VTE package contains a termcap file implementation for terminal emulators.</Description>
-        <Archive sha1sum="0d5e3fc274eabe0e4891fc1218c282bb79aba03a" type="tarxz">mirrors://gnome/vte/0.46/vte-0.46.0.tar.xz</Archive>
+        <Archive sha1sum="c712027659646572327344b8a8a1a93744c840fe" type="tarxz">mirrors://gnome/vte/0.49/vte-0.49.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -50,9 +50,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.46.0</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>0.49.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

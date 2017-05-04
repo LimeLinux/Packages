@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Fork of bluez-gnome</Summary>
         <Description>gnome-bluetooth is a fork of bluez-gnome focused on integration with GNOME.</Description>
-        <Archive sha1sum="b1d2fd4b740dd8b9a0791dd57e85eb65a3eab97d" type="tarxz">mirrors://gnome/gnome-bluetooth/3.20/gnome-bluetooth-3.20.0.tar.xz</Archive>
+        <Archive sha1sum="4c742088efe2a2121254689038db98132c0a8758" type="tarxz">mirrors://gnome/gnome-bluetooth/3.20/gnome-bluetooth-3.20.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -57,7 +57,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.20.0</Version>
+            <Version>3.20.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Default file manager for the GNOME desktop</Summary>
         <Description>Nautilus is a file manager that allows to browse directories, preview files and launch applications.</Description>
-        <Archive sha1sum="c3db62ace167aa107d4833edb96249c6295ec46b" type="tarxz">mirrors://gnome/nautilus/3.22/nautilus-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="dc0cd49ffb4ecadf620d712b2ce4ca541fab7cc2" type="tarxz">mirrors://gnome/nautilus/3.24/nautilus-3.24.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
@@ -71,7 +71,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.22.0</Version>
+            <Version>3.24.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

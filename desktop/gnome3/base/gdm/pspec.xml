@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME display manager</Summary>
         <Description>GDM provides log into different sessions on local or remote machines.</Description>
-        <Archive sha1sum="c7ee26edceaf5225de4839ecfbe82ff4049d5030" type="tarxz">mirrors://gnome/gdm/3.22/gdm-3.22.0.tar.xz</Archive>
+        <Archive sha1sum="7de0b39dd07fe93ca31c45bde6a73a110427e3df" type="tarxz">mirrors://gnome/gdm/3.24/gdm-3.24.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>itstool</Dependency>
@@ -68,7 +68,7 @@
     <History>
         <Update release="1">
             <Date>2016-07-26</Date>
-            <Version>3.22.0</Version>
+            <Version>3.24.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

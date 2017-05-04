@@ -1,0 +1,63 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-tweak-tool</Name>
+        <Homepage>http://www.gnome.org/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Customize advanced GNOME 3 options</Summary>
+        <Description>Customize advanced GNOME 3 options</Description>
+        <Archive sha1sum="dbe7503a5a88ed631f2bfa66b2633cde0d7396b0" type="tarxz">mirrors://gnome/gnome-tweak-tool/3.24/gnome-tweak-tool-3.24.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gnome-settings-daemon</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>dconf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>nautilus</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="0">gnome-terminal-3.10.0-customize.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gnome-tweak-tool</Name>
+        <RuntimeDependencies>
+            <Dependency>gnome-settings-daemon</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>dconf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>nautilus</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-26</Date>
+            <Version>3.24.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
