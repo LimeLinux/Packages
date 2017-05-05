@@ -19,17 +19,17 @@
             <Dependency>docbook-xsl</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcrypt</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kdoctools</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.33.0">knotifications</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -39,15 +39,15 @@
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libgcrypt</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.33.0">knotifications</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kwindowsystem</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

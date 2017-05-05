@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Qt-style Client and Server library wrapper for the Wayland libraries</Summary>
         <Description>Qt-style Client and Server library wrapper for the Wayland libraries</Description>
-        <Archive sha1sum="49afecee2d646ca46bf7fc9d4fff2386d387a04a" type="tarxz">mirrors://kde/stable/frameworks/5.33/kwayland-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="5e2a0bc1e2a633bc08804a932590322b3b29d1e3" type="tarxz">mirrors://kde/stable/frameworks/5.33/kwayland-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>wayland</Dependency>

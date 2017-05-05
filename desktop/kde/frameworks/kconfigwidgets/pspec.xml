@@ -17,14 +17,14 @@
         <Archive sha1sum="f9894ab3d568f4e1ced6d126b0b87f3c66aa0cf4" type="tarxz">mirrors://kde/stable/frameworks/5.33/kconfigwidgets-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kauth</Dependency>
-            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kguiaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>	
     </Source>
 
@@ -33,13 +33,13 @@
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kauth</Dependency>
-            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kguiaddons</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kguiaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

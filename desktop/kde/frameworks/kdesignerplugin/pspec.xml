@@ -16,21 +16,21 @@
         <Archive sha1sum="74fb101d9caa00e4779487278e8d7189de18d297" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdesignerplugin-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>			
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.33.0">kcompletion</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kdewebkit</Dependency>
-            <Dependency versionFrom="5.33.0">kdoctools</Dependency>
-            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">kitemviews</Dependency>
-            <Dependency versionFrom="5.33.0">kplotting</Dependency>
-            <Dependency versionFrom="5.33.0">ktextwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
-            <Dependency versionFrom="5.33.0">sonnet</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kplotting</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>sonnet</Dependency>
 
         </BuildDependencies>
     </Source>
@@ -40,19 +40,19 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.33.0">kdewebkit</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kitemviews</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">sonnet</Dependency>
-            <Dependency versionFrom="5.33.0">kcompletion</Dependency>
-            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">kplotting</Dependency>
-            <Dependency versionFrom="5.33.0">ktextwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
+            <Dependency>kdewebkit</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>sonnet</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kplotting</Dependency>
+            <Dependency>ktextwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kxmlgui</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

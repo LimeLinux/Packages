@@ -13,11 +13,11 @@
         <IsA>app:console</IsA>
         <Summary>Image formats addons for QT 5</Summary>
         <Description>This framework provides additional image format plugins for QtGui. </Description>
-        <Archive sha1sum="1f79820f83aaad641a7d2f2b69c21d96259169cf" type="tarxz">mirrors://kde/stable/frameworks/5.33/kimageformats-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="ee73a2579faefe262cd4a65569201ae9f67c8385" type="tarxz">mirrors://kde/stable/frameworks/5.33/kimageformats-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="2.2.0">openexr</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
             <Dependency>ilmbase</Dependency>
             <Dependency>karchive</Dependency>
         </BuildDependencies>

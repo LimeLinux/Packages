@@ -15,16 +15,16 @@
         <Description>KdeWebkit provides KDE integration of the QtWebKit library.</Description>
         <Archive sha1sum="6648c9ae0b97724db09cc1aea47d11278afc9e94" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdewebkit-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.6.0">qt5-webkit</Dependency>
             <Dependency versionFrom="5.6.0">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">kjobwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kparts</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">kwallet</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwallet</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -34,13 +34,13 @@
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.8">qt5-webkit</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kjobwidgets</Dependency>            
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kparts</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">kwallet</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kjobwidgets</Dependency>            
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwallet</Dependency>
+            <Dependency>kio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

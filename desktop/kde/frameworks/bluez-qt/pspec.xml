@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>Qt wrapper for KDE 5 Bluez DBus API</Summary>
         <Description>Qt wrapper for KDE 5 DBus API.</Description>
-        <Archive sha1sum="672c7dc5cdc6bef36cae613812fcfa382bc786e7" type="tarxz">mirrors://kde/stable/frameworks/5.33/bluez-qt-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="a89743d80d7a332e41d51febd6ea57be78a4edd4" type="tarxz">mirrors://kde/stable/frameworks/5.33/bluez-qt-5.33.0.tar.xz</Archive>
         <BuildDependencies>
              <Dependency>bluez</Dependency>
              <Dependency>bluez-libs</Dependency>
-             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+             <Dependency>extra-cmake-modules</Dependency>
              <Dependency versionFrom="5.8">qt5</Dependency>
         </BuildDependencies>
     </Source>

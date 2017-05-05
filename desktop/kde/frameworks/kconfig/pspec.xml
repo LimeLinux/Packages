@@ -17,7 +17,7 @@
         <Archive sha1sum="cacd41edaa222bbd855eca50e68b30639f403ab0" type="tarxz">mirrors://kde/stable/frameworks/5.33/kconfig-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 

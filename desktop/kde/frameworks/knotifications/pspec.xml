@@ -15,15 +15,15 @@
         <Archive sha1sum="e9b36430742202c5c720a0eac53c9acdd46af462" type="tarxz">mirrors://kde/stable/frameworks/5.33/knotifications-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kcodecs</Dependency>
             <Dependency>libdbusmenu-qt</Dependency>
             <Dependency>qt5-phonon</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,13 +33,13 @@
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kservice</Dependency>
             <Dependency>libdbusmenu-qt</Dependency>
-            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
+            <Dependency>kwindowsystem</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

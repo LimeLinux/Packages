@@ -18,28 +18,28 @@
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="13.0.4">mesa</Dependency>
             <Dependency>boost</Dependency>
-            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kdeclarative</Dependency>
-            <Dependency versionFrom="5.33.0">kpackage</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">kbookmarks</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kcompletion</Dependency>
-            <Dependency versionFrom="5.33.0">kjobwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kitemviews</Dependency>
-            <Dependency versionFrom="5.33.0">solid</Dependency>
-            <Dependency versionFrom="5.33.0">kauth</Dependency>
-            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
-            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.33.0">kglobalaccel</Dependency>
-            <Dependency versionFrom="5.33.0">kcmutils</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kwindowsystem</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -48,16 +48,16 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">kglobalaccel</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>	   
-            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
-            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kglobalaccel</Dependency>
+            <Dependency>kservice</Dependency>	   
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kwindowsystem</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

@@ -16,14 +16,14 @@
         <Archive sha1sum="02fbdf06203fcf00ec1728a341ae7b02a0931aa9" type="tarxz">mirrors://kde/stable/frameworks/5.33/kded-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-			<Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kcrash</Dependency>
-            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kdoctools</Dependency>
-            <Dependency versionFrom="5.33.0">kinit</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
+			<Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>kinit</Dependency>
+            <Dependency>kservice</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -32,11 +32,11 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcrash</Dependency>
-            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kservice</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

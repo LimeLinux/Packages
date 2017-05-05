@@ -18,7 +18,7 @@
             <Dependency>xz</Dependency>
             <Dependency>zlib</Dependency>
             <Dependency>bzip2</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 

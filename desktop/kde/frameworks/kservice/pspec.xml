@@ -16,14 +16,14 @@
         <Archive sha1sum="6c5ffa34f024816752f08da369b920655306d659" type="tarxz">mirrors://kde/stable/frameworks/5.33/kservice-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kcrash</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcrash</Dependency>
             <Dependency>docbook-xml</Dependency>
             <Dependency>docbook-xsl</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -32,11 +32,11 @@
         <RuntimeDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kcrash</Dependency>
-            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>ki18n</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

@@ -15,16 +15,16 @@
         <Description>Framework Integration is a set of plugins responsible for better integration of Qt applications when running on a KDE Plasma workspace.</Description>
         <Archive sha1sum="d4f3ee55d913ed7ded5f83e1917f7b3921a282c1" type="tarxz">mirrors://kde/stable/frameworks/5.33/krunner-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.6.0">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">plasma-framework</Dependency>
-            <Dependency versionFrom="5.33.0">solid</Dependency>
-            <Dependency versionFrom="5.33.0">threadweaver</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>threadweaver</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,14 +33,14 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>    
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">plasma-framework</Dependency>
-            <Dependency versionFrom="5.33.0">solid</Dependency>	   
-            <Dependency versionFrom="5.33.0">threadweaver</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>plasma-framework</Dependency>
+            <Dependency>solid</Dependency>	   
+            <Dependency>threadweaver</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

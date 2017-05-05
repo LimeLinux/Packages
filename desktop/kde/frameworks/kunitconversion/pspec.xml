@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>KDE unit conversion framework</Summary>
         <Description>KUnitConversion provides functions to convert values in different physical units.</Description>
-        <Archive sha1sum="a6540f094a9cf8a2560b273d32408d2209473a83" type="tarxz">mirrors://kde/stable/frameworks/5.33/kunitconversion-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="c0e9967e424de1fb9b5be1b0fbb3ab56c970acbe" type="tarxz">mirrors://kde/stable/frameworks/5.33/kunitconversion-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency>ki18n</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

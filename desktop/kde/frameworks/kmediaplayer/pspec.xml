@@ -15,9 +15,9 @@
         <Archive sha1sum="ee686651967b6c9ecc5b7c473c1e3a183b21caae" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kmediaplayer-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.33.0">kparts</Dependency>
-            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kxmlgui</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -26,8 +26,8 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>    
-            <Dependency versionFrom="5.33.0">kparts</Dependency>    
-            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>    
+            <Dependency>kparts</Dependency>    
+            <Dependency>kxmlgui</Dependency>    
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

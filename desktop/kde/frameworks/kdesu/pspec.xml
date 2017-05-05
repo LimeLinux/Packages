@@ -16,13 +16,13 @@
         <Archive sha1sum="431aabb24160496c0da2f756a23ec4c2e65b0227" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdesu-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kpty</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
             <Dependency>libX11</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,11 +30,11 @@
         <Name>kdesu</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kpty</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kconfig</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libX11</Dependency>
         </RuntimeDependencies>

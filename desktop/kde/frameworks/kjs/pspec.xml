@@ -17,9 +17,9 @@
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libpcre</Dependency>
-            <Dependency versionFrom="5.33.0">kdoctools</Dependency>
+            <Dependency>kdoctools</Dependency>
             <Dependency>docbook-xsl</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 

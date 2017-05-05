@@ -16,19 +16,19 @@
         <Archive sha1sum="c99840e4df4e453d2411774e6431619c133b178b" type="tarxz">mirrors://kde/stable/frameworks/5.33/baloo-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kauth</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcrash</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kidletime</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">solid</Dependency>
-            <Dependency versionFrom="5.33.0">kfilemetadata</Dependency>
-            <Dependency versionFrom="5.33.0">kdoctools</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kidletime</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kfilemetadata</Dependency>
+            <Dependency>kdoctools</Dependency>
             <Dependency>lmdb</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 

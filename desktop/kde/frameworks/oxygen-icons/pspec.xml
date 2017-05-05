@@ -9,9 +9,9 @@
         <License>LGPL</License>
         <Summary>KDE Oxygen icons</Summary>
         <Description>"The Oxygen Icon Theme</Description>
-        <Archive sha1sum="e67d19112e5980a2e7937a1206eb506d4f9032bc" type="tarxz">mirrors://kde/stable/frameworks/5.33/oxygen-icons5-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="fd1bfdbd2edb14b2fec4df6575b781c30a9f166a" type="tarxz">mirrors://kde/stable/frameworks/5.33/oxygen-icons5-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
         </BuildDependencies>
     </Source>

@@ -12,10 +12,10 @@
         <IsA>library</IsA>
         <Summary>Open Collaboration Service client library, based on Qt 5</Summary>
         <Description>Attica is a library to access Open Collaboration Service servers, based on Qt 5.</Description>
-        <Archive sha1sum="0bcd7e4433622f85418db5a6becc7118a5105e78" type="tarxz">mirrors://kde/stable/frameworks/5.33/attica-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="0c1db27f3930c052bd2e0ec953d9df450e09b523" type="tarxz">mirrors://kde/stable/frameworks/5.33/attica-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 

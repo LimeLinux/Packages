@@ -16,9 +16,9 @@
         <Archive sha1sum="aaaeeadbd12efbb82b43054383afb6359fb04166" type="tarxz">mirrors://kde/stable/frameworks/5.33/kxmlrpcclient-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-			<Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
+			<Dependency>extra-cmake-modules</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kio</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,9 +27,9 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

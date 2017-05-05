@@ -15,7 +15,7 @@
         <Description>KCoreAddons provides classes built on top of QtCore to perform various tasks such as manipulating mime types, autosaving files, creating backup files, generating random sequences, performing text manipulations such as macro replacement, accessing user information and many more.</Description>
         <Archive sha1sum="f976b516afe4a8c9abba5bf967943613338b92eb" type="tarxz">http://download.kde.org/stable/frameworks/5.33/kcoreaddons-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>shared-mime-info</Dependency>
             <Dependency>mesa</Dependency>

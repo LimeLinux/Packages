@@ -13,12 +13,12 @@
         <IsA>app:console</IsA>
         <Summary>KDE spell schecking library</Summary>
         <Description>This framework contains two main components: Interface to KWallet, the safe desktop-wide storage for passwords on KDE workspaces. The kwalletd used to safely store the passwords on KDE work spaces.</Description>
-        <Archive sha1sum="0958bd33647e3b3fbada2065f9d4149904573de3" type="tarxz">mirrors://kde/stable/frameworks/5.33/sonnet-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="187017115d1d4301c0f916610c09e2a03e38e91e" type="tarxz">mirrors://kde/stable/frameworks/5.33/sonnet-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>hunspell</Dependency>
             <Dependency>aspell</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 

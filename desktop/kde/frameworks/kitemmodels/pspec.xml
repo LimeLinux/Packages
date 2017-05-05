@@ -12,10 +12,10 @@
         <IsA>library</IsA>
         <Summary>Set of item models extending the Qt model-view framework</Summary>
         <Description>KItemModels provides a set of item models extending the Qt model-view framework.</Description>
-        <Archive sha1sum="adf54e999aa297692ff57970b4c839f2e7ea780e" type="tarxz">mirrors://kde/stable/frameworks/5.33/kitemmodels-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="dac40c3afd88a4d9bfb93bd498bf2a4d9d6d79d5" type="tarxz">mirrors://kde/stable/frameworks/5.33/kitemmodels-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+             <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 

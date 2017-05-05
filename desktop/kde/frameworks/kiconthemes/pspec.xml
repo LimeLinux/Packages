@@ -16,15 +16,15 @@
         <Archive sha1sum="55132fff59730bd6f8ed9d30aa2854f14ff7422b" type="tarxz">mirrors://kde/stable/frameworks/5.33/kiconthemes-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kauth</Dependency>
-            <Dependency versionFrom="5.33.0">karchive</Dependency>
-            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kitemviews</Dependency>
-            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,10 +33,10 @@
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">karchive</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">karchive</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>karchive</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

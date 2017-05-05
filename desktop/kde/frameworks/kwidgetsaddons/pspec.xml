@@ -13,10 +13,10 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 desktop widgets</Summary>
         <Description>KdeWidgetsAddons is a framework contains addon widgets and shared libraries for applications using Qt5-Widgets.</Description>
-        <Archive sha1sum="374c490a27f26cbcebd094eaa6db4520991037d3" type="tarxz">mirrors://kde/stable/frameworks/5.33/kwidgetsaddons-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="fd3f45762600433873abe6cccb11a8db4fa4ac0d" type="tarxz">mirrors://kde/stable/frameworks/5.33/kwidgetsaddons-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 

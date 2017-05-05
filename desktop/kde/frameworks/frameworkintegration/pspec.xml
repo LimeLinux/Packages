@@ -16,16 +16,16 @@
         <BuildDependencies>
             <Dependency>libxcb</Dependency>
             <Dependency>libXcursor</Dependency>
-			<Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+			<Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.6.0">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.33.0">knewstuff</Dependency>
-            <Dependency versionFrom="5.33.0">knotifications</Dependency>
-            <Dependency versionFrom="5.33.0">kpackage</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>knotifications</Dependency>
+            <Dependency>kpackage</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,14 +33,14 @@
         <Name>frameworkintegration</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-			<Dependency versionFrom="5.33.0">ki18n</Dependency>
+			<Dependency>ki18n</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-			<Dependency versionFrom="5.33.0">knewstuff</Dependency>
-            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">knotifications</Dependency>
+            <Dependency>kconfig</Dependency>
+			<Dependency>knewstuff</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>knotifications</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

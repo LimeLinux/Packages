@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>KDE5 Frameworks API documentation tools.</Summary>
         <Description>KDE5 Frameworks API documentation tools.</Description>
-        <Archive sha1sum="e358b98b1d906e897ddce548a9f3b63cafd866f2" type="tarxz">mirrors://kde/stable/frameworks/5.33/kapidox-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="6284b77fec7d728fa98119c811bae5e3646c5186" type="tarxz">mirrors://kde/stable/frameworks/5.33/kapidox-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>python-Jinja2</Dependency>
             <Dependency>python-PyYAML</Dependency>

@@ -16,30 +16,30 @@
         <Archive sha1sum="b0d1bf856f6411a7f36c26bead024b9111244b75" type="tarxz">mirrors://kde/stable/frameworks/5.33/kinit-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.33.0">kdoctools</Dependency>
+            <Dependency>kdoctools</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libcap</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
-            <Dependency versionFrom="5.33.0">kcrash</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kitemviews</Dependency>
-            <Dependency versionFrom="5.33.0">solid</Dependency>
-            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
-            <Dependency versionFrom="5.33.0">kjobwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kcompletion</Dependency>
-            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.33.0">kauth</Dependency>
-            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">kbookmarks</Dependency>
-            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kitemviews</Dependency>
+            <Dependency>solid</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcodecs</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kbookmarks</Dependency>
+            <Dependency>kwindowsystem</Dependency>
             <Dependency>docbook-xsl</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -51,13 +51,13 @@
             <Dependency>libcap</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
-            <Dependency versionFrom="5.33.0">kio</Dependency>
-            <Dependency versionFrom="5.33.0">kcrash</Dependency>
-            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.33.0">kconfig</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">kservice</Dependency>
-            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kwindowsystem</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

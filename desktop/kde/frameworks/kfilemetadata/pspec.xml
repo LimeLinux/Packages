@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 library for extracting meta data from files.</Summary>
         <Description>KDE library for extracting meta data from files.</Description>
-        <Archive sha1sum="72f07239d74a2974ba12c35b4d4e13cd03256ab5" type="tarxz">mirrors://kde/stable/frameworks/5.33/kfilemetadata-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="1f313c14355108ee232dd0df860ba00a16e54d5a" type="tarxz">mirrors://kde/stable/frameworks/5.33/kfilemetadata-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>attr</Dependency>
@@ -22,9 +22,9 @@
             <Dependency versionFrom="3.0.2">ffmpeg</Dependency>
             <Dependency>taglib</Dependency>
             <Dependency>poppler</Dependency>
-            <Dependency versionFrom="5.33.0">karchive</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
-            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -38,8 +38,8 @@
             <Dependency>taglib</Dependency>
             <Dependency versionFrom="3.0.2">ffmpeg</Dependency>
             <Dependency>poppler</Dependency>
-            <Dependency versionFrom="5.33.0">karchive</Dependency>
-            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>ki18n</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

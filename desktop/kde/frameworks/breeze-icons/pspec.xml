@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Breeze icon themes</Summary>
         <Description>İcon themes breeze</Description>
-        <Archive type="tarxz" sha1sum="1aeb9067ebe6c9c0d33a3823c94052ec1b18c195">mirrors://kde/stable/frameworks/5.33/breeze-icons-5.33.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="5a9ef92c4596fa6af3d42031d95c9bdda17c831b">mirrors://kde/stable/frameworks/5.33/breeze-icons-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
