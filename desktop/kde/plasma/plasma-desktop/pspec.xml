@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>plasma-desktop</Name>
@@ -13,9 +13,9 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 plasma workspace</Summary>
         <Description>This package contains the basic packages for a Plasma workspace.</Description>
-        <Archive sha1sum="21a38cee3eecdb1ba94231fe398a6b98e50c3c05" type="tarxz">mirrors://kde/stable/plasma/5.9.4/plasma-desktop-5.9.4.tar.xz</Archive>
+        <Archive sha1sum="21a38cee3eecdb1ba94231fe398a6b98e50c3c05" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-desktop-5.9.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>boost</Dependency>
             <Dependency>kdoctools</Dependency>
             <Dependency>kactivities-stats</Dependency>
@@ -113,7 +113,7 @@
             <Dependency>libcanberra</Dependency>
             <Dependency>pulseaudio</Dependency>
             <Dependency>xkeyboard-config</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
             <Dependency>solid</Dependency>
             <Dependency>sonnet</Dependency>
@@ -139,9 +139,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-22</Date>
-            <Version>5.9.4</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>5.9.5</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

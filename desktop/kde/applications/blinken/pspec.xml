@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>blinken</Name>
@@ -15,7 +15,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Blinken - Memory Enhancement Game</Summary>
         <Description>Blinken is based on an electronic game released in 1978, which challenges players to remember sequences of increasing length. On the face of the device, there are 4 different color buttons, each one with their own distinctive sound.</Description>
-        <Archive sha1sum="c9c61a47e3ceb6de96b87b9deebe6db8ac00d553" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/blinken-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="c9c61a47e3ceb6de96b87b9deebe6db8ac00d553" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/blinken-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>gettext</Dependency>
@@ -51,9 +51,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

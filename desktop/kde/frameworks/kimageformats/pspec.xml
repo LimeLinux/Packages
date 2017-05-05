@@ -15,7 +15,7 @@
         <Description>This framework provides additional image format plugins for QtGui. </Description>
         <Archive sha1sum="1f79820f83aaad641a7d2f2b69c21d96259169cf" type="tarxz">mirrors://kde/stable/frameworks/5.33/kimageformats-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="2.2.0">openexr</Dependency>
             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
             <Dependency>ilmbase</Dependency>
@@ -26,7 +26,7 @@
     <Package>
         <Name>kimageformats</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="2.2.0">openexr</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>ilmbase</Dependency>
@@ -42,7 +42,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

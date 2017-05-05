@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kpat</Name>
@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Patience card game</Summary>
         <Description>To play KPatience you need, as the name suggests, patience. For simple games, where the way the game goes depends only upon how the cards fall, your patience might be the only thing you need.</Description>
-        <Archive sha1sum="d5611081bea2729fa3e2ab3481479ca1ca896fbc" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kpat-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="d5611081bea2729fa3e2ab3481479ca1ca896fbc" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kpat-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
@@ -79,9 +79,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

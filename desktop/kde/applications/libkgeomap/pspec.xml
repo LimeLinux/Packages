@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>libkgeomap</Name>
@@ -15,7 +15,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>A wrapper around world map components for browsing and arranging photos on a map.</Summary>
         <Description>A wrapper around world map components for browsing and arranging photos on a map.</Description>
-        <Archive type="tarxz" sha1sum="aea7c56db41f85ccce37fd760f39445cd56afd49">mirrors://kde/stable/applications/16.12.3/src/libkgeomap-16.12.3.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="aea7c56db41f85ccce37fd760f39445cd56afd49">mirrors://kde/stable/applications/17.04.0/src/libkgeomap-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -50,9 +50,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

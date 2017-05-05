@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kaccounts-integration</Name>
@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others</Summary>
         <Description>Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others</Description>
-        <Archive sha1sum="c403fd7023b983ef8a6c045c39e471faca5fde83" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kaccounts-integration-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="c403fd7023b983ef8a6c045c39e471faca5fde83" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kaccounts-integration-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -48,9 +48,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

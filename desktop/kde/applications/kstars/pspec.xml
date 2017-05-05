@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kstars</Name>
@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>A desktop planetarium for KDE</Summary>
         <Description>KStars is a Desktop Planetarium for KDE. It provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time. The display includes up to 100 million stars, 13,000 deep-sky objects, all 8 planets, the Sun and Moon, and thousands of comets and asteroids.</Description>
-        <Archive sha1sum="5642f5b82a3e8a22ed9bd836e529426c47d12e00" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kstars-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="5642f5b82a3e8a22ed9bd836e529426c47d12e00" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kstars-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>eigen3</Dependency>
@@ -72,9 +72,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

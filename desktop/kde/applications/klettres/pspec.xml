@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>klettres</Name>
@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>An alphabet learning application</Summary>
         <Description>KLettres is an application specially designed to help the user to learn alphabet in a new language and then to learn to read simple syllables. The user can be a young child aged from two and a half or an adult that wants to learn the basics of a foreign language.</Description>
-        <Archive sha1sum="aec3f8fe92150c2b12ed2a0b6a6471f7715e0425" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/klettres-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="aec3f8fe92150c2b12ed2a0b6a6471f7715e0425" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/klettres-17.04.0.tar.xz</Archive>
         <BuildDependencies>  
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>
@@ -57,9 +57,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

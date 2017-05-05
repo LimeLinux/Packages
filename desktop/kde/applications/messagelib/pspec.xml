@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>messagelib</Name>
@@ -13,7 +13,7 @@
         <IsA>app:library</IsA>
         <Summary>KDE PIM library providing support for mail applications</Summary>
         <Description>KDE PIM library providing support for mail applications</Description>
-        <Archive sha1sum="7d6a342ff178d815661d48ee4e4dcf3b28c4bcd1" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/messagelib-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="7d6a342ff178d815661d48ee4e4dcf3b28c4bcd1" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/messagelib-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
@@ -120,9 +120,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

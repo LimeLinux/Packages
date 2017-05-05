@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kactivitymanagerd</Name>
@@ -12,11 +12,11 @@
         <IsA>app:console</IsA>
         <Summary>Core components for the KDE Activity concept.</Summary>
         <Description>System service to manage user's activities, track the usage patterns etc.</Description>
-        <Archive type="tarxz" sha1sum="7a2e74c0a671167f71e0d1bc4926b5ee950651bb">mirrors://kde/stable/plasma/5.9.4/kactivitymanagerd-5.9.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="7a2e74c0a671167f71e0d1bc4926b5ee950651bb">mirrors://kde/stable/plasma/5.9.5/kactivitymanagerd-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>boost</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdbusaddons</Dependency>
             <Dependency>ki18n</Dependency>
             <Dependency>kconfig</Dependency>
@@ -38,7 +38,7 @@
             <Dependency>kconfig</Dependency>
             <Dependency>kxmlgui</Dependency>
             <Dependency>kservice</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kcoreaddons</Dependency>
             <Dependency>kdbusaddons</Dependency>
             <Dependency>kglobalaccel</Dependency>
@@ -54,9 +54,9 @@
     </Package>
     
     <History>
-        <Update release="1">
-            <Date>2017-03-22</Date>
-            <Version>5.9.4</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>5.9.5</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

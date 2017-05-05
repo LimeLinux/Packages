@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>krfb</Name>
@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Desktop sharing utility</Summary>
         <Description>KDE Desktop Sharing is a manager for easily sharing a desktop session with another system. The desktop session can be viewed or controlled remotely by any VNC or RFB client</Description>
-        <Archive sha1sum="ca59334698984134f8aae9c22d307146c2c661c6" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/krfb-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="ca59334698984134f8aae9c22d307146c2c661c6" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/krfb-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>ki18n</Dependency>
             <Dependency>kcompletion</Dependency>
             <Dependency>kconfig</Dependency>
@@ -48,7 +48,7 @@
             <Dependency>kwallet</Dependency>
             <Dependency>kxmlgui</Dependency>
             <Dependency>libXtst</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kcompletion</Dependency>
             <Dependency>kcoreaddons</Dependency>
             <Dependency>kdbusaddons</Dependency>
@@ -68,9 +68,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

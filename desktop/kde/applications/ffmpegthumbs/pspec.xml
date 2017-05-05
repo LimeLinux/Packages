@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>ffmpegthumbs</Name>
@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.multimedia</PartOf>
         <Summary>ffmpeg based thumbnailer for KDE</Summary>
         <Description>FFmpeg-based thumbnail creator for video files</Description>
-        <Archive sha1sum="d611720e5c5d5486c04127d30c8c4d28f1c3806a" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/ffmpegthumbs-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="d611720e5c5d5486c04127d30c8c4d28f1c3806a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ffmpegthumbs-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -38,9 +38,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

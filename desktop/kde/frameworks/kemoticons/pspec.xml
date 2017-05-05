@@ -15,7 +15,7 @@
         <Description>KEmoticons converts emoticons from text to a graphical representation with images in HTML.</Description>
         <Archive sha1sum="19a6acb9d6f104032b16731841d27fdc0f29d033" type="tarxz">mirrors://kde/stable/frameworks/5.33/kemoticons-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.33.0">karchive</Dependency>
             <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
             <Dependency versionFrom="5.33.0">kconfig</Dependency>
@@ -27,7 +27,7 @@
     <Package>
         <Name>kemoticons</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency versionFrom="5.33.0">karchive</Dependency>
             <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
@@ -48,7 +48,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

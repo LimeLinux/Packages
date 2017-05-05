@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>knavalbattle</Name>
@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Naval Battle game</Summary>
         <Description>knavalbattle is a Battle Ship game for KDE. Ships are placed on a board which represents the sea. Players try to hit each others ships in turns without knowing where they are placed. The first player to destroy all ships wins the game.</Description>
-        <Archive sha1sum="d36df61121b7931bc6498167928d2a1a4f1f93f3" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/knavalbattle-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="d36df61121b7931bc6498167928d2a1a4f1f93f3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/knavalbattle-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -59,9 +59,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

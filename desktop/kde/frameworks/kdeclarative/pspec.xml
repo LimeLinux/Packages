@@ -14,7 +14,7 @@
         <Description>KDeclarative provides integration of QML and KDE workspaces.</Description>
         <Archive sha1sum="48ab3994779656bec4c2f5a7d62ebda9b7e67d2e" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdeclarative-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="13.0.4">mesa</Dependency>
             <Dependency>libepoxy</Dependency>
             <Dependency versionFrom="5.33.0">kauth</Dependency>
@@ -44,7 +44,7 @@
     <Package>
         <Name>kdeclarative</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libepoxy</Dependency>
             <Dependency versionFrom="5.33.0">kpackage</Dependency>
@@ -73,7 +73,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

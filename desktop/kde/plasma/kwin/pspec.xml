@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kwin</Name>
@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 window manager</Summary>
         <Description>KWin is the window manager of the K desktop environment.</Description>
-        <Archive sha1sum="ada131a6f06a2fb43c829cbb0174a0795d77d4b1" type="tarxz">mirrors://kde/stable/plasma/5.9.4/kwin-5.9.4.tar.xz</Archive>
+        <Archive sha1sum="ada131a6f06a2fb43c829cbb0174a0795d77d4b1" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kwin-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kactivities</Dependency>
             <Dependency>kauth</Dependency>
@@ -54,7 +54,7 @@
             <Dependency>freetype</Dependency>
             <Dependency>xcb-util-wm</Dependency>
             <Dependency>plasma-framework</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>wayland</Dependency>
             <Dependency>xcb-util-image</Dependency>
             <Dependency>xcb-util-keysyms</Dependency>
@@ -106,7 +106,7 @@
             <Dependency>libxkbcommon</Dependency>
             <Dependency versionFrom="13.0.4">mesa</Dependency>
             <Dependency>plasma-framework</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>wayland</Dependency>
             <Dependency>xcb-util-image</Dependency>
             <Dependency>xcb-util-keysyms</Dependency>
@@ -131,9 +131,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-22</Date>
-            <Version>5.9.4</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>5.9.5</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

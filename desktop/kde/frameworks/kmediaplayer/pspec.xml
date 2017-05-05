@@ -14,7 +14,7 @@
         <Description>KMediaPlayer builds on the KParts framework to provide a common interface for KParts that can play media files.</Description>
         <Archive sha1sum="ee686651967b6c9ecc5b7c473c1e3a183b21caae" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kmediaplayer-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.33.0">kparts</Dependency>
             <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
@@ -24,7 +24,7 @@
     <Package>
         <Name>kmediaplayer</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>    
             <Dependency versionFrom="5.33.0">kparts</Dependency>    
             <Dependency versionFrom="5.33.0">kxmlgui</Dependency>    
@@ -42,7 +42,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

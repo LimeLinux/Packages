@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kdebugsettings</Name>
@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>An application to enable/disable qCDebug</Summary>
         <Description>KDebug control module for KDE. It provides a graphical frontend for the kdebug daemon, which allow enabling or disabling particular debug areas/messages.</Description>
-        <Archive sha1sum="b2534a13246433ce018fbbfe948c6b727bbcfcc6" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kdebugsettings-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="b2534a13246433ce018fbbfe948c6b727bbcfcc6" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdebugsettings-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -53,9 +53,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

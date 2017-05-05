@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>libkipi</Name>
@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>Common plugin infrastructure for KDE image applications</Summary>
         <Description>Kipi (KDE Image Plugin Interface) is an effort to develop a common plugin structure (for Digikam, Gwenview, etc.). Its aim is to share image plugins among graphic applications.</Description>
-        <Archive sha1sum="994bec30e7500a365ccc46f4149eabc77f3cfb73" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/libkipi-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="994bec30e7500a365ccc46f4149eabc77f3cfb73" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkipi-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>
@@ -46,9 +46,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>knetwalk</Name>
@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Network construction game</Summary>
         <Description>KNetWalk is a single player logic game. The object of the game is to start the LAN, connecting all the terminals to the server, in as few turns as possible.</Description>
-        <Archive sha1sum="3f151ff5985baeeb12047dd2b5246ce424b8b3dd" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/knetwalk-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="3f151ff5985baeeb12047dd2b5246ce424b8b3dd" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/knetwalk-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -63,9 +63,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

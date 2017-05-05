@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>akonadiconsole</Name>
@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Akonadi management and debugging console</Summary>
         <Description>Akonadi management and debugging console</Description>
-        <Archive type="tarxz" sha1sum="a0ffbe009f1f908c127ed15a32f18a9a4c4fa219">http://download.kde.org/stable/applications/16.12.3/src/akonadiconsole-16.12.3.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="a0ffbe009f1f908c127ed15a32f18a9a4c4fa219">http://download.kde.org/stable/applications/17.04.0/src/akonadiconsole-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>akonadi-contacts</Dependency>
             <Dependency>akonadi</Dependency>
@@ -36,7 +36,7 @@
             <Dependency>ktextwidgets</Dependency>
             <Dependency>kwidgetsaddons</Dependency>
             <Dependency>kxmlgui</Dependency>
-            <Dependency versionFrom="16.12.3">libkdepim</Dependency>
+            <Dependency versionFrom="17.04.0">libkdepim</Dependency>
             <Dependency>libkleo</Dependency>
             <Dependency>messagelib</Dependency>
             <Dependency>qt5</Dependency>
@@ -67,7 +67,7 @@
             <Dependency>kconfig</Dependency>
             <Dependency>kxmlgui</Dependency>
             <Dependency>kcontacts</Dependency>
-            <Dependency versionFrom="16.12.3">libkdepim</Dependency>
+            <Dependency versionFrom="17.04.0">libkdepim</Dependency>
             <Dependency>kitemviews</Dependency>
             <Dependency>messagelib</Dependency>
             <Dependency>kcompletion</Dependency>
@@ -89,9 +89,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

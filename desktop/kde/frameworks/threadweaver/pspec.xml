@@ -15,7 +15,7 @@
         <Description>ThreadWeaver is a helper for multithreaded programming.  It uses a job-based interface to queue tasks and execute them in an efficient way.</Description>
         <Archive sha1sum="be985000f1616077d46cf0257acd6192327d86ea" type="tarxz">mirrors://kde/stable/frameworks/5.33/threadweaver-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>threadweaver</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -38,7 +38,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

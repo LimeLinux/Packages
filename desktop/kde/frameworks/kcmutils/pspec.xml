@@ -14,7 +14,7 @@
         <Description>KCMUtils provides various classes to work with KCModules. KCModules can be created with the KConfigWidgets framework.</Description>
         <Archive sha1sum="c726c66a682ef143cd0afa15a28bd9358aaf3a0a" type="tarxz">mirrors://kde/stable/frameworks/5.33/kcmutils-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="13.0.4">mesa</Dependency>
             <Dependency versionFrom="5.33.0">kcodecs</Dependency>
             <Dependency versionFrom="5.33.0">kpackage</Dependency>
@@ -36,7 +36,7 @@
     <Package>
         <Name>kcmutils</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency versionFrom="5.33.0">kdeclarative</Dependency>
             <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
@@ -64,7 +64,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

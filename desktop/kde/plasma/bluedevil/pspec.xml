@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>bluedevil</Name>
@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE 5 Bluetooth Stack</Summary>
         <Description>Integrate the Bluetooth technology within KDE workspace and applications</Description>
-        <Archive sha1sum="d9b0863c1ad07ba4d2032454e1ed18951c7e1771" type="tarxz">mirrors://kde/stable/plasma/5.9.4/bluedevil-5.9.4.tar.xz</Archive>
+        <Archive sha1sum="d9b0863c1ad07ba4d2032454e1ed18951c7e1771" type="tarxz">mirrors://kde/stable/plasma/5.9.5/bluedevil-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.4.0">qt5</Dependency>
             <Dependency>bluez-qt</Dependency>
@@ -35,7 +35,7 @@
     <Package>
         <Name>bluedevil</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>bluez-qt</Dependency>
             <Dependency>kded</Dependency>
@@ -62,9 +62,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-22</Date>
-            <Version>5.9.4</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>5.9.5</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

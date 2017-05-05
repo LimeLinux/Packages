@@ -11,7 +11,7 @@
         <Description>Syntax highlighting engine for structured text and code</Description>
         <BuildDependencies>
             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>perl</Dependency>
             <Dependency>glibc</Dependency>
         </BuildDependencies>
@@ -21,7 +21,7 @@
         <Name>syntax-highlighting</Name>
         <Summary>Syntax highlighting engine for structured text and code</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -37,7 +37,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

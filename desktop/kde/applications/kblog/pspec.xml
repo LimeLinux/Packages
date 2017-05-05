@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kblog</Name>
@@ -13,7 +13,7 @@
         <IsA>app:library</IsA>
         <Summary>A blogging library for KDE</Summary>
         <Description>KBlog is a library for calling functions on Blogger 1.0, MetaWeblog, MovableType and GData compatible blogs. It calls the APIs using KXmlRpcClient and Syndication.</Description>
-        <Archive sha1sum="b99a40a394e6efecaa95a2b098b72db3d0559425" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kblog-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="b99a40a394e6efecaa95a2b098b72db3d0559425" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kblog-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
@@ -57,9 +57,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

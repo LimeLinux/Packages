@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>ktp-approver</Name>
@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>KDE Channel Approver for Telepathy</Summary>
         <Description>KDE Channel Approver for Telepathy</Description>
-        <Archive type="tarxz" sha1sum="5f6c3d134bbb47aa300a2fe9034c0252ed6c22c2">mirrors://kde/stable/applications/16.12.3/src/ktp-approver-16.12.3.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="5f6c3d134bbb47aa300a2fe9034c0252ed6c22c2">mirrors://kde/stable/applications/17.04.0/src/ktp-approver-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -47,9 +47,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

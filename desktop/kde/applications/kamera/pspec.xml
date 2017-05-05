@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kamera</Name>
@@ -13,10 +13,10 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>Webcam support for KDE</Summary>
         <Description>Kamera is a plugin for KDE to use webcam.</Description>
-        <Archive sha1sum="7304ef191bafd0392db3af514e77f27f6bc4c76e" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kamera-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="7304ef191bafd0392db3af514e77f27f6bc4c76e" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kamera-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kconfigwidgets</Dependency>
             <Dependency>kxmlgui</Dependency>
             <Dependency>kio</Dependency>
@@ -35,7 +35,7 @@
             <Dependency>libgcc</Dependency>
             <Dependency>kconfig</Dependency>
             <Dependency>kxmlgui</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgphoto2</Dependency>
             <Dependency>kcoreaddons</Dependency>
             <Dependency>kconfigwidgets</Dependency>
@@ -49,9 +49,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>pim-data-exporter</Name>
@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Import and export KDE PIM settings</Summary>
         <Description>Import and export KDE PIM settings</Description>
-        <Archive sha1sum="d9f689a6f4081107048051064db62f5ae024a889" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/pim-data-exporter-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="d9f689a6f4081107048051064db62f5ae024a889" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/pim-data-exporter-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
              <Dependency>kcrash</Dependency>
@@ -90,9 +90,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

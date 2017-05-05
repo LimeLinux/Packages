@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>akregator</Name>
@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>A KDE blogging client</Summary>
         <Description>Akregator helps you to keep informed about new stories on websites like KDE Dot News and Planet KDE blogs. The technology used is RSS and many sites support it.</Description>
-        <Archive sha1sum="a9e01fce2e07ccbb81b140dc20fb130a1e75e101" type="tarxz">http://download.kde.org/stable/applications/16.12.3/src/akregator-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="a9e01fce2e07ccbb81b140dc20fb130a1e75e101" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/akregator-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>boost</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
@@ -90,9 +90,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

@@ -14,7 +14,7 @@
         <Description>Kpty provides primitives to interface with pseudo terminal devices as well as a KProcess derived class for running child processes and communicating with them using kpty.</Description>
         <Archive sha1sum="557b833d5c054415a75b9e88e09c513bdda6bd40" type="tarxz">mirrors://kde/stable/frameworks/5.33/kpty-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>utempter</Dependency>
             <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
             <Dependency versionFrom="5.33.0">ki18n</Dependency>
@@ -25,7 +25,7 @@
     <Package>
         <Name>kpty</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>utempter</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
@@ -45,7 +45,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

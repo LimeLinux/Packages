@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>krdc</Name>
@@ -12,9 +12,9 @@
         <IsA>app:gui</IsA>
         <Summary>Remote Desktop Client</Summary>
         <Description>KRDC is a client application that allows you to view or even control the desktop session on another machine that is running a compatible server. VNC and RDP is supported.</Description>
-        <Archive sha1sum="f800fd4fbcdf3002ca43877b2d9b420c2d89537a" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/krdc-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="f800fd4fbcdf3002ca43877b2d9b420c2d89537a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/krdc-17.04.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>kconfig</Dependency>
             <Dependency>kcmutils</Dependency>
@@ -43,7 +43,7 @@
             <Dependency>kxmlgui</Dependency>
             <Dependency>kcmutils</Dependency>
             <Dependency>kservice</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kbookmarks</Dependency>
             <Dependency>kcompletion</Dependency>
             <Dependency>kcoreaddons</Dependency>
@@ -63,9 +63,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

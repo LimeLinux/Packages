@@ -15,7 +15,7 @@
         <Description>Kded runs in the background and performs a number of small tasks.</Description>
         <Archive sha1sum="02fbdf06203fcf00ec1728a341ae7b02a0931aa9" type="tarxz">mirrors://kde/stable/frameworks/5.33/kded-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
 			<Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.33.0">kconfig</Dependency>
             <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
@@ -30,7 +30,7 @@
     <Package>
         <Name>kded</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
             <Dependency versionFrom="5.33.0">kconfig</Dependency>
@@ -52,7 +52,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

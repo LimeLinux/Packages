@@ -15,7 +15,7 @@
         <Description>kdesu provides functionality for building GUI front ends for (password asking) console mode programs.</Description>
         <Archive sha1sum="431aabb24160496c0da2f756a23ec4c2e65b0227" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdesu-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
             <Dependency versionFrom="5.33.0">kpty</Dependency>
             <Dependency versionFrom="5.33.0">kservice</Dependency>
@@ -29,7 +29,7 @@
     <Package>
         <Name>kdesu</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
             <Dependency versionFrom="5.33.0">kpty</Dependency>
             <Dependency versionFrom="5.33.0">kservice</Dependency>
@@ -51,7 +51,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

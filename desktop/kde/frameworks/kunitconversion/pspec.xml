@@ -14,7 +14,7 @@
         <Description>KUnitConversion provides functions to convert values in different physical units.</Description>
         <Archive sha1sum="a6540f094a9cf8a2560b273d32408d2209473a83" type="tarxz">mirrors://kde/stable/frameworks/5.33/kunitconversion-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.33.0">ki18n</Dependency>
             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>kunitconversion</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency versionFrom="5.33.0">ki18n</Dependency>
         </RuntimeDependencies>
@@ -41,7 +41,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

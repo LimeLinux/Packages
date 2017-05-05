@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kbounce</Name>
@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Ball bouncing game</Summary>
         <Description>KBounce is a single player arcade game with the elements of puzzle. It is played on a field, surrounded by walls, with two or more balls that move about in the field bouncing off of walls. The player can build new walls, decreasing the size of the active field. The goal of the game is to fill at least 75% of the field and advance to the next level.</Description>
-        <Archive sha1sum="e908cc4e0d887d4de519b3db53b8639cf049da38" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/kbounce-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="e908cc4e0d887d4de519b3db53b8639cf049da38" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kbounce-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -66,9 +66,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

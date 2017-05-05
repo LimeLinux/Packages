@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kdegraphics-svgpart</Name>
@@ -13,7 +13,7 @@
         <License>LGPL</License>
         <Summary>A KPart for viewing SVGs</Summary>
         <Description>A KPart for viewing SVGs</Description>
-        <Archive type="tarxz" sha1sum="0e4a1c928f9adbf420dff83c331dd97f1b6586c2">mirrors://kde/stable/applications/16.12.3/src/svgpart-16.12.3.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="0e4a1c928f9adbf420dff83c331dd97f1b6586c2">mirrors://kde/stable/applications/17.04.0/src/svgpart-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>gettext</Dependency>
@@ -44,9 +44,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

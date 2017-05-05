@@ -14,7 +14,7 @@
         <Description>Kplotting contains data plotting classes for QT 5 and KDE</Description>
         <Archive sha1sum="6890c9ce65113666491a80d28617cb3a07efefd1" type="tarxz">mirrors://kde/stable/frameworks/5.33/kplotting-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>kplotting</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -37,7 +37,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

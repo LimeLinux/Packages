@@ -12,7 +12,7 @@
         <Archive sha1sum="e67d19112e5980a2e7937a1206eb506d4f9032bc" type="tarxz">mirrors://kde/stable/frameworks/5.33/oxygen-icons5-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -26,7 +26,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

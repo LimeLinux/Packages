@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>khangman</Name>
@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>KHangMan is a game for kids based on the well-known hangman game</Summary>
         <Description>KHangMan is a game based on the well-known hangman game. It is aimed at children aged six and over. The game has several categories of words to play with, for example: Animals (animals words) and three difficulty categories: Easy, Medium and Hard. </Description>
-        <Archive sha1sum="879aae6e562e6aeeeb84d910628173912d8a5938" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/khangman-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="879aae6e562e6aeeeb84d910628173912d8a5938" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/khangman-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>
@@ -59,9 +59,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

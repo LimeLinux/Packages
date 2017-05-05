@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>pimcommon</Name>
@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Common libraries for KDE PIM</Summary>
         <Description>Common libraries for KDE PIM</Description>
-        <Archive sha1sum="387cb21cf902fbae60afa0e6b49712a38cb1c360" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/pimcommon-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="387cb21cf902fbae60afa0e6b49712a38cb1c360" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/pimcommon-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>
@@ -111,9 +111,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

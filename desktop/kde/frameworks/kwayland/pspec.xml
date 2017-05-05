@@ -14,7 +14,7 @@
         <Description>Qt-style Client and Server library wrapper for the Wayland libraries</Description>
         <Archive sha1sum="49afecee2d646ca46bf7fc9d4fff2386d387a04a" type="tarxz">mirrors://kde/stable/frameworks/5.33/kwayland-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>wayland</Dependency>
             <Dependency versionFrom="13.0.4">mesa</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
@@ -25,7 +25,7 @@
         <Name>kwayland</Name>
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="13.0.4">mesa</Dependency>
             <Dependency>wayland</Dependency>
         </RuntimeDependencies>
@@ -42,7 +42,7 @@
 
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

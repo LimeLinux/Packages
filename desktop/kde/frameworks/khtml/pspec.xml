@@ -15,7 +15,7 @@
         <Description>KHTML is a web rendering engine, based on the KParts technology and using KJS for JavaScript support.</Description>
         <Archive sha1sum="9f09c0887f008b0510dcdadd68b00030e528eccb" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/khtml-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-             <Dependency versionFrom="5.7.1">qt5</Dependency>
+             <Dependency versionFrom="5.8">qt5</Dependency>
              <Dependency>libjpeg-turbo</Dependency>
              <Dependency>giflib</Dependency>
              <Dependency>libpng</Dependency>
@@ -37,7 +37,7 @@
     <Package>
         <Name>khtml</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
             <Dependency>zlib</Dependency>
             <Dependency>openssl</Dependency>
@@ -83,7 +83,7 @@
     
     <History>
         <Update release="2">
-            <Date>2017-03-12</Date>
+            <Date>2017-05-05</Date>
             <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>

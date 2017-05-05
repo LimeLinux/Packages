@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>step</Name>
@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Interactive Physical Simulator</Summary>
         <Description>Step is an interactive physical simulator. It allows you to explore the physical world through simulations.</Description>
-        <Archive sha1sum="8277707c3402da763fe00cbc7e2d3748827e3c2f" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/step-16.12.3.tar.xz</Archive>
+        <Archive sha1sum="8277707c3402da763fe00cbc7e2d3748827e3c2f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/step-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>  
             <Dependency>extra-cmake-modules</Dependency>
@@ -69,9 +69,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-17</Date>
-            <Version>16.12.3</Version>
+        <Update release="2">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
