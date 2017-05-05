@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>QT Designer integration for KDE5 Frameworks widgets</Summary>
         <Description>This framework provides plugins for Qt Designer that allow it to display the widgets provided by various KDE frameworks, as well as a utility (kgendesignerplugin) that can be used to generate other such plugins from ini-style description files.</Description>
-        <Archive sha1sum="74fb101d9caa00e4779487278e8d7189de18d297" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdesignerplugin-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="193156a6f7a7001d83796dc0f2e4f671e84650b7" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdesignerplugin-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>			
             <Dependency>extra-cmake-modules</Dependency>

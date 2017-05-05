@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 text editing widgets</Summary>
         <Description>KTextWidgets provides widgets for displaying and editing text. It supports rich text as well as plain text.</Description>
-        <Archive sha1sum="3662833de48eacb60c2c23cf762d134628a818c1" type="tarxz">mirrors://kde/stable/frameworks/5.33/ktextwidgets-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="d22a926b2c21389415c941106c5809b4a3cbb817" type="tarxz">mirrors://kde/stable/frameworks/5.33/ktextwidgets-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kconfig</Dependency>

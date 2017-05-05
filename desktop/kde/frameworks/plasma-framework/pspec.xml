@@ -13,13 +13,13 @@
         <IsA>app:console</IsA>
         <Summary>Plasma library and runtime components based upon KDE Frameworks 5 and Qt5</Summary>
         <Description>Plasma library and runtime components based upon KF5 and Qt5</Description>
-        <Archive sha1sum="20f170c4bc9108b3c1e596f7413104e6a431281c" type="tarxz">mirrors://kde/stable/frameworks/5.33/plasma-framework-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="fef232ac4677e171960f9226fea3dc328cfa7e46" type="tarxz">mirrors://kde/stable/frameworks/5.33/plasma-framework-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libX11</Dependency>
             <Dependency>libxcb</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.6.0">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kactivities</Dependency>
             <Dependency>karchive</Dependency>
             <Dependency>kconfig</Dependency>

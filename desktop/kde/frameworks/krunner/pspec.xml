@@ -13,7 +13,7 @@
 	<IsA>app:console</IsA>
         <Summary>Krunner Framework for providing different actions given a string query</Summary>
         <Description>Framework Integration is a set of plugins responsible for better integration of Qt applications when running on a KDE Plasma workspace.</Description>
-        <Archive sha1sum="d4f3ee55d913ed7ded5f83e1917f7b3921a282c1" type="tarxz">mirrors://kde/stable/frameworks/5.33/krunner-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="6f2f253c78db2ca3e2d11f0285a31a891f783a7a" type="tarxz">mirrors://kde/stable/frameworks/5.33/krunner-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.6.0">qt5</Dependency>

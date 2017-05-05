@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Framework for downloading and sharing additional application data</Summary>
         <Description>The KNewStuff library implements collaborative data sharing for applications.</Description>
-        <Archive sha1sum="6a4fdaaa6db05da8b91d9f48e962a2b6bc402c15" type="tarxz">mirrors://kde/stable/frameworks/5.33/knewstuff-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="f6bff5f9d59bc0b26de96fdf7e04ce03aa9555e1" type="tarxz">mirrors://kde/stable/frameworks/5.33/knewstuff-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>boost</Dependency>

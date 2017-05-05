@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Kconfig widgets</Summary>
         <Description>KConfigWidgets provides easy-to-use classes to create configuration dialogs, as well as a set of widgets which uses KConfig to store their settings.</Description>
-        <Archive sha1sum="f9894ab3d568f4e1ced6d126b0b87f3c66aa0cf4" type="tarxz">mirrors://kde/stable/frameworks/5.33/kconfigwidgets-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="5ec643ebff69959944e3868ca35a707570c17049" type="tarxz">mirrors://kde/stable/frameworks/5.33/kconfigwidgets-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>ki18n</Dependency>

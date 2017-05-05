@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A contact aggregation library for KDE</Summary>
         <Description>KPeople is a Framework for fetching contacts from different sources (Telepathy, Akonadi, Facebook, etc) and unifying them into a same model.</Description>
-        <Archive sha1sum="5fe51c084143d889618d7df0aa0735b37dfa947e" type="tarxz">mirrors://kde/stable/frameworks/5.33/kpeople-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="83c6d707586594cd3e2a0ad0ca856bef24e9cd80" type="tarxz">mirrors://kde/stable/frameworks/5.33/kpeople-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kconfig</Dependency>

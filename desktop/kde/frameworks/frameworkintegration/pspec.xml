@@ -12,12 +12,12 @@
         <IsA>library</IsA>
         <Summary>Framework providing components to allow applications to integrate with a KDE Workspace</Summary>
         <Description>Framework Integration is a set of plugins responsible for better integration of Qt applications when running on a KDE Plasma workspace.</Description>
-        <Archive sha1sum="8195a9107c1177e285f1183afe0f43be6dec4fe6" type="tarxz">mirrors://kde/stable/frameworks/5.33/frameworkintegration-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="33658f2896e750064d918a2790d29140c65690d4" type="tarxz">mirrors://kde/stable/frameworks/5.33/frameworkintegration-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libxcb</Dependency>
             <Dependency>libXcursor</Dependency>
 			<Dependency>extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.6.0">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kconfig</Dependency>
             <Dependency>kconfigwidgets</Dependency>
             <Dependency>ki18n</Dependency>

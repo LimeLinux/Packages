@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>JavaScript support for HTML rendering engine on KDE5</Summary>
         <Description>The KJSEmbed library is an easy-to-use wrapper around the KDE ECMAScript interpreter (kjs) that makes it easy to add scriptability to an application.</Description>
-        <Archive sha1sum="5f3a245d0c063e4fb8c78d928272ad03f9ae7c87" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kjsembed-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="df5b41720daf67e1750cc2fd92b2a44b74e5beda" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kjsembed-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>

@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Access and manipulate bookmarks stored using XBEL format</Summary>
         <Description>Framework which lets you access and manipulate bookmarks stored using XBEL format</Description>
-        <Archive sha1sum="54c6dda2292eb16e27fb57ccb550e668e5166ba6" type="tarxz">mirrors://kde/stable/frameworks/5.33/kbookmarks-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="286746ec66e05b6791644e55dc926d0524787b55" type="tarxz">mirrors://kde/stable/frameworks/5.33/kbookmarks-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kcoreaddons</Dependency>

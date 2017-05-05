@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Configuration dialog for desktop notifications</Summary>
         <Description>KNotifyConfig provides a configuration dialog for desktop notifications which can be embedded in your application..</Description>
-        <Archive sha1sum="2926ab9001776f6304f35bd455468c03226b0d41" type="tarxz">mirrors://kde/stable/frameworks/5.33/knotifyconfig-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="fdc37acfa96db5e6d3c7fbce23a32de2dca87b6f" type="tarxz">mirrors://kde/stable/frameworks/5.33/knotifyconfig-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="4.6.60">qt5-phonon</Dependency>

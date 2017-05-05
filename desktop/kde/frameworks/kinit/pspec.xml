@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE applications initialization utility</Summary>
         <Description>Process launcher to speed up launching KDE applications.</Description>
-        <Archive sha1sum="b0d1bf856f6411a7f36c26bead024b9111244b75" type="tarxz">mirrors://kde/stable/frameworks/5.33/kinit-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="88d3a4c887c9fb995595acd6dc7207c0e76c3cc8" type="tarxz">mirrors://kde/stable/frameworks/5.33/kinit-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>

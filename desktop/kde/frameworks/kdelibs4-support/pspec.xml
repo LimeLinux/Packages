@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Code and utilities to ease the transition to KDE Frameworks 5</Summary>
         <Description>KDELibs4Support provides libraries to port KDE4 programs to QT5/KDE5</Description>
-        <Archive sha1sum="7554eabefc35682f8b62421a237ae3a88fa92a9e" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kdelibs4support-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="056aa504c7000003401be32196643baa6b4fb886" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kdelibs4support-5.33.0.tar.xz</Archive>
         <BuildDependencies>
              <Dependency versionFrom="5.8">qt5</Dependency>
              <Dependency>perl-URI</Dependency>

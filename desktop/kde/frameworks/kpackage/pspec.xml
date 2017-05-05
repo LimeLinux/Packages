@@ -12,7 +12,7 @@
         <IsA>app:library</IsA>
         <Summary>Framework that lets applications manage user installable packages of non-binary assets</Summary>
         <Description>KPackage is dependent on the Smart package manager.</Description>
-        <Archive sha1sum="a18e813273079825b991117ce37c6cc0765c9248" type="tarxz">mirrors://kde/stable/frameworks/5.33/kpackage-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="9be0379a085dd40d03b69022bc218076466f3614" type="tarxz">mirrors://kde/stable/frameworks/5.33/kpackage-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libX11</Dependency>

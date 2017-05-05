@@ -13,11 +13,11 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 WebKit integration</Summary>
         <Description>KdeWebkit provides KDE integration of the QtWebKit library.</Description>
-        <Archive sha1sum="6648c9ae0b97724db09cc1aea47d11278afc9e94" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdewebkit-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="f73387dda8dc4f7889f3d3d4d93043834a1d338f" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdewebkit-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.6.0">qt5-webkit</Dependency>
-            <Dependency versionFrom="5.6.0">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5-webkit</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kconfig</Dependency>
             <Dependency>kcoreaddons</Dependency>
             <Dependency>kio</Dependency>

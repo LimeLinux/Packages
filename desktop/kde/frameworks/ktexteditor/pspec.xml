@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>KDE5 text editor libraries</Summary>
         <Description>KTextEditor provides a powerful text editor component that you can embed in your application.</Description>
-        <Archive sha1sum="b2f1324fbef7b696dd810decb87ef93b9e27b2b1" type="tarxz">mirrors://kde/stable/frameworks/5.33/ktexteditor-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="aed33392699faf69fa859be494ad3af3f51e4cc1" type="tarxz">mirrors://kde/stable/frameworks/5.33/ktexteditor-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

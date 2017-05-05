@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Framework for managing menu and toolbar actions</Summary>
         <Description>Kxmlgui provides a framework for managing menu and toolbar actions in an abstract way.</Description>
-        <Archive sha1sum="6bd4faa687edf192893a2c4ffca72c026701e77c" type="tarxz">mirrors://kde/stable/frameworks/5.33/kxmlgui-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="7d354a5d4a4db6b1d190c78bef7b20ca965f1a04" type="tarxz">mirrors://kde/stable/frameworks/5.33/kxmlgui-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kcoreaddons</Dependency>

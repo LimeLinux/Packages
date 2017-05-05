@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE password storage framework</Summary>
         <Description>This framework contains two main components: Interface to KWallet, the safe desktop-wide storage for passwords on KDE workspaces. The kwalletd used to safely store the passwords on KDE work spaces.</Description>
-        <Archive sha1sum="acc6e3b7ab831f7c2af16686fee24342ee8f2507" type="tarxz">mirrors://kde/stable/frameworks/5.33/kwallet-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="3a97af1ff98affddbe4c432d296e3914e30534bc" type="tarxz">mirrors://kde/stable/frameworks/5.33/kwallet-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libxslt</Dependency>
             <Dependency>docbook-xsl</Dependency>

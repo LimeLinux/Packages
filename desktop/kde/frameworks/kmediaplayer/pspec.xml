@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>KDE5 media player Plugin interface for media player features</Summary>
         <Description>KMediaPlayer builds on the KParts framework to provide a common interface for KParts that can play media files.</Description>
-        <Archive sha1sum="ee686651967b6c9ecc5b7c473c1e3a183b21caae" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kmediaplayer-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="f363003320b7d5056b3a4505295f3a3d5d907c98" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kmediaplayer-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

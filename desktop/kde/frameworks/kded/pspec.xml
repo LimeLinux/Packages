@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 daemon</Summary>
         <Description>Kded runs in the background and performs a number of small tasks.</Description>
-        <Archive sha1sum="02fbdf06203fcf00ec1728a341ae7b02a0931aa9" type="tarxz">mirrors://kde/stable/frameworks/5.33/kded-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="f910142ce9b20ada7c1ce392721c80fa86ebdd09" type="tarxz">mirrors://kde/stable/frameworks/5.33/kded-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
 			<Dependency>extra-cmake-modules</Dependency>

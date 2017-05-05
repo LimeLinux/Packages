@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Integration of QML and KDE workspaces</Summary>
         <Description>KDeclarative provides integration of QML and KDE workspaces.</Description>
-        <Archive sha1sum="48ab3994779656bec4c2f5a7d62ebda9b7e67d2e" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdeclarative-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="19132bef45ee592994067197afe3e267181990c8" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdeclarative-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="13.0.4">mesa</Dependency>

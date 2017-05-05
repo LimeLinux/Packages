@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>User interface for running shell commands with root privileges</Summary>
         <Description>kdesu provides functionality for building GUI front ends for (password asking) console mode programs.</Description>
-        <Archive sha1sum="431aabb24160496c0da2f756a23ec4c2e65b0227" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdesu-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="3d61198b3a66e45894780e0ccd582d976613234a" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdesu-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kcoreaddons</Dependency>

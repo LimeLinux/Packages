@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Library for KDE's Plasma Activities support</Summary>
         <Description>Kactivities provides an API for using and interacting with the Plasma Activities Manager.</Description>
-        <Archive sha1sum="54d9cb4cbd585c8ef8e972bc2270447b51e31ba1" type="tarxz">mirrors://kde/stable/frameworks/5.33/kactivities-stats-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="fff50e65d61543d4d71702f16adde08eb1b35cb8" type="tarxz">mirrors://kde/stable/frameworks/5.33/kactivities-stats-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>boost</Dependency>

@@ -13,7 +13,7 @@
 	<IsA>app:console</IsA>
         <Summary>HTML rendering engine for KDE</Summary>
         <Description>KHTML is a web rendering engine, based on the KParts technology and using KJS for JavaScript support.</Description>
-        <Archive sha1sum="9f09c0887f008b0510dcdadd68b00030e528eccb" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/khtml-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="60fa4e6a4053285a1f0a5d2a6b5791d89da31afb" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/khtml-5.33.0.tar.xz</Archive>
         <BuildDependencies>
              <Dependency versionFrom="5.8">qt5</Dependency>
              <Dependency>libjpeg-turbo</Dependency>

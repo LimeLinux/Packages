@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Framework for searching and managing metadata</Summary>
         <Description>Baloo is a framework for searching and managing metada</Description>
-        <Archive sha1sum="c99840e4df4e453d2411774e6431619c133b178b" type="tarxz">mirrors://kde/stable/frameworks/5.33/baloo-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="a7b616d3d37b0596b639142c0ec790e70442f259" type="tarxz">mirrors://kde/stable/frameworks/5.33/baloo-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kcoreaddons</Dependency>

@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>JavaScript engine for KDE</Summary>
         <Description>This library provides an ECMAScript compatible interpreter. The ECMA standard is based on well known scripting languages such as Netscape's JavaScript and Microsoft's JScript.</Description>
-        <Archive sha1sum="f44f94374f3ba55b21cb87fb125533808e223f95" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kjs-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="c296d8a257ba93cb1161f2d02f870b27a9f69ce1" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kjs-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libpcre</Dependency>
