@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>knotifications</Name>
@@ -12,18 +12,18 @@
         <IsA>library</IsA>
         <Summary>KDE5 Desktop notifications</Summary>
         <Description>KNotification is used to notify the user of an event. It covers feedback and persistent events.</Description>
-        <Archive sha1sum="e9b36430742202c5c720a0eac53c9acdd46af462" type="tarxz">mirrors://kde/stable/frameworks/5.32/knotifications-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="e9b36430742202c5c720a0eac53c9acdd46af462" type="tarxz">mirrors://kde/stable/frameworks/5.33/knotifications-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
-            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
             <Dependency>libdbusmenu-qt</Dependency>
             <Dependency>qt5-phonon</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,13 +33,13 @@
             <Dependency versionFrom="5.7.1">qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
             <Dependency>libdbusmenu-qt</Dependency>
-            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -54,9 +54,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

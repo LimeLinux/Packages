@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kcodecs</Name>
@@ -12,10 +12,10 @@
         <IsA>library</IsA>
         <Summary>Plugins allowing Qt applications to access further types of images</Summary>
         <Description>KDE5 KCodecs provide a collection of methods to manipulate strings using various encodings.</Description>
-        <Archive sha1sum="7bad22641706fc3189ff44e2393bf788fe05f5f6" type="tarxz">mirrors://kde/stable/frameworks/5.32/kcodecs-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="d29eeff6c1b6bf5a55d40ceb47b52f4829f5bd36" type="tarxz">mirrors://kde/stable/frameworks/5.33/kcodecs-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -38,9 +38,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

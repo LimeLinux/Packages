@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kactivities-stats</Name>
@@ -13,13 +13,13 @@
         <IsA>app:console</IsA>
         <Summary>Library for KDE's Plasma Activities support</Summary>
         <Description>Kactivities provides an API for using and interacting with the Plasma Activities Manager.</Description>
-        <Archive sha1sum="54d9cb4cbd585c8ef8e972bc2270447b51e31ba1" type="tarxz">mirrors://kde/stable/frameworks/5.32/kactivities-stats-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="54d9cb4cbd585c8ef8e972bc2270447b51e31ba1" type="tarxz">mirrors://kde/stable/frameworks/5.33/kactivities-stats-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
             <Dependency>boost</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kactivities</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kactivities</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -28,8 +28,8 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kactivities</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kactivities</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -45,9 +45,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

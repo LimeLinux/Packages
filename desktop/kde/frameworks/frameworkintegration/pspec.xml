@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>frameworkintegration</Name>
@@ -12,20 +12,20 @@
         <IsA>library</IsA>
         <Summary>Framework providing components to allow applications to integrate with a KDE Workspace</Summary>
         <Description>Framework Integration is a set of plugins responsible for better integration of Qt applications when running on a KDE Plasma workspace.</Description>
-        <Archive sha1sum="8195a9107c1177e285f1183afe0f43be6dec4fe6" type="tarxz">mirrors://kde/stable/frameworks/5.32/frameworkintegration-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="8195a9107c1177e285f1183afe0f43be6dec4fe6" type="tarxz">mirrors://kde/stable/frameworks/5.33/frameworkintegration-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libxcb</Dependency>
             <Dependency>libXcursor</Dependency>
-			<Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+			<Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.6.0">qt5</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">ki18n</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">knewstuff</Dependency>
-            <Dependency versionFrom="5.32.0">knotifications</Dependency>
-            <Dependency versionFrom="5.32.0">kpackage</Dependency>
-            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">knewstuff</Dependency>
+            <Dependency versionFrom="5.33.0">knotifications</Dependency>
+            <Dependency versionFrom="5.33.0">kpackage</Dependency>
+            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,14 +33,14 @@
         <Name>frameworkintegration</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
-			<Dependency versionFrom="5.32.0">ki18n</Dependency>
+			<Dependency versionFrom="5.33.0">ki18n</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-			<Dependency versionFrom="5.32.0">knewstuff</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">knotifications</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+			<Dependency versionFrom="5.33.0">knewstuff</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">knotifications</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -54,9 +54,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

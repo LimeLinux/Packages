@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kdewebkit</Name>
@@ -13,18 +13,18 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 WebKit integration</Summary>
         <Description>KdeWebkit provides KDE integration of the QtWebKit library.</Description>
-        <Archive sha1sum="6648c9ae0b97724db09cc1aea47d11278afc9e94" type="tarxz">mirrors://kde/stable/frameworks/5.32/kdewebkit-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="6648c9ae0b97724db09cc1aea47d11278afc9e94" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdewebkit-5.33.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.6.0">qt5-webkit</Dependency>
             <Dependency versionFrom="5.6.0">qt5</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kio</Dependency>
-            <Dependency versionFrom="5.32.0">kjobwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">kparts</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
-            <Dependency versionFrom="5.32.0">kwallet</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kio</Dependency>
+            <Dependency versionFrom="5.33.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">kparts</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kwallet</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -34,13 +34,13 @@
             <Dependency versionFrom="5.7.1">qt5</Dependency>
             <Dependency versionFrom="5.7.1">qt5-webkit</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kjobwidgets</Dependency>            
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kparts</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
-            <Dependency versionFrom="5.32.0">kwallet</Dependency>
-            <Dependency versionFrom="5.32.0">kio</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kjobwidgets</Dependency>            
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kparts</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kwallet</Dependency>
+            <Dependency versionFrom="5.33.0">kio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -55,9 +55,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

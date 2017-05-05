@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>extra-cmake-modules</Name>
@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Extra cmake modules for KDE5</Summary>
         <Description>Extra cmake modules KDE5</Description>
-        <Archive sha1sum="c585d384214cc470e5dbb0c7ea2e85af2fac019e" type="tarxz">mirrors://kde/stable/frameworks/5.32/extra-cmake-modules-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="79724d35d4540aa8357eb1a34af44ba2d8a21376" type="tarxz">mirrors://kde/stable/frameworks/5.33/extra-cmake-modules-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cmake</Dependency>
             <Dependency>flex</Dependency>
@@ -34,9 +34,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

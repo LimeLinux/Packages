@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kdeclarative</Name>
@@ -12,32 +12,32 @@
         <IsA>library</IsA>
         <Summary>Integration of QML and KDE workspaces</Summary>
         <Description>KDeclarative provides integration of QML and KDE workspaces.</Description>
-        <Archive sha1sum="48ab3994779656bec4c2f5a7d62ebda9b7e67d2e" type="tarxz">mirrors://kde/stable/frameworks/5.32/kdeclarative-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="48ab3994779656bec4c2f5a7d62ebda9b7e67d2e" type="tarxz">mirrors://kde/stable/frameworks/5.33/kdeclarative-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
             <Dependency versionFrom="13.0.4">mesa</Dependency>
             <Dependency>libepoxy</Dependency>
-            <Dependency versionFrom="5.32.0">kauth</Dependency>
-            <Dependency versionFrom="5.32.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.32.0">kpackage</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kguiaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kglobalaccel</Dependency>
-            <Dependency versionFrom="5.32.0">ki18n</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">kio</Dependency>
-            <Dependency versionFrom="5.32.0">kbookmarks</Dependency>
-            <Dependency versionFrom="5.32.0">kcompletion</Dependency>
-            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">kitemviews</Dependency>
-            <Dependency versionFrom="5.32.0">kjobwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">solid</Dependency>
-            <Dependency versionFrom="5.32.0">kxmlgui</Dependency>
-            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">kauth</Dependency>
+            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.33.0">kpackage</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kguiaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">kio</Dependency>
+            <Dependency versionFrom="5.33.0">kbookmarks</Dependency>
+            <Dependency versionFrom="5.33.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">kitemviews</Dependency>
+            <Dependency versionFrom="5.33.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">solid</Dependency>
+            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -47,16 +47,16 @@
             <Dependency versionFrom="5.7.1">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libepoxy</Dependency>
-            <Dependency versionFrom="5.32.0">kpackage</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kglobalaccel</Dependency>
-            <Dependency versionFrom="5.32.0">ki18n</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">kio</Dependency>
-            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.33.0">kpackage</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">kio</Dependency>
+            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -72,9 +72,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

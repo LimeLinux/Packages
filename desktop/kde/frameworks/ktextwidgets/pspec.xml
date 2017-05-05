@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>ktextwidgets</Name>
@@ -13,22 +13,22 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 text editing widgets</Summary>
         <Description>KTextWidgets provides widgets for displaying and editing text. It supports rich text as well as plain text.</Description>
-        <Archive sha1sum="3662833de48eacb60c2c23cf762d134628a818c1" type="tarxz">mirrors://kde/stable/frameworks/5.32/ktextwidgets-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="3662833de48eacb60c2c23cf762d134628a818c1" type="tarxz">mirrors://kde/stable/frameworks/5.33/ktextwidgets-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcompletion</Dependency>
-            <Dependency versionFrom="5.32.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.32.0">kauth</Dependency>
-            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.32.0">ki18n</Dependency>
-            <Dependency versionFrom="5.32.0">sonnet</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.33.0">kauth</Dependency>
+            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency versionFrom="5.33.0">sonnet</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -37,16 +37,16 @@
         <RuntimeDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcompletion</Dependency>
-            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.32.0">ki18n</Dependency>
-            <Dependency versionFrom="5.32.0">sonnet</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency versionFrom="5.33.0">sonnet</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -61,9 +61,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

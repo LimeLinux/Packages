@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kparts</Name>
@@ -12,32 +12,32 @@
         <IsA>library</IsA>
         <Summary>Plugin framework for user interface components</Summary>
         <Description>This library implements the framework for KDE parts, which are elaborate widgets with a user-interface defined in terms of actions (menu items, toolbar icons).</Description>
-        <Archive sha1sum="9c2a45fcbc89aedf013f355db10b9f0248ebcc40" type="tarxz">mirrors://kde/stable/frameworks/5.32/kparts-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="9c2a45fcbc89aedf013f355db10b9f0248ebcc40" type="tarxz">mirrors://kde/stable/frameworks/5.33/kparts-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.32.0">kauth</Dependency>
-            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.32.0">ktextwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">kcompletion</Dependency>
-            <Dependency versionFrom="5.32.0">kitemviews</Dependency>
-            <Dependency versionFrom="5.32.0">karchive</Dependency>
-            <Dependency versionFrom="5.32.0">attica</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">ki18n</Dependency>
-            <Dependency versionFrom="5.32.0">kio</Dependency>
-            <Dependency versionFrom="5.32.0">kglobalaccel</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
-            <Dependency versionFrom="5.32.0">kxmlgui</Dependency>
-            <Dependency versionFrom="5.32.0">kbookmarks</Dependency>
-            <Dependency versionFrom="5.32.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.32.0">sonnet</Dependency>
-            <Dependency versionFrom="5.32.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.32.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">solid</Dependency>
-            <Dependency versionFrom="5.32.0">kjobwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">kauth</Dependency>
+            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.33.0">ktextwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.33.0">kitemviews</Dependency>
+            <Dependency versionFrom="5.33.0">karchive</Dependency>
+            <Dependency versionFrom="5.33.0">attica</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency versionFrom="5.33.0">kio</Dependency>
+            <Dependency versionFrom="5.33.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.33.0">kbookmarks</Dependency>
+            <Dependency versionFrom="5.33.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.33.0">sonnet</Dependency>
+            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.33.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">solid</Dependency>
+            <Dependency versionFrom="5.33.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -46,15 +46,15 @@
         <RuntimeDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.32.0">kjobwidgets</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">ki18n</Dependency>
-            <Dependency versionFrom="5.32.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
-            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kxmlgui</Dependency>
-            <Dependency versionFrom="5.32.0">kio</Dependency>
+            <Dependency versionFrom="5.33.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency versionFrom="5.33.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.33.0">kio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -69,9 +69,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

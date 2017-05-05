@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kitemmodels</Name>
@@ -12,10 +12,10 @@
         <IsA>library</IsA>
         <Summary>Set of item models extending the Qt model-view framework</Summary>
         <Description>KItemModels provides a set of item models extending the Qt model-view framework.</Description>
-        <Archive sha1sum="adf54e999aa297692ff57970b4c839f2e7ea780e" type="tarxz">mirrors://kde/stable/frameworks/5.32/kitemmodels-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="adf54e999aa297692ff57970b4c839f2e7ea780e" type="tarxz">mirrors://kde/stable/frameworks/5.33/kitemmodels-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
-             <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -38,9 +38,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

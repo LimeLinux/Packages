@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kimageformats</Name>
@@ -13,11 +13,11 @@
         <IsA>app:console</IsA>
         <Summary>Image formats addons for QT 5</Summary>
         <Description>This framework provides additional image format plugins for QtGui. </Description>
-        <Archive sha1sum="1f79820f83aaad641a7d2f2b69c21d96259169cf" type="tarxz">mirrors://kde/stable/frameworks/5.32/kimageformats-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="1f79820f83aaad641a7d2f2b69c21d96259169cf" type="tarxz">mirrors://kde/stable/frameworks/5.33/kimageformats-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
             <Dependency versionFrom="2.2.0">openexr</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
             <Dependency>ilmbase</Dependency>
             <Dependency>karchive</Dependency>
         </BuildDependencies>
@@ -41,9 +41,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

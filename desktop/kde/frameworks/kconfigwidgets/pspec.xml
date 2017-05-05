@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kconfigwidgets</Name>
@@ -14,17 +14,17 @@
         <IsA>app:gui</IsA>
         <Summary>Kconfig widgets</Summary>
         <Description>KConfigWidgets provides easy-to-use classes to create configuration dialogs, as well as a set of widgets which uses KConfig to store their settings.</Description>
-        <Archive sha1sum="f9894ab3d568f4e1ced6d126b0b87f3c66aa0cf4" type="tarxz">mirrors://kde/stable/frameworks/5.32/kconfigwidgets-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="f9894ab3d568f4e1ced6d126b0b87f3c66aa0cf4" type="tarxz">mirrors://kde/stable/frameworks/5.33/kconfigwidgets-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.32.0">ki18n</Dependency>
-            <Dependency versionFrom="5.32.0">kauth</Dependency>
-            <Dependency versionFrom="5.32.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kguiaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency versionFrom="5.33.0">kauth</Dependency>
+            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kguiaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>	
     </Source>
 
@@ -33,13 +33,13 @@
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.32.0">kauth</Dependency>
-            <Dependency versionFrom="5.32.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kguiaddons</Dependency>
-            <Dependency versionFrom="5.32.0">ki18n</Dependency>
-            <Dependency versionFrom="5.32.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kauth</Dependency>
+            <Dependency versionFrom="5.33.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kguiaddons</Dependency>
+            <Dependency versionFrom="5.33.0">ki18n</Dependency>
+            <Dependency versionFrom="5.33.0">kwidgetsaddons</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -56,9 +56,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="3">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

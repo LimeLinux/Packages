@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>karchive</Name>
@@ -12,13 +12,13 @@
         <IsA>library</IsA>
         <Summary>Qt 5 addon providing access to numerous types of archives</Summary>
         <Description>KArchive provides classes for easy reading, creation and manipulation of "archive" formats like ZIP and TAR.</Description>
-        <Archive sha1sum="94aa5d455eb7a313dfabcc78791d03c82e7cf9eb" type="tarxz">mirrors://kde/stable/frameworks/5.32/karchive-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="27485f2701b5fcb2f6facb45cc40b86e234c350c" type="tarxz">mirrors://kde/stable/frameworks/5.33/karchive-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>xz</Dependency>
             <Dependency>zlib</Dependency>
             <Dependency>bzip2</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -43,9 +43,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

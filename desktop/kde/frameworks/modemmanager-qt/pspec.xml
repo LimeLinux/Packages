@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>modemmanager-qt</Name>
@@ -13,11 +13,11 @@
         <IsA>app:console</IsA>
         <Summary>Qt wrapper for ModemManager DBus API</Summary>
         <Description>Qt wrapper for ModemManager DBus API</Description>
-        <Archive sha1sum="658226b1f5b92748c638b7bf184b32b0fddfe7fd" type="tarxz">mirrors://kde/stable/frameworks/5.32/modemmanager-qt-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="658226b1f5b92748c638b7bf184b32b0fddfe7fd" type="tarxz">mirrors://kde/stable/frameworks/5.33/modemmanager-qt-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>ModemManager</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -41,9 +41,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kapidox</Name>
@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>KDE5 Frameworks API documentation tools.</Summary>
         <Description>KDE5 Frameworks API documentation tools.</Description>
-        <Archive sha1sum="e358b98b1d906e897ddce548a9f3b63cafd866f2" type="tarxz">mirrors://kde/stable/frameworks/5.32/kapidox-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="e358b98b1d906e897ddce548a9f3b63cafd866f2" type="tarxz">mirrors://kde/stable/frameworks/5.33/kapidox-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>python-Jinja2</Dependency>
             <Dependency>python-PyYAML</Dependency>
@@ -35,9 +35,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

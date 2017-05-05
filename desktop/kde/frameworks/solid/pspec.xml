@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>solid</Name>
@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 hardware integration framework</Summary>
         <Description>Solid is a device integration framework.It provides a way of querying and interacting with hardware independently of the underlying operating system.</Description>
-        <Archive sha1sum="9b028c6b52088833658dbe333ccff83c5cd360a7" type="tarxz">mirrors://kde/stable/frameworks/5.32/solid-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="9dcc44693dee27e0ed21dbd4e73db21d954d4dd3" type="tarxz">mirrors://kde/stable/frameworks/5.33/solid-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>udisks2</Dependency>
@@ -44,9 +44,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kidletime</Name>
@@ -13,10 +13,10 @@
         <IsA>app:console</IsA>
         <Summary>Idle time reporting utility</Summary>
         <Description>KIdleTime is a singleton reporting information on idle time. It is useful not only for finding out about the current idle time of the PC, but also for getting notified upon idle time events, such as custom timeouts, or user activity.</Description>
-        <Archive sha1sum="f0d0492439a9da9d5032e43419af216b697579e3" type="tarxz">mirrors://kde/stable/frameworks/5.32/kidletime-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="f0d0492439a9da9d5032e43419af216b697579e3" type="tarxz">mirrors://kde/stable/frameworks/5.33/kidletime-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
-            <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXScrnSaver</Dependency>
@@ -46,9 +46,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

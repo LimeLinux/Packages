@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kded</Name>
@@ -13,17 +13,17 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 daemon</Summary>
         <Description>Kded runs in the background and performs a number of small tasks.</Description>
-        <Archive sha1sum="02fbdf06203fcf00ec1728a341ae7b02a0931aa9" type="tarxz">mirrors://kde/stable/frameworks/5.32/kded-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="02fbdf06203fcf00ec1728a341ae7b02a0931aa9" type="tarxz">mirrors://kde/stable/frameworks/5.33/kded-5.33.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
-			<Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kcrash</Dependency>
-            <Dependency versionFrom="5.32.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kdoctools</Dependency>
-            <Dependency versionFrom="5.32.0">kinit</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
+			<Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kcrash</Dependency>
+            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.33.0">kinit</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -32,11 +32,11 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.7.1">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.32.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kconfig</Dependency>
-            <Dependency versionFrom="5.32.0">kcrash</Dependency>
-            <Dependency versionFrom="5.32.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.32.0">kservice</Dependency>
+            <Dependency versionFrom="5.33.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kconfig</Dependency>
+            <Dependency versionFrom="5.33.0">kcrash</Dependency>
+            <Dependency versionFrom="5.33.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.33.0">kservice</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -51,9 +51,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

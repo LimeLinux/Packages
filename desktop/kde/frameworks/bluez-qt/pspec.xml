@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>bluez-qt</Name>
@@ -12,12 +12,12 @@
         <IsA>library</IsA>
         <Summary>Qt wrapper for KDE 5 Bluez DBus API</Summary>
         <Description>Qt wrapper for KDE 5 DBus API.</Description>
-        <Archive sha1sum="672c7dc5cdc6bef36cae613812fcfa382bc786e7" type="tarxz">mirrors://kde/stable/frameworks/5.32/bluez-qt-5.32.0.tar.xz</Archive>
+        <Archive sha1sum="672c7dc5cdc6bef36cae613812fcfa382bc786e7" type="tarxz">mirrors://kde/stable/frameworks/5.33/bluez-qt-5.33.0.tar.xz</Archive>
         <BuildDependencies>
              <Dependency>bluez</Dependency>
              <Dependency>bluez-libs</Dependency>
-             <Dependency versionFrom="5.32.0">extra-cmake-modules</Dependency>
-             <Dependency versionFrom="5.6.0">qt5</Dependency>
+             <Dependency versionFrom="5.33.0">extra-cmake-modules</Dependency>
+             <Dependency versionFrom="5.8">qt5</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <Name>bluez-qt</Name>
         <RuntimeDependencies>
             <Dependency>bluez</Dependency> 
-            <Dependency versionFrom="5.7.1">qt5</Dependency>
+            <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -39,9 +39,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-12</Date>
-            <Version>5.32.0</Version>
+            <Version>5.33.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
