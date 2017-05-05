@@ -1,0 +1,78 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sddm</Name>
+        <Homepage>https://github.com/sddm/sddm</Homepage>
+        <Packager>
+            <Name>Lime Linux Admin</Name>
+            <Email>admin@limelinux</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>QML based X11 display manager</Summary>
+        <Description>KDE Power Management module. Provides kded daemon DBus helper and KCM for configuring Power settings</Description>
+        <Archive sha1sum="ee92a2b27602c13d6ac5cfd34399192a31ca033c" type="tarxz">https://github.com/sddm/sddm/releases/download/v0.14.0/sddm-0.14.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>docutils</Dependency>
+        </BuildDependencies>
+        <Patches>            
+            <Patch>sddm-respect-user-flags.patch</Patch>
+            <Patch>ecb903e4.patch</Patch>
+            <Patch>sddm-0.14.0-consolekit.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>sddm</Name>
+        <Conflicts>
+            <!--Package>lightdm</Package>
+            <Package>lxdm</Package>
+            <Package>mdm</Package>
+            <Package>gdm</Package>
+            <Package>slim</Package-->
+        </Conflicts>
+        <RuntimeDependencies>
+            <Dependency>qt5</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/sddm.conf">sddm.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/pam.d/sddm">sddm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/pam.d/sddm-autologin">sddm-autologin</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/polkit-1/rules.d/10-backlight.rules">10-backlight.rules</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <!--COMAR script="service.py">System.Service</COMAR-->
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-05-05</Date>
+            <Version>0.14.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime Linux Admin</Name>
+            <Email>admin@limelinux</Email>
+        </Update>
+    </History>
+</PISI>
