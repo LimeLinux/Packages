@@ -15,7 +15,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Blinken - Memory Enhancement Game</Summary>
         <Description>Blinken is based on an electronic game released in 1978, which challenges players to remember sequences of increasing length. On the face of the device, there are 4 different color buttons, each one with their own distinctive sound.</Description>
-        <Archive sha1sum="c9c61a47e3ceb6de96b87b9deebe6db8ac00d553" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/blinken-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="b89035e3d727fe14ffcaf82d7373f55991d854d3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/blinken-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>gettext</Dependency>

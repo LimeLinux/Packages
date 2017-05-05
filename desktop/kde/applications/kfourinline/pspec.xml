@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Four in a row board game</Summary>
         <Description>KFourInLine is a board game for two players based on the Connect-Four game.</Description>
-        <Archive sha1sum="11d925a61073855ddcd6b89cafefe3bf58a382c0" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kfourinline-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="73d9a5e025035cb10cdad2ce2c1aec5563b87621" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kfourinline-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

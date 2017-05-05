@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE5 PIM Runtime Environment</Summary>
         <Description>kdepim-runtime contains KDE5 PIM (Personal Information Management) runtime environment like akonadi agents.</Description>
-        <Archive sha1sum="64d2e83322cc580bbbe4aaf82c7720b614de41de" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdepim-runtime-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="3b0cf6f723a35ec7583990617b6bfc332fa9842b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdepim-runtime-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.29.0">kdoctools</Dependency>
             <Dependency>boost</Dependency>

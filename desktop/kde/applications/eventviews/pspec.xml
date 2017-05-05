@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Library for creating events.</Summary>
         <Description>Library for creating events.</Description>
-        <Archive type="tarxz" sha1sum="35d505668374f1a4726ac9b6dfae9c19c95ee08f">mirrors://kde/stable/applications/17.04.0/src/eventviews-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="a1a73464f2f5a3ae1b598cf4c4287f79eb9f5198">mirrors://kde/stable/applications/17.04.0/src/eventviews-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

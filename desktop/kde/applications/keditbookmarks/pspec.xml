@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Bookmark Organizer and Editor</Summary>
         <Description>Bookmark Organizer and Editor</Description>
-        <Archive sha1sum="a5623d82dc51b47497ddec7d00157c3a098cee58" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/keditbookmarks-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="0db074301a38f2a7404278420907a0e0e794e8c3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/keditbookmarks-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>gettext</Dependency>

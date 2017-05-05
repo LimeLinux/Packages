@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>A Japanese reference/study tool</Summary>
         <Description>Kiten is a Japanese reference/study tool.</Description>
-        <Archive sha1sum="16818217c47dced954668dbc667efe84c5582c90" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kiten-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="e87ff4e2d76a0ee891435862ea7a078e1a15f587" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kiten-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

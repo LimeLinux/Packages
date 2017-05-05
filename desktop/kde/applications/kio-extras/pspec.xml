@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>Additional KIO-slaves for KDE5 applications</Summary>
         <Description>Additional KIO-slaves for KDE5 applications</Description>
-        <Archive sha1sum="2f9abfc48b9cbad5d4f0011b10195b55662b5b1c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kio-extras-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="97a73e517d13579c3da539465c543c6d94e31476" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kio-extras-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="0.24">exiv2</Dependency>
             <Dependency>gettext</Dependency>

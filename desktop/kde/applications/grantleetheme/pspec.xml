@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Library for Grantlee theming support</Summary>
         <Description>Library for Grantlee theming support</Description>
-        <Archive sha1sum="c652074f3a148b3bfb60d4f5d231e85cb3222161" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/grantleetheme-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="1e89ab3c9fc551ecb84ac7d5acf6c5a5e8d6994c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/grantleetheme-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>

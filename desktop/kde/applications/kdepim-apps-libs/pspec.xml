@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>KDE PIM mail related libraries</Summary>
         <Description>KDE PIM mail related libraries</Description>
-        <Archive sha1sum="843c10fa4932216e0dc9853add653f0aa6ef867b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdepim-apps-libs-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="c2799ce918961b58b23e6a96e6f66393d8cb4b9e" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdepim-apps-libs-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>

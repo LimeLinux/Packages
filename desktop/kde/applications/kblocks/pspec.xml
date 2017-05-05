@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Falling blocks game</Summary>
         <Description>KBlocks is the classic falling blocks game. The idea is stack the falling blocks in a way that lines are completely filled. When a line is completed it is removed, and more space is available in the play area. When there is not enough space for blocks to fall, the game is over.</Description>
-        <Archive sha1sum="183d811b1761e9c134ba17c3e753817d76b62440" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kblocks-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="c018dfef6e032c75c1dcddf856378a623f55e0c6" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kblocks-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

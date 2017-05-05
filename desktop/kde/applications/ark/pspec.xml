@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.utils</PartOf>
         <Summary>KDE Archiving Tool</Summary>
         <Description>Ark is a program for managing various archive formats within the KDE environment.</Description>
-        <Archive sha1sum="7bf28eddff5e06a55a56878edc9291c0dcd18b2a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ark-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="4cb91f50d7ca0d3f484a76a5934cccb84d73de15" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ark-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>karchive</Dependency>

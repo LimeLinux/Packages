@@ -11,7 +11,7 @@
         <License>LGPL</License>
         <Summary>Search and Replace Tool</Summary>
         <Description>KFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.</Description>
-        <Archive sha1sum="2ec5667a1353ffbb64d6013fcfb4918af5756cb2" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kfind-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="6ed446398e9e38d377b37e3f4f98dbaf540aca31" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kfind-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>kdelibs4-support</Dependency>

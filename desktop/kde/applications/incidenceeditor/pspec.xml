@@ -11,7 +11,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE PIM incidence editor.</Summary>
         <Description>KDE PIM incidence editor.</Description>
-        <Archive sha1sum="40f2e2b82456c1022b539a64046be0ed4b20492e" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/incidenceeditor-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d32a2b0a0913fc3bf37048496aac72df3054d196" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/incidenceeditor-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

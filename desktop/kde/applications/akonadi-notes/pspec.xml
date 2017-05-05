@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Libraries and daemons to implement management of notes in Akonadi</Summary>
         <Description>Libraries and daemons to implement management of notes in Akonadi</Description>
-        <Archive sha1sum="8795b499bbe5c64222b85b66f99007574db19687" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-notes-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="1dc22a24d53892e3071d3aa3c61f4cd1ffc0f512" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-notes-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>

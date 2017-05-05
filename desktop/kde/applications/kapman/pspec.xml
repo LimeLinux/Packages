@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Pac-Man clone</Summary>
         <Description>Kapman is a clone of the well known game Pac-Man. You must go through the levels escaping ghosts in a maze. You lose a life when a ghost eats you, but you can eat the ghosts for a few seconds when eating an energizer.</Description>
-        <Archive sha1sum="4a64ead789baa37a37cb976eb186f1849325512e" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kapman-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="e81be0a852f109319d534b41d1c780a7227a3c16" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kapman-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>            

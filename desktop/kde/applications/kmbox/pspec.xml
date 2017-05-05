@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>MBox library support.</Summary>
         <Description>MBox library support.</Description>
-        <Archive sha1sum="ee34e24e8069f3c53ae5ed708a5d9a8ae9087af7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmbox-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="b4c48cf126ddc6100d291eeb459257fa321669fc" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmbox-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

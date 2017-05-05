@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>KHangMan is a game for kids based on the well-known hangman game</Summary>
         <Description>KHangMan is a game based on the well-known hangman game. It is aimed at children aged six and over. The game has several categories of words to play with, for example: Animals (animals words) and three difficulty categories: Easy, Medium and Hard. </Description>
-        <Archive sha1sum="879aae6e562e6aeeeb84d910628173912d8a5938" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/khangman-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d49aad6d10ec567146f25b89fe099db995f447d5" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/khangman-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

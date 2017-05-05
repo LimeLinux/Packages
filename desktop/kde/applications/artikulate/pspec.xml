@@ -16,7 +16,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Improve your pronunciation by listening to native speakers</Summary>
         <Description>Artikulate, Improve your pronunciation by listening to native speakers.</Description>
-        <Archive sha1sum="377ef5ef71a7219c4f70ee3d4decf3e3abdc0151" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/artikulate-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="10abd6ca776c177b474629182aad82205cea7d01" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/artikulate-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>boost</Dependency>
             <Dependency>cmake</Dependency>

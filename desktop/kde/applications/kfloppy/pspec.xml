@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.utils</PartOf>
         <Summary>A floppy formatter</Summary>
         <Description>KFloppy is a utility that provides a straightforward graphical means to format 3.5" and 5.25" floppy disks.</Description>
-        <Archive sha1sum="1c76846235f8c322fb8af42d8e918ef6ffb20ef9" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kfloppy-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="daaf1b8935b58e597fe696257d5685a40a2ff32c" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kfloppy-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

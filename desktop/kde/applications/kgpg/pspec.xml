@@ -13,7 +13,7 @@
         <License>GPL</License>
         <Summary>A QtQuick plugin to render beautiful and interactive charts</Summary>
         <Description>KGpg is a simple interface for GnuPG, a powerful encryption utility.</Description>
-        <Archive sha1sum="dab69aaa06464ef616f927f297aa4e6cb43852bc" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kgpg-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d4c3f9b23c58c55cce5e8ab47649be7cb6ba4551" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kgpg-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>akonadi</Dependency>
             <Dependency>boost</Dependency>

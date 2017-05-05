@@ -15,7 +15,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Yahtzee like dice game</Summary>
         <Description>Kiriki is an addictive and fun dice game for KDE, designed to be played by as many as six players.</Description>
-        <Archive sha1sum="0c33e79cd0adcc5f93caa0770c738547f5c6759c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kiriki-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="6354cf9cedf00cc8e39808292c8b8b77567b3c02" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kiriki-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

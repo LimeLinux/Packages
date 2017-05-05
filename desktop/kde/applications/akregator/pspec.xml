@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>A KDE blogging client</Summary>
         <Description>Akregator helps you to keep informed about new stories on websites like KDE Dot News and Planet KDE blogs. The technology used is RSS and many sites support it.</Description>
-        <Archive sha1sum="a9e01fce2e07ccbb81b140dc20fb130a1e75e101" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/akregator-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="dc2ddd9d2e8fc467644fdf6bce3f70920ca6f76f" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/akregator-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>boost</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

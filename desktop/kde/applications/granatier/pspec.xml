@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>A Bomberman game</Summary>
         <Description>Granatier is a clone of the classic Bomberman game, inspired by the work of the Clanbomber clone.</Description>
-        <Archive sha1sum="943c3556e8d221c669637d62339d3245808e1263" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/granatier-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="084fd4546b9dd39890cfc3a4fdae7f772eb27d5a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/granatier-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

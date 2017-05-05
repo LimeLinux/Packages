@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Mail Transport Service</Summary>
         <Description>Mail Transport Service</Description>
-        <Archive sha1sum="3791eb2e9c5d409bd123e4f10e30fd9f8f39868d" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmailtransport-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="760c905f3024a73a7610940be304a89b3460fa24" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmailtransport-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdelibs4-support</Dependency>

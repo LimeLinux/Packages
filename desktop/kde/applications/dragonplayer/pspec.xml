@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.multimedia</PartOf>
         <Summary>Multimedia player</Summary>
         <Description> a multimedia player where the focus is on simplicity, instead of features.</Description>
-        <Archive sha1sum="850f3901d997e9b39074240530e53496c2b4d28d" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/dragon-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="4b22f6e6af798716594f40f7c8ab555d07f99766" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/dragon-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>

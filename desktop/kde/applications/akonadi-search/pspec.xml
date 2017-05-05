@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Libraries and daemons to implement searching in Akonadi</Summary>
         <Description>Libraries and daemons to implement searching in Akonadi</Description>
-        <Archive sha1sum="52d44878e4f396ed88893b138420924d4b79c08e" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-search-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d5a6316a5cf3c998e5358dc0a207e06ce6d23b1c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-search-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kcrash</Dependency>

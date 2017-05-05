@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Certificate Manager and Unified Crypto GUI</Summary>
         <Description>Kleopatra is a certificate manager and a universal crypto GUI. It supports managing X.509 and OpenPGP certificates in the GpgSM keybox and retrieving certificates from LDAP servers.</Description>
-        <Archive type="tarxz" sha1sum="6fb2c0c8f06d833fb3c369529fed6c9aa719d303">mirrors://kde/stable/applications/17.04.0/src/kleopatra-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="20059908ae0b796d7690ef21cf31f0abaf960174">mirrors://kde/stable/applications/17.04.0/src/kleopatra-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

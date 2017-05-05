@@ -13,7 +13,7 @@
         <IsA>app:library</IsA>
         <Summary>KDE PIM libraries</Summary>
         <Description>Library for the KDE-PIM(Personal-Infomation-Management</Description>
-        <Archive sha1sum="e670227c990f839295c2097dbf6584d42ee0b743" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kidentitymanagement-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="e226e3885c2ec0063b73bf0e48d0331f955f73a8" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kidentitymanagement-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>

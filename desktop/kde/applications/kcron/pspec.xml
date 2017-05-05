@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Graphical task scheduler</Summary>
         <Description>Kcron is a graphical frontend to the cron system, used to schedule regular tasks on a Unix system.</Description>
-        <Archive sha1sum="0b37feb256d2232759d84e1486ce3bf5b02eff4c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcron-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="4d1a78b40b89f425608f39551dcaac1cf680fdd7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcron-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>

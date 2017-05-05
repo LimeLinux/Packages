@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>A letter order game</Summary>
         <Description>Kanagram is a game based on anagrams of words: the puzzle is solved when the letters of the scrambled word are put back in the correct order. There is no limit on either time taken, or the amount of attempts to solve the word.</Description>
-        <Archive sha1sum="e5639b0dcc8879597fd8cf082ca0d55ec162dcd2" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kanagram-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="83235c3805cc5aac3232782b49cc62029d4145a5" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kanagram-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

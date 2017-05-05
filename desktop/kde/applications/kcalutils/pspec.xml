@@ -13,7 +13,7 @@
         <IsA>app:library</IsA>
         <Summary>The KDE calendar utility library</Summary>
         <Description>Calendar utility library for KDE</Description>
-        <Archive sha1sum="6f28e5b173e7de1febf80ce58ed29f6b2eee18e2" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcalutils-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="af49df4d5e4eded678b3d7feb7e4ca3303b095e7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcalutils-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="16.12.0">kcalcore</Dependency>

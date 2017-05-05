@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Three in a row game</Summary>
         <Description>KDiamond is a single player puzzle game. The object of the game is to build lines of three similar diamonds.</Description>
-        <Archive sha1sum="1256fcc7f087731b84cc9406e5b1966939dbb1eb" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdiamond-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="499a33209a9f44bd9999c6a079eccbceb52660e7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdiamond-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>Webcam support for KDE</Summary>
         <Description>Kamera is a plugin for KDE to use webcam.</Description>
-        <Archive sha1sum="7304ef191bafd0392db3af514e77f27f6bc4c76e" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kamera-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="6ee5b1dce0e6e910743533127520aef12cc8c76f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kamera-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>

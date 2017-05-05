@@ -15,7 +15,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>An interactive geometry application</Summary>
         <Description>Kig is an application for interactive geometry.</Description>
-        <Archive sha1sum="89f2d8b88927a5785799d54a3957248dd50e8ced" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kig-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="c572039b0d5a766bb3fff96ca5ea7b4853828908" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kig-17.04.0.tar.xz</Archive>
         <BuildDependencies> 
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>

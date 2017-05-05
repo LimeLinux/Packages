@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Libraries and daemons to implement basic email handling</Summary>
         <Description>Libraries and daemons to implement basic email handling</Description>
-        <Archive sha1sum="941f472ffdeda333ef122e84c1ba8e88fb07adc3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-mime-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="85ee1ed0fa0934182b258fceef3d34fa85b757a7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-mime-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>

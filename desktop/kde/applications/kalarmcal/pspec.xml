@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Library to provides access and handling of KAlarm calendar data</Summary>
         <Description>Library to provides access and handling of KAlarm calendar data</Description>
-        <Archive sha1sum="1a19f7556dabbcc14d402a5b2f32d77ccbedd9bc" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kalarmcal-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="6275f746fab1c523729a42d18a6e8fb48581ea51" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kalarmcal-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>akonadi</Dependency>

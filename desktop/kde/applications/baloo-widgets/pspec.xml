@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Framework for searching and managing metadata</Summary>
         <Description>Baloo is a framework for searching and managing metada</Description>
-        <Archive type="tarxz" sha1sum="421940ec9fea35f940c5fd9e7e0d8bff6eab8e83">mirrors://kde/stable/applications/17.04.0/src/baloo-widgets-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="a01eaf593e4cf30b19f6d7afb591dd8f4f2839ea">mirrors://kde/stable/applications/17.04.0/src/baloo-widgets-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>baloo</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

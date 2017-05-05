@@ -13,7 +13,7 @@
         <License>LGPL</License>
         <Summary>View Disk Usage</Summary>
         <Description>KDiskFree displays the available file devices (hard drive partitions, floppy and CD drives, etc.) along with information on their capacity, free space, type and mount point. It also allows you to mount and unmount drives and view them in a file manager.</Description>
-        <Archive type="tarxz" sha1sum="11a91ed0df80a50299a5b9229bbb6898cde16a2e">http://download.kde.org/stable/applications/17.04.0/src/kdf-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="34314ad20f8e876505255b8b60a176b684fed1ba">http://download.kde.org/stable/applications/17.04.0/src/kdf-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>gettext</Dependency>

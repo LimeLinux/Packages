@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Territory capture game</Summary>
         <Description>KJumpingCube is a simple tactical game.</Description>
-        <Archive sha1sum="4b1c6a148a253d89a3896722e58892e8e8eca7a3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kjumpingcube-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="f9fccc7c5779fa941fb74688709ec72213974c9a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kjumpingcube-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

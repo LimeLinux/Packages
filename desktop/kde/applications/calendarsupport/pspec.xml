@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Calendar support library</Summary>
         <Description>Calendar support library</Description>
-        <Archive type="tarxz" sha1sum="795d0728aaf703471307c8ef81545048a863805e">mirrors://kde/stable/applications/17.04.0/src/calendarsupport-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="44ce1e6b5da062f1cc967da6fba47cc0529decdf">mirrors://kde/stable/applications/17.04.0/src/calendarsupport-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

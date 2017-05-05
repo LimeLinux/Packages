@@ -13,7 +13,7 @@
         <License>LGPL</License>
         <Summary>A collection of plugins to handle mobipocket files</Summary>
         <Description>A collection of plugins to handle mobipocket files</Description>
-        <Archive sha1sum="88c4035ef901bf8c26a65d8e54cc62e664bfe47d" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kdegraphics-mobipocket-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="7bbb01c7513bea020ed2efd0a922c2c32ed0b6a0" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kdegraphics-mobipocket-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>kio</Dependency>

@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>A Gomoku like game for two players.</Summary>
         <Description>Bovo is a Gomoku like game for two players, where the opponents alternate in placing their respective pictogram on the game board.</Description>
-        <Archive sha1sum="6abbe2a77be163f385e04eb2aa8cb26edac38f52" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/bovo-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="a624e51f084c2fd1156bc62ceac912fe57ab334d" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/bovo-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

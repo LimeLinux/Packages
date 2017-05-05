@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Libraries and daemons to implement Contact Management in Akonadi.</Summary>
         <Description>Libraries and daemons to implement Contact Management in Akonadi.</Description>
-        <Archive sha1sum="26ffa79f9c2ac836064137484fe43a953bac96e3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-contacts-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="0cedf71320858292a70160a7025fe815f6c14717" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-contacts-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>qt5-webengine</Dependency>

@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Kmail Account Wizard</Summary>
         <Description>Kmail Account Wizard</Description>
-        <Archive sha1sum="1a9e35462a8797912e4bdbf772a726c878fdf5f7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmail-account-wizard-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="44e2655ce9c1410012744eaaba6134b79b74bfe4" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmail-account-wizard-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gpgme</Dependency>
              <Dependency>extra-cmake-modules</Dependency>
