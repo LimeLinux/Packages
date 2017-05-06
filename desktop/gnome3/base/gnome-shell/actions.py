@@ -11,7 +11,6 @@ from pisi.actionsapi import shelltools
 
 def setup():
     autotools.configure("--disable-static \
-                         --disable-compile-warnings \
                         ")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")

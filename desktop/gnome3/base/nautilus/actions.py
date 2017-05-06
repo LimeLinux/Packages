@@ -15,7 +15,7 @@ def setup():
                          --disable-update-mimedb \
                          --enable-introspection \
                          --enable-tracker=no \
-			 --disable-selinux \
+			             --disable-selinux \
                          --disable-more-warnings")
 
 def build():

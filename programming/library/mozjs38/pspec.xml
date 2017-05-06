@@ -14,6 +14,7 @@
         <Summary>Stand-alone JavaScript C Library</Summary>
         <Description>Spidermonkey is Mozilla's C implementation of JavaScript.</Description>
         <Archive type="tarbz2" sha1sum="14367a7102ef2c54e0715bf16340fb4de9cb75ed">https://ftp.mozilla.org/pub/firefox/releases/38.8.0esr/source/firefox-38.8.0esr.source.tar.bz2</Archive>
+        <Archive sha1sum="92bab4258c10f2bd6db0152e994633b6ccef6cc1" type="targz" target="mozilla-esr38/js/src">https://sourceforge.net/projects/limeteam/files/source-limelinux/mozjs-38.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>nspr</Dependency>

@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME Shell is the defining technology of the GNOME 3 user experience</Summary>
         <Description>GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
-        <Archive sha1sum="1640e7e5a5a0213c378e30e9e464e817d6a6e85a" type="tarxz">mirrors://gnome/gnome-shell/3.24/gnome-shell-3.24.1.tar.xz</Archive>
+        <Archive sha1sum="c420a52a3438fddc6c5d1b3acb0b496ac368ac2f" type="tarxz">mirrors://gnome/gnome-shell/3.25/gnome-shell-3.25.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gjs</Dependency>
             <Dependency>gcr</Dependency>
@@ -128,9 +128,9 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2017-05-03</Date>
-            <Version>3.24.1</Version>
+            <Version>3.25.1</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

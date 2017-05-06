@@ -14,7 +14,7 @@
         <Icon>file-roller</Icon>
         <Summary>GNOME archive manager</Summary>
         <Description>File-manager is a archive manager that create, modify and extract various archive formats with compression support</Description>
-        <Archive sha1sum="5d3bf05871deb01bbbb870b50df6c1545d6d9b34" type="tarxz">mirrors://gnome/file-roller/3.20/file-roller-3.20.3.tar.xz</Archive>
+        <Archive sha1sum="433a8519d6f32761d8a3ae16787ecdce1b5d7bf2" type="tarxz">mirrors://gnome/file-roller/3.24/file-roller-3.24.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>gconf</Dependency>
@@ -54,9 +54,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>3.10.2.1</Version>
+        <Update release="2">
+            <Date>2017-12-21</Date>
+            <Version>3.24.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

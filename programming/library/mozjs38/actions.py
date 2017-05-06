@@ -40,7 +40,6 @@ def install():
 
     pisitools.rename("/usr/bin/js-config", "js38-config")
     pisitools.rename("/usr/bin/js", "js-38")
-    pisitools.domove("/usr/include/mozjs-/*" , "/usr/include/mozjs-38")
     pisitools.rename("/usr/lib/pkgconfig/js.pc", "mozjs-38.pc")
     #pisitools.rename("/usr/lib/libmozjs-.so", "libmozjs-38.so")
 
@@ -48,6 +47,7 @@ def install():
     pisitools.dosym("libmozjs-.so", "/usr/lib/libmozjs-38.so")
     pisitools.removeDir("/usr/include/mozjs-")
     pisitools.doexe("/usr/bin/js", "/usr/bin/js-38")
+    pisitools.insinto("/usr/include/", "mozjs-38")
     
     shelltools.system("sed -i 's/mozjs-/mozjs-38/g' %s/usr/lib/pkgconfig/mozjs-38.pc"% get.installDIR())
 

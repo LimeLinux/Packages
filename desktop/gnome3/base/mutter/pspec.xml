@@ -12,9 +12,9 @@
         <IsA>app:gui</IsA>
         <Summary>A window manager which is replacing Metacity</Summary>
         <Description>Mutter is the window manager for which GNOME Shell is a plugin in GNOME 3, replacing Metacity.</Description>
-        <Archive sha1sum="9b26567c7e823e30d5a326e8aff72ed92cf7cb97" type="tarxz">https://git.gnome.org/browse/mutter/snapshot/mutter-3.24.1.tar.xz</Archive>
+        <Archive sha1sum="394452c1cd21fb0a8ed45441a303a60a22139550" type="tarxz">mirrors://gnome/mutter/3.25/mutter-3.25.1.tar.xz</Archive>
         <BuildDependencies>
-            <!--Dependency>zenity</Dependency-->
+            <Dependency>zenity</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>gtk3</Dependency>
@@ -107,9 +107,9 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2017-03-01</Date>
-            <Version>3.24.1</Version>
+            <Version>3.25.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

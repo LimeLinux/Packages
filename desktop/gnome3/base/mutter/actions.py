@@ -9,7 +9,6 @@ from pisi.actionsapi import pisitools, shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--disable-static \
 		                 --enable-compile-warnings=minimum \
 		                 --enable-gl \
