@@ -48,6 +48,8 @@ def install():
     pisitools.removeDir("/usr/include/mozjs-")
     pisitools.doexe("/usr/bin/js", "/usr/bin/js-38")
     pisitools.insinto("/usr/include/", "mozjs-38")
+    pisitools.insinto("/usr/include/", "js/src/*.h")
+    
     
     shelltools.system("sed -i 's/mozjs-/mozjs-38/g' %s/usr/lib/pkgconfig/mozjs-38.pc"% get.installDIR())
 
