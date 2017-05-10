@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>KDE PIM storage services configuration UI</Summary>
         <Description>KDE PIM storage services configuration UI</Description>
-        <Archive sha1sum="19b9286b71a5602d39c0407286d148d75e8a31d3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/pim-storage-service-manager-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="19b9286b71a5602d39c0407286d148d75e8a31d3" type="tarxz">mirrors://kde/stable/applications/16.12.3/src/pim-storage-service-manager-16.12.3.tar.xz</Archive>
         <BuildDependencies>
            <Dependency>extra-cmake-modules</Dependency>
              <Dependency>kcrash</Dependency>
@@ -81,9 +81,9 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
+            <Version>16.12.3</Version>
             <Comment>First release</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
