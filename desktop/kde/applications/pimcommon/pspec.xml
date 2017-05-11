@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Common libraries for KDE PIM</Summary>
         <Description>Common libraries for KDE PIM</Description>
-        <Archive sha1sum="387cb21cf902fbae60afa0e6b49712a38cb1c360" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/pimcommon-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="35b9911ab1677f0d6f912e4f0a22fdfd4017910e" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/pimcommon-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>

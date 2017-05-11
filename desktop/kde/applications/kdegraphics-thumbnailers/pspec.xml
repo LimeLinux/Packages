@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>KDE4 thumbnailer library</Summary>
         <Description>kdegraphics-thumbnailers contains thumbnail-related libraries.</Description>
-        <Archive sha1sum="767744c50bf394ff8bd7b84a596838275ca44f3a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdegraphics-thumbnailers-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="e69a4c11dd2b6bbe6d533c3873478f8ede8b67c8" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdegraphics-thumbnailers-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

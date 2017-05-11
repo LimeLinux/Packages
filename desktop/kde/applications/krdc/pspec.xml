@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Remote Desktop Client</Summary>
         <Description>KRDC is a client application that allows you to view or even control the desktop session on another machine that is running a compatible server. VNC and RDP is supported.</Description>
-        <Archive sha1sum="f800fd4fbcdf3002ca43877b2d9b420c2d89537a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/krdc-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="2ab0ce8d6b569b914d49aa9ad45485c87b0e6240" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/krdc-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

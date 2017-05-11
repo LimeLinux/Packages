@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>A C++ interface around LibRaw library</Summary>
         <Description>libkdcraw is a C++ interface around LibRaw library used to decode RAW picture files.</Description>
-        <Archive sha1sum="47fe88d4598db758955ab516ce1daf3e4b10ca23" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkdcraw-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="0e473a3bf14d3e061ae95624956444ad319d1515" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkdcraw-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

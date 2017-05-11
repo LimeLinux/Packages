@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Common code, backgrounds and tile sets for games using Mahjongg tiles</Summary>
         <Description>Common code, backgrounds and tile sets for games using Mahjongg tiles.</Description>
-        <Archive sha1sum="37b47b9d1ecbb56abd53f00db431fec8d13d45d1" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkmahjongg-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="db6851cdb4e2a9523831126dfad2a6162f03111f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkmahjongg-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>            
             <Dependency>extra-cmake-modules</Dependency>

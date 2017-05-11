@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Connect the dots to create squares</Summary>
         <Description>KSquares is a fun and exciting game that modeled after the well known pen and paper based game of Dots and Boxes.</Description>
-        <Archive sha1sum="621e8e109d77a47c3f800a815e96453d727d22c7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ksquares-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="c06b8daf4e1edcd27650f5b70c8a2b72567872a8" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ksquares-17.04.0.tar.xz</Archive>
         <BuildDependencies> 
             <Dependency>extra-cmake-modules</Dependency> 
             <Dependency>qt5</Dependency>

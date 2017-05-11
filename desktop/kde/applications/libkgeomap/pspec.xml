@@ -15,7 +15,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>A wrapper around world map components for browsing and arranging photos on a map.</Summary>
         <Description>A wrapper around world map components for browsing and arranging photos on a map.</Description>
-        <Archive type="tarxz" sha1sum="aea7c56db41f85ccce37fd760f39445cd56afd49">mirrors://kde/stable/applications/17.04.0/src/libkgeomap-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="dbf4378952e02336ae4d104bbe3059c3ae859c57">mirrors://kde/stable/applications/17.04.0/src/libkgeomap-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

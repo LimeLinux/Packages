@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE PIM library for managing sieves.</Summary>
         <Description>KDE PIM library for managing sieves.</Description>
-        <Archive sha1sum="3a2f751e3023284d8c10bf2f7be14368d3a34413" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libksieve-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="dcf8cbfcd0f7e50d0a08588266dbf43bef91e0de" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libksieve-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

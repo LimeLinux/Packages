@@ -13,7 +13,7 @@
         <License>LGPL</License>
         <Summary>Kioslave for accessing audio CDs</Summary>
         <Description>Kioslave for accessing audio CDs</Description>
-        <Archive sha1sum="0a6d5b4d6213bc0c81e5996718dc1aa5911879b6" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/audiocd-kio-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="5e10bef91d5b8597ac66d40783184b36ad17a7d4" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/audiocd-kio-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cdparanoia</Dependency>
             <Dependency>flac</Dependency>

@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.utils</PartOf>
         <Summary>A character selector</Summary>
         <Description>KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.</Description>
-        <Archive sha1sum="1818cce9ec3fe67a229e829a2d5a9c5f37828587" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcharselect-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="7b162b6359e77fdf83334b8606cc0449848bbb37" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcharselect-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>

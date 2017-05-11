@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.utils</PartOf>
         <Summary>A wallet management tool</Summary>
         <Description>KWalletManager is a tool to manage the passwords on your system. By using the KDE wallet subsystem it not only allows you to keep your own secrets but also to access and manage the passwords of every application that integrates with the wallet.</Description>
-        <Archive sha1sum="e5b51b24c9d426b9b99da27b06a9f3cdfb1fdf83" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kwalletmanager-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="11c15f42e279364a8fe858466b1caf07e6177fab" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kwalletmanager-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

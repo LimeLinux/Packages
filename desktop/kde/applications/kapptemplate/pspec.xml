@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.sdk</PartOf>
         <Summary>Application template generator</Summary>
         <Description>KAppTemplate is a shell script that will create the necessary framework to develop several types of applications, including applications based on the KDE development platform.</Description>
-        <Archive sha1sum="04a9133463f2da63dfbb9e4dc116b432586336c8" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kapptemplate-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d193b48ea4df8215fc7d8cbb37aabb65f3d6c920" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kapptemplate-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

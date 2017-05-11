@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>CLI tools to manage akonadi calendars</Summary>
         <Description>CLI tools to manage akonadi calendars</Description>
-        <Archive sha1sum="0cedf71320858292a70160a7025fe815f6c14717" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/akonadi-calendar-tools-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d5f8f754a5b5de6892e49ca56146d5a3f8fe53bc" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/akonadi-calendar-tools-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>boost</Dependency>
             <Dependency>akonadi</Dependency>

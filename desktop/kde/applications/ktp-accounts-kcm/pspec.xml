@@ -13,7 +13,7 @@
         <IsA>app</IsA>
         <Summary>KCM Module for configuring Telepathy Instant Messaging Accounts</Summary>
         <Description>KCM Module for configuring Telepathy Instant Messaging Accounts</Description>
-        <Archive sha1sum="2ae753fbc485457c273bde9e7a2135b6ca55beef" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ktp-accounts-kcm-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="bb5da3a850768b4b6c55c4dae14029b06be14fdc" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ktp-accounts-kcm-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

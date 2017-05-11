@@ -12,7 +12,7 @@
         <IsA>app:library</IsA>
         <Summary>Common libraries for KDE Edu applications</Summary>
         <Description>Libraries for KDE EDU applications.</Description>
-        <Archive sha1sum="7c61b68f6716647297d2e4760ad6beffa4cc9ac9" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkeduvocdocument-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="3dc73d1f0877d399eed1cd19c0158722ebe05b77" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkeduvocdocument-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

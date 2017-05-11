@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.utils</PartOf>
         <Summary>Timer for making tea.</Summary>
         <Description>KTeaTime is a handy timer for steeping tea. No longer will you have to guess at how long it takes for your tea to be ready. </Description>
-        <Archive sha1sum="afe8a9c8949fe3d2e13cfbea5f44c9567af9457b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kteatime-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="9b00d7e8cf775ac217e8bbfd93d1455cfa2b0105" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kteatime-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

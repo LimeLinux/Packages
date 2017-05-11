@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>A KDE library for mathematical features</Summary>
         <Description>analitza is a library to add mathematical features to programs.</Description>
-        <Archive sha1sum="40920fce32e6d37b9140321eea1af2de1b9e71cb" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/analitza-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="dc2ddd9d2e8fc467644fdf6bce3f70920ca6f76f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/analitza-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cmake</Dependency>
             <Dependency>eigen3</Dependency>

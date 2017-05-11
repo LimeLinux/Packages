@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Libraries for KDE PIM applications</Summary>
         <Description>Libraries for KDE PIM applications</Description>
-        <Archive sha1sum="98cceac475d5d2061772b1d5ddc30a4c9f57947e" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkdepim-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="908d227a9e97324d7d649746292a381ee3cd5eec" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkdepim-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

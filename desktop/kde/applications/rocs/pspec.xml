@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Rocs Graph Theory</Summary>
         <Description>Rocs aims to be a Graph Theory IDE for helping professors to show the results of a graph algorithm and also helping students to do the algorithms. Rocs has a scripting module, done in Qt Script, that interacts with the drawn graph and every change in the graph with the script is reflected on the drawn one..</Description>
-        <Archive sha1sum="a0d6ee2849578b14174e2b6753414ddb46bb75ef" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/rocs-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="2d81f8b647599c58591599d9de87a438494381f5" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/rocs-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>   
             <Dependency>qt5-webkit</Dependency>

@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>KDE Telepathy file transfer handler</Summary>
         <Description>KDE Telepathy file transfer handler</Description>
-        <Archive sha1sum="b749c1c3d707826223c90a70b6f9dfd9a7ef4213" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ktp-filetransfer-handler-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d78ed6f1f066b24f5a78650cd403eaaa29113d92" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ktp-filetransfer-handler-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>kcoreaddons</Dependency>

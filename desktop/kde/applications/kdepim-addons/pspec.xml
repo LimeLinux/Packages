@@ -13,7 +13,7 @@
         <License>LGPL</License>
         <Summary>Addons for the KDE PIM apllications</Summary>
         <Description>Addons for the KDE PIM apllications</Description>
-        <Archive sha1sum="36be377a2d6e5629a94b21f4a46eb813b955e552" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdepim-addons-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="c09ac3d37c7bba9b50c9af96c951174806631513" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdepim-addons-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>akonadi-calendar</Dependency>
             <Dependency>akonadi</Dependency>

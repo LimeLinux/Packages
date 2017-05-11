@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>KDE contact manager</Summary>
         <Description>KAddressBook reborn to make your data available to all your applications</Description>
-        <Archive sha1sum="bdfacecb22b64603077dcc0eb86e0db73cce569a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kaddressbook-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="9a437cb85a0d15b9b054710f3347e883b1dba89d" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kaddressbook-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gpgme</Dependency>
              <Dependency>extra-cmake-modules</Dependency>

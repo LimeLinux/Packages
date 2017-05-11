@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>A File manager plugin to launch a file transfer job with a specified contact</Summary>
         <Description>A File manager plugin to launch a file transfer job with a specified contact</Description>
-        <Archive sha1sum="81a60627d590363ed3d7740e5c3df882e43fe8e2" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ktp-send-file-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="ed159f618f0d81ea7b6a8e1983f178d2ccf17e3f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ktp-send-file-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

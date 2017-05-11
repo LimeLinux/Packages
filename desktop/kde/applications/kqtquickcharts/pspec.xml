@@ -13,7 +13,7 @@
         <License>GPL</License>
         <Summary>A QtQuick plugin to render beautiful and interactive charts</Summary>
         <Description>A QtQuick plugin to render beautiful and interactive charts</Description>
-        <Archive sha1sum="c8a2a74b3ac71061f22294da718e42bdd6f64401" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kqtquickcharts-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="db44044585822073c4d1f824eae9302163565d1b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kqtquickcharts-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>glibc</Dependency>

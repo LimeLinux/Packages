@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>A tool for managing print jobs and printers</Summary>
         <Description>Print-Manager. A tool to managing your print jobs and the Printers</Description>
-        <Archive sha1sum="3d4c85fcd971dde46b1833a5cdb018b3209a14f1" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkdegames-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="3da19dde5383be4639547d1b0d00ed1e97af5a1b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkdegames-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

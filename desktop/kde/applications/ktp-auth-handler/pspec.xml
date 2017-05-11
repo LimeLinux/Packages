@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>Provide UI/KWallet Integration For Passwords and SSL Errors on Account Connect</Summary>
         <Description>Provide UI/KWallet Integration For Passwords and SSL Errors on Account Connect</Description>
-        <Archive type="tarxz" sha1sum="102c0e7dcff4deaba566987a46a3c38087c4cba2">mirrors://kde/stable/applications/17.04.0/src/ktp-auth-handler-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="57a9223bc550277ef29f84587fd1d8dc4cb4dbca">mirrors://kde/stable/applications/17.04.0/src/ktp-auth-handler-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

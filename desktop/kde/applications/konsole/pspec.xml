@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>KDE Konsole</Summary>
         <Description>Konsole for KDE5</Description>
-        <Archive sha1sum="da16d047f6f8b2c18c30925b975918451d0d30bd" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/konsole-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="78eb6f692f67d7c93a90ba4816ba86a328238e92" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/konsole-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kpty</Dependency>

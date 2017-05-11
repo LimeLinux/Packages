@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>A screen ruler and color measurement tool</Summary>
         <Description>KRuler is a screen ruler and color measurement tool.</Description>
-        <Archive sha1sum="6b48b4ba39ab1d98d9cd5de23eaf50d8c15d5cb7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kruler-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="f3409a866dec227e0db171ea27d21a7659bc6e1f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kruler-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

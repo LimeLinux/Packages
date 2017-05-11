@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>A library for interfacing with CDs</Summary>
         <Description>A library for interfacing with CDs</Description>
-        <Archive sha1sum="db6327cf94c6333ff0cd5b17bc0be3eea9f26b2b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkcompactdisc-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="c67b3afb9c7ed2b2a784f33241dbe5d7ceb9290f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkcompactdisc-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

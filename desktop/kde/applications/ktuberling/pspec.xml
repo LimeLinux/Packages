@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>A simple constructor game suitable for children and adults alike</Summary>
         <Description>KTuberling a simple constructor game suitable for children and adults alike. The idea of the game is based around a once popular doll making concept.</Description>
-        <Archive type="tarxz" sha1sum="ef0a80a4637f32ee241bb3975dfd9068a2536093">mirrors://kde/stable/applications/17.04.0/src/ktuberling-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="a6e361cf6f2ad9b138fb20a307a5df81dce5e98b">mirrors://kde/stable/applications/17.04.0/src/ktuberling-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

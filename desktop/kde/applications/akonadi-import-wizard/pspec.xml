@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>CLI tools to manage akonadi calendars</Summary>
         <Description>Import data from other mail clients to KMail</Description>
-        <Archive sha1sum="fc3668aaecfdd866cc42d340bbe40589ffe9387f" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/akonadi-import-wizard-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="c9737eed85cdfd2265da1524f37a474a1e9611df" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/akonadi-import-wizard-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>boost</Dependency>
             <Dependency>akonadi</Dependency>

@@ -13,7 +13,7 @@
         <License>LGPL</License>
         <Summary>A KPart for viewing SVGs</Summary>
         <Description>A KPart for viewing SVGs</Description>
-        <Archive type="tarxz" sha1sum="0e4a1c928f9adbf420dff83c331dd97f1b6586c2">mirrors://kde/stable/applications/17.04.0/src/svgpart-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="7e7172f37990cc92f7cf7328e7558c9a22411a74">mirrors://kde/stable/applications/17.04.0/src/svgpart-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>gettext</Dependency>

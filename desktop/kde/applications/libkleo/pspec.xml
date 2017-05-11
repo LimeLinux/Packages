@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>KDE PIM cryptographic library</Summary>
         <Description>KDE PIM cryptographic library</Description>
-        <Archive sha1sum="9099d063de92c62a2de7e4a85ef854c8f2318f05" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkleo-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="56e035e0a61b8ab3a50310c6c4270e21baad5d5c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkleo-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>

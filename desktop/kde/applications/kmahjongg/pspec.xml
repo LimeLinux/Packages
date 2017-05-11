@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Mahjongg Solitaire</Summary>
         <Description>KMahjongg is a fun board game created after the famous oriental game of Mahjong. Unlike the original however, KMahjongg is a tile matching game for one or two players, a variation usually known as Mahjong Solitaire.</Description>
-        <Archive sha1sum="496b5ea9039442928ee32d9803605d4d3bb54be9" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmahjongg-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="3e7b7be12089f32a43833dd887db0c0b8e27599d" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmahjongg-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

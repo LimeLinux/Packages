@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Calendar and scheduling Program</Summary>
         <Description>KOrganizer is the calendar and scheduling component of Kontact, the integrated personal information manager from KDE.</Description>
-        <Archive sha1sum="09f2582547d092cfc3b56963f93a7152b5257b83" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/korganizer-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="1c5b75e3a9231debb92c19ce25cfe6fb60fd0f32" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/korganizer-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gpgme</Dependency>
              <Dependency>extra-cmake-modules</Dependency>

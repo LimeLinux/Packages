@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.sdk</PartOf>
         <Summary>File difference viewer</Summary>
         <Description>Diff/Patch Frontend. </Description>
-        <Archive sha1sum="fe0c6314b2c825343150acd2e7435cd24b016b38" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kompare-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="8e2d3f94723eb2fb1054ea5c13a7fd778e59f2db" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kompare-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>kdoctools</Dependency>

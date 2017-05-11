@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>Common components for KDE-Telepathy</Summary>
         <Description>Common components for KDE-Telepathy</Description>
-        <Archive type="tarxz" sha1sum="f890ae406fd6eb159c58a981d0f0d5aa2c973e00">mirrors://kde/stable/applications/17.04.0/src/ktp-common-internals-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="35129b01af7ce8dda1dfdfb1db75161482f82b57">mirrors://kde/stable/applications/17.04.0/src/ktp-common-internals-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

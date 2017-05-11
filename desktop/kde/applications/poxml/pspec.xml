@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.sdk</PartOf>
         <Summary>Tools for translating DocBook XML files with Gettex</Summary>
         <Description>This is a collection of tools that facilitate translating DocBook XML files using Gettext message files (PO files).</Description>
-        <Archive sha1sum="d1b995051b2508a0703edf103da400ec12ac8d32" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/poxml-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="7cc51c89059fc47e559bfa1b3b7ce3d323d8c13c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/poxml-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

@@ -11,7 +11,7 @@
         <IsA>app:gui</IsA>
         <Summary>A KDE Software for Music Education</Summary>
         <Description>Music education Free Software, thoughtfully designed to push your musical skills to the next level. Enhance your ability to recognize intervals, chords, rhythm, and scales while enjoying all the power of Free Software.</Description>
-        <Archive sha1sum="fab835920ca721d5133a793e641383cc75062e7d" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/minuet-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="303fe1cdeb6d2956836d8503d638642ddcd3068b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/minuet-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

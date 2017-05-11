@@ -11,7 +11,7 @@
         <License>GPL2</License>
         <Summary>KDE Personal Information Manager</Summary>
         <Description>Kontact is the integrated Personal Information Manager of KDE, but can be used with other systems as well. It supports email, address books, calendars, tasks, news feeds and much more.</Description>
-        <Archive sha1sum="47212ea52d0ad332a274aead48baef7dd4625da1" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kontact-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="9ec0299171481b74cbe810677e89084ea7c5cf06" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kontact-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>boost</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

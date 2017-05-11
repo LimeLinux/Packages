@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>An Exiv2 wrapper library</Summary>
         <Description>libkexiv2 is a wrapper around Exiv2 library to manipulate pictures metadata as EXIF/IPTC and XMP.</Description>
-        <Archive sha1sum="84745a47fe627d2fe2897040084832a0fd8f1227" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkexiv2-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="f05a91747e0d88589d08f89444ff39d7f28b6745" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkexiv2-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>cmake</Dependency>

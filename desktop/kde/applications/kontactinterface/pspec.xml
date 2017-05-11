@@ -13,7 +13,7 @@
         <IsA>app:library</IsA>
         <Summary>Kontact Plugin Interface Library</Summary>
         <Description>This library provides the glue necessary for application "Parts" to be embedded as a Kontact component (or plugin).</Description>
-        <Archive sha1sum="89036c0c5b17c0592eacccb73947291c33996429" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kontactinterface-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="1f1f1868ab2b1231c4e8d85ae9976d6d571cf80b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kontactinterface-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

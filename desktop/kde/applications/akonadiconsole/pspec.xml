@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Akonadi management and debugging console</Summary>
         <Description>Akonadi management and debugging console</Description>
-        <Archive type="tarxz" sha1sum="a0ffbe009f1f908c127ed15a32f18a9a4c4fa219">http://download.kde.org/stable/applications/17.04.0/src/akonadiconsole-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="0cedf71320858292a70160a7025fe815f6c1471">http://download.kde.org/stable/applications/17.04.0/src/akonadiconsole-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>akonadi-contacts</Dependency>
             <Dependency>akonadi</Dependency>

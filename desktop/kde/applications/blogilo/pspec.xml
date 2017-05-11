@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>A KDE blogging client</Summary>
         <Description>Blogilo is an fully-featured blogging client. It allows local creation and editing of blog posts. Various blogging APIs are supported for publishing.</Description>
-        <Archive sha1sum="e3f9dde4a2a6065a54e853a053cda7a1e3ea04c9" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/blogilo-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="9971b0d886f400e50802ad8d5ed52357353bcd12" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/blogilo-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>

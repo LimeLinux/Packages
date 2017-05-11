@@ -13,7 +13,7 @@
         <IsA>app:library</IsA>
         <Summary>A blogging library for KDE</Summary>
         <Description>KBlog is a library for calling functions on Blogger 1.0, MetaWeblog, MovableType and GData compatible blogs. It calls the APIs using KXmlRpcClient and Syndication.</Description>
-        <Archive sha1sum="b99a40a394e6efecaa95a2b098b72db3d0559425" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kblog-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="2b42b38b42c5473bfd2601b82a4bec7733d52485" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kblog-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

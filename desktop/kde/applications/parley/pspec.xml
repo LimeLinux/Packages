@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Parley is a program to help you memorize things.</Summary>
         <Description>Parley is a program to help you memorize things. Parley supports many language specific features but can be used for other learning tasks just as well. It uses the spaced repetition learning method, also known as flash cards. Creating new vocabulary collections with Parley is easy, but of course it is even better if you can use some of our premade files. Have a look at the KDE-Files.org page or use the "Download New Collections" feature directly in Parley.</Description>
-        <Archive sha1sum="40226676b2ef02cda733f46d2b32df10f4267192" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/parley-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="ebd07f791b2bd9bbb17f5dca2179bf66520ae737" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/parley-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libxslt</Dependency>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A textedit with PIM-specific features.</Summary>
         <Description>Text Edit with KDE-PIM specific features.</Description>
-        <Archive sha1sum="9f283a436fc5d0afb3e6679c626936a1208d12c3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kpimtextedit-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="53bc36fc0e074934bf0c412a9723492eab1fc073" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kpimtextedit-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>ki18n</Dependency>

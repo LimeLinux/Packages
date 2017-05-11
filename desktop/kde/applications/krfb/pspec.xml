@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Desktop sharing utility</Summary>
         <Description>KDE Desktop Sharing is a manager for easily sharing a desktop session with another system. The desktop session can be viewed or controlled remotely by any VNC or RFB client</Description>
-        <Archive sha1sum="ca59334698984134f8aae9c22d307146c2c661c6" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/krfb-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="f4d59e6f38086814409961bc7eb4f7e4cfb645a2" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/krfb-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>

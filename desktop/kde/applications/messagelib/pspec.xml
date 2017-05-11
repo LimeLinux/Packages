@@ -13,7 +13,7 @@
         <IsA>app:library</IsA>
         <Summary>KDE PIM library providing support for mail applications</Summary>
         <Description>KDE PIM library providing support for mail applications</Description>
-        <Archive sha1sum="7d6a342ff178d815661d48ee4e4dcf3b28c4bcd1" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/messagelib-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="8990551f62c27968113cba426787115b72a2925b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/messagelib-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

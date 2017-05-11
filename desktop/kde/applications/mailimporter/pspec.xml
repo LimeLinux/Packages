@@ -13,7 +13,7 @@
         <IsA>app:library</IsA>
         <Summary>Mail importer library</Summary>
         <Description>Mail importer library</Description>
-        <Archive sha1sum="932a93f12b533562fb511a7a7e01e569eef38377" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/mailimporter-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d45405ce0772254a41490107ae8a84b1f2de1721" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/mailimporter-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

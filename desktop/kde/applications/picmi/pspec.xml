@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Picmi is a single player logic-based puzzle game</Summary>
         <Description>Picmi is a single player logic-based puzzle game. The goal is to color cells according to numbers given at the side of the board in order to uncover a hidden pattern or picture. </Description>
-        <Archive sha1sum="6d13a62b20a3d9e48800c01f47a944f1a4cebc55" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/picmi-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="8b6bc3625b4aa7729d98adf38b5737ac2a9d8178" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/picmi-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>Common plugin infrastructure for KDE image applications</Summary>
         <Description>Kipi (KDE Image Plugin Interface) is an effort to develop a common plugin structure (for Digikam, Gwenview, etc.). Its aim is to share image plugins among graphic applications.</Description>
-        <Archive sha1sum="994bec30e7500a365ccc46f4149eabc77f3cfb73" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkipi-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d1087e853c3b9e08677eea20ea652b83acbe7c4a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkipi-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>

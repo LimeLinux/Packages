@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>Sits in KDED and takes care of various bits of system integration like setting user to auto-away or handling connection errors</Summary>
         <Description>Sits in KDED and takes care of various bits of system integration like setting user to auto-away or handling connection errors</Description>
-        <Archive type="tarxz" sha1sum="c4703eb97aa3cc252b4feb7065bc5fb5a67d6712">mirrors://kde/stable/applications/17.04.0/src/ktp-kded-module-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="c0f4c3c6d29e3bfc417cf513d631b601b8b62f50">mirrors://kde/stable/applications/17.04.0/src/ktp-kded-module-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

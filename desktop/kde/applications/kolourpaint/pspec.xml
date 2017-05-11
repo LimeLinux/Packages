@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>An easy to use paint program</Summary>
         <Description>KolourPaint is a simple painting program to quickly create raster images. It is useful as a touch-up tool and simple image editing tasks.</Description>
-        <Archive sha1sum="f93323140ae20e0cf4ed6ce0716f8e40166169e9" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kolourpaint-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="a99f031d93f7b36b589f967e691c0cb9fd30351f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kolourpaint-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

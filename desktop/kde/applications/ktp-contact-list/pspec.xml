@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>KDE Telepathy contact list application</Summary>
         <Description>KDE Telepathy contact list application</Description>
-       <Archive type="tarxz" sha1sum="3a72f31a780a4e1de7ee7968956796ac7962d1b8">mirrors://kde/stable/applications/17.04.0/src/ktp-contact-list-17.04.0.tar.xz</Archive>
+       <Archive type="tarxz" sha1sum="5effd52f5e337cdd696caad3ab0e8fd7359d90af">mirrors://kde/stable/applications/17.04.0/src/ktp-contact-list-17.04.0.tar.xz</Archive>
        <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

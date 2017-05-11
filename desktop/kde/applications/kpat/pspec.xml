@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Patience card game</Summary>
         <Description>To play KPatience you need, as the name suggests, patience. For simple games, where the way the game goes depends only upon how the cards fall, your patience might be the only thing you need.</Description>
-        <Archive sha1sum="d5611081bea2729fa3e2ab3481479ca1ca896fbc" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kpat-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="762e8f7f1079aa280db784dd252da84444c67e48" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kpat-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>

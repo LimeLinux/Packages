@@ -12,7 +12,7 @@
         <License>GPL</License>
         <Summary>A sound editor for KDE</Summary>
         <Description>With Kwave you can record, play back, import and edit many sorts of audio files including multi channel files.Kwave includes some plugins to transform audio files in several ways and presents a graphical view with a complete zoom- and scroll capability.</Description>
-        <Archive sha1sum="158137946fbca0e911ba2b4f533c3e2f08fdfecb" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kwave-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="ff1d04193d2ac7bf0d97e546171f8c9f81cb0bbe" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kwave-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>doxygen</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

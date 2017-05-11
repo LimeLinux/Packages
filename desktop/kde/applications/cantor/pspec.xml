@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>A KDE frontend to mathematical softwares</Summary>
         <Description>Cantor is an application that lets you use your favorite mathematical applications from within a nice KDE-integrated Worksheet Interface. It offers assistant dialogs for common tasks and allows you to share your worksheets with others.</Description>
-        <Archive sha1sum="4015a50548baeecce77556e879dd2f721f14e1a7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/cantor-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="379bbb9f8c987b7e3386471259f102eda09df2ff" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/cantor-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

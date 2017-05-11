@@ -15,7 +15,7 @@
         <PartOf>desktop.kde.utils</PartOf>
         <Summary>KDE print manager</Summary>
         <Description>KDE print tool.</Description>
-        <Archive sha1sum="bbe5a19e3b24d5366bf5a5361397d124a65d8d75" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/print-manager-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="2e6d68d67c6baf809fd92ebab33d86ee3486513b" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/print-manager-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdoctools</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

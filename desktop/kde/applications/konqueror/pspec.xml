@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>KDE File Manager and Web Browser</Summary>
         <Description>KDE File Manager and Web Browser.</Description>
-        <Archive sha1sum="326231e03c71372e14fb3131a92300c1363a1c20" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/konqueror-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="b40b3e2ce2c58975c34df4cb39f297f3bae2db80" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/konqueror-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kparts</Dependency>
             <Dependency>khtml</Dependency>
