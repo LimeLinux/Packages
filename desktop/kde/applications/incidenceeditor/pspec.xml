@@ -91,6 +91,7 @@
             <Path fileType="library">/usr/lib/qt5</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/cmake</Path>
+            <Path fileType="data">/usr/share/</Path>
         </Files>
     </Package>
 
