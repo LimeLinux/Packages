@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>The KDE5 Plasma Workspace Components</Summary>
         <Description>The KDE5 Plasma Workspace Components</Description>
-        <Archive sha1sum="256554e17dcd1843e8c04264442102c80d16aea7" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-workspace-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="450699481f6598e7f8d7ede6799367f1d8c54a0d" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-workspace-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="4.6.60">qt5-phonon</Dependency>
