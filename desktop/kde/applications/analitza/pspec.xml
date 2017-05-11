@@ -34,6 +34,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/libanalitza/</Path>
+            <Path fileType="data">/usr/share/</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/cmake</Path>
         </Files>
