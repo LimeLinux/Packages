@@ -13,7 +13,7 @@
         <IsA>app:library</IsA>
         <Summary>Google API library for KDE</Summary>
         <Description>A KDE-based library for accessing various Google services via their public API</Description>
-        <Archive sha1sum="3db52c75a5da6bb7b877b710140b0f332c15a021" type="tarxz">mirrors://kde/stable/libkgapi/5.3.1/src/libkgapi-5.3.1.tar.xz</Archive>
+        <Archive sha1sum="9c3574c19aa82ae52e96eb66526502aea2ef7451" type="targz">https://github.com/KDE/libkgapi/archive/v17.04.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kcoreaddons</Dependency>
@@ -34,7 +34,7 @@
             <Dependency>qt5-webkit</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">DateTime.patch</Patch>
+            <!--Patch level="1">DateTime.patch</Patch-->
         </Patches>
     </Source>
 
@@ -61,8 +61,8 @@
 
     <History>
         <Update release="2">
-            <Date>2016-10-12</Date>
-            <Version>5.3.1</Version>
+            <Date>2017-10-12</Date>
+            <Version>17.04.1</Version>
             <Comment>First release</Comment>
             <Name>lime Gnu/Linux Community</Name>
             <Email>admin@limelinux.com</Email>
