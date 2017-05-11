@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>A Qt/C++ wrapper around LibFace library to perform face recognition and detection over pictures</Summary>
         <Description>Libkface is a Qt/C++ library to perform face recognition and detection over pictures.This library is used by kipi-plugins, digiKam and others Kipi host programs.</Description>
-        <Archive type="targz" sha1sum="3e867a97a8ea0cfe7e9384ee12ad26a0b717dd91">mirrors://kde/stable/applications/17.04.0/src/libkface-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="3e867a97a8ea0cfe7e9384ee12ad26a0b717dd91">mirrors://kde/stable/applications/17.04.0/src/libkface-17.04.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>

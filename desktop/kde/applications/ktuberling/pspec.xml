@@ -65,6 +65,7 @@
             <Path fileType="data">/usr/share/ktuberling</Path>
             <Path fileType="data">/usr/share/kxmlgui5</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/locale/</Path>
         </Files>
     </Package>
 

@@ -47,7 +47,8 @@
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/usr/share/locale/</Path>
         </Files>
     </Package>
 
