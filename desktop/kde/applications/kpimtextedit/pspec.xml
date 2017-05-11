@@ -58,6 +58,7 @@
             <Path fileType="data">/usr/share/</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="config">/usr/lib/pkgconfig</Path>
+            <Path fileType="config">/etc/xdg/</Path>
         </Files>
     </Package>
 
