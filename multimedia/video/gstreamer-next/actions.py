@@ -16,13 +16,8 @@ def setup():
     options = '--with-package-name="GStreamer for limelinux" \
                --with-package-origin="http://www.limelinux.com" \
                --enable-nls \
-               --disable-dependency-tracking \
-               --disable-examples \
                --enable-introspection \
-               --disable-static \
-               --disable-rpath \
-               --disable-valgrind \
-               --disable-gtk-doc'
+               --disable-static'
 
     if get.buildTYPE() == "emul32":
         options += " --bindir=/usr/bin32 \
