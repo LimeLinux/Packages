@@ -80,6 +80,7 @@
             <Path fileType="library">/usr/lib/qt5</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/kservicetypes5</Path>
+            <Path fileType="data">/usr/share/</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/cmake</Path>
         </Files> 
