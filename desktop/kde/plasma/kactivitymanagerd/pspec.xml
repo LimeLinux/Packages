@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Core components for the KDE Activity concept.</Summary>
         <Description>System service to manage user's activities, track the usage patterns etc.</Description>
-        <Archive type="tarxz" sha1sum="7a2e74c0a671167f71e0d1bc4926b5ee950651bb">mirrors://kde/stable/plasma/5.9.5/kactivitymanagerd-5.9.5.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="96c8d9507451436d38eb0ef429313cd097be8eaa">mirrors://kde/stable/plasma/5.9.5/kactivitymanagerd-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>boost</Dependency>

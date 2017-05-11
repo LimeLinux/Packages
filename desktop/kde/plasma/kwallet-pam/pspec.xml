@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KWallet PAM integration.</Summary>
         <Description>KWallet PAM integration.</Description>
-        <Archive sha1sum="36134091b72cef26994f99a39a352833835f05b8" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kwallet-pam-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="c33ee52f7f33435bb05048134e9a7c27fe41fc4a" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kwallet-pam-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>pam</Dependency>

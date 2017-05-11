@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Breeze theme for GRUB.</Summary>
         <Description>Breeze theme for GRUB.</Description>
-        <Archive sha1sum="9e43c684a9634b4db877a5f021105faba2a55b23" type="tarxz">mirrors://kde/stable/plasma/5.9.5/breeze-grub-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="d336e48cb6ec6c8a3db5233a2974845dbd917bda" type="tarxz">mirrors://kde/stable/plasma/5.9.5/breeze-grub-5.9.5.tar.xz</Archive>
     </Source>
     
     <Package>

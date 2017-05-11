@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE and Plasma resources management GUI</Summary>
         <Description>KDE and Plasma resources management GUI</Description>
-        <Archive sha1sum="8e2eb29f5339442d7166535dc139ef3efad42d4c" type="tarxz">mirrors://kde/stable/plasma/5.9.5/discover-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="30de7ee8f9a7689669b9c65349481e1be3e334fe" type="tarxz">mirrors://kde/stable/plasma/5.9.5/discover-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kio</Dependency>

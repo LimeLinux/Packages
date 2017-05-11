@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 Plasma artwork</Summary>
         <Description>Artwork, styles and assets for the Breeze visual style for the Plasma Desktop</Description>
-        <Archive sha1sum="977766f2db69b3b56ae1e4529146048cb1853333" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-integration-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="ca305a773960856b006556cf23874d8594511110" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-integration-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kxmlgui</Dependency>

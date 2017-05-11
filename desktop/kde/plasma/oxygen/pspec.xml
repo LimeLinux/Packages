@@ -25,7 +25,7 @@
             <Dependency>plasma-workspace</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="2d8fc82744701c431f69f74aa38ae6e4e05b5ce5" type="tarxz">mirrors://kde/stable/plasma/5.9.5/oxygen-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="2fe91ab59395da64ddc0e8b0eab3c8df28f97b64" type="tarxz">mirrors://kde/stable/plasma/5.9.5/oxygen-5.9.5.tar.xz</Archive>
     </Source>
     <Package>
         <Name>oxygen</Name>

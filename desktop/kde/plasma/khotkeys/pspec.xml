@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 hotkey daemon</Summary>
         <Description>KDE hotkey daemon module allows you to configure custom keyboard shortcuts and mouse gestures.</Description>
-        <Archive sha1sum="ca7c2b81d830e828f8901b4b2b9a34c3a7ff1e18" type="tarxz">mirrors://kde/stable/plasma/5.9.5/khotkeys-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="b2cd4c9a3506c6f47315d44444d3647338d99f0d" type="tarxz">mirrors://kde/stable/plasma/5.9.5/khotkeys-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libX11</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>

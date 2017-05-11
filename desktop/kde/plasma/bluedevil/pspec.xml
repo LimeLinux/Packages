@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE 5 Bluetooth Stack</Summary>
         <Description>Integrate the Bluetooth technology within KDE workspace and applications</Description>
-        <Archive sha1sum="d9b0863c1ad07ba4d2032454e1ed18951c7e1771" type="tarxz">mirrors://kde/stable/plasma/5.9.5/bluedevil-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="9e9ae1f2553f9f1be8cd411d3b4c6bd2a26a97c0" type="tarxz">mirrors://kde/stable/plasma/5.9.5/bluedevil-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.4.0">qt5</Dependency>
             <Dependency>bluez-qt</Dependency>

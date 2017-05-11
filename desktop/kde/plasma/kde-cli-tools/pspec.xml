@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Additional client tools for KDE applications</Summary>
         <Description>Tools based on KDE Frameworks 5 to better interact with the system</Description>
-        <Archive sha1sum="da59f6e7554681e24995410bf3067984e4dd539c" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kde-cli-tools-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="508a86085b77eaf23524196feb41247db7b7deaf" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kde-cli-tools-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libX11</Dependency>

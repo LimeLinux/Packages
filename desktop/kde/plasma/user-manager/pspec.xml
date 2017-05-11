@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE 5 User Manager</Summary>
         <Description>User Manager within KDE workspace and applications</Description>
-        <Archive sha1sum="57d201ee7042014e7c23570684b0c3c10d147600" type="tarxz">mirrors://kde/stable/plasma/5.9.5/user-manager-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="78b558aa363a73186247d85dc64061d095899678" type="tarxz">mirrors://kde/stable/plasma/5.9.5/user-manager-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>accountsservice</Dependency>

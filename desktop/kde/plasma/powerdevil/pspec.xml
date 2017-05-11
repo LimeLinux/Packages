@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE power manager module</Summary>
         <Description>KDE Power Management module. Provides kded daemon DBus helper and KCM for configuring Power settings</Description>
-        <Archive sha1sum="1dc27ee0a1a2b59937d1cfbca986861164263fe7" type="tarxz">mirrors://kde/stable/plasma/5.9.5/powerdevil-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="ab711801f68fd30d34763114fbcfa4272c4ada00" type="tarxz">mirrors://kde/stable/plasma/5.9.5/powerdevil-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>

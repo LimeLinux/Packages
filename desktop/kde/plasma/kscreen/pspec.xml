@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Provides the interface and basic tools for the KDE workspace</Summary>
         <Description>Provides the interface and basic tools for the KDE workspace</Description>
-        <Archive sha1sum="deb25af8f5fbd76d3581461f3a4d09035b177d18" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kscreen-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="3065c53861ddd2ebc92a7453a921f3f57273fb62" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kscreen-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kglobalaccel</Dependency>

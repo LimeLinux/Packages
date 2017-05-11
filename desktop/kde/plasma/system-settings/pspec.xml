@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 system settings manager</Summary>
         <Description>System-settings is a control panel for KDE5 Plasma</Description>
-        <Archive sha1sum="bb5bd86cbd06dc537f6fcbb15ffea49d06837d91" type="tarxz">mirrors://kde/stable/plasma/5.9.5/systemsettings-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="749852554a802b4b37b30680e6ee5a83264e26ad" type="tarxz">mirrors://kde/stable/plasma/5.9.5/systemsettings-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>

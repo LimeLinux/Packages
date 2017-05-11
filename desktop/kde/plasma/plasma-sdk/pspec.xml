@@ -14,7 +14,7 @@
             <IsA>app:gui</IsA>
         <Summary>Applications useful for Plasma development</Summary>
         <Description>Applications useful for Plasma development</Description>
-        <Archive sha1sum="71032261976d00b6b472ba97677617281b021376" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-sdk-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="1bc16fddd2dbdae02f43d17742c4c1f3871b53ad" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-sdk-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>karchive</Dependency>

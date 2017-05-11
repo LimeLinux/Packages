@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Library and components for secure lock screen architecture.</Summary>
         <Description>Library and components for secure lock screen architecture.</Description>
-        <Archive sha1sum="c0dfdc01fb9c06847ac622251058ccb8a5e18d2d" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kscreenlocker-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="c2b401eebdcfbf0493556a152a3c6a61596775fa" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kscreenlocker-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kglobalaccel</Dependency>

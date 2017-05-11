@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 plasma workspace</Summary>
         <Description>This package contains the basic packages for a Plasma workspace.</Description>
-        <Archive sha1sum="21a38cee3eecdb1ba94231fe398a6b98e50c3c05" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-desktop-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="e8b6410d1de75c269b6da01aa7e43db40140625d" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-desktop-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>boost</Dependency>

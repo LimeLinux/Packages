@@ -13,7 +13,7 @@
 	<IsA>app:console</IsA>
         <Summary>Provides the interface and basic tools for the KDE workspace</Summary>
         <Description>Provides the interface and basic tools for the KDE workspace</Description>
-        <Archive sha1sum="49ceeb8dededdaa7a705f1a48ac3ac00a3005848" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kmenuedit-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="64d94578f6426da6a3519983fae8482efdb9c7c9" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kmenuedit-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>

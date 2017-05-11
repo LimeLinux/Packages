@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Adjust your monitor's gamma settings.</Summary>
         <Description>Adjust your monitor's gamma settings.</Description>
-        <Archive sha1sum="0ad0836ae223bb9718e0ecef9a91e2ebae030b2b" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kgamma5-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="4daa8e66d2f067ae6e1df5ebd64fca59bfdfe89c" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kgamma5-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>

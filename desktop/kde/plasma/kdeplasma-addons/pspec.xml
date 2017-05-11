@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Additional client tools for KDE applications</Summary>
         <Description>Additional client tools for KDE applications</Description>
-        <Archive sha1sum="2082fc9b512226082a662300b36ca4cfe8ee5af6" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kdeplasma-addons-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="a366950df40b8f31bfeb469eae9309eda2025cbb" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kdeplasma-addons-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libxcb</Dependency>

@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>GTK2 and GTK3 Configurator for KDE</Summary>
         <Description>Configuration dialog to adapt GTK+ applications appearance to your taste under KDE.</Description>
-        <Archive sha1sum="dc0f53119b077e225c0989674814560294810a80" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kde-gtk-config-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="3a831b2612bd15efce34c8425965d505aefc92d5" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kde-gtk-config-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kio</Dependency>

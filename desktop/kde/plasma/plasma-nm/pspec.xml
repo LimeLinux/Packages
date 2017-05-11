@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Plasma applet written in QML for managing network connections</Summary>
         <Description>Plasma applet written in QML for managing network connections</Description>
-        <Archive sha1sum="ecadc712e8a8a88b3055d2da9f1f9beb6209320e" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-nm-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="3a3a95074cf0ed4c31420d8a4c77e19f631cfa26" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-nm-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>

@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 info center</Summary>
         <Description>KDE5 Utility that provides information about a computer system. </Description>
-        <Archive sha1sum="0b99089abd51f825643668c4075376db8bf04f9c" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kinfocenter-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="ef3450c2abbf1cd9835797b12f620e0380bfdff1" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kinfocenter-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kcmutils</Dependency>
             <Dependency>kcompletion</Dependency>

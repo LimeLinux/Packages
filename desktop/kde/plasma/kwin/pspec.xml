@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 window manager</Summary>
         <Description>KWin is the window manager of the K desktop environment.</Description>
-        <Archive sha1sum="ada131a6f06a2fb43c829cbb0174a0795d77d4b1" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kwin-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="95ea1f36107cff149d3b3a919621d44fc2e1a924" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kwin-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kactivities</Dependency>
             <Dependency>kauth</Dependency>

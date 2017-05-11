@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Breeze theme for Plymouth.</Summary>
         <Description>Breeze theme for Plymouth.</Description>
-        <Archive type="tarxz" sha1sum="40ad8a7e0b6039c56f4e3fcd8bd7278f938da794">mirrors://kde/stable/plasma/5.9.5/breeze-plymouth-5.9.5.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="0fc539cbdf733a3bba27a91a31c7a02b1da4decc">mirrors://kde/stable/plasma/5.9.5/breeze-plymouth-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>plymouth</Dependency>

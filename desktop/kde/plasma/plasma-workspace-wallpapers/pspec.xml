@@ -14,7 +14,7 @@
             <IsA>app:gui</IsA>
         <Summary>The KDE Plasma Workspace Components</Summary>
         <Description>The KDE Plasma Workspace Components</Description>
-        <Archive sha1sum="5d7c2e16ff9e21766559c4996417852469160607" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-workspace-wallpapers-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="256554e17dcd1843e8c04264442102c80d16aea7" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-workspace-wallpapers-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>

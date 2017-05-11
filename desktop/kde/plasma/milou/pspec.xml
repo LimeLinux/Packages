@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDedicated search application built on top of Baloo</Summary>
         <Description>Dedicated search application built on top of Baloo</Description>
-        <Archive sha1sum="c32ad452ce727378a99a271012503a5e2101d473" type="tarxz">mirrors://kde/stable/plasma/5.9.5/milou-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="33941e556f4927fa50e40fa450704412be268ccf" type="tarxz">mirrors://kde/stable/plasma/5.9.5/milou-5.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>
