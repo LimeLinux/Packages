@@ -44,6 +44,7 @@
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/libkgeomap</Path>
+            <Path fileType="data">/usr/share/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="header">/usr/include</Path>
         </Files>

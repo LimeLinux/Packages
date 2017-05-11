@@ -64,6 +64,7 @@
             <Path fileType="data">/usr/share/krfb</Path>
             <Path fileType="data">/usr/share/kservicetypes5</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/</Path>
         </Files>
     </Package>
 
