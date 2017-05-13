@@ -27,13 +27,13 @@
             <Dependency>perl-XML-Parser</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>popt</Dependency>
-            <!--Dependency>poppler-glib</Dependency>
+            <Dependency>poppler</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libwpd</Dependency>
             <Dependency>librevenge</Dependency>
             <Dependency>libcdr</Dependency>
             <Dependency>libvisio</Dependency>
-            <Dependency>libwpg</Dependency-->
+            <Dependency>libwpg</Dependency>
             <Dependency>poppler</Dependency>
             <Dependency>aspell</Dependency>
             <Dependency>gsl</Dependency>
@@ -83,13 +83,13 @@
             <Dependency>perl-XML-Parser</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>popt</Dependency>
-            <!--Dependency>poppler-glib</Dependency>
+            <Dependency>poppler</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libwpd</Dependency>
             <Dependency>librevenge</Dependency>
             <Dependency>libcdr</Dependency>
             <Dependency>libvisio</Dependency>
-            <Dependency>libwpg</Dependency-->
+            <Dependency>libwpg</Dependency>
             <Dependency>poppler</Dependency>
             <Dependency>aspell</Dependency>
             <Dependency>gsl</Dependency>
@@ -137,14 +137,7 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-12-21</Date>
-            <Version>0.92.1</Version>
-            <Comment>Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="1">
+        <Update release="3">
             <Date>2017-12-21</Date>
             <Version>0.92.1</Version>
             <Comment>First Release</Comment>
