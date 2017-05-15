@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>GraphicsMagick</Name>
+        <Homepage>http://www.graphicsmagick.org</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>GraphicsMagick Image Processing System</Summary>
+        <Description>GraphicsMagick is a comprehensive image processing package which is initially based on ImageMagick 5.5.2, but which has undergone significant re-work by the GraphicsMagick Group to significantly improve the quality and performance of the software.</Description>
+        <Archive sha1sum="0dcf4c1f6f3ead29147ea0392a148ce50cd64bb4" type="tarxz">https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick/1.3.25/GraphicsMagick-1.3.25.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>tiff</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libwmf</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>jbigkit</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>          
+            <Dependency>ghostscript</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>xz</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">GraphicsMagick-1.3.14-perl_linkage.patch</Patch>
+            <Patch level="1">GraphicsMagick-1.3.16-multilib.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>GraphicsMagick</Name>
+        <IsA>app:console</IsA>
+        <RuntimeDependencies>
+            <Dependency>tiff</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>libwmf</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>jbigkit</Dependency>
+            <Dependency>ghostscript</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libtool</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin/gm</Path>
+            <Path fileType="library">/usr/lib/GraphicsMagick-*</Path>
+            <Path fileType="library">/usr/lib/lib*</Path>
+            <Path fileType="data">/usr/share/GraphicsMagick-*</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin/*-config</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc/GraphicsMagick/www</Path>
+            <Path fileType="man">/usr/share/man/man1/*-config.*</Path>
+            <Path fileType="library">/usr/lib/perl5</Path>
+            <Path fileType="doc">/usr/share/doc/PerlMagick</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2017-04-13</Date>
+            <Version>1.3.25</Version>
+            <Comment>Frist Release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

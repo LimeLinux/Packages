@@ -28,6 +28,7 @@
             <Dependency>kfilemetadata</Dependency>
             <Dependency>libv4l</Dependency>
             <Dependency>kio</Dependency>
+            <Dependency>mlt</Dependency>
             <Dependency>ffmpeg</Dependency>
             <Dependency>sdl-image</Dependency>
             <Dependency>kwidgetsaddons</Dependency>
@@ -46,6 +47,7 @@
     <Package>
         <Name>kdenlive</Name>
         <RuntimeDependencies>
+            <Dependency>mlt</Dependency>
             <Dependency>kio</Dependency>
             <Dependency>cdrkit</Dependency>
             <Dependency>ki18n</Dependency>
