@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xdg-user-dirs-gtk</Name>
+        <Homepage>https://www.gnome.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Creates user dirs and asks to relocalize them</Summary>
+        <Description>Creates user dirs and asks to relocalize them</Description>
+        <Archive sha1sum="7af51ac84ca269377a9699482e43a03b87d4277c" type="tarxz">mirrors://gnome/xdg-user-dirs-gtk/0.10/xdg-user-dirs-gtk-0.10.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>xdg-user-dirs</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>gtk3</Dependency>
+            </BuildDependencies>
+        <Patches>
+            <Patch level="1">show-in-mate.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>xdg-user-dirs-gtk</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/etc/xdg/</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2016-07-26</Date>
+            <Version>0.10</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
