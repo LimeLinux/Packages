@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A tool to display dialog boxes from shell scripts</Summary>
         <Description>A tool to display dialog boxes from shell scripts</Description>
-        <Archive sha1sum="6c3282f6b8ef9e942c5a169ff93fb14ad80bddc4" type="targz">ftp://invisible-island.net/dialog/dialog.tar.gz</Archive>
+        <Archive sha1sum="b576b64d0a780186b26a606bd5fb132eeda0825f" type="targz">ftp://invisible-island.net/dialog/dialog.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -37,9 +37,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>5.2</Version>
+        <Update release="2">
+            <Date>2017-05-21</Date>
+            <Version>5.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

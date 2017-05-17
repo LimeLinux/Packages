@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Userland logical volume management tools</Summary>
         <Description>LVM2 includes all of the support for handling read/write operations physical and logical volumes.</Description>
-        <Archive sha1sum="571f9c4e1e97c30979ae7988c66d4a7c2ed3a809" type="targz">ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.170.tgz</Archive>
+        <Archive sha1sum="134498350084fe1371e48e1bdcf558913a112a78" type="targz">ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.171.tgz</Archive>
         <BuildDependencies>
             <Dependency>util-linux</Dependency>
         </BuildDependencies>
@@ -45,9 +45,9 @@
 
 
     <History>
-        <Update release="3">
+        <Update release="2">
             <Date>2017-04-17</Date>
-            <Version>2.02.170</Version>
+            <Version>2.02.171</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
