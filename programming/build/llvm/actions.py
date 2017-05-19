@@ -1,6 +1,8 @@
 
 # -*- coding: utf-8 -*-
 #
+# Lime GNU/Linux 2017
+#
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/licenses/gpl.txt
 
@@ -9,6 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 from pisi.actionsapi import cmaketools
+
 
 libdir = "/usr/lib32/llvm" if get.buildTYPE() == "emul32" else "/usr/lib/llvm"
 lib = "lib32" if get.buildTYPE() == "emul32" else "lib"
@@ -21,10 +24,16 @@ def setup():
                 shelltools.move("tools/cfe-%s.src" % get.srcVERSION(), "tools/clang")
 
                 shelltools.system("tar xf ../clang-tools-extra-%s.src.tar.xz -C tools" % get.srcVERSION())
-                shelltools.move("tools/clang-tools-extra-*", "tools/clang/extra")
+                shelltools.move("tools/clang-tools-extra-*", "tools/clang/tools/extra")
+                shelltools.system("patch -p1 -d tools/clang/tools/extra < 0002-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch")
                 
-            #    shelltools.system("tar xf ../lldb-%s.src.tar.xz -C tools" % get.srcVERSION())
-             #   shelltools.move("tools/lldb-*", "tools/lldb")
+                shelltools.system("tar xf ../lld-%s.src.tar.xz -C tools" % get.srcVERSION())
+                shelltools.move("tools/lld-*", "tools/lld")
+                shelltools.system("patch -p1 -d tools/lld < 0003-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch")
+
+                shelltools.system("tar xf ../lldb-%s.src.tar.xz -C tools" % get.srcVERSION())
+                shelltools.move("tools/lldb-*", "tools/lldb")
+
 
             if not shelltools.can_access_directory("projects/compiler-rt"):
                 shelltools.system("tar xf ../compiler-rt-%s.src.tar.xz -C projects" % get.srcVERSION())
@@ -46,7 +55,7 @@ def setup():
     
     if get.buildTYPE() != "emul32":
         options = "-DCMAKE_C_FLAGS:STRING=-m64 \
-                              -DCMAKE_INSTALL_PREFIX=/usr \
+                            -DCMAKE_INSTALL_PREFIX=/usr \
                             -DCMAKE_CXX_FLAGS:STRING=-m64 \
                             -DLLVM_TARGET_ARCH:STRING=x86_64 \
                             -DLLVM_DEFAULT_TARGET_TRIPLE=%s " % get.HOST()
@@ -64,23 +73,34 @@ def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=Release \
                                         %s \
                                         -DLLVM_ENABLE_FFI=ON \
-                                        -DLLVM_BUILD_DOCS=OFF \
-                                        -DBUILD_SHARED_LIBS=ON \
+                                        -DLLVM_BUILD_LLVM_DYLIB=ON \
+                                        -DLLVM_LINK_LLVM_DYLIB=ON \
+                                        -DLLVM_INSTALL_UTILS=ON \
                                         -DLLVM_ENABLE_RTTI=ON \
+                                        -DLLVM_ENABLE_FFI=ON \
+                                        -DLLVM_BUILD_TESTS=ON \
+                                        -DLLVM_BUILD_DOCS=ON \
                                         -DLLVM_INCLUDEDIR=/usr/include \
                                         -DLLVM_ENABLE_ASSERTIONS=OFF \
                                         -DFFI_INCLUDE_DIR=/usr/lib/libffi-3.2.1/include \
-                                        -DENABLE_SHARED=ON" % options, sourceDir=".." ) 
+                                        -DENABLE_SHARED=ON" % options, sourceDir=".." )  
 
 def build():
     shelltools.cd("build")
 
     cmaketools.make()
 
+
+def check():
+    shelltools.cd("build")
+
+    cmaketools.make("check-{llvm,clang,clang-tools,lld}")
+
 def install():
     shelltools.cd("build")
     
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+    
     
     if get.buildTYPE() == "emul32":
         

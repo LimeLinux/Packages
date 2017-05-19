@@ -16,6 +16,12 @@
        <Archive sha1sum="e2762800c93d9335781ea6a45af3f80845542ef5" type="binary">http://llvm.org/releases/4.0.0/cfe-4.0.0.src.tar.xz</Archive>
        <Archive sha1sum="bdb543c4bb87bd80fe65711114ca0a5c25329ae3" type="binary">http://llvm.org/releases/4.0.0/clang-tools-extra-4.0.0.src.tar.xz</Archive>
        <Archive sha1sum="a879b610e427ef3bba482bdc031ae371cabab81e" type="binary">http://llvm.org/releases/4.0.0/compiler-rt-4.0.0.src.tar.xz</Archive>
+       <Archive sha1sum="2ec36514d742df3e1151814cba4546cdda597fd8" type="binary">http://llvm.org/releases/4.0.0/lld-4.0.0.src.tar.xz</Archive> 
+       <Archive sha1sum="da78ed1453a5e62ff058bebf0cd91c8f51ec5504" type="binary">http://llvm.org/releases/4.0.0/lldb-4.0.0.src.tar.xz</Archive>  
+       <AdditionalFiles>
+            <AdditionalFile target="0002-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch">0002-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch</AdditionalFile>
+            <AdditionalFile target="0003-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch">0003-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch</AdditionalFile>
+        </AdditionalFiles>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>libxml2</Dependency>
@@ -28,6 +34,10 @@
             <Dependency>cmake</Dependency>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">0001-AMDGPU-Fix-bug-31610.patch</Patch>
+            <Patch level="1">0001-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch</Patch>
+        </Patches>
     </Source>
 
      <Package>
