@@ -25,11 +25,11 @@ def setup():
 
                 shelltools.system("tar xf ../clang-tools-extra-%s.src.tar.xz -C tools" % get.srcVERSION())
                 shelltools.move("tools/clang-tools-extra-*", "tools/clang/tools/extra")
-                shelltools.system("patch -p1 -d tools/clang/tools/extra < 0002-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch")
+                #shelltools.system("patch -p1 -d tools/clang/tools/extra < 0002-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch")
                 
                 shelltools.system("tar xf ../lld-%s.src.tar.xz -C tools" % get.srcVERSION())
                 shelltools.move("tools/lld-*", "tools/lld")
-                shelltools.system("patch -p1 -d tools/lld < 0003-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch")
+                #shelltools.system("patch -p1 -d tools/lld < 0003-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch")
 
                 shelltools.system("tar xf ../lldb-%s.src.tar.xz -C tools" % get.srcVERSION())
                 shelltools.move("tools/lldb-*", "tools/lldb")
@@ -73,13 +73,9 @@ def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=Release \
                                         %s \
                                         -DLLVM_ENABLE_FFI=ON \
-                                        -DLLVM_BUILD_LLVM_DYLIB=ON \
-                                        -DLLVM_LINK_LLVM_DYLIB=ON \
-                                        -DLLVM_INSTALL_UTILS=ON \
+                                        -DLLVM_BUILD_DOCS=OFF \
+                                        -DBUILD_SHARED_LIBS=ON \
                                         -DLLVM_ENABLE_RTTI=ON \
-                                        -DLLVM_ENABLE_FFI=ON \
-                                        -DLLVM_BUILD_TESTS=ON \
-                                        -DLLVM_BUILD_DOCS=ON \
                                         -DLLVM_INCLUDEDIR=/usr/include \
                                         -DLLVM_ENABLE_ASSERTIONS=OFF \
                                         -DFFI_INCLUDE_DIR=/usr/lib/libffi-3.2.1/include \

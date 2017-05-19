@@ -36,7 +36,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001-AMDGPU-Fix-bug-31610.patch</Patch>
-            <Patch level="1">0001-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch</Patch>
+            <!--Patch level="1">0001-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch</Patch-->
         </Patches>
     </Source>
 
@@ -86,6 +86,8 @@
             <Path fileType="library">/usr/lib/libLTO.*</Path>
             <Path fileType="library">/usr/lib/bfd-plugins/LLVMgold.so</Path>
             <Path fileType="data">/usr/share/licenses/llvm-libs/LICENSE</Path>
+            <Path fileType="header">/usr/include/lld/</Path>
+            <Path fileType="header">/usr/include/lldb/</Path>
         </Files>
     </Package>
     
@@ -130,8 +132,8 @@
 
 
     <History>
-        <Update release="3">
-            <Date>2017-04-21</Date>
+        <Update release="4">
+            <Date>2017-05-21</Date>
             <Version>4.0.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>

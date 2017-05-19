@@ -9,41 +9,18 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-#WorkDir = "mozilla-release"
+
 ObjDir = "build"
-#locales = "en-US tr".split()
-locales = "az bs ca  da  de  el  en-US en-GB en-ZA  es-AR  es-CL  es-ES  fi  fr  hr  hu  it  lt nl  pl  pt-BR  pt-PT  ro  ru  sr  sv-SE  tr  uk".split()
-xpidir = "%s/xpi" % get.workDIR()
 arch = get.ARCH()
-ver = ".".join(get.srcVERSION().split(".")[:3])
 
 shelltools.export("SHELL", "/bin/sh")
 
 def setup():
-    shelltools.export("LC_ALL", "C")
-
-    # Google API key
-    shelltools.echo("google_api_key", "AIzaSyBINKL31ZYd8W5byPuwTXYK6cEyoceGh6Y")
-    shelltools.echo("mozilla-api-key", "16674381-f021-49de-8622-3021c5942aff")
-    pisitools.dosed(".mozconfig", "%%PWD%%", get.curDIR())
-    pisitools.dosed(".mozconfig", "%%FILE%%", "google_api_key")
-    pisitools.dosed(".mozconfig", "%%FILE%%", "mozilla-api-key")
     pisitools.dosed(".mozconfig", "##JOBCOUNT##", get.makeJOBS())
-
-    # LOCALE
-    shelltools.system("rm -rf langpack-ff/*/browser/defaults")
-    if not shelltools.isDirectory(xpidir): shelltools.makedirs(xpidir)
-    for locale in locales:
-        shelltools.system("wget -c -P %s http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%s/linux-%s/xpi/%s.xpi" % (xpidir, ver, arch, locale))
-        shelltools.makedirs("langpack-ff/langpack-%s@firefox.mozilla.org" % locale)
-        shelltools.system("unzip -uo %s/%s.xpi -d langpack-ff/langpack-%s@firefox.mozilla.org" % (xpidir, locale, locale))
-        print "Replacing browser.properties for %s locale" % locale
-        shelltools.copy("browserconfig.properties", "langpack-ff/langpack-%s@firefox.mozilla.org/browser/chrome/%s/locale/branding/" % (locale, locale))
-        shelltools.copy("browserconfig.properties", "browser/branding/official/locales/")
-
     shelltools.makedirs(ObjDir)
     shelltools.cd(ObjDir)
-    shelltools.system("../configure --prefix=/usr --libdir=/usr/lib --disable-strip --disable-install-strip")
+    shelltools.system("../configure --prefix=/usr --libdir=/usr/lib ")
+
     
 
 def build():
@@ -54,7 +31,7 @@ def install():
     autotools.rawInstall("-f client.mk DESTDIR=%s INSTALL_SDK= install" % get.installDIR())
 
     # Install language packs
-    pisitools.insinto("/usr/lib/firefox/browser/extensions", "./langpack-ff/*")
+    pisitools.insinto("/usr/lib/firefox/browser/extensions", "./lang_pack/*")
 
     # Create profile dir, we'll copy bookmarks.html in post-install script
     pisitools.dodir("/usr/lib/firefox/browser/defaults/profile")
