@@ -19,13 +19,14 @@ def setup():
 
 
 
-    #autotools.autoreconf("-vif")
+    autotools.autoreconf("-vif")
     autotools.configure(options)
 
     pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared ")
 
 def build():
     autotools.make()
+
 
 
 def install():

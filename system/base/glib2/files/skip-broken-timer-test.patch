@@ -1,0 +1,15 @@
+# Lime GNU/Linux 2017
+# poyraz76@limelinux.com
+
+--- /glib/tests/Makefile.am.orig	2017-02-13 18:53:27.000000000 +0300
++++ /glib/tests/Makefile.am	2017-05-18 20:26:29.944311554 +0300
+@@ -105,8 +105,6 @@ test_programs = \
+ 	testing				\
+ 	test-printf			\
+ 	thread				\
+-	timeout				\
+-	timer				\
+ 	tree				\
+ 	utf8-performance		\
+ 	utf8-pointer	
+
