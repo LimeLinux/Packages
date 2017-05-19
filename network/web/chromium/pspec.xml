@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A WebKit powered web browser</Summary>
         <Description>Chromium-browser is an open-source web browser, powered by WebKit.</Description>
-        <Archive sha1sum="76a3c7ef3a90c0eebe22be3ba5af69366af60f48" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-58.0.3029.81.tar.xz</Archive>
+        <Archive sha1sum="733c6dc62aa1d18858bbf48215eecec639d6b59f" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-60.0.3100.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>at-spi2-atk</Dependency>
@@ -154,9 +154,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-04-21</Date>
-            <Version>58.0.3029.81</Version>
+        <Update release="4">
+            <Date>2017-05-18</Date>
+            <Version>60.0.3100.0</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

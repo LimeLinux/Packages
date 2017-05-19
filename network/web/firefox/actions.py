@@ -20,10 +20,14 @@ ver = ".".join(get.srcVERSION().split(".")[:3])
 shelltools.export("SHELL", "/bin/sh")
 
 def setup():
+    shelltools.export("LC_ALL", "C")
+
     # Google API key
     shelltools.echo("google_api_key", "AIzaSyBINKL31ZYd8W5byPuwTXYK6cEyoceGh6Y")
+    shelltools.echo("mozilla-api-key", "16674381-f021-49de-8622-3021c5942aff")
     pisitools.dosed(".mozconfig", "%%PWD%%", get.curDIR())
     pisitools.dosed(".mozconfig", "%%FILE%%", "google_api_key")
+    pisitools.dosed(".mozconfig", "%%FILE%%", "mozilla-api-key")
     pisitools.dosed(".mozconfig", "##JOBCOUNT##", get.makeJOBS())
 
     # LOCALE
