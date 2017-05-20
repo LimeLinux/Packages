@@ -90,6 +90,7 @@
             <Patch level="1">chromium-widevine.patch</Patch>
             <Patch level="1">chromium-gn-bootstrap-r2.patch</Patch>
             <Patch level="1">chromium-system-ffmpeg-r4.patch</Patch>
+            <Patch level="1">Fix-build-with system-libwebp.patch</Patch>
         </Patches>
     </Source>
     <Package>

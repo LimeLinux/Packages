@@ -1,0 +1,11 @@
+diff --git a/build/linux/unbundle/libwebp.gn b/build/linux/unbundle/libwebp.gn
+index 217911167b95466b4a64790f4cff7449da4a7253..dd71f867845cf14bf19d4b0b56ab8787989b37be 100644
+--- a/build/linux/unbundle/libwebp.gn
++++ b/build/linux/unbundle/libwebp.gn
+@@ -6,5 +6,6 @@ source_set("libwebp") {
+   libs = [
+     "webp",
+     "webpdemux",
++    "webpmux",
+   ]
+ }
