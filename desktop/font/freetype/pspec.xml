@@ -14,12 +14,17 @@
         <IsA>library</IsA>
         <Summary>A high-quality and portable font engine</Summary>
         <Description>FreeType 2 is a software font engine that is designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output. It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.</Description>
-        <Archive sha1sum="5db38ae2308c5a2c519c8e071e98b70d61585201" type="tarbz2">mirrors://sourceforge/freetype/freetype-2.6.5.tar.bz2</Archive>
+        <Archive sha1sum="42c6b1f733fe13a3eba135f5025b22cb68450f91" type="tarbz2">mirrors://sourceforge/freetype/freetype-2.8.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>bzip2</Dependency>
             <Dependency>libpng</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">0001-modules-Enable-gxvalid-otvalid.patch</Patch>
+            <Patch level="1">0002-config-Enabel-subpixel-rendering-infinality-engine.patch</Patch>
+            <Patch level="1">0003-truetype-Only-enable-subpixel-rendering-when-a-speci.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -40,9 +45,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.6.5</Version>
+        <Update release="2">
+            <Date>2017-05-21</Date>
+            <Version>2.8</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
