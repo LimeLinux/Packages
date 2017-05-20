@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>Common Unix Printing System</Summary>
         <Description>cups provides a portable printing layer for *nix-based operating systems.</Description>
-        <Archive sha1sum="3de556237dcb7c9f3df0eb853a53cb93e1879a8f" type="tarbz2">http://www.cups.org/software/2.0.3/cups-2.0.3-source.tar.bz2</Archive>
+        <Archive sha1sum="599decf9dfa6ce992653895583a89ae89ff8123c" type="targz">https://github.com/apple/cups/archive/v2.2.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -47,14 +47,18 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/pam.d/cups">cups.pam</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/logrotate.d/cups">cups.logrotate</AdditionalFile>
+            <!--AdditionalFile owner="root" permission="0755" target="/etc/init.d/cupsd">cupsd</AdditionalFile-->
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
     </Package>
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.0.3</Version>
+        <Update release="2">
+            <Date>2017-05-21</Date>
+            <Version>2.2.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
