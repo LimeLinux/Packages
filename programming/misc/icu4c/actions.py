@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
+# Lime GNU/Linux 2017
+#
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/licenses/gpl.txt
 
@@ -12,19 +14,17 @@ from pisi.actionsapi import shelltools
 WorkDir="icu/source"
 
 def setup():
-    autotools.autoconf("-f")
-    options = "--with-data-packaging=library \
-               --disable-samples \
-               --disable-silent-rules"
+    autotools.configure("--with-data-packaging=library")
 
-    autotools.configure(options)
-    pisitools.dosed("config/mh-linux", "-nodefaultlibs -nostdlib")
 
 def build():
     autotools.make()
 
+def check():
+    autotools.make("-k check")
+
 
 def install():
-    autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
+    autotools.rawInstall('-j1 DESTDIR="%s"' % get.installDIR())
 
     pisitools.dohtml("../*.html")
