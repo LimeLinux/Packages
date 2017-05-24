@@ -50,7 +50,7 @@
         <Patches>
             <Patch level="1">install-minibrowser.patch</Patch>
             <Patch>webkitgtk-2.4.9-abs.patch</Patch>
-            <!--<Patch>webkitgtk-2.4.8-gmutexlocker.patch</Patch>-->
+            <Patch>icu59.patch</Patch>
         </Patches>
     </Source>
 
