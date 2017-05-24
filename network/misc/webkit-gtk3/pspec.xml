@@ -49,7 +49,7 @@
         <Patches>
             <Patch level="1">install-minibrowser.patch</Patch>
             <Patch>webkitgtk-2.4.9-abs.patch</Patch>
-            <!--<Patch>webkitgtk-2.4.8-gmutexlocker.patch</Patch>-->
+            <Patch>icu59.patch</Patch>
         </Patches>
     </Source>
 
@@ -105,7 +105,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2016-06-18</Date>
             <Version>2.4.11</Version>
             <Comment>First release</Comment>
