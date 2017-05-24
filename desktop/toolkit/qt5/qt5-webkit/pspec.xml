@@ -44,6 +44,9 @@
             <Dependency>gstreamer-next</Dependency>
             <Dependency>gst-plugins-base-next</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">icu59.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

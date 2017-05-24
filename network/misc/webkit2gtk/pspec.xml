@@ -1,4 +1,3 @@
-
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
@@ -15,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>An opensource web browser engine for GTK+ applications</Summary>
         <Description>The GTK+ port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ UI toolkit on platforms like Linux.</Description>
-        <Archive sha1sum="b5e67ce3f01cdb6d2e202df423794ee228321612" type="tarxz">https://www.webkitgtk.org/releases/webkitgtk-2.15.2.tar.xz</Archive>
+        <Archive sha1sum="076cd31c5c4ab7239ae770d8c8355c4cdebdeedc" type="tarxz">https://www.webkitgtk.org/releases/webkitgtk-2.16.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mesa</Dependency>
             <Dependency>gtk-doc</Dependency>
@@ -48,7 +47,7 @@
             <Dependency>libSM</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch>webkitgtk-2.4.8-gcc5.patch</Patch>-->
+            <Patch>icu59.patch</Patch>
             <!--<Patch>webkitgtk-2.4.8-gmutexlocker.patch</Patch>-->
         </Patches>
     </Source>
@@ -105,9 +104,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-06-18</Date>
-            <Version>2.15.2</Version>
+        <Update release="2">
+            <Date>2017-05-21</Date>
+            <Version>2.16.2</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
