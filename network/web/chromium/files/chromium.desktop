@@ -6,7 +6,7 @@ GenericName=Web Browser
 GenericName[tr]=Web Tarayıcı
 Comment=Access the Internet
 Comment[tr]=İnternet'e erişin
-Exec=chromium %U  --ppapi-flash-path=/usr/lib/chromium/PepperFlash/libpepflashplayer.so --ppapi-flash-version=$version
+Exec=chromium %U  --ppapi-flash-path=/usr/lib/chromium/PepperFlash/libpepflashplayer.so --ppapi-flash-version=25.0.0.171
 Terminal=false
 Icon=chromium
 Type=Application
