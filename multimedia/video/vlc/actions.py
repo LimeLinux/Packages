@@ -28,7 +28,7 @@ def setup():
                             --with-x \
                               LUAC=luac  LUA_LIBS='`pkg-config --libs lua`' \
                               RCC=/usr/bin/rcc \
-                            --enable-ncurses \
+                            --disable-ncurses \
                             --enable-a52 \
                             --enable-aa \
                             --enable-alsa \
@@ -36,7 +36,7 @@ def setup():
                             --enable-dbus \
                             --enable-dca \
                             --enable-dvbpsi \
-                             --enable-faad \
+                            --enable-faad \
                             --enable-fast-install \
                             --enable-flac \
                             --enable-freetype \
