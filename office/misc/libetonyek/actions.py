@@ -13,6 +13,8 @@ def setup():
     shelltools.system("./autogen.sh")
     autotools.configure()
 
+def build():
+    autotools.make()
 
 def check():
     autotools.make()
