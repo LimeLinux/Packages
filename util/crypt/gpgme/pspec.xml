@@ -36,14 +36,15 @@
             <Path fileType="data">/usr/share/common-lisp</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="info">/usr/share/info</Path>
-            <Path fileType="header">/usr/include</Path>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="header">/usr/include/gpgme</Path>
             <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
 
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-26</Date>
             <Version>1.8.0</Version>
             <Comment>Version bump.</Comment>
