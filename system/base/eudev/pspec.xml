@@ -12,14 +12,14 @@
         <License>GPLv2</License>
         <Summary>eudev is a fork of system-udev</Summary>
         <Description>eudev is a fork of system-udev with the goal of obtaining better compatibility with existing software such as OpenRC and Upstart, older kernels, various toolchains and anything else required by users and various distributions.</Description>
-        <Archive sha1sum="978c4b828cdb053d08ccd7f282aa2c2ebe27eabf" type="targz">https://dev.gentoo.org/~blueness/eudev/eudev-3.2.1.tar.gz</Archive>
+        <Archive sha1sum="240d7b589ef1da1bb85a950f919e826239363350" type="targz">https://dev.gentoo.org/~blueness/eudev/eudev-3.2.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>util-linux</Dependency>
             <Dependency>libpcre</Dependency>
             <Dependency>libxslt</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">eudev-fix-new-gperf.patch</Patch>
+            <Patch level="1">eudev-fix-disk-by-id.patch</Patch>
         </Patches>
     </Source>
 
@@ -44,7 +44,7 @@
             <Path fileType="executable">/lib/udev</Path>
             <Path fileType="library">/lib</Path>
             <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="header">/usr/include/</Path>
+	        <Path fileType="header">/usr/include/</Path>
             <Path fileType="config">/etc</Path>
             <Path fileType="config">/usr/lib/tmpfiles.d/udev.conf</Path>
             <Path fileType="data">/run/udev</Path>
@@ -64,6 +64,13 @@
     
 
     <History>
+        <Update release="3">
+            <Date>2017-12-21</Date>
+            <Version>3.2.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
         <Update release="2">
             <Date>2017-12-21</Date>
             <Version>3.2.1</Version>

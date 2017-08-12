@@ -2,7 +2,7 @@
 import os
 
 
-KernelVersion = "4.9.18"
+KernelVersion = "4.9.40"
 
 def postInstall(fromVersion, fromRelease, toVersion, toRelease):
     gcf = "/boot/grub2/grub.cfg"
@@ -11,6 +11,7 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
 
     os.environ["PATH"] = "/usr/sbin:/usr/bin:/sbin:/bin"
     os.system("grub2-mkconfig -o %s" % gcf)
+    os.system("mkinitcpio -p linux")
 
     # Must run depmod to keep the modules up to date
     os.system("/sbin/depmod %s" % KernelVersion)

@@ -34,9 +34,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-04-20</Date>
-            <Version>20170420</Version>
+        <Update release="3">
+            <Date>2017-08-20</Date>
+            <Version>20170622</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
