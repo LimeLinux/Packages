@@ -11,9 +11,9 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>kernel</IsA>
-        <Summary>The Linux kernel (the core of the Linux operating system) for Pisi Linux</Summary>
+        <Summary>The Linux kernel (the core of the Linux operating system) for Lime Linux</Summary>
         <Description>kernel contains the Linux kernel, the core of any Linux operating system. The kernel handles the basic functions of the operating system: memory allocation, process allocation, device input and output, etc.</Description>
-        <Archive sha1sum="f25c65c5966ed39ba1f59f69fda9f9e38d56024f" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.18.tar.gz</Archive>
+        <Archive sha1sum="bf00137fec2eb27d84f7fdd3637b6f80715a4c6c" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.40.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="configs/kernel-i686-config">configs/kernel-i686-config</AdditionalFile>
             <AdditionalFile target="configs/kernel-x86_64-config">configs/kernel-x86_64-config</AdditionalFile>
@@ -76,6 +76,16 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2017-03-27</Date>
+            <Version>4.9.40</Version>
+            <Comment>Update to Latest Stable Kernel Release</Comment>
+            <Requires>
+                <Action package="kernel">systemRestart</Action>
+            </Requires>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@limelinux.com</Email>
+        </Update>
         <Update release="4">
             <Date>2017-03-27</Date>
             <Version>4.9.18</Version>
