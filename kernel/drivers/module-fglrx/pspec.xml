@@ -12,7 +12,7 @@
         <License>ATI</License>
         <Summary>ATI display drivers.</Summary>
         <Description>Fglrx is a driver written by AMD(ATI) for ATI graphics cards.Radeons HD 2 3 4 X series are not supported</Description>
-        <Archive sha1sum="bcf684e8f7545473bc724bad0e72d9b06de84a9f" type="binary">https://sourceforge.net/projects/limeteam/files/source-limelinux/amd-driver-installer-15.302-x86.x86_64.run</Archive>
+        <Archive sha1sum="bcf684e8f7545473bc724bad0e72d9b06de84a9f" type="binary">https://sourceforge.net/projects/limeteam/files/source-limelinux/amd-driver-installer-15.302-x86.x86_64.run-</Archive>
         <AdditionalFiles>
             <AdditionalFile target="LICENSE.TXT">LICENSE.TXT</AdditionalFile>
             <AdditionalFile target="fglrx_kernel_4.9.patch">fglrx_kernel_4.9.patch</AdditionalFile><!--support kernel 4.x-->
