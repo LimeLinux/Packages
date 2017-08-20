@@ -13,17 +13,17 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 daemon</Summary>
         <Description>Kded runs in the background and performs a number of small tasks.</Description>
-        <Archive sha1sum="f910142ce9b20ada7c1ce392721c80fa86ebdd09" type="tarxz">mirrors://kde/stable/frameworks/5.33/kded-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="6ae49a6fe6cf120692a743a9714fdff0e69df879" type="tarxz">mirrors://kde/stable/frameworks/5.37/kded-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-			<Dependency>extra-cmake-modules</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kcrash</Dependency>
-            <Dependency>kdbusaddons</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kservice</Dependency>
+			<Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kcrash</Dependency>
+            <Dependency versionFrom="5.37.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.37.0">kinit</Dependency>
+            <Dependency versionFrom="5.37.0">kservice</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -32,11 +32,11 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kcrash</Dependency>
-            <Dependency>kdbusaddons</Dependency>
-            <Dependency>kservice</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kcrash</Dependency>
+            <Dependency versionFrom="5.37.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kservice</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -51,9 +51,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

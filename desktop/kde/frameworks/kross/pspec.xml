@@ -12,19 +12,19 @@
         <IsA>library</IsA>
         <Summary>KDE5 application scripting helper</Summary>
         <Description>Kross is a scripting bridge to embed scripting functionality into an application. It supports QtScript as a scripting interpreter backend.</Description>
-        <Archive sha1sum="e87ce59e306182f19bba51813993f31ed7527f33" type="tarxz">mirrors://kde/stable/frameworks/5.33/portingAids/kross-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="405969153c4b087cb66d835d25567f0d951b93a8" type="tarxz">mirrors://kde/stable/frameworks/5.37/portingAids/kross-5.37.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kparts</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kxmlgui</Dependency>
+            <Dependency versionFrom="5.37.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.37.0">kio</Dependency>
+            <Dependency versionFrom="5.37.0">kparts</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kxmlgui</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,14 +33,14 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kparts</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kxmlgui</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.37.0">kio</Dependency>
+            <Dependency versionFrom="5.37.0">kparts</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kxmlgui</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -57,9 +57,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

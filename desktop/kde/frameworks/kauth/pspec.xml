@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>Abstraction to system policy and authentication features</Summary>
         <Description>Framework which lets applications perform actions as a privileged user</Description>
-        <Archive sha1sum="b7fbe49015182ca04eb0cadcc3dccbf576909512" type="tarxz">mirrors://kde/stable/frameworks/5.33/kauth-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="ea73589605a94bfdcb41bce1de2a379a92c57b15" type="tarxz">mirrors://kde/stable/frameworks/5.37/kauth-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>polkit-qt</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -26,7 +26,7 @@
             <Dependency>qt5</Dependency>
             <Dependency>polkit-qt</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -41,9 +41,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

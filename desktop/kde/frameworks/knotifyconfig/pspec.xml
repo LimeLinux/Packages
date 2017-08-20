@@ -12,15 +12,15 @@
         <IsA>library</IsA>
         <Summary>Configuration dialog for desktop notifications</Summary>
         <Description>KNotifyConfig provides a configuration dialog for desktop notifications which can be embedded in your application..</Description>
-        <Archive sha1sum="fdc37acfa96db5e6d3c7fbce23a32de2dca87b6f" type="tarxz">mirrors://kde/stable/frameworks/5.33/knotifyconfig-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="459fc3e40a353b8a8baa5eb1ef6bf4a7d797fb61" type="tarxz">mirrors://kde/stable/frameworks/5.37/knotifyconfig-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="4.6.60">qt5-phonon</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kio</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kio</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,10 +30,10 @@
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kio</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -48,9 +48,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

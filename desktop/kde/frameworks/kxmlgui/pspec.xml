@@ -12,22 +12,22 @@
         <IsA>library</IsA>
         <Summary>Framework for managing menu and toolbar actions</Summary>
         <Description>Kxmlgui provides a framework for managing menu and toolbar actions in an abstract way.</Description>
-        <Archive sha1sum="7d354a5d4a4db6b1d190c78bef7b20ca965f1a04" type="tarxz">mirrors://kde/stable/frameworks/5.33/kxmlgui-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="f519ec8859e8f155290a1cde8c66fbc3575af2cf" type="tarxz">mirrors://kde/stable/frameworks/5.37/kxmlgui-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kconfigwidgets</Dependency>
-            <Dependency>kauth</Dependency>
-            <Dependency>kcodecs</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kitemviews</Dependency>
-            <Dependency>ktextwidgets</Dependency>
-            <Dependency>kglobalaccel</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kwindowsystem</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.37.0">kauth</Dependency>
+            <Dependency versionFrom="5.37.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.37.0">kitemviews</Dependency>
+            <Dependency versionFrom="5.37.0">ktextwidgets</Dependency>
+            <Dependency versionFrom="5.37.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
          </BuildDependencies>	
     </Source>
 
@@ -36,17 +36,17 @@
         <RuntimeDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>attica</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kconfigwidgets</Dependency>
-            <Dependency>kglobalaccel</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kitemviews</Dependency>
-            <Dependency>ktextwidgets</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kwindowsystem</Dependency>
+            <Dependency versionFrom="5.37.0">attica</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.37.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.37.0">kitemviews</Dependency>
+            <Dependency versionFrom="5.37.0">ktextwidgets</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kwindowsystem</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -62,9 +62,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

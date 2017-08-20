@@ -13,11 +13,11 @@
         <IsA>app:console</IsA>
         <Summary>A QT wrapper around the NetworkManager libraries</Summary>
         <Description>A QT wrapper around the NetworkManager libraries</Description>
-        <Archive sha1sum="3fd83d9ffabef59aa74a1f9197dd86755ef59f46" type="tarxz">mirrors://kde/stable/frameworks/5.33/networkmanager-qt-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="f9536a139ae307c1f4372e73fe3d501da36dd197" type="tarxz">mirrors://kde/stable/frameworks/5.37/networkmanager-qt-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>NetworkManager</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -42,9 +42,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

@@ -13,13 +13,13 @@
         <IsA>app:console</IsA>
         <Summary>Widgets for showing progress of asynchronous jobs</Summary>
         <Description>KJobWIdgets provides widgets for showing progress of asynchronous jobs.</Description>
-        <Archive sha1sum="929b693f0b67c1dfffc4deda317b29bd995ac457" type="tarxz">mirrors://kde/stable/frameworks/5.33/kjobwidgets-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="d108f8da02159a2da79d13832cae018917fb3f33" type="tarxz">mirrors://kde/stable/frameworks/5.37/kjobwidgets-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libX11</Dependency>
             <Dependency>qt5</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -28,8 +28,8 @@
         <RuntimeDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -44,9 +44,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

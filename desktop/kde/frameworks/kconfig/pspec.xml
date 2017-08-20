@@ -14,10 +14,10 @@
         <IsA>app:gui</IsA>
         <Summary>Advanced configuration system for KDE Frameworks 5</Summary>
         <Description>Kconfig provides advanced libraries and tools for accessing configuration files.</Description>
-        <Archive sha1sum="cacd41edaa222bbd855eca50e68b30639f403ab0" type="tarxz">mirrors://kde/stable/frameworks/5.33/kconfig-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="498313c254142b47bc2bc627d7ea2b80a824835c" type="tarxz">mirrors://kde/stable/frameworks/5.37/kconfig-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -41,9 +41,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

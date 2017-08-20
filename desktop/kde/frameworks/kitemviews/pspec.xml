@@ -13,10 +13,10 @@
         <IsA>app:console</IsA>
         <Summary>Set of item models extending the Qt model-view framework</Summary>
         <Description>KItemViews includes a set of views, which can be used with item models. It includes views for categorizing lists and to add search filters to flat and hierarchical lists.</Description>
-        <Archive sha1sum="2bea57d87dcaf06d6d23f154df9e690e93cde95d" type="tarxz">mirrors://kde/stable/frameworks/5.33/kitemviews-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="42ecab8910ad985b8d90cb1ed9c497caac575675" type="tarxz">mirrors://kde/stable/frameworks/5.37/kitemviews-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -39,9 +39,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

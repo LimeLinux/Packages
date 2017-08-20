@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 library for extracting meta data from files.</Summary>
         <Description>KDE library for extracting meta data from files.</Description>
-        <Archive sha1sum="1f313c14355108ee232dd0df860ba00a16e54d5a" type="tarxz">mirrors://kde/stable/frameworks/5.33/kfilemetadata-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="a5b056146122df02d2818cd4f282ac9f148f6008" type="tarxz">mirrors://kde/stable/frameworks/5.37/kfilemetadata-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>attr</Dependency>
@@ -22,9 +22,9 @@
             <Dependency versionFrom="3.0.2">ffmpeg</Dependency>
             <Dependency>taglib</Dependency>
             <Dependency>poppler</Dependency>
-            <Dependency>karchive</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">karchive</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -38,26 +38,24 @@
             <Dependency>taglib</Dependency>
             <Dependency versionFrom="3.0.2">ffmpeg</Dependency>
             <Dependency>poppler</Dependency>
-            <Dependency>karchive</Dependency>
-            <Dependency>ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">karchive</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib/qt5</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/lib/cmake</Path>
             <Path fileType="config">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

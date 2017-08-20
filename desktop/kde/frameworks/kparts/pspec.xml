@@ -12,32 +12,32 @@
         <IsA>library</IsA>
         <Summary>Plugin framework for user interface components</Summary>
         <Description>This library implements the framework for KDE parts, which are elaborate widgets with a user-interface defined in terms of actions (menu items, toolbar icons).</Description>
-        <Archive sha1sum="088a00bdddef9f7d1bb83ebd0169d5c84760f827" type="tarxz">mirrors://kde/stable/frameworks/5.33/kparts-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="f69cc88759da934c316921d821d84c1b139696f5" type="tarxz">mirrors://kde/stable/frameworks/5.37/kparts-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency>kauth</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>ktextwidgets</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kitemviews</Dependency>
-            <Dependency>karchive</Dependency>
-            <Dependency>attica</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kglobalaccel</Dependency>
-            <Dependency>kservice</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>kbookmarks</Dependency>
-            <Dependency>kwindowsystem</Dependency>
-            <Dependency>sonnet</Dependency>
-            <Dependency>kcodecs</Dependency>
-            <Dependency>kconfigwidgets</Dependency>
-            <Dependency>solid</Dependency>
-            <Dependency>kjobwidgets</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">kauth</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">ktextwidgets</Dependency>
+            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.37.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.37.0">kitemviews</Dependency>
+            <Dependency versionFrom="5.37.0">karchive</Dependency>
+            <Dependency versionFrom="5.37.0">attica</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kio</Dependency>
+            <Dependency versionFrom="5.37.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.37.0">kservice</Dependency>
+            <Dependency versionFrom="5.37.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.37.0">kbookmarks</Dependency>
+            <Dependency versionFrom="5.37.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.37.0">sonnet</Dependency>
+            <Dependency versionFrom="5.37.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.37.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.37.0">solid</Dependency>
+            <Dependency versionFrom="5.37.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -46,15 +46,15 @@
         <RuntimeDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>kjobwidgets</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kservice</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>kio</Dependency>
+            <Dependency versionFrom="5.37.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.37.0">kservice</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.37.0">kio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -69,9 +69,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

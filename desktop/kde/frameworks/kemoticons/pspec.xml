@@ -13,14 +13,14 @@
         <IsA>app:console</IsA>
         <Summary>KDE emoticon manager</Summary>
         <Description>KEmoticons converts emoticons from text to a graphical representation with images in HTML.</Description>
-        <Archive sha1sum="ed74a4ec37f20f1d5ed0bc5ff73f2c577ec2c6c7" type="tarxz">mirrors://kde/stable/frameworks/5.33/kemoticons-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="fe6985e41123499bb4b74df8e6ff65e243058519" type="tarxz">mirrors://kde/stable/frameworks/5.37/kemoticons-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>karchive</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kservice</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">karchive</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kservice</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -29,10 +29,10 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>karchive</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kservice</Dependency>
+            <Dependency versionFrom="5.37.0">karchive</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kservice</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -47,9 +47,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

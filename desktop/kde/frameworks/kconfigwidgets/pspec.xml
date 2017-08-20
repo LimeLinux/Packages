@@ -14,17 +14,17 @@
         <IsA>app:gui</IsA>
         <Summary>Kconfig widgets</Summary>
         <Description>KConfigWidgets provides easy-to-use classes to create configuration dialogs, as well as a set of widgets which uses KConfig to store their settings.</Description>
-        <Archive sha1sum="5ec643ebff69959944e3868ca35a707570c17049" type="tarxz">mirrors://kde/stable/frameworks/5.33/kconfigwidgets-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="a4f9b3f833301cd6ce9115b466763808489d4112" type="tarxz">mirrors://kde/stable/frameworks/5.37/kconfigwidgets-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kauth</Dependency>
-            <Dependency>kcodecs</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kguiaddons</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kauth</Dependency>
+            <Dependency versionFrom="5.37.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kguiaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>	
     </Source>
 
@@ -33,13 +33,13 @@
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
             <Dependency>qt5</Dependency>
-            <Dependency>kauth</Dependency>
-            <Dependency>kcodecs</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kguiaddons</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kauth</Dependency>
+            <Dependency versionFrom="5.37.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">kguiaddons</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -57,8 +57,8 @@
 
     <History>
         <Update release="3">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

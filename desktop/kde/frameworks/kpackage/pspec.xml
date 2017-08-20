@@ -12,17 +12,17 @@
         <IsA>app:library</IsA>
         <Summary>Framework that lets applications manage user installable packages of non-binary assets</Summary>
         <Description>KPackage is dependent on the Smart package manager.</Description>
-        <Archive sha1sum="9be0379a085dd40d03b69022bc218076466f3614" type="tarxz">mirrors://kde/stable/frameworks/5.33/kpackage-5.33.0.tar.xz</Archive>
+        <Archive sha1sum="bcfbf8d61eb20c1a5c09a1ed02c48227fcf73292" type="tarxz">mirrors://kde/stable/frameworks/5.37/kpackage-5.37.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libX11</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>karchive</Dependency>
-            <Dependency>kdoctools</Dependency>
             <Dependency>docbook-xsl</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">karchive</Dependency>
+            <Dependency versionFrom="5.37.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,10 +31,10 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>karchive</Dependency>
+            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.37.0">karchive</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -50,9 +50,9 @@
      </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.33.0</Version>
+        <Update release="3">
+            <Date>2017-08-19</Date>
+            <Version>5.37.0</Version>            
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
