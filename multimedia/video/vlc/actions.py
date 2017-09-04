@@ -49,6 +49,7 @@ def setup():
                             --enable-libva \
                             --enable-live555 \
                             --enable-lua \
+                            --enable-decklink \
                             --enable-mad \
                             --enable-mkv \
                             --enable-mod \

@@ -17,6 +17,7 @@ def setup():
     options = '--with-package-name="GStreamer for limelinux" \
                --with-package-origin="http://www.limelinux.com" \
                --enable-nls \
+               --enable-decklink \
                --disable-dependency-tracking \
                --disable-examples \
                --enable-introspection \

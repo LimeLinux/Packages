@@ -10,16 +10,13 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-   # shelltools.export("AUTOPOINT", "true")
+    #shelltools.export("AUTOPOINT", "true")
     #shelltools.export("NOCONFIGURE", "1")
     #shelltools.system("./autogen.sh")
     autotools.autoreconf("-fi")
 
     autotools.configure("--disable-static \
-                         --disable-experimental \
-                          --disable-wayland \
-                          --disable-qt \
-                          --without-qt \
+                         --enable-decklink \
                          --with-package-name='limelinux gstreamer-plugins-bad package' \
                          --with-package-origin='http://www.limelinux.com' \
                          --with-gtk=3.0")
