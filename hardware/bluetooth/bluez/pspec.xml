@@ -15,7 +15,7 @@
         <IsA>app:console</IsA>
         <Summary>Official Linux Bluetooth protocol stack</Summary>
         <Description>bluez contains the tools and libraries that provides support for the core Bluetooth layers and protocols.</Description>
-        <Archive sha1sum="d19a5427651689e0eb52b583910837b39b869ed7" type="tarxz">https://www.kernel.org/pub/linux/bluetooth/bluez-5.43.tar.xz</Archive>
+        <Archive sha1sum="e6a811cd125fee387044f371b15ac4c72dbc0187" type="tarxz">https://www.kernel.org/pub/linux/bluetooth/bluez-5.46.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cups</Dependency>
             <Dependency>dbus</Dependency>
@@ -80,9 +80,9 @@
 
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2017-12-21</Date>
-            <Version>5.43</Version>
+            <Version>5.46</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
