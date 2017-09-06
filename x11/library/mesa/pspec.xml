@@ -14,12 +14,13 @@
         <IsA>app:console</IsA>
         <Summary>Mesa graphics libraries and utilities</Summary>
         <Description>Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.</Description>
-        <Archive sha1sum="f348781d5e4342ef5b78572f68ef9749e308dbd7" type="tarxz">https://mesa.freedesktop.org/archive/mesa-17.0.6.tar.xz</Archive>
+        <Archive sha1sum="661cf338ef3d7df49ea3aa58a1e8ccb5c1527d20" type="tarxz">https://mesa.freedesktop.org/archive/mesa-17.2.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>xorg-proto</Dependency>
             <Dependency>libdrm</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>wayland</Dependency>
+            <Dependency>wayland-protocols</Dependency>
             <Dependency>libvdpau</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libtalloc</Dependency>
@@ -29,6 +30,7 @@
             <Dependency>libXvMC</Dependency>
             <Dependency>libXv</Dependency>
             <Dependency>llvm</Dependency>
+            <Dependency>llvm-clang</Dependency>
             <Dependency>libclc</Dependency>
             <Dependency>libxshmfence</Dependency>
             <Dependency>vulkan-loader</Dependency>
@@ -58,6 +60,7 @@
             <Dependency>libxshmfence</Dependency>
             <Dependency>vulkan-loader</Dependency>
             <Dependency>libomxil-bellagio</Dependency>
+            <Dependency>wayland-protocols</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -78,9 +81,9 @@
 
 
     <History>
-        <Update release="2">
-            <Date>2017-05-17</Date>
-            <Version>17.0.6</Version>
+        <Update release="3">
+            <Date>2017-09-17</Date>
+            <Version>17.2.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

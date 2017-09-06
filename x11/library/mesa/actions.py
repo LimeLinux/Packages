@@ -34,6 +34,11 @@ def setup():
               --enable-gallium-llvm \
               --enable-shared-glapi \
               --enable-texture-float \
+              --enable-llvm \
+              --enable-llvm-shared-libs \
+              --enable-shared-glapi \
+              --enable-opencl \
+              --enable-opencl-icd \
              "
 	     
     if get.buildTYPE() == "emul32":
@@ -47,7 +52,7 @@ def setup():
     elif get.ARCH() == "x86_64":
 
         options += " --with-clang-libdir=/usr/lib \
-	                 --with-gallium-drivers=r300,r600,radeonsi,nouveau,svga,swrast,virgl \
+	                 --with-gallium-drivers=r300,r600,radeonsi,nouveau,svga,swrast,virgl,swr \
 	                 --with-dri-drivers=i915,i965,r200,radeon,nouveau,swrast \
 		             --enable-nine \
 		             --enable-llvm-shared-libs \

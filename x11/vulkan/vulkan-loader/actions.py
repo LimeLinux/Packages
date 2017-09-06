@@ -6,14 +6,12 @@
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/licenses/gpl.txt
 
-from pisi.actionsapi import get
-from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
-from pisi.actionsapi import cmaketools
+from pisi.actionsapi import get, pisitools, shelltools, cmaketools
+
 
 def setup():
     shelltools.system("./update_external_sources.sh")
- 
+    
     cmaketools.configure("-DCMAKE_INSTALL_SYSCONFDIR=/etc \
                           -DCMAKE_INSTALL_LIBDIR=/usr/lib \
                           -DCMAKE_SKIP_RPATH=True \
@@ -22,7 +20,7 @@ def setup():
                           -DBUILD_WSI_XLIB_SUPPORT=On \
                           -DBUILD_WSI_WAYLAND_SUPPORT=On \
                           -DBUILD_WSI_MIR_SUPPORT=Off \
-                          -DCMAKE_BUILD_TYPE=Release \
+                          -DCMAKE_BUILD_TYPE=Debug \
                           ")
 
 def build():

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Userspace interface to kernel DRM services</Summary>
         <Description>libdrm is a library providing the userspace interface to kernel DRM services.</Description>
-        <Archive sha1sum="0dd194538c90619146a83a65f2074564e1a14d55" type="tarbz2">http://dri.freedesktop.org/libdrm/libdrm-2.4.79.tar.bz2</Archive>
+        <Archive sha1sum="f78d392684d6e482e8c0a85d355619ac64c4ad6a" type="tarbz2">http://dri.freedesktop.org/libdrm/libdrm-2.4.83.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libpciaccess</Dependency>
         </BuildDependencies>
@@ -29,6 +29,7 @@
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="data">/usr/share/libdrm</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
            <Path fileType="header">/usr/include</Path>
@@ -39,9 +40,9 @@
     </Package>
     
     <History>
-        <Update release="2">
-            <Date>2017-04-14</Date>
-            <Version>2.4.79</Version>
+        <Update release="3">
+            <Date>2017-09-14</Date>
+            <Version>2.4.83</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

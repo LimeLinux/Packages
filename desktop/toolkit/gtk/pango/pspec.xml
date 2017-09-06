@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Text rendering and layout library</Summary>
         <Description>Pango is a library for laying out and rendering of text, with an emphasis on internationalization. Pango can be used anywhere that text layout is needed, though most of the work on Pango so far has been done in the context of the GTK+ widget toolkit. Pango forms the core of text and font handling for GTK+-2.x.</Description>
-        <Archive sha1sum="18db616204416936ef969e1c387b7a2f4e8b039b" type="tarxz">mirrors://gnome/pango/1.40/pango-1.40.3.tar.xz</Archive>
+        <Archive sha1sum="d512af5155d983f93e8aefbc28c5ca21423fc4eb" type="tarxz">mirrors://gnome/pango/1.40/pango-1.40.12.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cairo</Dependency>
             <Dependency>libXft</Dependency>
@@ -60,9 +60,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.40.3</Version>
+        <Update release="2">
+            <Date>2017-12-21</Date>
+            <Version>1.40.12</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
