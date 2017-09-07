@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>A powerful virtualization program</Summary>
         <Description>VirtualBox is a family of powerful x86 virtualization products for enterprise as well as home use. This is the Open Source Edition which lacks USB support and some other things.</Description>
-        <Archive sha1sum="514ac9a44d455a8766b96455fbe60aa3f0959f67" type="tarbz2">http://download.virtualbox.org/virtualbox/5.1.20/VirtualBox-5.1.20a.tar.bz2</Archive>
+        <Archive sha1sum="63d8c261bf1626f8d22ffef310ab5192fd90d2dc" type="tarbz2">http://download.virtualbox.org/virtualbox/5.2.0_BETA2/VirtualBox-5.2.0_BETA2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>dev86</Dependency>
             <Dependency>cdrkit</Dependency>
@@ -147,9 +147,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-04-24</Date>
-            <Version>5.1.20a</Version>
+        <Update release="4">
+            <Date>2017-09-24</Date>
+            <Version>5.2.0B</Version>
             <Comment>Version Bump</Comment>
             <Name>Lime Linux</Name>
             <Email>admin@limelinux.com</Email>
