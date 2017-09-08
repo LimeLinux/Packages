@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Groovy little assembler</Summary>
         <Description>NASM is the Netwide Assembler, a free portable assembler for the Intel 80x86 microprocessor series.</Description>
-        <Archive sha1sum="6908296ac437b3ade79fadfaad0efcfd99582f70" type="tarxz">http://www.nasm.us/pub/nasm/releasebuilds/2.11.08/nasm-2.11.08.tar.xz</Archive>
+        <Archive sha1sum="27eac9e56f7d5f23621edbbf3cee8870702add67" type="tarxz">http://www.nasm.us/pub/nasm/releasebuilds/2.13/nasm-2.13.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>texinfo</Dependency>
         </BuildDependencies>
@@ -29,9 +29,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.11.8</Version>
+        <Update release="2">
+            <Date>2017-09-21</Date>
+            <Version>2.13</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

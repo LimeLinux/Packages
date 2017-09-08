@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>V4L wrapper for V4L2</Summary>
         <Description>A library to access V4L2 API with V4L1 alike calls.</Description>
-        <Archive sha1sum="968bd8d3de51bfcc63df75a17ba3fb73230d8307" type="tarbz2">http://linuxtv.org/downloads/v4l-utils/v4l-utils-1.10.1.tar.bz2</Archive>
+        <Archive sha1sum="8dfe4bebdfaf536ddc8771b60685b3a43dcc7cb3" type="tarbz2">https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.12.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libjpeg-turbo</Dependency>
         </BuildDependencies>
@@ -58,32 +58,10 @@
         </Files>
     </Package> 
 
-    <!--Package>
-        <Name>libv4l-32bit</Name>
-        <PartOf>emul32</PartOf>
-        <Summary>32-bit shared libraries for libv4l</Summary>
-        <BuildType>emul32</BuildType>
-        <BuildDependencies>
-            <Dependency>libjpeg-turbo-32bit</Dependency>
-            <Dependency>libX11-32bit</Dependency>
-            <Dependency>alsa-lib-32bit</Dependency>
-            <Dependency>qt5</Dependency>
-        </BuildDependencies>
-        <RuntimeDependencies>
-            <Dependency>libjpeg-turbo-32bit</Dependency>
-            <Dependency release="current">libv4l</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib32/lib*</Path>
-            <Path fileType="library">/usr/lib32/v4l*</Path>
-        </Files>
-    </Package-->
-
-
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.10.1</Version>
+        <Update release="2">
+            <Date>2017-09-08</Date>
+            <Version>1.12.5</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

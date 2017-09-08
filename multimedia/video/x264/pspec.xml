@@ -15,7 +15,7 @@
         <Summary>Open source H264/AVC encoder</Summary>
         <Description>x264 is a free library for encoding H264/AVC video streams.</Description>
         <!-- Archives come from http://download.videolan.org/pub/videolan/x264/snapshots/ -->
-        <Archive sha1sum="7045631311b2ed3fe8b79df6b298a07c62bf2e68" type="tarbz2">https://download.videolan.org/x264/snapshots/x264-snapshot-20160929-2245-stable.tar.bz2</Archive>
+        <Archive sha1sum="4033cd6b2af3b073f77f83b3744160a370a4726c" type="tarbz2">https://download.videolan.org/x264/snapshots/x264-snapshot-20170907-2245.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>yasm</Dependency>
         </BuildDependencies>
@@ -32,9 +32,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2245</Version>
+        <Update release="2">
+            <Date>2017-09-10</Date>
+            <Version>20170907.2245</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

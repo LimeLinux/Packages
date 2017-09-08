@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Open source H265/EVC encoder</Summary>
         <Description>x265 is a commercially funded open source implementation of the H.265/High Efficiency Video Coding (HEVC) compression standard.</Description>
-        <Archive sha1sum="37ed92b83dbe9e1420e1c226d35caeea16d4b0e4" type="targz">https://bitbucket.org/multicoreware/x265/downloads/x265_2.1.tar.gz</Archive>
+        <Archive sha1sum="239e51560a6bdde934142f1c6f884d6e37cbe755" type="targz">https://bitbucket.org/multicoreware/x265/downloads/x265_2.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>yasm</Dependency>
             <Dependency>cmake</Dependency>
@@ -37,8 +37,8 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
+        <Update release="2">
+            <Date>2017-09-08</Date>
             <Version>2.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>

@@ -16,7 +16,7 @@
         <IsA>app:console</IsA>
         <Summary>A command-line tool to record, convert and stream audio and video</Summary>
         <Description>FFmpeg is a complete solution to record, convert and stream audio and video.</Description>
-	<Archive sha1sum="ac3341269fe89a41892e8696465b859e1f425213" type="tarxz">http://ffmpeg.org/releases/ffmpeg-3.0.2.tar.xz</Archive>        <BuildDependencies>
+	<Archive sha1sum="699dc8ee6aa991986e5b0af22436e3214794b3c4" type="tarxz">http://ffmpeg.org/releases/ffmpeg-3.3.3.tar.xz</Archive>        <BuildDependencies>
             <Dependency>freetype</Dependency>
             <Dependency>faac</Dependency>
             <Dependency>lame</Dependency>
@@ -47,6 +47,9 @@
 	    <Dependency>libnut</Dependency>
 	    <Dependency>vo-amrwbenc</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">ffmpeg-openjpeg2.2.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -101,9 +104,9 @@
 
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2017-12-21</Date>
-            <Version>3.0.2</Version>
+            <Version>3.3.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

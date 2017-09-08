@@ -16,7 +16,6 @@ def setup():
                             --disable-stripping \
                             --enable-avfilter \
                             --enable-avresample \
-                            --enable-dxva2 \
                             --enable-fontconfig \
                             --enable-gnutls \
                             --enable-gpl \
@@ -47,19 +46,18 @@ def setup():
                             --enable-swresample \
                             --enable-vdpau \
                             --enable-version3 \
-                            --enable-x11grab \
                             --enable-libdc1394 \
                             --enable-libnut \
                             --enable-libcelt \
                             --enable-frei0r \
                             --enable-libcdio \
                             --enable-libvo-amrwbenc \
-                            --enable-nonfree \
-                            --enable-libfaac")
+                            --enable-nonfree")
 
 def build():
     autotools.make()
     autotools.make('tools/qt-faststart')
+    autotools.make('doc/ff{mpeg,play,server}.1')
 
 def install():
     autotools.rawInstall("DESTDIR=%s install-man" % get.installDIR())

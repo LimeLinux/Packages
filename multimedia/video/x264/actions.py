@@ -33,11 +33,8 @@ def setup():
     autotools.rawConfigure("--prefix=/usr \
                             --enable-pic \
                             --enable-shared \
-                            --disable-avs \
-                            --disable-ffms \
-                            --disable-lavf \
-                            --disable-swscale \
-			    --bit-depth=8 \
+                            --enable-lto \
+			                --bit-depth=8 \
                             --bit-depth=10 \
                            ")
 
