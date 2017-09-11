@@ -11,11 +11,14 @@ from pisi.actionsapi import shelltools
 
 def setup():
     # Make it build with libtool 1.5
+    #pisitools.cxxflags.add(" -std=gnu++98")
+    #shelltools.export("CFLAGS", "%s -fPIC -O2 -Wall -Wextra -DLUA_COMPAT_5_1" % get.CFLAGS())                          
+
     shelltools.system("rm -rf m4/lt* m4/libtool.m4")
-    pisitools.cxxflags.add(" -std=c++11")
-    
-    shelltools.export("AUTOPOINT", "true")
+    shelltools.system("sed -i -e 's:truetype/freefont:TTF:g' modules/text_renderer/freetype.c")
+    shelltools.system("sed -i -e 's:truetype/ttf-dejavu:TTF:g' modules/visualization/projectm.cpp")
     shelltools.system("./bootstrap")
+    shelltools.export("AUTOPOINT", "true")
     autotools.autoreconf("-vfi")
     autotools.rawConfigure("\
                             --prefix=/usr \
@@ -26,7 +29,9 @@ def setup():
                             --with-default-font=/usr/share/fonts/dejavu/DejaVuSans.ttf \
                             --with-default-monospace-font=/usr/share/fonts/dejavu/DejaVuSansMono.ttf \
                             --with-x \
-                              LUAC=luac  LUA_LIBS='`pkg-config --libs lua`' \
+                              LUA=lua5.1  \
+                              LUAC=luac5.1  \
+                              LUA_LIBS='`pkg-config --libs lua5.1`' \
                               RCC=/usr/bin/rcc \
                             --disable-ncurses \
                             --enable-a52 \
@@ -82,10 +87,9 @@ def setup():
                             --enable-x264 \
                             --enable-x265 \
                             --enable-xvideo \
-                            --enable-qt5 \
                            ")
-    #enable-skins2 \ --disable-qt4 \
-    shelltools.export("CFLAGS", "%s -fPIC -O2 -Wall -Wextra -DLUA_COMPAT_5_1" % get.CFLAGS())
+
+
 
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
