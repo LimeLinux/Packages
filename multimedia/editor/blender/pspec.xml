@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>3D modeling, animation, rendering and post-production application</Summary>
         <Description>blender is the essential software solution you need for 3D, from modeling, animation, rendering and post-production to interactive creation and playback.</Description>
-        <Archive sha1sum="3abd64094d904ea2eba8b6519c48926b80423276" type="targz">http://download.blender.org/source/blender-2.78b.tar.gz</Archive>
+        <Archive sha1sum="59d7297b2388d7801b68633c0003248b45ee93a6" type="targz">http://download.blender.org/source/blender-2.78c.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>boost</Dependency>
             <Dependency>cmake</Dependency>
@@ -83,7 +83,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/lib/python3.3/</Path>
+            <Path fileType="data">/usr/lib/python3.6/</Path>
             <Path fileType="data">/usr/share/blender/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/pixmaps/</Path>
@@ -101,9 +101,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-02-22</Date>
-            <Version>2.78b</Version>
+        <Update release="2">
+            <Date>2017-09-22</Date>
+            <Version>2.78c</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

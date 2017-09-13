@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Hierarchical pool based memory allocator</Summary>
         <Description>libtalloc is a library which implements a hierarchical allocator with destructors which is the core memory allocator in samba.</Description>
-        <Archive sha1sum="c91fded4fad84a42dd91c9feb0951ea43a29893e" type="targz">https://www.samba.org/ftp/talloc/talloc-2.1.8.tar.gz</Archive>
+        <Archive sha1sum="4b59061f0ee5f337aacef0c258a4ffd05b3fec6c" type="targz">https://www.samba.org/ftp/talloc/talloc-2.1.10.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>docbook-xsl</Dependency>
             <Dependency>libxslt</Dependency>
@@ -31,9 +31,9 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2017-01-21</Date>
-            <Version>2.1.8</Version>
+            <Version>2.1.10</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

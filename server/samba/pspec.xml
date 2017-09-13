@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>A suite of SMB and CIFS client/server programs for UNIX</Summary>
         <Description>samba is a free software implementation of Microsoft's networking protocol released under the GNU General Public License. As of version 3, Samba not only provides file and print services for various Microsoft Windows clients but can also integrate with a Windows Server domain, either as a Primary Domain Controller (PDC) or as a Domain Member. It can also be part of an Active Directory domain.</Description>
-        <Archive sha1sum="cff0168e67ef797c0d71c13b6b1208d2ecdc4e6b" type="targz">https://download.samba.org/pub/samba/stable/samba-4.5.5.tar.gz</Archive>
+        <Archive sha1sum="260053cf4b7b17607a8a94e8bf740979183efadd" type="targz">https://download.samba.org/pub/samba/stable/samba-4.6.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>keyutils</Dependency>
             <Dependency>libcap</Dependency>
@@ -100,9 +100,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-03-14</Date>
-            <Version>4.5.5</Version>
+        <Update release="4">
+            <Date>2017-09-14</Date>
+            <Version>4.6.7</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

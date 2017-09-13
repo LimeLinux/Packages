@@ -48,7 +48,7 @@ def setup():
                          --sysconfdir=/etc \
                          --libexecdir=/usr/lib/NetworkManager \
                          --with-kernel-firmware-dir=/usr/lib/firmware \
-                         --with-dist-version='17.91-3, Lime Linux' \
+                         --with-dist-version='1.9.2-4, Lime Linux' \
                          --with-udev-dir=/usr/lib/udev \
                          --with-pppd=/usr/sbin/pppd \
                          --with-iptables=/sbin/iptables \
