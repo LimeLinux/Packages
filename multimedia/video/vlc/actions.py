@@ -11,12 +11,13 @@ from pisi.actionsapi import shelltools
 
 def setup():
     # Make it build with libtool 1.5
-    #pisitools.cxxflags.add(" -std=gnu++98")
+    #
     #shelltools.export("CFLAGS", "%s -fPIC -O2 -Wall -Wextra -DLUA_COMPAT_5_1" % get.CFLAGS())                          
 
     shelltools.system("rm -rf m4/lt* m4/libtool.m4")
     shelltools.system("sed -i -e 's:truetype/freefont:TTF:g' modules/text_renderer/freetype.c")
     shelltools.system("sed -i -e 's:truetype/ttf-dejavu:TTF:g' modules/visualization/projectm.cpp")
+    #pisitools.cxxflags.add(" -std=gnu++98")
     shelltools.system("./bootstrap")
     shelltools.export("AUTOPOINT", "true")
     autotools.autoreconf("-vfi")
@@ -28,66 +29,21 @@ def setup():
                             --with-default-monospace-font-family=Monospace \
                             --with-default-font=/usr/share/fonts/dejavu/DejaVuSans.ttf \
                             --with-default-monospace-font=/usr/share/fonts/dejavu/DejaVuSansMono.ttf \
-                            --with-x \
-                              LUA=lua5.1  \
-                              LUAC=luac5.1  \
-                              LUA_LIBS='`pkg-config --libs lua5.1`' \
+                              LUA=lua  \
+                              LUAC=luac  \
+                              LUA_LIBS='`pkg-config --libs lua`' \
                               RCC=/usr/bin/rcc \
-                            --disable-ncurses \
-                            --enable-a52 \
-                            --enable-aa \
-                            --enable-alsa \
-                            --enable-dc1394 \
-                            --enable-dbus \
-                            --enable-dca \
-                            --enable-dvbpsi \
+                            --disable-rpath \
                             --enable-faad \
-                            --enable-fast-install \
-                            --enable-flac \
-                            --enable-freetype \
-                            --enable-fribidi \
-                            --enable-gnutls \
-                            --enable-libcddb \
-                            --enable-libmpeg2 \
-                            --enable-libxml2 \
-                            --enable-lirc \
-                            --enable-libva \
-                            --enable-live555 \
-                            --enable-lua \
-                            --enable-decklink \
-                            --enable-mad \
-                            --enable-mkv \
-                            --enable-mod \
-                            --enable-mpc \
                             --enable-nls \
-                            --enable-ogg \
-                            --enable-opus \
-                            --enable-png \
-                            --enable-projectm \
-                            --enable-pulse \
+                            --enable-lirc \
                             --enable-realrtsp \
-                            --enable-screen \
-                            --enable-sdl \
-                            --enable-sftp \
-                            --enable-schroedinger \
-                            --enable-shared \
-                            --enable-smbclient \
-                            --enable-sout \
-                            --enable-speex \
-                            --enable-svg \
-                            --enable-theora \
-                            --enable-twolame \
+                            --enable-aa \
                             --enable-upnp \
-                            --enable-v4l2 \
-			                --disable-atmo \
-                            --enable-vlc \
-                            --enable-mtp \
-                            --enable-vlm \
-                            --enable-vorbis \
-                            --enable-x264 \
-                            --enable-x265 \
-                            --enable-xvideo \
-                           ")
+                            --enable-opus \
+                            --enable-sftp \
+                            --enable-lua \
+                            --enable-decklink")
 
 
 

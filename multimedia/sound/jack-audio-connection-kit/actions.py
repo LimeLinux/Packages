@@ -10,14 +10,20 @@ from pisi.actionsapi import get
 from pisi.actionsapi import autotools
 
 
+shelltools.export("JOBS", get.makeJOBS().replace("-j", ""))
+
 def setup():
-    #autotools.autoreconf("-vif")
-    autotools.configure("--libdir=/usr/lib")
+    shelltools.export("PYTHON","/usr/bin/python3")
+    shelltools.system("python3 ./waf --version")
+    
+    
+    shelltools.system("python3 ./waf configure --prefix=/usr --libdir=/usr/lib")
+
 
 def build():
-    autotools.make()
-
+    shelltools.system("python3 waf build -v")
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.dodoc("COPYING*","README")
+    shelltools.system("DESTDIR=%s python3 waf install" % get.installDIR())
+
+    pisitools.dodoc("README_NETJACK2", "README","TODO")
