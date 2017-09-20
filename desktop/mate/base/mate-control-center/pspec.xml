@@ -15,7 +15,7 @@
         <IsA>app:gui</IsA>
         <Summary>The MATE Desktop configuration tool</Summary>
         <Description>mate-control-center is Mate's main interface for configuration of various aspects of your Mate desktop.</Description>
-        <Archive sha1sum="ca318c960ec84835d62c596a035ae5929249ae73" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-control-center-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="e8fc2892d13d1108e25d68fcb517f1e586206edc" type="tarxz">http://pub.mate-desktop.org/releases/1.19/mate-control-center-1.19.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -89,12 +89,12 @@
 
 
     <History>
-	   <Update release="3">
-            <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+	   <Update release="4">
+            <Date>2017-04-16</Date>
+            <Version>1.19.1</Version>
             <Comment>version bump</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>Applets for MATE panel (GTK2 version</Summary>
         <Description>Applets for MATE panel (GTK2 version</Description>
-	<Archive sha1sum="9f9af431c6030bed92191fff167c5e8520196c2b" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-applets-1.18.0.tar.xz</Archive>
+	<Archive sha1sum="d06cebb32e6e6e6ebc244440e08252f551815046" type="tarxz">http://pub.mate-desktop.org/releases/1.19/mate-applets-1.19.1.tar.xz</Archive>
 	    <BuildDependencies>
              <Dependency>gtksourceview</Dependency>
              <Dependency>mate-panel</Dependency>
@@ -51,12 +51,12 @@
     </Package>
 
     <History>
-	   <Update release="3">
+	   <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.19.1</Version>
             <Comment>version bump</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

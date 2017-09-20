@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>System settings daemon for MATE desktop</Summary>
         <Description>gnome-settings-daemon shares MATE specific settings with other applications via DBus connection.</Description>
-        <Archive sha1sum="bdfec7268f967f3fc129f9661c383fd7666b0ebb" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-settings-daemon-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="559767773e15bcf4e0b9f0725c00f38008bd958e" type="tarxz">http://pub.mate-desktop.org/releases/1.19/mate-settings-daemon-1.19.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>nss</Dependency>
             <Dependency>gtk2</Dependency>
@@ -78,12 +78,12 @@
 
 
     <History>
-	    <Update release="3">
-            <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+	    <Update release="4">
+            <Date>2017-09-16</Date>
+            <Version>1.19.0</Version>
             <Comment>version bump</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

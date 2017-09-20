@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Engrampa is an archive manager for the MATE environment.</Summary>
         <Description>Engrampa is an archive manager for the MATE environment.  This means that you can create and modify archives; view the content of an archive; view and modify a file contained in the archive; extract files from the archive.</Description>
-        <Archive sha1sum="b35634727ae6de833a4c2ea93c2d628b10f079d5" type="tarxz">http://pub.mate-desktop.org/releases/1.18/engrampa-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="6dae0da60796dce3b7e0047728579ffb92643775" type="tarxz">http://pub.mate-desktop.org/releases/1.19/engrampa-1.19.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>glib2</Dependency>
             <Dependency>gtk3</Dependency>
@@ -53,12 +53,12 @@
     </Package>
 
     <History>
-	    <Update release="3">
+	    <Update release="4">
             <Date>2017-03-15</Date>
-            <Version>1.18.0</Version>
+            <Version>1.19.0</Version>
             <Comment>version bump</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

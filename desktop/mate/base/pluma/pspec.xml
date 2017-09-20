@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate metin editörü</Summary>
         <Description>mate masaüstü için metin editörü.</Description>
-        <Archive sha1sum="8a6e5c6f445d23e7dd2f0a2e8de39f648f0d8dfd" type="tarxz">http://pub.mate-desktop.org/releases/1.18/pluma-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="a4ac53f621f2e8a35b39840dc40afbcc07d7c733" type="tarxz">http://pub.mate-desktop.org/releases/1.19/pluma-1.19.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -65,12 +65,12 @@
     </Package>
 
     <History>
-	    <Update release="3">
-            <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+	    <Update release="4">
+            <Date>2017-09-16</Date>
+            <Version>1.19.1</Version>
             <Comment>version bump</Comment>
-            <Name>Ali Murat Algül</Name>
-            <Email>alimuratgulle@limelinux.com</Email>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
         </Update>
     </History>
 </PISI>
