@@ -11,9 +11,9 @@
         <License>NVIDIA</License>
         <Summary>NVIDIA drivers for GeForce 6xxx and newer GPUs</Summary>
         <Description>NVIDIA graphics drivers provide optimized 2D/3D performance.</Description>
-        <Archive sha1sum="ae01d7a25aaf9293129e3220d21e5e02cb39804b" type="binary">http://us.download.nvidia.com/XFree86/Linux-x86_64/381.22/NVIDIA-Linux-x86_64-381.22-no-compat32.run</Archive>
+        <Archive sha1sum="db1766998f9f12c7c366a6c6371d0d08135ade79" type="binary">http://us.download.nvidia.com/XFree86/Linux-x86_64/384.69/NVIDIA-Linux-x86_64-384.69-no-compat32.run</Archive>
         <BuildDependencies>
-            <Dependency version="4.9.40">kernel-module-headers</Dependency>
+            <Dependency version="4.13.2">kernel-module-headers</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gtk3</Dependency>
@@ -25,7 +25,7 @@
         <IsA>driver</IsA>
         <Summary>Kernel module for current NVIDIA graphics driver releases</Summary>
         <RuntimeDependencies>
-            <Dependency version="4.9.40">kernel</Dependency>
+            <Dependency version="4.13.2">kernel</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gtk3</Dependency>
@@ -72,9 +72,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-24</Date>
-            <Version>381.22</Version>
+        <Update release="3">
+            <Date>2017-09-24</Date>
+            <Version>384.69</Version>
             <Comment>New Package</Comment>
             <Name>Ergün Salman</Name>
             <Email>poyraz76@limelinux.com</Email>

@@ -131,7 +131,8 @@ def install():
 
     # VDPAU driver
     pisitools.dolib("libvdpau_nvidia.so.%s" % version, "%s/vdpau" % libdir)
-    pisitools.dosym("libvdpau_nvidia.so.%s" % version, "%s/libvdpau_nvidia.so" % libdir)
+    pisitools.insinto("%s/vdpau" % libdir, "libvdpau_nvidia.so.%s" % version, "libvdpau_nvidia.so")
+    pisitools.insinto("%s/" % libdir, "libvdpau_nvidia.so.%s" % version, "libvdpau_nvidia.so")
     
     # nvidia-tls library
     pisitools.dolib("libnvidia-tls.so.%s" % version, libdir)

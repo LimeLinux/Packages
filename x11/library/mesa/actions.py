@@ -16,7 +16,7 @@ def setup():
 
     options ="\
               --with-dri-driverdir=/usr/lib/xorg/modules/dri \
-              --with-egl-platforms=x11,drm,wayland \
+              --with-platforms=x11,drm,wayland \
               --with-vulkan-drivers=intel,radeon \
               --enable-xa \
               --enable-dri \
@@ -79,7 +79,10 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
     #pisitools.insinto("/usr/lib/mesa/", "%s/usr/lib/libGL.so.1.2.0"% get.installDIR())
-    #pisitools.dosym("/usr/lib/mesa/libGL.so.1.2.0", "/usr/lib/libGL.so.1.2")
+    pisitools.dosym("/usr/lib/vdpau/libvdpau_nouveau.so.1.0.0", "/usr/lib/libvdpau_nouveau.so")
+    pisitools.dosym("/usr/lib/vdpau/libvdpau_r300.so.1.0.0", "/usr/lib/libvdpau_r300.so")
+    pisitools.dosym("/usr/lib/vdpau/libvdpau_r600.so.1.0.0", "/usr/lib/libvdpau_r600.so")
+    pisitools.dosym("/usr/lib/vdpau/libvdpau_radeonsi.so.1.0.0", "/usr/lib/libvdpau_radeonsi.so")
 
     #pisitools.domove("/usr/lib/libGLESv*", "/usr/lib/mesa/")
     #pisitools.domove("/usr/lib/libEGL*", "/usr/lib/mesa/")

@@ -1,28 +1,34 @@
---- acpica-unix-20160831.orig/generate/unix/iasl/Makefile	2016-08-31 12:29:36.000000000 -0400
-+++ acpica-unix-20160831/generate/unix/iasl/Makefile	2016-09-04 18:07:02.082312238 -0400
-@@ -320,19 +320,19 @@
- # by the utilities above and they are not necessarily ANSI C, etc.
+--- acpica-unix-20170831.orig/generate/unix/iasl/Makefile	2017-08-31 18:57:55.000000000 +0300
++++ acpica-unix-20170831/generate/unix/iasl/Makefile	2017-09-20 13:24:56.401144030 +0300
+@@ -338,24 +338,24 @@
  #
  $(OBJDIR)/aslcompilerlex.o :   $(OBJDIR)/aslcompilerlex.c
--	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
-+	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 	@echo "- " "Intermediate" $<
+-	@$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	@$(CC) -c $(CFLAGS) -Wall  -o$@ $<
  
  $(OBJDIR)/aslcompilerparse.o : $(OBJDIR)/aslcompilerparse.c
--	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
-+	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 	@echo "- " "Intermediate" $<
+-	@$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	@$(CC) -c $(CFLAGS) -Wall -o$@ $<
  
  $(OBJDIR)/dtparserlex.o :      $(OBJDIR)/dtparserlex.c
--	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
-+	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 	@echo "- " "Intermediate" $<
+-	@$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	@$(CC) -c $(CFLAGS) -Wall -o$@ $<
  
  $(OBJDIR)/dtparserparse.o :    $(OBJDIR)/dtparserparse.c
--	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
-+	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 	@echo "- " "Intermediate" $<
+-	@$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	@$(CC) -c $(CFLAGS) -Wall  -o$@ $<
  
  $(OBJDIR)/prparserlex.o :      $(OBJDIR)/prparserlex.c
--	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
-+	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 	@echo "- " "Intermediate" $<
+-	@$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	@$(CC) -c $(CFLAGS) -Wall  -o$@ $<
  
  $(OBJDIR)/prparserparse.o :    $(OBJDIR)/prparserparse.c
--	$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
-+	$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+ 	@echo "- " "Intermediate" $<
+-	@$(CC) -c $(CFLAGS) -Wall -Werror -o$@ $<
++	@$(CC) -c $(CFLAGS) -Wall  -o$@ $<
+

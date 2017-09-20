@@ -6,16 +6,14 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import get
+from pisi.actionsapi import get, shelltools
 
 
 def setup():
     #pisitools.dosed("libfaad/Makefile.am", "iquote ", "I")
-    autotools.autoreconf("-vfi")
-
-    autotools.configure("--without-xmms \
-                         --with-drm \
-                         --disable-static")
+    #autotools.autoreconf("-vfi")
+    shelltools.system("./bootstrap")
+    autotools.configure()
 
 def build():
     autotools.make()

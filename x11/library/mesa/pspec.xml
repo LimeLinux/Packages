@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Mesa graphics libraries and utilities</Summary>
         <Description>Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.</Description>
-        <Archive sha1sum="dee665bfc495c992967e439463f25f5061c9be16" type="tarxz">ftp://ftp.freedesktop.org/pub/mesa/mesa-17.1.8.tar.xz</Archive>
+        <Archive sha1sum="7429e74a0ef12ea9d60b41b2b852898b3da0b238" type="tarxz">ftp://ftp.freedesktop.org/pub/mesa/mesa-17.2.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>xorg-proto</Dependency>
             <Dependency>libdrm</Dependency>
@@ -83,7 +83,7 @@
     <History>
         <Update release="3">
             <Date>2017-09-17</Date>
-            <Version>17.1.8</Version>
+            <Version>17.2.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

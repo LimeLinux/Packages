@@ -26,8 +26,6 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">revert-warn-glib-compile-schemas.patch</Patch>
-            <!--Patch level="1">skip-broken-timer-test.patch</Patch>
-            <Patch level="1">bad-dconf-paths.patch</Patch-->
         </Patches>
     </Source>
 
@@ -70,8 +68,8 @@
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2017-05-15</Date>
+        <Update release="3">
+            <Date>2017-09-15</Date>
             <Version>2.52.2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>

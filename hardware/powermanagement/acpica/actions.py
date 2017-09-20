@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 def build():
     
-   # shelltools.export("CFLAGS", "%s -fno-strict-aliasing" % get.CFLAGS())
+    shelltools.export("CFLAGS", "%s -fno-strict-aliasing" % get.CFLAGS())
     shelltools.cd("generate/unix")
     shelltools.system("sed -i -e 's/_CYGWIN/_LINUX/g' -e 's/-Werror//g' Makefile.config")
     autotools.make("clean")
@@ -19,5 +19,5 @@ def build():
 def install():
     
     shelltools.cd("generate/unix")
-  #  pisitools.dobin("bin/acpi*")
+    pisitools.dobin("bin/acpi*")
     autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
