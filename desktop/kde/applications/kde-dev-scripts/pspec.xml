@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.sdk</PartOf>
         <Summary>Scripts and setting files useful during development of KDE software</Summary>
         <Description>Scripts and setting files useful during development of KDE software</Description>
-        <Archive type="tarxz" sha1sum="58fabc39abc2b699ada500d06218ea0035342ca8">mirrors://kde/stable/applications/17.04.0/src/kde-dev-scripts-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="aff48d0eed24896af8d9024c9a4d852293f44ae0">mirrors://kde/stable/applications/17.08.1/src/kde-dev-scripts-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>kdoctools</Dependency>
@@ -38,10 +38,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

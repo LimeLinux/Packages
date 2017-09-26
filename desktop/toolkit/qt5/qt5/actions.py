@@ -50,7 +50,6 @@ def setup():
 		    -system-zlib \
 		    -system-libpng \
 		    -system-libjpeg \
-		    -nomake examples \
             -no-sql-mysql \
 		    -no-rpath \
 		    -openssl-linked \

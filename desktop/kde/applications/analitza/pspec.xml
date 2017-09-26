@@ -14,12 +14,11 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>A KDE library for mathematical features</Summary>
         <Description>analitza is a library to add mathematical features to programs.</Description>
-        <Archive sha1sum="dc2ddd9d2e8fc467644fdf6bce3f70920ca6f76f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/analitza-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="d151ffa998d1d8e7afcc76b035e4f17c9775965c" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/analitza-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>cmake</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
             <Dependency>eigen3</Dependency>
-            <Dependency versionFrom="13.0.4">mesa</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -41,10 +40,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

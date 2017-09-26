@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE system monitor</Summary>
         <Description>KDE5 system monitor daemon and service.</Description>
-        <Archive sha1sum="9fe80c790fc0c7e9285bbee95cbd7aecf8b0fad0" type="tarxz">mirrors://kde/stable/plasma/5.9.5/ksysguard-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="f134579ce86b44bd08985b700cd1c69667a2cfb6" type="tarxz">mirrors://kde/stable/plasma/5.10.5/ksysguard-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kcompletion</Dependency>
             <Dependency>kconfig</Dependency>
@@ -83,10 +83,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

@@ -9,25 +9,23 @@
             <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv3</License>
+		<Icon>bomber</Icon>
         <IsA>app:gui</IsA>
         <PartOf>desktop.kde.games</PartOf>
         <Summary>A single player arcade game</Summary>
         <Description>Bomber is a single player arcade game. The player is invading various cities in a plane that is decreasing in height.</Description>
-        <Archive sha1sum="0a3019d2569fb034fc283cd01f67d88522dfcb45" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/bomber-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="a720048044ab11fb734ae4b539e563b4ca357dff" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/bomber-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>qt5</Dependency>
-            <Dependency>mesa</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>libkdegames</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>kcrash</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>                                                                                                                                                                
+            <Dependency versionFrom="17.08.1">libkdegames</Dependency>                                                                                                                                                                        
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>                                                                                                                                                                           
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>                                                                                                                                                                       
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>                                                                                                                                                                            
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>                                                                                                                                                                       
+            <Dependency versionFrom="5.38.0">kdoctools</Dependency>                                                                                                                                                                         
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>                                                                                                                                                                             
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>                                                                                                                                                                           
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -55,10 +53,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

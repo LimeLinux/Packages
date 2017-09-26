@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.multimedia</PartOf>
         <Summary>KMix: KDE Digital Mixer</Summary>
         <Description>KMix: KDE Digital Mixer</Description>
-        <Archive sha1sum="85c929fdaf0a5746605f55aae6272d752c7ebeca" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmix-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="8c3aadfd7a4dec8fc715dda6f075343699a51a48" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kmix-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
@@ -70,10 +70,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

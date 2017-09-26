@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 document generator</Summary>
         <Description>kdoctools is an application aims to generate documents from DocBook.</Description>
-        <Archive sha1sum="a7ef8b008dac959f680c6366bec6d54443c94f2f" type="tarxz">mirrors://kde/stable/frameworks/5.37/kdoctools-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="fa980a95956d931d1908205155f52f8aa232639a" type="tarxz">mirrors://kde/stable/frameworks/5.38/kdoctools-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>perl-URI</Dependency>
@@ -22,9 +22,9 @@
             <Dependency>libxslt</Dependency>
             <Dependency>docbook-xml</Dependency>
             <Dependency>docbook-xsl</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">karchive</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">karchive</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -35,7 +35,7 @@
             <Dependency>libxml2</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxslt</Dependency>
-            <Dependency versionFrom="5.37.0">karchive</Dependency>
+            <Dependency versionFrom="5.38.0">karchive</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -52,9 +52,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

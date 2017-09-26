@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>KDE mail client</Summary>
         <Description>KMail is the email component of Kontact, the integrated personal information manager from KDE.</Description>
-        <Archive sha1sum="2cae24486c6664f91e337e7f6aa175a9fb607a87" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmail-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="87f2bcaec1dd930a787671e09d43daca12035c63" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kmail-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gpgme</Dependency>
              <Dependency>extra-cmake-modules</Dependency>
@@ -138,10 +138,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

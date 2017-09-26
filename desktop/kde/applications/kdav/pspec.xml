@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kdav</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.kde.utils</PartOf>
+        <Summary>A DAV protocol implemention with KJobs</Summary>
+        <Description>A DAV protocol implemention with KJobs.</Description>
+        <Archive sha1sum="49ef9080015d6a591a5774ee3eae98d081e088ac" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kdav-17.08.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.8">qt5</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>xz</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kdoctools</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>libarchive</Dependency>
+            <Dependency>extra-cmake-modules</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kdav</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.8">qt5</Dependency>
+            <Dependency>libarchive</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>kcrash</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>unrar</Dependency>
+            <Dependency>kpty</Dependency>
+            <Dependency>khtml</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kxmlgui</Dependency>
+            <Dependency>kservice</Dependency>
+            <Dependency>kcompletion</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdbusaddons</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kjobwidgets</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency>kparts</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/etc/xdg</Path>
+            <Path fileType="data">/usr/include/</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2017-09-25</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2017-05-05</Date>
+            <Version>17.04.0</Version>
+            <Comment>First release</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

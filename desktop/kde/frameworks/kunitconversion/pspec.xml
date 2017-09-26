@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>KDE unit conversion framework</Summary>
         <Description>KUnitConversion provides functions to convert values in different physical units.</Description>
-        <Archive sha1sum="5597b44cc01d3ef9f581b2fe6d147c875a94fe7f" type="tarxz">mirrors://kde/stable/frameworks/5.37/kunitconversion-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="4d2cb935b180a714237b1ca6e5f3619dcd2b6faa" type="tarxz">mirrors://kde/stable/frameworks/5.38/kunitconversion-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -40,9 +40,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

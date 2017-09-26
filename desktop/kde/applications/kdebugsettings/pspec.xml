@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>An application to enable/disable qCDebug</Summary>
         <Description>KDebug control module for KDE. It provides a graphical frontend for the kdebug daemon, which allow enabling or disabling particular debug areas/messages.</Description>
-        <Archive sha1sum="8ae410aeebcce0a0f969e0efffda63d908d9f18a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdebugsettings-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="16f843e67b3aca7d88e7e42cc011709a4cf021f7" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kdebugsettings-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -54,10 +54,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

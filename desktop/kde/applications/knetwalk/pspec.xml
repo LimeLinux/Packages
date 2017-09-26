@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.games</PartOf>
         <Summary>Network construction game</Summary>
         <Description>KNetWalk is a single player logic game. The object of the game is to start the LAN, connecting all the terminals to the server, in as few turns as possible.</Description>
-        <Archive sha1sum="c1ce472fd7b05018dbba2ace48a364f9c6c5ae35" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/knetwalk-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="e58e2c985443312be102a8841c0da0141d627291" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/knetwalk-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -63,10 +63,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

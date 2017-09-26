@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Job-based API for interacting with IMAP servers</Summary>
         <Description>API for interacting with IMAP servers</Description>
-        <Archive sha1sum="2639bd03ba506097db121d6f0c884065956d22a7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kimap-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="cc1add23cc702ff65a2fc304870f3c77fd243b98" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kimap-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>
@@ -51,10 +51,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

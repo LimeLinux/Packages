@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE library for handling mail messages and newsgroup articles.</Summary>
         <Description>Kmime library for handling mail messages and newsgroup articles.</Description>
-        <Archive sha1sum="3bb2f2869ba220c5841f38158010e2d86b0bb3a1" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kmime-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="2b8d42c0c5020241de216d3546d17b2d0fae0385" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kmime-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
@@ -43,10 +43,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

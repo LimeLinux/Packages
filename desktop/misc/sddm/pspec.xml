@@ -1,4 +1,3 @@
-
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
@@ -14,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>QML based X11 display manager</Summary>
         <Description>KDE Power Management module. Provides kded daemon DBus helper and KCM for configuring Power settings</Description>
-        <Archive sha1sum="ee92a2b27602c13d6ac5cfd34399192a31ca033c" type="tarxz">https://github.com/sddm/sddm/releases/download/v0.14.0/sddm-0.14.0.tar.xz</Archive>
+        <Archive sha1sum="10a108c155c96a37dd0de6f2c0faf5daeb1a6123" type="targz">https://github.com/sddm/sddm/releases/download/v0.15.0/sddm-0.15.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libxcb</Dependency>
@@ -25,7 +24,7 @@
         </BuildDependencies>
         <Patches>            
             <Patch>sddm-respect-user-flags.patch</Patch>
-            <Patch>ecb903e4.patch</Patch>
+            <!--<Patch>ecb903e4.patch</Patch>-->
             <Patch>sddm-0.14.0-consolekit.patch</Patch>
         </Patches>
     </Source>
@@ -67,12 +66,12 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-05-05</Date>
-            <Version>0.14.0</Version>
-            <Comment>First release</Comment>
-            <Name>Lime Linux Admin</Name>
-            <Email>admin@limelinux</Email>
+        <Update release="2">
+            <Date>2017-09-08</Date>
+            <Version>0.15.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
         </Update>
     </History>
 </PISI>

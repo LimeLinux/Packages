@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>the KDE calendar access library.</Summary>
         <Description>A calendar contains information like incidences (events, to-dos, journals), alarms, time zones, and other useful information.</Description>
-        <Archive sha1sum="c367d0cd1b61035487fe0f1b5dc0edad3502f881" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcalcore-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="86b93e3532c9e1f012da7a74e63f1d99fb3d08ea" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kcalcore-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdelibs4-support</Dependency>
@@ -51,10 +51,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

@@ -12,14 +12,23 @@
         <IsA>app:gui</IsA>
         <Summary>KDE and Plasma resources management GUI</Summary>
         <Description>KDE and Plasma resources management GUI</Description>
-        <Archive sha1sum="30de7ee8f9a7689669b9c65349481e1be3e334fe" type="tarxz">mirrors://kde/stable/plasma/5.9.5/discover-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="370cd72359013093d4f5d1c0baae180cefad487e" type="tarxz">mirrors://kde/stable/plasma/5.10.5/discover-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kdeclarative</Dependency>
-            <Dependency>plasma-framework</Dependency>
-            <Dependency>knewstuff</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">attica</Dependency>
+            <Dependency versionFrom="5.38.0">knewstuff</Dependency>
+            <Dependency versionFrom="5.38.0">karchive</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kdeclarative</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kitemmodels</Dependency>
+            <Dependency versionFrom="5.38.0">knotifications</Dependency>
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -54,10 +63,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

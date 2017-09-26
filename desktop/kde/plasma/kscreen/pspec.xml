@@ -13,16 +13,18 @@
         <IsA>app:console</IsA>
         <Summary>Provides the interface and basic tools for the KDE workspace</Summary>
         <Description>Provides the interface and basic tools for the KDE workspace</Description>
-        <Archive sha1sum="3065c53861ddd2ebc92a7453a921f3f57273fb62" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kscreen-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="63fcb903226a9eb5a72cc38fbfaca1870d7a9892" type="tarxz">mirrors://kde/stable/plasma/5.10.5/kscreen-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>kglobalaccel</Dependency>
-            <Dependency>libkscreen</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency versionFrom="13.0.4">mesa</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.10.5">libkscreen</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>
+            <Dependency>qt5</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -53,10 +55,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

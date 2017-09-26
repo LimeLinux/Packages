@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Breeze theme for Plymouth.</Summary>
         <Description>Breeze theme for Plymouth.</Description>
-        <Archive type="tarxz" sha1sum="0fc539cbdf733a3bba27a91a31c7a02b1da4decc">mirrors://kde/stable/plasma/5.9.5/breeze-plymouth-5.9.5.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="a74604f0d7367079e9d6d9b595462b0d45203f7b">mirrors://kde/stable/plasma/5.10.5/breeze-plymouth-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>plymouth</Dependency>
@@ -36,10 +36,10 @@
     </Package>
     
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

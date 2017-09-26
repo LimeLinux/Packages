@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.multimedia</PartOf>
         <Summary>KDE library for CDDB (Compact Disc Database)</Summary>
         <Description>KDE library for CDDB (Compact Disc Database).</Description>
-        <Archive sha1sum="f44b6b25ec107f9750e5ecfa6d2bcad24385c477" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libkcddb-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="801b6b68c5eeced7d9944fe1409393d89a91b3db" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/libkcddb-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>musicbrainz5</Dependency>
@@ -49,10 +49,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

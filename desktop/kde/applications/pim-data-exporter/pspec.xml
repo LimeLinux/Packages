@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Import and export KDE PIM settings</Summary>
         <Description>Import and export KDE PIM settings</Description>
-        <Archive sha1sum="770593f3c728d80deeaa90b6303079ec70e26ad4" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/pim-data-exporter-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="52b1de11a3da7a47c0350a27b606d3b5c746d85f" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/pim-data-exporter-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
              <Dependency>kcrash</Dependency>
@@ -90,10 +90,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

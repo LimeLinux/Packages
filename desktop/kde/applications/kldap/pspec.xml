@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>LDAP access API for KDE</Summary>
         <Description>Allows LDAP accessing with a convenient Qt style C++ API.</Description>
-        <Archive sha1sum="a301d05f6feb79213308b2ab57ce5dc265b49a1a" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kldap-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="643837712618cc615404fff14a4e58f79e9e7dac" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kldap-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>xapian-core</Dependency>
@@ -53,10 +53,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

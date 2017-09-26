@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>A graph calculator</Summary>
         <Description>KAlgebra is a fully featured calculator that lets you plot different types of 2D and 3D functions and to calculate easy and not so easy calculations, such as addition, trigonometric functions or derivatives.</Description>
-        <Archive sha1sum="33f611e7dd08287df77e73e64cc54a067d4d2286" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kalgebra-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="f105d4a91a79d77db93483910f146ffbbfc079fc" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kalgebra-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mesa</Dependency>
             <Dependency>mesa-glu</Dependency>
@@ -57,10 +57,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Editor for Grantlee themes</Summary>
         <Description>Editor for Grantlee themes</Description>
-        <Archive sha1sum="01cff502acafb060f08310d245599956d18ad992" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/grantlee-editor-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="6bd1ef4523289af8f3a03d18b86ab71aa3cc429e" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/grantlee-editor-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-webengine</Dependency>
             <Dependency>kcrash</Dependency>
@@ -84,10 +84,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

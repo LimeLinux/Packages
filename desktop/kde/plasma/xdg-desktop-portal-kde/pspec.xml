@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xdg-desktop-portal-kde</Name>
+        <Homepage>http://www.kde.org</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>backend implementation for xdg-desktop-portal using Qt</Summary>
+        <Description>backend implementation for xdg-desktop-portal using Qt</Description>
+        <Archive sha1sum="85c38e410941f09e8725fd71c504eb5e9829be0d" type="tarxz">mirrors://kde/stable/plasma/5.10.5/xdg-desktop-portal-kde-5.10.5.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>knotifications</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xdg-desktop-portal-kde</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>knotifications</Dependency> 
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2017-09-07</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

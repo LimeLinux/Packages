@@ -13,28 +13,26 @@
         <IsA>app:console</IsA>
         <Summary>Additional client tools for KDE applications</Summary>
         <Description>Additional client tools for KDE applications</Description>
-        <Archive sha1sum="a366950df40b8f31bfeb469eae9309eda2025cbb" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kdeplasma-addons-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="6b8ab8c749f3fb0627aed3cdd7a554ca3c158637" type="tarxz">mirrors://kde/stable/plasma/5.10.5/kdeplasma-addons-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>libxcb</Dependency>
-            <Dependency>xcb-util-image</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>ibus</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>knewstuff</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kross</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>kcmutils</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>krunner</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>plasma-framework</Dependency>
-            <Dependency>plasma-workspace</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+            <Dependency versionFrom="5.38.0">kactivities</Dependency>
+            <Dependency versionFrom="5.38.0">kcmutils</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kdelibs4-support</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">knewstuff</Dependency>
+            <Dependency versionFrom="5.38.0">kross</Dependency>
+            <Dependency versionFrom="5.38.0">krunner</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">kunitconversion</Dependency>
+            <Dependency versionFrom="5.38.0">plasma-framework</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency versionFrom="5.10.5">plasma-workspace</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -85,10 +83,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

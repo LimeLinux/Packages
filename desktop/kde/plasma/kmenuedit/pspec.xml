@@ -13,30 +13,18 @@
 	<IsA>app:console</IsA>
         <Summary>Provides the interface and basic tools for the KDE workspace</Summary>
         <Description>Provides the interface and basic tools for the KDE workspace</Description>
-        <Archive sha1sum="64d94578f6426da6a3519983fae8482efdb9c7c9" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kmenuedit-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="f0ce54d9d06d6f6af1d03e1eeb8053e8beecb83a" type="tarxz">mirrors://kde/stable/plasma/5.10.5/kmenuedit-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kconfig</Dependency>	
-            <Dependency>kservice</Dependency>	
-            <Dependency>kcompletion</Dependency>	
-            <Dependency>kcoreaddons</Dependency>	
-            <Dependency>kconfigwidgets</Dependency>	
-            <Dependency>kwidgetsaddons</Dependency>	
-            <Dependency>kdbusaddons</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>sonnet</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>docbook-xsl</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kdelibs4-support</Dependency>
+            <Dependency versionFrom="5.10.5">khotkeys</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.38.0">sonnet</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -71,10 +59,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

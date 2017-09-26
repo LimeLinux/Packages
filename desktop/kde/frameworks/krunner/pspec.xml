@@ -13,18 +13,18 @@
 	<IsA>app:console</IsA>
         <Summary>Krunner Framework for providing different actions given a string query</Summary>
         <Description>Framework Integration is a set of plugins responsible for better integration of Qt applications when running on a KDE Plasma workspace.</Description>
-        <Archive sha1sum="1aa96147a202effbca7bc0c5da58d8eb86c5a2da" type="tarxz">mirrors://kde/stable/frameworks/5.37/krunner-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="5f9589fad59648a3b02e4d4a277c56e5bc482c9f" type="tarxz">mirrors://kde/stable/frameworks/5.38/krunner-5.38.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.6.0">qt5</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">kio</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
-            <Dependency versionFrom="5.37.0">plasma-framework</Dependency>
-            <Dependency versionFrom="5.37.0">solid</Dependency>
-            <Dependency versionFrom="5.37.0">threadweaver</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">plasma-framework</Dependency>
+            <Dependency versionFrom="5.38.0">solid</Dependency>
+            <Dependency versionFrom="5.38.0">threadweaver</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,14 +33,14 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>    
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">kio</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
-            <Dependency versionFrom="5.37.0">plasma-framework</Dependency>
-            <Dependency versionFrom="5.37.0">solid</Dependency>	   
-            <Dependency versionFrom="5.37.0">threadweaver</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">plasma-framework</Dependency>
+            <Dependency versionFrom="5.38.0">solid</Dependency>	   
+            <Dependency versionFrom="5.38.0">threadweaver</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -54,9 +54,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>System log viewer.</Summary>
         <Description>KSystemLog show all logs of your system, grouped by General (Default system log, Authentication, Kernel, X.org...), and optional Services (Apache, Cups, etc, ...).</Description>
-        <Archive sha1sum="36fc5f9e87847b1e371db373486ac86dab1f53e3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ksystemlog-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="14c982fc516f67bf67869fc5896befa381b90077" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/ksystemlog-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
@@ -59,10 +59,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

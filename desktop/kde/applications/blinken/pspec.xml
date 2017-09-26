@@ -11,21 +11,22 @@
         <License>FDL</License>
         <License>GPL</License>
         <License>LGPL</License>
+		<Icon>blinken</Icon>
         <IsA>gui</IsA>
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Blinken - Memory Enhancement Game</Summary>
         <Description>Blinken is based on an electronic game released in 1978, which challenges players to remember sequences of increasing length. On the face of the device, there are 4 different color buttons, each one with their own distinctive sound.</Description>
-        <Archive sha1sum="b89035e3d727fe14ffcaf82d7373f55991d854d3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/blinken-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="ae4753ea81bbaa56b1d753772d977a91875c219e" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/blinken-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>gettext</Dependency>
-            <Dependency>kdbusaddons</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kguiaddons</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>qt5</Dependency>
-            <Dependency>qt5-phonon</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>                                                                                                                                                                
+            <Dependency versionFrom="5.8.0">qt5</Dependency>                                                                                                                                                                                
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>                                                                                                                                                                                                 
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>                                                                                                                                                                                            
+            <Dependency versionFrom="5.38.0">kdoctools</Dependency>                                                                                                                                                                                              
+            <Dependency versionFrom="5.38.0">kguiaddons</Dependency>                                                                                                                                                                                             
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>                                                                                                                                                                                                  
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>                                                                                                                                                                                                
+            <Dependency>qt5-phonon</Dependency> 
         </BuildDependencies>
     </Source>
 
@@ -51,10 +52,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

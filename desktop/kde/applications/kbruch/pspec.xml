@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Practice calculating with fractions and percentages</Summary>
         <Description>KBruch is a small program to practice calculating with fractions and percentages. Different exercises are provided for this purpose and you can use the learning mode to practice with fractions. The program checks the user's input and gives feedback.</Description>
-        <Archive sha1sum="427f72f7f9446ad71abeb6384657107f51e9a012" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kbruch-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="408ce409ad17a2c295041160bb07195637296b74" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kbruch-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>kdoctools</Dependency>
@@ -51,10 +51,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

@@ -14,21 +14,26 @@
         <PartOf>desktop.kde.utils</PartOf>
         <Summary>KDE Archiving Tool</Summary>
         <Description>Ark is a program for managing various archive formats within the KDE environment.</Description>
-        <Archive sha1sum="4cb91f50d7ca0d3f484a76a5934cccb84d73de15" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ark-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="957687e0ce8d8bc53cb503edfa37b86509724fe0" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/ark-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>karchive</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kcrash</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kpty</Dependency>
-            <Dependency>khtml</Dependency>
-            <Dependency>xz</Dependency>
-            <Dependency>kdbusaddons</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>docbook-xsl</Dependency>
-            <Dependency>libarchive</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="1.2.0">libzip</Dependency>
+            <Dependency versionFrom="3.2.0">libarchive</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">karchive</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kitemmodels</Dependency>
+            <Dependency versionFrom="5.38.0">kparts</Dependency>
+            <Dependency versionFrom="5.38.0">kpty</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.6.0">qt5</Dependency>
+
         </BuildDependencies>
     </Source>
 
@@ -70,10 +75,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

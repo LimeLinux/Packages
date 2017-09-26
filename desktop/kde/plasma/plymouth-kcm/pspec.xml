@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>plymouth-kcm</Name>
+        <Homepage>https://projects.kde.org/projects/kde/workspace/plymouth-kcm</Homepage>
+        <Packager>
+            <Name>lime Gnu/Linux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>A KCM for configuring Plymouth</Summary>
+        <Description>KDE5 Config Module for Plymouth</Description>
+        <Archive sha1sum="0cc128080d07332427d85ec9ecb3cab03bde8927" type="tarxz">mirrors://kde/stable/plasma/5.10.5/plymouth-kcm-5.10.5.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">karchive</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">kdeclarative</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">knewstuff</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>plymouth-kcm</Name>
+        <RuntimeDependencies>
+            <Dependency>kio</Dependency>
+            <Dependency>qt5</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>karchive</Dependency>
+            <Dependency>knewstuff</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>kdeclarative</Dependency>
+			<Dependency>kwidgetsaddons</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/lib/libexec/kauth</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>mahlas temir</Name>
+            <Email>mahlastemir@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

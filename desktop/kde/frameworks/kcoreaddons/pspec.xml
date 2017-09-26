@@ -13,9 +13,9 @@
         <IsA>app:console</IsA>
         <Summary>Utilities for core application functionality and accessing the OS</Summary>
         <Description>KCoreAddons provides classes built on top of QtCore to perform various tasks such as manipulating mime types, autosaving files, creating backup files, generating random sequences, performing text manipulations such as macro replacement, accessing user information and many more.</Description>
-        <Archive sha1sum="97af98f0b195cd14bbbe63505e7b014469e9dd4c" type="tarxz">http://download.kde.org/stable/frameworks/5.37/kcoreaddons-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="07bb40d5d0ea15f0036ad934873bc48db5748e60" type="tarxz">http://download.kde.org/stable/frameworks/5.38/kcoreaddons-5.38.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>shared-mime-info</Dependency>
             <Dependency>mesa</Dependency>
@@ -43,9 +43,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

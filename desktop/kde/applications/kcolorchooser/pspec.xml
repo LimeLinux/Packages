@@ -14,7 +14,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>A simple color chooser application</Summary>
         <Description>KColorChooser is a simple color chooser application.</Description>
-        <Archive sha1sum="1d1284078e886bf54cc93961ce07f2680f8e328c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcolorchooser-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="84771852f2cd9f7a86061ff4a9aa469617d5cf38" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kcolorchooser-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -44,10 +44,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

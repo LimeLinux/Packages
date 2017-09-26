@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 screen management library</Summary>
         <Description>Dynamic display management library for KDE</Description>
-        <Archive sha1sum="c3e718d32a19ff8f2772a53c85b78d376ad7142e" type="tarxz">mirrors://kde/stable/plasma/5.9.5/libkscreen-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="1971d5426ca85af445d034ce9dd4c110ee0db913" type="tarxz">mirrors://kde/stable/plasma/5.10.5/libkscreen-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libxcb</Dependency>
@@ -50,10 +50,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

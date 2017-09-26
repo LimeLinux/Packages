@@ -13,13 +13,13 @@
         <IsA>app:console</IsA>
         <Summary>Image formats addons for QT 5</Summary>
         <Description>This framework provides additional image format plugins for QtGui. </Description>
-        <Archive sha1sum="2534f7be84644de70ca24c13b66e506ddff120a5" type="tarxz">mirrors://kde/stable/frameworks/5.37/kimageformats-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="e4b4b90f9a57a486b7768811084b8162a5804093" type="tarxz">mirrors://kde/stable/frameworks/5.38/kimageformats-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="2.2.0">openexr</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
             <Dependency>ilmbase</Dependency>
-            <Dependency versionFrom="5.37.0">karchive</Dependency>
+            <Dependency versionFrom="5.38.0">karchive</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,7 +30,7 @@
             <Dependency versionFrom="2.2.0">openexr</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>ilmbase</Dependency>
-            <Dependency versionFrom="5.37.0">karchive</Dependency>
+            <Dependency versionFrom="5.38.0">karchive</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -41,9 +41,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

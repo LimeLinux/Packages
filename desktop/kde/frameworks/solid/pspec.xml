@@ -13,13 +13,13 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 hardware integration framework</Summary>
         <Description>Solid is a device integration framework.It provides a way of querying and interacting with hardware independently of the underlying operating system.</Description>
-        <Archive sha1sum="25ae2fbddd5bbca62d7ef217cd57f037655771e5" type="tarxz">mirrors://kde/stable/frameworks/5.37/solid-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="94c859f0fa36214b52f932b1a846391da433f7e3" type="tarxz">mirrors://kde/stable/frameworks/5.38/solid-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>udisks2</Dependency>
             <Dependency>upower</Dependency>
             <Dependency>media-player-info</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -44,9 +44,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

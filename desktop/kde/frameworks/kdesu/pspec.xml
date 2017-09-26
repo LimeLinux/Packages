@@ -13,16 +13,16 @@
         <IsA>app:console</IsA>
         <Summary>User interface for running shell commands with root privileges</Summary>
         <Description>kdesu provides functionality for building GUI front ends for (password asking) console mode programs.</Description>
-        <Archive sha1sum="888091c8744ae9a684cb01dc7ff746a8222f9871" type="tarxz">mirrors://kde/stable/frameworks/5.37/kdesu-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="821da18fd4cff0380c74a8663280fe2edb4b7bc8" type="tarxz">mirrors://kde/stable/frameworks/5.38/kdesu-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libX11</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kpty</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kpty</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -32,11 +32,11 @@
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libX11</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kpty</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kpty</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -50,9 +50,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

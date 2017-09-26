@@ -13,11 +13,11 @@
         <IsA>app:console</IsA>
         <Summary>Qt wrapper for ModemManager DBus API</Summary>
         <Description>Qt wrapper for ModemManager DBus API</Description>
-        <Archive sha1sum="040bcd59d42eb7e1845a4d44cab1656c628151c3" type="tarxz">mirrors://kde/stable/frameworks/5.37/modemmanager-qt-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="bea505599695090b3712dc46279982ca5d890559" type="tarxz">mirrors://kde/stable/frameworks/5.38/modemmanager-qt-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>ModemManager</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -41,9 +41,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

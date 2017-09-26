@@ -9,40 +9,28 @@
             <Email>admin@limelinux.com</Email>
         </Packager>
         <License>GPLv2</License>
+		<Icon>blogilo</Icon>
         <Summary>A KDE blogging client</Summary>
         <Description>Blogilo is an fully-featured blogging client. It allows local creation and editing of blog posts. Various blogging APIs are supported for publishing.</Description>
-        <Archive sha1sum="9971b0d886f400e50802ad8d5ed52357353bcd12" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/blogilo-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="6fcc382d77b58d04833ab4ed162669a65587b6f9" type="tarxz">http://download.kde.org/stable/applications/17.08.1/src/blogilo-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>qt5</Dependency>
-            <Dependency>boost</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>kblog</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>ktexteditor</Dependency>
-            <Dependency>python</Dependency>
-            <Dependency>qt5-webengine</Dependency>
-            <Dependency>kcalcore</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency> 
-            <Dependency>kunitconversion</Dependency> 
-            <Dependency>ksyndication</Dependency>
-            <Dependency>libkdepim</Dependency>
-            <Dependency>akonadi</Dependency>
-            <Dependency>akonadi-contacts</Dependency>
-            <Dependency>akonadi-mime</Dependency>
-            <Dependency>kcontacts</Dependency>
-            <Dependency>pimcommon</Dependency>
-            <Dependency>kimap</Dependency>
-            <Dependency>kmime</Dependency>
-            <Dependency>cyrus-sasl</Dependency>
-            <Dependency>kpimtextedit</Dependency>
-            <Dependency>messagelib</Dependency>
-            <Dependency>syntax-highlighting</Dependency>
-            <Dependency>libkgapi</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>                                                                                                                                                               
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>                                                                                                                                                                            
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>                                                                                                                                                                       
+            <Dependency versionFrom="5.38.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.38.0">ktexteditor</Dependency>
+            <Dependency versionFrom="5.38.0">kwallet</Dependency>
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.38.0">syntax-highlighting</Dependency>
+            <Dependency versionFrom="17.08.1">kblog</Dependency>
+            <Dependency versionFrom="17.08.1">kimap</Dependency>
+            <Dependency versionFrom="17.08.1">kpimtextedit</Dependency>
+            <Dependency versionFrom="17.08.1">libkdepim</Dependency>
+            <Dependency versionFrom="17.08.1">libkgapi</Dependency>
+            <Dependency versionFrom="17.08.1">messagelib</Dependency>
+            <Dependency versionFrom="17.08.1">pimcommon</Dependency>
+            <Dependency versionFrom="5.8.0">qt5-webengine</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -84,10 +72,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

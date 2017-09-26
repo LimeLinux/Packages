@@ -16,23 +16,17 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Improve your pronunciation by listening to native speakers</Summary>
         <Description>Artikulate, Improve your pronunciation by listening to native speakers.</Description>
-        <Archive sha1sum="10abd6ca776c177b474629182aad82205cea7d01" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/artikulate-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="9c34e61c38c10d551077386340d4f1bc9710a222" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/artikulate-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>boost</Dependency>
-            <Dependency>cmake</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kcrash</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>knewstuff</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kdeclarative</Dependency>
-            <Dependency>kconfigwidgets</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>                                                                                                                                                               
+            <Dependency versionFrom="5.8.0">qt5</Dependency>                                                                                                                                                                                  
+            <Dependency versionFrom="5.38.0">karchive</Dependency>                                                                                                                                                                                               
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>                                                                                                                                                                                                
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>                                                                                                                                                                                                 
+            <Dependency versionFrom="5.38.0">kdoctools</Dependency>                                                                                                                                                                                              
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>                                                                                                                                                                                                  
+            <Dependency versionFrom="5.38.0">knewstuff</Dependency>                                                                                                                                                                                              
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency> 
         </BuildDependencies>
     </Source>
 
@@ -62,10 +56,10 @@
     </Package> 
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

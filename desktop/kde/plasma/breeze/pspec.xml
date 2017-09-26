@@ -13,9 +13,9 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 Plasma artwork</Summary>
         <Description>Artwork, styles and assets for the Breeze visual style for the Plasma Desktop</Description>
-        <Archive sha1sum="3bf1e4f7321adedf749c18fe9babd46bf1f127e8" type="tarxz">mirrors://kde/stable/plasma/5.9.5/breeze-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="486cfbd066493a54bc660288ce09f3ba627e04a2" type="tarxz">mirrors://kde/stable/plasma/5.10.5/breeze-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.0.9">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
             <Dependency>kdecoration</Dependency>
             <Dependency>ki18n</Dependency>
             <Dependency>kpackage</Dependency>
@@ -52,10 +52,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

@@ -9,10 +9,11 @@
             <Email>admin@limelinux.com</Email>
         </Packager>
         <License>LGPLv2</License>
+		<Icon>kate</Icon>
         <IsA>app:gui</IsA>
         <Summary>Advanced Text Editor</Summary>
         <Description>Plasma library and runtime components based upon KF5 and Qt5</Description>
-        <Archive sha1sum="31634980d18b16b10c6ba473c67e3d79006260b2" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kate-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="32ef58f70028d5121eaf7be4c391f4825598686c" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kate-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>plasma-framework</Dependency>
@@ -73,10 +74,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

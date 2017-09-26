@@ -13,13 +13,13 @@
         <IsA>app:console</IsA>
         <Summary>Widgets for showing progress of asynchronous jobs</Summary>
         <Description>KJobWIdgets provides widgets for showing progress of asynchronous jobs.</Description>
-        <Archive sha1sum="d108f8da02159a2da79d13832cae018917fb3f33" type="tarxz">mirrors://kde/stable/frameworks/5.37/kjobwidgets-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="518a4e49e64beca7a86d8dca1f2033ae616e981c" type="tarxz">mirrors://kde/stable/frameworks/5.38/kjobwidgets-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libX11</Dependency>
             <Dependency>qt5</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -28,8 +28,8 @@
         <RuntimeDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kwidgetsaddons</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -44,9 +44,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Bookmark Organizer and Editor</Summary>
         <Description>Bookmark Organizer and Editor</Description>
-        <Archive sha1sum="0db074301a38f2a7404278420907a0e0e794e8c3" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/keditbookmarks-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="893a9fbf2257a6dc5d432ef7b3d23f9ea8d08984" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/keditbookmarks-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>gettext</Dependency>
@@ -58,10 +58,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

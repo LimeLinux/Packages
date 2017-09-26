@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Breeze theme for GRUB.</Summary>
         <Description>Breeze theme for GRUB.</Description>
-        <Archive sha1sum="d336e48cb6ec6c8a3db5233a2974845dbd917bda" type="tarxz">mirrors://kde/stable/plasma/5.9.5/breeze-grub-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="cbd0323e784e3c787b02d45784ac22367f97ec97" type="tarxz">mirrors://kde/stable/plasma/5.10.5/breeze-grub-5.10.5.tar.xz</Archive>
     </Source>
     
     <Package>
@@ -29,10 +29,10 @@
     </Package>
     
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

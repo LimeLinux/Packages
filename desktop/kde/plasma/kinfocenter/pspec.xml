@@ -13,38 +13,31 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 info center</Summary>
         <Description>KDE5 Utility that provides information about a computer system. </Description>
-        <Archive sha1sum="ef3450c2abbf1cd9835797b12f620e0380bfdff1" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kinfocenter-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="2cecc1eb5c338223d97ed0d1d9c307a8349413a8" type="tarxz">mirrors://kde/stable/plasma/5.10.5/kinfocenter-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>kcmutils</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kconfigwidgets</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kdbusaddons</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kservice</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kwindowsystem</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>libraw1394</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kcmutils</Dependency>
+            <Dependency versionFrom="5.38.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kdeclarative</Dependency>
+            <Dependency versionFrom="5.38.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kpackage</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.38.0">solid</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+            <Dependency versionFrom="5.38.0">kwayland</Dependency>
             <Dependency>libX11</Dependency>
-            <Dependency>mesa-glu</Dependency>
-            <Dependency>pciutils</Dependency>
-            <Dependency>plasma-framework</Dependency>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>solid</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>kwayland</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>docbook-xsl</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>mesa</Dependency>
+
         </BuildDependencies>
     </Source>
 
@@ -93,10 +86,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

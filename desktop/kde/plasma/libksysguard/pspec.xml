@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Task management and system monitoring library</Summary>
         <Description>Task management and system monitoring library</Description>
-        <Archive sha1sum="f696c48550380468b966c96e81d27a1290a6f057" type="tarxz">mirrors://kde/stable/plasma/5.9.5/libksysguard-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="6bd55d8408f54bd0cdee5bfddb38c059b4791f76" type="tarxz">mirrors://kde/stable/plasma/5.10.5/libksysguard-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>
@@ -56,10 +56,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

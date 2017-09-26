@@ -13,21 +13,18 @@
         <IsA>app:console</IsA>
         <Summary>Libraries and daemons to implement basic email handling</Summary>
         <Description>Libraries and daemons to implement basic email handling</Description>
-        <Archive sha1sum="85ee1ed0fa0934182b258fceef3d34fa85b757a7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-mime-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="60715f1864028f6cfa8db10d73d0334d7eae10ed" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/akonadi-mime-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>qt5</Dependency>
-            <Dependency>boost</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>gettext</Dependency>
-            <Dependency>akonadi</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>kxmlgui</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>                                                                                                                                                               
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>                                                                                                                                                                           
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>                                                                                                                                                                       
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>                                                                                                                                                                             
+            <Dependency versionFrom="5.38.0">kio</Dependency>                                                                                                                                                                               
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>                                                                                                                                                                           
+            <Dependency versionFrom="17.08.1">akonadi</Dependency>                                                                                                                                                                            
+            <Dependency versionFrom="5.38.0">kitemmodels</Dependency>                                                                                                                                                                        
+            <Dependency versionFrom="17.08.1">kmime</Dependency>                                                                                                                                                                              
             <Dependency>libxslt</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>kmime</Dependency>
             <Dependency>shared-mime-info</Dependency>
         </BuildDependencies>
     </Source>
@@ -58,10 +55,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

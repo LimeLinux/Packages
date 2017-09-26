@@ -1,4 +1,3 @@
-
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
@@ -15,7 +14,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>An interactive geometry application</Summary>
         <Description>Kig is an application for interactive geometry.</Description>
-        <Archive sha1sum="c572039b0d5a766bb3fff96ca5ea7b4853828908" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kig-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="ae7ceeeef422c784d5e3293a30a8896a2c8a2b65" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kig-17.08.1.tar.xz</Archive>
         <BuildDependencies> 
             <Dependency>qt5</Dependency>
             <Dependency>boost</Dependency>
@@ -60,10 +59,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

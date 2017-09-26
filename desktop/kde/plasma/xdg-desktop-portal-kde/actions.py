@@ -1,15 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+#
 # Licensed under the GNU General Public License, version 3.
-# See the file http://www.gnu.org/copyleft/gpl.txt
+# See the file http://www.gnu.org/licenses/gpl.txt
 
 from pisi.actionsapi import kde5
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 
 def setup():
-    shelltools.export("OpenCV_DIR", "/usr/share/OpenCV/OpenCVConfig.cmake")
     kde5.configure()
 
 def build():
@@ -18,4 +16,4 @@ def build():
 def install():
     kde5.install()
 
-    pisitools.dodoc("AUTHORS", "COPYING*", "README", "TODO")
+    pisitools.dodoc("README.md", "COPYING")

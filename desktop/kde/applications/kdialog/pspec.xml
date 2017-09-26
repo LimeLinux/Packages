@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>kdialog allows you to display dialog boxes from shell scripts</Summary>
         <Description>The syntax is very much inspired from the "dialog" command (which shows text mode dialogs).</Description>
-        <Archive sha1sum="d4d6ec9f13a3a1ce8eb82f4e99dcb9f244a9dcaa" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdialog-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="fd9e888fd4b81b9a10b2b8964db71648f05acce2" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kdialog-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>gettext</Dependency>
@@ -60,10 +60,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

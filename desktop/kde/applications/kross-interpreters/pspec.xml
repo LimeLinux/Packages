@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.bindings</PartOf>
         <Summary>Kross interpreter plugins for programming languages</Summary>
         <Description>Language interpreters to enable in-process scripting with Kross.</Description>
-        <Archive sha1sum="b07e6d85d8efdca21ebe011e936c0c372104e368" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kross-interpreters-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="5ff249bdbeff89843ae31ce1afbf626811c70269" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kross-interpreters-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
@@ -45,10 +45,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

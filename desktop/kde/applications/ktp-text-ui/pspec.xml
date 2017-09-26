@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>Telepathy handler for Text Chats</Summary>
         <Description>Telepathy handler for Text Chats</Description>
-        <Archive sha1sum="59448c4104776ec0d838459541f7aeadbabbbdea" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/ktp-text-ui-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="2cd229a60b663573495f2acca083187fcc299a8d" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/ktp-text-ui-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>karchive</Dependency>
@@ -76,10 +76,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

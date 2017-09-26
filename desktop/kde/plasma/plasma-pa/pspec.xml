@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Plasma applet for audio volume management using PulseAudio.</Summary>
         <Description>Plasma applet for audio volume management using PulseAudio.</Description>
-        <Archive sha1sum="6d8c75a58cd0e4ee616fd76b592c60203383ab51" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-pa-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="16cc59d14b3042e777470194746628bf11c6eeaf" type="tarxz">mirrors://kde/stable/plasma/5.10.5/plasma-pa-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="0.0.14">extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.0.0">pulseaudio</Dependency>
@@ -55,10 +55,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

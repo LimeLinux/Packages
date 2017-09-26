@@ -13,24 +13,17 @@
         <IsA>app:library</IsA>
         <Summary>The KDE calendar utility library</Summary>
         <Description>Calendar utility library for KDE</Description>
-        <Archive sha1sum="af49df4d5e4eded678b3d7feb7e4ca3303b095e7" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcalutils-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="c85803516a518584d74ed053fb8ade3e2a6710d9" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kcalutils-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="16.12.0">kcalcore</Dependency>
-            <Dependency versionFrom="16.12.0">kidentitymanagement</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>grantlee</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>kidentitymanagement</Dependency>
+            <Dependency versionFrom="5.1.0">grantlee</Dependency>                                                                                                                                                                             
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>                                                                                                                                                               
+            <Dependency versionFrom="5.38.0">kcodecs</Dependency>                                                                                                                                                                           
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>                                                                                                                                                                           
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>                                                                                                                                                                       
+            <Dependency versionFrom="5.38.0">kdelibs4-support</Dependency>                                                                                                                                                                  
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>                                                                                                                                                                             
+            <Dependency versionFrom="17.08.1">kcalcore</Dependency>                                                                                                                                                                           
+            <Dependency versionFrom="17.08.1">kidentitymanagement</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -60,10 +53,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

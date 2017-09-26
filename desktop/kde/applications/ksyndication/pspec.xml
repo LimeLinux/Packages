@@ -12,7 +12,7 @@
         <IsA>app:library</IsA>
         <Summary>RSS/Atom parser library</Summary>
         <Description>syndication is a parser library for RSS and Atom feeds.</Description>
-        <Archive sha1sum="2362185d5074732e98bf2ac4b60ae6b67665b377" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/syndication-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="6919b1b1eab23ca9132f93d8f2f67a9c53359c44" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/syndication-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kio</Dependency>
@@ -38,10 +38,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

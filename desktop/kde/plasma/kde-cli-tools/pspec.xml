@@ -13,31 +13,22 @@
         <IsA>app:console</IsA>
         <Summary>Additional client tools for KDE applications</Summary>
         <Description>Tools based on KDE Frameworks 5 to better interact with the system</Description>
-        <Archive sha1sum="508a86085b77eaf23524196feb41247db7b7deaf" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kde-cli-tools-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="fb77ea9b1be90c1cd889414202c7229b352d48bf" type="tarxz">mirrors://kde/stable/plasma/5.10.5/kde-cli-tools-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kcmutils</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kdesu</Dependency>
+            <Dependency versionFrom="5.38.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kinit</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
             <Dependency>libX11</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kdesu</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kservice</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kwindowsystem</Dependency>
-            <Dependency>kconfigwidgets</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kcmutils</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>docbook-xsl</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>libxcb</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -75,10 +66,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

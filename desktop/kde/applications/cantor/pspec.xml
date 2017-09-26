@@ -14,23 +14,26 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>A KDE frontend to mathematical softwares</Summary>
         <Description>Cantor is an application that lets you use your favorite mathematical applications from within a nice KDE-integrated Worksheet Interface. It offers assistant dialogs for common tasks and allows you to share your worksheets with others.</Description>
-        <Archive sha1sum="379bbb9f8c987b7e3386471259f102eda09df2ff" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/cantor-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="6336e8634bf351dc0e2b563bd4ccebaa7b08910f" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/cantor-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">karchive</Dependency>
+            <Dependency versionFrom="5.38.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>
+            <Dependency versionFrom="5.38.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">knewstuff</Dependency>
+            <Dependency versionFrom="5.38.0">kparts</Dependency>
+            <Dependency versionFrom="5.38.0">kpty</Dependency>
+            <Dependency versionFrom="5.38.0">ktexteditor</Dependency>
+            <Dependency versionFrom="5.38.0">ktextwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency>libspectre</Dependency>
             <Dependency>qt5</Dependency>
-            <Dependency>mesa</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>ktexteditor</Dependency>
-            <Dependency>knewstuff</Dependency>
-            <Dependency>kpty</Dependency>
-            <Dependency>analitza</Dependency>
-            <Dependency>cln</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -73,10 +76,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

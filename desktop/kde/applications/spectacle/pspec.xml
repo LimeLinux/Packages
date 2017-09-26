@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>KDE screenshot capture utility</Summary>
         <Description>Spectacle, a new screenshot application that aims to replace KSnapshot..</Description>
-        <Archive sha1sum="c0e5cc53d65fc4df732453558627803164c661a2" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/spectacle-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="07dabd2cfa82b4613a53760e2c606a85441a713d" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/spectacle-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
@@ -67,10 +67,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

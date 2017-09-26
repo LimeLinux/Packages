@@ -12,18 +12,18 @@
         <IsA>library</IsA>
         <Summary>Global desktop keyboard shortcuts</Summary>
         <Description>KGlobalAccel allows you to have global accelerators that are independent of the focused window.</Description>
-        <Archive sha1sum="ca516a6aa7dadb636056ddc0ff8739071e91214f" type="tarxz">mirrors://kde/stable/frameworks/5.37/kglobalaccel-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="64b4e9208fe7bec81461fb63b134a64742717f48" type="tarxz">mirrors://kde/stable/frameworks/5.38/kglobalaccel-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>libxcb</Dependency>
             <Dependency>xcb-util-keysyms</Dependency>
-            <Dependency versionFrom="5.37.0">kcrash</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -34,12 +34,12 @@
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
             <Dependency>xcb-util-keysyms</Dependency>
-            <Dependency versionFrom="5.37.0">kcrash</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kdbusaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -53,9 +53,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

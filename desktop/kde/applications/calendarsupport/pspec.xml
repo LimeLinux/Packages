@@ -12,39 +12,24 @@
         <IsA>app:console</IsA>
         <Summary>Calendar support library</Summary>
         <Description>Calendar support library</Description>
-        <Archive type="tarxz" sha1sum="44ce1e6b5da062f1cc967da6fba47cc0529decdf">mirrors://kde/stable/applications/17.04.0/src/calendarsupport-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="34a0190957a4f89c0756a330c628b0e3798f5b4a">mirrors://kde/stable/applications/17.08.1/src/calendarsupport-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>qt5</Dependency>
-            <Dependency>akonadi</Dependency>
-            <Dependency>kmime</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kcodecs</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kjobwidgets</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kservice</Dependency>
-            <Dependency>solid</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
             <Dependency>boost</Dependency>
-            <Dependency>kcalutils</Dependency>
-            <Dependency>kcalcore</Dependency>
-            <Dependency>kidentitymanagement</Dependency>
-            <Dependency>kholidays</Dependency>
-            <Dependency>akonadi-calendar</Dependency>
-            <Dependency>kcontacts</Dependency>
-            <Dependency>pimcommon</Dependency>
-            <Dependency>kimap</Dependency>
-            <Dependency>cyrus-sasl</Dependency>
-            <Dependency>kdepim-apps-libs</Dependency>
-            <Dependency>akonadi-mime</Dependency>
-            <Dependency>akonadi-contacts</Dependency>
+			<Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="17.08.1">akonadi-calendar</Dependency>
+            <Dependency versionFrom="17.08.1">akonadi-mime</Dependency>
+            <Dependency versionFrom="17.08.1">akonadi</Dependency>
+            <Dependency versionFrom="17.08.1">kcalcore</Dependency>
+            <Dependency versionFrom="17.08.1">kcalutils</Dependency>
+            <Dependency versionFrom="17.08.1">kdepim-apps-libs</Dependency>
+            <Dependency versionFrom="17.08.1">kholidays</Dependency>
+            <Dependency versionFrom="17.08.1">kidentitymanagement</Dependency>
+            <Dependency versionFrom="17.08.1">kimap</Dependency>
+            <Dependency versionFrom="17.08.1">kmime</Dependency>
+            <Dependency versionFrom="17.08.1">pimcommon</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -87,10 +72,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

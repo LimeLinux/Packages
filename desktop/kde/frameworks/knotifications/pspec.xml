@@ -12,18 +12,18 @@
         <IsA>library</IsA>
         <Summary>KDE5 Desktop notifications</Summary>
         <Description>KNotification is used to notify the user of an event. It covers feedback and persistent events.</Description>
-        <Archive sha1sum="b75020ff31e0ccedaf359a36960db7c4836188d5" type="tarxz">mirrors://kde/stable/frameworks/5.37/knotifications-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="b68fd3d14141e60dcdfe79b3f61d4a2f81cef1ff" type="tarxz">mirrors://kde/stable/frameworks/5.38/knotifications-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libdbusmenu-qt</Dependency>
             <Dependency>qt5-phonon</Dependency>
-            <Dependency versionFrom="5.37.0">kwindowsystem</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.37.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,13 +33,13 @@
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">kcodecs</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
             <Dependency>libdbusmenu-qt</Dependency>
-            <Dependency versionFrom="5.37.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.38.0">kwindowsystem</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -54,9 +54,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

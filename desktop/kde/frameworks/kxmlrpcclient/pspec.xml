@@ -13,12 +13,12 @@
         <IsA>app:console</IsA>
         <Summary>XML-RPC client library for KDE</Summary>
         <Description>This library contains simple XML-RPC Client support. It is used mainly by the egroupware module of kdepim, but is a complete client and is quite easy to use. Only one interface is exposed to the world, kxmlrpcclient/client.h and of that interface, you only need to use 3 methods: setUrl, setUserAgent and call.</Description>
-        <Archive sha1sum="88524b47a0e573049f5f821e39e4f58840900382" type="tarxz">mirrors://kde/stable/frameworks/5.37/kxmlrpcclient-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="e4d49ce61064dbb661a8677809e87ddd5383342b" type="tarxz">mirrors://kde/stable/frameworks/5.38/kxmlrpcclient-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-			<Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">kio</Dependency>
+			<Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,9 +27,9 @@
         <RuntimeDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -46,9 +46,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

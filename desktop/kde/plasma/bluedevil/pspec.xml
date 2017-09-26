@@ -13,9 +13,9 @@
         <IsA>app:console</IsA>
         <Summary>KDE 5 Bluetooth Stack</Summary>
         <Description>Integrate the Bluetooth technology within KDE workspace and applications</Description>
-        <Archive sha1sum="9e9ae1f2553f9f1be8cd411d3b4c6bd2a26a97c0" type="tarxz">mirrors://kde/stable/plasma/5.9.5/bluedevil-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="c8d7fed511a933a491cdb19c82c7c1ee181c7353" type="tarxz">mirrors://kde/stable/plasma/5.10.5/bluedevil-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.4.0">qt5</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
             <Dependency>bluez-qt</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>kcoreaddons</Dependency>
@@ -28,7 +28,7 @@
             <Dependency>kwidgetsaddons</Dependency>
             <Dependency>kwindowsystem</Dependency>
             <Dependency>plasma-framework</Dependency>
-            <Dependency>shared-mime-info</Dependency>
+			<Dependency>shared-mime-info</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -62,10 +62,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.sdk</PartOf>
         <Summary>Lokalize is the localization tool for KDE and other open source software</Summary>
         <Description>Lokalize is also a general computer-aided translation system (CAT) with which you can translate OpenDocument files (*.odt). </Description>
-        <Archive sha1sum="5f71e5af3d65505aeacd54505daf936667c8795e" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/lokalize-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="fd9d0c3070465946dd144e08603e3933d91fcf70" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/lokalize-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency> 
             <Dependency>hunspell</Dependency>
@@ -67,10 +67,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

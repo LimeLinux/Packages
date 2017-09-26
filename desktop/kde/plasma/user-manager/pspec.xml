@@ -13,20 +13,20 @@
         <IsA>app:gui</IsA>
         <Summary>KDE 5 User Manager</Summary>
         <Description>User Manager within KDE workspace and applications</Description>
-        <Archive sha1sum="78b558aa363a73186247d85dc64061d095899678" type="tarxz">mirrors://kde/stable/plasma/5.9.5/user-manager-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="eade126302507e0ba5683b70c3549c5110bfacd3" type="tarxz">mirrors://kde/stable/plasma/5.10.5/user-manager-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>accountsservice</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kcmutils</Dependency>
+            <Dependency>kconfig</Dependency>
+            <Dependency>kconfigwidgets</Dependency>
+            <Dependency>kcoreaddons</Dependency>
+            <Dependency>ki18n</Dependency>
+            <Dependency>kiconthemes</Dependency>
+            <Dependency>kio</Dependency>
+            <Dependency>kwidgetsaddons</Dependency>
             <Dependency>libpwquality</Dependency>
-            <Dependency versionFrom="13.0.4">mesa</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency>qt5</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -58,10 +58,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

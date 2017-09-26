@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Address book API for KDE.</Summary>
         <Description>Address book for KDE for Contacts.</Description>
-        <Archive sha1sum="368ae63a9763f3bb64a17e7d0b8d572e27dd8db4" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kcontacts-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="538394e619f19a0a2540cf16a02e1e1611adc0c7" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kcontacts-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>ki18n</Dependency>
@@ -43,10 +43,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.graphics</PartOf>
         <Summary>SANE library interface for KDE</Summary>
         <Description>libksane is a SANE library interface for KDE.</Description>
-        <Archive sha1sum="0c1df40c37463bc61b0f06ed106911cb875f8b7f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/libksane-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="c9576af169ac404464d819438a5c1eb14908144a" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/libksane-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>ki18n</Dependency>
             <Dependency>kwallet</Dependency>
@@ -44,10 +44,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

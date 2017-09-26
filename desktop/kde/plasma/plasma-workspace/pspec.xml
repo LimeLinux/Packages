@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>The KDE5 Plasma Workspace Components</Summary>
         <Description>The KDE5 Plasma Workspace Components</Description>
-        <Archive sha1sum="450699481f6598e7f8d7ede6799367f1d8c54a0d" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-workspace-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="82c9bb6112d271ebc7341b68729cdc18546cb101" type="tarxz">mirrors://kde/stable/plasma/5.10.5/plasma-workspace-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="4.6.60">qt5-phonon</Dependency>
@@ -36,7 +36,7 @@
             <Dependency versionFrom="5.29.0">ktextwidgets</Dependency>
             <Dependency versionFrom="5.29.0">kwallet</Dependency>
             <Dependency versionFrom="5.29.0">kwayland</Dependency>
-            <Dependency versionFrom="5.9.5">libksysguard</Dependency>
+            <Dependency versionFrom="5.10.5">libksysguard</Dependency>
             <Dependency versionFrom="5.29.0">networkmanager-qt</Dependency>
             <Dependency versionFrom="5.29.0">plasma-framework</Dependency>
             <Dependency versionFrom="5.6.1">qt5</Dependency>
@@ -146,10 +146,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

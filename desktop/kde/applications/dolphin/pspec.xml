@@ -12,7 +12,7 @@
         <Icon>dolphin</Icon>
         <Summary>KDE File Manager</Summary>
         <Description>Dolphin is the File Manager for KDE.</Description>
-        <Archive sha1sum="d5cab201bd57f3daef1058294de2484f912dea8c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/dolphin-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="f5b05076ed6d60d958a442ac858ca74b3d349c78" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/dolphin-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>qt5-phonon</Dependency>
@@ -82,10 +82,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

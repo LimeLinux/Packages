@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Virtual globe and eorld atlas</Summary>
         <Description>Marble is a virtual globe and world atlas that you can use to learn more about the Earth.</Description>
-        <Archive sha1sum="e5e0d6dd2b509331ac69678644d95122b8ebce72" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/marble-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="32ec0e1ba0883cc6c0817f5dd50f71231f81d12c" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/marble-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
@@ -66,10 +66,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

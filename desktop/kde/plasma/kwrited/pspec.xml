@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 daemon listening for wall and write messages</Summary>
         <Description>KDE5 daemon listening for wall and write messages</Description>
-        <Archive sha1sum="3d2616c80c2b4c613effbea25519326377e23cdf" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kwrited-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="83e10dcdf32758cce86cb0e0edac2b4ebea7e177" type="tarxz">mirrors://kde/stable/plasma/5.10.5/kwrited-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>ki18n</Dependency>
@@ -46,10 +46,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

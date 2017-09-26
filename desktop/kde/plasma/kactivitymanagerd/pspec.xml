@@ -12,19 +12,12 @@
         <IsA>app:console</IsA>
         <Summary>Core components for the KDE Activity concept.</Summary>
         <Description>System service to manage user's activities, track the usage patterns etc.</Description>
-        <Archive type="tarxz" sha1sum="96c8d9507451436d38eb0ef429313cd097be8eaa">mirrors://kde/stable/plasma/5.9.5/kactivitymanagerd-5.9.5.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="b70a88b0dff7d955110a7bdc6a37e67aac87bd24">mirrors://kde/stable/plasma/5.10.5/kactivitymanagerd-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>boost</Dependency>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>kdbusaddons</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kwindowsystem</Dependency>
-            <Dependency>kglobalaccel</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>kio</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
         </BuildDependencies>
     </Source>
     
@@ -54,10 +47,10 @@
     </Package>
     
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

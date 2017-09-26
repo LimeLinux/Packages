@@ -13,10 +13,10 @@
         <IsA>app:console</IsA>
         <Summary>Multi-threaded programming framework for KDE</Summary>
         <Description>ThreadWeaver is a helper for multithreaded programming.  It uses a job-based interface to queue tasks and execute them in an efficient way.</Description>
-        <Archive sha1sum="740d0a3decb6b048607ae5f5303050187e7eaf04" type="tarxz">mirrors://kde/stable/frameworks/5.37/threadweaver-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="5cc630845950dc22a342ac3d325ff3db1a6815e4" type="tarxz">mirrors://kde/stable/frameworks/5.38/threadweaver-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -37,9 +37,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

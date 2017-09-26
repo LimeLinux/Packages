@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Mail sieve editor</Summary>
         <Description>Mail sieve editor</Description>
-        <Archive sha1sum="de8292b75d059404e48a61e77557547bc0146698" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/pim-sieve-editor-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="ff65248ca5c0002e258cff14472cb4e6b799aa1a" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/pim-sieve-editor-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
              <Dependency>kbookmarks</Dependency>
@@ -66,10 +66,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.edu</PartOf>
         <Summary>Interactive Physical Simulator</Summary>
         <Description>Step is an interactive physical simulator. It allows you to explore the physical world through simulations.</Description>
-        <Archive sha1sum="9bf8a2143ce154960a71719a04e904fc23d803f1" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/step-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="81e51b9c35154fadc547766df5ace69fb8c8c4c3" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/step-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>  
             <Dependency>extra-cmake-modules</Dependency>
@@ -69,10 +69,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

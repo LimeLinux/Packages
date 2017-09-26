@@ -13,31 +13,19 @@
         <IsA>app:console</IsA>
         <Summary>Akonadi calendar integration</Summary>
         <Description>Calendar integration for Akonadi.</Description>
-        <Archive sha1sum="085d1466fd332b3ec8988e4421d8a6e86806e43c" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/akonadi-calendar-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="5beb48d35aec24666a1dcb45d001c6d02e0c788f" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/akonadi-calendar-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>qt5</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kcodecs</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>boost</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>kmailtransport</Dependency>
-            <Dependency>akonadi</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>akonadi-mime</Dependency>
-            <Dependency>kmime</Dependency>
-            <Dependency>cyrus-sasl</Dependency>
-            <Dependency>kcontacts</Dependency>
-            <Dependency>kidentitymanagement</Dependency>
-            <Dependency>kcalcore</Dependency>
-            <Dependency>kcalutils</Dependency>
-            <Dependency>akonadi-contacts</Dependency>
-            <Dependency>prison</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kwallet</Dependency>
+            <Dependency versionFrom="17.08.1">akonadi-contacts</Dependency>
+            <Dependency versionFrom="17.08.1">akonadi</Dependency>
+            <Dependency versionFrom="17.08.1">kcalcore</Dependency>
+            <Dependency versionFrom="17.08.1">kcalutils</Dependency>
+            <Dependency versionFrom="17.08.1">kcontacts</Dependency>
+            <Dependency versionFrom="17.08.1">kidentitymanagement</Dependency>
+            <Dependency versionFrom="17.08.1">kmailtransport</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -82,10 +70,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

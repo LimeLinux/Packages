@@ -13,7 +13,7 @@
         <License>LGPL</License>
         <Summary>A collection of plugins to handle mobipocket files</Summary>
         <Description>A collection of plugins to handle mobipocket files</Description>
-        <Archive sha1sum="7bbb01c7513bea020ed2efd0a922c2c32ed0b6a0" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/kdegraphics-mobipocket-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="161fc4d486b3e2c4fbd2b33cccc4bc2468994655" type="tarxz">http://download.kde.org/stable/applications/17.08.1/src/kdegraphics-mobipocket-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>kio</Dependency>
@@ -36,10 +36,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

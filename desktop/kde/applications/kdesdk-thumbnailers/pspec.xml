@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.sdk</PartOf>
         <Summary>Translation file thumbnail generators</Summary>
         <Description>Translation file thumbnail generators</Description>
-        <Archive sha1sum="603b3c32dcbc5040b2a3671f1a17eca8780ce2bf" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdesdk-thumbnailers-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="bf7b0349311e75e99fec1c2e7fce25e6fb284090" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kdesdk-thumbnailers-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -45,10 +45,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

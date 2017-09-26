@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>The KDE Plasma Workspace Components</Summary>
         <Description>The Polkit-KDE-Agent package contains a graphical Polkit authentication agent for the KDE Plasma Desktop.</Description>
-        <Archive sha1sum="3d6b0881c048fbd0c93decbcbb555f64400d3cd5" type="tarxz">mirrors://kde/stable/plasma/5.9.5/polkit-kde-agent-1-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="8bb36b5f3a944e9f9642b761ce88f14c4418cdcf" type="tarxz">mirrors://kde/stable/plasma/5.10.5/polkit-kde-agent-1-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>kdoctools</Dependency>
@@ -55,10 +55,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

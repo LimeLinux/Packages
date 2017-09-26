@@ -13,29 +13,19 @@
         <IsA>app:library</IsA>
         <Summary>KDE PIM libraries</Summary>
         <Description>Library for the KDE-PIM(Personal-Infomation-Management</Description>
-        <Archive sha1sum="e226e3885c2ec0063b73bf0e48d0331f955f73a8" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kidentitymanagement-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="076d1dd30b6d1c93652f26f24d714c358c6d416f" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kidentitymanagement-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kpimtextedit</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kcodecs</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>ktextwidgets</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kpimtextedit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>kpimtextedit</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>python</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kcodecs</Dependency>
+            <Dependency versionFrom="5.38.0">kcompletion</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">ktextwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>
+            <Dependency versionFrom="17.08.1">kpimtextedit</Dependency>
+            <Dependency>qt5</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -65,10 +55,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

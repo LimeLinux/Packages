@@ -11,38 +11,30 @@
         <License>GPLv2</License>
         <Summary>A KDE blogging client</Summary>
         <Description>Akregator helps you to keep informed about new stories on websites like KDE Dot News and Planet KDE blogs. The technology used is RSS and many sites support it.</Description>
-        <Archive sha1sum="3cade95a4e2e094a9df2896c1dadaa34c294e3d8" type="tarxz">http://download.kde.org/stable/applications/17.04.0/src/akregator-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="2c65a4add70941c0bdf6dd675c872bbf6323b80a" type="tarxz">http://download.kde.org/stable/applications/17.08.1/src/akregator-17.08.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>boost</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
-            <Dependency>kblog</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>ktexteditor</Dependency>
-            <Dependency>python</Dependency>
-            <Dependency>qt5</Dependency>
-            <Dependency>qt5-webengine</Dependency>
-            <Dependency>grantlee</Dependency>
-            <Dependency>kcmutils</Dependency>
-            <Dependency>knotifyconfig</Dependency>
-            <Dependency>akonadi-mime</Dependency>
-            <Dependency>akonadi</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>grantleetheme</Dependency>
-            <Dependency>kcontacts</Dependency>
-            <Dependency>kontactinterface</Dependency>
-            <Dependency>libkdepim</Dependency>
-            <Dependency>akonadi-contacts</Dependency>
-            <Dependency>libkleo</Dependency>
-            <Dependency>gpgme</Dependency>
-            <Dependency>messagelib</Dependency>
-            <Dependency>pimcommon</Dependency>
-            <Dependency>kimap</Dependency>
-            <Dependency>kmime</Dependency>
-            <Dependency>cyrus-sasl</Dependency>
-            <Dependency>kpimtextedit</Dependency>
-            <Dependency>ksyndication</Dependency>
+            <Dependency versionFrom="5.1.0">grantlee</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kcmutils</Dependency>
+            <Dependency versionFrom="5.38.0">kcrash</Dependency>
+            <Dependency versionFrom="5.38.0">kdoctools</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">knotifications</Dependency>
+            <Dependency versionFrom="5.38.0">knotifyconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kparts</Dependency>
+            <Dependency versionFrom="5.38.0">ktexteditor</Dependency>
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>
+            <Dependency versionFrom="17.08.1">grantleetheme</Dependency>
+            <Dependency versionFrom="17.08.1">kontactinterface</Dependency>
+            <Dependency versionFrom="17.08.1">kpimtextedit</Dependency>
+            <Dependency versionFrom="17.08.1">ksyndication</Dependency>
+            <Dependency versionFrom="17.08.1">libkdepim</Dependency>
+            <Dependency versionFrom="17.08.1">libkleo</Dependency>
+            <Dependency versionFrom="17.08.1">messagelib</Dependency>
+            <Dependency versionFrom="17.08.1">pimcommon</Dependency>
+            <Dependency versionFrom="5.8.0">qt5-webengine</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+            <Dependency versionFrom="17.08.1">akonadi-mime</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -90,10 +82,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

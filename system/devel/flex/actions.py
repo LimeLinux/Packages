@@ -27,4 +27,4 @@ def install():
 
     pisitools.dosym("flex", "/usr/bin/lex")
 
-    pisitools.dodoc("NEWS", "README")
+    pisitools.dodoc("NEWS", "README.md")

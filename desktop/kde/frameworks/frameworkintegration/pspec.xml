@@ -12,20 +12,20 @@
         <IsA>library</IsA>
         <Summary>Framework providing components to allow applications to integrate with a KDE Workspace</Summary>
         <Description>Framework Integration is a set of plugins responsible for better integration of Qt applications when running on a KDE Plasma workspace.</Description>
-        <Archive sha1sum="72f40e9fa34dce22c45ea484b615a7cc344ff698" type="tarxz">mirrors://kde/stable/frameworks/5.37/frameworkintegration-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="01efa4af306a7f4a5693af51fd62e0af37bc11c0" type="tarxz">mirrors://kde/stable/frameworks/5.38/frameworkintegration-5.38.0.tar.xz</Archive>
         <BuildDependencies>            
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libxcb</Dependency>
             <Dependency>libXcursor</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.37.0">knewstuff</Dependency>
-            <Dependency versionFrom="5.37.0">knotifications</Dependency>
-            <Dependency versionFrom="5.37.0">kpackage</Dependency>
-            <Dependency versionFrom="5.37.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">knewstuff</Dependency>
+            <Dependency versionFrom="5.38.0">knotifications</Dependency>
+            <Dependency versionFrom="5.38.0">kpackage</Dependency>
+            <Dependency versionFrom="5.38.0">kwidgetsaddons</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -35,12 +35,12 @@
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
-            <Dependency versionFrom="5.37.0">ki18n</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">knewstuff</Dependency>
-            <Dependency versionFrom="5.37.0">kiconthemes</Dependency>
-            <Dependency versionFrom="5.37.0">kconfigwidgets</Dependency>
-            <Dependency versionFrom="5.37.0">knotifications</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">knewstuff</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">knotifications</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -54,9 +54,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

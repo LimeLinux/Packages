@@ -12,12 +12,12 @@
         <IsA>library</IsA>
         <Summary>Qt-style Client and Server library wrapper for the Wayland libraries</Summary>
         <Description>Qt-style Client and Server library wrapper for the Wayland libraries</Description>
-        <Archive sha1sum="0f3e57408a2190799513003355aab4410bfd4888" type="tarxz">mirrors://kde/stable/frameworks/5.37/kwayland-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="84497e17261dacdc1d77206b61e959e439073bea" type="tarxz">mirrors://kde/stable/frameworks/5.38/kwayland-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>wayland</Dependency>
             <Dependency versionFrom="13.0.4">mesa</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -41,9 +41,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

@@ -12,7 +12,7 @@
         <IsA>app:library</IsA>
         <Summary>Common data for KDE Edu applications</Summary>
         <Description>Common data for KDE Edu applications.</Description>
-        <Archive sha1sum="1e39e07f30dcf3993ab9b983e27ee6c067690887" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdeedu-data-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="eeb31a94616588264b4916ae17587729308062bd" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kdeedu-data-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
@@ -28,10 +28,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

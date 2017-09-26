@@ -13,32 +13,21 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 Plasma artwork</Summary>
         <Description>Artwork, styles and assets for the Breeze visual style for the Plasma Desktop</Description>
-        <Archive sha1sum="ca305a773960856b006556cf23874d8594511110" type="tarxz">mirrors://kde/stable/plasma/5.9.5/plasma-integration-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="2f0a7613bcd68340ed42fbd296193b1611f72687" type="tarxz">mirrors://kde/stable/plasma/5.10.5/plasma-integration-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>breeze</Dependency>
-            <Dependency>libXcursor</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>kwayland</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kguiaddons</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>kconfigwidgets</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>            
-            <Dependency>libX11</Dependency>
-            <Dependency>kiconthemes</Dependency>
-            <Dependency>knotifications</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kjobwidgets</Dependency>
-            <Dependency>knotifications</Dependency>
-            <Dependency>kwindowsystem</Dependency>
+            <Dependency versionFrom="5.10.5">breeze</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kconfigwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kiconthemes</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">knotifications</Dependency>
+            <Dependency versionFrom="5.38.0">kwidgetsaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kwindowsystem</Dependency>
+            <Dependency versionFrom="5.38.0">kwayland</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+            <Dependency>libxcb</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -77,10 +66,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

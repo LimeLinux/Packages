@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Filesharing configuration modlue.</Summary>
         <Description>Filesharing configuration modlue.</Description>
-        <Archive sha1sum="13219c30b2aa0c932007cdbd86c9c956de61fc0f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kdenetwork-filesharing-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="f4160849d2810f1ad26bb3e8c97f2711182d091e" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kdenetwork-filesharing-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
@@ -44,10 +44,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

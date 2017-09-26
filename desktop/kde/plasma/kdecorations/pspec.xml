@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>Plugin based library to create window decorations</Summary>
         <Description>Plugin based library to create window decorations</Description>
-        <Archive sha1sum="15b468f2902e18ef6f85e82ef0ea64fc4dd7c25b" type="tarxz">mirrors://kde/stable/plasma/5.9.5/kdecoration-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="8baacb75f6a319ea977af367bdb255bc8eb9aaf8" type="tarxz">mirrors://kde/stable/plasma/5.10.5/kdecoration-5.10.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.8">qt5</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
             <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
@@ -38,10 +38,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

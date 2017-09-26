@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.network</PartOf>
         <Summary>Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others</Summary>
         <Description>Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others</Description>
-        <Archive sha1sum="084c4381c533b5f709459b8c5829dd128383580f" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/kaccounts-integration-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="2076ee4180f116fdc053e30a2c9cb83a587f4323" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/kaccounts-integration-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
             <Dependency>qt5</Dependency>
@@ -48,10 +48,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

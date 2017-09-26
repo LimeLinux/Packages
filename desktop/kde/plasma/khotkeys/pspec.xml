@@ -13,38 +13,20 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 hotkey daemon</Summary>
         <Description>KDE hotkey daemon module allows you to configure custom keyboard shortcuts and mouse gestures.</Description>
-        <Archive sha1sum="b2cd4c9a3506c6f47315d44444d3647338d99f0d" type="tarxz">mirrors://kde/stable/plasma/5.9.5/khotkeys-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="32cb3781a9c90ad683feee817933918767cb6e8c" type="tarxz">mirrors://kde/stable/plasma/5.10.5/khotkeys-5.10.5.tar.xz</Archive>
         <BuildDependencies>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
+            <Dependency versionFrom="5.38.0">kcmutils</Dependency>
+            <Dependency versionFrom="5.38.0">kdbusaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kdelibs4-support</Dependency>
+            <Dependency versionFrom="5.38.0">kglobalaccel</Dependency>
+            <Dependency versionFrom="5.38.0">ki18n</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kxmlgui</Dependency>
             <Dependency>libX11</Dependency>
-            <Dependency versionFrom="5.8">qt5</Dependency>
-            <Dependency>kdoctools</Dependency>
-            <Dependency>kconfig</Dependency>
-            <Dependency>kservice</Dependency>
-            <Dependency>kcompletion</Dependency>
-            <Dependency>kcoreaddons</Dependency>
-            <Dependency>ktextwidgets</Dependency>
-            <Dependency>kwindowsystem</Dependency>
-            <Dependency>kconfigwidgets</Dependency>
-            <Dependency>kwidgetsaddons</Dependency>
-            <Dependency>kcmutils</Dependency>
-            <Dependency>kauth</Dependency>
-            <Dependency>kpackage</Dependency>
-            <Dependency>kdbusaddons</Dependency>
-            <Dependency>kdelibs4-support</Dependency>
-            <Dependency>kglobalaccel</Dependency>
-            <Dependency>ki18n</Dependency>
-            <Dependency>kio</Dependency>
-            <Dependency>kxmlgui</Dependency>
-            <Dependency>kdesignerplugin</Dependency>
-            <Dependency>kemoticons</Dependency>
-            <Dependency>kitemmodels</Dependency>
-            <Dependency>kinit</Dependency>
-            <Dependency>kunitconversion</Dependency>
-            <Dependency>plasma-framework</Dependency>
-            <Dependency>plasma-workspace</Dependency>
-            <Dependency>libXtst</Dependency>
-            <Dependency>docbook-xsl</Dependency>
-            <Dependency>extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">plasma-framework</Dependency>
+            <Dependency versionFrom="5.10.5">plasma-workspace</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -83,10 +65,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

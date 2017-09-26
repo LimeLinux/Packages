@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Breeze widget theme for GTK 2 and 3</Summary>
         <Description>Breeze widget theme for GTK 2 and 3</Description>
-        <Archive type="tarxz" sha1sum="376834ca73f75d34ad4a45e093cf13ce3b314b98">mirrors://kde/stable/plasma/5.9.5/breeze-gtk-5.9.5.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="800044700e26ed0976d9ef7049a29c39a335073c">mirrors://kde/stable/plasma/5.10.5/breeze-gtk-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.8">qt5</Dependency>
+            <Dependency versionFrom="5.8.0">qt5</Dependency>
         </BuildDependencies>
     </Source>
     
@@ -34,10 +34,10 @@
     </Package>
     
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

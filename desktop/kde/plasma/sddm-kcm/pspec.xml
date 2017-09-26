@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 Config Module for SDDM</Summary>
         <Description>KDE5 Config Module for SDDM</Description>
-        <Archive sha1sum="9248d08264a097ae17fbd079bea6782ee8c271c4" type="tarxz">mirrors://kde/stable/plasma/5.9.5/sddm-kcm-5.9.5.tar.xz</Archive>
+        <Archive sha1sum="72e7e97ee769cb803449b5c5cb406b84fed990cb" type="tarxz">mirrors://kde/stable/plasma/5.10.5/sddm-kcm-5.10.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kcoreaddons</Dependency>
             <Dependency>kdoctools</Dependency>
@@ -58,10 +58,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>5.9.5</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-08-26</Date>
+            <Version>5.10.5</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

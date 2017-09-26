@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Personal alarm scheduler</Summary>
         <Description>KAlarm is a personal alarm message, audio, command and email scheduler</Description>
-        <Archive type="tarxz" sha1sum="4b633850cd0bb5f443451ff10f0475d2d958b947">http://download.kde.org/stable/applications/17.04.0/src/kalarm-17.04.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="6cb0b5888e90b1c3187c862d9a9b2919b7cf89ca">http://download.kde.org/stable/applications/17.08.1/src/kalarm-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>akonadi-contacts</Dependency>
             <Dependency>akonadi</Dependency>
@@ -118,10 +118,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

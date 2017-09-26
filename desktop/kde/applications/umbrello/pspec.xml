@@ -13,7 +13,7 @@
         <PartOf>desktop.kde.sdk</PartOf>
         <Summary>UML modelling tool and code generator</Summary>
         <Description>Umbrello UML Modeller is a Unified Modelling Language diagram editor for KDE.</Description>
-        <Archive sha1sum="baa534d3b9f9bccedb89ee5472e523e22483ccba" type="tarxz">mirrors://kde/stable/applications/17.04.0/src/umbrello-17.04.0.tar.xz</Archive>
+        <Archive sha1sum="f9f2d2218d8af1a58f8d100e4f73153875bb5cc4" type="tarxz">mirrors://kde/stable/applications/17.08.1/src/umbrello-17.08.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>qt5-webkit</Dependency>
@@ -66,10 +66,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-05-05</Date>
-            <Version>17.04.0</Version>
-            <Comment>First release</Comment>
+        <Update release="3">
+            <Date>2017-09-12</Date>
+            <Version>17.08.1</Version>
+            <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
         </Update>

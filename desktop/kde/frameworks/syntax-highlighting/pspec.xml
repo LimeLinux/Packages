@@ -9,9 +9,9 @@
         <License>GPL2</License>
         <Summary>Syntax highlighting engine for structured text and code</Summary>
         <Description>Syntax highlighting engine for structured text and code</Description>
-        <Archive type="tarxz" sha1sum="31ccb1b36518ddf11e069ceb53a4c3a0216d20c0">mirrors://kde/stable/frameworks/5.37/syntax-highlighting-5.37.0.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="4fc28f2207e2e65fce0930ab9575ccf010f7a62e">mirrors://kde/stable/frameworks/5.38/syntax-highlighting-5.38.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency>perl</Dependency>
             <Dependency>glibc</Dependency>
@@ -37,9 +37,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>

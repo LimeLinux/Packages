@@ -13,18 +13,18 @@
         <IsA>app:console</IsA>
         <Summary>KDE5 WebKit integration</Summary>
         <Description>KdeWebkit provides KDE integration of the QtWebKit library.</Description>
-        <Archive sha1sum="f440d4af84d0cba60a3bf0ac51e33eb28d6eb997" type="tarxz">mirrors://kde/stable/frameworks/5.37/kdewebkit-5.37.0.tar.xz</Archive>
+        <Archive sha1sum="76198e4433ad4d37f4a4c0dce830af227e025ee8" type="tarxz">mirrors://kde/stable/frameworks/5.38/kdewebkit-5.38.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.8">qt5-webkit</Dependency>
-            <Dependency versionFrom="5.37.0">extra-cmake-modules</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kio</Dependency>
-            <Dependency versionFrom="5.37.0">kjobwidgets</Dependency>
-            <Dependency versionFrom="5.37.0">kparts</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
-            <Dependency versionFrom="5.37.0">kwallet</Dependency>
+            <Dependency versionFrom="5.38.0">extra-cmake-modules</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kjobwidgets</Dependency>
+            <Dependency versionFrom="5.38.0">kparts</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">kwallet</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -34,13 +34,13 @@
             <Dependency versionFrom="5.8">qt5</Dependency>
             <Dependency versionFrom="5.8">qt5-webkit</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency versionFrom="5.37.0">kconfig</Dependency>
-            <Dependency versionFrom="5.37.0">kjobwidgets</Dependency>            
-            <Dependency versionFrom="5.37.0">kcoreaddons</Dependency>
-            <Dependency versionFrom="5.37.0">kparts</Dependency>
-            <Dependency versionFrom="5.37.0">kservice</Dependency>
-            <Dependency versionFrom="5.37.0">kwallet</Dependency>
-            <Dependency versionFrom="5.37.0">kio</Dependency>
+            <Dependency versionFrom="5.38.0">kconfig</Dependency>
+            <Dependency versionFrom="5.38.0">kjobwidgets</Dependency>            
+            <Dependency versionFrom="5.38.0">kcoreaddons</Dependency>
+            <Dependency versionFrom="5.38.0">kparts</Dependency>
+            <Dependency versionFrom="5.38.0">kservice</Dependency>
+            <Dependency versionFrom="5.38.0">kwallet</Dependency>
+            <Dependency versionFrom="5.38.0">kio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>
@@ -55,9 +55,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-08-19</Date>
-            <Version>5.37.0</Version>            
+        <Update release="4">
+            <Date>2017-09-12</Date>
+            <Version>5.38.0</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
