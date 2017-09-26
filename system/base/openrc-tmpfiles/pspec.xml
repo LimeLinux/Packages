@@ -35,6 +35,12 @@
             <Path fileType="data">/usr/share</Path>
            <Path fileType="header">/usr/include/</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/opentmpfiles-dev">opentmpfiles-dev.confd</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/etc/init.d/opentmpfiles-dev">opentmpfiles-dev.initd</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/opentmpfiles-setup">opentmpfiles-setup.confd</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/etc/init.d/opentmpfiles-setup">opentmpfiles-setup.initd</AdditionalFile>
+        </AdditionalFiles>
         <Provides>
             <COMAR script="postInstall.py">System.Package</COMAR>
         </Provides>
