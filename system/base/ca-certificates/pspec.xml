@@ -12,7 +12,7 @@
         <IsA>app:web</IsA>
         <Summary>Common CA certificates</Summary>
         <Description>Common CA certificates</Description>
-        <Archive sha1sum="b190ca8849697e842e69401b28d4ee27130d8c4d" type="tarxz">http://ftp.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161130.tar.xz</Archive>
+        <Archive sha1sum="4c093ceee1f1428d5aa7e9a5324b92961c0c0f06" type="tarxz">http://ftp.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20170717.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -32,9 +32,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>20161130</Version>
+        <Update release="2">
+            <Date>2017-12-21</Date>
+            <Version>20170717</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
