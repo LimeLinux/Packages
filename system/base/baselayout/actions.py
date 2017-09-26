@@ -51,7 +51,6 @@ def install():
         shelltools.echo("hostname", "LimeArm")
 
     pisitools.insinto("/etc", "hostname")
-    pisitools.remove("/etc/inittab")
 
 
 

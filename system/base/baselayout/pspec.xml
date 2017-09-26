@@ -15,7 +15,7 @@
         <IsA>data</IsA>
         <Summary>Filesystem baselayout</Summary>
         <Description>baselayout creates the LimeLinux Linux main filesystem hierarchy.</Description>
-        <Archive sha1sum="a76f5ce7d72fbd065bea6402613ac30c13abdf99" type="targz">http://source.limelinux.com/1.0/baselayout-3.10.0.tar.gz</Archive>
+        <Archive sha1sum="899f744eba8cc42d70c1d781ec4fb0485712232d" type="targz">http://source.limelinux.com/1.0/baselayout-3.10.2.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -72,8 +72,8 @@
 
     <History>
        <Update release="5">
-            <Date>2017-02-25</Date>
-            <Version>3.10.0</Version>
+            <Date>2017-09-25</Date>
+            <Version>3.10.2</Version>
             <Comment>etc/init.d/rc* remove</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
