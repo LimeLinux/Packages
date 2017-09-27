@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>libinput</Name>
-        <Summary xml:lang="tr">libinput Wayland Campasitars giriş aygıtları işlemek için ve genel X.Org giriş sürücü sağlamak için bir kütüphane.</Summary>
-        <Description xml:lang="tr">Bu yüzden kullanıcıların beklediği fonksiyonellik ortak kümesi sağlamak için gereken özel giriş kodu compositors miktarını en az indirerek, aygıt kullanımı, giriş aygıtı olay işleme ve soyutlama sağlar.</Description>
+        <Summary xml:lang="tr">MLT, televizyon yayıncılığı için tasarlanmış ve geliştirilmiş açık kaynak multimedya çerçevesidir.</Summary>
+        <Description xml:lang="tr">Yayıncılar, video editörleri, medya oynatıcılar, kod çözücüler, web akışları ve daha pek çok uygulama türü için bir araç seti sağlar. Sistemin işlevselliği, kullanıma hazır çeşitli araçlar, XML geliştirme bileşenleri ve genişletilebilir bir eklenti tabanlı API vasıtasıyla sağlanmaktadır.</Description>
     </Source>
 </PISI>
