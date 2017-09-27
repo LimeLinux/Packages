@@ -37,4 +37,4 @@ ac_add_options --enable-system-pixman
 
 ac_add_options --enable-default-toolkit=cairo-gtk3
 
-mk_add_options MZ_OBJDIR=@TOPSRCDIR@/firefox/build-dir
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/build
