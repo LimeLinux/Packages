@@ -43,9 +43,9 @@ def install():
 
     pisitools.dodoc("README*")
 
-    shelltools.cd("%s/sqlite-doc-3170000" % get.workDIR())
+    shelltools.cd("%s/sqlite-doc-3200100" % get.workDIR())
     shelltools.system("pwd")
 
-    pisitools.insinto("/usr/share/doc/sqlite", "../sqlite-doc-3170000/*")
+    pisitools.insinto("/usr/share/doc/sqlite", "../sqlite-doc-3200100/*")
    
 

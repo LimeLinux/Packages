@@ -16,7 +16,7 @@
         <IsA>library</IsA>
         <Summary>Network Security Services</Summary>
         <Description>Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other security standards.</Description>
-        <Archive sha1sum="b2b20f84043cfc18a58ba40d8c3a2b53d701a3e2" type="targz">https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_29_5_RTM/src/nss-3.29.5.tar.gz</Archive>
+        <Archive sha1sum="5951fc4c8f98395fea7b6ae9332e7795d40be865" type="targz">https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_32_RTM/src/nss-3.32.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="dist/pkgconfig/nss.pc.in">nss.pc.in</AdditionalFile>
             <AdditionalFile target="dist/pkgconfig/nss-config.in">nss-config.in</AdditionalFile>
@@ -47,9 +47,9 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="5">
             <Date>2017-05-17</Date>
-            <Version>3.29.5</Version>
+            <Version>3.32</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

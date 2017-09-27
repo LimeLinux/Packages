@@ -16,8 +16,8 @@
         <IsA>app:gui</IsA>
         <Summary>Firefox Web Browser</Summary>
         <Description>It is more secure and faster to browse the web with Firefox web browser. You can personalize your web browser with many specifications that is not enough to explain in two sentences.</Description>
-        <Archive sha1sum="5f3e78c6f3a19d1e0004a8a35b0b2e5959c6905b" type="tarxz">https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/53.0.2/source/firefox-53.0.2.source.tar.xz</Archive>
-        <Archive sha1sum="3006ab8fcfeedc9bb85edc350596c46241b2b8c2" type="tarxz" target="firefox-53.0.2">https://sourceforge.net/projects/limeteam/files/source-limelinux/firefox-53.0.2-langpacks.tar.xz</Archive>
+        <Archive sha1sum="8d9b0861ad71845d4b0e668f1981ec99e617ff36" type="tarxz">https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/55.0.3/source/firefox-55.0.3.source.tar.xz</Archive>
+        <Archive sha1sum="f09935c3b864ecef5f7ebf07380e1a3657981214" type="tarxz" target="firefox-55.0.3">https://solus-project.com/sources/mozilla/firefox-55.0.3-langpacks.tar.xz</Archive>
         <AdditionalFiles>
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
@@ -35,6 +35,7 @@
             <Dependency>libpng</Dependency>
             <Dependency>libffi</Dependency>
             <Dependency>gnutls</Dependency>
+            <Dependency>rust</Dependency>
             <Dependency>hunspell</Dependency>
             <Dependency>sqlite</Dependency>
             <Dependency>alsa-lib</Dependency>
@@ -123,9 +124,9 @@
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2017-05-17</Date>
-            <Version>53.0.2</Version>
+        <Update release="5">
+            <Date>2017-09-17</Date>
+            <Version>55.0.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

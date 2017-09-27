@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Netscape Portable Runtime</Summary>
         <Description>Netscape Portable Runtime (NSPR) provides a platform-neutral API for system level and libc like functions. The API is used in the Mozilla client, many of Netscape/AOL/iPlanet's and other software offerings.</Description>
-        <Archive sha1sum="4c9ffda940882229104090f8fc8539f6412e1ff7" type="targz">https://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.14/src/nspr-4.14.tar.gz</Archive>
+        <Archive sha1sum="5262abb243191d5fa3dcd72857d7d7f8ec47ad01" type="targz">https://ftp.mozilla.org/pub/nspr/releases/v4.17/src/nspr-4.17.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="nspr/config/nspr.pc.in">nspr.pc.in</AdditionalFile>
             <AdditionalFile permission="0755" target="generate-pc-config.sh">generate-pc-config.sh</AdditionalFile>
@@ -31,9 +31,9 @@
 
 
     <History>
-		<Update release="3">
-            <Date>2017-04-15</Date>
-            <Version>4.14</Version>
+		<Update release="4">
+            <Date>2017-09-15</Date>
+            <Version>4.17</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
