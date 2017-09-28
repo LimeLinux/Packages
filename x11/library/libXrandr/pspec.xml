@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>X.Org Xrandr library</Summary>
         <Description>Xrandr is a simple library designed to interface the X Resize and Rotate Extension. This allows clients to change the size and rotation of the root window of a screen, along with the ability to reflect the screen about either axis.</Description>
-        <Archive sha1sum="79538220e567318c6fb3c5b9a0075184ad6e001f" type="tarbz2">mirrors://xorg/individual/lib/libXrandr-1.5.0.tar.bz2</Archive>
+        <Archive sha1sum="7232fe2648b96fed531208c3ad2ba0be61990041" type="tarbz2">mirrors://xorg/individual/lib/libXrandr-1.5.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXext</Dependency>
             <Dependency>libXrender</Dependency>
@@ -38,9 +38,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.5.0</Version>
+        <Update release="2">
+            <Date>2017-12-21</Date>
+            <Version>1.5.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

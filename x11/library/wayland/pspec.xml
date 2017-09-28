@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Wayland Compositor Infrastructure</Summary>
         <Description>Wayland is a protocol for a compositor to talk to its clients as well as a C library implementation of that protocol.</Description>
-        <Archive sha1sum="9a0dd96f53fff3e227035ed76caaa209b632ea8d" type="tarxz">http://wayland.freedesktop.org/releases/wayland-1.12.0.tar.xz</Archive>
+        <Archive sha1sum="53a443be3bafe73209bbc49ef2cb134ed16e0141" type="tarxz">https://wayland.freedesktop.org/releases/wayland-1.14.0.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -31,9 +31,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.12.0</Version>
+        <Update release="2">
+            <Date>2017-12-21</Date>
+            <Version>1.14.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
