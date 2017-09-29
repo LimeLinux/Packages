@@ -12,23 +12,23 @@ from pisi.actionsapi import get, pisitools, shelltools, cmaketools
 def setup():
     shelltools.system("./update_external_sources.sh")
     
-    cmaketools.configure("-DCMAKE_INSTALL_SYSCONFDIR=/etc \
-                          -DCMAKE_INSTALL_LIBDIR=/usr/lib \
-                          -DCMAKE_SKIP_RPATH=True \
-                          -DBUILD_TESTS=Off \
-                          -DBUILD_WSI_XCB_SUPPORT=On \
-                          -DBUILD_WSI_XLIB_SUPPORT=On \
-                          -DBUILD_WSI_WAYLAND_SUPPORT=On \
-                          -DBUILD_WSI_MIR_SUPPORT=Off \
-                          -DCMAKE_BUILD_TYPE=Debug \
-                          ")
+    shelltools.system("cmake \
+                      -H. -Bdbuild -DCMAKE_INSTALL_PREFIX=/usr \
+                      -DCMAKE_INSTALL_LIBDIR=lib \
+                      -DCMAKE_INSTALL_SYSCONFDIR=/etc \
+                      -DCMAKE_INSTALL_DATADIR=/usr/share \
+                      -DCMAKE_SKIP_RPATH=True \
+                      -DCMAKE_BUILD_TYPE=Release")
 
 def build():
+    shelltools.cd("./dbuild")
     cmaketools.make()
 
 def install():
+    shelltools.cd("./dbuild")
     cmaketools.install("DESTDIR='%s'" % get.installDIR())
-
+    
+    shelltools.cd()
     pisitools.dodoc("README.md", "COPYRIGHT.txt", "LICENSE.txt", "CONTRIBUTING.md")
     
 
