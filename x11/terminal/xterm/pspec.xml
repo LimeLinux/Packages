@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Terminal emulator for the X Window System</Summary>
         <Description>The xterm program is a terminal emulator for the X Window System. It provides DEC VT102 and Tektronix 4014 compatible terminals for programs that can't use the window system directly.</Description>
-        <Archive sha1sum="1b3bb4c57b9c362bc0fa113c95cbace370481685" type="targz">ftp://invisible-island.net/xterm/xterm-326.tgz</Archive>
+        <Archive sha1sum="0b648aaba45715c156a25e7ff629c82eb9836bc0" type="targz">ftp://ftp.invisible-island.net/xterm/xterm-330.tgz</Archive>
         <BuildDependencies>
             <Dependency>fontconfig</Dependency>
             <Dependency>libICE</Dependency>
@@ -62,9 +62,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>326</Version>
+        <Update release="2">
+            <Date>2017-10-01</Date>
+            <Version>330</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -20,4 +20,3 @@ def install():
     pisitools.insinto("/usr", "build/x86_64-unknown-linux-gnu/stage0/bin")
     pisitools.insinto("/usr", "build/x86_64-unknown-linux-gnu/stage0/lib")
     pisitools.insinto("/usr", "build/x86_64-unknown-linux-gnu/stage0/share")
-
