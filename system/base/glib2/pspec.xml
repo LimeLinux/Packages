@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A library of handy utility functions</Summary>
         <Description>glib2 is the low-level core library that forms the basis for projects such as GTK+ and GNOME. It provides data structure handling for C, portability wrappers, and interfaces for such runtime functionality as an event loop, threads, dynamic loading, and an object system.</Description>
-        <Archive sha1sum="50a5af7569af1a489e17f207142cd5a4cdefbf68" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/glib/2.52/glib-2.52.2.tar.xz</Archive>
+        <Archive sha1sum="96b434a9ca142344b93f38ed0cd88d36196b68ae" type="tarxz">http://ftp.acc.umu.se/pub/gnome/sources/glib/2.54/glib-2.54.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="8.36">libpcre</Dependency>
             <Dependency>zlib</Dependency>
@@ -68,9 +68,9 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2017-09-15</Date>
-            <Version>2.52.2</Version>
+            <Version>2.54.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

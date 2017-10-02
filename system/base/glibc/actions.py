@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "glibc-2.25"
+WorkDir = "glibc-2.26"
 
 
 
@@ -48,17 +48,17 @@ def setup():
                --mandir=/usr/share/man \
                --infodir=/usr/share/info \
                --libexecdir=/usr/lib/misc \
+               --with-bugurl=https://bugs.limelinux.com/ \
                --enable-add-ons \
                --enable-bind-now \
-               --enable-kernel=3.14.32 \
+               --enable-lock-elision \
+               --enable-multi-arch \
+               --enable-obsolete-nsl \
+               --enable-obsolete-rpc \
+               --enable-stack-protector=strong \
                --enable-stackguard-randomization \
                --disable-profile \
-                --disable-werror  \
-               --enable-obsolete-rpc \
-               --enable-lock-elision \
-               --enable-stack-protector=strong \
-               --with-pkgversion='Lime' \
-               --enable-tunables \
+               --disable-werror \
                %s \
                --with-tls"% multilib
                
