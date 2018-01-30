@@ -15,7 +15,7 @@
         <IsA>app:console</IsA>
         <Summary>Library for tuning NUMA machines</Summary>
         <Description>numactl consists of a numactl program to run other programs with a specific NUMA policy and a libnuma to do allocations with NUMA policy in applications.</Description>
-        <Archive sha1sum="00675527d54491310b1e4eba5a7278d99681aec1" type="targz">ftp://oss.sgi.com/www/projects/libnuma/download/numactl-2.0.10.tar.gz</Archive>
+        <Archive sha1sum="3dabfcb10edcf66cda48d7583ebbd97332e19530" type="targz">https://github.com/numactl/numactl/archive/v2.0.11.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -31,8 +31,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2.0.10</Version>
+            <Date>2018-01-30</Date>
+            <Version>2.0.11</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
