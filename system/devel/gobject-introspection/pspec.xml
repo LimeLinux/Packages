@@ -15,14 +15,14 @@
         <IsA>app:console</IsA>
         <Summary>Introspection system for GObject-based libraries</Summary>
         <Description>gobject-introspection can scan C header and source files in order to generate introspection typelib files. It also provides an API to examine typelib files, useful for creating language bindings among other things.</Description>
-        <Archive sha1sum="2a0c86bd23d27df0588b79404cfc5619ed6171e8" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/gobject-introspection/1.52/gobject-introspection-1.52.1.tar.xz</Archive>
+        <Archive sha1sum="e8373c97f456b2ad23a47fdec6e59be45f42b7b6" type="tarxz">http://ftp.acc.umu.se/pub/gnome/sources/gobject-introspection/1.55/gobject-introspection-1.55.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libffi</Dependency>
             <Dependency>python</Dependency>
             <Dependency>glib2</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">0001-giscanner-fix-EOF-check-with-flex-2.6.1.patch</Patch>
+            <!--Patch level="1">0001-giscanner-fix-EOF-check-with-flex-2.6.1.patch</Patch-->
         </Patches>
     </Source>
 
@@ -42,9 +42,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-04-15</Date>
-            <Version>1.52.1</Version>
+        <Update release="2">
+            <Date>2018-01-31</Date>
+            <Version>1.55.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
