@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>D-Bus Python bindings</Summary>
         <Description>dbus-python provides a Python3 module which wraps the D-Bus programming API.</Description>
-        <Archive sha1sum="078a76d760ba649991b0ac0ae2eaeda41c00ca5b" type="targz">http://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.2.4.tar.gz</Archive>
+        <Archive sha1sum="07a7a7ea5442e777b7908c3cdcb6913d59fd74ff" type="targz">https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.2.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
             <Dependency>python</Dependency>
@@ -66,8 +66,8 @@
 
     <History>
         <Update release="2">
-            <Date>2017-04-19</Date>
-            <Version>1.2.4</Version>
+            <Date>2018-01-31</Date>
+            <Version>1.2.6</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

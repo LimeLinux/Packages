@@ -63,26 +63,8 @@
             <Path fileType="library">/lib/ld-linux.so.2</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0755" target="/usr/bin/locale-gen">locale-gen</AdditionalFile>  
-        </AdditionalFiles>
-    </Package>
-
-
-
-    <Package>
-        <Name>glibc-doc-32bit</Name>
-        <PartOf>system.doc</PartOf>
-        <!-- Do not write dep. any package-->
-        <Summary>32-bit doc for glibc</Summary>
-        <BuildType>emul32</BuildType>
-        <RuntimeDependencies>
-            <Dependency release="current">glibc</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="config">/usr/lib32/glibc32.txt</Path>
-         </Files>   
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/lib32/glibc32.txt">glibc32.txt</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/locale-gen">locale-gen</AdditionalFile> 
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib32/glibc32.txt">glibc32.txt</AdditionalFile> 
         </AdditionalFiles>
     </Package>
 
@@ -92,6 +74,7 @@
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="config">/usr/lib32/glibc32.txt</Path>
         </Files>
     </Package>
 
