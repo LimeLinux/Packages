@@ -17,7 +17,7 @@
             <Dependency>gperftools</Dependency>
             <Dependency>snappy</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="18684a0ad7a07920d10f5295b171fbf5eeec7337" type="targz">https://github.com/google/leveldb/archive/v1.18.tar.gz</Archive>
+        <Archive sha1sum="df11440c30deed5987263730180225db98de9f57" type="targz">https://github.com/google/leveldb/archive/v1.20.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -34,9 +34,9 @@
     </Package>
     
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.18</Version>
+        <Update release="2">
+            <Date>2018-01-31</Date>
+            <Version>1.20</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

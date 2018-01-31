@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Utility functions for Comar scripts</Summary>
         <Description>Generic utility library for common Comar script operations.</Description>
-        <Archive sha1sum="b98a889cb7abd589c50d9d6dcfc8a3c466a26864" type="tarxz">http://source.limelinux.com/1.0/comar-api-2.4.9.tar.xz</Archive>
+        <Archive sha1sum="80d3ebca0e57e1c5c5d649e92342676452da65d7" type="targz">https://github.com/PisiLinuxNew/comar-api/archive/v2.4.9.tar.gz</Archive>
         <Patches>
             <!--Patch level="1">run_dir.patch</Patch>
             <Patch level="1">limelinux.patch</Patch>

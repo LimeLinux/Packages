@@ -10,7 +10,7 @@ from pisi.actionsapi import get
 def build():
     pisitools.dosed("Makefile", "MANDIR = /usr/man", "MANDIR = /usr/share/man")
     autotools.make("-C po update-po")
-    autotools.make()
+    autotools.make("-j1")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

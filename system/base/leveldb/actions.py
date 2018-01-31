@@ -13,11 +13,11 @@ def build():
 
 
 def install():
-    pisitools.dolib_so("libleveldb.so.1.18")
-    pisitools.dosym("libleveldb.so.1.18", "/usr/lib/libleveldb.so.1")
-    pisitools.dosym("libleveldb.so.1.18", "/usr/lib/libleveldb.so")
+    pisitools.dolib_so("out-shared/libleveldb.so.1.20")
+    pisitools.insinto("/usr/lib/", "out-shared/libleveldb.so.1")
+    pisitools.insinto("/usr/lib/", "out-shared/libleveldb.so")
 
     pisitools.insinto("/usr/include", "include/*")
-    pisitools.insinto("/usr/include", "helpers/memenv/memenv.h")
+    pisitools.insinto("/usr/include/leveldb", "helpers/memenv/memenv.h")
 
-    pisitools.dodoc("README", "LICENSE", "NEWS", "AUTHORS")
+    pisitools.dodoc("README.md", "LICENSE", "NEWS", "AUTHORS", "TODO")

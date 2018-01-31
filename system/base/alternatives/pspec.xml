@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Alternative management system</Summary>
         <Description>alternatives creates, removes, maintains and displays information about the symbolic links comprising the alternatives system. Alternatives system determines the defaults when several programs fulfilling the same or similar functions to be installed on a single system at the same time.</Description>
-        <Archive sha1sum="38a0de230f1cb318ae143ed0449911017b734eeb" type="tarbz2">http://pkgs.fedoraproject.org/repo/pkgs/chkconfig/chkconfig-1.3.63.tar.bz2/md5/7a9d030aa0915b8e9341a930e95d68e6/chkconfig-1.3.63.tar.bz2</Archive>
+        <Archive sha1sum="d2111640833792e96859559113c89467ea0f9a80" type="targz">https://github.com/fedora-sysv/chkconfig/archive/chkconfig-1.3.63.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>popt</Dependency>
             <Dependency>newt</Dependency>
@@ -34,7 +34,7 @@
 
     <History>
         <Update release="1">
-            <Date>2017-04-02</Date>
+            <Date>2018-01-30</Date>
             <Version>1.3.63</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
