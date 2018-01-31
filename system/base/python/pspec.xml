@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>An interpreted, interactive, object-orientated programming language</Summary>
         <Description>Python is a dynamic object-oriented programming language that can be used for many kinds of software development. It offers strong support for integration with other languages and tools, comes with extensive standard libraries, and can be learned in a few days.</Description>
-        <Archive sha1sum="18a8f30a0356c751b8d0ea6f76e764cab13ee046" type="tarxz">http://www.python.org/ftp/python/2.7.13/Python-2.7.13.tar.xz</Archive>
+        <Archive sha1sum="cf146474fc988b4b6b53fdd81b71c2815873b469" type="tarxz">http://www.python.org/ftp/python/2.7.14/Python-2.7.14.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>bzip2</Dependency>
             <Dependency>gdbm</Dependency>
@@ -27,7 +27,7 @@
         </BuildDependencies>
         <Patches>
             <Patch>limelinux_platform.patch</Patch>
-            <!-- Look into /usr/lib/pisi-linux first -->
+            <!-- Look into /usr/lib/limelinux first -->
             <Patch>add-limelinux-to-search.patch</Patch>
             <!-- Use UTF-8 by default -->
             <Patch>default-utf8.patch</Patch>
@@ -78,9 +78,9 @@
 
 
     <History>
-        <Update release="3">
-            <Date>2017-01-21</Date>
-            <Version>2.7.13</Version>
+        <Update release="2">
+            <Date>2018-01-31</Date>
+            <Version>2.7.14</Version>
             <Comment>Version Bump</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
