@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Program to identify a file's format by scanning binary data for patterns</Summary>
         <Description>Program to identify a file's format by scanning binary data for patterns.</Description>
-        <Archive sha1sum="1b789a93bea54da3119d98986468cd90b1e571bf" type="targz">ftp://ftp.astron.com/pub/file/file-5.28.tar.gz</Archive>
+        <Archive sha1sum="c2858a8043387d1229d8768ad42762a803d017db" type="targz">ftp://ftp.astron.com/pub/file/file-5.32.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -32,9 +32,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>5.28</Version>
+        <Update release="2">
+            <Date>2018-01.31</Date>
+            <Version>5.32</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
