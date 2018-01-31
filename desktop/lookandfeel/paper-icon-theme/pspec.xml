@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>paper-icon-theme</Name>
+        <Homepage>https://github.com/snwh/paper-icon-theme/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>paper-icon-theme</Summary>
+        <Description>paper-icon-theme</Description>
+        <Archive type="targz" sha1sum="c55786154993701155c2f8a8bb5433038ad837a3">https://github.com/snwh/paper-icon-theme/archive/v1.4.0.tar.gz</Archive>
+        <BuildDependencies>
+            <!--Dependency>intltool</Dependency-->
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>paper-icon-theme</Name>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-01-31</Date>
+            <Version>1.4.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
