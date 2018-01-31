@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Various useful Linux utilities</Summary>
         <Description>The util-linux package contains a large variety of low-level system utilities that are necessary for a Linux system to function.</Description>
-        <Archive sha1sum="ed267cb80af92d327c53a45360addf1a19a1a0b6" type="tarxz">https://www.kernel.org/pub/linux/utils/util-linux/v2.29/util-linux-2.29.tar.xz</Archive>
+        <Archive sha1sum="4ebb8a2c1da21a6da08b553abd0f4dd3dbc55b4e" type="tarxz">https://www.kernel.org/pub/linux/utils/util-linux/v2.31/util-linux-2.31.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>python</Dependency>
@@ -62,8 +62,8 @@
   
     <History>
         <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>2.29</Version>
+            <Date>2018-01-31</Date>
+            <Version>2.31</Version>
             <Comment>Version Bump.</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

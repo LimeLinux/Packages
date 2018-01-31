@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>X.Org X11 Autotools macros</Summary>
         <Description>X.Org X11 autotools macros are required for building the various packages that comprise the X Window System.</Description>
-        <Archive sha1sum="00cfc636694000112924198e6b9e4d72f1601338" type="tarbz2">http://xorg.freedesktop.org/releases/individual/util/util-macros-1.19.0.tar.bz2</Archive>
+        <Archive sha1sum="386e993ba339e561aa6d93073a4dcbab24e30bad" type="tarbz2">http://xorg.freedesktop.org/releases/individual/util/util-macros-1.19.1.tar.bz2</Archive>
         <Patches>
             <Patch level="1">doc.patch</Patch>
         </Patches>
@@ -29,9 +29,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.19.0</Version>
+        <Update release="2">
+            <Date>2018-01-31</Date>
+            <Version>1.19.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
