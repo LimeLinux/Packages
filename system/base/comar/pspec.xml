@@ -18,9 +18,9 @@
             <Dependency>cmake</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">run_dir.patch</Patch>
+            <!--Patch level="1">run_dir.patch</Patch>
             <Patch level="1">fix-flags.patch</Patch>
-            <Patch level="1">update-system-manager-model.patch</Patch>
+            <Patch level="1">update-system-manager-model.patch</Patch-->
         </Patches>
     </Source>
 
