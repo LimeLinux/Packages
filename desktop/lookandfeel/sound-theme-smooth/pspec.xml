@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sound-theme-smooth</Name>
+        <Homepage>https://www.gnome-look.org/p/1187979/</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>data</IsA>
+        <Summary>System Sounds of Lime Linux</Summary>
+        <Description>sound-theme-smooth contains default system sounds of Lime Linux.</Description>
+        <Archive sha1sum="6adec798661fd3ad0b6df4e82562a2925417c278" type="targz">https://sourceforge.net/projects/limeteam/files/source-limelinux/Smooth.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>sound-theme-smooth</Name>
+        <Files>
+            <Path fileType="data">/usr/share/sounds</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-02-01</Date>
+            <Version>1.1</Version>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

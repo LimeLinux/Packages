@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sound-theme</Name>
+        <Homepage>https://freedesktop.org</Homepage>
+        <Packager>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>data</IsA>
+        <Summary>System Sounds of Lime Linux</Summary>
+        <Description>sound-theme contains default system sounds of Lime Linux.</Description>
+        <Archive sha1sum="166bbbafa90c5dd5ebcc405ee6a4fdb35f568bb6" type="tarbz2">https://people.freedesktop.org/~mccann/dist/sound-theme-freedesktop-0.8.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>sound-theme</Name>
+        <Files>
+            <Path fileType="data">/usr/share/sounds</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-02-01</Date>
+            <Version>0.8</Version>
+            <Comment>First release</Comment>
+            <Name>LimeLinux Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
