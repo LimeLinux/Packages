@@ -12,7 +12,7 @@
         <License>GPLv2</License>
         <Summary>Vi IMproved, an advanced text editor</Summary>
         <Description>Vim, which stands for Vi IMproved, is an open-source, multiplatform text editor extended from vi. It was first released by Bram Moolenaar in 1991. Since then, numerous features have been added to Vim, many of which are helpful in editing program source code.</Description>
-        <Archive sha1sum="574c652e52a93764ebcb6caa20d65175d227dcc1" type="targz">https://github.com/vim/vim/archive/v8.0.0016.tar.gz</Archive>
+        <Archive sha1sum="98ae44447fd95510f9ee97d35f5e4b029dfaae57" type="targz">https://github.com/vim/vim/archive/v8.0.1451.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gpm</Dependency>
             <Dependency>gtk2</Dependency>
@@ -110,8 +110,8 @@
 
     <History>
 <Update release="2">
-            <Date>2017-12-21</Date>
-            <Version>8.0.0016</Version>
+            <Date>2018-02-01</Date>
+            <Version>8.0.1451</Version>
             <Comment>Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
