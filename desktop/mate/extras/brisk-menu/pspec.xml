@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brisk-menu</Name>
+        <Homepage>https://github.com/solus-project/brisk-menu</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:console</IsA>
+        <Summary>Modern, efficient menu for the MATE Desktop Environment.</Summary>
+        <Description>This project aims to reinvigorate the MATE Desktop with modern, first-class options. As such, Brisk Menu is a distro-agnostic desktop.</Description>
+        <Archive sha1sum="9f48c6d87933e8b983477f8710a7c537794c02cd" type="targz">https://github.com/LimeLinux/brisk-menu/archive/v0.5.0a.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3-meson</Dependency>
+            <Dependency>ninja</Dependency>
+            <Dependency>mate-menus</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">indicator.patch</Patch-->
+       </Patches>
+    </Source>
+    
+    <Package>
+        <Name>brisk-menu</Name>
+        <Files>
+            <Path fileType="library">/usr/libexec</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2018-02-01</Date>
+            <Version>0.5.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
