@@ -13,12 +13,12 @@
         <IsA>library</IsA>
         <Summary>Python binding for iksemel</Summary>
         <Description>A simple, fast, small and robust XML parser for Python, based on iksemel.</Description>
-        <Archive sha1sum="b72d130f4f84087a1011400858eb1bfae045bef5" type="targz">http://source.limelinux.com/1.0/piksemel-1.3.1.tar.gz</Archive>
+        <Archive sha1sum="d4059ffe2a52bdcd422cc905505cfeeb73c476c6" type="targz">https://sourceforge.net/projects/limeteam/files/source-limelinux/piksemel-1.3.1.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>symbol-visibility.patch</Patch>
+            <!--Patch>symbol-visibility.patch</Patch-->
         </Patches>
     </Source>
 
@@ -34,9 +34,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.3.1</Version>
+        <Update release="2">
+            <Date>2018-02-01</Date>
+            <Version>1.3.1.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

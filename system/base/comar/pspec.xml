@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>Manages system configuration</Summary>
         <Description>Lime Linux programs are packaged with small scripts which configures them to entegrate with system and each other. Çomar is the tool which manages and executes these scripts.</Description>
-        <Archive sha1sum="27f01ddd80919067b295eb64de3cabb235f30d4f" type="targz">https://github.com/PisiLinuxNew/comar/archive/v3.0.3.tar.gz</Archive> 
+        <Archive sha1sum="27f01ddd80919067b295eb64de3cabb235f30d4f" type="targz">https://sourceforge.net/projects/limeteam/files/source-limelinux/comar-3.0.3.tar.gz</Archive> 
         <BuildDependencies>
             <Dependency>cmake</Dependency>
         </BuildDependencies>
