@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python3-pytest</Name>
+        <Homepage>http://pypi.python.org/pypi/pytest/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <IsA>app:console</IsA>
+        <Summary>The pytest framework makes it easy to write small tests</Summary>
+        <Description>The pytest framework makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries.</Description>
+        <Archive sha1sum="70d072bcf075e08d210aadae8ac42a817748ea25" type="targz">https://pypi.python.org/packages/a8/84/25b93a15997be680fc8ce1a7b9315b03650ced546908e5008c0912b1c2e1/pytest-3.4.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>python3-pytest</Name>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+            <Dependency>ninja</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-01-31</Date>
+            <Version>3.4.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

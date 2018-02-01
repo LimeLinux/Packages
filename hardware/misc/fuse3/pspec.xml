@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fuse3</Name>
+        <Homepage>http://fuse.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>An interface for filesystems implemented in userspace</Summary>
+        <Description>fuse is a backend allowing regular users to (un)mount filesystems for their own use.</Description>
+        <Archive sha1sum="68e973217f79e98c6f1fff7dffa2ce68e0687d0d" type="targz">https://github.com/libfuse/libfuse/archive/fuse-3.2.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gettext</Dependency>
+            <Dependency>python3-meson</Dependency>
+            <Dependency>python3-pytest</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch>skip_umount_test.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>fuse3</Name>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2018-02-02</Date>
+            <Version>3.2.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
