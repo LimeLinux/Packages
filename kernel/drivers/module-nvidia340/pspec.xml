@@ -16,7 +16,7 @@
             <AdditionalFile target="linux49.patch">linux49.patch</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency version="4.9.18">kernel-module-headers</Dependency>
+            <Dependency version="4.13.2">kernel-module-headers</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <IsA>driver</IsA>
         <Summary>Kernel module for NVIDIA driver 340.xx releases</Summary>
         <RuntimeDependencies>
-            <Dependency version="4.9.18">kernel</Dependency>
+            <Dependency version="4.13.2">kernel</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>xorg-server</Dependency>
             <Dependency>libX11</Dependency>
