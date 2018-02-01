@@ -11,9 +11,9 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
-        <Summary>Python modules for Pisi Linux</Summary>
-        <Description>Python modules for Pisi Linux provides functions for common task, with the aim of easing development.</Description>
-        <Archive sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40" type="targz">http://source.limelinux.com/1.0/limelinux-python-0.4.8.tar.gz</Archive>
+        <Summary>Python modules for Lime Linux</Summary>
+        <Description>Python modules for Lime Linux provides functions for common task, with the aim of easing development.</Description>
+        <Archive sha1sum="d5615ef8f2beb69929a3588fd5a96832a8c66a40" type="targz">http://source.pisilinux.org/1.0/pisilinux-python-0.4.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python</Dependency>
 	    <Dependency>libX11</Dependency>
