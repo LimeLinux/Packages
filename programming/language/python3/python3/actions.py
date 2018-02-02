@@ -39,5 +39,5 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    #pisitools.remove("/usr/bin/2to3")
+    pisitools.remove("/usr/bin/2to3")
     pisitools.dodoc("LICENSE", "README")

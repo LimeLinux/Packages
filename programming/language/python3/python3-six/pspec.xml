@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Python 2 and 3 compatibility utilities.</Summary>
         <Description>python-six provides simple utilities for wrapping over differences between Python 2 and Python 3.</Description>
-        <Archive sha1sum="d168e6d01f0900875c6ecebc97da72d0fda31129" type="targz">http://pypi.python.org/packages/source/s/six/six-1.9.0.tar.gz</Archive>
+        <Archive sha1sum="3647372a0e104e7b53bd477762392024e1083ac0" type="targz">https://pypi.python.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
         </BuildDependencies>
@@ -31,9 +31,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>1.9.0</Version>
+        <Update release="3">
+            <Date>2018-02-03</Date>
+            <Version>1.11.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
