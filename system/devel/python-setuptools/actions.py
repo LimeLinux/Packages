@@ -5,9 +5,16 @@
 
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="distribute-%s" % get.srcVERSION()
+#WorkDir="distribute-%s" % get.srcVERSION()
+
+def build():
+    shelltools.system("python bootstrap.py")
+    pythonmodules.compile()
+
+
 
 def install():
     pythonmodules.install()

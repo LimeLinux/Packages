@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Python setuptools</Summary>
         <Description>python-setuptools is a collection of enhancements to the Python distutils that allow you to more easily build and distribute Python packages, especially ones that have dependencies on other packages.</Description>
-        <Archive sha1sum="a62cfe21bd0e5e2913c5b576f872ca293b9bebca" type="targz">https://src.fedoraproject.org/repo/pkgs/python-setuptools/distribute-0.6.49.tar.gz/89e68df89faf1966bcbd99a0033fbf8e/distribute-0.6.49.tar.gz</Archive>
+        <Archive sha1sum="e929531d068f765fbdbb68e0f7138c09345fcc0b" type="targz">https://github.com/pypa/setuptools/archive/38.2.5.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,8 +27,8 @@
 
     <History>
         <Update release="2">
-            <Date>2016-12-21</Date>
-            <Version>0.6.49</Version>
+            <Date>2018-02-03</Date>
+            <Version>38.2.5</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
