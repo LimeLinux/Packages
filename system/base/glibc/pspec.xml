@@ -15,16 +15,14 @@
         <Summary>GNU libc6 (also called glibc2) C library</Summary>
         <Description>The GNU C library is used as the C library in the GNU system and most systems with the Linux kernel. It defines the system calls and other basic C programming language facilities.</Description>
         <Archive sha1sum="1f7a9c43026484943ef7cf6885f2176a2bc1e093" type="tarxz">http://ftp.gnu.org/gnu/libc/glibc-2.27.tar.xz</Archive>
-        <!--
         <BuildDependencies>
-            <Dependency>kernel-headers</Dependency>
+            <Dependency>linux-api-headers</Dependency>
             <Dependency>gettext</Dependency>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>locale-no-archive.patch</Patch>
-            <Patch>glibc-2.21-roundup.patch</Patch>
-        </Patches>-->
+        </Patches>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="locale.gen">locale.gen.txt</AdditionalFile>  
         </AdditionalFiles>
