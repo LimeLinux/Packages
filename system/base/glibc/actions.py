@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "glibc-2.26"
+WorkDir = "glibc-2.27"
 
 
 
@@ -90,6 +90,16 @@ def build():
         shelltools.echo("configparms", "rtlddir=/usr/lib")
 
     autotools.make()
+
+
+
+def check():
+     shelltools.cd("build")
+
+     if get.buildTYPE() != "emul32":
+        autotools.make("check || true")
+     else:
+        pass
 
 
 
