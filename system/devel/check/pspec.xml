@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A unit test framework for C</Summary>
         <Description>check is a unit testing framework for C. It features a simple interface for defining unit tests, putting little in the way of the developer. Tests are run in a separate address space, so Check can catch both assertion failures and code errors that cause segmentation faults or other signals. The output from unit tests can be used within source code editors and IDEs.</Description>
-        <Archive sha1sum="294f317371eb67416d070ddc9fd7d22ce028c99f" type="targz">https://github.com/libcheck/check/archive/0.10.0.tar.gz</Archive>
+        <Archive sha1sum="2c10a4c09af75f32d58239097ab249ec60f38e88" type="targz">https://github.com/libcheck/check/archive/0.12.0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -31,9 +31,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.10</Version>
+        <Update release="2">
+            <Date>2018-02-03</Date>
+            <Version>0.12</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
