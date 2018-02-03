@@ -16,8 +16,7 @@ def setup():
     #autotools.autoreconf("-vfi")
     # do not enable nls http://bugs.gentoo.org/121408
     shelltools.system("./autogen.sh")
-    autotools.configure("--disable-nls \
-                         --disable-dependency-tracking")
+    autotools.configure()
 
 def build():
     autotools.make("-j1")

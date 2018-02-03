@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>A fast library for creating graphic images</Summary>
         <Description>The gd graphics library allows your code to quickly draw images complete with lines, arcs, text, multiple colors, cut and paste from other images, and flood fills, and to write out the result as a PNG or JPEG file. This is particularly useful in Web applications, where PNG and JPEG are two of the formats accepted for inline images by most browsers. Note that gd is not a paint program.</Description>
-        <Archive sha1sum="2f8cebec5afd6c83a3d5cb92f40ea4926b4daa98" type="tarxz">https://github.com/libgd/libgd/releases/download/gd-2.2.3/libgd-2.2.3.tar.xz</Archive>
+        <Archive sha1sum="b777b005c401b6fa310ccf09eeb29f6c6e17ab2c" type="tarxz">https://github.com/libgd/libgd/releases/download/gd-2.2.5/libgd-2.2.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>fontconfig</Dependency>
             <Dependency>libpng</Dependency>
@@ -26,8 +26,8 @@
     <Package>
         <Name>gd</Name>
         <RuntimeDependencies>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>tiff</Dependency>
+        <Dependency>fontconfig</Dependency>
+        <Dependency>tiff</Dependency>
 	    <Dependency>webp</Dependency>
 	    <Dependency>libpng</Dependency>
 	    <Dependency>freetype</Dependency>
@@ -55,8 +55,8 @@
 
     <History>
         <Update release="2">
-            <Date>2017-12-21</Date>
-            <Version>2.2.3</Version>
+            <Date>2018-02-03</Date>
+            <Version>2.2.5</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

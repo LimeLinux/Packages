@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>High precision and correct rounding library</Summary>
         <Description>libmpc is a library for arithmetic of complex numbers with arbitrarily high precision and correct rounding.</Description>
-        <Archive sha1sum="b8be66396c726fdc36ebb0f692ed8a8cca3bcc66" type="targz">ftp://ftp.gnu.org/gnu/mpc/mpc-1.0.3.tar.gz</Archive>
+        <Archive sha1sum="b019d9e1d27ec5fb99497159d43a3164995de2d0" type="targz">ftp://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gmp</Dependency>
             <Dependency>mpfr</Dependency>
@@ -35,9 +35,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.0.3</Version>
+        <Update release="2">
+            <Date>2018-02-03</Date>
+            <Version>1.1.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -15,7 +15,7 @@
         <IsA>library</IsA>
         <Summary>The GNU Compiler Collection, includes C, C++, Objective-C and Fortran compilers</Summary>
         <Description>The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, as well as libraries for these languages</Description>
-        <Archive sha1sum="08a88199ed94fdf4940d118ba3c07028245cd5b7" type="tarxz">ftp://gcc.gnu.org/pub/gcc/releases/gcc-7.2.0/gcc-7.2.0.tar.xz</Archive>
+        <Archive sha1sum="9689b9cae7b2886fdaa08449a26701f095c04e48" type="tarxz">ftp://gcc.gnu.org/pub/gcc/releases/gcc-7.3.0/gcc-7.3.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
             <Dependency>bison</Dependency>
@@ -82,12 +82,16 @@
             <Path fileType="info">/usr/share/info</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/c89">c89</AdditionalFile> 
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/c99">c99</AdditionalFile> 
+        </AdditionalFiles>
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-09-28</Date>
-            <Version>7.2.0</Version>
+        <Update release="4">
+            <Date>2018-03-02</Date>
+            <Version>7.3.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

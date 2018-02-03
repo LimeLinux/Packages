@@ -150,7 +150,7 @@ def install():
     shelltools.system("sed -e '1,3d' -e 's|/| |g' -e 's|\\\| |g' -e 's|^|#|g' %s/%s/localedata/SUPPORTED >> %s/etc/locale.gen" % (get.workDIR(),get.srcDIR(),get.installDIR()))
       
  
-    pisitools.dodoc("BUGS", "ChangeLog*", "CONFORMANCE", "NAMESPACE", "NEWS", "README*", "LICENSES")
+    pisitools.dodoc("ChangeLog*", "COPYING", "COPYING.LIB", "NEWS", "README*", "LICENSES")
 
     # We'll take care of the cache ourselves
     if shelltools.isFile("%s/etc/ld.so.cache" % get.installDIR()):
