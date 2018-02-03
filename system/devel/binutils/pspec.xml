@@ -25,7 +25,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="info">/usr/share/info</Path>
-            <Path fileType="data">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/locale/*</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
