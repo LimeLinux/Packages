@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>GNU libraries and utilities for producing multi-lingual messages</Summary>
         <Description>The GNU gettext package provides a set of tools and documentation for producing multi-lingual messages in programs. Tools include a set of conventions about how programs should be written to support message catalogs, a directory and file naming organization for the message catalogs, a runtime library which supports the retrieval of translated messages, and stand-alone programs for handling the translatable and the already translated strings. Gettext provides an easy to use library and tools for creating, using, and modifying natural language catalogs and is a powerful and simple method for internationalizing programs.</Description>
-        <Archive sha1sum="4b3dc947a729fac8a14bde473454730919382b23" type="targz">http://ftp.gnu.org/pub/gnu/gettext/gettext-0.19.8.tar.gz</Archive>
+        <Archive sha1sum="b5d24ba2958c91fc5cc0058165837c99a0f58784" type="targz">http://ftp.gnu.org/pub/gnu/gettext/gettext-0.19.8.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>acl</Dependency>
             <Dependency>glib2</Dependency>
@@ -46,9 +46,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.19.8</Version>
+        <Update release="2">
+            <Date>2018-02-03</Date>
+            <Version>0.19.8.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

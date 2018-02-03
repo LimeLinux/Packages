@@ -99,6 +99,16 @@ def build():
     shelltools.cd("../build")
     autotools.make()
 
+
+def check():
+     shelltools.cd("../build")
+
+     if get.buildTYPE() != "emul32":
+        autotools.make("check || true")
+     else:
+        pass
+
+
 def install():
     shelltools.cd("../build")
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 linker = "ld"
 multilib = "--enable-multilib" if get.ARCH() == "x86_64" else ""
 
-# WorkDir = "binutils-2.20.51"
+WorkDir = "binutils-2.30"
 
 def setup():
     # Build binutils with LD_SYMBOLIC_FUNCTIONS=1 and reduce PLT relocations in libfd.so by 84%.
@@ -26,17 +26,22 @@ def setup():
                          --enable-ld=default \
                          --enable-gold \
                          --enable-plugins \
-                         --with-pkgversion="Pisi Linux" \
+                         --enable-relro \
+                         --with-pkgversion="Lime Linux" \
                          --with-bugurl=http://bugs.limelinux.com/ \
                          --with-pic \
+                         --with-system-zlib \
                           %s \
-                         --disable-nls \
                          --disable-werror' % (get.HOST(), multilib))
                          #--enable-targets="i386-linux" \
 
 def build():
     autotools.make("configure-host")
     autotools.make()
+
+def check():
+    autotools.make("-k LDFLAGS="" check || true")
+
 
 
 def install():
