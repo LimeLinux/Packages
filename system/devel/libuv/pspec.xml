@@ -16,7 +16,7 @@
         <Archive sha1sum="994d0f8ea2eda5c31530811680940b12025643ae" type="targz">https://github.com/libuv/libuv/archive/v1.10.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>glibc</Dependency>
-            <Dependency>python-sphinx</Dependency>
+            <!--Dependency>python-sphinx</Dependency-->
         </BuildDependencies>
     </Source>
 
