@@ -6,14 +6,16 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--with-readline \
-                         --without-libedit")
+    autotools.configure("--with-readline")
 
 def build():
-    autotools.make()
+    autotools.make("-j1")
+
+
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

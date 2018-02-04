@@ -1,0 +1,46 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ed</Name>
+        <Homepage>https://www.gnu.org/software/ed/ed.html</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>GNU ed is a line-oriented text editor.</Summary>
+        <Description>GNU ed is a line-oriented text editor. It is used to create, display, modify and otherwise manipulate text files, both interactively and via shell scripts. A restricted version of ed, red, can only edit files in the current directory and cannot execute shell commands. Ed is the "standard" text editor in the sense that it is the original editor for Unix, and thus widely available.</Description>
+        <Archive sha1sum="4b23577f4f803be68057df969315bea8248bdbd1" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/ed-1.14.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>glibc</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ed</Name>
+        <RuntimeDependencies>
+            <!--Dependency>acl</Dependency-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-02-04</Date>
+            <Version>1.14.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
