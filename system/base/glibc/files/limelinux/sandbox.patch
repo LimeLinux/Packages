@@ -1,0 +1,13 @@
+diff -Nur glibc-2.26/Makefile glibc-2.26/Makefile.orig
+--- glibc-2.26/Makefile	2018-02-05 21:47:07.952575566 +0300
++++ glibc-2.26/Makefile.orig	2017-08-02 15:57:16.000000000 +0300
+@@ -107,9 +107,6 @@
+ 	rm -f $(symbolic-link-list)
+ 
+ install:
+-	-test ! -x $(elf-objpfx)ldconfig || LC_ALL=C \
+-	  $(elf-objpfx)ldconfig $(addprefix -r ,$(install_root)) \
+-				$(slibdir) $(libdir)
+ ifneq (no,$(PERL))
+ ifeq (/usr,$(prefix))
+ ifeq (,$(install_root)

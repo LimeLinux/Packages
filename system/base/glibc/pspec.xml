@@ -21,7 +21,8 @@
             <Dependency>binutils</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>locale-no-archive.patch</Patch>
+            <!-- Fix sandbox violation -->
+            <Patch level="1">limelinux/sandbox.patch</Patch>
         </Patches>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="locale.gen">locale.gen.txt</AdditionalFile>  
@@ -78,7 +79,7 @@
 
 
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2018-02-03</Date>
             <Version>2.27</Version>
             <Comment>First Release</Comment>

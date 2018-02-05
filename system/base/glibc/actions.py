@@ -44,6 +44,8 @@ def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")
     options = "--prefix=/usr \
+               --enable-multi-arch \
+               --enable-kernel=3.2.0 \
                --libdir=/usr/lib \
                --mandir=/usr/share/man \
                --infodir=/usr/share/info \
@@ -52,7 +54,6 @@ def setup():
                --enable-add-ons \
                --enable-bind-now \
                --enable-lock-elision \
-               --enable-multi-arch \
                --enable-obsolete-nsl \
                --enable-obsolete-rpc \
                --enable-stack-protector=strong \
@@ -93,22 +94,10 @@ def build():
 
 
 
-def check():
-     shelltools.cd("build")
-
-     if get.buildTYPE() != "emul32":
-        autotools.make("check || true")
-     else:
-        pass
-
-
 
 def install():
 
     shelltools.cd("build")
-    pisitools.dodir("/etc/ld.so.conf.d")
-    shelltools.touch("%s/etc/ld.so.conf" % get.installDIR())
-
 
     autotools.rawInstall("install_root=%s" % get.installDIR())
     
@@ -122,20 +111,10 @@ def install():
         pisitools.removeDir("/tmp32")
 
 
-
-
-    # Prevent overwriting of the /etc/localtime symlink
-    if shelltools.isFile("%s/etc/localtime" % get.installDIR()):
-        pisitools.remove("/etc/localtime")
-
     # Nscd needs this to work
     pisitools.dodir("/var/run/nscd")
     pisitools.dodir("/var/db/nscd")
 
-    # remove zoneinfo files since they are coming from timezone packages
-    # we disable timezone build with a patch, keeping these lines for easier maintenance
-    if shelltools.isDirectory("%s/usr/share/zoneinfo" % get.installDIR()):
-        pisitools.removeDir("/usr/share/zoneinfo")
 
  
     shelltools.cd("..")
@@ -150,12 +129,6 @@ def install():
     shelltools.system("sed -e '1,3d' -e 's|/| |g' -e 's|\\\| |g' -e 's|^|#|g' %s/%s/localedata/SUPPORTED >> %s/etc/locale.gen" % (get.workDIR(),get.srcDIR(),get.installDIR()))
       
  
-    pisitools.dodoc("ChangeLog*", "COPYING", "COPYING.LIB", "NEWS", "README*", "LICENSES")
-
-    # We'll take care of the cache ourselves
-    if shelltools.isFile("%s/etc/ld.so.cache" % get.installDIR()):
-        pisitools.remove("/etc/ld.so.cache")
-
-    pisitools.remove("/etc/ld.so.conf")
+    pisitools.dodoc("ChangeLog", "COPYING", "COPYING.LIB", "NEWS", "README*", "LICENSES")
 
 
