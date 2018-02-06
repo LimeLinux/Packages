@@ -11,10 +11,12 @@ from pisi.actionsapi import shelltools
 
 
 def setup():
-   shelltools.cd("js/src")
-   shelltools.system("sed -i 's/(defined\((@TEMPLATE_FILE)\))/\1/' config/milestone.pl ")
+    shelltools.export("CFLAGS","-std=gnu++98")
+    shelltools.export("CXXFLAGS", "-std=gnu++98")
+    shelltools.cd("js/src")
+    shelltools.system("sed -i 's/(defined\((@TEMPLATE_FILE)\))/\1/' config/milestone.pl ")
    
-   autotools.configure("--prefix=/usr       \
+    autotools.configure("--prefix=/usr       \
                         --enable-readline   \
                         --enable-threadsafe \
                         --with-system-ffi   \

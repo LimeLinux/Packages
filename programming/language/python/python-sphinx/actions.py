@@ -4,17 +4,21 @@
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/licenses/gpl.txt
 
-from pisi.actionsapi import pythonmodules
+from pisi.actionsapi import pythonmodules , shelltools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 WorkDir = "Sphinx-%s" % get.srcVERSION()
 
 def build():
+    shelltools.system("pip install -U sphinx")
     pythonmodules.compile()
+    pythonmodules.compile(pyVer="3")
 
 def install():
+    shelltools.system("pip install --upgrade pip")
     pythonmodules.install()
+    pythonmodules.install(pyVer="3")
 
     # Generating the Grammar pickle to avoid on the fly generation causing sandbox violations
     pythonmodules.run("-c \"from sphinx.pycode.pgen2.driver import load_grammar ; \

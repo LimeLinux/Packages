@@ -1,0 +1,37 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-pkcs11</Name>
+        <Homepage>http://pypi.python.org/pypi/python-pkcs11</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary> high level, “more Pythonic” interface to the PKCS#11 (Cryptoki) standard to support HSM and Smartcard devices in Python</Summary>
+        <Description>The interface is designed to follow the logical structure of a HSM, with useful defaults for obscurely documented parameters. Many APIs will optionally accept iterables and act as generators, allowing you to stream large data blocks for symmetric encryption.</Description>
+        <Archive sha1sum="43d16c63ac838cf1a257745d1f0947a768d639f4" type="targz">https://pypi.python.org/packages/4a/6a/df6eeb9565c937b227c60d06907cd2c2184d6c65578d97b95a39c08748e0/python-pkcs11-0.5.0.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>python-pkcs11</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-02-06</Date>
+            <Version>0.5.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
