@@ -8,13 +8,15 @@ from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "Cython-%s" % get.srcVERSION()
+
 
 def build():
     pythonmodules.compile()
+    pythonmodules.compile(pyVer="3")
 
 def install():
     pythonmodules.install()
+    pythonmodules.install(pyVer="3")
 
-    pisitools.dohtml("Doc/*.html")
+    pisitools.dohtml("Doc/*")
     pisitools.dodoc("COPYING.txt", "LICENSE.txt", "README.txt", "ToDo.txt", "USAGE.txt")

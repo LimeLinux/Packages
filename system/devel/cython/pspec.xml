@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>C extensions for the Python</Summary>
         <Description>Cython is a language that makes writing C extensions for the Python language as easy as Python itself.</Description>
-        <Archive sha1sum="a837efb73c195585ce6e27cf53e3587285ccd39f" type="targz">https://pypi.python.org/packages/c6/fe/97319581905de40f1be7015a0ea1bd336a756f6249914b148a17eefa75dc/Cython-0.24.1.tar.gz</Archive>
+        <Archive sha1sum="9a2b8948ba1f7b5096c758571e20d6cb7550d97e" type="targz">https://github.com/cython/cython/archive/0.27.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,9 +27,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>0.24.1</Version>
+        <Update release="2">
+            <Date>2018-02-06</Date>
+            <Version>0.27.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
