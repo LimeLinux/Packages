@@ -21,6 +21,7 @@
             <Dependency>binutils</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">limelinux/locale-no-archive.patch</Patch>
             <!-- Fix sandbox violation -->
             <Patch level="1">limelinux/sandbox.patch</Patch>
         </Patches>
