@@ -1,15 +1,16 @@
-diff -Nur glibc-2.26/sysdeps/unix/sysv/linux/x86_64/ldconfig.h glibc-2.26/sysdeps/unix/sysv/linux/x86_64/ldconfig.h.orig
---- glibc-2.26/sysdeps/unix/sysv/linux/x86_64/ldconfig.h	2018-02-05 21:34:50.190602809 +0300
-+++ glibc-2.26/sysdeps/unix/sysv/linux/x86_64/ldconfig.h.orig	2017-08-02 15:57:16.000000000 +0300
-@@ -19,8 +19,8 @@
+diff -Nur glibc-2.27/sysdeps/unix/sysv/linux/x86_64/ldconfig.h.orig glibc-2.27/sysdeps/unix/sysv/linux/x86_64/ldconfig.h
+--- glibc-2.27/sysdeps/unix/sysv/linux/x86_64/ldconfig.h.orig	2018-02-01 19:17:18.000000000 +0300
++++ glibc-2.27/sysdeps/unix/sysv/linux/x86_64/ldconfig.h	2018-02-06 23:22:06.944107555 +0300
+@@ -18,9 +18,9 @@
+ #include <sysdeps/generic/ldconfig.h>
  
  #define SYSDEP_KNOWN_INTERPRETER_NAMES \
-   { "/lib/ld-linux.so.2", FLAG_ELF_LIBC6 }, \
+-  { "/lib/ld-linux.so.2", FLAG_ELF_LIBC6 }, \
 -  { "/libx32/ld-linux-x32.so.2", FLAG_ELF_LIBC6 }, \
 -  { "/lib64/ld-linux-x86-64.so.2", FLAG_ELF_LIBC6 },
-+  { "/lib32/ld-linux-x86.so.2", FLAG_ELF_LIBC6 }, \
-+  { "/lib/ld-linux-x86-64.so.2", FLAG_ELF_LIBC6 },
++  { "/lib32/ld-linux.so.2", FLAG_ELF_LIBC6 }, \
++  { "/lib32/ld-linux-x32.so.2", FLAG_ELF_LIBC6 }, \
++  { "/usr/lib/ld-linux-x86-64.so.2", FLAG_ELF_LIBC6 },
  #define SYSDEP_KNOWN_LIBRARY_NAMES \
    { "libc.so.6", FLAG_ELF_LIBC6 },	\
    { "libm.so.6", FLAG_ELF_LIBC6 },
-

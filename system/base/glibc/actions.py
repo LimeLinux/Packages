@@ -1,8 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Licensed under the GNU General Public License, version 3.
-# See the file http://www.gnu.org/licenses/gpl.txt
+# Copyright 2018 LimeLinux
+# Licensed under the GNU General Public License, version 2.
+# See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
@@ -13,67 +14,99 @@ import os
 
 WorkDir = "glibc-2.27"
 
+defaultflags = "-O3 -g -U_FORTIFY_SOURCE -fno-strict-aliasing -fomit-frame-pointer -mno-tls-direct-seg-refs"
+sysflags = "-mtune=generic -march=x86-64" if get.ARCH() == "x86_64" else "-mtune=atom -march=i686"
 
+multibuild = (get.ARCH() == "x86_64")
+pkgworkdir = "%s/%s" % (get.workDIR(), WorkDir)
+
+config = {"multiarch": {
+                "multi": True,
+                "extraconfig": "--build=i686-pc-linux-gnu",
+                "coreflags":   "-m32",
+                "libdir":      "lib32",
+                "buildflags":  "-mtune=atom -march=i686 -O2 -pipe %s" % defaultflags,
+                "builddir":    "%s/build32" % pkgworkdir
+            },
+           "system": {
+                "multi": False,
+                "extraconfig": "--build=%s" % get.HOST(),
+                "coreflags":   "",
+                "libdir":      "lib",
+                "buildflags":  "%s %s" % (sysflags, defaultflags),
+                "builddir":    "%s/build" % pkgworkdir
+            }
+}
 
 ldconf32bit = """/lib32
 /usr/lib32
 """
 
-multilib = " --enable-multi-arch --enable-multilib" if get.ARCH() == "x86_64" else " --disable-multi-arch --disable-multilib"
-arch = "x86-64" if get.ARCH() == "x86_64" and not get.buildTYPE() == "emul32" else "i686"
-defaultflags = "-O3 -g " 
-if get.ARCH() == "x86_64": defaultflags += " -fasynchronous-unwind-tables -mtune=generic -march=%s" % arch
-#if get.ARCH() == "armv7h": defaultflags += " --U_FORTIFY_SOURCE -march=armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16"
-if get.buildTYPE() == "emul32": defaultflags += " -m32"  
-
-
-
-def setup():
-    
+def set_variables(cfg):
     shelltools.export("LANGUAGE","C")
     shelltools.export("LANG","C")
     shelltools.export("LC_ALL","C")
-    
-    if get.ARCH() == "x86_64" or get.buildTYPE() == "emul32":
-        shelltools.export("CC", "gcc %s " % defaultflags)
-        shelltools.export("CXX", "g++ %s " % defaultflags)
 
-        shelltools.export("CFLAGS", defaultflags)
-        shelltools.export("CXXFLAGS", defaultflags)
-        
-    shelltools.makedirs("build")
-    shelltools.cd("build")
-    options = "--prefix=/usr \
-               --enable-multi-arch \
-               --enable-kernel=3.2.0 \
-               --libdir=/usr/lib \
-               --mandir=/usr/share/man \
-               --infodir=/usr/share/info \
-               --libexecdir=/usr/lib/misc \
-               --with-bugurl=https://bugs.limelinux.com/ \
-               --enable-add-ons \
-               --enable-bind-now \
-               --enable-lock-elision \
-               --enable-obsolete-nsl \
-               --enable-obsolete-rpc \
-               --enable-stack-protector=strong \
-               --enable-stackguard-randomization \
-               --disable-profile \
-               --disable-werror \
-               %s \
-               --with-tls"% multilib
-               
-    if get.buildTYPE() == "emul32":
-        options += "\
-                    --libdir=/usr/lib32 \
-                    i686-pc-linux-gnu \
-                   "
+    shelltools.export("CC", "gcc %s" % cfg["coreflags"])
+    shelltools.export("CXX", "g++ %s" % cfg["coreflags"])
 
-    shelltools.system("../configure %s" % options)
+    shelltools.export("CFLAGS", cfg["buildflags"])
+    shelltools.export("CXXFLAGS", cfg["buildflags"])
+
+
+### functionize repetetive tasks ###
+def libcSetup(cfg):
+    set_variables(cfg)
+
+    if not os.path.exists(cfg["builddir"]):
+        shelltools.makedirs(cfg["builddir"])
+
+    shelltools.cd(cfg["builddir"])
+    shelltools.system("../configure \
+                       --with-tls \
+                       --with-__thread \
+                       --enable-add-ons=nptl,libidn \
+                       --enable-bind-now \
+                       --enable-kernel=2.6.31 \
+                       --enable-stackguard-randomization \
+                       --without-cvs \
+                       --without-gd \
+                       --without-selinux \
+                       --disable-profile \
+                       --prefix=/usr \
+                       --mandir=/usr/share/man \
+                       --infodir=/usr/share/info \
+                       --libexecdir=/usr/lib/misc \
+                       %s " % cfg["extraconfig"])
+
+def libcBuild(cfg):
+    set_variables(cfg)
+
+    shelltools.cd(cfg["builddir"])
+
+    autotools.make()
+
+def libcInstall(cfg):
+    # not to bork locale/zone stuff
+    set_variables(cfg)
+
+    # install glibc/glibc-locale files
+    shelltools.cd(cfg["builddir"])
+    autotools.rawInstall("install_root=%s" % get.installDIR())
+
+
+
+### real actions start here ###
+def setup():
+    if multibuild:
+        libcSetup(config["multiarch"])
+
+    libcSetup(config["system"])
+
 
 def build():
-    shelltools.cd("build")
-    if get.buildTYPE() == "emul32":
+    if multibuild:
+        libcBuild(config["multiarch"])
         shelltools.echo("configparms","build-programs=no")
         shelltools.echo("configparms", "slibdir=/lib32")
         shelltools.echo("configparms", "rtlddir=/lib32")
@@ -82,44 +115,40 @@ def build():
         shelltools.echo("configparms", "rootsbindir=/tmp32")
         shelltools.echo("configparms", "datarootdir=/tmp32/share")
 
-        autotools.make()
-
         pisitools.dosed("configparms", "=no", "=yes")
 
-    else:
-        shelltools.echo("configparms", "slibdir=/usr/lib")
-        shelltools.echo("configparms", "rtlddir=/usr/lib")
-
-    autotools.make()
-
+    libcBuild(config["system"])
+    shelltools.echo("configparms", "slibdir=/usr/lib")
+    shelltools.echo("configparms", "rtlddir=/usr/lib")
 
 
 
 def install():
-
-    shelltools.cd("build")
-
-    autotools.rawInstall("install_root=%s" % get.installDIR())
-    
-
-    if get.buildTYPE() == "emul32":
-        pisitools.dosym("/lib32/ld-linux.so.2", "/lib/ld-linux.so.2")
-
-        shelltools.echo("%s/etc/ld.so.conf.d/60-glibc-32bit.conf" % get.installDIR(), ldconf32bit)
-
+    if multibuild:
+        libcInstall(config["multiarch"])
+        pisitools.domove("/usr/lib/*", "/usr/lib32")
+ 
 
         pisitools.removeDir("/tmp32")
 
+    libcInstall(config["system"])
+
+
+    # localedata can be shared between archs
+    shelltools.cd(config["system"]["builddir"])
+    autotools.rawInstall("install_root=%s localedata/install-locales" % get.installDIR())
+
+    pisitools.domove("/usr/lib64/*", "/usr/lib")
+    pisitools.removeDir("/usr/lib64")
+
+    # now we do generic stuff
+    shelltools.cd(pkgworkdir)
 
     # Nscd needs this to work
     pisitools.dodir("/var/run/nscd")
     pisitools.dodir("/var/db/nscd")
 
 
- 
-    shelltools.cd("..")
-   
-    
     pisitools.insinto("/etc", "nscd/nscd.conf")
     
     pisitools.insinto("/usr/lib/tmpfiles.d", "nscd/nscd.tmpfiles", "nscd.conf")
@@ -127,8 +156,7 @@ def install():
     
     pisitools.insinto("/etc", "locale.gen")
     shelltools.system("sed -e '1,3d' -e 's|/| |g' -e 's|\\\| |g' -e 's|^|#|g' %s/%s/localedata/SUPPORTED >> %s/etc/locale.gen" % (get.workDIR(),get.srcDIR(),get.installDIR()))
-      
- 
-    pisitools.dodoc("ChangeLog", "COPYING", "COPYING.LIB", "NEWS", "README*", "LICENSES")
 
+
+    pisitools.dodoc("ChangeLog", "COPYING", "COPYING.LIB", "NEWS", "README*", "LICENSES")
 
