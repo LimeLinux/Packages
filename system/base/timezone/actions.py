@@ -1,15 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Licensed under the GNU General Public License, version 3.
-# See the file http://www.gnu.org/copyleft/gpl.txt.
+# Copyright 2018 LimeLinux
+# Licensed under the GNU General Public License, version 2.
+# See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
-
-WorkDir = "."
 
 ZoneDir = "/usr/share/zoneinfo"
 TargetDir = "%s/%s" % (get.installDIR(), ZoneDir)
@@ -17,10 +16,13 @@ TargetDir = "%s/%s" % (get.installDIR(), ZoneDir)
 RightDir = "%s/right" % TargetDir
 PosixDir = "%s/posix" % TargetDir
 
+WorkDir = "tz-2018c"
 
-timezones = ["etcetera", "southamerica", "northamerica", "europe", "africa", "antarctica", \
-             "asia", "australasia", "factory", "backward", "pacificnew", \
-             "systemv" ]
+Components = ["etcetera", "southamerica", "northamerica", "europe", "africa", "antarctica", \
+              "asia", "australasia", "backward", "pacificnew",\
+              "systemv" ]
+
+ExtraDist = ["zone1970.tab", "zone.tab", "iso3166.tab"]
 
 def setup():
     pisitools.dodir (ZoneDir)
@@ -29,18 +31,16 @@ def setup():
 
 
 def install():
-    pisitools.insinto ("/usr/share/zoneinfo", "iso3166.tab")
-    pisitools.insinto ("/usr/share/zoneinfo", "zone.tab")
-   
-    for tzdata in timezones:
-        cmd = "zic -L /dev/null -d %s -y \"%s/yearistype.sh\" %s" % (TargetDir, get.workDIR(), tzdata)
+    for extra in ExtraDist:
+        pisitools.insinto (ZoneDir, extra)
+
+    for tz in Components:
+        cmd = "zic  /dev/null -d %s -y \"%s/yearistype.sh\" %s" % (TargetDir, get.workDIR(), tz)
         shelltools.system (cmd)
-        part2 = "zic -L /dev/null -d %s -y \"%s/yearistype.sh\" %s" % (PosixDir, get.workDIR(), tzdata)
+        part2 = "zic  /dev/null -d %s -y \"%s/yearistype.sh\" %s" % (PosixDir, get.workDIR(), tz)
         shelltools.system (part2)
-        part3 = "zic -L leapseconds -d %s -y \"%s/yearistype.sh\" %s" % (RightDir, get.workDIR(), tzdata)
+        part3 = "zic -L leapseconds -d %s -y \"%s/yearistype.sh\" " % (RightDir, get.workDIR())
         shelltools.system (part3)
 
-    shelltools.system ("zic -d %s -p Europe/Istanbul" % TargetDir)
-    
-
-
+    # Default DST
+    shelltools.system ("zic  -d %s -p America/New_York" % TargetDir)
