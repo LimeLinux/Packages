@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Console display library</Summary>
         <Description>The NCurses is a library of functions that manage an application's display on character-cell terminals. The NCurses library defines many functions such as moving mouse and cursor, keyboard mapping and dispaying in color.</Description>
-        <Archive sha1sum="ef05ab040943de01f356a954d798ed8545cfb5d6" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/ncurses-6.0.tar.xz</Archive>
+        <Archive sha1sum="57acf6bc24cacd651d82541929f726f4def780cc" type="targz">https://ftp.gnu.org/gnu/ncurses/ncurses-6.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gnuconfig</Dependency>
         </BuildDependencies>
@@ -35,9 +35,9 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2017-05-25</Date>
-            <Version>6.0</Version>
+        <Update release="4">
+            <Date>2018-02-09</Date>
+            <Version>6.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
