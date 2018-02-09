@@ -64,7 +64,8 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0755" target="/usr/bin/locale-gen">locale-gen</AdditionalFile> 
-            <AdditionalFile owner="root" permission="0644" target="/usr/lib32/glibc32.txt">glibc32.txt</AdditionalFile> 
+            <AdditionalFile owner="root" permission="0755" target="/etc/ld.so.conf.d/60-glibc-32bit.conf">60-glibc-32bit.conf</AdditionalFile> 
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib32/glibc32.txt">glibc32.txt</AdditionalFile>
         </AdditionalFiles>
     </Package>
 

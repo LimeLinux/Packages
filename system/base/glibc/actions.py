@@ -127,6 +127,7 @@ def install():
     if multibuild:
         libcInstall(config["multiarch"])
         pisitools.domove("/usr/lib/*", "/usr/lib32")
+        pisitools.dosym("/lib32/ld-2.27.so", "/usr/lib/ld-linux.so.2")
  
 
         pisitools.removeDir("/tmp32")
