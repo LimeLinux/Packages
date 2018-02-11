@@ -158,3 +158,4 @@ def install():
 
 
     pisitools.dodoc("ChangeLog", "COPYING", "COPYING.LIB", "NEWS", "README*", "LICENSES")
+

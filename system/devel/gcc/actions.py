@@ -35,9 +35,8 @@ def exportFlags():
     # we set real flags with new configure settings, these are just safe optimizations
     shelltools.export("CFLAGS", cflags)
     shelltools.export("CXXFLAGS", cflags)
-   # shelltools.export("LDFLAGS", "")
-    #shelltools.export("LC_ALL", "C")
-
+    shelltools.export("LDFLAGS", "")
+    shelltools.export("LC_ALL", "C")
 
     # FIXME: this may not be necessary for biarch
     shelltools.export("CC", "gcc")
@@ -52,6 +51,7 @@ def setup():
     pisitools.dosed("gcc/Makefile.in", "\.\/fixinc\.sh", "-c true")
     pisitools.dosed("gcc/configure", "^(ac_cpp='\$CPP\s\$CPPFLAGS)", r"\1 -O2")
     pisitools.dosed("libiberty/configure", "^(ac_cpp='\$CPP\s\$CPPFLAGS)", r"\1 -O2")
+    
     pisitools.dosed("gcc/config/i386/t-linux64", "^(ac_cpp='\$CPP\s\$CPPFLAGS)", r"\1 -O2")
     pisitools.system("sed -i '/m64=/s/lib64/lib/' gcc/config/i386/t-linux64")
    
@@ -70,6 +70,7 @@ def setup():
                        --infodir=/usr/share/info \
                        --with-bugurl=http://bugs.limelinux.com \
                        --enable-languages=c,c++,fortran,lto,objc,obj-c++ \
+                       --disable-libgcj \
                        --enable-shared \
                        --enable-threads=posix \
                        --with-system-zlib \
@@ -97,16 +98,6 @@ def build():
 
     shelltools.cd("../build")
     autotools.make()
-
-
-def check():
-     shelltools.cd("../build")
-
-     if get.buildTYPE() != "emul32":
-        autotools.make("check || true")
-     else:
-        pass
-
 
 def install():
     shelltools.cd("../build")
@@ -137,5 +128,6 @@ def install():
     gdbpy_files = shelltools.ls("%s/usr/lib/libstdc++*gdb.py*" % get.installDIR())
     for i in gdbpy_files:
         pisitools.domove("/usr/lib/%s" % shelltools.baseName(i), gdbpy_dir)
+
 
 
