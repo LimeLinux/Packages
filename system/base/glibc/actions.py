@@ -25,6 +25,7 @@ config = {"multiarch": {
                 "extraconfig": "--build=i686-pc-linux-gnu",
                 "coreflags":   "-m32",
                 "libdir":      "lib32",
+                "libexecdir":  "/usr/lib32/misc",
                 "buildflags":  "-mtune=atom -march=i686 -O2 -pipe %s" % defaultflags,
                 "builddir":    "%s/build32" % pkgworkdir
             },
@@ -33,6 +34,7 @@ config = {"multiarch": {
                 "extraconfig": "--build=%s" % get.HOST(),
                 "coreflags":   "",
                 "libdir":      "lib",
+                "libexecdir":  "/usr/lib/misc",
                 "buildflags":  "%s %s" % (sysflags, defaultflags),
                 "builddir":    "%s/build" % pkgworkdir
             }
@@ -67,16 +69,14 @@ def libcSetup(cfg):
                        --with-__thread \
                        --enable-add-ons=nptl,libidn \
                        --enable-bind-now \
-                       --enable-kernel=2.6.31 \
+                       --enable-kernel=3.2.0 \
                        --enable-stackguard-randomization \
                        --without-cvs \
-                       --without-gd \
                        --without-selinux \
                        --disable-profile \
                        --prefix=/usr \
                        --mandir=/usr/share/man \
                        --infodir=/usr/share/info \
-                       --libexecdir=/usr/lib/misc \
                        %s " % cfg["extraconfig"])
 
 def libcBuild(cfg):
@@ -109,6 +109,7 @@ def build():
         libcBuild(config["multiarch"])
         shelltools.echo("configparms","build-programs=no")
         shelltools.echo("configparms", "slibdir=/lib32")
+        shelltools.echo("configparms", "libdir=/usr/lib32")
         shelltools.echo("configparms", "rtlddir=/lib32")
         shelltools.echo("configparms", "bindir=/tmp32")
         shelltools.echo("configparms", "sbindir=/tmp32")
@@ -120,13 +121,13 @@ def build():
     libcBuild(config["system"])
     shelltools.echo("configparms", "slibdir=/usr/lib")
     shelltools.echo("configparms", "rtlddir=/usr/lib")
+    shelltools.echo("configparms", "libdir=/usr/lib")
 
 
 
 def install():
     if multibuild:
         libcInstall(config["multiarch"])
-        pisitools.domove("/usr/lib/*", "/usr/lib32")
         pisitools.dosym("/lib32/ld-2.27.so", "/usr/lib/ld-linux.so.2")
  
 
@@ -138,9 +139,6 @@ def install():
     # localedata can be shared between archs
     shelltools.cd(config["system"]["builddir"])
     autotools.rawInstall("install_root=%s localedata/install-locales" % get.installDIR())
-
-    pisitools.domove("/usr/lib64/*", "/usr/lib")
-    pisitools.removeDir("/usr/lib64")
 
     # now we do generic stuff
     shelltools.cd(pkgworkdir)
@@ -160,4 +158,3 @@ def install():
 
 
     pisitools.dodoc("ChangeLog", "COPYING", "COPYING.LIB", "NEWS", "README*", "LICENSES")
-
