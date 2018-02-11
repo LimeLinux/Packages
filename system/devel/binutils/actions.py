@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 linker = "ld"
 multilib = "--enable-multilib" if get.ARCH() == "x86_64" else ""
 
-WorkDir = "binutils-2.29"
+WorkDir = "binutils-2.30"
 
 def setup():
     # Build binutils with LD_SYMBOLIC_FUNCTIONS=1 and reduce PLT relocations in libfd.so by 84%.
