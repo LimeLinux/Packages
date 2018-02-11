@@ -24,6 +24,7 @@
             <Patch level="1">limelinux/locale-no-archive.patch</Patch>
             <!-- Fix sandbox violation -->
             <Patch level="1">limelinux/sandbox.patch</Patch>
+            <Patch level="1">malloc.patch</Patch>
         </Patches>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="locale.gen">locale.gen.txt</AdditionalFile>  
@@ -41,6 +42,7 @@
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/lib</Path>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec/getconf/</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="executable">/usr/sbin</Path>
             <Path fileType="man">/usr/share/man</Path>
