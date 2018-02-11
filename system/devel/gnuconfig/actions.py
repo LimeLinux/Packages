@@ -6,11 +6,24 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
+from pisi.actionsapi import get
 
-def check():
-    autotools.make("check")
+
+WorkDir = "./"
+
+
+def setup():
+    shelltools.system("git clone git://git.savannah.gnu.org/config.git")
+ 
+
+
+def build():
+    shelltools.cd("%s/config" % get.workDIR())
+    shelltools.system("make check")
 
 def install():
+    shelltools.cd("%s/config" % get.workDIR())
     pisitools.doexe("config.*", "/usr/share/gnuconfig")
 
     pisitools.dodoc("ChangeLog")
