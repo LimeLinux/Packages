@@ -1,0 +1,55 @@
+From 735efe5ebc3eb6aa877b00b10ac0046524cee6e3 Mon Sep 17 00:00:00 2001
+From: "H.J. Lu" <hjl.tools@gmail.com>
+Date: Sun, 3 Sep 2017 08:39:55 -0700
+Subject: [PATCH] Silence -O3 -Wall warning in malloc/hooks.c with GCC 7 [BZ
+ #22052]
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+realloc_check has
+
+  unsigned char *magic_p;
+...
+  __libc_lock_lock (main_arena.mutex);
+  const mchunkptr oldp = mem2chunk_check (oldmem, &magic_p);
+  __libc_lock_unlock (main_arena.mutex);
+  if (!oldp)
+    malloc_printerr ("realloc(): invalid pointer");
+...
+  if (newmem == NULL)
+    *magic_p ^= 0xFF;
+
+with
+
+static void malloc_printerr(const char *str) __attribute__ ((noreturn));
+
+GCC 7 -O3 warns
+
+hooks.c: In function ‘realloc_check’:
+hooks.c:352:14: error: ‘magic_p’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     *magic_p ^= 0xFF;
+
+This patch silences GCC 7 by initializing magic_p to NULL.
+
+	[BZ #22052]
+	* malloc/hooks.c (realloc_check): Initialize magic_p to NULL.
+---
+ malloc/hooks.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/malloc/hooks.c b/malloc/hooks.c
+index 01be076f5e..03bc086901 100644
+--- a/malloc/hooks.c
++++ b/malloc/hooks.c
+@@ -287,7 +287,7 @@  realloc_check (void *oldmem, size_t bytes, const void *caller)
+ {
+   INTERNAL_SIZE_T nb;
+   void *newmem = 0;
+-  unsigned char *magic_p;
++  unsigned char *magic_p = NULL;
+ 
+   if (bytes + 1 == 0)
+     {
+-- 
+2.13.5
