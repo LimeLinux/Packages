@@ -1,0 +1,20 @@
+diff -Nur make-4.2.1/glob/glob.c.orig /home/poyraz76/glob.c
+--- make-4.2.1/glob/glob.c.orig	2013-10-20 20:14:38.000000000 +0300
++++ make-4.2.1/glob/glob.c	2018-02-12 04:43:59.005620696 +0300
+@@ -208,7 +208,6 @@
+ #endif /* __GNU_LIBRARY__ || __DJGPP__ */
+ 
+ 
+-#if !defined __alloca && !defined __GNU_LIBRARY__
+ 
+ # ifdef	__GNUC__
+ #  undef alloca
+@@ -229,7 +228,6 @@
+ 
+ # define __alloca	alloca
+ 
+-#endif
+ 
+ #ifndef __GNU_LIBRARY__
+ # define __stat stat
+
