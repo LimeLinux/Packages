@@ -39,6 +39,7 @@
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec/</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="data">/usr/share/libmatekbd</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
