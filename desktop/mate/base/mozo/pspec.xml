@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Mozo menu editor for MATE</Summary>
         <Description>Easy MATE menu editing tool.</Description>
-        <Archive sha1sum="b490e8be26e0ec49ff4f89aa0113c8a80c80c080" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mozo-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="bd03a195abd0641e15437160ffecf6a6a42b0420" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mozo-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>mate-panel</Dependency>
@@ -46,9 +46,9 @@
     </Package>
 
     <History>
-       <Update release="3">
+       <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

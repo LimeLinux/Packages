@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Display readings from hardware sensors in your MATE panel.</Summary>
         <Description>MATE Sensors Applet is an applet for the MATE Panel to display readings from hardware sensors, including CPU temperature, fan speeds and voltage readings under Linux.on.</Description>
-        <Archive sha1sum="1be14568220f5346d843ca7221808a784ff2ee28" type="tarxz">http://pub.mate-desktop.org/releases/1.19/mate-sensors-applet-1.19.0.tar.xz</Archive>
+        <Archive sha1sum="7a1d15831e100c3d2544c4416d28ccb913ae9fc2" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-sensors-applet-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>mate-common</Dependency>
@@ -56,9 +56,9 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="5">
             <Date>2017-09-16</Date>
-            <Version>1.19.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

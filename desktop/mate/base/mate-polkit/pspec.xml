@@ -15,7 +15,7 @@
         <IsA>library</IsA>
         <Summary>Authentication agent for polkit</Summary>
         <Description>mate-polkit package provides an authentication agent for polkit that integrates well with the Mate desktop environment.</Description>
-        <Archive sha1sum="6605b950811dfae23947b0727a3c3b12ee0ce2db" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-polkit-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="0cf9debfb42d547966e09175d5abe3cb01ddb5f3" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-polkit-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -48,9 +48,9 @@
 
 
     <History>
-	    <Update release="3">
+	    <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

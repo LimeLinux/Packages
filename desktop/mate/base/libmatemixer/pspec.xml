@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Mixer library for MATE Desktop</Summary>
         <Description>Mixer library for MATE Desktop</Description>
-        <Archive sha1sum="28ed174a4fd079fa6fa927d4b28634a9b9779601" type="tarxz">http://pub.mate-desktop.org/releases/1.18/libmatemixer-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="96021a3240264bdf0949658d88e07bcdc5d99fb1" type="tarxz">http://pub.mate-desktop.org/releases/1.20/libmatemixer-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
@@ -46,9 +46,9 @@
 
 
     <History>
-	     <Update release="3">
+	     <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

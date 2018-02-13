@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>GTK+ based window manager</Summary>
         <Description>Marco is a small window manager, using GTK+ to do everything.</Description>
-        <Archive sha1sum="e498eb270bbd90d6587f7f2897e8f34adc29239d" type="tarxz">http://pub.mate-desktop.org/releases/1.19/marco-1.19.1.tar.xz</Archive>
+        <Archive sha1sum="219ff9e3d3a4062392098f0580bdf2e42e90c71d" type="tarxz">http://pub.mate-desktop.org/releases/1.20/marco-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>zenity</Dependency>
             <Dependency>itstool</Dependency>
@@ -85,9 +85,9 @@
     </Package>
 
     <History>
-	   <Update release="4">
+	   <Update release="5">
             <Date>2017-09-16</Date>
-            <Version>1.19.1</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
              <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

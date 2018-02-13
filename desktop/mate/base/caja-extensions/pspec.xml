@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate file manager eklentileri</Summary>
         <Description>caja-extensions, Mate file manager eklentileri.</Description>
-        <Archive sha1sum="ec5f8d504479f4069bd899fb5c91b230bfe4703c" type="tarxz">http://pub.mate-desktop.org/releases/1.18/caja-extensions-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="247cf6a6213faba3d4deda4124ebffaa2989848a" type="tarxz">http://pub.mate-desktop.org/releases/1.20/caja-extensions-1.20.0.tar.xz</Archive>
         <BuildDependencies>
              <Dependency>caja</Dependency>
             <Dependency>gtk3</Dependency>
@@ -53,9 +53,9 @@
 
 
     <History>
-	    <Update release="3">
+	    <Update release="4">
             <Date>2017-03-15</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

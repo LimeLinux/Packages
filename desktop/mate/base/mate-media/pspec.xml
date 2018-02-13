@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>MATE media programs</Summary>
         <Description>This package contains a few media utilities for the MATE desktop, including a volume control.</Description>
-        <Archive sha1sum="ed429471906ef22a9b94d6c03e066ab9e21b4832" type="tarxz">http://pub.mate-desktop.org/releases/1.19/mate-media-1.19.1.tar.xz</Archive>
+        <Archive sha1sum="d854f83d91838342b6414f9c44e2a7082b655270" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-media-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -65,9 +65,9 @@
     </Package>
 
     <History>
-	   <Update release="4">
+	   <Update release="5">
             <Date>2017-09-16</Date>
-            <Version>1.19.1</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

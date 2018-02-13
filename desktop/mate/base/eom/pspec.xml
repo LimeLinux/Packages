@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Eye of MATE, an image viewer for MATE</Summary>
         <Description>This is the Eye of MATE, an image viewer program.  It is meant to be a fast and functional image viewer.</Description>
-        <Archive sha1sum="7316bde929a036124188c0bd2d119f36462c87a9" type="tarxz">http://pub.mate-desktop.org/releases/1.19/eom-1.19.0.tar.xz</Archive>
+        <Archive sha1sum="ea2cfa16231fe02d5f39e8386e78210de009109a" type="tarxz">http://pub.mate-desktop.org/releases/1.20/eom-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -70,9 +70,9 @@
 
 
     <History>
-	    <Update release="4">
+	    <Update release="5">
             <Date>2017-09-15</Date>
-            <Version>1.19.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

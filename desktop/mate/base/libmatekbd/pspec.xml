@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>GNOME keybord configration library</Summary>
         <Description>libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
-        <Archive sha1sum="aad2821355b3d836e4c35bf9e0543ce91b171755" type="tarxz">http://pub.mate-desktop.org/releases/1.19/libmatekbd-1.19.0.tar.xz</Archive>
+        <Archive sha1sum="c3b08604efb5a915a77e778722686282941998ee" type="tarxz">http://pub.mate-desktop.org/releases/1.20/libmatekbd-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
@@ -51,9 +51,9 @@
 
 
     <History>
-	    <Update release="4">
+	    <Update release="5">
             <Date>2017-09-16</Date>
-            <Version>1.19.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

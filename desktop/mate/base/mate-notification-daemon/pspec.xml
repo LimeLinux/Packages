@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate notification daemon</Summary>
         <Description>mate-notification-daemon is the server implementation of the Mate desktop notification specification.</Description>
-        <Archive sha1sum="1685c73638556ea01d85234f86be30451b8b122c" type="tarxz">http://pub.mate-desktop.org/releases/1.19/mate-notification-daemon-1.19.0.tar.xz</Archive>
+        <Archive sha1sum="784d13c1b3d56e412763ed1f2dcc5801659ec434" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-notification-daemon-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -62,9 +62,9 @@
     </Package>
 
     <History>
-	    <Update release="4">
+	    <Update release="5">
             <Date>2017-09-16</Date>
-            <Version>1.19.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

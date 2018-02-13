@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Common files for development of Mate packages</Summary>
         <Description>maate-common package contains aclocal macros, makefile headers and documents tools in order to build Mate sources.</Description>
-        <Archive sha1sum="e5853086fdce062ddd9443cfe72f3cb5c5a91331" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-common-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="5e092883770b53cf6996bbc26db791ca112d0356" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-common-1.20.0.tar.xz</Archive>
     </Source>
     <Package>
         <Name>mate-common</Name>
@@ -27,9 +27,9 @@
     </Package>
 
     <History>
-	    <Update release="3">
+	    <Update release="4">
             <Date>2017-01-12</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Replaces xscreensaver, integrating with the MATE desktop.</Summary>
         <Description>mate-screensaver, Mate masaüstü için ekrankoruyucu uygulamasıdır.</Description>
-        <Archive sha1sum="6ace0a24c4386216630ae9633d029167899875c9" type="tarxz">http://pub.mate-desktop.org/releases/1.19/mate-screensaver-1.19.0.tar.xz</Archive>
+        <Archive sha1sum="e92303ccfa7bfc6b9f62390852d65b8b0318cab7" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-screensaver-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>mesa</Dependency>
@@ -74,9 +74,9 @@
     </Package>
 
     <History>
-       <Update release="4">
+       <Update release="5">
             <Date>2017-09-16</Date>
-            <Version>1.19.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

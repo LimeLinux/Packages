@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate için güç yöneticisi</Summary>
         <Description>Power management tool for the MATE desktop.</Description>
-        <Archive sha1sum="1eafa1c74e15f9347b2d9d354de8e14a35c1edcd" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-power-manager-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="6fd372f376eebe3631d57a8b2baf4dd22d8dab49" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-power-manager-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
@@ -72,9 +72,9 @@
     </Package>
 
     <History>
-	    <Update release="3">
+	    <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

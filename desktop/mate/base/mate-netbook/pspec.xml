@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Basit bir pencere yönetim aracı</Summary>
         <Description>Basit bir pencere yönetim aracı uygulaması.</Description>
-        <Archive sha1sum="3498fb639d9ce7d77e7a01520ce0b8d3ea840099" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-netbook-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="2dd782925dbea0d3d0a5c0d24c1c807759c7a829" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-netbook-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>mate-common</Dependency>
@@ -61,9 +61,9 @@
     </Package>
 
     <History>
-         <Update release="3">
+         <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate Menus</Summary>
         <Description>mate-menus has got desktop-directories, Mate menus library and its python bindings.</Description>
-        <Archive sha1sum="c21b23b8cb2899de1a50d9bf50ca17a2148ba3fb" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-menus-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="2195b5ee4be6c561426067e1d742c349d4c503ea" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-menus-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>intltool</Dependency>
             <Dependency>mate-common</Dependency>
@@ -40,9 +40,9 @@
     </Package>
 
     <History>
-	     <Update release="3">
+	     <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

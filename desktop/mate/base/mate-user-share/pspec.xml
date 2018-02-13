@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>User level public file sharing via WebDAV or ObexFTP</Summary>
         <Description>mate-user-share is a small package that binds together various free software projects to bring easy to use user-level file sharing to the masses.</Description>
-        <Archive sha1sum="1ae23e4e74fc1fffd8207fd15751092763c46ca4" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-user-share-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="78a43cabfaf595658e5e71f80881ccb36140bf29" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-user-share-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>caja</Dependency>
@@ -44,9 +44,9 @@
     </Package>
 
     <History>
-	   <Update release="3">
+	   <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

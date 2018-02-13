@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>libmateweather</Summary>
         <Description>libmateweather is a collection of documentation utilities for the Mate project.</Description>
-        <Archive sha1sum="c8904ebe570a938180ddab6f0d3eae1fcf376475" type="tarxz">http://pub.mate-desktop.org/releases/1.19/libmateweather-1.19.1.tar.xz</Archive>
+        <Archive sha1sum="60dfc96ff6cdb7e94e14f38731a444d447a162e2" type="tarxz">http://pub.mate-desktop.org/releases/1.20/libmateweather-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>mate-common</Dependency>
@@ -47,9 +47,9 @@
 
 
     <History>
-	    <Update release="4">
+	    <Update release="5">
             <Date>2017-09-16</Date>
-            <Version>1.19.1</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

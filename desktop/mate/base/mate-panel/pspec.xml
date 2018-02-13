@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME panel</Summary>
         <Description>GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
-        <Archive sha1sum="3d3a6547368c2f8ac14145269a40e4a8f3265a84" type="tarxz">http://pub.mate-desktop.org/releases/1.19/mate-panel-1.19.3.tar.xz</Archive>
+        <Archive sha1sum="0d58064f0ab334cfb2efcce1033b7d95dda36c0a" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-panel-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -75,9 +75,9 @@
 
 
     <History>
-	   <Update release="4">
+	   <Update release="5">
             <Date>2017-09-16</Date>
-            <Version>1.19.3</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

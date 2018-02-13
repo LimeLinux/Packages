@@ -16,7 +16,7 @@
         <IsA>app:gui</IsA>
         <Summary>Calculator for the Mate desktop environment</Summary>
         <Description>mate-calc, Mate masaüstü için hesap makinesi.</Description>
-        <Archive sha1sum="f9f74e5b65c5828249af2ec264099e06ba678209" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-calc-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="6e1583aacf129660278bdff8324e88a464481950" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-calc-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>libxslt</Dependency>
@@ -46,9 +46,9 @@
     </Package>
 
     <History>
-	    <Update release="3">
+	    <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate file manager eklentileri</Summary>
         <Description>caja-extensions, Mate file manager eklentileri.</Description>
-        <Archive sha1sum="14a3f549bf25fbc8b4bd6bba89900347c5a93ba9 " type="tarxz">http://pub.mate-desktop.org/releases/1.9/caja-dropbox-1.9.90.tar.xz</Archive>
+        <Archive sha1sum="10f85879fa2a589f1991ef48b786248d110855a4" type="tarxz">http://pub.mate-desktop.org/releases/1.20/caja-dropbox-1.20.0.tar.xz</Archive>
         <BuildDependencies>
              <Dependency>caja</Dependency>
             <Dependency>gtk2</Dependency>
@@ -48,9 +48,9 @@
 
 
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2017-09-16</Date>
-            <Version>1.19.90</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

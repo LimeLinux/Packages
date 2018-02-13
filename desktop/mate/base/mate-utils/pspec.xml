@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>MATE utility programs</Summary>
         <Description>The mate-utils package contains a set of small "desk accessory" utility applications for MATE, such as a dictionary, a disk usage analyzer, a screenshot tool and others.</Description>
-        <Archive sha1sum="24f075f68266c6d87b8419d755cd67b51fa3650d" type="tarxz">http://pub.mate-desktop.org/releases/1.19/mate-utils-1.19.0.tar.xz</Archive>
+        <Archive sha1sum="aa33647250ff6eff22ccb2e885fcd455e936d57a" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-utils-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -63,9 +63,9 @@
 
 
     <History>
-	   <Update release="5">
+	   <Update release="6">
             <Date>2017-09-16</Date>
-            <Version>1.19.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

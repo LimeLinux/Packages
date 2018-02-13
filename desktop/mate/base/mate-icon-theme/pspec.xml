@@ -14,7 +14,7 @@
         <IsA>data</IsA>
         <Summary>Mate icon theme</Summary>
         <Description>mate-icon-theme package contains the default icon theme used by the Mate desktop.</Description>
-        <Archive sha1sum="aab434f5e29488c2310dde6ea34845fd50de79f2" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-icon-theme-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="4b04f3acc6106876f646fd42cfb5b339dd969bb9" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-icon-theme-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mate-common</Dependency>
             <Dependency>icon-naming-utils</Dependency>
@@ -36,9 +36,9 @@
     </Package>
 
     <History>
-	   <Update release="3">
+	   <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

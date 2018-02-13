@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Process and resource monitor</Summary>
         <Description>Process viewer and system resource monitor for MATE</Description>
-        <Archive sha1sum="0fb62abebd2eaf01c1583cf5edfdbdc0eb776880" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-system-monitor-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="9eb2d1b5914faf410e643fe1aa01835f164b8711" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-system-monitor-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
@@ -59,9 +59,9 @@
     </Package>
 
     <History>
-	    <Update release="3">
+	    <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

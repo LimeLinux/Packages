@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python binding for Mate CAJA</Summary>
         <Description>These are unstable bindings for the caja extension library.</Description>
-        <Archive sha1sum="fb4e8b53694651bb606e5f9d361b9997d927875a" type="tarxz">http://pub.mate-desktop.org/releases/1.18/python-caja-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="ffc3d0e6337fc5883d6828ed8e69fab270e72e24" type="tarxz">http://pub.mate-desktop.org/releases/1.20/python-caja-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mate-common</Dependency>
             <Dependency>gtk3</Dependency>
@@ -39,9 +39,9 @@
     </Package>
     
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

@@ -16,7 +16,7 @@
         <IsA>app:gui</IsA>
         <Summary>Default file manager for the Mate desktop.</Summary>
         <Description>Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
-        <Archive sha1sum="6326a57f2c1674056fc3695550aecb9a6fde2247" type="tarxz">http://pub.mate-desktop.org/releases/1.19/caja-1.19.1.tar.xz</Archive>
+        <Archive sha1sum="71b838b2723656ebabd08ab251c9318c2cb27778" type="tarxz">http://pub.mate-desktop.org/releases/1.20/caja-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -89,9 +89,9 @@
 
 
     <History>
-	    <Update release="4">
+	    <Update release="5">
             <Date>2017-09-16</Date>
-            <Version>1.19.1</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

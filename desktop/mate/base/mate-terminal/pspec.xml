@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>MATE terminal emulator application</Summary>
         <Description>mate-terminal, masaüstü için terminal uygulaması.</Description>
-        <Archive sha1sum="206403298a32ccfc35b0d771246aab02d910aa49" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-terminal-1.18.0.tar.xz</Archive>
+        <Archive sha1sum="1217072acd69b949cb559d0886a70ce178d06e57" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-terminal-1.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -53,9 +53,9 @@
     </Package>
 
     <History>
-	    <Update release="3">
+	    <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>

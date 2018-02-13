@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>Default wallpapers for the Mate desktop</Summary>
         <Description>gnome-backgrounds contains default wallpapers for the Mate desktop.</Description>
-	<Archive sha1sum="b282bd6495175d96c561e8bd468cd0129759978d" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-backgrounds-1.18.0.tar.xz</Archive>
+	<Archive sha1sum="55b7a0b409aa1adc40b8f37c2649afc2897e9336" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-backgrounds-1.20.0.tar.xz</Archive>
 	    <BuildDependencies>
              <Dependency>mate-common</Dependency>
              <Dependency>intltool</Dependency>
@@ -49,9 +49,9 @@
     </Package>
 
     <History>
-         <Update release="3">
+         <Update release="4">
             <Date>2017-03-16</Date>
-            <Version>1.18.0</Version>
+            <Version>1.20.0</Version>
             <Comment>version bump</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
