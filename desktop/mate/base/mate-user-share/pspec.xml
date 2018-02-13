@@ -22,6 +22,7 @@
             <Dependency>libunique</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>libcanberra</Dependency>
+            <Dependency>itstool</Dependency>
         </BuildDependencies>
     </Source>
 
