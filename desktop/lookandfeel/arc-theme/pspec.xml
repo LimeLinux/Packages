@@ -1,0 +1,38 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>arc-theme</Name>
+        <Homepage>https://github.com/snwh/paper-icon-theme/</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>arc-theme</Summary>
+        <Description>Arc is a flat theme with transparent elements for GTK 3, GTK 2 and GNOME Shell which supports GTK 3 and GTK 2 based desktop environments like GNOME, Unity, Budgie, Pantheon, Xfce, MATE, etc.</Description>
+        <Archive type="targz" sha1sum="66bdef3f37e70bd6cb3d62978d96d7db8d3f967a">https://github.com/horst3180/arc-theme/archive/20170302.tar.gz</Archive>
+        <BuildDependencies>
+            <!--Dependency>intltool</Dependency-->
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>arc-theme</Name>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-01-31</Date>
+            <Version>20170302</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

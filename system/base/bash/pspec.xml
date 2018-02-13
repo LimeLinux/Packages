@@ -13,23 +13,13 @@
         <IsA>app:console</IsA>
         <Summary>The standard GNU Bourne again shell</Summary>
         <Description>Bash is the GNU Project's Bourne Again SHell, a complete implementation of the IEEE POSIX and Open Group shell specification with interactive command line editing, csh-like features such as history substitution.</Description>
-        <Archive sha1sum="8de012df1e4f3e91f571c3eb8ec45b43d7c747eb" type="targz">mirrors://gnu/bash/bash-4.4.tar.gz</Archive>
+        <Archive sha1sum="6cf9b3c23930ba8a721fee177d1558e5b7cb6104" type="targz">http://ftp.gnu.org/gnu/bash/bash-4.4.18.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ncurses</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Official Patches -->
-            <Patch level="1">official/bash-4.4-patch-1.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-2.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-3.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-4.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-5.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-6.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-7.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-8.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-9.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-10.patch</Patch>
-            <Patch level="1">official/bash-4.4-patch-11.patch</Patch>           
+            <Patch level="0">official/bash44-019.patch</Patch>         
 
         <!-- Fedora patches -->
             <Patch level="1">fedora/bash-2.02-security.patch</Patch>
@@ -83,9 +73,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-02-21</Date>
-            <Version>4.4</Version>
+        <Update release="3">
+            <Date>2018-02-21</Date>
+            <Version>4.4.18</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
