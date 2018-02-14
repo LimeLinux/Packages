@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>This project provides Khronos official ICD loader and validation layers for Vulkan developers on Windows and Linux.</Summary>
         <Description>This project provides Khronos official ICD loader and validation layers for Vulkan developers on Windows and Linux.</Description>
-        <Archive sha1sum="5fae48e2cf2f615c1788cddb2ffdc510b291a29e" type="targz">https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers/archive/sdk-1.0.61.1.tar.gz</Archive>
+        <Archive sha1sum="84765c5d7a5a0e015a3de65e9ad390817f2c693a" type="targz">https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers/archive/sdk-1.0.68.0.tar.gz</Archive>
          <BuildDependencies>
             <Dependency>cmake</Dependency>
             <Dependency>python-lxml</Dependency>
@@ -40,9 +40,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2017-09-11</Date>
-            <Version>1.0.61.1</Version>
+        <Update release="3">
+            <Date>2018-09-11</Date>
+            <Version>1.0.68.0</Version>
             <Comment>First Release</Comment>
             <Name>Ergün Salman</Name>
             <Email>poyraz76@limelinux.com</Email>

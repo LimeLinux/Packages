@@ -18,6 +18,7 @@ def setup():
               --with-dri-driverdir=/usr/lib/xorg/modules/dri \
               --with-platforms=x11,drm,wayland \
               --with-vulkan-drivers=intel,radeon \
+              --enable-omx-bellagio \
               --enable-xa \
               --enable-dri \
               --enable-egl \
@@ -59,7 +60,6 @@ def setup():
                      --enable-opencl-icd \
                      --enable-xa \
                      --enable-vdpau \
-                     --enable-omx \
                      --enable-opencl \
                      --enable-opencl-icd \
                    "

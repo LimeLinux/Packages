@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Mesa graphics libraries and utilities</Summary>
         <Description>Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.</Description>
-        <Archive sha1sum="7429e74a0ef12ea9d60b41b2b852898b3da0b238" type="tarxz">ftp://ftp.freedesktop.org/pub/mesa/mesa-17.2.1.tar.xz</Archive>
+        <Archive sha1sum="346f7813f493b1daf9d9079826a13dbd722b86ab" type="tarxz">ftp://ftp.freedesktop.org/pub/mesa/mesa-17.3.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>xorg-proto</Dependency>
             <Dependency>libdrm</Dependency>
@@ -36,8 +36,9 @@
             <Dependency>vulkan-loader</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch level="1">0001-EGL-Implement-the-libglvnd-interface-for-EGL-v2.patch</Patch>
-            <Patch level="1">0002-fixup-EGL-Implement-the-libglvnd-interface-for-EGL-v.patch</Patch-->
+            <Patch level="1">0001-radeon-vcn-add-and-manage-render-picture-list.patch</Patch>
+            <Patch level="1">0002-radeon-uvd-add-and-manage-render-picture-list.patch</Patch>
+            <Patch level="1">winsys-radeon-Compute-is_displayable-in-surf_drm_to_winsys.patch</Patch>
         </Patches>
     </Source>
 
@@ -81,9 +82,9 @@
 
 
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2017-09-17</Date>
-            <Version>17.2.1</Version>
+            <Version>17.3.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
