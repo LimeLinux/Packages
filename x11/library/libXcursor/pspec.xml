@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>X.Org Xcursor library</Summary>
         <Description>libXcursor is the X Cursor management library. It allows using different mouse skins and modifying of the text cursor.</Description>
-        <Archive sha1sum="89870756758439f9216ddf5f2d3dca56570fc6b7" type="tarbz2">mirrors://xorg/individual/lib/libXcursor-1.1.14.tar.bz2</Archive>
+        <Archive sha1sum="3e19f991f244b7fa31566adce7ead078424296cf" type="tarbz2">mirrors://xorg/individual/lib/libXcursor-1.1.15.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>util-macros</Dependency>
             <Dependency>libX11</Dependency>
@@ -40,9 +40,9 @@
 
  
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.1.14</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>1.1.15</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

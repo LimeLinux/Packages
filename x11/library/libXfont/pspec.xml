@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>X.Org Xfont library</Summary>
         <Description>libXfont is the Xorg library that allows using various types of fonts.</Description>
-        <Archive sha1sum="a9470774f271622c1b425826d1c8836ed96e4a96" type="tarbz2">mirrors://xorg/individual/lib/libXfont-1.5.2.tar.bz2</Archive>
+        <Archive sha1sum="9db050f63b9c4cb19e0dbb40575558ccb95719ca" type="tarbz2">mirrors://xorg/individual/lib/libXfont-1.5.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libfontenc</Dependency>
             <Dependency>util-macros</Dependency>
@@ -37,9 +37,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.5.2</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>1.5.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

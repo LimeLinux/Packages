@@ -13,7 +13,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org openchrome video driver</Summary>
         <Description>xorg-video-openchrome contains the X.Org driver for VIA video chipsets.</Description>
-        <Archive sha1sum="9c7ad349de6dd350252ccda8da56fa1e2a6afa32" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-openchrome-0.5.0.tar.bz2</Archive>
+        <Archive sha1sum="2077181ded4d86e9cbe6d3e9b1245339692e848d" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-openchrome-0.6.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libdrm</Dependency>
             <Dependency>libXext</Dependency>
@@ -47,9 +47,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-05-02</Date>
-            <Version>0.5.0</Version>
+        <Update release="2">
+            <Date>2018-05-02</Date>
+            <Version>0.6.0</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

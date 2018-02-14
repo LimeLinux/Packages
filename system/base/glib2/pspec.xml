@@ -22,6 +22,7 @@
             <Dependency versionFrom="0.161">elfutils</Dependency>
             <Dependency>docbook-xml</Dependency>
             <Dependency>gtk-doc</Dependency>
+            <Dependency>vim</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">revert-warn-glib-compile-schemas.patch</Patch>

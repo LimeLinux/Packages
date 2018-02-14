@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>X.Org Xtst library</Summary>
         <Description>libXtst provides an X Window System client interface to the Record extension to the X protocol. The Record extension allows X clients to synthesise input events, which is useful for automated testing.</Description>
-        <Archive sha1sum="7fd92a3c865c3c5e1cc724646babc3e1cdc799bc" type="tarbz2">mirrors://xorg/individual/lib/libXtst-1.2.2.tar.bz2</Archive>
+        <Archive sha1sum="27d004db631bee3a82155d3caf961d9584207d36" type="tarbz2">mirrors://xorg/individual/lib/libXtst-1.2.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXext</Dependency>
             <Dependency>libXi</Dependency>
@@ -38,9 +38,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.2.2</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>1.2.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

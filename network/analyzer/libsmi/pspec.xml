@@ -33,25 +33,15 @@
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/usr/share/mibs</Path>
             <Path fileType="data">/usr/share/pibs</Path>
-        </Files>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/etc/smi.conf">smi.conf</AdditionalFile>
-        </AdditionalFiles>
-    </Package>
-
-    <Package>
-        <Name>libsmi-devel</Name>
-        <Summary>Development files for libsmi</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">libsmi</Dependency>
-        </RuntimeDependencies>
-        <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
             <Path fileType="data">/usr/share/aclocal</Path>
             <!-- FIXME: Remove this if not necessary -->
             <Path fileType="man">/usr/share/man/man3</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/smi.conf">smi.conf</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>X.Org Xv library</Summary>
         <Description>LibXv is the X Window System video extension library.</Description>
-        <Archive sha1sum="1e93df036bb2bb01e85b7c8886760affb33b8e88" type="tarbz2">mirrors://xorg/individual/lib/libXv-1.0.10.tar.bz2</Archive>
+        <Archive sha1sum="d79f9c56faedd682f420fa68bb9d7ff755b84579" type="tarbz2">mirrors://xorg/individual/lib/libXv-1.0.11.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libX11</Dependency>
             <Dependency>libXext</Dependency>
@@ -36,9 +36,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.0.10</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>1.0.11</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

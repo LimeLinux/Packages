@@ -1,0 +1,45 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xorg-video-vboxvideo</Name>
+        <Homepage>http://www.x.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>driver</IsA>
+        <Summary>X.Org vboxvideo video driver</Summary>
+        <Description>xorg-video-vboxvideo contains the X.Org driver for vboxvideo cards.</Description>
+        <Archive sha1sum="219e0efdcc5afbd048aed4b780833765f01624bf" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-vboxvideo-1.0.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libdrm</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>xorg-server</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xorg-video-vboxvideo</Name>
+        <RuntimeDependencies>
+            <Dependency>xorg-server</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-02-02</Date>
+            <Version>1.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
