@@ -12,8 +12,8 @@
         <License>BSD</License>
         <IsA>app:console</IsA>
         <IsA>library</IsA>
-        <Summary>Dependency based init system that works with sysvinit.</Summary>
-        <Description>Dependency based init system that works with sysvinit.</Description>
+        <Summary>Dependency based init system that works with sysinit.</Summary>
+        <Description>Dependency based init system that works with sysinit.</Description>
         <Archive sha1sum="c650fa4f9600c2e4e96a787585eedde96744e4e8" type="targz">https://github.com/OpenRC/openrc/archive/0.34.11.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
@@ -42,10 +42,9 @@
             <Path fileType="header">/usr/include</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
-        <!--
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
-        </Provides>-->
+        </Provides>
     </Package>
 
 

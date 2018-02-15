@@ -38,9 +38,30 @@ def install():
     pisitools.remove("/usr/share/man/man1/groups.1")
     pisitools.remove("/bin/groups")
 
-    # Conflicts with man-pages
+   # transferred to util-linux
     pisitools.remove("/usr/share/man/man3/getspnam.3")
     pisitools.remove("/usr/share/man/man5/passwd.5")
+   
+
+
+    # Conflicts with man-pages
+    pisitools.remove("/bin/su")
+    pisitools.remove("/bin/login")
+    pisitools.remove("/usr/bin/chsh")
+    pisitools.remove("/sbin/nologin")
+    pisitools.remove("/usr/bin/chfn")
+    pisitools.remove("/usr/sbin/vigr")
+    pisitools.remove("/usr/sbin/vipw")
+    pisitools.remove("/usr/bin/newgrp")
+    pisitools.remove("/usr/share/man/man1/su.1")
+    pisitools.remove("/usr/share/man/man1/chfn.1")
+    pisitools.remove("/usr/share/man/man8/vipw.8")
+    pisitools.remove("/usr/share/man/man8/vigr.8")
+    pisitools.remove("/usr/share/man/man1/chsh.1")
+    pisitools.remove("/usr/share/man/man1/login.1")
+    pisitools.remove("/usr/share/man/man1/newgrp.1")
+    pisitools.remove("/usr/share/man/man8/nologin.8")
+
 
     pisitools.dodoc("ChangeLog","README","NEWS")
 

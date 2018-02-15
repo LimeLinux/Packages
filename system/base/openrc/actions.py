@@ -20,7 +20,8 @@ args = 'BRANDING="LimeGNU/Linux" \
             LIBEXECDIR=/usr/lib/openrc \
             BINDIR=/usr/bin \
             SBINDIR=/sbin \
-	    INCLUDEDIR=/usr/include \
+	        INCLUDEDIR=/usr/include \
+            MKSYSVINIT=yes \
             SYSCONFDIR=/etc'
                 
 
@@ -31,6 +32,7 @@ def install():
     autotools.rawInstall("DESTDIR=%s %s" % (get.installDIR(),args))
 
     pisitools.insinto("/etc", "support/sysvinit/inittab")
+    pisitools.dosym("/sbin/openrc-init", "/sbin/telinit")
 
     pisitools.dodoc("LICENSE*", "*guide.*", "AUTHORS", "ChangeLog", "README.*")
 

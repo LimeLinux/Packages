@@ -18,9 +18,7 @@ def setup():
     shelltools.export("AUTOPOINT", "/bin/true")
 
     options = "\
-            --disable-login \
-            --disable-nologin \
-            --disable-chfn-chsh"
+              "
 
     if get.buildTYPE() == "emul32":
         options += "\
@@ -44,11 +42,19 @@ def setup():
                      --sbindir=/sbin \
                      --enable-partx \
                      --enable-raw \
+                     --enable-vipw \
+                     --enable-newgrp \
+                     --enable-chfn-chsh \
                      --enable-write \
-                     --enable-tunelp \
-                     --without-audit \
-                     --without-utempter \
-                   "
+                     --enable-mesg \
+		             --enable-rename \
+		             --enable-rfkill \
+		             --enable-schedutils \
+		             --enable-partx \
+		             --enable-agetty \
+		             --enable-bash-completion \
+		             --enable-line \
+                     "
 
     autotools.autoreconf("-fi")
     autotools.configure(options)
