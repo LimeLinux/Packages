@@ -16,8 +16,8 @@
         <IsA>app:gui</IsA>
         <Summary>Firefox Web Browser</Summary>
         <Description>It is more secure and faster to browse the web with Firefox web browser. You can personalize your web browser with many specifications that is not enough to explain in two sentences.</Description>
-        <Archive sha1sum="8d9b0861ad71845d4b0e668f1981ec99e617ff36" type="tarxz">https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/55.0.3/source/firefox-55.0.3.source.tar.xz</Archive>
-        <Archive sha1sum="f09935c3b864ecef5f7ebf07380e1a3657981214" type="tarxz" target="firefox-55.0.3">https://solus-project.com/sources/mozilla/firefox-55.0.3-langpacks.tar.xz</Archive>
+        <Archive sha1sum="7a35b39e0b80f308ad22beb2037ceb5f855219f4" type="tarxz">https://ftp.mozilla.org/pub/firefox/releases/58.0.2/source/firefox-58.0.2.source.tar.xz</Archive>
+        <Archive sha1sum="f78730abcb179daeabf4a0d9aeafabd4653ae8c9" type="tarxz" target="firefox-58.0.2">https://solus-project.com/sources/mozilla/firefox-58.0.2-langpacks.tar.xz</Archive>
         <AdditionalFiles>
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
@@ -54,7 +54,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">firefox-install-dir.patch</Patch>
-            <!--Patch level="1">firefox-53.0.2-system_graphite2_harfbuzz-1.patch</Patch-->
+           <Patch level="1">rust.patch</Patch>
         </Patches>
     </Source>
 
@@ -124,9 +124,9 @@
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2017-09-17</Date>
-            <Version>55.0.3</Version>
+        <Update release="6">
+            <Date>2018-09-17</Date>
+            <Version>58.0.2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
