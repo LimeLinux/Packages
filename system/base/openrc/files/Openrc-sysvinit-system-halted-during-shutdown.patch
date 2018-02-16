@@ -1,0 +1,16 @@
+#From: Ergün Salman Lime GNU/Linux <poyraz76@limelinux.com>
+#Date: Feb, 17 2018 02:35:29
+#Subject: [PATCH] Openrc-sysvinit-system-halted-during-shutdown
+
+diff -Nur  openrc-0.34.11/scripts/shutdown.in.orig /openrc-0.34.11/scripts/shutdown.in
+--- openrc-0.34.11/scripts/shutdown.in.orig	2017-11-30 01:10:02.000000000 +0300
++++ openrc-0.34.11/scripts/shutdown.in	2018-02-17 02:20:49.490963026 +0300
+@@ -6,7 +6,7 @@
+ 		a) ;;
+ 		k) ;;
+ 		r) shutdown_arg=--reboot ;;
+-		h) shutdown_arg=--halt ;;
++		h) shutdown_arg=--poweroff ;;
+ 		P) shutdown_arg=--poweroff ;;
+ 		H) shutdown_arg=--halt ;;
+ 		f) ;;
