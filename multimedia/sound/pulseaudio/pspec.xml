@@ -16,7 +16,7 @@
         <IsA>library</IsA>
         <Summary>A networked sound server with an advanced plugin system</Summary>
         <Description>pulseaudio is a sound server for POSIX and Win32 systems. It allows you to do advanced operations on your sound data as it passes between your application and your hardware.</Description>
-             <Archive sha1sum="d9a9d7cb667ed95ee1de4b6544d5c7444c5a0064" type="tarxz">http://freedesktop.org/software/pulseaudio/releases/pulseaudio-9.0.tar.xz</Archive>
+             <Archive sha1sum="53bde72b6bfe715c19b1519db8845f7a58346b67" type="tarxz">https://freedesktop.org/software/pulseaudio/releases/pulseaudio-11.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>orc</Dependency>
             <Dependency>fftw3</Dependency>
@@ -38,6 +38,10 @@
             <Dependency>libsamplerate</Dependency>
             <Dependency>libasyncns</Dependency>
         </BuildDependencies>
+        <Patches>
+             <!--BugLink: https://bugs.freedesktop.org/show_bug.cgi?id=104733-->
+            <Patch level="1">0001-memfd-wrappers-only-define-memfd_create-if-not-alrea.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -55,8 +59,8 @@
             <Dependency>libSM</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>alsa-lib</Dependency>
-	    <Dependency>libtool</Dependency>
-	    <Dependency>sbc</Dependency>
+	        <Dependency>libtool</Dependency>
+	        <Dependency>sbc</Dependency>
 	    <!--Dependency>jack-audio-connection-kit</Dependency-->
         </RuntimeDependencies>
         <Files>
@@ -77,14 +81,15 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/pulseaudio.conf">pulseaudio.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/pulseaudio">limelinux/pulseaudio.sysconfig</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/pulse/daemon.conf">limelinux/daemon.conf</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>9.0</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>11.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>LV2 is a simple but extensible successor of LADSPA</Summary>
         <Description>LV2 is a portable plugin standard for audio systems, similar in scope to ​LADSPA, VST, AU, and others. It defines a C API for code and a format for data files which collectively describe a plugin.</Description>
-        <Archive sha1sum="2c2d0e5cb0586adb835b842194583bf4fb7f3d0f" type="tarbz2">http://lv2plug.in/spec/lv2-1.8.0.tar.bz2</Archive>
+        <Archive sha1sum="2ab5beee4b53f9bd9b7abb5d49b995b322d12659" type="tarbz2">http://lv2plug.in/spec/lv2-1.14.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>libsndfile</Dependency>
@@ -38,9 +38,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-03-07</Date>
-            <Version>1.8.0</Version>
+        <Update release="2">
+            <Date>2018-03-07</Date>
+            <Version>1.14.0</Version>
             <Comment>First release</Comment>
             <Name>LimeLinux Community</Name>
             <Email>admin@limelinux.com</Email>

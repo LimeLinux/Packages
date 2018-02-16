@@ -43,7 +43,7 @@
             <Path fileType="man">/usr/share/man</Path>
         </Files>
        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0755" target="/sbin/shutdown">shutdown</AdditionalFile>
+            <!--AdditionalFile owner="root" permission="0755" target="/sbin/shutdown">shutdown</AdditionalFile-->
        </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
@@ -52,7 +52,7 @@
 
 
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2018-01-31</Date>
             <Version>0.34.11</Version>
             <Comment>Version Bump</Comment>

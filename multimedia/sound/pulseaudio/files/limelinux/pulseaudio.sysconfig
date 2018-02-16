@@ -20,3 +20,4 @@ PULSE_SERVER_TYPE=personal
 # scripts automatically change sound-related configuration for PulseAudio.
 #
 PULSEAUDIO_ENABLE="yes"
+

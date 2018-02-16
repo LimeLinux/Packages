@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A set of GStreamer plug-ins that aren't up to par compared to the rest</Summary>
         <Description>GStreamer Bad Plug-ins is a set of plug-ins that aren't up to par compared to the rest. They might be close to being good quality, but they're missing something - be it a good code review, some documentation, a set of tests, a real live maintainer, or some actual wide use.</Description>
-        <Archive sha1sum="dc9c832e20765cc1ec23ead806d8637b37a654f0" type="tarxz">https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.10.2.tar.xz</Archive>
+        <Archive sha1sum="30122eb814ef104b1242366e1fa3747dfc1ce389" type="tarxz">https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.12.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gstreamer-next</Dependency>
             <Dependency>gst-plugins-base-next</Dependency>

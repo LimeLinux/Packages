@@ -13,12 +13,7 @@
         <IsA>library</IsA>
         <Summary>Python3 wrapper for cairo graphics library</Summary>
         <Description>Pycairo is set of Python3 bindings for the cairo graphics library.</Description>
-        <Archive sha1sum="b4283aa1cc9aafd12fd72ad371303a486da1d014" type="tarbz2">http://cairographics.org/releases/pycairo-1.10.0.tar.bz2</Archive>
-        <Archive sha1sum="56a197761aff590f3bd7213bcb85aab9fb0a60cb" type="tarbz2">http://pkgs.fedoraproject.org/repo/pkgs/waf/waf-1.7.15.stripped.tar.bz2/9387d390b9a5e9fedf0ef775a30f5b92/waf-1.7.15.stripped.tar.bz2</Archive>
-	   
-        <AdditionalFiles>
-            <AdditionalFile target="waf">waf</AdditionalFile>
-        </AdditionalFiles>
+        <Archive sha1sum="28fec74b92f3b0474bd68f17be5e5f59336464cc" type="targz">https://pypi.python.org/packages/5d/a0/506edea18d3951c35f6c370a902dfe5bfc356260354aeed1480f40c6a9ba/pycairo-1.16.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
             <Dependency>cairo</Dependency>
@@ -44,9 +39,9 @@
 
 
     <History>
-        <Update release="3">
-            <Date>2016-12-21</Date>
-            <Version>1.10.0</Version>
+        <Update release="4">
+            <Date>2018-02-21</Date>
+            <Version>1.16.2</Version>
             <Comment>Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
