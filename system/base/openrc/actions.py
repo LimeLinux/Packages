@@ -33,6 +33,7 @@ def install():
 
     pisitools.insinto("/etc", "support/sysvinit/inittab")
     pisitools.dosym("/sbin/openrc-init", "/sbin/telinit")
+    pisitools.remove("/sbin/shutdown")
 
     pisitools.dodoc("LICENSE*", "*guide.*", "AUTHORS", "ChangeLog", "README.*")
 
