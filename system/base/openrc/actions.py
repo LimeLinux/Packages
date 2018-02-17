@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 shelltools.export("HOME", get.workDIR())
 
-args = 'BRANDING="LimeGNU/Linux" \
+args = 'BRANDING="LimeLinux" \
             MKSELINUX=no \
             MKTERMCAP=ncurses \
             PKG_PREFIX=""\
@@ -33,6 +33,15 @@ def install():
 
     pisitools.insinto("/etc", "support/sysvinit/inittab")
     pisitools.dosym("/sbin/openrc-init", "/sbin/telinit")
+
+
+    pisitools.dosym("/etc/init.d/agetty", "/etc/init.d/agetty.tty1")
+    pisitools.dosym("/etc/init.d/agetty", "/etc/init.d/agetty.tty2")
+    pisitools.dosym("/etc/init.d/agetty", "/etc/init.d/agetty.tty3")
+    pisitools.dosym("/etc/init.d/agetty", "/etc/init.d/agetty.tty4")
+    pisitools.dosym("/etc/init.d/agetty", "/etc/init.d/agetty.tty5")
+    pisitools.dosym("/etc/init.d/agetty", "/etc/init.d/agetty.tty6")
+
 
     pisitools.dodoc("LICENSE*", "*guide.*", "AUTHORS", "ChangeLog", "README.*")
 

@@ -25,7 +25,6 @@ def install():
     chmod("/usr/share/baselayout/shadow", 0600)
 
     # /usr/lib migration
-    pisitools.removeDir("/lib") 
     pisitools.dosym("usr/lib", "lib")
     pisitools.dodir("/usr/share/locale")
     pisitools.dodir("/usr/lib/locale")
