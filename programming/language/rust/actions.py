@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 
 def build():
-    shelltools.system("python ./x.py build")
+    shelltools.system("python ./x.py --verbose")
     
 
 def install():
