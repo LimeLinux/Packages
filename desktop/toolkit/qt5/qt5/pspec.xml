@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Qt toolkit version 4</Summary>
         <Description>Qt is a cross platform GUI toolkit.</Description>
-        <Archive sha1sum="8b9900cece0a18cf23d53a42379a628a1c1330ae" type="tarxz">http://download.qt.io/archive/qt/5.9/5.9.1/single/qt-everywhere-opensource-src-5.9.1.tar.xz</Archive>
+        <Archive sha1sum="3d71e887287bdea664ac6f8db4aaa4a7d913be59" type="tarxz">http://download.qt.io/archive/qt/5.10/5.10.1/single/qt-everywhere-src-5.10.1.tar.xz</Archive>
         <BuildDependencies>
            <Dependency>atk</Dependency>                  
            <Dependency>cups</Dependency>                 
@@ -155,18 +155,11 @@
 
     <History>
         <Update release="5">
-            <Date>2017-09-16</Date>
-            <Version>5.9.1</Version>
+            <Date>2018-02-16</Date>
+            <Version>5.10.1</Version>
             <Comment>Version bump.</Comment>
             <Name>mahlas temir</Name>
             <Email>mahlastemir@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2017-03-14</Date>
-            <Version>5.8.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
         </Update>
     </History>
 </PISI>

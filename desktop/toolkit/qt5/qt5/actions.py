@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "qt-everywhere-opensource-src-%s" % get.srcVERSION().replace('_','-').replace('pre1', 'tp')
+WorkDir = "qt-everywhere-src-%s" % get.srcVERSION().replace('_','-').replace('pre1', 'tp')
 absoluteWorkDir = "%s/%s" % (get.workDIR(), WorkDir)
 
 

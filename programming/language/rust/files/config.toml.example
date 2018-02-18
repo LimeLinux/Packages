@@ -40,7 +40,7 @@
 # Tell the LLVM build system to use Ninja instead of the platform default for
 # the generated build system. This can sometimes be faster than make, for
 # example.
-#ninja = false
+ninja = false
 
 # LLVM targets to build support for.
 # Note: this is NOT related to Rust compilation targets. However, as Rust is
@@ -177,19 +177,19 @@ prefix = "/usr"
 
 # Where to install system configuration files
 # If this is a relative path, it will get installed in `prefix` above
-sysconfdir = "/etc"
+#sysconfdir = "/etc"
 
 # Where to install documentation in `prefix` above
 docdir = "/usr/share/doc/rust"
 
 # Where to install binaries in `prefix` above
-bindir = "/usr/bin"
+#bindir = "/usr/bin"
 
 # Where to install libraries in `prefix` above
-libdir = "usr/lib"
+#libdir = "usr/lib"
 
 # Where to install man pages in `prefix` above
-mandir = "/usr/share/man"
+#mandir = "/usr/share/man"
 
 # =============================================================================
 # Options for compiling Rust code itself

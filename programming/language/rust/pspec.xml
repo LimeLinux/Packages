@@ -12,12 +12,12 @@
         <IsA>app</IsA>
         <Summary>Systems programming language focused on safety, speed and concurrency</Summary>
         <Description>Systems programming language focused on safety, speed and concurrency</Description>
-        <Archive sha1sum="f835d72bc26ee6f25f6e5d6783b424fc9b904c9e" type="targz">https://static.rust-lang.org/dist/rustc-1.21.0-src.tar.gz</Archive>
+        <Archive sha1sum="e21a85ecdc9adbb2b3cbe0f07282e6e59bc50ef1" type="targz">https://static.rust-lang.org/dist/rustc-1.23.0-src.tar.gz</Archive>
         <AdditionalFiles>
-            <AdditionalFile permission="0755" target="config.toml">config.toml</AdditionalFile>
+            <AdditionalFile target="config.toml">config.toml</AdditionalFile>
         </AdditionalFiles>
         <Patches>
-            <Patch>0001-librustc_llvm-build-Force-link-against-libffi.patch</Patch>
+            <!--Patch>0001-librustc_llvm-build-Force-link-against-libffi.patch</Patch-->
         </Patches>
     </Source>
 
@@ -34,9 +34,9 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2018-02-26</Date>
-            <Version>1.21.0</Version>
+            <Version>1.23.0</Version>
             <Comment>First release</Comment>
             <Name>LimeLinux Community</Name>
             <Email>admin@limelinux.com</Email>
