@@ -13,7 +13,14 @@ from pisi.actionsapi import get
 
 def build():
     shelltools.system("python ./x.py build")
+    shelltools.system("python ./x.py doc")
     
 
 def install():
-    shelltools.system("DESTDIR=%s python ./x.py install" % get.installDIR())
+    pisitools.insinto("/", "build/x86_64-unknown-linux-gnu/stage0/etc")
+    pisitools.insinto("/usr", "build/x86_64-unknown-linux-gnu/stage2/bin")
+    pisitools.insinto("/usr", "build/x86_64-unknown-linux-gnu/stage2/lib")
+    pisitools.insinto("/usr/bin", "build/x86_64-unknown-linux-gnu/stage2-tools-bin/*")
+    pisitools.insinto("/usr", "build/x86_64-unknown-linux-gnu/stage0/share")
+    pisitools.insinto("/usr/share/doc/rust/", "build/tmp/dist/rust-docs-1.23.0-x86_64-unknown-linux-gnu/rust-docs/share/doc/rust/*")
+

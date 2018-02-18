@@ -54,7 +54,6 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">firefox-install-dir.patch</Patch>
-           <Patch level="1">rust.patch</Patch>
         </Patches>
     </Source>
 
