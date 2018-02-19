@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brotli</Name>
+        <Homepage>https://github.com/google/brotli</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Brotli is a generic-purpose lossless compression algorithm that compresses data using a combination of a modern variant of the LZ77 algorithm</Summary>
+        <Description>Huffman coding and 2nd order context modeling, with a compression ratio comparable to the best currently available general-purpose compression methods.</Description>
+        <Archive sha1sum="a273816c8af0ed037c8d7b6d3c65806182a1b561" type="targz">https://github.com/google/brotli/archive/v1.0.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--<Patch>webkitgtk-2.4.8-plugin_none.patch</Patch>-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>brotli</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib64/</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2018-02-26</Date>
+            <Version>1.0.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

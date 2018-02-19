@@ -53,7 +53,7 @@ def install():
 
     # remove empty dir
     pisitools.removeDir("/usr/share/man")
-    pisitools.dodoc("AUTHORS", "README*", "HACKING", "ChangeLog*", "NEWS*")
+    pisitools.dodoc("AUTHORS", "README", "HACKING", "MAINTAINERS")
 
     if get.buildTYPE() == "_emul32":
         for binaries in ["gtk-query-immodules-3.0"]:
