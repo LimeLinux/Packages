@@ -12,7 +12,7 @@
         <License>LGPLv2.1</License>
         <Summary>The GIMP Toolkit version 3</Summary>
         <Description>GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off projects to complete application suites.</Description>
-        <Archive sha1sum="9a56b685e7e14163b104634c71ec75dcc3f8b7d8" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/gtk+/3.22/gtk+-3.22.27.tar.xz</Archive>
+        <Archive sha1sum="9186b3a9522e9f2fcc7211b735d62f92dffd6c44" type="targz">https://github.com/GNOME/gtk/archive/3.22.28.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>cups</Dependency>
@@ -103,7 +103,7 @@
     <History>
 	    <Update release="5">
             <Date>2018-02-21</Date>
-            <Version>3.22.27</Version>
+            <Version>3.22.28</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

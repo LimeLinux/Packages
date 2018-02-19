@@ -11,10 +11,13 @@ from pisi.actionsapi import shelltools
 
 
 def setup():
-    options = "--enable-x11-backend \
+    options = "CXX=/bin/false \
+               --disable-schemas-compile \
+               --enable-x11-backend \
                --enable-xinerama \
 	           --enable-wayland-backend \
                --enable-xkb \
+               --enable-gtk-doc \
                --enable-introspection \
                --enable-broadway-backend \
               "
@@ -37,7 +40,7 @@ def setup():
 
         pisitools.dosed("configure.ac", "cups-config", "cups-config-32bit")
 
-    autotools.autoreconf("-fiv")
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure(options)
 
     pisitools.dosed("libtool", "( -shared )", r" -Wl,-O1,--as-needed\1")
