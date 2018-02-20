@@ -27,6 +27,17 @@ def install():
         pisitools.remove(link)
         pisitools.dosym("/bin/bzip2", link)
 
+        pisitools.remove("/bin/bzegrep")
+        pisitools.remove("/bin/bzfgrep")
+        pisitools.remove("/bin/bzless")
+        pisitools.remove("/bin/bzcmp")
+
+        pisitools.dosym("/bin/bzgrep", "/bin/bzegrep")
+        pisitools.dosym("/bin/bzgrep", "/bin/bzfgrep")
+        pisitools.dosym("/bin/bzdiff", "/bin/bzcmp")
+        pisitools.dosym("/bin/bzmore", "/bin/bzless")
+
+
     pisitools.dolib("libbz2.so.%s" % libversion, "/lib")
 
     pisitools.dosym("libbz2.so.1", "/lib/libbz2.so")

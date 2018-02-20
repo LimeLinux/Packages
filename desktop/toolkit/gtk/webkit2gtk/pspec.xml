@@ -54,6 +54,7 @@
             <Dependency>gperf</Dependency>
             <Dependency>libtool</Dependency>
             <Dependency>hyphen</Dependency>
+            <Dependency>woff2</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
         </BuildDependencies>
         <Patches>
