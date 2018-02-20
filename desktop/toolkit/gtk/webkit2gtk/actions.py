@@ -10,8 +10,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import cmaketools
 
-docs = ["AUTHORS", "ChangeLog", "COPYING.LIB", "THANKS", \
-        "LICENSE-LGPL-2", "LICENSE-LGPL-2.1", "LICENSE"]
 
 def setup():
     cmaketools.configure("-G Ninja \
@@ -27,4 +25,5 @@ def build():
     shelltools.system("ninja")
 
 def install():
-    cmaketools.rawInstall("DESTDIR=%s ninja install" % get.installDIR())
+    shelltools.system("DESTDIR=%s ninja install" % get.installDIR())
+    pisitools.dodoc("NEWS")

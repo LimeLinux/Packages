@@ -86,7 +86,7 @@
             <Dependency>libxslt</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>harfbuzz</Dependency>
-            <Dependency>libgudev1</Dependency>
+            <Dependency>libgudev</Dependency>
             <Dependency>libsecret</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
