@@ -91,8 +91,13 @@ def install():
     pisitools.dodoc("ANNOUNCE", "NEWS", "README*", "TO-DO", "license.txt")
 
     #for fix 
-    pisitools.dosym("libncursesw.so.6.0", "%s/libncursesw.so.5" % LIB)
-    pisitools.dosym("libncurses.so.6.0", "%s/libncurses.so.5" % LIB)
-    pisitools.dosym("libpanelw.so.6.0", "%s/libpanelw.so.5" % LIB)
-    pisitools.dosym("libformw.so.6.0", "%s/libformw.so.5" % LIB)
-    pisitools.dosym("libmenuw.so.6.0", "%s/libmenuw.so.5" % LIB)
+    pisitools.dosym("libncursesw.so.6.1", "%s/libncursesw.so.5" % LIB)
+    pisitools.dosym("libncurses.so.6.1", "%s/libncurses.so.5" % LIB)
+    pisitools.dosym("libpanelw.so.6.1", "%s/libpanelw.so.5" % LIB)
+    pisitools.dosym("libformw.so.6.1", "%s/libformw.so.5" % LIB)
+    pisitools.dosym("libmenuw.so.6.1", "%s/libmenuw.so.5" % LIB)
+
+
+
+
+

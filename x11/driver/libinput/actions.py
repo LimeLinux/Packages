@@ -6,16 +6,21 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-static")
+    shelltools.system("printf '%s\n' >>doc/libinput.doxygen.in \
+                       HAVE_DOT=yes DOT_IMAGE_FORMAT=svg INTERACTIVE_SVG=yes")
+    shelltools.system("meson build --prefix=/usr \
+                       --libexecdir=/usr/lib       \
+                        ")
 
 def build():
-    autotools.make()
+    shelltools.system("ninja -C build")
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.dosym("libinput.so.5.0.0","/usr/lib/libinput.so.0")
+    shelltools.system("DESTDIR=%s ninja -C build install" % get.installDIR())
+    pisitools.dosym("libinput.so.10.13.0","/usr/lib/libinput.so.0")
     
     pisitools.dodoc("COPYING","README.*")
