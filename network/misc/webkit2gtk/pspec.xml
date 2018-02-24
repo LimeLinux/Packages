@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>webkit2gtk</Name>
@@ -12,43 +12,53 @@
         <License>LGPLv2.1</License>
         <License>BSD</License>
         <IsA>library</IsA>
-        <Summary>An opensource web browser engine for GTK+ applications</Summary>
-        <Description>The GTK+ port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ UI toolkit on platforms like Linux.</Description>
-        <Archive sha1sum="076cd31c5c4ab7239ae770d8c8355c4cdebdeedc" type="tarxz">https://www.webkitgtk.org/releases/webkitgtk-2.16.2.tar.xz</Archive>
+        <Summary>An opensource web browser engine for GTK+ 3.x applications</Summary>
+        <Description>The GTK+ 3.x port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ 3.x UI toolkit on platforms like Linux.</Description>
+        <Archive sha1sum="1ed0dce02eb46949defb9cdb32fa5ca8b559688f" type="tarxz">https://www.webkitgtk.org/releases/webkitgtk-2.19.90.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mesa</Dependency>
             <Dependency>gtk-doc</Dependency>
-            <Dependency>glib2</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency>ruby</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>webp</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>icu4c</Dependency>
             <Dependency>libXt</Dependency>
             <Dependency>enchant</Dependency>
-            <Dependency>sqlite</Dependency>
-            <Dependency>geoclue</Dependency>
+            <Dependency>geoclue2</Dependency>
             <Dependency>libsoup</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>harfbuzz</Dependency>
             <Dependency>libsecret</Dependency>
-            <Dependency>libXcomposite</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gstreamer-next</Dependency>
-            <Dependency>gst-libav-next</Dependency>
-            <Dependency>gobject-introspection</Dependency>
             <Dependency>gst-plugins-base-next</Dependency>
-            <Dependency>gst-plugins-bad-next</Dependency>
-            <Dependency>gst-plugins-good-next</Dependency>
-            <Dependency>which</Dependency>
-            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>bison</Dependency>
+            <Dependency>chrpath</Dependency>
+            <Dependency>flex</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>geoclue2</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libpcre</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>ruby</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXdmcp</Dependency>
+            <Dependency>libffi</Dependency>
+            <Dependency>libgudev</Dependency>
+            <Dependency>libgcrypt</Dependency>
             <Dependency>gperf</Dependency>
-            <Dependency>libSM</Dependency>
+            <Dependency>libtool</Dependency>
+            <Dependency>hyphen</Dependency>
+            <Dependency>woff2</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>icu59.patch</Patch>
-            <!--<Patch>webkitgtk-2.4.8-gmutexlocker.patch</Patch>-->
+            <!--<Patch>webkitgtk-2.4.8-plugin_none.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -56,26 +66,27 @@
         <Name>webkit2gtk</Name>
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
-            <Dependency>zlib</Dependency>
-            <Dependency>glib2</Dependency>
             <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>webp</Dependency>
+            <Dependency>zlib</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>icu4c</Dependency>
+            <Dependency>glib2</Dependency>
             <Dependency>libXt</Dependency>
+            <Dependency>pango</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libpng</Dependency>
-            <Dependency>libxml2</Dependency>
-            <Dependency>pango</Dependency>
             <Dependency>sqlite</Dependency>
             <Dependency>enchant</Dependency>
-            <Dependency>geoclue</Dependency>
             <Dependency>libsoup</Dependency>
+            <Dependency>libxml2</Dependency>
             <Dependency>libxslt</Dependency>
-            <Dependency>harfbuzz</Dependency>
             <Dependency>freetype</Dependency>
+            <Dependency>harfbuzz</Dependency>
+            <Dependency>libgudev</Dependency>
             <Dependency>libsecret</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
@@ -84,13 +95,10 @@
             <Dependency>libXcomposite</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gstreamer-next</Dependency>
-            <Dependency>gst-libav-next</Dependency>
-            <Dependency>gst-plugins-bad-next</Dependency>
             <Dependency>gst-plugins-base-next</Dependency>
-            <Dependency>gst-plugins-good-next</Dependency>
-            <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -98,16 +106,17 @@
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
             <Path fileType="doc">/usr/share/doc/webkit-gtk/Web*</Path>
-            <Path fileType="doc">/usr/share/doc/webkit-gtk2/html</Path>
+            <Path fileType="doc">/usr/share/doc/webkit-gtk3/html</Path>
             <Path fileType="doc">/usr/share/doc/webkit-gtk/JavaScriptCore</Path>
         </Files>
     </Package>
 
+
     <History>
-        <Update release="2">
-            <Date>2017-05-21</Date>
-            <Version>2.16.2</Version>
-            <Comment>First release</Comment>
+        <Update release="1">
+            <Date>2018-02-26</Date>
+            <Version>2.19.90</Version>
+            <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Update>

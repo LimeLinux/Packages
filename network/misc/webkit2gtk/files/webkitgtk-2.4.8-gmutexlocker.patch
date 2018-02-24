@@ -279,3 +279,4 @@ diff -up webkitgtk-2.4.8/Source/WebCore/platform/graphics/gstreamer/WebKitWebSou
      locker.unlock();
  
 diff -up webkitgtk-2.4.8/Source/WTF/wtf/gobject/GMutexLocker.h.gmutexlocker webkitgtk-2.4.8/Source/WTF/wtf/gobject/GMutexLocker.h
+ 

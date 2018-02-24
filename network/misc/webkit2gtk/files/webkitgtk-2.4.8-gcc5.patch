@@ -1,6 +1,6 @@
 diff -up webkitgtk-2.4.8/Source/autotools/CheckSystemAndBasicDependencies.m4.gcc5 webkitgtk-2.4.8/Source/autotools/CheckSystemAndBasicDependencies.m4
 --- webkitgtk-2.4.8/Source/autotools/CheckSystemAndBasicDependencies.m4.gcc5	2015-01-07 10:45:43.000000000 +0100
-+++ webkitgtk-2.4.8/Source/autotools/CheckSystemAndBasicDependencies.m4	2015-02-18 13:09:57.359888184 +0100
++++ Source/autotools/CheckSystemAndBasicDependencies.m4	2015-02-18 13:09:57.359888184 +0100
 @@ -87,12 +87,12 @@ AC_SYS_LARGEFILE
  c_compiler="unknown"
  AC_LANG_PUSH([C])
@@ -31,3 +31,4 @@ diff -up webkitgtk-2.4.8/Source/autotools/CheckSystemAndBasicDependencies.m4.gcc
  #error Not a supported Clang++ compiler
  #endif
  ])], [cxx_compiler="clang++"], [])
+ 

@@ -13,7 +13,7 @@
         <IsA>kernel</IsA>
         <Summary>The Linux kernel (the core of the Linux operating system) for Lime Linux</Summary>
         <Description>kernel contains the Linux kernel, the core of any Linux operating system. The kernel handles the basic functions of the operating system: memory allocation, process allocation, device input and output, etc.</Description>
-        <Archive sha1sum="ff2f4451153b4f1d9fa5056ed44ae115d94aa383" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.15.4.tar.gz</Archive>
+        <Archive sha1sum="5f735d1da05c7fa79eb9422a5508faf117bdbaa8" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.15.5.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="configs/kernel-i686-config">configs/kernel-i686-config</AdditionalFile>
             <AdditionalFile target="configs/kernel-x86_64-config">configs/kernel-x86_64-config</AdditionalFile>
@@ -35,6 +35,7 @@
             <Patch level="1">patches/aufs4-loopback.patch</Patch>
             <Patch level="1">patches/aufs4-mmap.patch</Patch>
             <Patch level="1">patches/aufs4-standalone.patch</Patch>
+            <Patch level="1">patches/tmpfs-idr.patch</Patch>
         </Patches>
     </Source>
 
@@ -82,7 +83,7 @@
     <History>
         <Update release="6">
             <Date>2018-02-11</Date>
-            <Version>4.15.4</Version>
+            <Version>4.15.5</Version>
             <Comment>Update to Latest Stable Kernel Release</Comment>
             <Requires>
                 <Action package="kernel">systemRestart</Action>
