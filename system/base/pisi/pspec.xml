@@ -67,7 +67,7 @@
             <Path fileType="config">/etc/pisi</Path>
             <Path fileType="data">/usr/share/mime/packages</Path>
             <Path fileType="config">/usr/lib/tmpfiles.d/pisi.conf</Path>
-            <Path fileType="data">/var/lock/files.ldb/LOCK</Path>
+            <Path fileType="data">/var/lock-pisi/files.ldb/LOCK</Path>
             <Path fileType="data">/var/lib/pisi/info/files.ldb/LOCK</Path>
         </Files>
         <AdditionalFiles>
