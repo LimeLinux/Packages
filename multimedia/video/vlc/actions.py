@@ -14,9 +14,9 @@ def setup():
     #
     #shelltools.export("CFLAGS", "%s -fPIC -O2 -Wall -Wextra -DLUA_COMPAT_5_1" % get.CFLAGS())                          
 
-    shelltools.system("rm -rf m4/lt* m4/libtool.m4")
-    shelltools.system("sed -i -e 's:truetype/freefont:TTF:g' modules/text_renderer/freetype.c")
-    shelltools.system("sed -i -e 's:truetype/ttf-dejavu:TTF:g' modules/visualization/projectm.cpp")
+    #shelltools.system("rm -rf m4/lt* m4/libtool.m4")
+    shelltools.system("sed -e 's:truetype/ttf-dejavu:TTF:g' -i modules/visualization/projectm.cpp")
+    shelltools.system("sed -e 's|-Werror-implicit-function-declaration||g' -i configure")
     #pisitools.cxxflags.add(" -std=gnu++98")
     shelltools.system("./bootstrap")
     shelltools.export("AUTOPOINT", "true")
