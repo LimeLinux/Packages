@@ -21,10 +21,10 @@ def install():
 
     shelltools.touch("LOCK")
     shelltools.chmod("LOCK", 0666)
-    pisitools.dodir("/run/lock/files.ldb")
-    pisitools.insinto("/run/lock/files.ldb", "LOCK")
+    pisitools.dodir("/var/lock/files.ldb")
+    pisitools.insinto("/var/lock/files.ldb", "LOCK")
     pisitools.dodir("/var/lib/pisi/info/files.ldb")
-    pisitools.dosym("/run/lock/files.ldb/LOCK", "/var/lib/pisi/info/files.ldb/LOCK")
+    pisitools.dosym("/var/lock/files.ldb/LOCK", "/var/lib/pisi/info/files.ldb/LOCK")
 
 
     pisitools.insinto("/etc/pisi", "pisi.conf-%s" % get.ARCH(), "pisi.conf")

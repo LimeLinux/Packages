@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>PISI is the package management system of Lime Linux</Summary>
         <Description>PISI is a modern package management system implemented in Python. Some of its main features are: package sources are written in XML and python, implements all functions through a simple-to-use API, integrates low-level and high-level package management features.</Description>
-        <Archive sha1sum="7f16d1a0e4c8d2df73838a329485b74523fe50ad" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/pisi-2.6.tar.xz</Archive>
+        <Archive sha1sum="7f16d1a0e4c8d2df73838a329485b74523fe50ad" type="tarxz">http://source.pisilinux.org/1.0/pisi-2.6.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile permission="0644" target="pisi.conf-i686">pisi.conf-i686</AdditionalFile>
             <AdditionalFile permission="0644" target="pisi.conf-x86_64">pisi.conf-x86_64</AdditionalFile>
@@ -67,7 +67,7 @@
             <Path fileType="config">/etc/pisi</Path>
             <Path fileType="data">/usr/share/mime/packages</Path>
             <Path fileType="config">/usr/lib/tmpfiles.d/pisi.conf</Path>
-            <Path fileType="data">/run/lock/files.ldb/LOCK</Path>
+            <Path fileType="data">/var/lock/files.ldb/LOCK</Path>
             <Path fileType="data">/var/lib/pisi/info/files.ldb/LOCK</Path>
         </Files>
         <AdditionalFiles>
