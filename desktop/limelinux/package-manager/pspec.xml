@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>PiSi graphical user interface</Summary>
         <Description>Package Manager is PiSi's easy-to-use graphical user interface.</Description>
-        <Archive sha1sum="e434f00dbe39eb5ae7b1283e79b975c203294461" type="targz">https://github.com/PisiLinuxNew/package-manager/archive/package-manager.4.1.9.tar.gz</Archive>
+        <Archive sha1sum="4ed01550a9923d708eb372c84b04fcb5886d3162" type="targz">https://github.com/LimeLinux/package-manager/archive/package-manager-4.1.9.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>docutils</Dependency>
             <Dependency>python-qt5</Dependency>
