@@ -120,7 +120,7 @@ def install():
     # /lib/cpp symlink for legacy X11 stuff
     pisitools.dosym("/usr/bin/cpp", "/lib/cpp")
 
-    pisitools.dosym("/usr/bin/x86_64-pc-linux-gnu-gcc-ar", "/usr/lib/x86_64-pc-linux-gnu-ar")
+    pisitools.dosym("/usr/bin/x86_64-pc-linux-gnu-gcc-ar", "/usr/bin/x86_64-pc-linux-gnu-ar")
 
 
     # autoload gdb pretty printers
