@@ -13,6 +13,8 @@ verbose = 0
 prefix = "/usr"
 sysconfdir = "/etc"
 libdir = "/usr/lib"
+docdir = "/usr/share/doc/rust"
+mandir = "/usr/share/man"
 
 [rust]
 codegen-units = 0
