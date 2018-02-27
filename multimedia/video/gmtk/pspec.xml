@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>gnome-mplayer toolkit</Summary>
         <Description>A set of functions that support non-graphical operations</Description>
-        <Archive sha1sum="b27a1e2ee69437d359d8005e468eb6ec023ef621" type="targz">http://source.limelinux.com/1.0/gmtk-1.0.8.tar.gz</Archive>
+        <Archive sha1sum="48ca13c96920ef00edf6333d6ecd4c16dff866ad" type="targz">https://github.com/kdekorte/gmtk/archive/v1.0.9.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>pango</Dependency>
@@ -58,9 +58,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.0.8</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>1.0.9</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -14,9 +14,9 @@
         <IsA>library</IsA>
         <Summary>NUT container tools and library</Summary>
         <Description>Library and tools to work with NUT multimedia files.</Description>
-        <Archive sha1sum="64aa3218c6e51465345c40a19341fd47c966e7c7" type="tarbz2">http://source.limelinux.com/1.0/libnut-661.tar.bz2</Archive>
+        <Archive sha1sum="5e4ac05576123655d9296f0bfee8d4215395daaf" type="targz">https://github.com/poyraz76/libnut/archive/0.0_661.tar.gz</Archive>
         <Patches>
-            <Patch level="1">shared.patch</Patch>
+            <!--Patch level="1">shared.patch</Patch-->
         </Patches>
     </Source>
 

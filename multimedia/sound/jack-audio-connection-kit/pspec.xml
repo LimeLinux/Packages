@@ -14,7 +14,7 @@
         <IsA>service</IsA>
         <Summary>A low-latency audio server</Summary>
         <Description>JACK is a low-latency audio server written for POSIX conformant operating systems. It can connect a number of different applications to an audio device, as well as allowing them to share audio between themselves.</Description>
-        <Archive sha1sum="061baaac4a4de83a6a408039414bbcf2756e2783" type="targz">https://github.com/jackaudio/jack2/archive/v1.9.11-RC1.tar.gz</Archive>
+        <Archive sha1sum="8ab6329c6a107cdf370c40afac154370b406437d" type="targz">https://github.com/jackaudio/jack2/archive/v1.9.12.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>celt</Dependency>
             <Dependency>alsa-lib</Dependency>
@@ -57,8 +57,8 @@
 
     <History>
         <Update release="3">
-            <Date>2016-12-21</Date>
-            <Version>1.9.11</Version>
+            <Date>2018-02-21</Date>
+            <Version>1.9.12</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

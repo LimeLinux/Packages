@@ -9,12 +9,12 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
-WorkDir="gsm-1.0-pl13"
+WorkDir="gsm-1.0-pl17"
 
 def setup():
     multilib = " -m32" if get.buildTYPE() == "emul32" else ""
-    pisitools.dosed("Makefile", "pardusCC", "%s %s" % (get.CC(), multilib))
-    pisitools.dosed("Makefile", "pardusCFLAGS", "%s %s" % (get.CFLAGS(), multilib))
+    pisitools.dosed("Makefile", "limeCC", "%s %s" % (get.CC(), multilib))
+    pisitools.dosed("Makefile", "limeCFLAGS", "%s %s" % (get.CFLAGS(), multilib))
 
 def build():
     autotools.make()
@@ -26,16 +26,5 @@ def install():
         return
     else:
         autotools.rawInstall("DESTDIR=%s bindir=/usr/bin" % get.installDIR())
-
-    for bin in ["tcat","untoast"]:
-        pisitools.remove("/usr/bin/%s" % bin)
-        pisitools.dosym("toast", "/usr/bin/%s" % bin)
-
-    # Move gsm.h out of gsm subdir
-    # pisitools.insinto("/usr/include","inc/gsm.h")
-    # pisitools.removeDir("/usr/include/gsm")
-
-    # No static libs
-    pisitools.remove("/usr/lib/libgsm.a")
 
     pisitools.dodoc("ChangeLog", "COPYRIGHT", "MACHINES", "MANIFEST", "README")
