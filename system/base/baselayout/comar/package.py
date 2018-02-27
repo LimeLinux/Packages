@@ -192,7 +192,6 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
                 (210, "ecryptfs"),
                 (211, "slocate"),
                 (212, "dansguardian"),
-                (313,  "storage"),
             )
 
     for gid, groupName in groups:
