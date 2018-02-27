@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>ASN.1 library used in GNUTLS</Summary>
         <Description>libtasn1 is the ASN.1 library which provides ASN.1 structures parsing capabilities for use with GNUTLS.</Description>
-        <Archive sha1sum="c9b8148f4877ef739d3cf67de491c4c3dd5f5aca" type="targz">http://ftp.gnu.org/gnu/libtasn1/libtasn1-4.9.tar.gz</Archive>
+        <Archive sha1sum="a84afb4cd8187c1fa5901c6bc1cf1486eea66635" type="targz">http://ftp.gnu.org/gnu/libtasn1/libtasn1-4.13.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -29,9 +29,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>4.9</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>4.13</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

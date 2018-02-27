@@ -14,11 +14,8 @@ def setup():
     
     autotools.configure("--libexecdir=/usr/lib/polkit-1 \
                             --disable-man-pages \
-                            --disable-gtk-doc \
-                            --enable-libsystemd-login=no \
                             --disable-static \
-			                --with-systemdsystemunitdir=no \
-                            --with-os-type=gentoo \
+                            --with-os-type=pardus \
                             --enable-examples")
     
 

@@ -44,6 +44,7 @@
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gconf</Dependency>
+            <Dependency>hunspell</Dependency>
             <Dependency>startup-notification</Dependency>
             <Dependency>libvpx</Dependency>
             <Dependency>libevent</Dependency>

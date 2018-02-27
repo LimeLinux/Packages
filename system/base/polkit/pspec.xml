@@ -56,7 +56,7 @@
             <Path fileType="header">/usr/include</Path>
         </Files>
         <AdditionalFiles>
-            <!--AdditionalFile owner="root" permission="0644" target="/etc/pam.d/polkit-1">polkit.pam</AdditionalFile-->
+            <AdditionalFile owner="root" permission="0644" target="/etc/polkit-1/rules.d/99-my.rules">99-my.rules</AdditionalFile>
         </AdditionalFiles>
 	<Provides>
             <COMAR script="postInstall.py">System.Package</COMAR>
@@ -64,7 +64,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2016-12-21</Date>
             <Version>0.113</Version>
             <Comment>First Release</Comment>
