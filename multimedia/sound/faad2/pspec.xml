@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>MPEG2 and MPEG4 AAC decoder</Summary>
         <Description>FAAD2 is a HE, LC, MAIN and LTP profile, MPEG2 and MPEG-4 AAC decoder.</Description>
-        <Archive sha1sum="a5caa71cd915acd502d96cba56f38296277f2350" type="tarbz2">mirrors://sourceforge/faac/faad2-2.8.1.tar.bz2</Archive>
+        <Archive sha1sum="0d49c516d4a83c39053a9bd214fddba72cbc34ad" type="targz">https://sourceforge.net/projects/faac/files/faad2-src/faad2-2.8.0/faad2-2.8.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libmp4v2</Dependency>
         </BuildDependencies>
@@ -41,8 +41,8 @@
 
     <History>
         <Update release="2">
-            <Date>2017-12-21</Date>
-            <Version>2.8.1</Version>
+            <Date>2018-02-21</Date>
+            <Version>2.8.8</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

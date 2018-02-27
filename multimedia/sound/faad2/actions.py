@@ -10,9 +10,8 @@ from pisi.actionsapi import get, shelltools
 
 
 def setup():
-    #pisitools.dosed("libfaad/Makefile.am", "iquote ", "I")
+    pisitools.dosed("libfaad/Makefile.am", "iquote ", "I")
     #autotools.autoreconf("-vfi")
-    shelltools.system("./bootstrap")
     autotools.configure()
 
 def build():
@@ -21,4 +20,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README", "README.linux", "TODO")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README", "TODO")

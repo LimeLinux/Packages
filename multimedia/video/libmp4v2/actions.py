@@ -5,12 +5,14 @@
 # See the file http://www.gnu.org/licenses/gpl.txt
 
 from pisi.actionsapi import autotools
-from pisi.actionsapi import pisitools
+from pisi.actionsapi import pisitools, shelltools
 from pisi.actionsapi import get
 
 
 def setup():
-    autotools.configure("--disable-static")
+    shelltools.export("CFLAGS","-std=gnu++98")
+    shelltools.export("CXXFLAGS", "-std=gnu++98")
+    autotools.configure()
 
 def build():
     autotools.make()

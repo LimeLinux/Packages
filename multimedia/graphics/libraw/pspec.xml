@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Raw image decoder</Summary>
         <Description>LibRaw is a library for reading RAW files obtained from digital photo cameras (CRW/CR2, NEF, RAF, DNG, and others).</Description>
-        <Archive sha1sum="a6a69c4790061b77234ee707dccb200c90aadd8a" type="targz">http://www.libraw.org/data/LibRaw-0.18.1.tar.gz</Archive>
+        <Archive sha1sum="6732fe9003b25a467b68bda3139341176d35e132" type="targz">https://github.com/LibRaw/LibRaw/archive/0.18.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>lcms2</Dependency>
             <Dependency>jasper</Dependency>
@@ -39,9 +39,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-02-22</Date>
-            <Version>0.18.1</Version>
+        <Update release="8">
+            <Date>2018-02-22</Date>
+            <Version>0.18.8</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

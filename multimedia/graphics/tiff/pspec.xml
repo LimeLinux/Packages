@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Library for manipulation of TIFF (Tag Image File Format) images</Summary>
         <Description>This software provides support for the Tag Image File Format (TIFF), a widely used format for storing image data.</Description>
-        <Archive sha1sum="652e97b78f1444237a82cbcfe014310e776eb6f0" type="targz">http://source.limelinux.com/1.0/tiff-4.0.3.tar.gz</Archive>
+        <Archive sha1sum="87d4543579176cc568668617c22baceccd568296" type="targz">http://download.osgeo.org/libtiff/tiff-4.0.9.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>jbigkit</Dependency>
@@ -46,9 +46,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>4.0.3</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>4.0.9</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
