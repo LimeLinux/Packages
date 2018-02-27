@@ -12,7 +12,7 @@
         <IsA>app</IsA>
         <Summary>Systems programming language focused on safety, speed and concurrency</Summary>
         <Description>Systems programming language focused on safety, speed and concurrency</Description>
-        <Archive sha1sum="067f5a3c39490573adb85caf6af8e7dca7fcba1d" type="targz">https://static.rust-lang.org/dist/rustc-1.24.0-src.tar.gz</Archive>
+        <Archive sha1sum="e21a85ecdc9adbb2b3cbe0f07282e6e59bc50ef1" type="targz">https://static.rust-lang.org/dist/rustc-1.23.0-src.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="config.toml">config.toml</AdditionalFile>
         </AdditionalFiles>
@@ -36,7 +36,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-26</Date>
-            <Version>1.24.0</Version>
+            <Version>1.23.0</Version>
             <Comment>First release</Comment>
             <Name>LimeLinux Community</Name>
             <Email>admin@limelinux.com</Email>

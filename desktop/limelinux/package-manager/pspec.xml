@@ -29,14 +29,14 @@
         <RuntimeDependencies>
             <Dependency>pisi</Dependency>
             <Dependency>python-qt5</Dependency>
-<!--             <Dependency>python-appinfo</Dependency> -->
+             <Dependency>python-appinfo</Dependency>
             <Dependency>python-sip</Dependency>
             <Dependency>limelinux-desktop-services</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/share</Path>
-            <!--<Path fileType="localedata">/usr/share/locale</Path>-->
+            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="doc">/usr/share/doc</Path>
