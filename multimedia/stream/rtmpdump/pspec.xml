@@ -16,7 +16,7 @@
         <IsA>library</IsA>
         <Summary>Toolkit for RTMP streams</Summary>
         <Description>rtmpdump is a tool for dumping media content streamed over RTMP. All forms of RTMP are supported, including rtmp://, rtmpt://, rtmpe://, rtmpte://, and rtmps:// .</Description>
-        <Archive sha1sum="b981d669a6aeabb08f2b58262b6299d4ead62c29" type="targz">http://source.limelinux.com/1.0/rtmpdump-15012015.tar.gz</Archive>
+        <Archive sha1sum="6e0fbac0093c96c90b5fb802dfb527fa51484155" type="binary">https://sourceforge.net/projects/limeteam/files/source-limelinux/limelinux.git</Archive>
     </Source>
 
     <Package>
@@ -32,9 +32,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>15012015</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>2.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

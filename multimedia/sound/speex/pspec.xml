@@ -13,13 +13,12 @@
         <IsA>app:console</IsA>
         <Summary>Audio compression format designed for speech and its converter application</Summary>
         <Description>speex is an Open Source/Free Software patent-free audio compression format designed for speech. The Speex Project aims to lower the barrier of entry for voice applications by providing a free alternative to expensive proprietary speech codecs. The package also contains a command-line tool to convert to/from Speex codec.</Description>
-        <Archive sha1sum="52daa72572e844e5165315e208da539b2a55c5eb" type="targz">http://downloads.us.xiph.org/releases/speex/speex-1.2rc1.tar.gz</Archive>
+        <Archive sha1sum="03ce8418c4e05cb166374bfadef46e7646da62e1" type="targz">https://ftp.osuosl.org/pub/xiph/releases/speex/speex-1.2rc2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libogg</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">constant.patch</Patch>
-            <Patch level="1">configure.patch</Patch>
+            <!--Patch level="1">configure.patch</Patch-->
         </Patches>
     </Source>
 
@@ -39,9 +38,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.2_rc1</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>1.2_rc2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
