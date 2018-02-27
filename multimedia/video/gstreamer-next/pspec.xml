@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>GStreamer streaming media framework runtime</Summary>
         <Description>GStreamer is a streaming media framework, based on graphs of filters which operate on media data. Applications using this library can do anything from real-time sound processing to playing videos, and just about anything else media-related.</Description>
-        <Archive sha1sum="da4ff419e61049d33a699061936e47069a1bcdce" type="tarxz">http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.12.2.tar.xz</Archive>
+        <Archive sha1sum="71ed76a339252d551c5da6bdcb641c31bea77612" type="tarxz">http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.12.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>check</Dependency>
             <Dependency>gobject-introspection</Dependency>
@@ -48,7 +48,7 @@
     <History>
         <Update release="4">
             <Date>2017-12-21</Date>
-            <Version>1.12.2</Version>
+            <Version>1.12.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

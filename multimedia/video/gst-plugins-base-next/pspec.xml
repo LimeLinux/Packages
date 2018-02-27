@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Basepack of plugins for gstreamer</Summary>
         <Description>GStreamer base plugins are a well-groomed and well-maintained collection of GStreamer plugins and elements, spanning the range of possible types of elements one would want to write for GStreamer. It also contains helper libraries and base classes useful for writing elements. A wide range of video and audio decoders, encoders, and filters are included.</Description>
-        <Archive sha1sum="0b01929b3652a3cc3899cfa5e846feb6f78c7ac2" type="tarxz">http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.10.2.tar.xz</Archive>
+        <Archive sha1sum="8b87967aa2feb36b8028e39163d5de2533674b0f" type="tarxz">https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.12.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gstreamer-next</Dependency>
             <Dependency>cdparanoia</Dependency>
@@ -68,9 +68,9 @@
 
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.10.2</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>1.12.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
