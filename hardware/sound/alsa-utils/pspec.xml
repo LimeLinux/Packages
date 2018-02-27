@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Advanced Linux Sound Architecture (ALSA) utilities</Summary>
         <Description>alsa-utils contains command line utilities for the Advanced Linux Sound Architecture (ALSA).</Description>
-        <Archive sha1sum="b8678946beb99efeb9998e718eafc5f6d26504d8" type="tarbz2">ftp://ftp.alsa-project.org/pub/utils/alsa-utils-1.1.2.tar.bz2</Archive>
+        <Archive sha1sum="9e89d1df027e1e49da5f149544b97e5227ec252c" type="tarbz2">ftp://ftp.alsa-project.org/pub/utils/alsa-utils-1.1.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>xmlto</Dependency>
             <Dependency>libxslt</Dependency>
@@ -48,9 +48,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.1.2</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>1.1.5</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

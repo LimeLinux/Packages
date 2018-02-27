@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Multimedia streaming library</Summary>
         <Description>Live555 is a set of C++ libraries for multimedia streaming, using open standard protocols (RTP/RTCP, RTSP, SIP)</Description>
-        <Archive sha1sum="732a2d0e710bb3b2163b8d7fc94bfef0f4bcc8d2" type="targz">https://download.videolan.org/contrib/live555/live.2016.09.22.tar.gz</Archive>
+        <Archive sha1sum="cb45d2ea9adb2de3c1ea9a70ef648740706a7c02" type="targz">http://download.videolan.org/contrib/live555/live.2018.02.26.tar.gz</Archive>
         <Patches>
              <Patch level="1">shared-config.patch</Patch>
         </Patches>
@@ -29,9 +29,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>2016.09.22</Version>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>2018.02.26</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

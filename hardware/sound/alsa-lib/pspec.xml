@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>The Advanced Linux Sound Architecture (ALSA) library</Summary>
         <Description>alsa-lib provides ALSA runtime libraries to simplify application programming and provide higher level functionality as well as support for the older OSS API, providing binary compatibility for most OSS programs.</Description>
-        <Archive sha1sum="8ef0b9725296ac8f24e06f20196f5b2b62ab27a9" type="tarbz2">ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.3.tar.bz2</Archive>
+        <Archive sha1sum="628634afbdc19054fca26d714aa6c2f1e41e465d" type="tarbz2">ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.4.1.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -30,17 +30,10 @@
 
 
     <History>
-        <Update release="2">
-            <Date>2017-02-22</Date>
-            <Version>1.1.3</Version>
+        <Update release="3">
+            <Date>2018-02-22</Date>
+            <Version>1.1.4.1</Version>
             <Comment>Version bump</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-12-21</Date>
-            <Version>1.1.2</Version>
-            <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Update>
