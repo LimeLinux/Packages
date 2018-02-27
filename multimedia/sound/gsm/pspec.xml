@@ -13,10 +13,13 @@
         <IsA>library</IsA>
         <Summary>Lossy speech compression library and tool</Summary>
         <Description>Gsm is an implementation of the final draft GSM 06.10 standard for full-rate speech transcoding</Description>
-        <Archive sha1sum="e8809962a33275a60b05ed04ca3c2395bb375a22" type="targz">http://www.quut.com/gsm/gsm-1.0.17.tar.gz</Archive>
+        <Archive sha1sum="668b0a180039a50d379b3d5a22e78da4b1d90afc" type="targz">https://sourceforge.net/projects/limeteam/files/source-limelinux/gsm-1.0.13.tar.gz</Archive>
         <Patches>
             <Patch level="1">gsm-1.0.10-dyn.patch</Patch>
             <Patch level="1">gsm-1.0-pl10-includes.patch</Patch>
+            <Patch>gsm-1.0-pl10-shared.diff</Patch>
+            <Patch>gsm-1.0-pl10-add-includefile.patch</Patch>
+            <Patch level="1">pardusflags.patch</Patch>
             <Patch level="1">gsm-1.0.12-64bit.patch</Patch>
         </Patches>
     </Source>
@@ -33,9 +36,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2018-02-21</Date>
-            <Version>1.0.17</Version>
+        <Update release="1">
+            <Date>2016-12-21</Date>
+            <Version>1.0.13</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

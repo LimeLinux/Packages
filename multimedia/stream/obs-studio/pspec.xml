@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>OBS-Studio is a rewrite of what was formerly known as Open Broadcaster Software</Summary>
         <Description>OBS-Studio software was originally designed for recording and streaming live video content, efficiently</Description>
-        <Archive sha1sum="c7d3b4fc48ca4b7ec2c4e5a6918b1eefbd68f63c" type="targz">https://github.com/jp9000/obs-studio/archive/17.0.2.tar.gz</Archive>
+        <Archive sha1sum="528e69e8bad54b6e24fa2a4472497b96fa0513bf" type="targz">https://github.com/jp9000/obs-studio/archive/21.0.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>curl</Dependency>
             <Dependency>dbus</Dependency>
@@ -79,8 +79,8 @@
 
     <History>
         <Update release="1">
-            <Date>2017-03-10</Date>
-            <Version>17.0.2</Version>
+            <Date>2018-03-10</Date>
+            <Version>21.0.3</Version>
             <Comment>First release</Comment>
             <Name>Ali Murat Algül</Name>
             <Email>alimuratgulle@limelinux.com</Email>
