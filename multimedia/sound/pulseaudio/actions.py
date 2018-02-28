@@ -15,14 +15,11 @@ def setup():
                --sysconfdir=/etc     \
                --localstatedir=/var  \
                --libexecdir=/usr/libexec \
-               --disable-dependency-tracking \
                --disable-static \
-               --disable-rpath \
                --disable-bluez4 \
                --enable-largefile \
                --disable-tcpwrap \
                --with-database=tdb \
-               --disable-default-build-tests \
                --with-udev-rules-dir=/lib/udev/rules.d"
 
 

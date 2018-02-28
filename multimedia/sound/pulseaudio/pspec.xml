@@ -81,13 +81,12 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/pulseaudio.conf">pulseaudio.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/pulseaudio">limelinux/pulseaudio.sysconfig</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/etc/pulse/daemon.conf">limelinux/daemon.conf</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2018-02-21</Date>
             <Version>11.1</Version>
             <Comment>First Release</Comment>

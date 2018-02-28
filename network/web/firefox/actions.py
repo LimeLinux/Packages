@@ -27,11 +27,13 @@ def setup():
     
 
 def build():
+    shelltools.cd(ObjDir)
     autotools.make("./mach build")
     autotools.make("./mach buildsymbols")
 
 
 def install():
+    shelltools.cd(ObjDir)
     shelltools.export("CFLAGS", "%s -fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2" % get.CFLAGS())
     shelltools.export("CXXFLAGS", "%s -fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2" % get.CFLAGS())
     shelltools.system("DESTDIR=%s ./mach install " % get.installDIR())
