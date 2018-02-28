@@ -12,7 +12,7 @@
         <License>GPL2</License>
         <Summary>Header files for the Linux kernel for use by glibc</Summary>
         <Description>Header files for the Linux kernel for use by glibc</Description>
-        <Archive sha1sum="5f735d1da05c7fa79eb9422a5508faf117bdbaa8" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.15.5.tar.gz</Archive>
+        <Archive sha1sum="afe04eb5b0e85b338fdc394483fd0bf497106029" type="targz">https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.15.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>patch</Dependency>
             <Dependency>texinfo</Dependency>
@@ -29,7 +29,7 @@
     <History>
         <Update release="6">
             <Date>2018-02-11</Date>
-            <Version>4.15.5</Version>
+            <Version>4.15.6</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
