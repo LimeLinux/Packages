@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>MBIM modem protocol helper library.</Summary>
         <Description>libmbim is a glib-based library for talking to WWAN modems and devices which speak the Mobile Interface Broadband Model (MBIM) protocol.</Description>
-        <Archive sha1sum="61357ad1678480dacbc799c072e49e355c7a2b1d" type="tarxz">http://www.freedesktop.org/software/libmbim/libmbim-1.14.0.tar.xz</Archive>
+        <Archive sha1sum="7e09483840fe896df071862371e6650a1834ed1a" type="tarxz">https://www.freedesktop.org/software/libmbim/libmbim-1.16.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>glib2</Dependency>
@@ -41,9 +41,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-11-12</Date>
-            <Version>1.14.0</Version>
+        <Update release="2">
+            <Date>2018-02-28</Date>
+            <Version>1.16.0</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

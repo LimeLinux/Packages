@@ -14,7 +14,7 @@
         <IsA>service</IsA>
         <Summary>A manager framework for mobile broadband modems</Summary>
         <Description>ModemManager provides a unified high level API for communicating with mobile broadband modems.</Description>
-        <Archive sha1sum="d7b42295cb76eaf603b1ea3e10d3d97def005736" type="tarxz">http://www.freedesktop.org/software/ModemManager/ModemManager-1.6.4.tar.xz</Archive>
+        <Archive sha1sum="6ca7fab3dae346b8815ecb2f2f8699d9f017172c" type="tarxz">https://www.freedesktop.org/software/ModemManager/ModemManager-1.7.990.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>glib2</Dependency>
             <Dependency>libgudev</Dependency>
@@ -69,9 +69,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2017-02-12</Date>
-            <Version>1.6.4</Version>
+        <Update release="2">
+            <Date>2018-02-28</Date>
+            <Version>1.7.990</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
