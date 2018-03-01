@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>An Open Source software construction tool</Summary>
         <Description>Think of SCons as an improved, cross-platform substitute for the classic Make utility with integrated functionality similar to autoconf/automake and compiler caches such as ccache.</Description>
-        <Archive sha1sum="f742350251734df75355e51c70f291e119ef927a" type="targz">mirrors://sourceforge/scons/scons-2.5.1.tar.gz</Archive>
+        <Archive sha1sum="498691cf8d4f6da971b99fab0c3480ef944c4d1e" type="targz">https://fossies.org/linux/misc/scons-3.0.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,16 +27,9 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2018-02-28</Date>
-            <Version>2.5.1</Version>
-            <Comment>First Release</Comment>
-            <Name>Lime GNU/LINUX Community</Name>
-            <Email>admin@limelinux.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2018-02-28</Date>
-            <Version>2.4.1</Version>
+            <Version>3.0.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
