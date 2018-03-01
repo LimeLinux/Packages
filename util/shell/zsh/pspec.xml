@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Powerful command line shell</Summary>
         <Description>Zsh is a command interpreter (shell) which has command-line editing, built-in spelling correction, programmable command completion, shell functions (with autoloading), a history mechanism, and a lots of other features.</Description>
-        <Archive sha1sum="a93d034fcaa470bf8557fc11a9d0e86300325936" type="tarxz">http://source.limelinux.com/1.0/zsh-5.2.tar.xz</Archive>
+        <Archive sha1sum="1031119ffad6b3bbaa9b214eac92906676505ab0" type="targz">https://ftp.osuosl.org/pub/blfs/conglomeration/zsh/zsh-5.4.2.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -37,7 +37,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>5.2</Version>
+            <Version>5.4.2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
