@@ -39,7 +39,7 @@
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
         </Update>
-        <Update release="1">
+        <Update release="2">
             <Date>2015-05-08</Date>
             <Version>13.1.0</Version>
             <Comment>First release</Comment>

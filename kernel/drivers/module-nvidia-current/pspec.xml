@@ -13,7 +13,7 @@
         <Description>NVIDIA graphics drivers provide optimized 2D/3D performance.</Description>
         <Archive sha1sum="74c7d1ddead5af17cebe34821fb68447a34c695e" type="binary">http://us.download.nvidia.com/XFree86/Linux-x86_64/390.25/NVIDIA-Linux-x86_64-390.25-no-compat32.run</Archive>
         <BuildDependencies>
-            <Dependency version="4.9.18">kernel-module-headers</Dependency>
+            <Dependency version="4.13.2">kernel-module-headers</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gtk3</Dependency>
@@ -25,7 +25,7 @@
         <IsA>driver</IsA>
         <Summary>Kernel module for current NVIDIA graphics driver releases</Summary>
         <RuntimeDependencies>
-            <Dependency version="4.9.18">kernel</Dependency>
+            <Dependency version="4.13.2">kernel</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gtk3</Dependency>

@@ -16,14 +16,12 @@ def setup():
     #shelltools.system("sed -e '/Qt[CDN]/s/Qt/Qt5/g'")
     #shelltools.system("sed -e 's/moc_location/host_bins/'")
     shelltools.export("CXXFLAGS", "%s -fPIC -O2" % get.CXXFLAGS())
-    autotools.autoreconf("-fi")
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     shelltools.system("intltoolize --force --copy --automake")
 
     autotools.configure("--disable-static \
                          --enable-wifi \
                          --disable-silent-rules \
-                         --disable-wimax \
-                         --disable-lto \
                          --disable-config-plugin-ibft \
                          --disable-ifnet \
                          --disable-more-warnings \
@@ -48,7 +46,7 @@ def setup():
                          --sysconfdir=/etc \
                          --libexecdir=/usr/lib/NetworkManager \
                          --with-kernel-firmware-dir=/usr/lib/firmware \
-                         --with-dist-version='1.9.2-4, Lime Linux' \
+                         --with-dist-version='1.10.5-5, Lime Linux' \
                          --with-udev-dir=/usr/lib/udev \
                          --with-pppd=/usr/sbin/pppd \
                          --with-iptables=/sbin/iptables \

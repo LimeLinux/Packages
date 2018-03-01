@@ -24,7 +24,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-14</Date>
             <Version>0.7.3</Version>
             <Comment>Add python-pyflakes to repositories</Comment>

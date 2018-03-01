@@ -49,7 +49,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2016-07-09</Date>
             <Version>0.7.1</Version>
             <Comment>First release</Comment>

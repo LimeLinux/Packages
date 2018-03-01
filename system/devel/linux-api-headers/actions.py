@@ -13,7 +13,6 @@ def build():
     autotools.make("mrproper")
     autotools.make("headers_check")
 
-
 def install():
     autotools.make("INSTALL_HDR_PATH=%s/usr headers_install" % get.installDIR())
 

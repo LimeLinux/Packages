@@ -434,7 +434,7 @@
     </Package>
 
     <History>
-         <Update release="1">
+         <Update release="2">
             <Date>2017-05-13</Date>
             <Version>52.1.0</Version>
             <Comment>First release</Comment>

@@ -45,7 +45,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-05-21</Date>
             <Version>3.0.9</Version>
             <Comment>First Release</Comment>

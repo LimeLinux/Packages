@@ -43,7 +43,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-09-28</Date>
             <Version>0.6.43</Version>
             <Comment>Version Bump</Comment>

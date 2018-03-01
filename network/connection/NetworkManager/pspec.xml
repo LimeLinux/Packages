@@ -4,7 +4,7 @@
 <PISI>
     <Source>
         <Name>NetworkManager</Name>
-        <Homepage>http://projects.gnome.org/NetworkManager</Homepage>
+        <Homepage>https://wiki.gnome.org/Projects/NetworkManager</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Network connection manager powered by D-Bus and UDEV</Summary>
         <Description>NetworkManager attempts to keep an active network connection available at all times.</Description>
-        <Archive sha1sum="203e5900e169f3997db61ff58c8f35ebad4e7e60" type="tarxz">http://ftp.acc.umu.se/mirror/gnome.org/sources/NetworkManager/1.9/NetworkManager-1.9.2.tar.xz</Archive>
+        <Archive sha1sum="e739f88335afea977dde8802286e2a768c4d0ff2" type="targz">https://github.com/NetworkManager/NetworkManager/archive/1.10.5-dev.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
@@ -35,7 +35,7 @@
             <Dependency>python-pygobject3</Dependency>
         </BuildDependencies>
         <Patches>
-	      <!--Patch>disable_set_hostname.patch</Patch-->
+	      <Patch>0001-nmp-netns-Mount-proc-in-the-new-namespace.patch</Patch>
         </Patches>
     </Source>
 
@@ -86,8 +86,8 @@
 
     <History>
         <Update release="4">
-            <Date>2017-09-20</Date>
-            <Version>1.9.2</Version>
+            <Date>2018-02-28</Date>
+            <Version>1.10.5</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

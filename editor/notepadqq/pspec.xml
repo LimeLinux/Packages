@@ -4,7 +4,7 @@
 <PISI>
     <Source>
         <Name>notepadqq</Name>
-        <Homepage>http://www.kde.org</Homepage>
+        <Homepage>https://github.com/notepadqq</Homepage>
         <Packager>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
@@ -13,8 +13,8 @@
         <IsA>app:gui</IsA>
         <Summary>Notepad++-like text editor for Linux</Summary>
         <Description>An advanced basic text editor.</Description>
-        <Archive sha1sum="01e19a96f00e366b7bb85c6e2ebab1a2033fb1ad" type="targz">https://github.com/notepadqq/notepadqq/archive/v1.0.1.tar.gz</Archive>
-        <Archive sha1sum="62ac2c86c556ff0611199ec9abdf32ddebb6562d" type="targz">https://github.com/notepadqq/CodeMirror/archive/5.18.2-nqq.tar.gz</Archive>
+        <Archive sha1sum="e099bb568166c5c46b65a74c862abb2bc542218e" type="targz">https://github.com/notepadqq/notepadqq/archive/continuous.tar.gz</Archive>
+        <Archive sha1sum="63bd0e398a1414f627b37bde5478dbe916ed29b0" type="targz">https://github.com/notepadqq/CodeMirror/archive/5.33.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>qt5-webkit</Dependency>
@@ -40,9 +40,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>2016-12-20</Date>
-            <Version>1.0.1</Version>
+        <Update release="2">
+            <Date>2018-03.01</Date>
+            <Version>1.2.0</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -52,7 +52,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-03-07</Date>
             <Version>0.9.33</Version>
             <Comment>First Release</Comment>

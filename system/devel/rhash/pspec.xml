@@ -39,7 +39,7 @@ RIPEMD-160, HAS-160, EDON-R, Whirlpool and Snefru.</Description>
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2018-02-03</Date>
             <Version>1.3.5</Version>
             <Comment>First Release</Comment>

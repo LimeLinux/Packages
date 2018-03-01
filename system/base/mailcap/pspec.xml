@@ -30,7 +30,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-04-07</Date>
             <Version>2.1.47</Version>
             <Comment>First Release</Comment>

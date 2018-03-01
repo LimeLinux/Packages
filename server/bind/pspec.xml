@@ -100,7 +100,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2016-06-08</Date>
             <Version>9.10.2</Version>
             <Comment>First release</Comment>

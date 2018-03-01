@@ -28,7 +28,7 @@
     </Package>
     
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>09.09.2017</Date>
             <Version>2.4.0</Version>
             <Comment>Add dkms to repositories</Comment>

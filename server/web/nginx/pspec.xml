@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>Robust, small and high performance http and reverse proxy server</Summary>
         <Description>Nginx is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Written by Igor Sysoev in 2005, Nginx now hosts between 1% and 4% of all domains worldwide. Nginx is known for its stability, rich feature set, simple configuration, and low resource consumption.</Description>
-        <Archive sha1sum="8262504469b86b967cdeb0821607a94ce863dfb4" type="targz">http://nginx.org/download/nginx-1.9.9.tar.gz</Archive>
+        <Archive sha1sum="9b06b6d649a80f819eff750c9087ef43d2995e6e" type="targz">https://nginx.org/download/nginx-1.13.9.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gd</Dependency>
             <Dependency>geoip</Dependency>
@@ -62,9 +62,9 @@
     </Package>
 
     <History>
-        <Update release="1">
-            <Date>09-08-2017</Date>
-            <Version>1.9.9</Version>
+        <Update release="2">
+            <Date>2018-02-28</Date>
+            <Version>1.13.9</Version>
             <Comment>First release</Comment>
             <Name>LimeLinux Community</Name>
             <Email>admin@limelinux.com</Email>
