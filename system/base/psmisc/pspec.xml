@@ -13,13 +13,13 @@
         <IsA>app:console</IsA>
         <Summary>A set of tools that use the proc filesystem</Summary>
         <Description>PSmisc is a collection of small utilities using /proc file system, and providing the system administrator with some help in common tasks.</Description>
-        <Archive sha1sum="09fabbef4539b58b6b8738a73da3d21d5daa1a58" type="targz">mirrors://sourceforge/psmisc/psmisc-22.21.tar.gz</Archive>
+        <Archive sha1sum="d19031a5ba18a530aa0bb768cb74593f9af74b08" type="tarxz">https://fossies.org/linux/misc/psmisc-23.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>ncurses</Dependency>
             <Dependency>gettext</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>psmisc-fuser.patch</Patch>
+            <!--Patch>psmisc-fuser.patch</Patch-->
         </Patches>  
     </Source>
 
@@ -40,7 +40,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>22.21</Version>
+            <Version>23.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
