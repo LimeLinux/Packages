@@ -70,7 +70,7 @@
             <Email>admin@limelinux.com</Email>
         </Update>
         <Update release="2">
-            <Date>2017-12-21</Date>
+            <Date>2017-02-28</Date>
             <Version>9.5.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
