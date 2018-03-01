@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>GNU ed is a line-oriented text editor.</Summary>
         <Description>GNU ed is a line-oriented text editor. It is used to create, display, modify and otherwise manipulate text files, both interactively and via shell scripts. A restricted version of ed, red, can only edit files in the current directory and cannot execute shell commands. Ed is the "standard" text editor in the sense that it is the original editor for Unix, and thus widely available.</Description>
-        <Archive sha1sum="4b23577f4f803be68057df969315bea8248bdbd1" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/ed-1.14.2.tar.xz</Archive>
+        <Archive sha1sum="1e29267247d39338aa31f1839b8320b86f4c50ab" type="targz">https://fossies.org/linux/privat/ed-1.14.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>glibc</Dependency>
         </BuildDependencies>
