@@ -21,6 +21,8 @@ ERROR_LOG    = '%s/error.log' % LOG_DIR
 ACCESS_LOG   = '%s/access.log' % LOG_DIR
 
 def setup():
+    shelltools.makedirs("nginx-rtmp-module")
+    shelltools.move("nginx-rtmp-module-1.2.1/*", "nginx-rtmp-module")
     autotools.rawConfigure("--user=nginx \
                             --group=nginx \
                             --prefix=%(html)s \
@@ -47,6 +49,9 @@ def setup():
                             --with-http_stub_status_module \
                             --with-http_perl_module \
                             --with-mail \
+                            --add-module=nginx-rtmp-module \
+                            --with-http_ssl_module \
+                            --with-debug \
                             --with-mail_ssl_module" % {'html': NGINX_HTML, \
                                                        'conf': NGINX_CONF, \
                                                        'pid': NGINX_PID, \

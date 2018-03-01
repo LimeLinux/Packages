@@ -13,6 +13,7 @@
         <Summary>Robust, small and high performance http and reverse proxy server</Summary>
         <Description>Nginx is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Written by Igor Sysoev in 2005, Nginx now hosts between 1% and 4% of all domains worldwide. Nginx is known for its stability, rich feature set, simple configuration, and low resource consumption.</Description>
         <Archive sha1sum="9b06b6d649a80f819eff750c9087ef43d2995e6e" type="targz">https://nginx.org/download/nginx-1.13.9.tar.gz</Archive>
+        <Archive sha1sum="7c6ae1afc117e3bf946b0d81f99d41fe538a7245" type="targz" target="nginx-1.13.9">https://github.com/arut/nginx-rtmp-module/archive/v1.2.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gd</Dependency>
             <Dependency>geoip</Dependency>
