@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>System Utilities Based on Sysfs</Summary>
         <Description>These are a set of utilites built upon sysfs, a new virtual filesystem in Linux kernel versions 2.5+ that exposes a system's device tree.</Description>
-        <Archive sha1sum="b3cb316c652b09ec66f93f4ea98a93a7a1001678" type="targz">mirrors://sourceforge/linux-diag/sysfsutils-2.1.0.tar.gz</Archive>
+        <Archive sha1sum="b3cb316c652b09ec66f93f4ea98a93a7a1001678" type="targz">http://http.debian.net/debian/pool/main/s/sysfsutils/sysfsutils_2.1.0+repack.orig.tar.gz</Archive>
         <Patches>
             <Patch level="1">sysfsutils-2.0.0-class-dup.patch</Patch>
             <Patch level="1">sysfsutils-2.1.0-get_link.patch</Patch>
