@@ -12,7 +12,6 @@ from pisi.actionsapi import get
 
 def setup():
     shelltools.export("UPX_LZMA_VERSION", "0x465")
-    shelltools.export("UPX_LZMADIR", get.workDIR())
 
 def build():
     autotools.make("all")

@@ -13,8 +13,8 @@
         <IsA>app:console</IsA>
         <Summary>Ultimate executable compressor.</Summary>
         <Description>UPX is an advanced executable file compressor. UPX will typically reduce the file size of programs and DLLs by around 50%-70%, thus reducing disk space, network load times, download times and other distribution and storage costs.</Description>
-        <Archive sha1sum="da962c0affb27eae11aa9b6fbd751c3699717b36" type="tarbz2">http://upx.sourceforge.net/download/upx-3.91-src.tar.bz2</Archive>
-        <Archive sha1sum="5ec1c4606fec88c770a9712073e83916f8aed173" type="tarbz2">http://downloads.sourceforge.net/sevenzip/lzma465.tar.bz2</Archive>
+        <Archive sha1sum="aa7f22ce1e9aaab2cb237e0a98dcd72d113c7a64" type="targz">https://github.com/upx/upx/archive/v3.91.tar.gz</Archive>
+        <Archive sha1sum="5ec1c4606fec88c770a9712073e83916f8aed173" type="tarbz2"target="upx-3.91/src/lzma-sdk">https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/4.65/lzma465.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>ucl</Dependency>
         </BuildDependencies>

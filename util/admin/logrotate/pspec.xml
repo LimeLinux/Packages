@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Rotates, compresses, removes and emails system log files</Summary>
         <Description>logrotate is designed to ease administration of systems that generate large numbers of log files. It allows automatic rotation, compression, removal, and emailing of log files.</Description>
-        <Archive sha1sum="803cd9543b589e7a309be8322d926fec8eee7fd3" type="tarxz">http://pkgs.fedoraproject.org/lookaside/pkgs/logrotate/logrotate-3.11.0.tar.xz/3a9280e4caeb837427a2d54518fbcdac/logrotate-3.11.0.tar.xz</Archive>
+        <Archive sha1sum="158b70865cbfd8944810f4c33ff19bd6539b70ce" type="targz">https://github.com/logrotate/logrotate/archive/3.13.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>popt</Dependency>
             <Dependency>acl</Dependency>
@@ -37,7 +37,7 @@
     <History>
         <Update release="2">
             <Date>2017-04-12</Date>
-            <Version>3.11.0</Version>
+            <Version>3.13.0</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
