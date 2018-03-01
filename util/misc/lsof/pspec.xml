@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Lists open files for running Unix processes</Summary>
         <Description>lsof is a Unix-specific diagnostic tool. Its name stands for LiSt Open Files, and it does just that. It lists information about any files that are open by processes currently running on the system. It can also list communications open by each process.</Description>
-        <Archive sha1sum="6e5f875863091db32212324f669f110e2365b617" type="tar">https://sourceforge.net/projects/pisi-source/files/limelinux/lsof_4.84_src.tar</Archive>
+        <Archive sha1sum="9e260fb314272273965050064e9bcd636eb63388" type="tar">https://sourceforge.net/projects/limeteam/files/source-limelinux/lsof_4.89_src.tar</Archive>
     </Source>
 
     <Package>
@@ -29,7 +29,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>4.84</Version>
+            <Version>4.89</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
