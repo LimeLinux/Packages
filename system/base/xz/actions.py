@@ -10,6 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--disable-static \
                          --disable-rpath")
     # Remove RPATH

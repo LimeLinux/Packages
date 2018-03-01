@@ -9,7 +9,7 @@ from pisi.actionsapi import shelltools
 
 def build():
     shelltools.chmod("build_detect_platform", 0755)
-    autotools.make()
+    autotools.make("-j1")
 
 
 def install():
