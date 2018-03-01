@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Python cURL Module</Summary>
         <Description>PycURL is a Python interface to libcurl. PycURL can be used to fetch objects identified by a URL from a Python program.</Description>
-        <Archive sha1sum="fd82722e2abc108b7bd469ab6a743cebe8cd8f78" type="targz">http://pycurl.sourceforge.net/download/pycurl-7.19.3.1.tar.gz</Archive>
+        <Archive sha1sum="fd82722e2abc108b7bd469ab6a743cebe8cd8f78" type="targz">https://pypi.python.org/packages/22/e9/f3dc93a056957d80b5697f221dbb6a7c114f979bdfa7433bc8e89d723b0f/pycurl-7.19.3.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>curl</Dependency>
             <Dependency>python</Dependency>
