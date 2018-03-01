@@ -7,8 +7,10 @@
 from pisi.actionsapi import get
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 
 def setup():
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--with-module-path=/usr/lib%s/pkcs11" % ("32" if get.buildTYPE() == "emul32" else ""))
 
 def build():

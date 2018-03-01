@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Allows restricted root access for specified users</Summary>
         <Description>sudo allows certain users/groups to run commands with root user privileges.</Description>
-        <Archive sha1sum="3ac48ff09c127e1b7f53983ac167a14ad3448eff" type="targz">http://www.sudo.ws/sudo/dist/sudo-1.8.18.tar.gz</Archive>
+        <Archive sha1sum="44f0588f17392b62af53cf314239bf37c567a9c4" type="targz">https://www.sudo.ws/sudo/dist/sudo-1.8.22.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>nss</Dependency>
             <Dependency>pam</Dependency>
@@ -58,9 +58,9 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2018-02-28</Date>
-            <Version>1.8.18</Version>
+            <Version>1.8.22</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
