@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Package metadata service</Summary>
         <Description>python-appinfo is python module for creating or getting package information from defined remote appinfo server.</Description>
-        <Archive sha1sum="f96b5bd671a071917e93e740d739b6af030d2103" type="targz">https://sourceforge.net/projects/limeteam/files/source-limelinux/appinfo-1.0.0.tar.gz</Archive>
+        <Archive sha1sum="3b68e62fbf16791cde3d026c74fcde06de879537" type="zip">https://pypi.python.org/packages/05/d6/6b21844006baa63e503c29f6198ae8da74faf46670beef6b9ff47c90708e/appinfo-1.0.0.zip</Archive>
     </Source>
 
     <Package>

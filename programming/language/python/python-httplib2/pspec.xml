@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A comprehensive HTTP client library in Python</Summary>
         <Description>httplib2 is a comprehensive HTTP client library that supports many features left out of other HTTP libraries.</Description>
-        <Archive sha1sum="3821350a9612b3e1fb382d55484b2465cb8fb9c5" type="targz">http://source.limelinux.com/1.0/httplib2-0.8.tar.gz</Archive>
+        <Archive sha1sum="ecbf62f904660cd8c834e5f6516e67e8449ff74c" type="targz">https://github.com/httplib2/httplib2/archive/v0.10.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,7 +27,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>0.8</Version>
+            <Version>0.10.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
