@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
@@ -22,6 +23,8 @@ def setup():
     autotools.configure("--disable-static \
                          --enable-wifi \
                          --disable-silent-rules \
+                         --disable-wimax \
+                         --disable-lto \
                          --disable-config-plugin-ibft \
                          --disable-ifnet \
                          --disable-more-warnings \
@@ -46,7 +49,7 @@ def setup():
                          --sysconfdir=/etc \
                          --libexecdir=/usr/lib/NetworkManager \
                          --with-kernel-firmware-dir=/usr/lib/firmware \
-                         --with-dist-version='1.10.5-5, Lime Linux' \
+                         --with-dist-version='1.10.5-4, Lime Linux' \
                          --with-udev-dir=/usr/lib/udev \
                          --with-pppd=/usr/sbin/pppd \
                          --with-iptables=/sbin/iptables \

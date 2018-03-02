@@ -28,11 +28,6 @@ def build():
     autotools.make()
 
 
-def check():
-     shelltools.cd("glib")
-     autotools.make("-j1 check")
-
-
 
 
 def install():

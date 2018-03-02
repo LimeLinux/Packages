@@ -21,6 +21,8 @@ ARCH = "x64"
 
 def setup():
     #shelltools.export("LC_ALL", "C")
+    shelltools.system('sed -i  -e /"-Wno-enum-compare-switch"/d  -e /"-Wno-null-pointer-arithmetic"/d  -e /"-Wno-tautological-unsigned-zero-compare"/d -e /"-Wno-tautological-constant-compare"/d build/config/compiler/BUILD.gn')
+
     shelltools.system("mkdir -p third_party/node/linux/node-linux-x64/bin")
     shelltools.system("ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/")
 
@@ -55,7 +57,7 @@ def setup():
            use_gtk3=false'
 
     shelltools.system("tools/gn/bootstrap/bootstrap.py --gn-gen-args '%s'"% opt)
-    shelltools.system("out/Release/gn gen out/Release --args='%s'"% opt)
+    shelltools.system("out/Release/gn gen out/Release '%s'"% opt)
 
 
 def build():

@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A WebKit powered web browser</Summary>
         <Description>Chromium-browser is an open-source web browser, powered by WebKit.</Description>
-        <Archive sha1sum="6afc5da29f4bcf1d5cb4cecc1b49934e74a50a3e" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-63.0.3213.3.tar.xz</Archive>
+        <Archive sha1sum="6d7b02f4190590b76694ddbbabf157bb925ab59b" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-65.0.3325.88.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>at-spi2-atk</Dependency>
@@ -88,8 +88,12 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">chromium-widevine.patch</Patch>
-            <Patch level="1">chromium-gn-bootstrap-r18.patch</Patch>
-            <Patch level="1">chromium-glibc2.26-r1.patch</Patch>
+            <Patch level="1">chromium-stdint.patch</Patch>
+            <Patch level="1">chromium-math.h-r0.patch</Patch>
+            <Patch level="1">chromium-clang-r3.patch</Patch>
+            <Patch level="1">chromium-FORTIFY_SOURCE-r2.patch</Patch>
+            <Patch level="1">chromium-clang-r2.patch</Patch>
+            <Patch level="1">chromium-webrtc-r0.patch</Patch>
         </Patches>
     </Source>
     <Package>
@@ -155,8 +159,8 @@
 
     <History>
         <Update release="5">
-            <Date>2017-09-18</Date>
-            <Version>63.0.3213.3</Version>
+            <Date>2018-03-02</Date>
+            <Version>65.0.3325.88</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

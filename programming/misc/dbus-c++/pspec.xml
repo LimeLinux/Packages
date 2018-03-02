@@ -14,7 +14,7 @@
         <Summary>C++ bindings for DBus library</Summary>
         <Description>dbus-c++ attempts to provide a C++ API for D-BUS. The library has a glib/gtk and an Ecore mainloop integration. It also offers an optional own main loop.</Description>
         <!--http://www.filewatcher.com/m/dbus-c++_0~20090907.orig.tar.gz.855848-0.html-->
-        <Archive sha1sum="105bc04c9ad03c69e612a41e83acd04b7dfd3a41" type="targz">http://sourceforge.net/projects/dbus-cplusplus/files/dbus-c%2B%2B/0.9.0/libdbus-c%2B%2B-0.9.0.tar.gz</Archive>
+        <Archive sha1sum="105bc04c9ad03c69e612a41e83acd04b7dfd3a41" type="targz">http://http.debian.net/debian/pool/main/d/dbus-c++/dbus-c++_0.9.0.orig.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>dbus</Dependency>
             <Dependency>expat</Dependency>
