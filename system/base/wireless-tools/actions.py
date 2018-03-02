@@ -10,6 +10,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
+    shelltools.system("sed '/BUILD_STATIC =/d' -i Makefile")
     pisitools.dosed("Makefile", "CC = .*", "CC = %s" % get.CC())
     pisitools.dosed("Makefile", "^CFLAGS=", "CFLAGS=%s " % get.CFLAGS())
 
