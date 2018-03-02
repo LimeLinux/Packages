@@ -12,7 +12,7 @@
         <Summary>A framework for centrally storing authentication credentials</Summary>
         <Description>Single Sign-On is a framework for centrally storing authentication credentials and handling authentication on behalf of applications as requested by applicationsIt consists of
         a secure storage of login credentials (for example usernames and passwords), plugins for different authentication systems and a client library for applications to communicate with this system.</Description>
-        <Archive sha1sum="989adade4c4f45c6057a5d3b3bb919ef2c5a6572" type="targz">https://gitlab.com/accounts-sso/signond/repository/archive.tar.gz</Archive>
+        <Archive sha1sum="b13e012eb1c4801117267817fa32f7c9f3ab7727" type="targz">http://http.debian.net/debian/pool/main/s/signond/signond_8.59.orig.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>doxygen</Dependency>
