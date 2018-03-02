@@ -13,6 +13,8 @@ from pisi.actionsapi import shelltools
 WorkDir = "mozjs-%s/js/src" % get.srcVERSION()
 
 def setup():
+    shelltools.export("CFLAGS","-std=gnu++98")
+    shelltools.export("CXXFLAGS", "-std=gnu++98")
     pisitools.cxxflags.remove("-fPIC")
     shelltools.system("sed -i 's/(defined\((@TEMPLATE_FILE)\))/\1/' config/milestone.pl ")
     

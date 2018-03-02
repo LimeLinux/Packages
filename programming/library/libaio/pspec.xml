@@ -13,15 +13,10 @@
         <IsA>library</IsA>
         <Summary>Linux-native asynchronous I/O access library</Summary>
         <Description>libaio has a richer API and capability set than the simple POSIX async I/O facility.</Description>
-        <Archive sha1sum="9ddbaff067ba377104251e3a84d9588498f9fedf" type="targz">http://pkgs.fedoraproject.org/repo/pkgs/libaio/libaio-0.3.109.tar.gz/435a5b16ca6198eaf01155263d855756/libaio-0.3.109.tar.gz</Archive>
+        <Archive sha1sum="f8f6ed15f22e528f6f415939b07854539e3360e4" type="targz">http://http.debian.net/debian/pool/main/liba/libaio/libaio_0.3.110.orig.tar.gz</Archive>
         <Patches>
-            <Patch>libaio-0.3.106-build.patch</Patch>
             <!--Patch level="1">libaio-install-to-slash.patch</Patch-->
-            <Patch level="1">libaio-0.3.107-ar-ranlib.patch</Patch>
-            <Patch level="1">92_unused_warnings.patch</Patch>
             <Patch level="0">libaio-0.3.109-testcase-8.patch</Patch>
-            <Patch level="1">libaio-0.3.109-generic-arch.patch</Patch>
-            <Patch level="1">libaio-0.3.109-unify-bits-endian.patch</Patch>
             <Patch level="1">libaio-0.3.109-x32.patch</Patch>
         </Patches>
     </Source>
@@ -41,7 +36,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>0.3.109</Version>
+            <Version>0.3.110</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
