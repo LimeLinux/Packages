@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Ragel compiles executable finite state machines from regular languages.</Summary>
         <Description>Ragel compiles executable finite state machines from regular languages. Ragel targets C, C++, Obj-C, C#, D, Java, Go and Ruby.</Description>
-        <Archive sha1sum="70a7fe77aee8423be610fa14c3fa1f96b3119e1d" type="targz">http://fossies.org/linux/misc/ragel-6.9.tar.gz</Archive>
+        <Archive sha1sum="946162090fb58b794ed53173fac13398d565b794" type="targz">http://www.colm.net/files/ragel/ragel-6.10.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -28,7 +28,7 @@
     <History>
         <Update release="2">
             <Date>2017-03-19</Date>
-            <Version>6.9</Version>
+            <Version>6.10</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/Linux</Name>
             <Email>admin@limelinux.com</Email>

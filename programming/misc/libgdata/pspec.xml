@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A library for accessing online services</Summary>
         <Description>libgdata is a GLib-based library for accessing online service APIs using the GData protocol.</Description>
-        <Archive sha1sum="f58c61dc7ef55eb6fa689b2c83dc06fe0cd23c66" type="tarxz">mirrors://gnome/libgdata/0.17/libgdata-0.17.5.tar.xz</Archive>
+        <Archive sha1sum="942a98ae334d5ac97a041519d64ea48ddc654016" type="tarxz">mirrors://gnome/libgdata/0.17/libgdata-0.17.9.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gcr</Dependency>
             <Dependency>gnome-common</Dependency>
@@ -30,7 +30,6 @@
             <Dependency>gcr</Dependency>
             <Dependency>p11-kit</Dependency>
             <Dependency>libsoup</Dependency>
-            <Dependency>libsoup</Dependency>
 	    <!--Dependency>liboauth</Dependency>
             <Dependency>gnome-online-accounts</Dependency-->
         </RuntimeDependencies>
@@ -39,7 +38,7 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/vala/vapi</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-	    <Path fileType="data">/usr/share/gtk-doc</Path>
+	        <Path fileType="data">/usr/share/gtk-doc</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="data">/usr/share/gir-1.0</Path>
@@ -50,7 +49,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>0.17.5</Version>
+            <Version>0.17.9</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

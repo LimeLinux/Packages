@@ -9,6 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    autotools.autoreconf("-vi")
     autotools.configure("--disable-static")
 
     # Do not link to unused m library
