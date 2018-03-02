@@ -18,9 +18,9 @@ def setup():
     pisitools.dosed("unix/vncserver", "iconic", "nowin")
     shelltools.system("cmake -G 'Unix Makefiles' -DCMAKE_INSTALL_PREFIX=/usr")
     autotools.make()
-    shelltools.system("tar -xf /var/cache/pisi/archives/xorg-server-1.19.1.tar.bz2 -C unix/xserver --strip-components=1")
+    shelltools.system("tar -xf /var/cache/pisi/archives/xorg-server-1.19.6.tar.bz2 -C unix/xserver --strip-components=1")
     shelltools.cd("unix/xserver")
-    #shelltools.system("patch -Np1 -i /var/cache/pisi/archives/tigervnc-1.7.1/unix/xserver117.patch")
+    shelltools.system("patch -Np1 -i %s/tigervnc-1.8.0/unix/xserver119.patch" % get.workDIR())
     autotools.autoreconf("-fiv")
     autotools.configure(" --prefix=/usr \
                         --disable-static --without-dtrace \
@@ -34,12 +34,16 @@ def setup():
     
 
 def install():
+    pisitools.dodoc("LICENCE.*", "README.*")
+
+
     shelltools.cd("unix/xserver")
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     shelltools.cd ("../..")
-    #shelltools.cd ("unix/xserver/hw/vnc")
-    #autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    
-    pisitools.dodoc("LICENCE.*", "README.*")
-    
+    shelltools.cd ("unix/xserver/hw/vnc")
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+
+
+    pisitools.remove("usr/share/man/man1/Xserver.1")
+    pisitools.remove("usr/lib/xorg/protocol.txt")
     

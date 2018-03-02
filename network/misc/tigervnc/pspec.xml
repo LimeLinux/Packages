@@ -13,8 +13,8 @@
         <IsA>app:console</IsA>
         <Summary>Suite of VNC servers and clients.</Summary>
         <Description>Suite of VNC servers and clients. Based on the VNC 4 branch of TightVNC.</Description>
-        <Archive sha1sum="e6924a1c0a092d3f4b4d389087592a1279cf1728" type="targz">https://github.com/TigerVNC/tigervnc/archive/v1.7.1.tar.gz-</Archive>
-        <Archive sha1sum="13c81e0ebb6ac1359a611d0503805c6dc0315477" type="tarbz2">mirrors://xorg/individual/xserver/xorg-server-1.19.1.tar.bz2-</Archive>                                                      
+        <Archive sha1sum="dbb280afb066073d7b44e99bd75d7f9bdb5a81e0" type="targz">https://github.com/TigerVNC/tigervnc/archive/v1.8.0.tar.gz</Archive>
+        <Archive sha1sum="2dd560ac49bdbda7f67166546af43541fabf517f" type="tarbz2">mirrors://xorg/individual/xserver/xorg-server-1.19.6.tar.bz2</Archive>                                                     
         <BuildDependencies>
             <Dependency>font-util</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
@@ -56,8 +56,7 @@
             <Dependency>fltk</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">gethomedir.patch</Patch>
-            <!--Patch level="1">xorg118.patch</Patch-->
+            <!--Patch level="1">xorg119.patch</Patch-->
         </Patches>
     </Source>
 
@@ -91,7 +90,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>1.7.1</Version>
+            <Version>1.8.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
