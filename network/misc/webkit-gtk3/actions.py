@@ -41,8 +41,6 @@ def setup():
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
-    shelltools.export("CFLAGS", cflags)
-    shelltools.export("CXXFLAGS", cxxflags)
     autotools.make()
 
 def install():

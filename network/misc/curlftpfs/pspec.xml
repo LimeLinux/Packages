@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A filesystem for acessing FTP hosts based on FUSE and libcurl.</Summary>
         <Description>A filesystem for acessing FTP hosts based on FUSE and libcurl.</Description>
-        <Archive sha1sum="83f148afe6bd4d44c9790790f1c30986c8b9ea56" type="targz">mirrors://sourceforge/curlftpfs/curlftpfs-0.9.2.tar.gz</Archive>
+        <Archive sha1sum="83f148afe6bd4d44c9790790f1c30986c8b9ea56" type="targz">http://http.debian.net/debian/pool/main/c/curlftpfs/curlftpfs_0.9.2.orig.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>curl</Dependency>
             <Dependency>fuse</Dependency>

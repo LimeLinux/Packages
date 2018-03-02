@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>Very Secure FTP Daemon written with speed, size and security in mind</Summary>
         <Description>Vsftpd is a ftp server, mostly focuses on security.</Description>
-        <Archive sha1sum="d5f5a180dbecd0fbcdc92bf0ba2fc001c962b55a" type="targz">https://security.appspot.com/downloads/vsftpd-3.0.3.tar.gz</Archive>
+        <Archive sha1sum="d5f5a180dbecd0fbcdc92bf0ba2fc001c962b55a" type="targz">https://fossies.org/linux/misc/vsftpd-3.0.3.tar.gz</Archive>
         <Patches>
             <Patch level="1">vsftpd-limelinux.patch</Patch>
         </Patches>

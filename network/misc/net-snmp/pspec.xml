@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>A collection of SNMP protocol tools and libraries</Summary>
         <Description>Simple Network Management Protocol (SNMP) is a widely used protocol for monitoring the health and welfare of network equipment (eg. routers), computer equipment and even devices like UPSs. Net-SNMP is a suite of applications used to implement SNMP v1, SNMP v2c and SNMP v3 using both IPv4 and IPv6.</Description>
-        <Archive sha1sum="97dc25077257680815de44e34128d365c76bd839" type="targz">mirrors://sourceforge/net-snmp/net-snmp-5.7.3.tar.gz</Archive>
+        <Archive sha1sum="97dc25077257680815de44e34128d365c76bd839" type="targz">https://fossies.org/linux/misc/net-snmp-5.7.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libnl</Dependency>
             <Dependency>python-setuptools</Dependency>

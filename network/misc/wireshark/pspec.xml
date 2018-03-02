@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A commercial-quality network traffic analyzer</Summary>
         <Description>Wireshark is a commercial-quality network traffic analyzer useful to investigate packets on the network.</Description>
-        <Archive sha1sum="2913835d17a93af2a85ad5d9b580c47b359619a4" type="tarbz2">https://www.wireshark.org/download/src/all-versions/wireshark-2.2.4.tar.bz2</Archive>
+        <Archive sha1sum="cd1113e5ddeafa2ff3ab181799c07b29d7739907" type="tarxz">https://www.wireshark.org/download/src/all-versions/wireshark-2.5.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnutls</Dependency>
             <Dependency>c-ares</Dependency>
@@ -72,7 +72,7 @@
     <History>
         <Update release="2">
             <Date>2017-02-21</Date>
-            <Version>2.2.4</Version>
+            <Version>2.5.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

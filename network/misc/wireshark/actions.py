@@ -17,7 +17,7 @@ def setup():
                          --with-gtk3=yes \
                          --with-pcap \
                          --with-zlib \
-                         --with-lua \
+                         --with-lua5.3 \
                          --with-portaudio \
                          --with-ssl \
                          --with-krb5 \
@@ -38,7 +38,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
-    for d in ["config.h", "register.h", "ws_symbol_export.h"]:
+    for d in ["config.h", "epan/register.h", "ws_symbol_export.h"]:
         pisitools.insinto(includedir, d)
         
     pisitools.insinto("/usr/include/wireshark/epan/", "epan/*.h")
