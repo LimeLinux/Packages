@@ -11,14 +11,11 @@ from pisi.actionsapi import get
 def setup():
     pisitools.flags.add("-fno-strict-aliasing")
 
-    autotools.configure("--enable-gtk2 \
-                         --enable-shared \
+    autotools.configure("--enable-shared \
                          --disable-optimise \
                          --disable-debug \
-                         --enable-no_deps \
                          --disable-rpath \
                          --enable-intl \
-                         --enable-geometry \
                          --enable-timer \
                          --enable-unicode \
                          --enable-sound \
@@ -36,9 +33,7 @@ def setup():
                          --with-libtiff=sys \
                          --with-libxpm=sys \
                          --with-sdl \
-                         --without-gnomeprint \
                          --without-gnomevfs \
-                         --without-odbc \
                          --with-opengl \
                          --with-regex=builtin \
                          --with-zlib=sys \

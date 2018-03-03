@@ -12,12 +12,12 @@
         <License>NCSA</License>
         <Summary>The Low Level Virtual Machine</Summary>
         <Description>The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. Despite its name, LLVM has little to do with traditional virtual machines, though it does provide helpful libraries that can be used to build them.</Description>
-       <Archive sha1sum="aee4524e2407f9fe5afc6f70c753180b907011d0" type="tarxz">http://llvm.org/releases/4.0.0/llvm-4.0.0.src.tar.xz</Archive>
-       <Archive sha1sum="e2762800c93d9335781ea6a45af3f80845542ef5" type="binary">http://llvm.org/releases/4.0.0/cfe-4.0.0.src.tar.xz</Archive>
-       <Archive sha1sum="bdb543c4bb87bd80fe65711114ca0a5c25329ae3" type="binary">http://llvm.org/releases/4.0.0/clang-tools-extra-4.0.0.src.tar.xz</Archive>
-       <Archive sha1sum="a879b610e427ef3bba482bdc031ae371cabab81e" type="binary">http://llvm.org/releases/4.0.0/compiler-rt-4.0.0.src.tar.xz</Archive>
-       <Archive sha1sum="2ec36514d742df3e1151814cba4546cdda597fd8" type="binary">http://llvm.org/releases/4.0.0/lld-4.0.0.src.tar.xz</Archive> 
-       <Archive sha1sum="da78ed1453a5e62ff058bebf0cd91c8f51ec5504" type="binary">http://llvm.org/releases/4.0.0/lldb-4.0.0.src.tar.xz</Archive>  
+       <Archive sha1sum="43d3659f8a3cef43e7435a3a874b0711f5888052" type="tarxz">http://llvm.org/releases/5.0.1/llvm-5.0.1.src.tar.xz</Archive>
+       <Archive sha1sum="0cfb79b1fb767c18e167f4bc8836476ca24d9a19" type="binary">http://llvm.org/releases/5.0.1/cfe-5.0.1.src.tar.xz</Archive>
+       <Archive sha1sum="d028e330271b4a5e6706cc91111841d34644237f" type="binary">http://llvm.org/releases/5.0.1/clang-tools-extra-5.0.1.src.tar.xz</Archive>
+       <Archive sha1sum="acff2e57b2528288e2f603a5667a6d566730cc1c" type="binary">http://llvm.org/releases/5.0.1/compiler-rt-5.0.1.src.tar.xz</Archive>
+       <Archive sha1sum="f3352dfe53daaf788bdf96fd377d0ae0266cf323" type="binary">http://llvm.org/releases/5.0.1/lld-5.0.1.src.tar.xz</Archive> 
+       <Archive sha1sum="f358c10ce85a18aee4687b14d80f051d653fb8ee" type="binary">http://llvm.org/releases/5.0.1/lldb-5.0.1.src.tar.xz</Archive>  
        <AdditionalFiles>
             <AdditionalFile target="0002-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch">0002-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch</AdditionalFile>
             <AdditionalFile target="0003-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch">0003-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch</AdditionalFile>
@@ -35,8 +35,8 @@
             <Dependency>binutils</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">0001-AMDGPU-Fix-bug-31610.patch</Patch>
-            <!--Patch level="1">0001-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch</Patch-->
+            <!--Patch level="1">0001-AMDGPU-Fix-bug-31610.patch</Patch>
+            <Patch level="1">0001-CMake-Fix-pthread-handling-for-out-of-tree-builds.patch</Patch-->
         </Patches>
     </Source>
 
@@ -62,6 +62,7 @@
             <Path fileType="data">/etc/llvm</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/vim</Path>
+            <Path fileType="data">/usr/share/opt-viewer/</Path>
             <Path fileType="data">/usr/share/llvm/cmake</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
@@ -132,9 +133,9 @@
 
 
     <History>
-        <Update release="4">
-            <Date>2017-05-21</Date>
-            <Version>4.0.0</Version>
+        <Update release="5">
+            <Date>2018-03-04</Date>
+            <Version>5.0.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
