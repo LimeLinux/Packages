@@ -11,11 +11,11 @@ from pisi.actionsapi import shelltools
 
 def setup():
     # /var/run => /run
-    #pisitools.dosed("configure.ac", "^(\s+CONSOLE_KIT_PID_FILE=)\$\{localstatedir\}(\/run\/ConsoleKit\/pid)", r"\1\2")
-    #pisitools.dosed("src/Makefile.am", "\$\(localstatedir\)(\/run\/ConsoleKit)", r"\1")
-    #shelltools.system("sed -i -e '/SystemdService/d' data/org.freedesktop.ConsoleKit.service.in")
+    pisitools.dosed("configure.ac", "^(\s+CONSOLE_KIT_PID_FILE=)\$\{localstatedir\}(\/run\/ConsoleKit\/pid)", r"\1\2")
+    pisitools.dosed("src/Makefile.am", "\$\(localstatedir\)(\/run\/ConsoleKit)", r"\1")
+    shelltools.system("sed -i -e '/SystemdService/d' data/org.freedesktop.ConsoleKit.service.in || die")
 
-    #autotools.autoreconf("-fi")
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
 
     autotools.configure("--prefix=/usr \
                          --sysconfdir=/etc \

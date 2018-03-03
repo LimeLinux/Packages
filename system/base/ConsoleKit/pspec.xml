@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A framework for defining and tracking users, login sessions, and seats</Summary>
         <Description>ConsoleKit is a system daemon for tracking what users are logged into the system and how they interact with the computer (e.g. which keyboard and mouse they use).</Description>
-        <Archive sha1sum="57b5fc3eae0391105e4933e79e6aeda943e6da81" type="tarbz2">https://github.com/ConsoleKit2/ConsoleKit2/releases/download/1.0.2/ConsoleKit2-1.0.2.tar.bz2</Archive>
+        <Archive sha1sum="0fad66d0a29eefb050e155b1cf83d7bba0e1574e" type="targz">https://github.com/ConsoleKit2/ConsoleKit2/archive/1.2.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>acl</Dependency>
             <Dependency>pam</Dependency>
@@ -53,6 +53,7 @@
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="data">/usr/share/polkit-1/actions</Path>
             <Path fileType="data">/usr/share/polkit-1/rules.d</Path>
+            <Path fileType="data">/usr/share/gir-1.0/</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -68,9 +69,9 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2018-02-28</Date>
-            <Version>1.0.2</Version>
+            <Version>1.2.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
