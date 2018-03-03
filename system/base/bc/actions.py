@@ -15,6 +15,8 @@ def setup():
 def build():
     autotools.make("-j1")
 
+def check():
+    shelltools.system('echo "quit" | ./bc/bc -l Test/checklib.b')
 
 
 def install():
