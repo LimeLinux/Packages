@@ -17,6 +17,8 @@ def install():
     pythonmodules.install()
 
     pythonmodules.fixCompiledPy()
+    
+    pisitools.dodoc("README.rst", "PKG-INFO", "CHANGES.rst", "COPYRIGHT.txt", "LICENSE.txt")
 
-    pisitools.dodoc("README.txt", "PKG-INFO")
+   
 

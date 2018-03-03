@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>zope.interface library</Summary>
         <Description>Interfaces are objects that specify (document) the external behavior of objects that provide them.</Description>
-        <Archive sha1sum="35e34c4ba0490db60647328a47ee830e062f3f4c" type="targz">http://pypi.python.org/packages/source/z/zope.interface/zope.interface-4.0.1.tar.gz</Archive>
+        <Archive sha1sum="5d25841d8d4c4cce043119351fd9944d38f8422a" type="targz">http://pypi.upc.edu/mirror/zope.interface/zope.interface-4.4.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,7 +27,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>4.0.1</Version>
+            <Version>4.4.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

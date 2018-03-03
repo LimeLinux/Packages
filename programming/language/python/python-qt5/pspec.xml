@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>A set of Python bindings for the Qt 5.x Toolkit</Summary>
         <Description>Qt is a set of C++ libraries and development tools that includes platform independent abstractions for graphical user interfaces, networking, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, and user and application settings. PyQt implements 440 of these classes as a set of Python modules.</Description>
-        <Archive sha1sum="104c4bfc451b2ed26e34e646ddf69cfc8c437226" type="targz">https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.8/PyQt5_gpl-5.8.tar.gz</Archive>
+        <Archive sha1sum="638a80519f3250e813ebd5a669651f43f416f14b" type="targz">https://downloads.sourceforge.net/project/pyqt/PyQt5/PyQt-5.10.1/PyQt5_gpl-5.10.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>dbus</Dependency>
             <Dependency>python</Dependency>
@@ -49,7 +49,7 @@
     <History>
         <Update release="4">
             <Date>2017-02-28</Date>
-            <Version>5.8</Version>
+            <Version>5.10.1</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

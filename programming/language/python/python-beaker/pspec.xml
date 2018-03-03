@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A Session and Caching library with WSGI Middleware</Summary>
         <Description>python-beaker is a web session and general caching library that includes WSGI middleware for use in web applications.</Description>
-        <Archive sha1sum="e354c7dc7946595f58f027e880e47b01c288abfb" type="targz">http://pypi.python.org/packages/source/B/Beaker/Beaker-1.6.4.tar.gz</Archive>
+        <Archive sha1sum="b3bbdf69e7c381f48edeb35a58032442363cca77" type="targz">https://pypi.python.org/packages/93/b2/12de6937b06e9615dbb3cb3a1c9af17f133f435bdef59f4ad42032b6eb49/Beaker-1.9.0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,7 +27,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>1.6.4</Version>
+            <Version>1.9.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

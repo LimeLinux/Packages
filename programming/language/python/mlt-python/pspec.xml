@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Author, manage, and run multitrack audio/video compositions. The engine of a non-linear video editor that can be used in all sorts of apps, not just desktop video editors..</Summary>
         <Description>MLT is an open source multimedia framework, designed and developed for television broadcasting. It provides a toolkit for broadcasters, video editors, media players, transcoders, web streamers and many more types of applications. The functionality of the system is provided via an assortment of ready to use tools, XML authoring components, and an extensible plug-in based API.</Description>
-        <Archive sha1sum="0ee3149b4a5eabb1467278c79d3e938754629835" type="targz">https://github.com/mltframework/mlt/archive/v6.4.1.tar.gz</Archive>
+        <Archive sha1sum="41727ef4fce10ce3e96b2f808992011395e10f40" type="targz">https://github.com/mltframework/mlt/archive/v6.6.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>mlt</Dependency>
         </BuildDependencies>
@@ -32,8 +32,8 @@
 
     <History>
         <Update release="2">
-            <Date>2017-09-21</Date>
-            <Version>6.4.1</Version>
+            <Date>2018-03-04</Date>
+            <Version>6.6.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
