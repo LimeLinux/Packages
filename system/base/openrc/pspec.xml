@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Dependency based init system that works with sysinit.</Summary>
         <Description>Dependency based init system that works with sysinit.</Description>
-        <Archive sha1sum="c650fa4f9600c2e4e96a787585eedde96744e4e8" type="targz">https://github.com/OpenRC/openrc/archive/0.34.11.tar.gz</Archive>
+        <Archive sha1sum="7a09c488e058734dc91ad02223ab7394db65006c" type="targz">https://github.com/OpenRC/openrc/archive/0.35.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>pam</Dependency>
@@ -53,9 +53,9 @@
 
 
     <History>
-        <Update release="4">
-            <Date>2018--01-31</Date>
-            <Version>0.34.11</Version>
+        <Update release="5">
+            <Date>2018--03-04</Date>
+            <Version>0.35.2</Version>
             <Comment>Version Bump</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
