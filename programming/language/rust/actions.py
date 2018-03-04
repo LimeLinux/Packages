@@ -22,5 +22,4 @@ def install():
     pisitools.insinto("/usr", "build/x86_64-unknown-linux-gnu/stage2/lib")
     pisitools.insinto("/usr/bin", "build/x86_64-unknown-linux-gnu/stage2-tools-bin/*")
     pisitools.insinto("/usr", "build/x86_64-unknown-linux-gnu/stage0/share")
-    pisitools.insinto("/usr/share/doc/rust/", "build/tmp/dist/rust-docs-1.23.0-x86_64-unknown-linux-gnu/rust-docs/share/doc/rust/*")
 
