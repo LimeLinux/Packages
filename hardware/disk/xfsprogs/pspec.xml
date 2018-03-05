@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>XFS filesystem utilities</Summary>
         <Description>xfsprogs contains a number of administrative utilities to work with and manage XFS filesystems.</Description>
-        <Archive sha1sum="f1d2f578789f99a3788f4c4336a9d4c539fea00b" type="targz">ftp://oss.sgi.com/projects/xfs/cmd_tars/xfsprogs-4.5.0.tar.gz</Archive>
+        <Archive sha1sum="cfac53f1893a1ad479998158e944972620b5d815" type="tarxz">https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-4.15.1.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -35,7 +35,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>3.2.4</Version>
+            <Version>4.15.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

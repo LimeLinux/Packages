@@ -28,4 +28,4 @@ def install():
     pisitools.domove("/usr/lib/libGL.so*", "/usr/lib/libglvnd/")
 
     
-    pisitools.dodoc("README.md", "LICENSE")
+    pisitools.dodoc("README.md")

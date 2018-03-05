@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A distributed SCM tool</Summary>
         <Description>A fast, lightweight Source Control Management system designed for efficient handling of very large distributed projects.</Description>
-        <Archive sha1sum="cccade8ca2a3f9c876301c11959a1303c0c9b00e" type="targz">https://www.mercurial-scm.org/release/mercurial-3.8.3.tar.gz</Archive>
+        <Archive sha1sum="eb50bc81430fb34c11d32a8fbe6860b3d3a87de9" type="targz">https://www.mercurial-scm.org/release/mercurial-4.5.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -30,7 +30,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>3.8.3</Version>
+            <Version>4.5</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -17,9 +17,7 @@ arch = get.ARCH()
 shelltools.export("SHELL", "/bin/sh")
 
 def setup():
-    shelltools.export("CFLAGS", "%s -fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2" % get.CFLAGS())
-    shelltools.export("CXXFLAGS", "%s -fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2" % get.CFLAGS())
-    pisitools.dosed(".mozconfig", "##JOBCOUNT##", get.makeJOBS())
+    shelltools.system("sed 's@\#\#JOBCOUNT\#\#@%JOBS%@' -i mozconfig")
     shelltools.makedirs(ObjDir)
     shelltools.cd(ObjDir)
     shelltools.system("../configure --prefix=/usr --libdir=/usr/lib")
@@ -34,8 +32,6 @@ def build():
 
 def install():
     shelltools.cd(ObjDir)
-    shelltools.export("CFLAGS", "%s -fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2" % get.CFLAGS())
-    shelltools.export("CXXFLAGS", "%s -fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2" % get.CFLAGS())
     shelltools.system("DESTDIR=%s ./mach install " % get.installDIR())
 
     # Install language packs

@@ -14,6 +14,9 @@
         <Summary>Console mouse driver</Summary>
         <Description>GPM (short for General Purpose Mouse) brings mouse support to TTYs.</Description>
         <Archive sha1sum="08aaceddf7976b98ad3c43143012d3b89a296a40" type="tarbz2">http://www.nico.schottelius.org/software/gpm/archives/gpm-1.20.7.tar.bz2</Archive>
+        <Patches>
+            <Patch level="1">glibc-2.27.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

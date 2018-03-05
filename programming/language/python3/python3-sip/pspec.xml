@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>SIP is a tool for generating bindings for C++ classes so that they can be used by Python3</Summary>
         <Description>SIP is a tool for generating bindings for C and C++ libraries so that they can be used by Python3. It takes any C or C++ libraries and converts them into Python extension modules.</Description>
-        <Archive sha1sum="bfd95714ace97e9c79c6131784a0cf6300a71b82" type="targz">https://sourceforge.net/projects/pyqt/files/sip/sip-4.19.1/sip-4.19.1.tar.gz</Archive>
+        <Archive sha1sum="777885fe8c4617292c253a8571c12110cb82630f" type="targz">https://src.fedoraproject.org/lookaside/pkgs/sip/sip-4.19.7.tar.gz/sha512/0cead34e129d25ee3d908e503a3853289bbfd77c58c563a2046ce7b65bd8f0b318b20af72346cbf4cb7a17e76c9c1374f686b5dabc284d7247897a1648c15f97/sip-4.19.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt5</Dependency>
             <Dependency>python3</Dependency>
@@ -36,9 +36,9 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2017-02-28</Date>
-            <Version>4.19.1</Version>
+            <Version>4.19.7</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

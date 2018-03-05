@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>ACPI debugging tools written by Intel</Summary>
         <Description>acpica contains an AML interpreter and debugger, ACPI namespace support, ACPI hardware and event support and a full ASL compiler and disassembler.</Description>
-        <Archive sha1sum="3b5ec0de4e8b2ac1dff97c022c4767e613d41664" type="targz">https://acpica.org/sites/acpica/files/acpica-unix-20170831.tar.gz</Archive>
+        <Archive sha1sum="ab04331caa70cd654e6ab02f62ef19c9cc693206" type="targz">https://acpica.org/sites/acpica/files/acpica-unix-20180209.tar.gz</Archive>
         <Patches>
             <Patch level="1">werror.patch</Patch>
         </Patches>
@@ -34,9 +34,9 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2017-09-24</Date>
-            <Version>0.0_20170831</Version>
+            <Version>0.0_20180209</Version>
             <Comment>Version Bump</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

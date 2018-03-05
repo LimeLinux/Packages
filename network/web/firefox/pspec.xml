@@ -55,6 +55,8 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">firefox-install-dir.patch</Patch>
+            <Patch level="1">0001-Bug-1430274-Define-MOZ_ALSA-for-more-source-files.-r.patch</Patch>
+            <Patch level="1">no-crmf.patch</Patch>
         </Patches>
     </Source>
 

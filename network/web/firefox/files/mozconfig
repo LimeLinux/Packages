@@ -31,11 +31,6 @@ ac_add_options --enable-system-ffi
 ac_add_options --enable-system-pixman
 ac_add_options --enable-system-hunspell
 
-export LC_ALL=C
-#ac_add_options --enable-optimize="-O2 -msse2 -mfpmath=sse"
-
-# Keys
-#ac_add_options --with-mozilla-api-keyfile=../mozilla-api-key
 
 
 
