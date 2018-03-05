@@ -11,7 +11,7 @@
         <Summary>Dynamic Kernel Module Support</Summary>
         <Description>Dynamic Kernel Module Support</Description>
         <License>GPLv2+</License>
-        <Archive sha1sum="c0531f769ecb1919548b2582e58ebd6b5ce96039" type="targz">https://github.com/dell/dkms/archive/v2.4.0.tar.gz</Archive>
+        <Archive sha1sum="d7134cfa07b63857be4007c243d516013c914254" type="targz">https://github.com/dell/dkms/archive/v2.5.tar.gz</Archive>
     </Source>
     
     <Package>
@@ -30,7 +30,7 @@
     <History>
         <Update release="2">
             <Date>09.09.2017</Date>
-            <Version>2.4.0</Version>
+            <Version>2.5</Version>
             <Comment>Add dkms to repositories</Comment>
             <Name>Ergun Salman</Name>
             <Email>poyraz76@limelinux.com</Email>

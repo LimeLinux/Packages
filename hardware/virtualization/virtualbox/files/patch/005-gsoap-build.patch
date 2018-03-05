@@ -1,4 +1,4 @@
---- a/src/VBox/Main/webservice/Makefile.kmk	2013-11-21 19:00:46.812761628 +0100
+-- a/src/VBox/Main/webservice/Makefile.kmk	2013-11-21 19:00:46.812761628 +0100
 +++ b/src/VBox/Main/webservice/Makefile.kmk	2016-08-18 15:16:05.803599026 +0100
 @@ -724,7 +724,7 @@ $(VBOXWEB_OUT_DIR)/gsoap_generate_all_ts \
  		$(RECOMPILE_ON_MAKEFILE_CURRENT) | $$(dir $$@)
@@ -9,3 +9,4 @@
  ifeq ($(KBUILD_TARGET),win) # MSC -Wall workaround.
  	$(CP) -f "$(VBOXWEB_SOAP_CLIENT_H)" "$(VBOXWEB_SOAP_CLIENT_H).tmp"
  	$(SED) -f $(VBOX_PATH_WEBSERVICE)/stdsoap2.sed --output "$(VBOXWEB_SOAP_CLIENT_H)" "$(VBOXWEB_SOAP_CLIENT_H).tmp"
+

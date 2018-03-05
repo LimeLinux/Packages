@@ -15,8 +15,6 @@ VBoxDataDir = "/usr/share/virtualbox"
 KDIR = kerneltools.getKernelVersion()
 
 def setup():
-    shelltools.export("CFLAGS","-std=gnu++98")
-    shelltools.export("CXXFLAGS", "-std=gnu++98")
     pisitools.dosed("LocalConfig.kmk", "__VBOXLIBDIR__", VBoxLibDir)
     pisitools.dosed("LocalConfig.kmk", "__VBOXDATADIR__", VBoxDataDir)
 

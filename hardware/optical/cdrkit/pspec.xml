@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Suite of programs for CD/DVD recording.</Summary>
         <Description>Suite of programs for CD/DVD recording, ISO image creation, and audio CD extraction.</Description>
-        <Archive sha1sum="3f7ddc06db0272942e1a4cd98c3c96462df77387" type="targz">http://pkgs.fedoraproject.org/repo/pkgs/cdrkit/cdrkit-1.1.11.tar.gz/efe08e2f3ca478486037b053acd512e9/cdrkit-1.1.11.tar.gz</Archive>
+        <Archive sha1sum="091d272815a88154ab850c8098d807b1d6e9473c" type="targz">https://github.com/Distrotech/cdrkit/archive/distrotech-cdrkit-1.1.11.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cdparanoia</Dependency>
             <Dependency>libcap</Dependency>

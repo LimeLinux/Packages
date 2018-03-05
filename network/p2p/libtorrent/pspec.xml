@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Full featured torrent client library</Summary>
         <Description>Rasterbar's C++ library that aims to be a good alternative to all the other bittorrent implementations around. It is a library and not a full featured client, although it comes with a working example client.</Description>
-	<Archive sha1sum="8ddf7f7c614986acdbdd4cc293b01844e4dc8fd5" type="targz">https://github.com/arvidn/libtorrent/releases/download/libtorrent-1_0_11/libtorrent-rasterbar-1.0.11.tar.gz</Archive>
+	<Archive sha1sum="9ca6ca9698f81c758fe934b52374f23588a7cc78" type="targz">https://github.com/rakshasa/libtorrent/archive/0.13.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsigc++</Dependency>
             <Dependency>boost</Dependency>
@@ -41,7 +41,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>1.0.11</Version>
+            <Version>0.13.6</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

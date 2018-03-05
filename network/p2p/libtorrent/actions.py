@@ -9,8 +9,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "libtorrent-rasterbar-%s" % get.srcVERSION()
-
 
 def setup():
     autotools.autoreconf("-vfi")
@@ -33,5 +31,5 @@ def install():
 
     #pisitools.removeDir("/usr/bin")
 
-    pisitools.dohtml("docs/*")
+    pisitools.dohtml("doc/*")
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS")

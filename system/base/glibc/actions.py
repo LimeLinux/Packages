@@ -155,6 +155,9 @@ def install():
     
     pisitools.insinto("/etc", "locale.gen")
     shelltools.system("sed -e '1,3d' -e 's|/| |g' -e 's|\\\| |g' -e 's|^|#|g' %s/%s/localedata/SUPPORTED >> %s/etc/locale.gen" % (get.workDIR(),get.srcDIR(),get.installDIR()))
+    
+    #xlocale.h: No such file or directory
+    pisitools.dosym("/usr/include/bits/locale.h", "/usr/include/xlocale.h")
 
 
     pisitools.dodoc("ChangeLog", "COPYING", "COPYING.LIB", "NEWS", "README*", "LICENSES")

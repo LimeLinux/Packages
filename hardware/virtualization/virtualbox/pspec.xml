@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>A powerful virtualization program</Summary>
         <Description>VirtualBox is a family of powerful x86 virtualization products for enterprise as well as home use. This is the Open Source Edition which lacks USB support and some other things.</Description>
-        <Archive sha1sum="63d8c261bf1626f8d22ffef310ab5192fd90d2dc" type="tarbz2">http://download.virtualbox.org/virtualbox/5.2.0_BETA2/VirtualBox-5.2.0_BETA2.tar.bz2</Archive>
+        <Archive sha1sum="d25f64eb8d5f12072e4a57b32e08b2e512bdf517" type="tarbz2">http://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>dev86</Dependency>
             <Dependency>cdrkit</Dependency>
@@ -54,9 +54,10 @@
         </AdditionalFiles>
         <Patches>
             <Patch level="1">patch/002-dri-driver-path.patch</Patch>
-            <Patch level="1">patch/005-gsoap-build.patch</Patch>
+            <Patch level="1">patch/005-gsoap-build.patch</Patch> 
             <Patch level="1">patch/006-rdesktop-vrdp-keymap-path.patch</Patch>
             <Patch level="1">patch/008-no-vboxvideo.patch</Patch>
+            <Patch level="1">patch/009-include-path.patch</Patch>
         </Patches>
     </Source>
 
@@ -148,7 +149,7 @@
     <History>
         <Update release="4">
             <Date>2017-09-24</Date>
-            <Version>5.2.0B</Version>
+            <Version>5.2.8</Version>
             <Comment>Version Bump</Comment>
             <Name>Lime Linux</Name>
             <Email>admin@limelinux.com</Email>

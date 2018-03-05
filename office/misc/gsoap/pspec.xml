@@ -12,7 +12,7 @@
         <License>GPLv2</License>
         <Summary>Offers an XML language binding to ease the development of SOAP/XML Web services in C and C/C++</Summary>
         <Description>The gSOAP toolkit is an extensive suite of portable C and C++ software to develop XML Web services with powerful type-safe XML data bindings.</Description>
-        <Archive sha1sum="403fca53849b6281ccd2bd9d4d1d906f05e85aca" type="zip">https://sourceforge.net/projects/gsoap2/files/gsoap-2.8/gsoap_2.8.40.zip</Archive>
+        <Archive sha1sum="d9cf271ae442b82bd38afb36cb5b401b4e51724e" type="zip">https://sourceforge.net/projects/gsoap2/files/gsoap-2.8/gsoap_2.8.64.zip</Archive>
 	   <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>openssl</Dependency>
@@ -39,7 +39,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>2.8.40</Version>
+            <Version>2.8.64</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
