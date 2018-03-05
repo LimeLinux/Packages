@@ -17,21 +17,18 @@ arch = get.ARCH()
 shelltools.export("SHELL", "/bin/sh")
 
 def setup():
-    shelltools.system("sed 's@\#\#JOBCOUNT\#\#@%JOBS%@' -i mozconfig")
+    pisitools.dosed(".mozconfig", "##JOBCOUNT##", get.makeJOBS())
     shelltools.makedirs(ObjDir)
     shelltools.cd(ObjDir)
-    shelltools.system("../configure --prefix=/usr --libdir=/usr/lib")
+    shelltools.system("../configure --prefix=/usr --libdir=/usr/lib ")
 
     
 
 def build():
-    shelltools.cd(ObjDir)
     autotools.make("./mach build")
-    autotools.make("./mach buildsymbols")
 
 
 def install():
-    shelltools.cd(ObjDir)
     shelltools.system("DESTDIR=%s ./mach install " % get.installDIR())
 
     # Install language packs

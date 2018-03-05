@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Network connection manager GUI interface</Summary>
         <Description>network-manager-applet is a powerful graphical frontend to NetworkManager.</Description>
-        <Archive sha1sum="7f6bb1e7b569760643477cd80005f3d48fd8f51f" type="tarxz">http://ftp.acc.umu.se/mirror/gnome.org/sources/network-manager-applet/1.4/network-manager-applet-1.4.6.tar.xz</Archive>
+        <Archive sha1sum="ff3894625094a463f3b0800d09a596d95bf612c8" type="tarxz">https://download.gnome.org/sources/network-manager-applet/1.8/network-manager-applet-1.8.6.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>gtk3</Dependency>
@@ -75,9 +75,9 @@
 
 
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2017-04-20</Date>
-            <Version>1.4.6</Version>
+            <Version>1.8.6</Version>
             <Comment>Version bump.</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

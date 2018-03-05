@@ -21,6 +21,7 @@ def setup():
                          --with-team \
                          --with-wwan \
                          --sysconfdir=/etc \
+                         --without-selinux \
                          --localstatedir=/var \
                          --prefix=/usr \
                          --libexecdir=/usr/lib/NetworkManager")
