@@ -17,12 +17,12 @@ def setup():
 			--disable-tests \
 			PTHREAD_LIBS=-lpthread \
 			--disable-doxygen-docs --disable-tests \
-			 --disable-glib")
+              ")
     
-    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")    
+    #pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")    
 
 def build():
-    autotools.make()
+    autotools.make("-j1")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

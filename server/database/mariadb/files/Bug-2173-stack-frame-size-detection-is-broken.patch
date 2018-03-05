@@ -1,0 +1,35 @@
+My patch was
+=====================================================
+diff --git a/pcre/pcre_exec.c b/pcre/pcre_exec.c
+--- a/pcre/pcre_exec.c
++++ b/pcre/pcre_exec.c
+@@ -509,6 +509,12 @@
+                  (e.g. stopped by repeated call or recursion limit)
+ */
+ 
++#ifdef __GNUC__
++static int
++match(REGISTER PCRE_PUCHAR eptr, REGISTER const pcre_uchar *ecode,
++  PCRE_PUCHAR mstart, int offset_top, match_data *md, eptrblock *eptrb,
++  unsigned int rdepth) __attribute__((noinline,noclone));
++#endif
+ static int
+ match(REGISTER PCRE_PUCHAR eptr, REGISTER const pcre_uchar *ecode,
+   PCRE_PUCHAR mstart, int offset_top, match_data *md, eptrblock *eptrb,
+=====================================================
+
+I don't know if that's good enough for you, pcre doesn't seem to use __attribute__ much.
+
+MariaDB source code bundles PCRE1 for years, but we generally compile with the system-wide PCRE1, if it exists and is usable. In the context of this bug I detect "usable" with this check:
+
+=====================================================
+      SET(CMAKE_REQUIRED_LIBRARIES "pcre")
+      CHECK_C_SOURCE_RUNS("
+        #include <pcre.h>
+        int main() {
+        return -pcre_exec(NULL, NULL, NULL, -999, -999, 0, NULL, 0) < 256;
+        }"  PCRE_STACK_SIZE_OK)
+      SET(CMAKE_REQUIRED_LIBRARIES)
+=====================================================
+
+Basically, if stack frame size detection works, cmake will use system PCRE1. But for my system PCRE1 (see above) stack frame size "is" 4.

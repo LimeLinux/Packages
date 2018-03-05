@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>MariaDB is a drop-in replacement for MySQL</Summary>
         <Description>MariaDB strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server.</Description>
-        <Archive sha1sum="f9ccaa9881b98eeef68f4dbcf5ab9653c903819f" type="targz">ftp://ftp.ulak.net.tr/pub/MariaDB/mariadb-10.1.21/source/mariadb-10.1.21.tar.gz</Archive>
+        <Archive sha1sum="f9ccaa9881b98eeef68f4dbcf5ab9653c903819f" type="targz">https://ftp.osuosl.org/pub/blfs/conglomeration/mariadb/mariadb-10.1.21.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ncurses</Dependency>
             <Dependency>zlib</Dependency>
