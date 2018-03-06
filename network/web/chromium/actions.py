@@ -82,18 +82,18 @@ def install():
     shelltools.cd("out/Release")
 
     #should be checked should for the missing folder "out/Release"
-    for vla in ["*.pak", "xdg-*", "*.json", "chrome", "locales", "resources", "icudtl.dat", "mksnapshot", "chromedriver", "natives_blob.bin", "snapshot_blob.bin", "character_data_generator"]:
+    for vla in ["*.pak", "xdg-*", "*.json",  "locales", "resources", "icudtl.dat", "mksnapshot", "chromedriver", "natives_blob.bin", "snapshot_blob.bin", "character_data_generator", "chromium"]:
         pisitools.insinto("/usr/lib/chromium", "%s" % vla)
 
     pisitools.insinto("/usr/lib/chromium", "chrome_sandbox", "chrome-sandbox")
-    pisitools.dosym("/usr/lib/chromium/chrome", "/usr/bin/chromium")
+    pisitools.dosym("/usr/lib/chromium/chromium", "/usr/bin/chromium")
     pisitools.dosym("/usr/lib/chromium/chromedriver", "/usr/bin/chromedriver")
  
     shelltools.system("chmod -v 4755 %s/usr/lib/chromium/chrome-sandbox" %get.installDIR())
-
-    pisitools.newman("chrome.1", "chromium.1")
-
+    
     shelltools.cd("../..")
+    pisitools.newman("chrome/app/resources/manpage.1.in", "chromium.1")
+
     for size in ["22", "24", "48", "64", "128", "256"]:
         pisitools.insinto("/usr/share/icons/hicolor/%sx%s/apps" %(size, size), "chrome/app/theme/chromium/product_logo_%s.png" % size, "chromium.png")
 
