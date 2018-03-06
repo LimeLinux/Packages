@@ -21,7 +21,7 @@ import locale
 import string
 
 # FIXME: later this will be Comar's job
-systemlocale = open("/etc/locale.conf", "r").readline().strip()
+systemlocale = open("/etc/mudur/locale", "r").readline().strip()
 
 # for pisi
 os.environ["LC_ALL"] = systemlocale

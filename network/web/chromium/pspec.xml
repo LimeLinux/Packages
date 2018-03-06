@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A WebKit powered web browser</Summary>
         <Description>Chromium-browser is an open-source web browser, powered by WebKit.</Description>
-        <Archive sha1sum="6d7b02f4190590b76694ddbbabf157bb925ab59b" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-64.0.3282.186.tar.xz</Archive>
+        <Archive sha1sum="5d3c54f694f513168be6a8cf9dc7b89487924d10" type="tarxz">https://commondatastorage.googleapis.com/chromium-browser-official/chromium-64.0.3282.186.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>at-spi2-atk</Dependency>
@@ -88,12 +88,14 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">chromium-widevine.patch</Patch>
-            <Patch level="1">chromium-stdint.patch</Patch>
-            <Patch level="1">chromium-math.h-r0.patch</Patch>
-            <Patch level="1">chromium-clang-r3.patch</Patch>
-            <Patch level="1">chromium-FORTIFY_SOURCE-r2.patch</Patch>
             <Patch level="1">chromium-clang-r2.patch</Patch>
-            <Patch level="1">chromium-webrtc-r0.patch</Patch>
+            <Patch level="1">chromium-memcpy-r0.patch</Patch>
+            <Patch level="1">fix-gtk2-namespace.patch</Patch>
+            <Patch level="4">chromium-skia-harmony.patch</Patch>
+            <Patch level="1">fix-nav-button-layout.patch</Patch>
+            <Patch level="4">chromium-skia-harmony.patch</Patch>
+            <Patch level="1">chromium-omnibox-unescape-fragment.patch</Patch>
+            <Patch level="1">chromium-use-fromUTF8-for-UnicodeString-construction.patch</Patch>
         </Patches>
     </Source>
     <Package>
@@ -160,7 +162,7 @@
     <History>
         <Update release="5">
             <Date>2018-03-02</Date>
-            <Version>65.0.3325.88</Version>
+            <Version>64.0.3282.186</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

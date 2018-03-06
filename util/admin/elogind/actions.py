@@ -11,20 +11,23 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("./configure --prefix=/usr           \
-                         -Dbindir=/sbin          \
-                         -Dsbindir=/sbin         \
-                         -Dpamlibdir=/lib/security \
-                         -Dlibdir=/usr/lib       \
-                         -Dsysconfdir=/etc       \
-                         -Dlibexecdir=/lib       \
-                         -Dwith-rootprefix=      \
-                         -Dwith-rootlibdir=/lib  \
-                         -Dwith-udevrulesdir=/etc/udev/rules.d \
-                          ")
+    shelltools.system("./autogen.sh")
+    shelltools.system("./configure \
+                      --sysconfdir=/etc \
+                      --prefix=/usr \
+                      --libdir=/usr/lib \
+                      --libexecdir=/usr/lib \
+                      --enable-split-usr \
+                      --enable-polkit \
+                      --disable-smack \
+                      --enable-acl \
+                      --enable-pam \
+                      --with-rootlibdir=/usr/lib \
+                      --with-udevrulesdir=/usr/lib/udev/rules.d \
+                      ")
 
 def build():
-    shelltools.system("make")
+    autotools.make()
 
 def install():
     autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())

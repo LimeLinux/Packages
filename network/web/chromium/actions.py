@@ -19,15 +19,21 @@ shelltools.export("HOME", get.workDIR())
 
 ARCH = "x64"
 
+
+cflags = get.CFLAGS().replace("-fno-unwind-tables -fno-asynchronous-unwind-tables","")
+cxxflags = get.CXXFLAGS().replace("-fno-unwind-tables -fno-asynchronous-unwind-tables", "")
+
+
 def setup():
     #shelltools.export("LC_ALL", "C")
     shelltools.system('sed -i  -e /"-Wno-enum-compare-switch"/d  -e /"-Wno-null-pointer-arithmetic"/d  -e /"-Wno-tautological-unsigned-zero-compare"/d -e /"-Wno-tautological-constant-compare"/d build/config/compiler/BUILD.gn')
+    shelltools.system("mkdir -p third_party/node/linux/node-linux-x64/bin")
+    shelltools.system("ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/")
 
-    #shelltools.system("mkdir -p third_party/node/linux/node-linux-x64/bin")
-    #shelltools.system("ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/")
-   
     for LIB in ["flac", "harfbuzz-ng" "libwebp" ,"libxslt", "yasm"]:
-        shelltools.system('find -type f -path "*third_party/$LIB/*" \! -path "*third_party/$LIB/chromium/*" \! -path "*third_party/$LIB/google/*" \! -path "*base/third_party/icu/*" \! -regex ".*\.\(gn\|gni\|isolate\|py\)" -delete')
+        shelltools.system('find -type f -path "*third_party/$LIB/*" \! -path "*third_party/$LIB/chromium/*" \! -path "*third_party/$LIB/google/*" \! -path "*base/third_party/icu/*" \! -path "*third_party/freetype/src/src/psnames/pstables.h" \! -path "*third_party/yasm/run_yasm.py" -regex ".*\.\(gn\|gni\|isolate\|py\)" -delete')
+
+
 
     #shelltools.system("build/linux/unbundle/replace_gn_files.py --system-libraries flac harfbuzz-ng libwebp libxslt yasm")
 
@@ -56,8 +62,13 @@ def setup():
            use_pulseaudio=true \
            use_gtk3=false'
 
+
+    shelltools.export("CFLAGS", cflags)
+    shelltools.export("CXXFLAGS", cxxflags)
+    shelltools.export("CPPFLAGS", "-DNO_UNWIND_TABLES")  
+
     shelltools.system("tools/gn/bootstrap/bootstrap.py --gn-gen-args '%s'"% opt)
-    shelltools.system("out/Release/gn gen out/Release --args '%s'"% opt)
+    shelltools.system("out/Release/gn gen out/Release --args='%s'"% opt)
 
 
 def build():

@@ -8,6 +8,10 @@ from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import kde5
 
+
+def build():
+    pythonmodules.compile()
+
 def install():
     #pisitools.dosed("data/*.desktop", "Icon=application-x-pisi", "Icon=/usr/share/icons/breeze/apps/128/package-manager.png")
     pythonmodules.install()
