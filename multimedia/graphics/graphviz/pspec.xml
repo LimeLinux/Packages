@@ -35,8 +35,8 @@
             <Dependency>tcltk</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">ghostscript918.patch</Patch>
-            <Patch level="1">graphviz-gs-error.patch</Patch>
+            <!--Patch level="1">ghostscript918.patch</Patch>
+            <Patch level="1">graphviz-gs-error.patch</Patch-->
         </Patches>
     </Source>
 
