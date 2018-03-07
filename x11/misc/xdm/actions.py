@@ -14,7 +14,6 @@ def setup():
                          --enable-unix-transport \
                          --enable-tcp-transport \
                          --enable-local-transport \
-                         --enable-secure-rpc \
                          --enable-xpm-logos \
                          --enable-xdm-auth \
                          --with-pam \

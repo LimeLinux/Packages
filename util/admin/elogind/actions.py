@@ -27,7 +27,7 @@ def setup():
                       ")
 
 def build():
-    autotools.make()
+    shelltools.system("make")
 
 def install():
     autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())
