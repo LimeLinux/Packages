@@ -15,5 +15,6 @@ def setup():
 
 def install():
     pythonmodules.install(pyVer="3")
+    pisitools.rename("usr/bin/chardetect", "chardetect-py3")
 
     pisitools.dohtml("docs/*")

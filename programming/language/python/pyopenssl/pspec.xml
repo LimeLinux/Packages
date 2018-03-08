@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Python interface to the OpenSSL library</Summary>
         <Description>This module is a rather thin wrapper around (a subset of) the OpenSSL library. A lot of the object methods do nothing more than calling a corresponding function in the OpenSSL library.</Description>
-        <Archive sha1sum="eb51f23f29703b647b0f194beaa9b2412c05e0f6" type="targz">http://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-0.14.tar.gz</Archive>
+        <Archive sha1sum="77bb6a9f5f20834bd9ba5d1bdc4bd82d6b6208be" type="targz">https://pypi.python.org/packages/3b/15/a5d90ab1a41075e8f0fae334f13452549528f82142b3b9d0c9d86ab7178c/pyOpenSSL-17.5.0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,7 +27,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>0.14</Version>
+            <Version>17.5.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -10,7 +10,7 @@ def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=Release")
 
 def build():
-    cmaketools.make()
+    cmaketools.make("-j1")
 
 def install():
     cmaketools.install()

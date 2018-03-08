@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>ACPI debugging tools written by Intel</Summary>
         <Description>acpica contains an AML interpreter and debugger, ACPI namespace support, ACPI hardware and event support and a full ASL compiler and disassembler.</Description>
-        <Archive sha1sum="ab04331caa70cd654e6ab02f62ef19c9cc693206" type="targz">https://acpica.org/sites/acpica/files/acpica-unix-20180209.tar.gz</Archive>
+        <Archive sha1sum="fab1f91698a92a1083ccc588bc7ef1c7557b25f2" type="targz">https://acpica.org/sites/acpica/files/acpica-unix2-20180209.tar.gz</Archive>
         <Patches>
             <Patch level="1">werror.patch</Patch>
         </Patches>

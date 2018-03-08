@@ -16,4 +16,4 @@ def build():
 def install():
     pythonmodules.install()
 
-    pisitools.dodoc("ChangeLog", "PKG-INFO","README", "TODO", "LICENSE")
+    pisitools.dodoc("CHANGELOG.rst", "PKG-INFO","README.rst", "CONTRIBUTING.rst", "LICENSE")

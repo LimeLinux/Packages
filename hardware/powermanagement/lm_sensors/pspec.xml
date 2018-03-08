@@ -14,12 +14,12 @@
         <IsA>library</IsA>
         <Summary>Hardware monitoring tools</Summary>
         <Description>lm_sensors provides essential tools for monitoring the temperatures, voltages, and fans of Linux systems with hardware monitoring devices. It also contains scripts for sensor hardware identification and fan speed control.</Description>
-        <Archive sha1sum="179989a52bae8f01ba8ed77e8a15af6ec653d89e" type="tarbz2">http://pkgs.fedoraproject.org/repo/pkgs/lm_sensors/lm_sensors-3.3.5.tar.bz2/da506dedceb41822e64865f6ba34828a/lm_sensors-3.3.5.tar.bz2</Archive>
+        <Archive sha1sum="4a9026e4db894c98ee7cea0bec1188108e415f71" type="targz">https://github.com/groeck/lm-sensors/archive/V3-4-0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>rrdtool</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>lm_sensors-3.3.5-upstream_fixes-1.patch</Patch>
+            <!--Patch>lm_sensors-3.3.5-upstream_fixes-1.patch</Patch-->
         </Patches>
     </Source>
 
@@ -46,7 +46,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>3.3.5</Version>
+            <Version>3.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -15,9 +15,9 @@ from pisi.actionsapi import get
 
 def setup():
     #pisitools.dosed("configure.ac", "fontforge_package_name", "fontforge")
-    #shelltools.system("./autogen.sh")
+    shelltools.system("./bootstrap --force")
 
-    autotools.configure()
+    autotools.configure("--enable-python-extension")
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Character encoding auto-detection in Python</Summary>
         <Description>python-chardet is character encoding auto-detection in Python 2 and 3.</Description>
-        <Archive sha1sum="eab8fb77c852da706e07c87c6b365ccc02c1751a" type="targz">http://pypi.python.org/packages/source/c/chardet/chardet-2.1.1.tar.gz</Archive>
+        <Archive sha1sum="4766fb07e700945a7085d073257f1f320d037ce8" type="targz">https://pypi.python.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -28,7 +28,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>2.1.1</Version>
+            <Version>3.0.4</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -15,7 +15,10 @@ def setup():
                          --enable-changeword")
 
 def build():
-    autotools.make()
+    autotools.make("-j1")
+
+def build():
+    autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

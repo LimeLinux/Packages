@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Character encoding auto-detection in Python3</Summary>
         <Description>python-chardet is character encoding auto-detection in Python 2 and 3.</Description>
-        <Archive sha1sum="d94bc88a106a6baffc2ea8a410781f635042d5b5" type="targz">https://github.com/chardet/chardet/archive/2.3.0.tar.gz</Archive>
+        <Archive sha1sum="4766fb07e700945a7085d073257f1f320d037ce8" type="targz">https://pypi.python.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
             <Dependency>python3-setuptools</Dependency>
