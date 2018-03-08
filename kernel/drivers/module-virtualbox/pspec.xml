@@ -15,14 +15,14 @@
         <Description>This package provides the kernel support for VirtualBox.</Description>
         <Archive sha1sum="1f4d5c10be6c48c3bf9f2203284b0ee3c297907c" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/virtualbox-driver/module-virtualbox-5.1.20a.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency version="4.9.40">kernel-module-headers</Dependency>
+            <Dependency version="4.13.2">kernel-module-headers</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>module-virtualbox</Name>
         <RuntimeDependencies>
-            <Dependency version="4.9.40">kernel</Dependency>
+            <Dependency version="4.13.2">kernel</Dependency>
             <Dependency version="current">module-virtualbox-userspace</Dependency>
         </RuntimeDependencies>
         <Files>

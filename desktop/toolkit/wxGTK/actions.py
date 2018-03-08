@@ -27,7 +27,7 @@ def setup():
                          --disable-gtktest \
                          --disable-sdltest \
                          --disable-precomp-headers \
-                         --with-gtk=2 \
+                         --with-gtk=3 \
                          --with-libpng=sys \
                          --with-libjpeg=sys \
                          --with-libtiff=sys \

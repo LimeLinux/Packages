@@ -20,8 +20,10 @@
         <Patches>
             <Patch level="1">patch/license.patch</Patch>
             <Patch level="1">patch/wl_linux.c.patch</Patch>
+            <Patch level="1">patch/linux412.patch</Patch>
             <Patch level="1">patch/linux47.patch</Patch>
             <Patch level="1">patch/linux48.patch</Patch>
+            <Patch level="1">patch/linux411.patch</Patch>
         </Patches>
     </Source>
 

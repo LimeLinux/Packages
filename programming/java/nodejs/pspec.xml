@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</Summary>
         <Description>Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. The Node.js package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</Description>
-        <Archive sha1sum="fc9854228209fada5387681546f604efd25f12ff" type="targz">https://github.com/nodejs/node/archive/v7.9.0.tar.gz</Archive>
+        <Archive sha1sum="3883c30f6a4b01f80bd046c9af5826cd843427c2" type="targz">https://github.com/nodejs/node/archive/v9.7.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -28,8 +28,8 @@
 
     <History>
         <Update release="2">
-            <Date>2017-04-21</Date>
-            <Version>7.9.0</Version>
+            <Date>2018-04-21</Date>
+            <Version>9.7.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

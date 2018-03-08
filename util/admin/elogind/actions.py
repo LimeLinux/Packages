@@ -16,12 +16,13 @@ def setup():
                       --sysconfdir=/etc \
                       --prefix=/usr \
                       --libdir=/usr/lib \
-                      --libexecdir=/usr/lib \
+                      --libexecdir=/usr/ \
                       --enable-split-usr \
                       --enable-polkit \
                       --disable-smack \
                       --enable-acl \
                       --enable-pam \
+                      --with-rootlibexecdir=/usr/lib/elogind \
                       --with-rootlibdir=/usr/lib \
                       --with-udevrulesdir=/usr/lib/udev/rules.d \
                       ")

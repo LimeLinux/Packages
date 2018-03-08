@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Simple FTP Client</Summary>
         <Description>Easy-to-use FTP Client which also supports SFTP.</Description>
-        <Archive sha1sum="955eb2da0bdf7875ad7ce1192c589a3b10fc4f10" type="tarbz2">https://sourceforge.net/projects/filezilla/files/FileZilla_Client/3.24.0/FileZilla_3.24.0_src.tar.bz2</Archive>
+        <Archive sha1sum="86e3f8626d481064cf5b73d0d9bf10277b9ec59f" type="tarbz2">https://sourceforge.net/projects/filezilla/files/FileZilla_Client/3.31.0/FileZilla_3.31.0_src.tar.bz2/download</Archive>
         <BuildDependencies>
             <Dependency>libidn</Dependency>
             <Dependency>dbus</Dependency>
@@ -26,7 +26,7 @@
             <Dependency>libfilezilla</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="0">i18n-filezilla.desktop.patch</Patch>
+            <!--Patch level="0">i18n-filezilla.desktop.patch</Patch-->
         </Patches>
     </Source>
 
@@ -59,8 +59,8 @@
 
     <History>
         <Update release="2">
-            <Date>2017-06-09</Date>
-            <Version>3.24.0</Version>
+            <Date>2018-03-07</Date>
+            <Version>3.31.0</Version>
             <Comment>First release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

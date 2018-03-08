@@ -15,6 +15,7 @@ pixmaps = "/usr/share/pixmaps/"
 LoVersion = "%s" % get.srcVERSION()
 OurWorkDir = "%s/libreoffice-%s" % (get.workDIR(), LoVersion)
 
+
 # temporarily disable failing tests, don't run broken tests on i686
 if get.buildTYPE() == "i686":
     shelltools.system('sed -i "/CppunitTest_sw_ooxmlexport7/d" sw/Module_sw.mk')
@@ -40,59 +41,59 @@ def setup():
                         --with-alloc=system             \
                         --with-java                     \
                         --without-system-dicts          \
-                        --without-fonts                 \
+                        --without-fonts    \
                         --disable-postgresql-sdbc       \
-                        --disable-firebird-sdbc         \
-                        --disable-coinmp                \
-                        --disable-systray               \
-                        --without-system-hsqldb         \
+                        --disable-firebird-sdbc     \
+                        --disable-coinmp \
+                        --disable-systray \
+                        --without-system-hsqldb \
                         --enable-release-build=yes      \
                         --enable-python=system          \
-                        --with-system-apr               \
+                        --with-system-apr           \
                         --with-system-boost             \
                         --with-system-cairo             \
-                        --with-system-clucene           \
-                        --with-system-cppunit           \
+                        --with-system-clucene   \
+                        --with-system-cppunit \
                         --with-system-curl              \
                         --with-system-expat             \
-                        --with-system-graphite          \
-                        --with-system-glew              \
-                        --with-system-glm               \
+                        --with-system-graphite      \
+                        --with-system-glm \
                         --with-system-harfbuzz          \
-                        --with-system-hunspell          \
+                        --with-system-hunspell \
                         --with-system-icu               \
                         --with-system-jpeg              \
+                        --with-jdk-home=/usr/lib/jvm/java \
                         --with-system-lcms2             \
-                        --with-system-libcdr            \
-                        --without-system-libcmis        \
-                        --with-system-libetonyek        \
-                        --with-system-libmspub          \
-                        --with-system-libodfgen         \
-                        --with-system-libpagemaker      \
+                        --with-system-libcdr \
+                        --without-system-libcmis \
+                        --with-system-libetonyek     \
+                        --with-system-libmspub \
+                        --with-system-libodfgen \
+                        --with-system-libpagemaker \
                         --with-system-libpng            \
-                        --with-system-librevenge        \
-                        --with-system-libvisio          \
-                        --with-system-libwpd            \
-                        --with-system-libwpg            \
-                        --with-system-libwps            \
+                        --with-system-librevenge \
+                        --with-system-libvisio           \
+                        --with-system-libwpd  \
+                        --with-system-libwpg  \
+                        --with-system-libwps  \
                         --with-system-libxml            \
-                        --with-system-mdds              \
-                        --with-system-liblangtag        \
-                        --without-system-libstaroffice  \
-                        --without-system-libzmf         \
-                        --with-system-neon              \
+                        --with-system-mdds            \
+                        --with-system-liblangtag  \
+                        --without-system-libstaroffice \
+                        --without-system-libzmf \
+                        --with-system-neon          \
                         --with-system-nss               \
-                        --with-system-odbc              \
-                        --with-system-openldap          \
+                        --with-system-odbc          \
+                        --with-system-openldap      \
                         --with-system-openssl           \
-                        --without-system-orcus          \
+                        --without-system-orcus \
                         --with-system-poppler           \
-                        --with-system-postgresql        \
-                        --with-system-redland           \
-                        --with-system-serf              \
-                        --without-system-ucpp           \
+                        --with-system-postgresql    \
+                        --with-system-redland  \
+                        --with-system-serf          \
+                        --without-system-ucpp \
                         --with-system-zlib              \
-                        --with-system-libetonyek        \
+                        --with-system-libetonyek \
                         --enable-scripting-beanshell    \
                         --enable-scripting-javascript   \
                         --disable-odk                   \
@@ -104,15 +105,15 @@ def setup():
                         --with-gdrive-client-secret=0ZChLK6AxeA3Isu96MkwqDR4 \
                         --with-parallelism=%s' % (get.makeJOBS().replace("-j","")))
 
-
+#--with-system-glew \
 def build():
-    autotools.make("verbose=true build-nocheck")
+    autotools.make("build-nocheck")
 
 def install():
     autotools.rawInstall("DESTDIR=%s distro-pack-install" % get.installDIR())
     
     pisitools.remove("gid_Module*")
-    
+        
     pisitools.insinto("/usr/share/appdata/", "sysui/desktop/appstream-appdata/libreoffice-*.xml")
     
     for pix in ["libreoffice-base.png", "libreoffice-calc.png", "libreoffice-draw.png", "libreoffice-impress.png", "libreoffice-main.png", "libreoffice-math.png", "libreoffice-startcenter.png", "libreoffice-writer.png"]:

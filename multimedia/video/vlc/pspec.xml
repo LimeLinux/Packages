@@ -115,7 +115,7 @@
             <Dependency>zvbi</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">lua53_compat.patch</Patch>
+            <!--Patch level="1">lua53_compat.patch</Patch-->
         </Patches>
     </Source>
 

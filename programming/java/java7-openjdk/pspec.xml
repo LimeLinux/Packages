@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Open Java Development Kit</Summary>
         <Description>OpenJDK (Open Java Development Kit) is a free and open source implementation of the Java Platform, Standard Edition (Java SE).</Description>
-        <Archive sha1sum="2e55e76bf83a1944ba3cac6233d1accd85e82bdc" type="targz">http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-7/openjdk-7_7u131-2.6.9.orig.tar.gz</Archive>
+        <Archive sha1sum="2b669d50627c4ad3f9452b97ad9d2ef1073e525a" type="targz">http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-7/openjdk-7_7u151-2.6.11.orig.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ant</Dependency>
             <Dependency>wget</Dependency>
@@ -305,7 +305,7 @@
     <History>
         <Update release="2">
             <Date>2017-05-18</Date>
-            <Version>7u_131.2.6.9</Version>
+            <Version>7u_151.2.6.11</Version>
             <Comment>Frist Release</Comment>
             <Name>LimeLinux Community</Name>
             <Email>admin@limelinux.com</Email>

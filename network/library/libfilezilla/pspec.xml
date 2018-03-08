@@ -13,7 +13,7 @@
         <IsA>Libry</IsA>
         <Summary>Recording and replay of usbdevfs (for PtP/MTP devices) and evdev (touch pads, Wacom tablets, etc.) ioctls.</Summary>
         <Description>You can use this from the command line, and a wide range of programming languages (C, Vala, and everything which supports gobject-introspection, such as JavaScript or Python).</Description>
-        <Archive sha1sum="008cbe1dfdaa06503806b7c30aaf764cef43bf5a" type="tarbz2">http://download.filezilla-project.org/libfilezilla/libfilezilla-0.9.0.tar.bz2</Archive>
+        <Archive sha1sum="20cf5d6602b2a960985efaabd64f7c9f79956d51" type="tarbz2">http://download.filezilla-project.org/libfilezilla/libfilezilla-0.12.1.tar.bz2</Archive>
         <BuildDependencies>
         </BuildDependencies>
     </Source>
@@ -29,8 +29,8 @@
     </Package>
     <History>
         <Update release="2">
-            <Date>2017-01-21</Date>
-            <Version>0.9.0</Version>
+            <Date>2018-01-21</Date>
+            <Version>0.12.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

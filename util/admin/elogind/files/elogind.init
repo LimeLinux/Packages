@@ -14,7 +14,7 @@ start() {
 
 	start-stop-daemon --start --quiet \
 		--pidfile "${ELOGIND_PIDFILE}" \
-		--exec "${ELOGIND_EXEC}" -- --daemon
+		--exec /usr/lib/elogind/elogind -- --daemon
 	eend $?
 }
 
