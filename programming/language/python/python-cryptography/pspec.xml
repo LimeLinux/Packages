@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Cryptographic recipes and primitives to Python developers</Summary>
         <Description>A package designed to expose cryptographic recipes and primitives to Python developers</Description>
-        <Archive sha1sum="f769cd5b007b3e1699eeefd6c4a9259ae97908b6" type="targz">https://pypi.io/packages/source/c/cryptography/cryptography-1.4.tar.gz</Archive>
+        <Archive sha1sum="0c4d8104c78e6e3e94ca8bdb1d99a365f29673e7" type="targz">https://pypi.io/packages/source/c/cryptography/cryptography-2.1.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-setuptools</Dependency>
             <Dependency>python-cffi</Dependency>

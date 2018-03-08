@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python bindings for wxGTK</Summary>
         <Description>wxPython is a GUI toolkit for the Python programming language. It allows Python programmers to create programs with a robust, highly functional graphical user interface, simply and easily. It is implemented as a Python extension module (native code) that wraps the popular wxWindows cross platform GUI library, which is written in C++.</Description>
-        <Archive sha1sum="5053f3fa04f4eb3a9d4bfd762d963deb7fa46866" type="tarbz2">mirrors://sourceforge/wxpython/wxPython-src-3.0.2.0.tar.bz2</Archive>
+        <Archive sha1sum="5053f3fa04f4eb3a9d4bfd762d963deb7fa46866" type="tarbz2">https://sourceforge.net/projects/wxpython/files/wxPython/3.0.2.0/wxPython-src-3.0.2.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>wxGTK</Dependency>
             <Dependency>wxGTK2.8</Dependency>

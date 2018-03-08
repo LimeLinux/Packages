@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>XML::Simple Perl module</Summary>
         <Description>XML::Simple is an easy API to read/write XML. This package provides XML::Simple's Perl module.</Description>
-        <Archive sha1sum="2ececb0960deb51296916186000c63d55cc53092" type="targz">http://pkgs.fedoraproject.org/repo/pkgs/perl-XML-Simple/XML-Simple-2.20.tar.gz/4d10964e123b76eca36678464daa63cd/XML-Simple-2.20.tar.gz</Archive>
+        <Archive sha1sum="a0c7fd4e7b8d729ddfd6241e093209c5f6f564db" type="targz">https://github.com/gitpan/XML-Simple/archive/stable.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-XML-Parser</Dependency>
         </BuildDependencies>

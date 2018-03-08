@@ -11,12 +11,10 @@ from pisi.actionsapi import get
 WorkDir = "Sphinx-%s" % get.srcVERSION()
 
 def build():
-    shelltools.system("pip install -U sphinx")
     pythonmodules.compile()
     pythonmodules.compile(pyVer="3")
 
 def install():
-    shelltools.system("pip install --upgrade pip")
     pythonmodules.install()
     pythonmodules.install(pyVer="3")
 

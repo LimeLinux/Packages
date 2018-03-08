@@ -21,7 +21,7 @@
         </BuildDependencies>
         <Patches>
             <!--Gentoo-->
-            <Patch>clucene-2.3.3.4-gcc6.patch</Patch>
+            <!--Patch>clucene-2.3.3.4-gcc6.patch</Patch-->
             <!--Fedora-->
             <Patch>clucene-core-2.3.3.4-pkgconfig.patch</Patch>
             <Patch>clucene-2.3.3.4-contribs_lib-1.patch</Patch>

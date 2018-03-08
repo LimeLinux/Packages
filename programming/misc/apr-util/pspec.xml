@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Apache portable runtime utils</Summary>
         <Description>Apache portable runtime utils (APR-Util) contains additional utility interfaces for APR; including support for XML, database interfaces, URI parsing and more.</Description>
-        <Archive sha1sum="b00038b5081472ed094ced28bcbf2b5bb56c589d" type="tarbz2">mirrors://apache/apr/apr-util-1.5.4.tar.bz2</Archive>
+        <Archive sha1sum="b00038b5081472ed094ced28bcbf2b5bb56c589d" type="tarbz2">https://archive.apache.org/dist/apr/apr-util-1.5.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>db</Dependency>
             <Dependency>zlib</Dependency>

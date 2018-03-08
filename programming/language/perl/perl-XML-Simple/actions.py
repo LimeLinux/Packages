@@ -7,7 +7,7 @@
 from pisi.actionsapi import perlmodules
 from pisi.actionsapi import get
 
-WorkDir = "XML-Simple-%s" % get.srcVERSION()
+#WorkDir = "XML-Simple-%s" % get.srcVERSION()
 
 def setup():
     perlmodules.configure()

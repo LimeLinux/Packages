@@ -20,10 +20,11 @@ def setup():
                                         -DBUILD_CONTRIBS_LIB:BOOL=ON \
                                         -DLIB_DESTINATION:PATH=/usr/lib \
                                         -DLUCENE_SYS_INCLUDES:PATH=/usr/lib \
-                                        -DDISABLE_MULTITHREADING=OFF", sourceDir="..")
+                                        -DDISABLE_MULTITHREADING=OFF \
+                                         popd", sourceDir="..")
 
 def build():
-    shelltools.cd("build")
+    shelltools.cd("-C build")
     cmaketools.make()
 
 def install():

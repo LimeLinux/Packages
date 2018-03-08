@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>RDF library for Python</Summary>
         <Description>python-rdflib is a Python library for working with RDF, a simple yet powerful language for representing information. The library contains parsers and serializers for RDF/XML, N3, NTriples, Turtle, TriX and RDFa.</Description>
-        <Archive sha1sum="5970c89814d74a463857fbb747f55e8aad8ba918" type="targz">http://pypi.python.org/packages/source/r/rdflib/rdflib-4.2.1.tar.gz</Archive>
+        <Archive sha1sum="2c4ef5a21259100a6e9bbbb2cb5d21f4c1b7785c" type="targz">https://github.com/RDFLib/rdflib/archive/4.2.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python</Dependency>
             <Dependency>python-isodate</Dependency>
@@ -38,7 +38,7 @@
     <History>
         <Update release="2">
             <Date>2018-01-12</Date>
-            <Version>4.2.1</Version>
+            <Version>4.2.2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
