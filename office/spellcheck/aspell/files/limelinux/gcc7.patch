@@ -1,0 +1,25 @@
+diff -Nur aspell-0.60.6.1/prog/check_funs.cpp.orig aspell-0.60.6.1/prog/check_funs.cpp
+--- aspell-0.60.6.1/prog/check_funs.cpp.orig	2011-07-04 12:17:27.000000000 +0300
++++ aspell-0.60.6.1/prog/check_funs.cpp	2018-03-09 18:20:04.675647000 +0300
+@@ -647,7 +647,7 @@
+     }
+   }
+   if (i == width-1) {
+-    if (word == '\0')
++    if (*word == '\0')
+       put(out,' ');
+     else if (word[len] == '\0')
+       put(out, word, len);
+
+diff -Nur aspell-0.60.6.1/modules/filter/tex.cpp.orig aspell-0.60.6.1/modules/filter/tex.cpp
+--- aspell-0.60.6.1/modules/filter/tex.cpp.orig	2011-07-03 00:09:09.000000000 +0300
++++ aspell-0.60.6.1/modules/filter/tex.cpp	2018-03-09 18:18:36.307643000 +0300
+@@ -174,7 +174,7 @@
+ 
+     if (c == '{') {
+ 
+-      if (top.in_what == Parm || top.in_what == Opt || top.do_check == '\0')
++      if (top.in_what == Parm || top.in_what == Opt || *top.do_check == '\0')
+ 	push_command(Parm);
+ 
+       top.in_what = Parm;

@@ -14,7 +14,7 @@
         <IsA>service</IsA>
         <Summary>A compelling replacement for CVS</Summary>
         <Description>SVN is a version controlling system to store files and control their change history in a repository.</Description>
-        <Archive sha1sum="8bd6a44a1aed30c4c6b6b068488dafb44eaa6adf" type="tarbz2">http://www.apache.org/dist/subversion/subversion-1.9.5.tar.bz2</Archive>
+        <Archive sha1sum="874b81749cdc3e88152d103243c3623ac6338388" type="tarbz2">http://www.apache.org/dist/subversion/subversion-1.9.7.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>expat</Dependency>
             <Dependency>zlib</Dependency>

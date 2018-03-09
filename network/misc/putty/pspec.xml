@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>PuTTY: A Free Telnet/SSH Client</Summary>
         <Description>PuTTY is a free implementation of Telnet and SSH for Windows and Unix platforms, along with an xterm terminal emulator.</Description>
-	<Archive sha1sum="132ff74266e590a007f86cbb4bea5642db7bdd76" type="targz">https://the.earth.li/~sgtatham/putty/latest/putty-0.67.tar.gz</Archive>
+	<Archive sha1sum="4e70e5fa303567a552536be0eb34449a9664487c" type="targz">http://the.earth.li/~sgtatham/putty/0.70/putty-0.70.tar.gz</Archive>
         <BuildDependencies>
 	    <Dependency>gtk2</Dependency>
 	    <Dependency>glib2</Dependency>
@@ -47,7 +47,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>0.67</Version>
+            <Version>0.70</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

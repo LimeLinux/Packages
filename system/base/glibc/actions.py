@@ -55,13 +55,13 @@ def libcSetup(cfg):
                        --with-tls \
                        --with-__thread \
                        --enable-add-ons=nptl,libidn \
-                       --enable-obsolete-rpc \
                        --enable-stack-protector=strong \
                        --enable-bind-now \
+                       --enable-obsolete-nsl \
+                       --enable-obsolete-rpc \
                        --enable-kernel=3.2.0 \
                        --with-bugurl=https://bugs.limelinux.com/ \
                        --enable-stackguard-randomization \
-                       --without-cvs \
                        --without-selinux \
                        --disable-profile \
                        --prefix=/usr \

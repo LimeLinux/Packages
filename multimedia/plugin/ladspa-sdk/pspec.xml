@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>The Linux Audio Developer's Simple Plugin API</Summary>
         <Description>The Linux Audio Developer's Simple Plugin API (LADSPA) attempts to give programmers the ability to write simple `plugin' audio processors in C/C++ and link them dynamically against a range of host applications</Description>
-        <Archive sha1sum="2b69e28afb62c0d97943124f48ed82de796f83ed" type="targz">http://pkgs.fedoraproject.org/repo/pkgs/ladspa/ladspa_sdk_1.13.tgz/671be3e1021d0722cadc7fb27054628e/ladspa_sdk_1.13.tgz</Archive>
+        <Archive sha1sum="2b69e28afb62c0d97943124f48ed82de796f83ed" type="targz">http://www.ladspa.org/download/ladspa_sdk.tgz</Archive>
         <Patches>
             <Patch>ladspa-sdk-1.12-gcc4.patch</Patch>
             <Patch level="2">properbuild.patch</Patch>

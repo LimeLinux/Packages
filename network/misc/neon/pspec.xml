@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>HTTP and WebDAV client library</Summary>
         <Description>neon is an HTTP and WebDAV client library with a C interface; providing a high-level interface to HTTP and WebDAV methods along with a low-level interface for HTTP request handling.</Description>
-        <Archive sha1sum="9e6297945226f90d66258b7ee05f757ff5cea10a" type="targz">http://www.webdav.org/neon/neon-0.30.0.tar.gz</Archive>
+        <Archive sha1sum="d1c020f96731135263476ebaa72b2da07c4727cd" type="targz">http://download.openpkg.org/components/cache/neon/neon-0.30.2.tar.gz</Archive>
         <Patches>
             <Patch>fixdocdir.patch</Patch>
             <Patch level="1">multilib.patch</Patch>
@@ -35,7 +35,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>0.30.0</Version>
+            <Version>0.30.2</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

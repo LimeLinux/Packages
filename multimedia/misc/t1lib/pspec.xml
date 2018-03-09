@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A Type 1 Font Rasterizer Library for UNIX/X11</Summary>
         <Description>t1lib is a library written in the C programming language allowing a programmer to generate bitmaps from Adobe (TM) Type 1 fonts quite easily. These bitmaps are returned in a data structure with type GLYPH. This special GLYPH-type is also used in the X11 window system to describe character bitmaps. It contains the bitmap data as well as some metric information. But t1lib is in itself entirely independent of the X11-system or any other graphical user interface.</Description>
-        <Archive sha1sum="4b4fc22c8688eefaaa8cfc990f0039f95f4287de" type="targz">http://pkgs.fedoraproject.org/repo/pkgs/t1lib/t1lib-5.1.2.tar.gz/a5629b56b93134377718009df1435f3c/t1lib-5.1.2.tar.gz</Archive>
+        <Archive sha1sum="4b4fc22c8688eefaaa8cfc990f0039f95f4287de" type="targz">https://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libXmu</Dependency>
             <Dependency>libICE</Dependency>

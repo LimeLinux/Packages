@@ -16,7 +16,7 @@
         <IsA>app:console</IsA>
         <Summary>A fast, easy, and free BitTorrent client</Summary>
         <Description>Transmission is a free, lightweight Bittorrent client. It features a simple, intuitive interface on top of an efficient backend. This package provides only daemon, web interface and command line client. If you want use Transmission with graphical interface, you should install transmission-gtk or transmission-qt.</Description>
-        <Archive sha1sum="087e886ca20b4aad112df1a0177f130d891c1ba2" type="targz">https://github.com/transmission/transmission/archive/2.92.tar.gz</Archive>
+        <Archive sha1sum="51db03bc7032f0ad98cbc7275802f5532cd320d5" type="targz">https://github.com/transmission/transmission/archive/2.92.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>libnotify</Dependency>

@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Tools to create and check DOS and VFAT filesystems</Summary>
         <Description>The dosfstools package includes the DOS and VFAT filesystem utilities like mkdosfs, mkfs.msdos, mkfs.vfat, dosfsck, dosfslabel. You can create and check MS-DOS FAT filesystems on hard drives or on floppies</Description>
-        <Archive type="tarxz" sha1sum="1385f707b7ff93cb521e8158e60276c531c1b0a6">http://pkgs.fedoraproject.org/lookaside/pkgs/dosfstools/dosfstools-3.0.26.tar.xz/45012f5f56f2aae3afcd62120b9e5a08/dosfstools-3.0.26.tar.xz</Archive>
+        <Archive type="targz" sha1sum="b73bf60bddf60370d154f318d37ba4fe90f98915">https://github.com/dosfstools/dosfstools/archive/v4.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -28,7 +28,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>3.0.26</Version>
+            <Version>4.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

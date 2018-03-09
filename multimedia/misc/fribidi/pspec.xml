@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>A free implementation of the unicode bidirectional algorithm</Summary>
         <Description>GNU FriBidi is the Free Implementation of the Unicode Bidirectional Algorithm.</Description>
-        <Archive sha1sum="5a6ff82fdee31d27053c39e03223666ac1cb7a6a" type="tarbz2">http://fribidi.org/download/fribidi-0.19.6.tar.bz2</Archive>
+        <Archive sha1sum="f11cb0571ea39a18916452cf27b811e5452d275b" type="targz">https://github.com/poyraz76/fribidi/archive/v1.0.1a.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -32,7 +32,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>0.19.6</Version>
+            <Version>1.0.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

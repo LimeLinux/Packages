@@ -15,6 +15,7 @@
         <Description>Aspell is a spellchecker that has dictionaries for more than one language and is written as a replacement to ispell.</Description>
         <Archive sha1sum="ff1190db8de279f950c242c6f4c5d5cdc2cbdc49" type="targz">mirrors://gnu/aspell/aspell-0.60.6.1.tar.gz</Archive>
         <Patches>
+            <Patch level="1">limelinux/gcc7.patch</Patch>
             <Patch level="1">fedora/aspell-0.60.3-install_info.patch</Patch>
             <Patch level="1">fedora/aspell-0.60.5-fileconflict.patch</Patch>
             <Patch level="1">fedora/aspell-0.60.5-pspell_conf.patch</Patch>

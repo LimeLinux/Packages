@@ -7,8 +7,13 @@
 from pisi.actionsapi import get
 from pisi.actionsapi import autotools
 
+def setup():
+    autotools.autoreconf("-i")
+    autotools.configure("--sbindir=/sbin \
+                         --enable-compat-symlinks")
+
 def build():
-    autotools.make("CFLAGS='%s -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fno-strict-aliasing'" % get.CFLAGS())
+    autotools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s install-bin install-man PREFIX=%s SBINDIR=/sbin" % (get.installDIR(), get.defaultprefixDIR()))
+    autotools.rawInstall("DESTDIR=%s"%get.installDIR())

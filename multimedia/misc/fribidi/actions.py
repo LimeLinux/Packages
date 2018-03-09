@@ -6,10 +6,13 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 
 def setup():
-    autotools.configure("--disable-static \
-                         --with-pic")
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
+    autotools.configure("--disable-docs")
+  
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
     autotools.make()
@@ -17,4 +20,4 @@ def build():
 def install():
     autotools.install()
 
-    pisitools.dodoc("AUTHORS", "NEWS", "README", "ChangeLog", "THANKS", "TODO")
+    pisitools.dodoc("AUTHORS", "NEWS", "README", "ChangeLog.old", "THANKS", "TODO", "USERS")

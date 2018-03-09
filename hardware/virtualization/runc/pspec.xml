@@ -11,7 +11,7 @@
         <License>Apache-2.0</License>
         <Summary>container cli tools</Summary>
         <Description>CLI tool for managing OCI compliant containers</Description>
-        <Archive sha1sum="ca70c97c9211462f774e22f03fec2fe61f45f1ba" type="targz">https://github.com/opencontainers/runc/archive/v0.1.1.tar.gz</Archive>
+        <Archive sha1sum="fce93f873b3ed667a02b88b6c45b5880399e759a" type="targz">https://github.com/opencontainers/runc/archive/v0.1.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>golang</Dependency>
             <Dependency>libseccomp</Dependency>
