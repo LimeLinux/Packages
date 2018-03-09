@@ -43,19 +43,13 @@
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/usr/lib/libstdc++.so*</Path>
             <Path fileType="library">/usr/lib/libgcc_s.so*</Path>
-            <Path fileType="library">/usr/lib32/libstdc++.so*</Path>
-            <Path fileType="library">/usr/lib32/libgcc_s.so*</Path>
             <Path fileType="library">/usr/share/gcc-*</Path>
             <Path fileType="library">/usr/share/gdb</Path>
             <Path fileType="library">/usr/lib/libgomp.so*</Path>
             <Path fileType="library">/usr/lib/libgomp.spec*</Path>
-            <Path fileType="library">/usr/lib32/libgomp.so*</Path>
-            <Path fileType="library">/usr/lib32/libgomp.spec*</Path>
             <Path fileType="info">/usr/share/info/libgomp.info</Path>
             <Path fileType="library">/usr/lib/libquadmath.so*</Path>
             <Path fileType="library">/usr/lib/libquadmath.spec*</Path>
-            <Path fileType="library">/usr/lib32/libquadmath.so*</Path>
-            <Path fileType="library">/usr/lib32/libquadmath.spec*</Path>
             <Path fileType="info">/usr/share/info/libquadmath.info</Path>
         </Files>
     </Package>
