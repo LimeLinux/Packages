@@ -15,40 +15,27 @@ import os
 WorkDir = "glibc-2.27"
 
 defaultflags = "-O3 -g -U_FORTIFY_SOURCE -fno-strict-aliasing -fomit-frame-pointer -mno-tls-direct-seg-refs"
-sysflags = "-mtune=generic -march=x86-64" if get.ARCH() == "x86_64" else "-mtune=atom -march=i686"
 
 multibuild = (get.ARCH() == "x86_64")
 pkgworkdir = "%s/%s" % (get.workDIR(), WorkDir)
 
-config = {"multiarch": {
-                "multi": True,
-                "extraconfig": "--build=i686-pc-linux-gnu",
-                "coreflags":   "-m32",
-                "libdir":      "lib32",
-                "libexecdir":  "/usr/lib32/misc",
-                "buildflags":  "-mtune=atom -march=i686 -O2 -pipe %s" % defaultflags,
-                "builddir":    "%s/build32" % pkgworkdir
-            },
-           "system": {
+config = {"system": {
                 "multi": False,
                 "extraconfig": "--build=%s" % get.HOST(),
                 "coreflags":   "",
                 "libdir":      "lib",
                 "libexecdir":  "/usr/lib/misc",
-                "buildflags":  "%s %s" % (sysflags, defaultflags),
+                "buildflags":  "%s" % (defaultflags),
                 "builddir":    "%s/build" % pkgworkdir
             }
 }
 
-ldconf32bit = """/lib32
-/usr/lib32
-"""
+
 
 def set_variables(cfg):
     shelltools.export("LANGUAGE","C")
     shelltools.export("LANG","C")
     shelltools.export("LC_ALL","C")
-
     shelltools.export("CC", "gcc %s" % cfg["coreflags"])
     shelltools.export("CXX", "g++ %s" % cfg["coreflags"])
 
@@ -68,8 +55,11 @@ def libcSetup(cfg):
                        --with-tls \
                        --with-__thread \
                        --enable-add-ons=nptl,libidn \
+                       --enable-obsolete-rpc \
+                       --enable-stack-protector=strong \
                        --enable-bind-now \
                        --enable-kernel=3.2.0 \
+                       --with-bugurl=https://bugs.limelinux.com/ \
                        --enable-stackguard-randomization \
                        --without-cvs \
                        --without-selinux \
@@ -98,26 +88,10 @@ def libcInstall(cfg):
 
 ### real actions start here ###
 def setup():
-    if multibuild:
-        libcSetup(config["multiarch"])
-
     libcSetup(config["system"])
 
 
 def build():
-    if multibuild:
-        libcBuild(config["multiarch"])
-        shelltools.echo("configparms","build-programs=no")
-        shelltools.echo("configparms", "slibdir=/lib32")
-        shelltools.echo("configparms", "libdir=/usr/lib32")
-        shelltools.echo("configparms", "rtlddir=/lib32")
-        shelltools.echo("configparms", "bindir=/tmp32")
-        shelltools.echo("configparms", "sbindir=/tmp32")
-        shelltools.echo("configparms", "rootsbindir=/tmp32")
-        shelltools.echo("configparms", "datarootdir=/tmp32/share")
-
-        pisitools.dosed("configparms", "=no", "=yes")
-
     libcBuild(config["system"])
     shelltools.echo("configparms", "slibdir=/usr/lib")
     shelltools.echo("configparms", "rtlddir=/usr/lib")
@@ -126,13 +100,6 @@ def build():
 
 
 def install():
-    if multibuild:
-        libcInstall(config["multiarch"])
-        pisitools.dosym("/lib32/ld-2.27.so", "/usr/lib/ld-linux.so.2")
- 
-
-        pisitools.removeDir("/tmp32")
-
     libcInstall(config["system"])
 
 

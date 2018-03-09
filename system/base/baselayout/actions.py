@@ -28,26 +28,17 @@ def install():
     pisitools.dosym("usr/lib", "lib")
     pisitools.dodir("/usr/share/locale")
     pisitools.dodir("/usr/lib/locale")
+    pisitools.dosym("usr/lib", "lib64")   
+    pisitools.dosym("lib", "usr/lib64") 
 
-
-    if get.ARCH() == "x86_64":
-        # Directories for 32bit libraries
-        pisitools.dosym("usr/lib", "lib64")   
-        pisitools.dosym("lib", "usr/lib64") 
-
-        pisitools.dodir("/lib32")
-        pisitools.dodir("/usr/lib32")
 
 
     pisitools.dosym("limelinux-release", "/etc/system-release")
 
     shelltools.touch("hostname")
 
-    if get.ARCH() == "x86_64":
-        shelltools.echo("hostname", "Limelinux")
+    shelltools.echo("hostname", "Limelinux")
 
-    elif get.ARCH() == 'armv7h':
-        shelltools.echo("hostname", "LimeArm")
 
     pisitools.insinto("/etc", "hostname")
 

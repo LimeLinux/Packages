@@ -89,7 +89,7 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="5">
             <Date>2018--03-02</Date>
             <Version>7.3.0</Version>
             <Comment>First Release</Comment>

@@ -56,18 +56,10 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/*.o</Path>
-            <Path fileType="library">/usr/lib32/*.o</Path>
-            <Path fileType="library">/usr/lib/*.a</Path>
-            <Path fileType="library">/usr/lib32/*.a</Path>
-            <Path fileType="config">/etc/ld.so.conf.d/60-glibc-32bit.conf</Path>
-            <Path fileType="library">/usr/lib32</Path>
-            <Path fileType="library">/lib32</Path>
             <Path fileType="library">/lib/ld-linux.so.2</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0755" target="/usr/bin/locale-gen">locale-gen</AdditionalFile> 
-            <AdditionalFile owner="root" permission="0755" target="/etc/ld.so.conf.d/60-glibc-32bit.conf">60-glibc-32bit.conf</AdditionalFile> 
-            <AdditionalFile owner="root" permission="0644" target="/usr/lib32/glibc32.txt">glibc32.txt</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
@@ -77,13 +69,12 @@
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="info">/usr/share/info</Path>
-            <Path fileType="config">/usr/lib32/glibc32.txt</Path>
         </Files>
     </Package>
 
 
     <History>
-        <Update release="4">
+        <Update release="5">
             <Date>2018--02-03</Date>
             <Version>2.27</Version>
             <Comment>First Release</Comment>
