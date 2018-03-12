@@ -10,4 +10,5 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
     os.system("rc-update add agetty.tty4 default")
     os.system("rc-update add agetty.tty5 default")
     os.system("rc-update add agetty.tty6 default")
+    os.system("mkinitcpio -p linux")
 
