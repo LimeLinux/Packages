@@ -1,0 +1,70 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>elogind</Name>
+        <Homepage>https://github.com/elogind</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Summary>Elogind User, Seat and Session Manager</Summary>
+        <Description>Elogind is the systemd project's "logind", extracted out to be a standalone daemon.</Description>
+        <Archive sha1sum="6b789404a7f0e2d531588b9deb317e9eaec4a3e1" type="targz">https://github.com/elogind/elogind/archive/v235.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>util-linux</Dependency>
+            <Dependency>libpcre</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>python3-meson</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!--Patch>missing_syscall.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>elogind</Name>
+        <RuntimeDependencies>
+            <Dependency>kmod</Dependency>
+            <Dependency>util-linux</Dependency>-
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/lib/udev</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
+	        <Path fileType="header">/usr/include/</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="config">/usr/lib/tmpfiles.d/udev.conf</Path>
+            <Path fileType="data">/run/udev</Path>
+            <Path fileType="data">/lib/systemd</Path>
+            <Path fileType="data">/var/lib/elogind</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/elogind">elogind.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/etc/init.d/elogind">elogind.init</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+    
+
+    <History>
+        <Update release="1">
+            <Date>2018-02-21</Date>
+            <Version>235.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

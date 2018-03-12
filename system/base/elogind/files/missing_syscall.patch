@@ -1,0 +1,21 @@
+From: valdis.kletnieks@vt.edu
+Subject: Hack around FTBFS issue
+
+--- elogind-235.2/src/basic/missing_syscall.h.dist	2017-12-14 17:09:57.000000000 -0500
++++ elogind-235.2/src/basic/basic/missing_syscall.h	2018-01-04 22:46:26.322837297 -0500
+@@ -307,6 +307,7 @@
+ #    endif
+ #  endif
+ 
++#if 0
+ static inline ssize_t copy_file_range(int fd_in, loff_t *off_in,
+                                       int fd_out, loff_t *off_out,
+                                       size_t len,
+@@ -319,6 +320,7 @@
+ #  endif
+ }
+ #endif
++#endif /* #if 0 */
+ 
+ /* ======================================================================= */
+ 

@@ -31,6 +31,7 @@
             <Dependency>gobject-introspection</Dependency>
             <Dependency>libndp</Dependency>
             <Dependency>polkit</Dependency>
+            <Dependency>audit</Dependency>
             <Dependency>jansson</Dependency>
             <Dependency>python-pygobject3</Dependency>
         </BuildDependencies>
@@ -56,6 +57,7 @@
             <Dependency>libndp</Dependency>
             <Dependency>libgudev</Dependency>
             <Dependency>python-pygobject3</Dependency>
+            <Dependency>audit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

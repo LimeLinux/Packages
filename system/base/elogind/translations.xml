@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>eudev</Name>
+        <Summary xml:lang="tr">elogind sistemd daemon uygulamasının çatalı</Summary>
+        <Description xml:lang="tr">elogind gnome3 gibi masaüstlerinin systemd bağımsız OpenRC ile çalışabilmesi için systemd çatalıdır</Description>
+    </Source>
+</PISI>

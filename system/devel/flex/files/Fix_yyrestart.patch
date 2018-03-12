@@ -1,0 +1,40 @@
+From aef142da8592718c7f3a7b25a020e1d3d608d6f6 Mon Sep 17 00:00:00 2001
+From: Harald van Dijk <harald@gigawatt.nl>
+Date: Tue, 10 Jan 2017 22:37:49 +0100
+Subject: [PATCH] Fix yyrestart(NULL) SEGV more reliably.
+
+Binding a reference to a dereferenced null pointer is invalid and
+compilers optimise away the &file == 0 check. We need a real stream.
+
+yyin is available already, and yyrestart(NULL) is only supported when
+yyin will not be used, so there is no harm in just passing in that.
+Since we now always have a valid stream, we can skip the null check too.
+
+Fixes #98.
+---
+ src/flex.skl | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/src/flex.skl b/src/flex.skl
+index 4ae3f4c1..d8347372 100644
+--- a/src/flex.skl
++++ b/src/flex.skl
+@@ -1896,6 +1896,9 @@ m4_ifdef( [[M4_YY_USE_LINENO]],
+  */
+ void yyFlexLexer::yyrestart( std::istream* input_file )
+ {
++	if( ! input_file ) {
++		input_file = &yyin;
++	}
+ 	yyrestart( *input_file );
+ }
+ %endif
+@@ -2057,7 +2060,7 @@ static void yy_load_buffer_state  (M4_YY_DEF_ONLY_ARG)
+ 	b->yy_input_file = file;
+ %endif
+ %if-c++-only
+-	b->yy_input_file = (&file == 0) ? NULL : file.rdbuf();
++	b->yy_input_file = file.rdbuf();
+ %endif
+ 	b->yy_fill_buffer = 1;
+ 
