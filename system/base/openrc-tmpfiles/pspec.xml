@@ -1,0 +1,52 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openrc-tmpfiles</Name>
+        <Homepage>https://github.com/OpenRC/opentmpfiles</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>console</IsA>
+        <Summary>Lime GNU/ Linux service scripts for openrc</Summary>
+        <Description>Lime GNU/ Linux service scripts for openrc</Description>
+        <Archive sha1sum="c22d8d086189ccd78251e139c3cdde8288505a28" type="targz">https://github.com/OpenRC/opentmpfiles/archive/0.1.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>openrc</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>openrc-tmpfiles</Name>
+        <RuntimeDependencies>
+		<Dependency>openrc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/lib/udev</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+           <Path fileType="header">/usr/include/</Path>
+        </Files>
+        <Provides>
+            <COMAR script="postInstall.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2017-04-11</Date>
+            <Version>1.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
