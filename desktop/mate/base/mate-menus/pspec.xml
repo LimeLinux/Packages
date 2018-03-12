@@ -36,7 +36,11 @@
             <Path fileType="data">/usr/share/mate-menus</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/etc/X11</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/etc/X11/xinit/xinitrc.d/10-xdg-menu-mate.sh">10-xdg-menu-mate</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>

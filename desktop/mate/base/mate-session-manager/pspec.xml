@@ -60,7 +60,12 @@
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/mate-session-manager/</Path>
+            <Path fileType="data">/etc/X11/xinit/xinitrc.d/</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/etc/X11/xinit/xinitrc.d/10-user-dirs-update-mate">10-user-dirs-update-mate</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/etc/X11/xinit/xinitrc.d/15-xdg-data-mate.sh">15-xdg-data-mate</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>

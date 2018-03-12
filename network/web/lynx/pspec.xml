@@ -16,10 +16,8 @@
         <Description>This is the top level page for the Lynx software distribution site hosted by the Internet Software Consortium.</Description>
         <Archive sha1sum="65bbf95627c88723bbb5880155e5fe01c2753d0c" type="tarbz2">http://invisible-mirror.net/archives/lynx/tarballs/lynx2.8.8rel.2.tar.bz2</Archive>
         <Patches>
-            <Patch level="1">lynx2-8-6-don-t-accept-command-line-args-to-telnet.patch</Patch>
-            <Patch level="1">lynx2-8-6-fix-ugly-color.patch</Patch>
-            <Patch level="1">lynx2-8-7-adapt-to-modern-file-localizations.patch</Patch>
-            <Patch level="1">lynx2-8-7-tmp_dir.patch</Patch>
+            <Patch level="1">2.8.8-openssl.patch</Patch>
+            <Patch level="1">ncurses.patch</Patch>
         </Patches>
     </Source>
 
