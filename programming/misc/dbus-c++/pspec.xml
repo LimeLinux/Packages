@@ -21,6 +21,7 @@
             <Dependency>glib2</Dependency>
         </BuildDependencies>
         <Patches>
+            <!--Patch level="4">dbus-c++-threading.patch</Patch-->
             <Patch level="0">gcc-44.patch</Patch>
             <Patch level="1">0003-src-pipe.c-fix-build-error-with-gcc-7.x.patch</Patch>
             <Patch level="1">0002-cross-compile-tools.patch</Patch>

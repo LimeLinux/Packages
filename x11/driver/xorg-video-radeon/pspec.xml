@@ -13,7 +13,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org radeon video driver</Summary>
         <Description>xorg-video-radeon contains the X.Org driver for ATI video chipsets.</Description>
-        <Archive sha1sum="38e535ecc8445c1b9464ac34db959337929887f7" type="tarbz2">https://www.x.org/archive/individual/driver/xf86-video-ati-7.10.0.tar.bz2</Archive>
+        <Archive sha1sum="da1b89a747264d976d824ddc7b5b4f803d3cf765" type="tarbz2">https://www.x.org/archive/individual/driver/xf86-video-ati-18.0.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libdrm</Dependency>
             <Dependency>libpciaccess</Dependency>
@@ -43,9 +43,9 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="5">
             <Date>2018--05-17</Date>
-            <Version>7.10.0</Version>
+            <Version>18.0.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -6,9 +6,10 @@
 #
 
 from pisi.actionsapi import autotools
-from pisi.actionsapi import pisitools
+from pisi.actionsapi import pisitools, shelltools
 
 def setup():
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--disable-static")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared ")
