@@ -18,6 +18,10 @@
             <Dependency>gettext</Dependency>
             <Dependency>libsigsegv</Dependency>
         </BuildDependencies>
+        <Patches>
+            <!--Patch level="1">disable-mbrtowc-test.patch</Patch>
+            <Patch level="1">localename-test-fix.patch</Patch-->
+        </Patches>
     </Source>
 
     <Package>

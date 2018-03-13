@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Call chain tracer of a program</Summary>
         <Description>libunwind is a portable and efficient C programming interface (API) to determine the call chain of a program.</Description>
-        <Archive sha1sum="aa04e6a7164aef754415b3b5e9453985741dd99e" type="targz">http://download.savannah.gnu.org/releases/libunwind/libunwind-1.1.tar.gz</Archive>
+        <Archive sha1sum="4ce18ee9c168ed6de85126534d855ddcb696bb17" type="targz">http://download.savannah.gnu.org/releases/libunwind/libunwind-1.2.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>xz</Dependency>
         </BuildDependencies>
@@ -34,9 +34,9 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2018-02-28</Date>
-            <Version>1.1</Version>
+            <Version>1.2.1</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -10,9 +10,8 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("sed -i -e '/gets is a/d' lib/stdio.in.h")
-    autotools.configure("--enable-nls \
-                         --enable-changeword")
+    #shelltools.system("sed -i -e '/gets is a/d' lib/stdio.in.h")
+    autotools.configure("--enable-changeword")
 
 def build():
     autotools.make("-j1")
