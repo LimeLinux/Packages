@@ -21,7 +21,7 @@
             <Dependency>zlib</Dependency>
             <Dependency>glib2</Dependency>
             <Dependency>libX11</Dependency>
-            <!--   <Dependency>cgmanager-devel</Dependency>-->
+            <Dependency>cgmanager</Dependency>
             <Dependency versionFrom="0.113">polkit</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>xmlto</Dependency>
@@ -38,8 +38,8 @@
             <Dependency>zlib</Dependency>
             <Dependency>glib2</Dependency>
             <Dependency>libX11</Dependency>
-          <!--  <Dependency>libnih</Dependency>
-                  <Dependency>cgmanager</Dependency> -->
+            <Dependency>libnih</Dependency>
+            <Dependency>cgmanager</Dependency>
             <Dependency versionFrom="0.113">polkit</Dependency>
         </RuntimeDependencies>
         <Files>

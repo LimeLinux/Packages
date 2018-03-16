@@ -11,9 +11,9 @@ ${RC_SERVICE} is a wrapper around pg_ctl with additional administrative checks
 and convenience"
 
 get_config() {
-    [ -f "${PGDATA%/}/postgresql.conf" ] || return 1
+    [ -f "etc/postgresql/postgresql.conf" ] || return 1
 
-    eval echo $(sed -e 's:#.*::' "${PGDATA%/}/postgresql.conf" \
+    eval echo $(sed -e 's:#.*::' "etc/postgresql/postgresql.conf" \
         | awk '$1 == "'$1'" { print ($2 == "=" ? $3 : $2) }')
 }
 
