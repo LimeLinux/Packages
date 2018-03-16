@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Google Chrome's Pepper Flash plugin for Chromium.</Summary>
         <Description>Google Chrome's Pepper Flash plugin for Chromium (stable version)</Description>
-        <Archive sha1sum="df6a3b5797a4d97ddd515e844fe55b64e5b0b69d" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/pepperflash-25.0.0.171.tar.xz</Archive> 
+        <Archive sha1sum="cecb9188a41ff82735404a3ab37f7d6d77095f0b" type="tarxz">https://sourceforge.net/projects/limeteam/files/source-limelinux/pepperflash-29.0.0.113.tar.xz</Archive> 
     </Source>
 
     <Package>
@@ -33,9 +33,9 @@
 
 
     <History>
-        <Update release="3">
-            <Date>2017-05-24</Date>
-            <Version>25.0.0.171</Version>
+        <Update release="4">
+            <Date>2018-03-14</Date>
+            <Version>29.0.0.113</Version>
             <Comment>Flash Player and Widevine pulgin version bump.</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

@@ -1,0 +1,15 @@
+Description: add missing library to fix FTBFS with --no-add-needed.
+Author: Ilya Barygin <barygin@gmail.com>
+Bug-Debian: http://bugs.debian.org/554301
+
+--- dbus-c++-0.9.0.orig/examples/glib/Makefile.am
++++ dbus-c++-0.9.0/examples/glib/Makefile.am
+@@ -8,7 +8,7 @@ endif
+ 
+ dbus_browser_SOURCES = dbus-glue.h dbus-browser.h dbus-browser.cpp $(top_srcdir)/tools/xml.cpp
+ dbus_browser_LDADD = $(top_builddir)/src/integration/glib/libdbus-c++-glib-1.la \
+-	$(top_builddir)/src/libdbus-c++-1.la $(gtkmm_LIBS)
++	$(top_builddir)/src/libdbus-c++-1.la $(gtkmm_LIBS) -lexpat
+ 
+ dbus-glue.h: $(top_srcdir)/data/org.freedesktop.DBus.xml
+ 	$(top_builddir)/tools/dbusxx-xml2cpp $^ --proxy=$@

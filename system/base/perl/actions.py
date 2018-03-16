@@ -19,7 +19,9 @@ def setup():
     pisitools.dosed("cpan/Compress-Raw-Zlib/config.in", "(INCLUDE\s+=\s)\.\/zlib-src", r"\1/usr/include")
     pisitools.dosed("cpan/Compress-Raw-Zlib/config.in", "(LIB\s+=\s)\.\/zlib-src", r"\1/usr/lib")
 
-    shelltools.export("LC_ALL", "C")
+    shelltools.export("LANGUAGE","C")
+    shelltools.export("LANG","C")
+    shelltools.export("LC_ALL","C")
 
 
     shelltools.system('sh Configure -des \

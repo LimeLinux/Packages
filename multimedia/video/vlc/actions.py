@@ -12,6 +12,9 @@ from pisi.actionsapi import shelltools
 def setup():
     # Make it build with libtool 1.5
     #
+    shelltools.export("LANGUAGE","C")
+    shelltools.export("LANG","C")
+    shelltools.export("LC_ALL","C")
     shelltools.export("CFLAGS", "%s -fPIC -O2 -Wall -Wextra -DLUA_COMPAT_5_1" % get.CFLAGS())                          
 
     #shelltools.system("rm -rf m4/lt* m4/libtool.m4")

@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://raw.githubusercontent.com/LimeLinux/Packages/master/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libaccounts-glib</Name>
+        <Homepage>https://code.google.com/p/accounts-sso</Homepage>
+        <Packager>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <Summary>Accounts and SSO (Single Sign-On) framework</Summary>
+        <Description>Accounts and SSO (Single Sign-On) framework for Linux and POSIX based platforms.</Description>
+        <Archive sha1sum="4c3ee966372c50f88bb9200c1b6160cbd03f08e3" type="tarxz">https://sourceforge.net/projects/pisilinux/files/source/libaccounts-glib-1.21.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>python-pygobject</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libaccounts-glib</Name>
+        <IsA>library</IsA>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libxml2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="conf">/usr/share/backup-framework/applications/accounts.conf</Path>
+            <Path fileType="data">/usr/share/xml</Path>
+            <Path fileType="data">/usr/share/libaccounts-glib/testdata</Path>
+            <Path fileType="data">/usr/share/dbus-1/interfaces/com.google.code.AccountsSSO.Accounts.Manager.xml</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+            <Path fileType="data">/usr/share/gir-1.0/Accounts-1.0.gir</Path>
+            <Path fileType="data">/usr/share/vala</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-03-16</Date>
+            <Version>1.21</Version>
+            <Comment>Release Bump</Comment>
+            <Name>Lime GNU/LINUX Community</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

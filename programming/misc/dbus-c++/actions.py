@@ -16,9 +16,6 @@ def setup():
 			--disable-ecore \
 			--disable-tests \
 			PTHREAD_LIBS=-lpthread \
-			--disable-doxygen-docs \
-            --disable-gtkmm \
-            --disable-tests \
               ")
     
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")    

@@ -1,0 +1,18 @@
+Description: Fix FTBFS on hurd
+ Fix FTBFS caused by undefined reference to symbol 'pthread_join@@GLIBC_2.12'
+ while linking test/functional/Test1.
+Author: Vincent Cheng <vcheng@debian.org>
+Last-Update: 05-12-2012
+
+--- a/test/functional/Test1/Makefile.am
++++ b/test/functional/Test1/Makefile.am
+@@ -31,7 +31,8 @@
+ TestApp_LDADD = \
+ 	$(top_builddir)/src/libdbus-c++-1.la \
+ 	$(PTHREAD_LIBS) \
+-	$(RT_LIBS)
++	$(RT_LIBS) \
++	-lpthread
+ 
+ TestApp_CXXFLAGS = \
+ 	-I$(top_srcdir)/include

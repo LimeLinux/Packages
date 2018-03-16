@@ -1,0 +1,15 @@
+Description: Fix FTBFS due to header dependency changes in gcc 4.7
+ This patch fixes FTBFS by explicitly including unistd.h.
+Author: Vincent Cheng <vcheng@debian.org>
+Bug-Debian: http://bugs.debian.org/672046
+
+--- a/src/eventloop-integration.cpp
++++ b/src/eventloop-integration.cpp
+@@ -34,6 +34,7 @@
+ #include <dbus/dbus.h>
+ 
+ /* STD */
++#include <unistd.h>
+ #include <string.h>
+ #include <cassert>
+ #include <sys/poll.h>

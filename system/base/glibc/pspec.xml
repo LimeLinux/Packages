@@ -22,9 +22,9 @@
         </BuildDependencies>
         <Patches>
             <!-- Fix sandbox violation -->
-            <!--Patch level="1">limelinux/locale-no-archive.patch</Patch>
+            <Patch level="1">limelinux/locale-no-archive.patch</Patch>
 
-            <Patch level="1">limelinux/sandbox.patch</Patch>
+            <!--Patch level="1">limelinux/sandbox.patch</Patch>
             <Patch level="1">malloc.patch</Patch-->
         </Patches>
         <AdditionalFiles>
@@ -75,7 +75,7 @@
 
 
     <History>
-        <Update release="5">
+        <Update release="6">
             <Date>2018--02-03</Date>
             <Version>2.27</Version>
             <Comment>First Release</Comment>

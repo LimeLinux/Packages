@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Spellchecker wrapping library</Summary>
         <Description>enchant is a library that wraps other spell checking backends.</Description>
-        <Archive sha1sum="321f9cf0abfa1937401676ce60976d8779c39536" type="targz">http://pkgs.fedoraproject.org/repo/pkgs/enchant/enchant-1.6.0.tar.gz/de11011aff801dc61042828041fb59c7/enchant-1.6.0.tar.gz</Archive>
+        <Archive sha1sum="7ac67b90b95004471fbc7992263bdc70613ad591" type="targz">https://github.com/AbiWord/enchant/archive/v2.2.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>aspell</Dependency>
             <Dependency>hunspell</Dependency>
@@ -39,7 +39,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>1.6.0</Version>
+            <Version>2.2.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

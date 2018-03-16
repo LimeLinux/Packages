@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 WorkDir="notepadqq-continuous"
 
 def setup():
-    shelltools.move("../CodeMirror-5.33.0/*", "%s/src/editor/libs/codemirror" % get.workDIR())
+    #shelltools.move("../CodeMirror-5.33.0/*", "%s/src/editor/libs/codemirror" % get.workDIR())
     autotools.configure("--prefix /usr --qmake /usr/bin/qmake --lrelease /usr/bin/lrelease")
 
 def build():

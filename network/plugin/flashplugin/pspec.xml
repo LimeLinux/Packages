@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>flashplugin</Name>
+        <Homepage>http://labs.adobe.com/technologies/flashplayer10</Homepage>
+        <Packager>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>Macromedia</License>
+        <IsA>library</IsA>
+        <Icon>flash-player-properties</Icon>
+        <Summary>Adobe Flash Player</Summary>
+        <Description>Adobe (Macromedia) Flash Player is an application to present interactive (and possibly multimedia-containing) content created using Adobe Flash.</Description>
+        <Archive sha1sum="b7be0c43150b373b37557ec752e240bc13188fea" type="targz" target="x86_64">https://sourceforge.net/projects/limeteam/files/source-limelinux/flash_player_npapi_linux.x86_64.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>nss</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXext</Dependency>
+            <!--flashplugin-kde-extension-->            
+            <Dependency>libXpm</Dependency>
+             <Dependency>mesa</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>flashplugin</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXrender</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+        <BuildFlags>
+            <Flag>noDelta</Flag>
+        </BuildFlags>
+    </Package>
+    
+    <History>
+        <Update release="1" type="security">
+            <Date>2017-03-02</Date>
+            <Version>29.0</Version>
+            <Comment>First release</Comment>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>

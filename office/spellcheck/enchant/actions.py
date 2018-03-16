@@ -5,11 +5,12 @@
 # See the file http://www.gnu.org/licenses/gpl.txt
 
 from pisi.actionsapi import autotools
-from pisi.actionsapi import pisitools
+from pisi.actionsapi import pisitools, shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fvi")
+    #autotools.autoreconf("-i")
+    shelltools.system("./bootstrap")
     autotools.configure("--disable-static \
                          --enable-aspell \
                          --enable-zemberek \
@@ -25,4 +26,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "NEWS", "README", "TODO", "HACKING", "MAINTAINERS")
+    pisitools.dodoc("AUTHORS", "NEWS", "README", "HACKING")
