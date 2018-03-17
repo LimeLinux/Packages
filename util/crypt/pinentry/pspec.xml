@@ -17,6 +17,7 @@
         <BuildDependencies>
             <Dependency>libassuan</Dependency>
             <Dependency>gtk2</Dependency>
+            <Dependency>fltk</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -32,6 +33,7 @@
             <Dependency>libsecret</Dependency>
             <Dependency>gcr</Dependency>
             <Dependency>gtk3</Dependency>
+            <Dependency>fltk</Dependency>
         </RuntimeDependencies>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0755" target="/usr/bin/pinentry">pinentry-wrapper</AdditionalFile>
