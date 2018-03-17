@@ -12,7 +12,7 @@
         <License>GPLv2</License>
         <Summary>Elogind User, Seat and Session Manager</Summary>
         <Description>Elogind is the systemd project's "logind", extracted out to be a standalone daemon.</Description>
-        <Archive sha1sum="6b789404a7f0e2d531588b9deb317e9eaec4a3e1" type="targz">https://github.com/elogind/elogind/archive/v235.2.tar.gz</Archive>
+        <Archive sha1sum="fe7dc1f1480d01163808bcac1acbc61e1a247803" type="targz">https://github.com/elogind/elogind/archive/v235.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>util-linux</Dependency>
             <Dependency>libpcre</Dependency>
@@ -20,7 +20,7 @@
             <Dependency>python3-meson</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch>missing_syscall.patch</Patch-->
+            <Patch>missing_syscall.patch</Patch>
         </Patches>
     </Source>
 
@@ -59,9 +59,9 @@
     
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2018-02-21</Date>
-            <Version>235.2</Version>
+            <Version>235.3</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>
