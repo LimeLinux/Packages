@@ -13,7 +13,7 @@
         <IsA>app</IsA>
         <Summary>LightDM Qt client library</Summary>
         <Description>LightDM Qt client library</Description>
-        <Archive sha1sum="1e6ca409593cc437903c901496a7c2375d63f0e6" type="tarxz">https://launchpad.net/lightdm/1.15/1.15.0/+download/lightdm-1.15.0.tar.xz</Archive>
+        <Archive sha1sum="fc015e86e797d6fd4d0beab3b7792fe187428967" type="tarxz">https://launchpad.net/lightdm/1.24/1.24.0/+download/lightdm-1.24.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>itstool</Dependency>
             <Dependency>intltool</Dependency>
@@ -74,9 +74,9 @@
 
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2018-02-28</Date>
-            <Version>1.19.4</Version>
+            <Version>1.24.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

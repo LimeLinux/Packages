@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>An opensource web browser engine for GTK+ 3.x applications</Summary>
         <Description>The GTK+ 3.x port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ 3.x UI toolkit on platforms like Linux.</Description>
-        <Archive sha1sum="1ed0dce02eb46949defb9cdb32fa5ca8b559688f" type="tarxz">https://www.webkitgtk.org/releases/webkitgtk-2.19.90.tar.xz</Archive>
+        <Archive sha1sum="f1e021318f06085fff5455667459bf26716d610f" type="tarxz">https://www.webkitgtk.org/releases/webkitgtk-2.20.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mesa</Dependency>
             <Dependency>gtk-doc</Dependency>
@@ -116,9 +116,9 @@
 
 
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2018--02-26</Date>
-            <Version>2.19.90</Version>
+            <Version>2.20.0</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

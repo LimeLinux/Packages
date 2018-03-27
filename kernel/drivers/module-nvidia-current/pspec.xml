@@ -11,7 +11,7 @@
         <License>NVIDIA</License>
         <Summary>NVIDIA drivers for GeForce 6xxx and newer GPUs</Summary>
         <Description>NVIDIA graphics drivers provide optimized 2D/3D performance.</Description>
-        <Archive sha1sum="74c7d1ddead5af17cebe34821fb68447a34c695e" type="binary">http://us.download.nvidia.com/XFree86/Linux-x86_64/390.25/NVIDIA-Linux-x86_64-390.25-no-compat32.run</Archive>
+        <Archive sha1sum="b1c0e18e946edb5e0512d03ae2364bf5d3f079b8" type="binary">http://us.download.nvidia.com/XFree86/Linux-x86_64/390.42/NVIDIA-Linux-x86_64-390.42-no-compat32.run</Archive>
         <BuildDependencies>
             <Dependency version="4.13.2">kernel-module-headers</Dependency>
             <Dependency>libX11</Dependency>
@@ -72,9 +72,9 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="5">
             <Date>2018--02-24</Date>
-            <Version>390.25</Version>
+            <Version>390.42</Version>
             <Comment>New Package</Comment>
             <Name>Ergün Salman</Name>
             <Email>poyraz76@limelinux.com</Email>

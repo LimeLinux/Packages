@@ -56,8 +56,6 @@
             <AdditionalFile target="/etc/conf.d/postgresql" owner="root" permission="0644">postgresql.conf-8</AdditionalFile>
 	        <AdditionalFile target="/usr/bin/postgresql-check-db-dir" owner="root" permission="0755">postgresql-check-db-dir</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/postgresql/postgresql.conf">postgresql.conf</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/postgresql">postgresql.confd</AdditionalFile>
-            <AdditionalFile owner="root" permission="0755" target="/etc/init.d/postgresql">postgresql.init</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>

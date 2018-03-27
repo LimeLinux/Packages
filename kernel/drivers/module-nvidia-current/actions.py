@@ -86,7 +86,8 @@ def install():
     pisitools.dosym("libGL.so.%s" % version, "%s/libGL.so.1.2.0" % nvlibdir)
     pisitools.dolib("libGL.so.%s" % version, libdir)
     
-    pisitools.dolib("libEGL.so.1", nvlibdir)
+    pisitools.dolib("libEGL.so.1.1.0", nvlibdir)
+    pisitools.dosym("libEGL.so.1.1.0", "%s/libGL.so.1" % nvlibdir)
     pisitools.dolib("libEGL_nvidia.so.%s" % version, libdir)
     pisitools.dolib("libGLESv1_CM_nvidia.so.%s" % version, libdir)
     pisitools.dolib("libGLESv2_nvidia.so.%s" % version, libdir)

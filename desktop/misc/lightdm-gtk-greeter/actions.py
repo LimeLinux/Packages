@@ -20,6 +20,7 @@ def setup():
                             --disable-libido \
                             --disable-libindicator \
                             --disable-static \
+                            --disable-exo \
                          --disable-gtk-doc ")
 def build():
     autotools.make()

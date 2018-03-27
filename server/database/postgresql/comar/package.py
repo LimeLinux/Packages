@@ -6,7 +6,7 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
     os.system("/bin/chown -R postgres:postgres /var/lib/postgres")
     os.system("/bin/chmod -R 0700 /var/lib/postgres/data")
     os.system("/bin/chmod -R 0700 /var/lib/postgres/backups")
-    os.system("rc-update add postgresql default")
+    #os.system("rc-update add postgresql default")
 
     # On first install...
     if not os.path.exists("/var/lib/postgres/data/base"):

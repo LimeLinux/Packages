@@ -24,4 +24,10 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
+    #FIXME: samba 4.8 File conflicts
+    pisitools.removeDir("/usr/bin")
+    pisitools.removeDir("/usr/lib/python2.7")
+    pisitools.removeDir("/usr/share/man")
+
+
     pisitools.dodoc("docs/README")
