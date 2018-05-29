@@ -19,6 +19,9 @@
             <Dependency>enchant</Dependency>
             <Dependency>intltool</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">enchat.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

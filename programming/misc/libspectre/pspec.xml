@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A small library for rendering Postscript documents</Summary>
         <Description>libspectre is a small library for rendering Postscript documents. It provides a convenient easy to use API for handling and rendering Postscript documents.</Description>
-        <Archive sha1sum="a7efd97b82b84ff1bb7a0d88c7e35ad10cc84ea8" type="targz">http://libspectre.freedesktop.org/releases/libspectre-0.2.7.tar.gz</Archive>
+        <Archive sha1sum="322499a5ba8874bc0cc20426b0e429024bf1a573" type="targz">https://libspectre.freedesktop.org/releases/libspectre-0.2.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ghostscript</Dependency>
         </BuildDependencies>
@@ -37,7 +37,7 @@
     <History>
         <Update release="2">
             <Date>2018-02-28</Date>
-            <Version>0.2.7</Version>
+            <Version>0.2.8</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

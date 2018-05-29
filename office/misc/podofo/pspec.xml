@@ -30,6 +30,9 @@
             <Dependency>boost</Dependency>
             <Dependency>openssl</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">podofo-0.9.5_stdc++98.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

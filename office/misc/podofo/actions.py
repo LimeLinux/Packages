@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 def setup():
     shelltools.makedirs("build")
     shelltools.cd("build")
-    cmaketools.configure(" LUAC=luac  LUA_LIBS='`pkg-config --libs lua`' \
+    cmaketools.configure(" LUAC=luac5.1  LUA_LIBS='`pkg-config --libs lua5.1`' \
                           -DFREETYPE_INCLUDE_DIR=/usr/include/freetype2 \
                           -DPODOFO_BUILD_SHARED=1 \
                           -DPODOFO_BUILD_STATIC=0 \
