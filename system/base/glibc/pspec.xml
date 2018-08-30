@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>GNU libc6 (also called glibc2) C library</Summary>
         <Description>The GNU C library is used as the C library in the GNU system and most systems with the Linux kernel. It defines the system calls and other basic C programming language facilities.</Description>
-        <Archive sha1sum="1f7a9c43026484943ef7cf6885f2176a2bc1e093" type="tarxz">http://ftp.gnu.org/gnu/libc/glibc-2.27.tar.xz</Archive>
+        <Archive sha1sum="ccb5dc9e51a9884df8488f86982439d47b283b2a" type="tarxz">http://ftp.gnu.org/gnu/libc/glibc-2.28.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>linux-api-headers</Dependency>
             <Dependency>gettext</Dependency>
@@ -75,9 +75,9 @@
 
 
     <History>
-        <Update release="6">
+        <Update release="7">
             <Date>2018--02-03</Date>
-            <Version>2.27</Version>
+            <Version>2.28</Version>
             <Comment>First Release</Comment>
             <Name>Lime GNU/LINUX Community</Name>
             <Email>admin@limelinux.com</Email>

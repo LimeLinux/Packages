@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "glibc-2.27"
+WorkDir = "glibc-2.28"
 
 defaultflags = "-O3 -g -U_FORTIFY_SOURCE -fno-strict-aliasing -fomit-frame-pointer -mno-tls-direct-seg-refs"
 

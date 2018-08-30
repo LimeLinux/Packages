@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 shelltools.export("HOME", get.workDIR())
 
-args = 'BRANDING="LimeLinux" \
+args = 'BRANDING=\"LimeLinux/$(uname -s)\" \
             MKSELINUX=no \
             MKTERMCAP=ncurses \
             PKG_PREFIX=""\
